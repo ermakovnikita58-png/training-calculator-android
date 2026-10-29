@@ -4,9 +4,7 @@ name: Build Android APK
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main
-      - master
+    branches: [main, master]
 
 permissions:
   contents: read
@@ -14,7 +12,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -34,19 +31,19 @@ jobs:
       - name: Install Android SDK
         run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
 
-      - name: Unpack project
+      - name: Find and unpack project
         run: |
-          mkdir source
           ZIP=$(find . -maxdepth 2 -type f -name "*.zip" | head -n 1)
           if [ -z "$ZIP" ]; then
             echo "ZIP archive not found"
             exit 1
           fi
-          unzip "$ZIP" -d source
+          mkdir -p source
+          unzip -o "$ZIP" -d source
 
-      - name: Find Android project
+      - name: Locate Android project
         run: |
-          find source -type f \( -name "settings.gradle" -o -name "settings.gradle.kts" -o -name "build.gradle" -o -name "build.gradle.kts" \)
+          find source -type f \( -name "gradlew" -o -name "build.gradle" -o -name "build.gradle.kts" \)
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
@@ -55,12 +52,18 @@ jobs:
 
       - name: Build APK
         run: |
-          BUILD_FILE=$(find source -type f \( -name "build.gradle" -o -name "build.gradle.kts" \) | head -n 1)
-          if [ -z "$BUILD_FILE" ]; then
-            echo "Android Gradle build file not found"
+          GRADLE_FILE=$(find source -type f \( -name "build.gradle" -o -name "build.gradle.kts" \) | head -n 1)
+          if [ -z "$GRADLE_FILE" ]; then
+            echo "Android Gradle project not found"
             exit 1
           fi
-          PROJECT_DIR=$(dirname "$BUILD_FILE")
+          PROJECT_DIR=$(dirname "$GRADLE_FILE")
+          while [ "$PROJECT_DIR" != "source" ] && [ "$PROJECT_DIR" != "." ]; do
+            if [ -f "$PROJECT_DIR/settings.gradle" ] || [ -f "$PROJECT_DIR/settings.gradle.kts" ]; then
+              break
+            fi
+            PROJECT_DIR=$(dirname "$PROJECT_DIR")
+          done
           gradle -p "$PROJECT_DIR" assembleDebug
 
       - name: Upload APK
