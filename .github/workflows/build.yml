@@ -4,7 +4,9 @@ name: Build Android APK
 on:
   workflow_dispatch:
   push:
-    branches: [main, master]
+    branches:
+      - main
+      - master
 
 permissions:
   contents: read
@@ -32,20 +34,19 @@ jobs:
       - name: Install Android SDK
         run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
 
-      - name: Find and unpack project
+      - name: Unpack project
         run: |
+          mkdir source
           ZIP=$(find . -maxdepth 2 -type f -name "*.zip" | head -n 1)
           if [ -z "$ZIP" ]; then
-            echo "ERROR: ZIP archive not found"
+            echo "ZIP archive not found"
             exit 1
           fi
-          mkdir source
           unzip "$ZIP" -d source
 
-      - name: Locate Android project
+      - name: Find Android project
         run: |
-          find source -name gradlew -type f
-          find source -name build.gradle -o -name build.gradle.kts
+          find source -type f \( -name "settings.gradle" -o -name "settings.gradle.kts" -o -name "build.gradle" -o -name "build.gradle.kts" \)
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
@@ -54,19 +55,13 @@ jobs:
 
       - name: Build APK
         run: |
-          PROJECT_DIR=$(dirname "$(find source -name gradlew -type f | head -n 1)")
-
-          if [ -z "$PROJECT_DIR" ] || [ "$PROJECT_DIR" = "." ]; then
-            PROJECT_DIR=$(dirname "$(find source -name build.gradle -type f | head -n 1)")
-          fi
-
-          if [ -z "$PROJECT_DIR" ] || [ "$PROJECT_DIR" = "." ]; then
-            echo "ERROR: Android Gradle project not found"
+          BUILD_FILE=$(find source -type f \( -name "build.gradle" -o -name "build.gradle.kts" \) | head -n 1)
+          if [ -z "$BUILD_FILE" ]; then
+            echo "Android Gradle build file not found"
             exit 1
           fi
-
-          cd "$PROJECT_DIR"
-          gradle assembleDebug
+          PROJECT_DIR=$(dirname "$BUILD_FILE")
+          gradle -p "$PROJECT_DIR" assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
