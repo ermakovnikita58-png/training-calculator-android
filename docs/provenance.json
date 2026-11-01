@@ -1,0 +1,10 @@
+{
+  "originalVersion": [
+    "versionCode = 10",
+    "versionName = \"10.0.0\""
+  ],
+  "originalHtmlSHA256": "6f5e868707893c0968a1057278f81c530be59d4b735680b510fb0ea7ad67ebbe",
+  "currentHtmlSHA256": "8930e619338a3ecc8be18d56268ab6735cba2efe54195444be01cbcc32a01cdc",
+  "originalNamedFunctions": 352,
+  "missingNamedFunctions": []
+}

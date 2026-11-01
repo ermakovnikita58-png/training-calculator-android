@@ -72,3 +72,5 @@ applicationId, адрес WebView и ключи localStorage в этой дор�
 ПУБЛИКАЦИЯ_GOOGLE_PLAY.md. Итоги этой доработки: REVIEW.md.
 
 Дополнительный smoke-тест: установите Playwright в отдельное тестовое окружение и Chromium (`npx playwright install chromium`), затем `node scripts/browser-regression.cjs`. Для имеющегося Chromium можно задать FORGE_CHROMIUM. Проверка использует отдельный временный профиль браузера.
+
+Текущий аудит 10.0.2: [таблица функций и доказательства](docs/VERIFICATION-2026-11-01.md). Автотесты: npm install, npx playwright install chromium, npm test. Для Android нужны отдельные проверки на устройстве.

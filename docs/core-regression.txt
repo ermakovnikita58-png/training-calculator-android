@@ -1,0 +1,19 @@
+PASS: Offline startup and 556 catalog entries
+PASS: Create, edit and activate program
+PASS: Start workout using program configuration; log set and RPE
+PASS: Active workout survives reload
+PASS: Finish workout, history and completed volume
+PASS: 5RM estimate, explicit 1RM and invalid input
+PASS: Nutrition portion math and nonpositive portion rejection
+PASS: Recipe creation and per-serving macros
+PASS: Nutrition and recipes survive reload
+PASS: JSON export contains diary, programs and recipes
+PASS: Cancelled import leaves memory and storage unchanged
+PASS: Malformed JSON leaves diary unchanged
+PASS: JSON round trip restores records
+PASS: Quota failure during import rolls back memory and storage
+PASS: CSV export escapes spreadsheet formulas
+PASS: Malformed record beyond index 50 is rejected
+PASS: Invalid programs, recipes and set values rejected
+PASS: Large valid history (1000 foods) persists through restore
+PASS: no uncaught browser errors; 18 scenarios.
