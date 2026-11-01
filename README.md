@@ -76,3 +76,5 @@ applicationId, адрес WebView и ключи localStorage в этой дор�
 Текущий аудит 10.0.2: [таблица функций и доказательства](docs/VERIFICATION-2026-11-01.md). Автотесты: npm install, npx playwright install chromium, npm test. Для Android нужны отдельные проверки на устройстве.
 
 FORGE 11: [Nutrition Coach — функции, формулы, ограничения и тесты](docs/NUTRITION-COACH.md). Открыть: Питание → Nutrition Coach. Применение новой цели только после подтверждения.
+
+FORGE 11.1: существующий Nutrition Coach переработан в мастер, добавлены подробная активность, подтверждённое поддержание, настраиваемые БЖУ и анализ 14/21 дней с отдельным подтверждением. Подробности и ограничения: [NUTRITION-COACH.md](docs/NUTRITION-COACH.md).
