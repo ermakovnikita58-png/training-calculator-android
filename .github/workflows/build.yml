@@ -32,6 +32,12 @@ jobs:
         run: node scripts/check-web.mjs
       - name: Check exercise illustrations
         run: node scripts/check-art.mjs
+      - name: Install browser regression dependencies
+        run: |
+          npm install --ignore-scripts --no-audit --no-fund
+          npx playwright install --with-deps chromium
+      - name: Test offline diary, persistence, nutrition and backup
+        run: npm test
       - name: Build APK, run unit tests and Android lint
         run: bash ./gradlew :app:assembleDebug :app:testDebugUnitTest :app:lintDebug --no-daemon --stacktrace
       - name: Upload installable debug APK
