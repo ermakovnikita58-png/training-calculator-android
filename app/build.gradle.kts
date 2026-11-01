@@ -11,8 +11,8 @@ android {
         applicationId = "ru.trainingcalculator.app" // KEEP for updates; choose a unique ID before first Google Play release.
         minSdk = 24
         targetSdk = 36
-        versionCode = 13
-        versionName = "11.0.0"
+        versionCode = 14
+        versionName = "11.1.0"
     }
     signingConfigs {
         if (uploadStorePath.isNotBlank()) {
