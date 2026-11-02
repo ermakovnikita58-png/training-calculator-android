@@ -1,0 +1,50 @@
+# Полный список изменений FORGE Performance UI
+
+Сравнение `forge-design-system-v1` с `nutrition-coach-11-1`. Включает перенос исправлений навигации PR #5 и дизайн-систему. Всего 46 файлов.
+
+- `.github/workflows/build.yml`
+- `README.md`
+- `app/build.gradle.kts`
+- `app/src/androidTest/java/ru/trainingcalculator/app/NavigationBackTest.kt`
+- `app/src/main/AndroidManifest.xml`
+- `app/src/main/assets/index.html`
+- `app/src/main/assets/navigation.css`
+- `app/src/main/assets/navigation.js`
+- `app/src/main/assets/nutrition-coach.js`
+- `app/src/main/assets/performance-tokens.css`
+- `app/src/main/assets/performance-ui.css`
+- `app/src/main/assets/performance-ui.js`
+- `app/src/main/java/ru/trainingcalculator/app/MainActivity.kt`
+- `app/src/main/res/values/styles.xml`
+- `docs/ANDROID_QA_CHECKLIST.md`
+- `docs/DESIGN_CHANGED_FILES.md`
+- `docs/DESIGN_SYSTEM.md`
+- `docs/NAVIGATION-11.1.1.md`
+- `docs/NAVIGATION_MAP.md`
+- `docs/PERFORMANCE-UI-VERIFICATION.md`
+- `docs/UX_AUDIT.md`
+- `docs/design-screenshots/active-workout-360.png`
+- `docs/design-screenshots/active-workout-390.png`
+- `docs/design-screenshots/coach-360.png`
+- `docs/design-screenshots/coach-390.png`
+- `docs/design-screenshots/home-360.png`
+- `docs/design-screenshots/home-390.png`
+- `docs/design-screenshots/library-360.png`
+- `docs/design-screenshots/library-390.png`
+- `docs/design-screenshots/nutrition-360.png`
+- `docs/design-screenshots/nutrition-390.png`
+- `docs/design-screenshots/plan-360.png`
+- `docs/design-screenshots/plan-390.png`
+- `docs/design-screenshots/progress-360.png`
+- `docs/design-screenshots/progress-390.png`
+- `docs/design-screenshots/sheet-360.png`
+- `docs/design-screenshots/sheet-390.png`
+- `docs/design-screenshots/workout-360.png`
+- `docs/design-screenshots/workout-390.png`
+- `docs/images/navigation-coach-after.png`
+- `docs/images/navigation-library-after.png`
+- `docs/images/navigation-library-before.png`
+- `package.json`
+- `scripts/navigation-browser.cjs`
+- `scripts/performance-browser.cjs`
+- `scripts/visual-checks.cjs`

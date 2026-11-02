@@ -20,8 +20,24 @@ import androidx.activity.OnBackPressedCallback
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.graphics.Color
+import android.widget.FrameLayout
+import androidx.core.view.WindowCompat
 
 class MainActivity : ComponentActivity() {
+    private var navigationReady = false
+    private var internalBack = true
+    private var backPending = false
+    private var imeVisible = false
+    private lateinit var backCallback: OnBackPressedCallback
+    private fun updateBackCallback() {
+        if (::backCallback.isInitialized) backCallback.isEnabled = !imeVisible && (!navigationReady || internalBack || hasDocumentHistory())
+    }
+    // pushState entries belong to the JS coordinator, not document navigation.
+    private fun hasDocumentHistory(): Boolean {
+        if (!::webView.isInitialized) return false
+        val history = webView.copyBackForwardList()
+        return history.currentIndex > 0 && history.getItemAtIndex(history.currentIndex - 1)?.url?.substringBefore('#') != webView.url?.substringBefore('#')
+    }
     private lateinit var webView: WebView
     private val assetHost = "https://appassets.androidplatform.net"
     private lateinit var assetLoader: WebViewAssetLoader
@@ -56,21 +72,41 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+        backCallback = object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
-                if (::webView.isInitialized) webView.evaluateJavascript("(window.f6HandleAndroidBack ? window.f6HandleAndroidBack() : 'exit')") { result -> if (result == "\"exit\"") finish() }
-                else finish()
+                if (backPending || !navigationReady || !::webView.isInitialized) return
+                if (ViewCompat.getRootWindowInsets(webView)?.isVisible(WindowInsetsCompat.Type.ime()) == true) {
+                    WindowCompat.getInsetsController(window, webView).hide(WindowInsetsCompat.Type.ime())
+                    return
+                }
+                backPending = true
+                webView.evaluateJavascript("(function(){try{return window.ForgeNavigation ? window.ForgeNavigation.back() : 'not-ready'}catch(e){console.error(e);return 'error'}})()") { result ->
+                    backPending = false
+                    if (result == "\"exit\"" && navigationReady && !internalBack) {
+                        if (hasDocumentHistory()) webView.goBack()
+                        else { isEnabled = false; onBackPressedDispatcher.onBackPressed() }
+                    }
+                    // Undefined, loading and JS errors never finish the Activity.
+                }
             }
-        })
+        }
+        onBackPressedDispatcher.addCallback(this, backCallback)
+        WindowCompat.setDecorFitsSystemWindows(window, false)
         assetLoader = WebViewAssetLoader.Builder().addPathHandler("/assets/", WebViewAssetLoader.AssetsPathHandler(this)).build()
         webView = WebView(this)
-        setContentView(webView)
+        val container = FrameLayout(this)
+        container.addView(webView, FrameLayout.LayoutParams(-1, -1))
+        setContentView(container)
         webView.setBackgroundColor(Color.rgb(11, 16, 22))
-        ViewCompat.setOnApplyWindowInsetsListener(webView) { view, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(container) { view, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            view.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+            val keyboard = insets.getInsets(WindowInsetsCompat.Type.ime())
+            imeVisible = insets.isVisible(WindowInsetsCompat.Type.ime())
+            view.setPadding(systemBars.left, systemBars.top, systemBars.right, maxOf(systemBars.bottom, keyboard.bottom))
+            updateBackCallback()
+            WindowInsetsCompat.CONSUMED
         }
+        webView.settings.textZoom = (resources.configuration.fontScale * 100).toInt()
         webView.settings.javaScriptEnabled = true
         webView.settings.domStorageEnabled = true
         webView.settings.allowFileAccess = false
@@ -81,6 +117,12 @@ class MainActivity : ComponentActivity() {
         webView.settings.mixedContentMode = android.webkit.WebSettings.MIXED_CONTENT_NEVER_ALLOW
         webView.addJavascriptInterface(Bridge(), "AndroidBridge")
         webView.webViewClient = object : WebViewClient() {
+            override fun onPageStarted(view: WebView?, url: String?, favicon: android.graphics.Bitmap?) {
+                navigationReady = false
+                internalBack = true
+                backPending = false
+                updateBackCallback()
+            }
             override fun shouldInterceptRequest(view: WebView?, request: WebResourceRequest?): WebResourceResponse? {
                 return request?.url?.let { assetLoader.shouldInterceptRequest(it) }
             }
@@ -114,7 +156,21 @@ class MainActivity : ComponentActivity() {
         webView.loadUrl(assetHost + "/assets/index.html")
     }
 
+    override fun onPause() {
+        if (::webView.isInitialized) webView.evaluateJavascript("window.ForgeNavigation && window.ForgeNavigation.persist(); window.ForgePerformance && window.ForgePerformance.persist()", null)
+        super.onPause()
+    }
+
     inner class Bridge {
+        @JavascriptInterface fun navigationState(ready: Boolean, canGoBack: Boolean) {
+            runOnUiThread {
+                if (!isDestroyed && webView.url?.startsWith(assetHost + "/assets/") == true) {
+                    navigationReady = ready
+                    internalBack = canGoBack
+                    updateBackCallback()
+                }
+            }
+        }
         @JavascriptInterface fun saveBlob(filename: String, base64: String, mimeType: String) {
             runOnUiThread {
                 try {
