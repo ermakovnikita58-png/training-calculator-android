@@ -106,6 +106,7 @@ class MainActivity : ComponentActivity() {
             updateBackCallback()
             WindowInsetsCompat.CONSUMED
         }
+        webView.settings.textZoom = (resources.configuration.fontScale * 100).toInt()
         webView.settings.javaScriptEnabled = true
         webView.settings.domStorageEnabled = true
         webView.settings.allowFileAccess = false
@@ -156,7 +157,7 @@ class MainActivity : ComponentActivity() {
     }
 
     override fun onPause() {
-        if (::webView.isInitialized) webView.evaluateJavascript("window.ForgeNavigation && window.ForgeNavigation.persist()", null)
+        if (::webView.isInitialized) webView.evaluateJavascript("window.ForgeNavigation && window.ForgeNavigation.persist(); window.ForgePerformance && window.ForgePerformance.persist()", null)
         super.onPause()
     }
 

@@ -11,8 +11,8 @@ android {
         applicationId = "ru.trainingcalculator.app" // KEEP for updates; choose a unique ID before first Google Play release.
         minSdk = 24
         targetSdk = 36
-        versionCode = 15
-        versionName = "11.1.1"
+        versionCode = 16
+        versionName = "11.2.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     signingConfigs {

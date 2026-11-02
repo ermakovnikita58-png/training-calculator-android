@@ -67,7 +67,7 @@
   }
   function closeTop() {
     const el=top();if(!el)return false;
-    if((dirty.has(el.id)||el.id==='f5EditBack')&&!confirm('Закрыть без сохранения изменений?'))return true;
+    if(dirty.has(el.id)&&!confirm('Закрыть без сохранения изменений?'))return true;
     editorApproved=true;
     try {
       if(el.id==='n8-picker'||el.id==='n8-day')originalEditorBack();
@@ -148,6 +148,9 @@
   document.addEventListener('click',event=>{
     const button=event.target.closest('button');if(!button)return;
     const action=button.getAttribute('onclick')||'';
+    if(/^\s*(closeModal|n9Close|f5CloseEditor)\(\)\s*;?\s*$/.test(action)&&top()){
+      event.preventDefault();event.stopImmediatePropagation();back();return;
+    }
     if(button.classList.contains('back')&&/^\s*(showPage|f6Go)\(/.test(action)){
       event.preventDefault();event.stopImmediatePropagation();back();
     }
