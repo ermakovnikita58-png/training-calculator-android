@@ -15,7 +15,7 @@ const {pathToFileURL}=require('url'),path=require('path');
  await page.locator('[onclick="x7ShowGroups()"]').click();
  await page.evaluate(()=>{x7OpenGroup(encodeURIComponent('Плечи'));x7OpenDetail(encodeURIComponent('Разведение гантелей в стороны'),true)});
  
- await page.locator('[onclick="x7AddFromDetail()"]').click();
+ await page.locator('#x7DetailBack [data-vs-action="add"]').click();
  assert.equal(await page.evaluate(()=>state.active.exercises[0].name),'Разведение гантелей в стороны');
  await page.reload();
  assert.equal(await page.evaluate(()=>state.active.exercises[0].name),'Разведение гантелей в стороны');

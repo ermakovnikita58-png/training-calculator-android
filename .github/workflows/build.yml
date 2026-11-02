@@ -45,6 +45,13 @@ jobs:
           name: forge-performance-ui-screenshots
           path: docs/design-screenshots/*.png
           if-no-files-found: ignore
+      - name: Upload exercise visual screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: forge-exercise-visual-screenshots
+          path: docs/exercise-screenshots/*.png
+          if-no-files-found: ignore
       - name: Build APK, run unit tests and Android lint
         run: bash ./gradlew :app:assembleDebug :app:testDebugUnitTest :app:lintDebug :app:assembleDebugAndroidTest --no-daemon --stacktrace
       - name: Upload installable debug APK

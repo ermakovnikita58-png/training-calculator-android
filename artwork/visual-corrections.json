@@ -1,0 +1,6 @@
+[
+  {"name":"Сгибание рук на скамье Скотта","action":"replace","frames":["exercise-art/ek-0239-relaxation.svg","exercise-art/ek-0239-tension.svg"],"source":"https://github.com/everkinetic/data/blob/main/dist/svg/0239-relaxation.svg","reason":"Неоднозначный источник Machine заменён точной парой Preacher Curl: Barbell; настройки опоры требуют личной проверки."},
+  {"name":"Подъём EZ-штанги на скамье Скотта","action":"replace","frames":["exercise-art/ek-0239-relaxation.svg","exercise-art/ek-0239-tension.svg"],"source":"https://github.com/everkinetic/data/blob/main/dist/svg/0239-relaxation.svg","reason":"В исходном соответствии указан тренажёр. Подставлена лицензированная пара Preacher Curl: Barbell; форма EZ-грифа остаётся на проверке."},
+  {"name":"Тяга гантелей грудью на наклонной скамье","action":"placeholder","reason":"Источник chest-supported-row помечен Machine, а упражнение требует гантели и наклонную опору. Достоверное точное соответствие не установлено."},
+  {"name":"Скручивания с гантелью на груди","action":"placeholder","reason":"Источник weighted-crunch использует Plate. Гантель вместо диска не подтверждена точной иллюстрацией."}
+]

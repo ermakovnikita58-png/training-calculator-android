@@ -41,8 +41,8 @@ class NavigationBackTest {
     }
     @Test fun systemBackClosesCardThenReturnsThroughPages() {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
-            waitFor(scenario, "!!window.ForgeNavigation")
-            js(scenario, "showPage('home');showPage('plan');showPage('library');y8OpenCard(encodeURIComponent('Жим штанги стоя'),'library')")
+            waitFor(scenario, "!!window.ForgeExerciseLibrary")
+            js(scenario, "showPage('home');showPage('plan');showPage('library');ForgeExerciseLibrary.showGroups();y8OpenCard(encodeURIComponent('Жим штанги стоя'),'library')")
             val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
             waitFor(scenario, "ForgeNavigation.inspect().overlay==='y8DetailBack'")
             device.pressBack()
@@ -70,6 +70,24 @@ class NavigationBackTest {
             scenario.recreate()
             waitFor(scenario, "!!window.ForgeNavigation && ForgeNavigation.inspect().current==='library'")
             waitFor(scenario, "Math.abs(scrollY-300)<5")
+        }
+    }
+    @Test fun libraryBackRetainsFiltersThenReturnsThroughGroups() {
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            waitFor(scenario, "!!window.ForgeExerciseLibrary")
+            js(scenario, "showPage('home');showPage('plan');showPage('library');ForgeExerciseLibrary.openGroup('Плечи','гантел');scrollTo(0,200);y8OpenCard(encodeURIComponent('Жим гантелей сидя'),'library')")
+            val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
+            waitFor(scenario, "ForgeNavigation.inspect().overlay==='y8DetailBack'")
+            device.pressBack()
+            waitFor(scenario, "!ForgeNavigation.inspect().overlay && ForgeExerciseLibrary.snapshot().group==='Плечи'")
+            assertEquals("\"гантел\"", js(scenario, "document.getElementById('vs-query').value"))
+            waitFor(scenario, "Math.abs(scrollY-200)<5")
+            device.pressBack()
+            waitFor(scenario, "ForgeExerciseLibrary.snapshot().group==='' && document.querySelectorAll('.vs-group').length===14")
+            device.pressBack()
+            waitFor(scenario, "ForgeNavigation.inspect().current==='plan'")
+            device.pressBack()
+            waitFor(scenario, "ForgeNavigation.inspect().current==='home'")
         }
     }
 }
