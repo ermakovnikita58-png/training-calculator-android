@@ -1,0 +1,100 @@
+[
+  {
+    "group": "Грудь",
+    "file": "exercises-0.png",
+    "entries": 48,
+    "contour": 32,
+    "notReady": 16
+  },
+  {
+    "group": "Спина",
+    "file": "exercises-1.png",
+    "entries": 63,
+    "contour": 43,
+    "notReady": 20
+  },
+  {
+    "group": "Плечи",
+    "file": "shoulders.png",
+    "entries": 48,
+    "contour": 28,
+    "notReady": 20
+  },
+  {
+    "group": "Бицепс",
+    "file": "exercises-3.png",
+    "entries": 37,
+    "contour": 29,
+    "notReady": 8
+  },
+  {
+    "group": "Трицепс",
+    "file": "exercises-4.png",
+    "entries": 36,
+    "contour": 33,
+    "notReady": 3
+  },
+  {
+    "group": "Квадрицепс",
+    "file": "exercises-5.png",
+    "entries": 54,
+    "contour": 45,
+    "notReady": 9
+  },
+  {
+    "group": "Бицепс бедра",
+    "file": "exercises-6.png",
+    "entries": 30,
+    "contour": 14,
+    "notReady": 16
+  },
+  {
+    "group": "Ягодицы",
+    "file": "exercises-7.png",
+    "entries": 37,
+    "contour": 26,
+    "notReady": 11
+  },
+  {
+    "group": "Икры",
+    "file": "exercises-8.png",
+    "entries": 25,
+    "contour": 14,
+    "notReady": 11
+  },
+  {
+    "group": "Пресс",
+    "file": "exercises-9.png",
+    "entries": 52,
+    "contour": 34,
+    "notReady": 18
+  },
+  {
+    "group": "Кардио",
+    "file": "exercises-10.png",
+    "entries": 41,
+    "contour": 21,
+    "notReady": 20
+  },
+  {
+    "group": "Нижняя спина",
+    "file": "exercises-11.png",
+    "entries": 26,
+    "contour": 12,
+    "notReady": 14
+  },
+  {
+    "group": "Предплечья",
+    "file": "exercises-12.png",
+    "entries": 24,
+    "contour": 4,
+    "notReady": 20
+  },
+  {
+    "group": "Мобильность",
+    "file": "exercises-13.png",
+    "entries": 35,
+    "contour": 13,
+    "notReady": 22
+  }
+]

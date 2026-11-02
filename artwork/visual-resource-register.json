@@ -368,18 +368,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0211-relaxation.svg",
+    "file": "exercise-contours/ek-0211-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 25242,
-    "sha256": "1a5e5d3c74e3510a8af53dc4a1b83d606eb59a7312d955c5d3ebcf70614d2990",
+    "bytes": 12704,
+    "sha256": "b77de0271c6b91d68a325463deeb58d5da9b064b65092e699b7e77396a80bc99",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0211-tension.svg",
+    "file": "exercise-contours/ek-0211-tension.svg",
     "role": "exercise-phase",
-    "bytes": 23761,
-    "sha256": "a6d90319d29b922d8cbf5592f0a52a3b273eaaa9b26de338c11e10525a51b56c",
+    "bytes": 11905,
+    "sha256": "a3faae38226c717d6956ac8469169ea9c914e3baa9084f7d24439526630b93ca",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -416,18 +416,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0239-relaxation.svg",
+    "file": "exercise-contours/ek-0239-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 19883,
-    "sha256": "5d9e2dd7b2274265c824cc40b873502c2bb4746947c3f226d38f7ca200314202",
+    "bytes": 9950,
+    "sha256": "4fe817416d2657065d27005394d414ba1027368ed89a0f6588ac0ec7bf446931",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0239-tension.svg",
+    "file": "exercise-contours/ek-0239-tension.svg",
     "role": "exercise-phase",
-    "bytes": 18916,
-    "sha256": "699f6eceba314da0a26016864ae2242a5e713394a398baecb0ad17be8a32fdaf",
+    "bytes": 9474,
+    "sha256": "2e5d400225d6d13cb5ba27d12d0c1f607c1e68358a78d8ae25bb9c747fb09e9d",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -784,38 +784,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-8e024047c2d0-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7518,
-    "sha256": "8c7f55331a16fd8aa237a94ebdc6083ad5eba0fdac6da2cf30eb17403bda1a16",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-8e024047c2d0-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7533,
-    "sha256": "f984d9b724387326808ad980949d0d78d6843a73db24126d1a5bf52a6013cded",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-b50064f159e7-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7809,
-    "sha256": "86d28ea33f82d7b0c1535a26fd219195a690a55a0502adaab7135cb1a69deccf",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-b50064f159e7-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7812,
-    "sha256": "d7c2f25fa727b22e2ac9ca62827eeb78e71e7d174645bc935fbaa1cd7d28efb2",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/elliptical-1.svg",
     "role": "exercise-phase",
     "bytes": 26546,
@@ -880,18 +848,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0082-relaxation.svg",
+    "file": "exercise-contours/ek-0082-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 24934,
-    "sha256": "241240d97ea6e30a6a03be575b62c39f3f6e6bcf8032341cbe047395bd33de1c",
+    "bytes": 12517,
+    "sha256": "bff05db0418e6839b162bf40064f790947b8cab188e58e5b52ae6910ceea401f",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0082-tension.svg",
+    "file": "exercise-contours/ek-0082-tension.svg",
     "role": "exercise-phase",
-    "bytes": 23456,
-    "sha256": "8d77a9fcd21bf4f3378bcb9c3d71b6d8fc0e1e6565dc80edd7d8ac17229a5d63",
+    "bytes": 11748,
+    "sha256": "bd9a0a2a5c7e25c6f11b9dc2f881df2fe609e1f169f47f451026ef911db2383a",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -912,22 +880,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-f64effeba31f-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7675,
-    "sha256": "de4c1c7659801b139d397a3bc9bc8f462aa2433cc1fe934c40812faea0f52b0c",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-f64effeba31f-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7621,
-    "sha256": "e2bf94f414861f5a8f2054bdec91cbcccbed2ab669b20bab0288586d37cd2966",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/decline-dumbbell-press-1.svg",
     "role": "exercise-phase",
     "bytes": 17148,
@@ -940,38 +892,6 @@
     "role": "exercise-phase",
     "bytes": 27837,
     "sha256": "c6c2eaf5f0a3748c4057e46840aed4f89fb37759a03eaa3f2a8fff15248e590a",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-79ed2c53b0eb-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7962,
-    "sha256": "f493416f75170cde5fb39f8680306e853f111be2e2d59a636a1e389ede9edf8a",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-79ed2c53b0eb-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7908,
-    "sha256": "bd36d328f516127ab60b0c47610e8a33ab745d3fb9ac0498647c9cab7e8fb22c",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-6000c27811b7-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7947,
-    "sha256": "4300ab7ee95e322f7bb8714c9b908504c7fdc0abfbf2101d4546a23185240852",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-6000c27811b7-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7893,
-    "sha256": "da3142fb184304c7fbbebcf8731f34395ed9672a20be6eaaf1c2e05481f71961",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -992,50 +912,34 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0062-relaxation.svg",
+    "file": "exercise-contours/ek-0062-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 22108,
-    "sha256": "cb42aefc31239f1e14250f3a1d06803af96be7193af26f1d16568c3f24baa9b2",
+    "bytes": 11119,
+    "sha256": "b17edcf0ffcd8298c505bc3c6d5dda997e31675dfeb9d1ca8cdee130cee0d34c",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0062-tension.svg",
+    "file": "exercise-contours/ek-0062-tension.svg",
     "role": "exercise-phase",
-    "bytes": 22097,
-    "sha256": "2fcbf9e67d9b02ab6592089d5fceff1f9bc5de04c0e1cafb6b355498665b10e8",
+    "bytes": 11091,
+    "sha256": "e2a447554e6a51fbd75bd027489c1cf7cd8f90681c1274d7036fe977a4a584e7",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0053-relaxation.svg",
+    "file": "exercise-contours/ek-0053-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 21233,
-    "sha256": "8d0440c50726224b79caddbb5e6955885de3568115760780853ed107661bc6c1",
+    "bytes": 10639,
+    "sha256": "88a314393df0643056ab85ee58e9dbe57efb4b8fa3fea6fbc6298b3e951da1a9",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0053-tension.svg",
+    "file": "exercise-contours/ek-0053-tension.svg",
     "role": "exercise-phase",
-    "bytes": 23652,
-    "sha256": "1a27a01be90b10f527891b7e7946dc49231736ec61f2e65bc0901ef019393564",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-a10971e9e07c-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7741,
-    "sha256": "5151659fba46f3a51956ae706d1fcc00b90bac1a37d73f095b8e2f71586fdd83",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-a10971e9e07c-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7722,
-    "sha256": "663f6b29fdb6ff50e527f89d3828b4c8f68443e6c8f0cad66bcccff31edb18cd",
+    "bytes": 11844,
+    "sha256": "9cc6279051ef9d373dd8355a73783cf1f946428dc02eafb068ce5a1ce31d8e31",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -1120,66 +1024,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0046-relaxation.svg",
+    "file": "exercise-contours/ek-0046-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 19410,
-    "sha256": "299130a1fd85ef1bdaec49433647928238152b2a94367b09fd2b7b46e2dcbf24",
+    "bytes": 9733,
+    "sha256": "f99e04ad5544885c8a3c1684432a82b68b308b76f112a61bb93ccfcb13b58b80",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0046-tension.svg",
+    "file": "exercise-contours/ek-0046-tension.svg",
     "role": "exercise-phase",
-    "bytes": 20712,
-    "sha256": "78f832a8103cf2429e1234d7f9ef14ee2da3557df170835aa585e3a5617a5788",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-af13103021dc-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7553,
-    "sha256": "7e3844a9750ca1c2fa070c9d97e18f7317045b815c82f5f08fbdd9702c1f7400",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-af13103021dc-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7543,
-    "sha256": "40e9754761e66924f17d6f2b71a1d274e739f75bee207a281fbd7ed29829e4fb",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-0c925ab4fc41-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7818,
-    "sha256": "8887cf7ed004cc521365c8abd88c9c38c3a0e72720f8dc5b08018703f908bf0b",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-0c925ab4fc41-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7818,
-    "sha256": "8887cf7ed004cc521365c8abd88c9c38c3a0e72720f8dc5b08018703f908bf0b",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-45ae1d251d3a-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7459,
-    "sha256": "f49ec36b11d2e6d898884e1fc55e7c88e51b3cc6eabca0a1ffc885be9f60336a",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-45ae1d251d3a-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7440,
-    "sha256": "5ee8f785769504830db4b7a81bfa936ce2056e89b5176269d59ed1f1c43d96b9",
+    "bytes": 10414,
+    "sha256": "480d09310eda8072955f8edb2e75a5de080b4f226c092107780b4ad37c205814",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -1216,34 +1072,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0091-relaxation.svg",
+    "file": "exercise-contours/ek-0091-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 19007,
-    "sha256": "38ef2a71cce0e0f8df62e8821777a793dfdef7a4a16bdc7237e73b392f051803",
+    "bytes": 9542,
+    "sha256": "c1cffb4842cce0391f16711038b9e8c39779263a5fe028d3d5a67b03e99208ed",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0091-tension.svg",
+    "file": "exercise-contours/ek-0091-tension.svg",
     "role": "exercise-phase",
-    "bytes": 18826,
-    "sha256": "46d6c03972f2f585248234606d85aae069d0f743e710a002fda93f060fcb4252",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-e38b4e1d0516-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7531,
-    "sha256": "5334982e6f33022a681107ea33b234e9bbfc86aaa7883361b9b4a9096045b470",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-e38b4e1d0516-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7531,
-    "sha256": "5334982e6f33022a681107ea33b234e9bbfc86aaa7883361b9b4a9096045b470",
+    "bytes": 9463,
+    "sha256": "0fc9a33a2937f57ffc5aff94c3e4282aa3fea49d90a144558c2a63df4b93df35",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -1264,22 +1104,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-a86ce1964bcc-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7704,
-    "sha256": "233da30e03d8b0b94bc36b9e20f0fd53283d4692fed8b5fc6ea57a5041c35ebd",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-a86ce1964bcc-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7704,
-    "sha256": "233da30e03d8b0b94bc36b9e20f0fd53283d4692fed8b5fc6ea57a5041c35ebd",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/assisted-pull-up-1.svg",
     "role": "exercise-phase",
     "bytes": 27405,
@@ -1296,18 +1120,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0093-relaxation.svg",
+    "file": "exercise-contours/ek-0093-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 19031,
-    "sha256": "7aba660fb07a6be9a4c8b5cc6f8516b8f2354d2c3b16f35af2aca98456ab3615",
+    "bytes": 9600,
+    "sha256": "986ae890fe110b46f5951827216619f65da6b0a8f9a563499cae79b1d8b0327e",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0093-tension.svg",
+    "file": "exercise-contours/ek-0093-tension.svg",
     "role": "exercise-phase",
-    "bytes": 17396,
-    "sha256": "7120531ab1c3e98f0fd8d5731baa3cf281efc3b83ecaadc1fae8ab95b6cb8820",
+    "bytes": 8788,
+    "sha256": "1d6773dd0fecca620977361e55ae342169e884c956f09b0d1b1bb5adf4ff1df6",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -1328,54 +1152,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-f1dda4b08d3b-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7764,
-    "sha256": "d93645bab05fdc337d5b3411f53ad888dac57a93afe4638866c21ad6b829b252",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-f1dda4b08d3b-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7762,
-    "sha256": "240980d5934b225731ec03ae30d9f7274b36459068e5f5335b6c439ae8cda9a1",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-3ce513d8d970-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7783,
-    "sha256": "134a7c1b0b51955612d2355dc08b7ca390f6629e35fdd7c1a41687e57de36918",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-3ce513d8d970-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7771,
-    "sha256": "31fda297a01a91eb862632911493fad759831a683abcddbf2498a22816223709",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-ccc16c081d81-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7781,
-    "sha256": "799913b0b28a70b2592d63d4100179c7253e4e16f8b8b7a1bd176d0d4f728f3b",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-ccc16c081d81-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7769,
-    "sha256": "73e54a49f936decb2c5d358769483ecd64914fbca5071b8d82c5dab56fb9c68e",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/single-arm-cable-row-1.svg",
     "role": "exercise-phase",
     "bytes": 29244,
@@ -1392,18 +1168,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0026-relaxation.svg",
+    "file": "exercise-contours/ek-0026-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 20339,
-    "sha256": "741cb15f2e05d6efe76477c8cde67418a05df89a94255e159a3e06bae7858a25",
+    "bytes": 10175,
+    "sha256": "5fc1b9d11e992c1a9c6ceda61c52d4c5b89fd98c4140f660b176822f6c7a26d2",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0026-tension.svg",
+    "file": "exercise-contours/ek-0026-tension.svg",
     "role": "exercise-phase",
-    "bytes": 19930,
-    "sha256": "265a29226f3b6ace6236a0a2a053d7c68f27e42c20f799824e3ebff36574cadd",
+    "bytes": 10042,
+    "sha256": "2ca4e4e3d2f1e8ed32bca983aa6c96cd02e655f56986d8777ce3223752478168",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -1424,22 +1200,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-af7bd4ddf6c6-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7770,
-    "sha256": "6004e9d90bcbdef5b221070dca0da279d4febdfe546c550996a89f32e2fb825d",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-af7bd4ddf6c6-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7758,
-    "sha256": "a32aa71bd8cf057462bcb9c845424acb96910a2344223f99ccee5965f1c03118",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/dumbbell-bent-over-row-1.svg",
     "role": "exercise-phase",
     "bytes": 17348,
@@ -1452,22 +1212,6 @@
     "role": "exercise-phase",
     "bytes": 22883,
     "sha256": "f980052512d4e710c6426cf524d563c100504a3c40af997bc1724e875c2f9849",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-c1f243aa50a5-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7518,
-    "sha256": "3e8e869692c5d2fb5aec93816efa03f9a5c63fd72aece0e798e1e0072a8d60cf",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-c1f243aa50a5-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7511,
-    "sha256": "1cd8effcefd03449f913f1bab0571ef24aa54f570834b2125fe2890d6f861798",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -1500,22 +1244,6 @@
     "role": "exercise-phase",
     "bytes": 11278,
     "sha256": "b1957cfc0c8cc21b41a827891665e8e0e6076084bf30efac6b906b5df8263d9c",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-8f480b55cf7e-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7784,
-    "sha256": "8dbcbc50540ac1026db51086feea6e64806a220ec9a3c624b22634df3a1d250e",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-8f480b55cf7e-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7788,
-    "sha256": "76e573a8d13aaed5c6e104d44e22947c8c17f8878a8c4c837960a5dd1e590a65",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -1584,18 +1312,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0041-relaxation.svg",
+    "file": "exercise-contours/ek-0041-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 27753,
-    "sha256": "0006f8dc9ba5a7032d5da5379e921b3903839d05bd4e1a35f531aa2777d86647",
+    "bytes": 13942,
+    "sha256": "97aea8fb0d43d8b7cd0ff57828fa004e9f7c5874df9be6bda1c94e6c43eac2f1",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0041-tension.svg",
+    "file": "exercise-contours/ek-0041-tension.svg",
     "role": "exercise-phase",
-    "bytes": 27886,
-    "sha256": "7982efc9c2fc6b140155a91479631c664c265df25626d092290d6fc47fdbf53d",
+    "bytes": 13975,
+    "sha256": "76072f04664bce65d354edf9c732bed4c1f691a0d366441ded47b0b6da42a19c",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -1616,66 +1344,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-ac8588a62e0f-0.svg",
+    "file": "exercise-contours/ek-0004-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 7754,
-    "sha256": "ea2cb4487f3d47ac07bb6ae5719c94b3013966eb308d7735cd4d0ce85a521ea1",
+    "bytes": 11823,
+    "sha256": "123dd65b924812a2ca09669b77cf3f623f25a46449ee979385f27fac69141459",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-ac8588a62e0f-1.svg",
+    "file": "exercise-contours/ek-0004-tension.svg",
     "role": "exercise-phase",
-    "bytes": 7736,
-    "sha256": "b8802a5ce146a4646fe3eb9ee23decdfd714754514b5ee24cf39d7babbd9cd81",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0004-relaxation.svg",
-    "role": "exercise-phase",
-    "bytes": 23570,
-    "sha256": "78972f759d96b3571e3036a0769e97c1fe8eacc91499e99ee2bdf05c8901cb8b",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0004-tension.svg",
-    "role": "exercise-phase",
-    "bytes": 24438,
-    "sha256": "b01fc8588e54971d6fd6c0a3abbc06d553216f46dd754b16dc4a98208d3c7373",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-251903140846-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7414,
-    "sha256": "6db7d28dea77562338e1550292309b4dcf88d4d0800c9bd0e42ba1c2cd9a6a55",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-251903140846-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7828,
-    "sha256": "9742c208004e65db7c76b416e74ea337b4e9e0171169fc3c131a28486e6d782e",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/standing-dumbbell-press-1.svg",
-    "role": "exercise-phase",
-    "bytes": 18052,
-    "sha256": "d9dda10b526373f49b1a550492f0554834c16d641c3aff5b6ef5bb666f9a06b8",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/standing-dumbbell-press-2.svg",
-    "role": "exercise-phase",
-    "bytes": 34096,
-    "sha256": "6eb4d9058f5282163f87a1dc8090d441d2dfc458d7f94b101ee59f4c20fc02b0",
+    "bytes": 12251,
+    "sha256": "ba146fa32b04541eec03821b8cf763ea5b8a33e04120a58b3393a2618515c291",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -1696,54 +1376,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-d2560b198886-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7562,
-    "sha256": "c968a6bb54a65661731defe6cfb16676ca30f0e540e6b27e3f1835c4fab466a4",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-d2560b198886-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7765,
-    "sha256": "68d6ffc7e38d1140972e4402b16e957cdd264341ab64caf02acaf9449a5a45bd",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-91ed1f67533d-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7439,
-    "sha256": "8c464d92c353c0fecd25bb239d67b7e2ac36d311136c4ece89009238d5907051",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-91ed1f67533d-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7846,
-    "sha256": "5b0acdb8abbc383c84e2e0aab9311c3f64681d562e0ade4487248b40a435db3b",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0038-relaxation.svg",
-    "role": "exercise-phase",
-    "bytes": 17985,
-    "sha256": "2de61c5f7ad20e6f7621ec9a70528fda5f9622831555f671cca8b8ecd32c7a72",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0038-tension.svg",
-    "role": "exercise-phase",
-    "bytes": 18814,
-    "sha256": "ee3c48ee639abe439ef7d000d11e7f55c24b9cc0cf428940752d12136b36caf5",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/machine-shoulder-press-1.svg",
     "role": "exercise-phase",
     "bytes": 40600,
@@ -1760,66 +1392,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-45d522eb89a3-0.svg",
+    "file": "exercise-contours/ek-0037-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 7565,
-    "sha256": "b1c90fe00a15741c3b531910890776f07f6ff306c33acf0b4b1a819e87f1c197",
+    "bytes": 9128,
+    "sha256": "aef3563deec56761a17c19b5ecf4aa887e49d6052531a858bbc4a91576d401ef",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-45d522eb89a3-1.svg",
+    "file": "exercise-contours/ek-0037-tension.svg",
     "role": "exercise-phase",
-    "bytes": 7972,
-    "sha256": "4a70b1ec777e031b76283c9e10b379d2a292102f6765376fa9416340bd19a0d7",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-5b36c7313431-0.svg",
-    "role": "exercise-phase",
-    "bytes": 8052,
-    "sha256": "27fbcb316f0efb1ccaa2453771ee48fa70a8bc493bcbb328a4351d91bca90acf",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-5b36c7313431-1.svg",
-    "role": "exercise-phase",
-    "bytes": 8047,
-    "sha256": "0551677c3ca7e62f549cf828934c397bd7aa5651b72d0cf59fe98fceedc8e6ab",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0037-relaxation.svg",
-    "role": "exercise-phase",
-    "bytes": 18103,
-    "sha256": "63fb1b16a72dcb83b5337a6b2d9885f48ec6f5095a90621bebf4b10919827262",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0037-tension.svg",
-    "role": "exercise-phase",
-    "bytes": 18112,
-    "sha256": "905818fab5e937a1bb9eb395c543477d6fa97d8d1988dc2b4b7e30156b55501d",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-de3a02284a51-0.svg",
-    "role": "exercise-phase",
-    "bytes": 8028,
-    "sha256": "16cbd7639b4a605cad95be29105eb36374cca574fed70aa3a82e9024c1bd4046",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-de3a02284a51-1.svg",
-    "role": "exercise-phase",
-    "bytes": 8020,
-    "sha256": "9c73596a61f4a2eebf853fd7e3a6178de1ab4c8b22a1e40adbaeeee5e0a87bbe",
+    "bytes": 9080,
+    "sha256": "9a8fca5c66fb94a411675e79bfe61a07224f721e6f610b86ecbff8f643c024fd",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -1840,22 +1424,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-2ee91dfdf02c-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7641,
-    "sha256": "3ba0aa8ca063a51cf4f460d99c60984f076817570fea4eff6c39a14da9a742da",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-2ee91dfdf02c-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7636,
-    "sha256": "ea7c76e9bc430e4f2648ec64c245902818a8d5dd6fd997fdd83616f3e17e6bd0",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/front-raise-1.svg",
     "role": "exercise-phase",
     "bytes": 15274,
@@ -1868,22 +1436,6 @@
     "role": "exercise-phase",
     "bytes": 15480,
     "sha256": "0adeb78eda7cc1ff1d0540a61a8d3abb5735d9395bc194251f130d7374c870a8",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0007-0.png",
-    "role": "exercise-phase",
-    "bytes": 63942,
-    "sha256": "baa2dc5c1b0127b738306e3b27bebc90527437584a6d52b5d267c44ed72b1c6f",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0007-1.png",
-    "role": "exercise-phase",
-    "bytes": 67938,
-    "sha256": "58fd19a2306347b0e70f91414c26b1275611f1867a76dae3462bef96200758f3",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -1968,98 +1520,34 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0016-relaxation.svg",
+    "file": "exercise-contours/ek-0016-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 19042,
-    "sha256": "013d792d17dad3f6fb4c5e422338d81b596428f07b634e069dfce0aa13ba4c59",
+    "bytes": 9582,
+    "sha256": "08168cfce3b7292e57445986a478f6ec856237c5ff002bcefca1a7b217043521",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0016-tension.svg",
+    "file": "exercise-contours/ek-0016-tension.svg",
     "role": "exercise-phase",
-    "bytes": 19944,
-    "sha256": "8ae0172fee2d2275b864de047f516ef9fe02617ba877897d367f12dac93049a7",
+    "bytes": 10039,
+    "sha256": "384e349891de524c14cc57a04ce60773378a33f906aba5bd0ff577dbcf380038",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0015-relaxation.svg",
+    "file": "exercise-contours/ek-0015-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 20780,
-    "sha256": "025c2caf0ee5e4f024d17c348079bd9e329f404f6a558655b9d2f177d46704ab",
+    "bytes": 10412,
+    "sha256": "e1c9bcca78fbd92941405ac9e1124a24dec194fc6f08cfe3f50a009703a37fa2",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0015-tension.svg",
+    "file": "exercise-contours/ek-0015-tension.svg",
     "role": "exercise-phase",
-    "bytes": 22169,
-    "sha256": "4685a96fd42bb78eed52b17f57affe36ec38830c21d26cb4f0c312664acebb74",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-805f9baec265-0.svg",
-    "role": "exercise-phase",
-    "bytes": 8091,
-    "sha256": "d946981bf4d467f8cc3e546047365c62ef11ad410ce8535c456005c6f5672ef9",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-805f9baec265-1.svg",
-    "role": "exercise-phase",
-    "bytes": 8073,
-    "sha256": "f2cdf5b7f51ad69b0a2d296bddc2f67185b1992d644923a21a85dc02777f5c21",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-dd02f298bc3c-0.svg",
-    "role": "exercise-phase",
-    "bytes": 8091,
-    "sha256": "8006cdae313af9bf9aae4836ffd498f0886d1b4dd37c2f5c518ef85edd9d9b49",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-dd02f298bc3c-1.svg",
-    "role": "exercise-phase",
-    "bytes": 8075,
-    "sha256": "8a7c96746b0aaa28b4ed049d219a98f29e95fc744ed94dcdc84290ac5d85d107",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-c1259fd4ab4c-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7742,
-    "sha256": "357d93466c766282f46eb07f53db9f33a027ee5d3fc5e728befabb863b9a2ba7",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-c1259fd4ab4c-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7735,
-    "sha256": "a890c161f3dddf72942246094a612d864c373b98af31516b39baf8154637debf",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-bbb59ba30502-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7657,
-    "sha256": "81df6f3898b99f654d062e4fd211b76211c6bcb55e5dce50fe19a0a4f5734fd9",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-bbb59ba30502-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7650,
-    "sha256": "8943c37eb6beba7568e3f017e19dab7dda07631bac8abe40b1306322aa4b0f12",
+    "bytes": 11126,
+    "sha256": "c3bf50e3d780a517cba6a21779cfe866a128a51a9b1700c9c29a704f3c51b58a",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -2096,66 +1584,50 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0243-relaxation.svg",
+    "file": "exercise-contours/ek-0243-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 23499,
-    "sha256": "b1019970ad2df88274e5dbc4d0f340b175432f66db5aa2557eb6a37bf7fb256e",
+    "bytes": 11819,
+    "sha256": "833791513e7e91449753304df900e27d8ec890db5db7f390a0aa495528b622f7",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0243-tension.svg",
+    "file": "exercise-contours/ek-0243-tension.svg",
     "role": "exercise-phase",
-    "bytes": 21553,
-    "sha256": "88f6ecd12e1a696dfbe4c88414245c81ee65a22816a9386aef627ede20cc2f4e",
+    "bytes": 10809,
+    "sha256": "a9b6584f5f4566ceefc3fc76a301ede8f095b33bd0a77587901fd4cc723ac62c",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0223-relaxation.svg",
+    "file": "exercise-contours/ek-0223-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 18584,
-    "sha256": "2c26c95957746e2f2e072b255186eb1e8b63372fac2d3f94c5dbbe8f2b5a421e",
+    "bytes": 9350,
+    "sha256": "47fbc8526bdc03ae131585fbff103aa1e6e89d5744c8528ccec567fec6bc367c",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0223-tension.svg",
+    "file": "exercise-contours/ek-0223-tension.svg",
     "role": "exercise-phase",
-    "bytes": 21441,
-    "sha256": "0325e1568821981922b3969f1ec170cf7a8eaf3dab987a994904c396efabdaf4",
+    "bytes": 10790,
+    "sha256": "4b13d552d50932df658bb24bba2dbc635ab833e817aed736ff1f396c8e0c14b9",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-b73d59dff887-0.svg",
+    "file": "exercise-contours/ek-0221-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 8059,
-    "sha256": "eced05a199d8e6d910633cca5c56d435023f1bc2452ea512b97c7b5e13ceacfc",
+    "bytes": 9024,
+    "sha256": "d932f4b418612767c021028cbcbaa58f49a6119ae49373d05b9a184e475ce820",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-b73d59dff887-1.svg",
+    "file": "exercise-contours/ek-0221-tension.svg",
     "role": "exercise-phase",
-    "bytes": 8052,
-    "sha256": "82acb78bf5fe8b50e1f1bed15857f8eef0932cc8fe3f5d618c3f383276b35e5c",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0221-relaxation.svg",
-    "role": "exercise-phase",
-    "bytes": 17917,
-    "sha256": "9a4ecebd725d9838a7e952bbe1971aa12d90782cf3f462d0f3cfd05f56745d17",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0221-tension.svg",
-    "role": "exercise-phase",
-    "bytes": 19929,
-    "sha256": "337104856b69eaf822a71bfe82a6576003140028bd64d32ac6094293abf093dc",
+    "bytes": 10049,
+    "sha256": "47ec2cb0c945fa23c8f38203bc9d249d8445615ef604a6f7bd2fda58c5b15617",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -2176,34 +1648,34 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0237-relaxation.svg",
+    "file": "exercise-contours/ek-0237-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 15622,
-    "sha256": "16bb19fe73848ae760803e84bb65845683cc5b9f360d9e832a928fe798a3595b",
+    "bytes": 7848,
+    "sha256": "3dd32c66ed89a4e1ddea860d342b3f1467d2cbe5293b31f4ec01e0af7b68a915",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0237-tension.svg",
+    "file": "exercise-contours/ek-0237-tension.svg",
     "role": "exercise-phase",
-    "bytes": 16929,
-    "sha256": "2accabe3fd84c606213ab687d48a747efd69a9f1953d318b244704431dbd3ed2",
+    "bytes": 8510,
+    "sha256": "dc044e31bf6f00ab18b36212150e913c5a0f3c3d664902d8603ed5f226f8c153",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0253-relaxation.svg",
+    "file": "exercise-contours/ek-0253-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 31255,
-    "sha256": "958e6600aa9285da197adb2d496ade3e6df3ea7505cb3cb97d3186f1116b02bf",
+    "bytes": 15670,
+    "sha256": "df7ebadb1c78296238dcfbb69acfe904082b56f89b543c3c1ac8ae37b2aa4071",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0253-tension.svg",
+    "file": "exercise-contours/ek-0253-tension.svg",
     "role": "exercise-phase",
-    "bytes": 28855,
-    "sha256": "b463fabdffa073aa0cde4598ae5f66054176670fcab9a7cd6d1856c7aed6d650",
+    "bytes": 14423,
+    "sha256": "33f9d08d09ff2b3836b5a5192883c1eede17663483ceb50697db758b6c52ea6a",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -2224,34 +1696,34 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0229-relaxation.svg",
+    "file": "exercise-contours/ek-0229-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 20054,
-    "sha256": "e91a259a1e6d1e04c3069c3ead3654660db98d6c88a0d23d4107933487819470",
+    "bytes": 10121,
+    "sha256": "cd597b3a28ceae57139ca2482f06f1a2dba68846308c6ffb08d090895ee4c88d",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0229-tension.svg",
+    "file": "exercise-contours/ek-0229-tension.svg",
     "role": "exercise-phase",
-    "bytes": 17532,
-    "sha256": "f8c01a2cd84df9cd197a2f04598bf0e950b825c75c7626bb64db5c83d00f1272",
+    "bytes": 8848,
+    "sha256": "d19638bfe09e39ae14a9f49aef22b31554b0b6c76c4b8180061ead8edd949915",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0247-relaxation.svg",
+    "file": "exercise-contours/ek-0247-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 21598,
-    "sha256": "4d0fc10596863c76b2d19ee016504d632d0870ec92eb18fcc7399fbc2aec3e49",
+    "bytes": 10862,
+    "sha256": "4391b0592a9ab6bcbe8dc0389681ebbb78584fe061ddffeccd026c098a9b1162",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0247-tension.svg",
+    "file": "exercise-contours/ek-0247-tension.svg",
     "role": "exercise-phase",
-    "bytes": 23338,
-    "sha256": "df70b76680c450764e935a7853f67ab9600d12dae17f7226232831b6701b26a7",
+    "bytes": 11726,
+    "sha256": "75e1606d82ce7a24634163a7f4f08e3bdd4c3427b8ac157c82f2758a3b8d5b15",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -2272,34 +1744,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0261-relaxation.svg",
+    "file": "exercise-contours/ek-0261-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 22678,
-    "sha256": "fe5d5b3926778929eb2f91fda70cbd2e72a60c8430870e189f136ed1b73fcd86",
+    "bytes": 11382,
+    "sha256": "063dcd98e87f0626467402644d94cfdf59e591654f6870e0095ba017290eab97",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0261-tension.svg",
+    "file": "exercise-contours/ek-0261-tension.svg",
     "role": "exercise-phase",
-    "bytes": 23367,
-    "sha256": "d1214307e94f76c1d6a1ab6e5e4be247852e816d476a7a100d1b80357d0e0551",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/spider-curl-1.svg",
-    "role": "exercise-phase",
-    "bytes": 15768,
-    "sha256": "653a626e24b549cc87146fc51b7b147c21d33b01ebefafb2bc1474e7c7f223a8",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/spider-curl-2.svg",
-    "role": "exercise-phase",
-    "bytes": 17931,
-    "sha256": "808ea9a4398f1341142c6b744a9e0b3452edfeb44c1394065075759f5f520578",
+    "bytes": 11710,
+    "sha256": "64472c54405fc6e815f77a7dc02eeccc67aedc8219aff56ae3b4d5308d8f0bcc",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -2320,34 +1776,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0251-relaxation.svg",
+    "file": "exercise-contours/ek-0251-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 21672,
-    "sha256": "b06e39bd8264d7f5a82542b2efecef21406260871d84d64771ce510d2b418aa5",
+    "bytes": 10906,
+    "sha256": "f07a2d159c0e20862398d568fc68512dcc60a89f4a9e759f668e0dd2064ae067",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0251-tension.svg",
+    "file": "exercise-contours/ek-0251-tension.svg",
     "role": "exercise-phase",
-    "bytes": 19561,
-    "sha256": "404408c5828d77a5ced0d4a9092936233fdb0ba8db27075f479988e830f750f7",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-b0a2ec35470d-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7449,
-    "sha256": "2b499c4d12a873a32920f7c8989cc58bdc0dbfda76dbb1be8b2d3d2095f58498",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-b0a2ec35470d-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7442,
-    "sha256": "ab36822b52ad8725e9b6448da0898e7b0a099c75832a02a5f60cb417ecbd673d",
+    "bytes": 9827,
+    "sha256": "d981c49c792f84559e5392b112b61197640348e7b5a344f4112e446af2438e97",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -2400,34 +1840,34 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0189-relaxation.svg",
+    "file": "exercise-contours/ek-0189-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 18116,
-    "sha256": "df4983223ce63c393070ba8bb475d299d35d6132ee51ee66c73f06c850ce1d93",
+    "bytes": 9109,
+    "sha256": "59b8b2ded950c8e820c20eb8f0d67eedca4ff54a5b49834dae265b46ca64478a",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0189-tension.svg",
+    "file": "exercise-contours/ek-0189-tension.svg",
     "role": "exercise-phase",
-    "bytes": 20246,
-    "sha256": "1fc18819ec18b266e720b381545ce5288adc9c538e75757da02573e25f490b91",
+    "bytes": 10136,
+    "sha256": "61a012c3888b75f6d4af45503762491f9255b514d014a45fb47066fb9fd54c4e",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0166-relaxation.svg",
+    "file": "exercise-contours/ek-0166-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 17727,
-    "sha256": "0ef14833c0a6cfaee00fb4ecbe1e5a3b13483fe70226e1b46b7ce2072135c538",
+    "bytes": 8904,
+    "sha256": "9417ca9c2cd64a1c963267ef4d5f3e5bb55afe2797df62087711af623e11bd6b",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0166-tension.svg",
+    "file": "exercise-contours/ek-0166-tension.svg",
     "role": "exercise-phase",
-    "bytes": 20472,
-    "sha256": "fc9b8d3940d74d0a06952f0adb00c3feb2517ff588f4cec73a99c70e2bca475b",
+    "bytes": 10291,
+    "sha256": "8d173d300c86b72e411ebc5f710a6bfacf703aa89e59ee4245864a4fd88c4a80",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -2512,50 +1952,34 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0210-relaxation.svg",
+    "file": "exercise-contours/ek-0210-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 20047,
-    "sha256": "f5ff2d68296e7523bdc02ce4d84591c1f979b836f620c0378edecc93567f69fe",
+    "bytes": 10056,
+    "sha256": "5578999bebc028cc55ca6480b0e00d1a82f41e767069cec9ab12f30e7301203c",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0210-tension.svg",
+    "file": "exercise-contours/ek-0210-tension.svg",
     "role": "exercise-phase",
-    "bytes": 21549,
-    "sha256": "69e16c084f17045b8ac12a07c8396bab0437466d7bb7c810c82854ce16899822",
+    "bytes": 10765,
+    "sha256": "625c9326e5919cba527e58d3c5de38b09ecfa73b088f78e729b9d7cc41e5963c",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-ab0a902008b6-0.svg",
+    "file": "exercise-contours/ek-0175-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 7626,
-    "sha256": "8f618884efab69d461694976ebbf4ec0bfd7f9932b4475583601cd56470d22c5",
+    "bytes": 10256,
+    "sha256": "6b664b631a5c5d9984ca08389c660cbb092fb992233da6a730000010df65bb6f",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-ab0a902008b6-1.svg",
+    "file": "exercise-contours/ek-0175-tension.svg",
     "role": "exercise-phase",
-    "bytes": 7645,
-    "sha256": "fe26c8d5525132d64a4f843e3bd10f727a0fc8e6d541b4ba4ed55cd87bf57ae8",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0175-relaxation.svg",
-    "role": "exercise-phase",
-    "bytes": 20504,
-    "sha256": "d4e1405d04cab74cb3d497ac4f05bf11446d8c443d871386be192a75adaae4f2",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0175-tension.svg",
-    "role": "exercise-phase",
-    "bytes": 21597,
-    "sha256": "ecb216538b7fd1d8382c71828bf9084514113ebc423e18b265f9adcecc7cf59e",
+    "bytes": 10825,
+    "sha256": "d86b0a4f0d9a94249c217f891309742463d154b8de279d44e878df7154eeb4a6",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -2608,22 +2032,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-2c00b89a579b-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7862,
-    "sha256": "113ecaa885f910d0824488b38a7fc49d93dedfeb3f2784413aba18baa70f89e9",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-2c00b89a579b-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7842,
-    "sha256": "d56754427f847ee4cd46090214067f441e8b609c6cff893601286bf7d634c330",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/bodyweight-squat-1.svg",
     "role": "exercise-phase",
     "bytes": 16296,
@@ -2640,82 +2048,82 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0146-relaxation.svg",
+    "file": "exercise-contours/ek-0146-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 19325,
-    "sha256": "f8bc796fcb76bd379d81a1a0d279dd298f4bc3a041491a1e0bda58a980bc84ee",
+    "bytes": 9739,
+    "sha256": "2f82b2f08219ecfabf4ffc09abcc48af7dbf904ce2f909f22ede8de855d3ba43",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0146-tension.svg",
+    "file": "exercise-contours/ek-0146-tension.svg",
     "role": "exercise-phase",
-    "bytes": 21219,
-    "sha256": "55fdff081929d98734f73dd9ebb130e7364105169fec4bcd5015c9ba91b289f9",
+    "bytes": 10656,
+    "sha256": "dd273b2b32e87e83c5c1928ff9878c6dce14b733e204897b3964b773bac31008",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0160-relaxation.svg",
+    "file": "exercise-contours/ek-0160-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 21973,
-    "sha256": "b4087bfc54c8b6d46d5c8d2c41b12e6c0bf75ce00adf7fcaa7d4d4f391310028",
+    "bytes": 11036,
+    "sha256": "a996b75d247067c227f774a7f8709d77d3bc7a15019e33da8195ef70cb3f8e60",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0160-tension.svg",
+    "file": "exercise-contours/ek-0160-tension.svg",
     "role": "exercise-phase",
-    "bytes": 26168,
-    "sha256": "4afd69ea53aa72061e99c18cb496b9d03550400cea2be74f7ef2a4cd0b280a9a",
+    "bytes": 13178,
+    "sha256": "03efa15083aa71191551e27e59be5591f5ab72ba97474ceb45196d4ce8bb83b4",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0133-relaxation.svg",
+    "file": "exercise-contours/ek-0133-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 23505,
-    "sha256": "705604db42e894ea1ef7b759d4d38d910d62dd8afb5b8a286c7e6ba0d1696fc1",
+    "bytes": 11807,
+    "sha256": "f58bb194fb8540cc55515f59e096ff9ca0acf321af646a936c72bed7aadc8ac6",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0133-tension.svg",
+    "file": "exercise-contours/ek-0133-tension.svg",
     "role": "exercise-phase",
-    "bytes": 24885,
-    "sha256": "132a8ea03bc8cafbd8dac5394b8837a5962852659bd4bae74f45a21d8511763f",
+    "bytes": 12476,
+    "sha256": "c3d1ef35a0ff27da2e6a4abbfaeaca4c8b7312c61b35ed734f2fef414a335cd9",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0161-relaxation.svg",
+    "file": "exercise-contours/ek-0161-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 19571,
-    "sha256": "eff808d80136c8dfdae73e3f9167b45d6171ca60300769aadbe49501601d414f",
+    "bytes": 9841,
+    "sha256": "625234b72602babe2597a5c7fd0257154076f8d90796ad79a15596811bb3e885",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0161-tension.svg",
+    "file": "exercise-contours/ek-0161-tension.svg",
     "role": "exercise-phase",
-    "bytes": 22529,
-    "sha256": "c5e853981296b9e46fdf15e80a77499aa72f78ae45fbed77711a820c5c267a94",
+    "bytes": 11373,
+    "sha256": "140494887208db70a65f36e25c847ba06fa141488bf441e1f62f72876ccb08c1",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0130-relaxation.svg",
+    "file": "exercise-contours/ek-0130-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 14652,
-    "sha256": "688721b14ec5a5f640cb05ec2fde35cb9b16de66804f6b0c63342e6201f60f39",
+    "bytes": 7388,
+    "sha256": "e117355d00553ac75e541d810a666556f3478154ce31b06dc69a6775ba588663",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0130-tension.svg",
+    "file": "exercise-contours/ek-0130-tension.svg",
     "role": "exercise-phase",
-    "bytes": 19939,
-    "sha256": "1f4e4239ab5481359ff043cbdd31bcce715c6341db171f131af12c7e0a2e956d",
+    "bytes": 10013,
+    "sha256": "ed33c4767cb1c94a160297bb0a568e5741a76b86d60c11a47c38993121778898",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -2736,98 +2144,34 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0125-relaxation.svg",
+    "file": "exercise-contours/ek-0125-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 19725,
-    "sha256": "fc668fb1ed11fad93e7b003fc87faa4277cdbc5ec76bb112373596f198625bab",
+    "bytes": 9912,
+    "sha256": "4ade4f3f59eea984c04721b6e3a6056fb5ef4c4244a18776b8235cc1cd7c560d",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0125-tension.svg",
+    "file": "exercise-contours/ek-0125-tension.svg",
     "role": "exercise-phase",
-    "bytes": 24490,
-    "sha256": "9d61ff8952f1007adb5808a2873b0821ca31c37ac41cc1dd9f2f7f6ec5dddb29",
+    "bytes": 12311,
+    "sha256": "236c26f24998f338f040d6cc9c7bbed3f23927e0430dad910cd0f4e5239df328",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0143-relaxation.svg",
+    "file": "exercise-contours/ek-0143-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 22044,
-    "sha256": "510dd64ff5baf02ab617e3fda728bd359a1bd865afe6c6a1606792ffc7954032",
+    "bytes": 11090,
+    "sha256": "ef06ad7e1e56bcfa2bf5fa97af1d77150790ef9764a65318c2adc34c6457622b",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0143-tension.svg",
+    "file": "exercise-contours/ek-0143-tension.svg",
     "role": "exercise-phase",
-    "bytes": 24470,
-    "sha256": "4ec09cc52f9df4e7b99827febf9ab63fd2835ed6f4049ea3290c050e710c3a7e",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-c412fcb18871-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7410,
-    "sha256": "0911c25aaeae9fc63b526457407f0835114107bd03c16e5d931953c9214becaa",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-c412fcb18871-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7584,
-    "sha256": "784d4e07eb714103ddabc2b01533598d5b094132b465dada4e354f6f7b87f5c4",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-bec259ce596c-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7529,
-    "sha256": "0132ee80c9df046fe10c1aa0cddf2a68e3c3241ece636fe2f8ea509d7c0e0f79",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-bec259ce596c-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7703,
-    "sha256": "4b6fcb054146b858e029080fd4883d5cff03b33f5c8591a7cce3215c045131eb",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-122932eeb67e-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7397,
-    "sha256": "310d5e0f1887f8b24d94a8b00804c7bf189d9d6a31d31edf8b5a44f88e83fb53",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-122932eeb67e-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7571,
-    "sha256": "1ee4176e9ce04cf36d352179d51be5be0d2e00b64eccffb19a232b3d84a49c4b",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-bed5c27a5278-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7746,
-    "sha256": "91a8b169345af17578b13ebe3f02a39fff96196ca2a7922fb7c4987f8228363b",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-bed5c27a5278-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7746,
-    "sha256": "b6e1b41b916d0f225dfbddb9e25c1bffc50c9c2bf90c849f8ea45201f7ed2770",
+    "bytes": 12318,
+    "sha256": "bc308cbe7ec2349ca1b8bee2d51942e26de05b2752519089dd1594bafd65989b",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -2848,18 +2192,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0114-relaxation.svg",
+    "file": "exercise-contours/ek-0114-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 26805,
-    "sha256": "86a1b47213f9ded109dd5adad174416646857b9af106d3ed984134687f32791f",
+    "bytes": 13461,
+    "sha256": "e4043191dadd71ae8247a0b8fda933ceba2e4208a5426606109dd22d3d9a67b1",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0114-tension.svg",
+    "file": "exercise-contours/ek-0114-tension.svg",
     "role": "exercise-phase",
-    "bytes": 28820,
-    "sha256": "3a4ba2d78da6b00fc12e01fa6600ed34f75145d311d752dcc0b9734772b6f567",
+    "bytes": 14510,
+    "sha256": "ceead1d8a4d1cddc2126cafeca449485dba90032a58a61c33db54bf656df280a",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -2880,18 +2224,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0132-relaxation.svg",
+    "file": "exercise-contours/ek-0132-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 19950,
-    "sha256": "690e73ca470eaf664ac194e48d2d704448dc4a09f963f3bdd1853b50025a4226",
+    "bytes": 10032,
+    "sha256": "1ce4c7012d65ea25b7551f9062c0b139e0739c1fe9cfbb3eb14744e2f7245619",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0132-tension.svg",
+    "file": "exercise-contours/ek-0132-tension.svg",
     "role": "exercise-phase",
-    "bytes": 18873,
-    "sha256": "78108be86c7c1721f8226c26f6a83660a7725ac2fa79751d6a7f9661e546e60e",
+    "bytes": 9489,
+    "sha256": "4882daa6214a2f22366ca018dbd6d8bb326f7ffaaef3666eef92220c9c088f73",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -2928,18 +2272,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0134-relaxation.svg",
+    "file": "exercise-contours/ek-0134-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 25381,
-    "sha256": "1b0e6ac73f47116f541e6f2015785059d55862384012c3fc39d28f06f8c15ea4",
+    "bytes": 12765,
+    "sha256": "895a54b6526675762152bceda811668766f6f791cd3416db9df78bc2c1a02c2e",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0134-tension.svg",
+    "file": "exercise-contours/ek-0134-tension.svg",
     "role": "exercise-phase",
-    "bytes": 26800,
-    "sha256": "869557872c961d5a23eb5faf24e9c5fadf5b735b9cf07308d0f3b68bdd7c1477",
+    "bytes": 13471,
+    "sha256": "77bb2176638c0b6203c8ffc817d456618aded6cd849873712cfe3a51f6613546",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -3056,38 +2400,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-e42701103935-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7790,
-    "sha256": "7332bd5df76610fa9d7da18aa1f3e356a51ae489796eeaf7e03dee1aa838c953",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-e42701103935-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7778,
-    "sha256": "feba2c2d13a18811016e6afdb3dc24771ecd4070c91fbe9eee5fcf92ef80391a",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-9865989df3a6-0.svg",
-    "role": "exercise-phase",
-    "bytes": 8014,
-    "sha256": "b75ccc85064b0b7814ccf5fd98d3b97489498f1ba409e491505f8e788dbdb95a",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-9865989df3a6-1.svg",
-    "role": "exercise-phase",
-    "bytes": 8002,
-    "sha256": "23fe8106c2120a4d542b5377295643f2cbfc3846eba483044a3b7195d04300f1",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/seated-leg-curl-1.svg",
     "role": "exercise-phase",
     "bytes": 15379,
@@ -3104,18 +2416,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0120-relaxation.svg",
+    "file": "exercise-contours/ek-0120-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 21955,
-    "sha256": "ce962694f0a29e01b710e73f0e9e0fdb9204a00e7031afd57f7310ea90617d4f",
+    "bytes": 10976,
+    "sha256": "cfb02b02a5ec6ae5f7175ecb3d5c81661eab366fdeb92ff4dd247d63d30d3f83",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0120-tension.svg",
+    "file": "exercise-contours/ek-0120-tension.svg",
     "role": "exercise-phase",
-    "bytes": 25116,
-    "sha256": "3d5df8a06a9d88b027bea2eb8eed0396243f8bcae36ed52c1876c89a3d403e73",
+    "bytes": 12544,
+    "sha256": "b48526d7361bd021162f956618bda42413866054643a2774ce760cf2b9c830d8",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -3136,38 +2448,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-eff944fcfbc3-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7706,
-    "sha256": "2edb14aa4a110cc7501ad67f16fed3ac2def7300ea41d8dec9cce05122aafd3e",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-eff944fcfbc3-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7698,
-    "sha256": "ed5e9cef7f01460642a11ed160b4e73ed8cf02efe7e1b9e09c942552570c3ba8",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-bea6a7bb6edf-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7865,
-    "sha256": "32ca0d8137a242443317e65a2ee2ff623c87b732197a938bbf7bd45b0a67261b",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-bea6a7bb6edf-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7857,
-    "sha256": "6c29c8f7dbb1923191a88df34e9f8f67f6b4cbfcd3a0ef1c4ce28907451e9370",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/nordic-hamstring-curl-1.svg",
     "role": "exercise-phase",
     "bytes": 18426,
@@ -3184,54 +2464,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-ce80005e51ae-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7466,
-    "sha256": "43ea6855b840558b5be008d356f460f975ae826aeb6903b9bf521cdd91167fc4",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-ce80005e51ae-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7459,
-    "sha256": "083ab2cbeaf90e3462011ab69489163d46e8d8bd2ef52af53dccb0505626b41a",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-a072e39d6ad8-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7504,
-    "sha256": "f778a6c67dfade7f71e2d7781c8a170b8d3d698b4334caa77d4651cc386e49fb",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-a072e39d6ad8-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7494,
-    "sha256": "bf73145600e13e34c1a31734a7014a3088ba605e57a5cc408fa68c8d36ab4afb",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-4f69d88911f3-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7201,
-    "sha256": "18a234f3347c49055d5e3c504781de8c995207e5bb8d29211ba8bf802c417100",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-4f69d88911f3-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7416,
-    "sha256": "3840321801639ba481b669ca9815a1a818122d4ddef108ce333842b5ff029ded",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/good-morning-1.svg",
     "role": "exercise-phase",
     "bytes": 11168,
@@ -3244,38 +2476,6 @@
     "role": "exercise-phase",
     "bytes": 12339,
     "sha256": "aedb60614cd3256476e2a2701dc6a4a896c57a9cc7c438d98080fe7b4d039a27",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-38a60df5794b-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7650,
-    "sha256": "22c9a050e5f62aeddf1176a1ebc52eadbc90f05704dd79320260e4bf914c873f",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-38a60df5794b-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7638,
-    "sha256": "faed736b27f68a889bad2e0fbfd8dfc8e7ba22f6ba13dc2429cfd3a5f466b3bf",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-ba4370d3b2f2-0.svg",
-    "role": "exercise-phase",
-    "bytes": 8044,
-    "sha256": "8416b365ddbebd170653c077a95b5f20cdd1ca3b8486aa6e4798fbad27759bc7",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-ba4370d3b2f2-1.svg",
-    "role": "exercise-phase",
-    "bytes": 8036,
-    "sha256": "1904754ccf175b79abbb022cd32c03e2c93a174f13b1eaadaa5ad6cf57f0e9c8",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -3360,22 +2560,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-76c44d3d1a3b-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7567,
-    "sha256": "7e0651678c1c32224af6773f42d098344d38afc033e671bdb82065947f3af424",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-76c44d3d1a3b-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7557,
-    "sha256": "eaca2cb596e43a20f8424d3bdd48f8cd481ee4baf037113764697c6b2f4bb463",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/banded-hip-thrust-1.svg",
     "role": "exercise-phase",
     "bytes": 17750,
@@ -3420,22 +2604,6 @@
     "role": "exercise-phase",
     "bytes": 18265,
     "sha256": "04d5a59934d39423a32345ccdad6ca904619d1f34b37cb42ebb7be8e8ec9c506",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-f227b59e34b2-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7209,
-    "sha256": "fb6d371f12a0e80c9bcf03810342d45772bbecd22379228cde58a92accb26e5a",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-f227b59e34b2-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7424,
-    "sha256": "e56dab7ca3f6eccf9e0142bf3341bfcb4aeef6c2327db51acb78d2028b5660b5",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -3520,22 +2688,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-5d90850361e7-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7518,
-    "sha256": "9dadeab1db41c4e8842a945b7e495ce4861ff0ffafe5401919cf7c65bfd8c8c7",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-5d90850361e7-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7533,
-    "sha256": "4bc6849588ff40aadf2acd80224da3dccb6810dc7c0cb52e1f06cb600524efaf",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/banded-clamshell-1.svg",
     "role": "exercise-phase",
     "bytes": 16660,
@@ -3600,34 +2752,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0281-relaxation.svg",
+    "file": "exercise-contours/ek-0281-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 23055,
-    "sha256": "0746e95ab6a3e3fa2976c429f530f61de7f87a89b348917839ffa5c4e1c5409d",
+    "bytes": 11579,
+    "sha256": "0d303678b80c8421900d2dabe1e63e8b47f8f941b3854551c93f5ccc434388a3",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0281-tension.svg",
+    "file": "exercise-contours/ek-0281-tension.svg",
     "role": "exercise-phase",
-    "bytes": 24396,
-    "sha256": "2ff7ec7736c04b630005a3b1435e3dc0db738472de7034f2bf782b8afb6e3a98",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0283-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7945,
-    "sha256": "911c965a2d2906f5305f5708767d8210205612f2d3a01ab8986ac895be5e986a",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0283-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7947,
-    "sha256": "7e9c1089736faea9a23fc838b2f0f6758fd93504ebbc4d6742526d77e7a60955",
+    "bytes": 12245,
+    "sha256": "33e36d7676a61e45ff6f92fb7bb447531e82fe8b76a97943cd3e4919d7847768",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -3648,22 +2784,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-851c7aae5f08-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7873,
-    "sha256": "918ceda4c7f191ef7ab7c35086b9bc0748bc9b14b31c86915109634bbdff2865",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-851c7aae5f08-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7875,
-    "sha256": "c61e8e392f6f3f70e43f0bc2100b654dd40a6776257339722d9603115c409199",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/donkey-calf-raise-1.svg",
     "role": "exercise-phase",
     "bytes": 15774,
@@ -3680,66 +2800,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0276-relaxation.svg",
+    "file": "exercise-contours/ek-0276-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 14720,
-    "sha256": "c93f0dd0fb5a9fa22597e6dfad4c0e63c84a72207f22a0b2d0df4b6d9739e0cc",
+    "bytes": 7420,
+    "sha256": "fd5c8982198db860644144e43fdf53e32f9be526c6ec74dc0a06b5d1dd1797c1",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0276-tension.svg",
+    "file": "exercise-contours/ek-0276-tension.svg",
     "role": "exercise-phase",
-    "bytes": 14056,
-    "sha256": "30e3a4fcb4bb382a22edc7b60b06dfc7d1e4ae4cc4b6176e184fefe59123f8a3",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-13f46b0efd8c-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7401,
-    "sha256": "15f275d45b2394ecb3c1819ce1fe79b9e0b3e6502979b73f0a2d489d9504d25c",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-13f46b0efd8c-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7403,
-    "sha256": "581a0bbc9b8d715d7d4d57b161e7c6054dc0075fe5c950aab1f6f71e557c3b69",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-508bce7584b1-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7947,
-    "sha256": "39ac2ce5b321d61bbee0478a0f89379152405292023c39900092659426ece330",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-508bce7584b1-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7949,
-    "sha256": "4b5f02039b9a90e776ff813cd97e353ed54efed6a85496d7efc7f633f19bc5f0",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-6fe42e824dd0-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7258,
-    "sha256": "04fd54fc1e05e24752d131aab1b912479b491c57e57ddddf2339fcb6196022bf",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-6fe42e824dd0-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7258,
-    "sha256": "04fd54fc1e05e24752d131aab1b912479b491c57e57ddddf2339fcb6196022bf",
+    "bytes": 7069,
+    "sha256": "363d19b1ad9e172a6be8fc47ac4343f65c7bd55bc37b80524af3e18845b3a187",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -3776,34 +2848,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-483f26dc1890-0.svg",
+    "file": "exercise-contours/ek-0295-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 7467,
-    "sha256": "2ce41807cd7d0b9f15c982e0a3b35bf350fa24fa640d468af4e36972a1dfc469",
+    "bytes": 6354,
+    "sha256": "5c53f74d19a7f8340f9a034e949812b91b4daa0f7a4d0d7b80a90318708cebd2",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-483f26dc1890-1.svg",
+    "file": "exercise-contours/ek-0295-tension.svg",
     "role": "exercise-phase",
-    "bytes": 7476,
-    "sha256": "f48b5c4b0d31fbbe17a690f9f1af65312943519f5917df3d43f61ab62c3a1059",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0295-relaxation.svg",
-    "role": "exercise-phase",
-    "bytes": 12641,
-    "sha256": "c8e6ad5a8e9a2fe3b4bda63e3ca7738216924c8ab2552089d968e1115c31000c",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0295-tension.svg",
-    "role": "exercise-phase",
-    "bytes": 13365,
-    "sha256": "bbc44822820ab9d7dcdd181d4461a8dbb87719d1ca7a50df58accf5d5944b845",
+    "bytes": 6851,
+    "sha256": "da1c9c083b18d335a17e112b48b2d765aea932b1be857b0866bb935877e80493",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -3888,38 +2944,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-b7bd3f49541e-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7421,
-    "sha256": "2935ce3ae22137139ada139d2d06477bbd4562a096c90212070151ea4e43e0ff",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-b7bd3f49541e-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7351,
-    "sha256": "1651d1c3312c72106e00e5e43d2f1101dc9fc3c6140133867c0a99b0527ea2cd",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-8aa284a7e0df-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7467,
-    "sha256": "36409fe61bea6351946795e9a221f484ad6da37f038b6e1b52a03ee12f521c01",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-8aa284a7e0df-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7467,
-    "sha256": "36409fe61bea6351946795e9a221f484ad6da37f038b6e1b52a03ee12f521c01",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/bicycle-crunch-1.svg",
     "role": "exercise-phase",
     "bytes": 9968,
@@ -3968,34 +2992,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0027-relaxation.svg",
+    "file": "exercise-contours/ek-0027-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 15787,
-    "sha256": "902077b311d70bebde405aee01d2fea2ecc1c4921a4fc43ed4ae281f193ad333",
+    "bytes": 7962,
+    "sha256": "98225844be5ed64101527a890f3be337a1661124cb0b7666a4e043d0e2ef2c87",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0027-tension.svg",
+    "file": "exercise-contours/ek-0027-tension.svg",
     "role": "exercise-phase",
-    "bytes": 17025,
-    "sha256": "92bb810fb1ca25fcfa1c693f685276b0bef22bf8b962f89fd02b227e400ac809",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/pallof-press-1.svg",
-    "role": "exercise-phase",
-    "bytes": 30822,
-    "sha256": "0d77cbf640bf6bfba8717ab634b3ef44fb4651cf74f7d57f90c700488dc08dea",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/pallof-press-2.svg",
-    "role": "exercise-phase",
-    "bytes": 62129,
-    "sha256": "0963a69aed9361cd3c2162fe47af5e1ef66b6d8d2bebb7cf581640f3bca2905a",
+    "bytes": 8556,
+    "sha256": "09b99b5293e1739a71e911c3f131c1d0629b05cb9cb56db7a717a4eafa7a0bf0",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -4028,22 +3036,6 @@
     "role": "exercise-phase",
     "bytes": 35759,
     "sha256": "2b0e7087338954573b2a502a9ae47c5e19968a1e9f15e3d151f53e8e6f02c460",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-fe3a7b7f732d-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7712,
-    "sha256": "7c69671458ba6cf5275a293ab27d4cde2b6f3e49c46da689a83b6c185a487c1e",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-fe3a7b7f732d-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7717,
-    "sha256": "cd3a8a86944c768772b1f97ecf21b36f45b40f5c3375e4817e72e2a0f1ab4d49",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -4128,22 +3120,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-a061b04bac84-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7393,
-    "sha256": "c6c40c1b6542caf318a2172309fdb31e14a4e054cb361393134b8cbaee04e03a",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-a061b04bac84-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7323,
-    "sha256": "134c4433f9be81ac8ad1a8ccceb62806882f1d75831aa1ed2c2c013d2e2d39ca",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/trap-bar-deadlift-1.svg",
     "role": "exercise-phase",
     "bytes": 22436,
@@ -4156,86 +3132,6 @@
     "role": "exercise-phase",
     "bytes": 85001,
     "sha256": "dcf7bc924695a391778b97cc003e0b5a14b7764ec2c54ef6c483f905b91ac86a",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/rack-pull-1.svg",
-    "role": "exercise-phase",
-    "bytes": 20434,
-    "sha256": "d9b9817a72be95d23145ffa466dfc32a028fe4858aa6635bb12d885cc8dcc75e",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/rack-pull-2.svg",
-    "role": "exercise-phase",
-    "bytes": 69680,
-    "sha256": "93db88fb2fa853193fea31da7f43d87104f94ca91089014aaad0b16a2cd10478",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-655bba5913a0-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7462,
-    "sha256": "f53f1e6beed1658e0e3b59495d8e432b5ac7a3f878c1edb1a1e3df5898c5d2f5",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-655bba5913a0-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7450,
-    "sha256": "b158b910ee378430c867a25398f332147a1a5ffcd83108982a805bc8087d38fe",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-458ddb1a8565-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7871,
-    "sha256": "00b164a2d2604918d52bcc5bbf93d9d203d69cd5c72550ab2a5a577d39ab1ed1",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-458ddb1a8565-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7859,
-    "sha256": "6a47cba7cdf1c60c772465c89cbe3feb6d730610b4e0e354899b3906e6769e27",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-044db3c2cfba-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7723,
-    "sha256": "c1b199a44d7878b8271fae9b9313544ada7826576aced7e10bcf52f3b8379bb2",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-044db3c2cfba-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7711,
-    "sha256": "82aa060bad5eced378fafc24d34879d661915793efd61f56226bcd33a0e60da2",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-0d63a9eb3d85-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7841,
-    "sha256": "3cc1599a0360c90d22cce0a76f960af686a25e27972c7494a101f144bedd3a70",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-0d63a9eb3d85-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7829,
-    "sha256": "54070b7a2c31518c7662e4c623f79413e50e218891e10f17d0226e9c6c9a45e4",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -4256,18 +3152,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-8ac087bea30f-0.svg",
+    "file": "exercise-art/rack-pull-1.svg",
     "role": "exercise-phase",
-    "bytes": 7461,
-    "sha256": "06a59b7053fbd9f58e628f20eeb504139d238c0727a5cfcbc5e421d58de7aff7",
+    "bytes": 20434,
+    "sha256": "d9b9817a72be95d23145ffa466dfc32a028fe4858aa6635bb12d885cc8dcc75e",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-8ac087bea30f-1.svg",
+    "file": "exercise-art/rack-pull-2.svg",
     "role": "exercise-phase",
-    "bytes": 7443,
-    "sha256": "a6fb8ede64a45ddce7b875bd3ef12e990adfebfabd7d0c1ff85af91c5f5d5ec8",
+    "bytes": 69680,
+    "sha256": "93db88fb2fa853193fea31da7f43d87104f94ca91089014aaad0b16a2cd10478",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -4288,38 +3184,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-5acea763bf12-0.svg",
-    "role": "exercise-phase",
-    "bytes": 8058,
-    "sha256": "0b0a9562c49ceed7fc04e2e17dd812ae0938ee94a1477e2b9c04458331959e8e",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-5acea763bf12-1.svg",
-    "role": "exercise-phase",
-    "bytes": 8058,
-    "sha256": "0b0a9562c49ceed7fc04e2e17dd812ae0938ee94a1477e2b9c04458331959e8e",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-f11297aa5a9c-0.svg",
-    "role": "exercise-phase",
-    "bytes": 8278,
-    "sha256": "e1436d579ab9abe3b964a2ac901936f22806a07e6eb6fae8c77e7697ccd8aa61",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-f11297aa5a9c-1.svg",
-    "role": "exercise-phase",
-    "bytes": 8278,
-    "sha256": "e1436d579ab9abe3b964a2ac901936f22806a07e6eb6fae8c77e7697ccd8aa61",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/wrist-extension-1.svg",
     "role": "exercise-phase",
     "bytes": 16436,
@@ -4332,22 +3196,6 @@
     "role": "exercise-phase",
     "bytes": 16280,
     "sha256": "16cf5234242ac8c3a15d97c913ad8ac2234f174fafea64a404373fcddac037fa",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-8e81e69aad72-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7750,
-    "sha256": "b855ffaf0aff87cdf22fdce5396bc2052d6debd5af094dabcf07e62bb245696c",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-8e81e69aad72-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7750,
-    "sha256": "b855ffaf0aff87cdf22fdce5396bc2052d6debd5af094dabcf07e62bb245696c",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -4368,166 +3216,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-f15a17330e20-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7488,
-    "sha256": "30ccad8bdabd042464ff6beee1d9ae4535b6058e0992f312e8f7030543dbc8cb",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-f15a17330e20-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7488,
-    "sha256": "30ccad8bdabd042464ff6beee1d9ae4535b6058e0992f312e8f7030543dbc8cb",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-c4bb7a8d71f8-0.svg",
-    "role": "exercise-phase",
-    "bytes": 8013,
-    "sha256": "e63cc8dfd7abf380fadd1e1904436b621654a116534ffe6af6addae70fe7b56f",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-c4bb7a8d71f8-1.svg",
-    "role": "exercise-phase",
-    "bytes": 8013,
-    "sha256": "e63cc8dfd7abf380fadd1e1904436b621654a116534ffe6af6addae70fe7b56f",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-643ddeb3e941-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7772,
-    "sha256": "74692c39b74d39028749fed6cec075b0bd7b93493da6a94b0439296b0f839c72",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-643ddeb3e941-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7772,
-    "sha256": "74692c39b74d39028749fed6cec075b0bd7b93493da6a94b0439296b0f839c72",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-70ad95f971da-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7836,
-    "sha256": "f7836f2a200068a3501b91cd334c94a51e7c3e3cf9bebe2b5166dcff424d783f",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-70ad95f971da-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7836,
-    "sha256": "f7836f2a200068a3501b91cd334c94a51e7c3e3cf9bebe2b5166dcff424d783f",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-67f21582b313-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7718,
-    "sha256": "d4d7e34116513ebfbaf17e521d8395050c092ad47f86f9b0a571e7b6f00a41c2",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-67f21582b313-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7718,
-    "sha256": "d4d7e34116513ebfbaf17e521d8395050c092ad47f86f9b0a571e7b6f00a41c2",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-d3c62cbddd06-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7953,
-    "sha256": "977070bbc53a25df36e251c4abd9b1aa7b38ca86c9b74b424c35e8d2d63aef53",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-d3c62cbddd06-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7953,
-    "sha256": "977070bbc53a25df36e251c4abd9b1aa7b38ca86c9b74b424c35e8d2d63aef53",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-cec6944e067b-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7948,
-    "sha256": "b101badb4c1524489b5425675a99cf4cc934de8f092d6e769b171a158e7c6597",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-cec6944e067b-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7948,
-    "sha256": "b101badb4c1524489b5425675a99cf4cc934de8f092d6e769b171a158e7c6597",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-f871323ac6c9-0.svg",
-    "role": "exercise-phase",
-    "bytes": 8280,
-    "sha256": "5c5aa2a36773bda0f8e5db767d16c44a23698e39da3e9e41d9115c37a0683f4f",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-f871323ac6c9-1.svg",
-    "role": "exercise-phase",
-    "bytes": 8280,
-    "sha256": "5c5aa2a36773bda0f8e5db767d16c44a23698e39da3e9e41d9115c37a0683f4f",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-119bef670887-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7531,
-    "sha256": "8c323d2fca2d21962eecd5a6a201fab210a02f7a624e142a2ce6bad40eb1c542",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-119bef670887-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7546,
-    "sha256": "0f4a8f8a3db5e7ceba62dff9c3c08e11aea3627e8d96462d98f1ba3a19302dcc",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-dc5bd3731429-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7525,
-    "sha256": "b331b40d8eca2e658fee9a3d8ce68ab943804ed4687551d323334ce6dec650ea",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-dc5bd3731429-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7540,
-    "sha256": "f50400080d978bc7d2ea5230b8f8f57e3d4288fd68281b9e010f800dc5d9c51f",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/running-1.svg",
     "role": "exercise-phase",
     "bytes": 25654,
@@ -4540,22 +3228,6 @@
     "role": "exercise-phase",
     "bytes": 21972,
     "sha256": "753166e2e20aa2c0d71cb1e778774f9042d28c887b237446e334f4381cc25173",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/cycling-1.svg",
-    "role": "exercise-phase",
-    "bytes": 25833,
-    "sha256": "60a95a298f39c4c0ca9c0136dc67f9047032d6d21cc126853ef08e425ca8870a",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/cycling-2.svg",
-    "role": "exercise-phase",
-    "bytes": 109297,
-    "sha256": "323bf662c6432a91347d4840226acee0015eecd9eb64490a3cb3bf93c7758153",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -4576,86 +3248,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/swimming-1.svg",
-    "role": "exercise-phase",
-    "bytes": 24025,
-    "sha256": "6cc956f3ac39483dc855a78543a221ab9681fcef54a42593a3f762ae85a0ebfb",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/swimming-2.svg",
-    "role": "exercise-phase",
-    "bytes": 42143,
-    "sha256": "b85949756a6395ffef3039ce939deeedaf7a8e7ea6b9afb11eafd97b5c530fae",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-8f341085147a-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7422,
-    "sha256": "aa252215fe2851597b8544b250316062845b454d3497ef42aca97979b1eae8cd",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-8f341085147a-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7368,
-    "sha256": "55371847b9e9570a2569c99d79062d0d6ec9e6bbc6b425d4efecba4b9323498d",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-0be22828dcd4-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7423,
-    "sha256": "ac2055c231e102f57e45730058c9db0490772a0854be18a7c98e839fcd78f07e",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-0be22828dcd4-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7369,
-    "sha256": "16fc18ed543324382a4d6b385a18c58202ef41907b02f308c44ae78d279d75df",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/hiking-1.svg",
-    "role": "exercise-phase",
-    "bytes": 26977,
-    "sha256": "ca1ac22883e3e6289b3244e8b04d22e1c23a333a7adcad55c595c773c4c965bd",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/hiking-2.svg",
-    "role": "exercise-phase",
-    "bytes": 31145,
-    "sha256": "c9ab6192aa8082bcd7e678da423179ca996d3964a1759020114a84109f137c0b",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-f767a9bd0bbf-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7626,
-    "sha256": "4f001eb6791cda57d6115b906c2778af6ddb513daf0bbe197b66ddfc759a1eb2",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-f767a9bd0bbf-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7641,
-    "sha256": "06338d97f35fba824cfa0f5cc09ae0d6a9e78d2af6e9f850f01778b69ffdbf6b",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/walking-1.svg",
     "role": "exercise-phase",
     "bytes": 23537,
@@ -4668,22 +3260,6 @@
     "role": "exercise-phase",
     "bytes": 148392,
     "sha256": "8661f5b938bfc6cf0eed3a7b446d7ac835e05d1ec9a7fcef50c80bfc7d4b36a5",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-77bdf55e0b5b-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7413,
-    "sha256": "119c2d9b1eda7abb3e2fc40f1c0c843d3b12fc71cc4e2254194a506590d8032c",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-77bdf55e0b5b-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7428,
-    "sha256": "764712967529e5ee9f07bde6ff64280700ca66518faa7b907bc20b55db6c0fc6",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -4704,38 +3280,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-037d07112c04-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7828,
-    "sha256": "e55bcc93ac679fb729f9494deea0d8060bf162ac29832a01b70b11c6f7fa37a2",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-037d07112c04-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7831,
-    "sha256": "61422e6c1add4be372ded5d2576ab8c012c7aa7b76eabd5d47743ef5ba5983b7",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-d53513d2749c-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7447,
-    "sha256": "98eb5a0e21e0b1c0a1f69d2706515d3744f8ee4bc077af89af1cfa9a0e31e81f",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-d53513d2749c-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7462,
-    "sha256": "d69f44be17d85add87aff9360dcd391712da25d1ee2ef38059876a22009d78dc",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/doorway-chest-stretch-1.svg",
     "role": "exercise-phase",
     "bytes": 15613,
@@ -4748,22 +3292,6 @@
     "role": "exercise-phase",
     "bytes": 26080,
     "sha256": "b7e9ba44209037b10b1fddb0ceb1c7f0df03e4045e2ae5c7941648d5726c211f",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-6772181033c3-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7453,
-    "sha256": "2a8c2265974f292c2df32ccbd06855fad85081e7c0720e73f79ca0144bcf8e48",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-6772181033c3-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7453,
-    "sha256": "ac4efe539bb69d04fb75e1c0694400b53c4cbebab5c138c954feea1c6b30cd8c",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -4800,22 +3328,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-f0bfd6ac2e10-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7496,
-    "sha256": "780914f09604235c87957feca308de33da749e01c2f6065aa1acc635fe943060",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-f0bfd6ac2e10-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7496,
-    "sha256": "780914f09604235c87957feca308de33da749e01c2f6065aa1acc635fe943060",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/kneeling-hip-flexor-stretch-1.svg",
     "role": "exercise-phase",
     "bytes": 15757,
@@ -4828,54 +3340,6 @@
     "role": "exercise-phase",
     "bytes": 15650,
     "sha256": "a248e3041142107dc2217460b191284edcab2d9a164e6583380826bb52d356de",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-6f5d30c5225c-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7421,
-    "sha256": "90ad16d7feb081d6eff755921b509c181b7207811a10846fab5f252d5c2b7f11",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-6f5d30c5225c-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7436,
-    "sha256": "99c47b9f9a3691c0fbcf5bdfdb2f5d05dbd7bdea15f62e9b87adc875364ef403",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-dce294804fff-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7454,
-    "sha256": "5d36cd6c777a1f7c6fbdd9a5e454ff93e0f44e30512e494966bbf42ce2857294",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-dce294804fff-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7454,
-    "sha256": "5d36cd6c777a1f7c6fbdd9a5e454ff93e0f44e30512e494966bbf42ce2857294",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-6625aa1c0596-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7457,
-    "sha256": "1ff9bc1369c14108a0c9953a6f46643db4585ecf12f1eddfc7480dcf817db576",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-6625aa1c0596-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7457,
-    "sha256": "945f0c0f0f899354a296e67aaee23ea0811358efc2c8325cbb575bf895b4f93f",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -4912,38 +3376,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-e8ad9fc7cba8-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7237,
-    "sha256": "fb47387bb7c73d9f55d9a5771e6fc7229ebf5a9902dfe333c0473c18ac18fa2a",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-e8ad9fc7cba8-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7237,
-    "sha256": "fb47387bb7c73d9f55d9a5771e6fc7229ebf5a9902dfe333c0473c18ac18fa2a",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-962ce5e85f83-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7126,
-    "sha256": "e70098677cb4ab635e070a8d6e32e9b13f9330738fb4243540814a32f14d7b88",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-962ce5e85f83-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7553,
-    "sha256": "2db3b92f655587f43975f91b5f6229a054e61ca64729cba578f78c2bd0ba0fff",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/band-pull-apart-1.svg",
     "role": "exercise-phase",
     "bytes": 16379,
@@ -4972,22 +3404,6 @@
     "role": "exercise-phase",
     "bytes": 37175,
     "sha256": "f283649a38fcb7eec17fbb2ae1c57910a680d1eb2fdc377365ecf26bf536643f",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-40291a850b29-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7416,
-    "sha256": "01721581ea9ee1f665a3a7bfa1f085acbafbac655fec56f7502d075295d07915",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-40291a850b29-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7362,
-    "sha256": "fddd708adffa62e69af5162fadb1b121dec02e258ad111ef594eecf178e1c857",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -5024,194 +3440,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-57abc02dc32d-0.svg",
+    "file": "exercise-contours/ek-0072-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 7754,
-    "sha256": "7aed549f572b529cef36d6f49ffc2311e6cdb99890355bda678ce23057f7301e",
+    "bytes": 9061,
+    "sha256": "5dbe2de0c128d8951d3e1f543be32802663d3a55abaeade3e6d1aabdcf586fbe",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-57abc02dc32d-1.svg",
+    "file": "exercise-contours/ek-0072-tension.svg",
     "role": "exercise-phase",
-    "bytes": 7754,
-    "sha256": "7aed549f572b529cef36d6f49ffc2311e6cdb99890355bda678ce23057f7301e",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/torso-twist-stretch-1.svg",
-    "role": "exercise-phase",
-    "bytes": 17172,
-    "sha256": "60cdeb0c5c52ee7f792c8f55c4ee933c1fb98b8ad4f86afe584e0991ae8b0489",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/torso-twist-stretch-2.svg",
-    "role": "exercise-phase",
-    "bytes": 70536,
-    "sha256": "0e75966c7e30b34df4ee38a80782aada9e942874b87610d27e8d70c0e4578852",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-cc056b8537be-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7894,
-    "sha256": "5646abd2d08a97228a31168b5ba68ec7e7b2c2d37bcd598160235addc8a02945",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-cc056b8537be-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7840,
-    "sha256": "9d64f234e67701c0dce5bdcb2b4ad277aa629bf9bbb95a2b5dfc4bc5aeca105b",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-4345ae6c0260-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7918,
-    "sha256": "d0fad2e579cdb09549db5245f8e25d721e7a7af01d2523fdd8b70787046692f4",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-4345ae6c0260-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7914,
-    "sha256": "6ee5a50e11bbaae696d367b249fca7e15c272df7d7ff0b5b689b523dd2a869cb",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-9cd505c01418-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7836,
-    "sha256": "a6a555b5deb8b1aba6d64f64917793e4b9c553b50b4a6fee7af60b3edfd28982",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-9cd505c01418-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7782,
-    "sha256": "a068347f7f8637639b3b08720d24140b753ff4d6874c5b4c2e72f48d9f41c171",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-d994ab49813a-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7989,
-    "sha256": "3e6ac8b21dddaf6e71d4b5af8a2f41f22a91902904491b2f08bdc037d53dfcad",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-d994ab49813a-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7970,
-    "sha256": "a99e05e22c37afcfa42ea1d7c79dfff62746d05169d3f1ae576078c7e0e7d74a",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-792a61bc6f5b-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7756,
-    "sha256": "64587e70ca75b766ff57669134cc8685511e197ab8a2e97d5dfc18a17277790b",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-792a61bc6f5b-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7737,
-    "sha256": "d7e20ffcc980341a207d71b585609ebce8624595d7ee46e4fe107a78a12d0e98",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-2933481def31-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7775,
-    "sha256": "0ab0cab844f976e06aced650bd9c708ef642c2b779ddcff3787de7d6b1dac698",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-2933481def31-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7765,
-    "sha256": "9628b9a7aee7d3ed9559e1da2dc550c7596b5328c86fb9c98ac14ee1bf9df508",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-adc0f49ac2c6-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7659,
-    "sha256": "9127e7997770b440e1fbb34737741a27870987e75f184d578df4a5ed9727c128",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-adc0f49ac2c6-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7659,
-    "sha256": "9127e7997770b440e1fbb34737741a27870987e75f184d578df4a5ed9727c128",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0072-relaxation.svg",
-    "role": "exercise-phase",
-    "bytes": 17932,
-    "sha256": "b2ae63b380e2d0ee46a485710800923e434aec6d76b9eb25c0064c07c6517e8e",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0072-tension.svg",
-    "role": "exercise-phase",
-    "bytes": 19578,
-    "sha256": "0e85d0f808f41ca65021f8b24b376e54cb5946544de0f7695ae891f1b14e6d7c",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-a8995e725f85-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7946,
-    "sha256": "46d25eb238c70c2bea9df716fbfa99e66288c5c2a4448e067a554c01f8e23314",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-a8995e725f85-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7946,
-    "sha256": "46d25eb238c70c2bea9df716fbfa99e66288c5c2a4448e067a554c01f8e23314",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-32a41373595a-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7681,
-    "sha256": "a50b45995fe6c7330f69b2efcb7cc958f8304955ef753c9c4f5f5493c08581b8",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-32a41373595a-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7671,
-    "sha256": "ae2e876ab775bed79ad62b938c2d1b083c894b938df0eda9aa1c247a93fb640d",
+    "bytes": 9895,
+    "sha256": "81a169056187d283eebeca8e67bd5dd26a1b1836c06576775e3479665a27f849",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -5232,22 +3472,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-0331605f3ded-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7861,
-    "sha256": "bca272dd51bec14e7d26a8f6702a770b324f407d9c5b939eaa196e500f1cb4b4",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-0331605f3ded-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7861,
-    "sha256": "bca272dd51bec14e7d26a8f6702a770b324f407d9c5b939eaa196e500f1cb4b4",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/inverted-row-1.svg",
     "role": "exercise-phase",
     "bytes": 14780,
@@ -5260,38 +3484,6 @@
     "role": "exercise-phase",
     "bytes": 16714,
     "sha256": "ca2b739cfc64317f5d9095379fa7b2d5a2aa9de999512fb7eff272cad1580dee",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-2d91b9a13cb4-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7890,
-    "sha256": "5685a03ff2131c6fde336a9646a8c07c90053a3a3dd74b22a18c5c0eb51372bc",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-2d91b9a13cb4-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7890,
-    "sha256": "5685a03ff2131c6fde336a9646a8c07c90053a3a3dd74b22a18c5c0eb51372bc",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-8bff4129373f-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7783,
-    "sha256": "f751dd02383f0340082af991b20fc5646177f2da9c0654b781337ee3b745c670",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-8bff4129373f-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7771,
-    "sha256": "d83d6e442c7b9af15d339abe0e38e55cc1c3e77aa410222d9905a8c0ec35df49",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -5312,130 +3504,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-e4fa37ce5fd1-0.svg",
+    "file": "exercise-contours/ek-0009-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 7734,
-    "sha256": "e9e17dcc7cdf85135d0ee2f48f87a215350a4708977bfbb2297408917b3eb8dd",
+    "bytes": 10427,
+    "sha256": "47ba7605db63006d10751db5ae1a357946adb4c5e343922dceab77b04696e33a",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-e4fa37ce5fd1-1.svg",
+    "file": "exercise-contours/ek-0009-tension.svg",
     "role": "exercise-phase",
-    "bytes": 7729,
-    "sha256": "ab4b5d498c61f5b7281373c0ffe0bb1e57cc8a0a02d7a5f37d042c8ffd233fa3",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-4c31854f1ba4-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7752,
-    "sha256": "196a30d029694dbd223a716297ecb483fbd08950badb2d5df692e6793b239376",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-4c31854f1ba4-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7757,
-    "sha256": "90c8ef2668da779f7cc0396fc1c18c3705391966655bfd8307a9d5bfc3f754c9",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-7dd17a0bd007-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7733,
-    "sha256": "77fcd2b28590ef58c3436a0360ab38b5456ede0b9ab19ea8424cfe9c89bb4b3f",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-7dd17a0bd007-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7679,
-    "sha256": "c1dee3344b2044f5047ac7a53159a182e7db0d03143a70833f568d9e43697280",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-6f2b31906622-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7794,
-    "sha256": "7e0f90986f5587d0b235b254a75c84afc5b23f0e4fbd7fc589cf69ce0575f5ff",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-6f2b31906622-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7782,
-    "sha256": "bee23f684fbf78f6b18785b48ad56313f4a4eb0250b832b8d90fc1e6d974be78",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-80c8c00e1200-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7918,
-    "sha256": "eb98b7486d2c527fa66f3cb9bbda6da103a0dc6d39b98511fd3b038b1d8d8cc1",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-80c8c00e1200-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7900,
-    "sha256": "9e5848fa1ca2cf53141063684425d47959d9cd6b9f23204a54ce2f84249c11a2",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-90e9fec929fb-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7704,
-    "sha256": "f90ae26ee77ce88be74844bee2698e7d73837a47f42fb7ff831e9dee69786fd4",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-90e9fec929fb-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7708,
-    "sha256": "6ee3ffc3bee9585bc1bd4f6cd4ed37f5fc72def7c373a8f64ddf5221ac7c26da",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-333283de128b-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7824,
-    "sha256": "706816f90cf10aef9af823c6e525c45f7eb04c78f91cd98bd5ef819451b3d048",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-333283de128b-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7832,
-    "sha256": "d6c23a9870b684b04ce19a768a66810a8d4726be232ca07e36fe7669d1ecbdbf",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0009-relaxation.svg",
-    "role": "exercise-phase",
-    "bytes": 20780,
-    "sha256": "f4c4f606cb60ab78e936e4f3accd39c46e8da605c86b79b829ac203734456661",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0009-tension.svg",
-    "role": "exercise-phase",
-    "bytes": 20496,
-    "sha256": "24d1bcd447be348d3f91762bad1144910dbbaa3572521e8e7fc025f3ac25dae4",
+    "bytes": 10298,
+    "sha256": "4cdf6a18283b0dcb0016e068f4f1b35f1b59e2e6ec3c2a51d7c11ead76e3b496",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -5456,54 +3536,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-2c1f20ef8d22-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7391,
-    "sha256": "1e6f30ac30c2eddcba24a44e39f9be5f56e9555d2597c187b3ad0832eff9dad0",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-2c1f20ef8d22-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7584,
-    "sha256": "60a93c9009fa38ee44764c8709c991e5a994159f6da05eabf179d1f3ed285337",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-f3073f7ea39f-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7565,
-    "sha256": "7335d3fe2fce4db96530e66967ef9819dab5d3a50827950b8db8312cb2d008a0",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-f3073f7ea39f-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7972,
-    "sha256": "c8c32da523f78fbaad479b4827a647fbb318f1ba6ad4b78f626a1904246edc7b",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-208acaf3d639-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7686,
-    "sha256": "707b28beec0381b4221c49834880850d1815b323be95eabbcea38324c57b03fd",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-208acaf3d639-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7680,
-    "sha256": "76bf56c3cf7cac5120ddc39385527ca98ee6bcb4373058dbba1894f84cfaf373",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/machine-lateral-raise-1.svg",
     "role": "exercise-phase",
     "bytes": 38997,
@@ -5520,274 +3552,114 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/rear-delt-fly-1.svg",
+    "file": "exercise-contours/ek-0248-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 18588,
-    "sha256": "b4fd1e50ed96c82b171f25ad0147362b99bf23aff5cbb38ffeadf654b0094679",
+    "bytes": 8284,
+    "sha256": "9b566c65d3f06871844bba853ec99d763969ceb4e5788433b58df74986263e68",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/rear-delt-fly-2.svg",
+    "file": "exercise-contours/ek-0248-tension.svg",
     "role": "exercise-phase",
-    "bytes": 19056,
-    "sha256": "f324c40b03cf754c74e022c35333c4a8b54a618a4712c8e51d784f319480caf0",
+    "bytes": 8373,
+    "sha256": "9672fbae38c90e16ce6e8a6c3de4d16054b2bf844a03b6b2a31fd922a096bcbf",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-ae75e62cf3da-0.svg",
+    "file": "exercise-contours/ek-0240-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 7804,
-    "sha256": "1c39de4cd6ecdc32d4932bd5a5c523155acbc3328615073cab338a2d6c314b37",
+    "bytes": 8478,
+    "sha256": "47881d51fb7ede4d904f2bbff5dfa84f95c56105af6b37f5a06c30f6c13a1f6c",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-ae75e62cf3da-1.svg",
+    "file": "exercise-contours/ek-0240-tension.svg",
     "role": "exercise-phase",
-    "bytes": 7750,
-    "sha256": "520a60d4e5d7fdb88dd641f68645d0cf9c5ed2f24050653fa50d0296afaf871b",
+    "bytes": 7890,
+    "sha256": "de1c09f00a8f81b69518ab236bc7e9349de07403931360d022125e58f79edc98",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-e3eb53c9ccb3-0.svg",
+    "file": "exercise-contours/ek-0207-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 7655,
-    "sha256": "1ceaa0a5d8ecafd29da0a8bc228f3bbd01db9689bf8bd713c0b78172e15bf6cd",
+    "bytes": 9440,
+    "sha256": "6c66fcbe6e5fc2fe7663acd1ef21ed478038f4e204c771b34ef21d48b0bdc191",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-e3eb53c9ccb3-1.svg",
+    "file": "exercise-contours/ek-0207-tension.svg",
     "role": "exercise-phase",
-    "bytes": 7648,
-    "sha256": "2b6089c9be7629761df299d2b830ba80bf2243e222983149612b3245fcee4556",
+    "bytes": 9902,
+    "sha256": "6da1d218ae1520e652485384b82c68c8d6200111ac04a99be21885e27e70868e",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0248-relaxation.svg",
+    "file": "exercise-contours/ek-0199-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 16490,
-    "sha256": "bc262970c51067f66d35ca554618e118cea9d1090260dff56ad1c72c8a132cd3",
+    "bytes": 11073,
+    "sha256": "d954ef07779b3e7f831e454287ea593670980c752352c1e24c302195a70ac507",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0248-tension.svg",
+    "file": "exercise-contours/ek-0199-tension.svg",
     "role": "exercise-phase",
-    "bytes": 16597,
-    "sha256": "508fbf4faa222d7ffe6cbcc21a3529b678cb77bb020e845351c0cbee9d163664",
+    "bytes": 12168,
+    "sha256": "83134dbb3d5eb07bc9cdbd9192c5fe05aae3f228e52ffa9803537d71eef8b57f",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-c77a0e20dca4-0.svg",
+    "file": "exercise-contours/ek-0195-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 7755,
-    "sha256": "595b4001cd6711f290559292d4be0ec3cba9e1c1d5a9500f75e8c6e3fdccdcb3",
+    "bytes": 11998,
+    "sha256": "02c4d6960dcc86f52c349bbc945de4b89095f7e71f02e48cabe159ec7fd40f44",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-c77a0e20dca4-1.svg",
+    "file": "exercise-contours/ek-0195-tension.svg",
     "role": "exercise-phase",
-    "bytes": 7748,
-    "sha256": "3cd5e2e25f12e2efe36e01924bac95357614f39979f6ab756ecf9e635507987c",
+    "bytes": 13194,
+    "sha256": "d7209a6aa798eedc8e3c043788d664fca1c4245b253abf419577bd6fdb0b1f3e",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-b610e4284471-0.svg",
+    "file": "exercise-contours/ek-0209-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 7806,
-    "sha256": "07ae04ff0556327847c12eb5cc79599a0cd496a3368f7225e5a6c46d1b11aa54",
+    "bytes": 9624,
+    "sha256": "a02449a9fa21cbafcf593ba63f8e887a713a94cf6f83af1070415180d68bdeec",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-b610e4284471-1.svg",
+    "file": "exercise-contours/ek-0209-tension.svg",
     "role": "exercise-phase",
-    "bytes": 7799,
-    "sha256": "a0c86495eca08030cf5247f94dfb0bc94bc9273dd165280b440861c5c4ae1743",
+    "bytes": 11371,
+    "sha256": "993bc06d2a73f4c6299ba832d5518bbad4e5e27a8ed0ef2d6500a247895ca5ef",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0240-relaxation.svg",
+    "file": "exercise-contours/ek-0201-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 16799,
-    "sha256": "ba033e70109714b2d23fe52a0c010dd8c95b70fe900ac26a735378598c8a8fd2",
+    "bytes": 11665,
+    "sha256": "b1106f975deaf277f64290fb9b99d9067b5a6dd00d6c8bf910a0c3e71a87207f",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0240-tension.svg",
+    "file": "exercise-contours/ek-0201-tension.svg",
     "role": "exercise-phase",
-    "bytes": 15682,
-    "sha256": "82fc6a04deab9baee2ef738e4c5445a82fb155c4dfd0666071a5f86120b57247",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-98640af6a6c1-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7969,
-    "sha256": "e59c923082f3f37690d2c91ce67b59227eb05eadc660659f6b99ef7fceca51db",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-98640af6a6c1-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7969,
-    "sha256": "e59c923082f3f37690d2c91ce67b59227eb05eadc660659f6b99ef7fceca51db",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-f35e1537fbeb-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7993,
-    "sha256": "76d7292ada6063ef2ff76aae24d83068cd16eef322ff6e77a36c52581caea4c1",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-f35e1537fbeb-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7986,
-    "sha256": "efad1d0a23ed336a7e2384ff23b39e4da8287208055d439f75aca4fc4541aefa",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0207-relaxation.svg",
-    "role": "exercise-phase",
-    "bytes": 18777,
-    "sha256": "cecf2ffe15a1251c1b4f5f934e8cc6208c4f1c67ae0c301d405f27bbe61664ca",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0207-tension.svg",
-    "role": "exercise-phase",
-    "bytes": 19724,
-    "sha256": "18e4cbd0bf7df3d5e89e4749bf37f8224fc020b47a945d3ac7a35b320a389e73",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0199-relaxation.svg",
-    "role": "exercise-phase",
-    "bytes": 21984,
-    "sha256": "007475a8d73bc3667da9120cfe787d8f7de224e7e0c8d23fe001e38171bf98aa",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0199-tension.svg",
-    "role": "exercise-phase",
-    "bytes": 24155,
-    "sha256": "64518438dc2d9b08366b2ecd08f21628d1d1936c5fb2a68f0795e548075c5a7c",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-ebe42b1a2288-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7687,
-    "sha256": "b48670eb6bc0705d6a53823b0a6c6c55c36950c3520f4dfac7499db92a5aa288",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-ebe42b1a2288-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7687,
-    "sha256": "b48670eb6bc0705d6a53823b0a6c6c55c36950c3520f4dfac7499db92a5aa288",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0195-relaxation.svg",
-    "role": "exercise-phase",
-    "bytes": 24053,
-    "sha256": "474953b27ddb11f019094f61a40eb7f9d9c957ddd431308285720c8aa5196c8d",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0195-tension.svg",
-    "role": "exercise-phase",
-    "bytes": 26362,
-    "sha256": "f1f5b330422187a98102f56bd7bff930ba5b635dacc58b861068a25a77e3fdac",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0209-relaxation.svg",
-    "role": "exercise-phase",
-    "bytes": 19195,
-    "sha256": "b321392e9a3d37d808679232110e4258668b90c7530926e18172297e32a045b6",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0209-tension.svg",
-    "role": "exercise-phase",
-    "bytes": 22638,
-    "sha256": "086de236caf2b95f78ab3022a7d825a9814a85a199bdcfbdc84f821d87286d09",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-7bade2b4bee1-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7659,
-    "sha256": "3cad519e67f5eba694f2ca15abf0ace9197fb7e88b6c25becd9eafc35cb0a373",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-7bade2b4bee1-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7678,
-    "sha256": "524957a707bbb63b3c2208863b91a2ea26a8aa641c8fed2707dbe4ca6df87f0e",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0201-relaxation.svg",
-    "role": "exercise-phase",
-    "bytes": 23243,
-    "sha256": "ee8e3752e258c2c7b46a4b579cdb59394bd5aa5d8092c9a79781d2a1cfc0c984",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0201-tension.svg",
-    "role": "exercise-phase",
-    "bytes": 25963,
-    "sha256": "4c3a814ed89b08d8cab509f29e019411b19d4f95c3f159ae75171d2141d52083",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-ed6bda54526f-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7707,
-    "sha256": "5828fa7baa8c04dc538f4cfde302bb7547c5a82f1ae236f5b8495a1621f55e51",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-ed6bda54526f-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7687,
-    "sha256": "612f4457af42e8cd6d32b79e587dc0a050d16873595ef5f71d0fb61aa2c6bdcd",
+    "bytes": 13056,
+    "sha256": "83914bbcb98c4672fc765d814fa976cccecf4314328eb81465005a316e74267b",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -5840,18 +3712,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0131-relaxation.svg",
+    "file": "exercise-contours/ek-0131-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 26836,
-    "sha256": "9c76bc73464381a41fb1d4da70042b4e25536d21d29889bd82e3591f4128d770",
+    "bytes": 13460,
+    "sha256": "3b1f11de10259c4aca313fe9d2e662fbd65a30cd2620bf8fffb864c14715e885",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/ek-0131-tension.svg",
+    "file": "exercise-contours/ek-0131-tension.svg",
     "role": "exercise-phase",
-    "bytes": 25640,
-    "sha256": "f94963fdcc704278ebf7f3bf638f055df376296c0305a9c9ad204c9f87de25a4",
+    "bytes": 12906,
+    "sha256": "8ef68729c768f6639d7148ba77435da1bcb5a544d6a62d6dc0356f76545cfa98",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -5872,22 +3744,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-da775ce97ba3-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7928,
-    "sha256": "5eac2690bffcc037cf74f33063490da6fa2d80d6c1ab69d1179fc64fbc56214f",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-da775ce97ba3-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7943,
-    "sha256": "47710c526974906c6865b270725b4a933ae1eb8c609fd78797bb6b63869dd112",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/step-down-1.svg",
     "role": "exercise-phase",
     "bytes": 15629,
@@ -5900,54 +3756,6 @@
     "role": "exercise-phase",
     "bytes": 15661,
     "sha256": "18339420571fdc00a4c181f5f16ae0aaeb89f7c62c980863a87e83f6212735cc",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-704e4abd6e4b-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7935,
-    "sha256": "89af4c33ddac02c45af3ff9bbafb89d548cfd3824a8db99d5128163b51007b58",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-704e4abd6e4b-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7910,
-    "sha256": "dcb71e86d680dda777fd80065efc4b0d1840599ccf06ad795f8461bb494a5580",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-9a1e51edda09-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7539,
-    "sha256": "7c73c99a60b48a84bb871fe068f11fc80c84dff1f6ca3fc5403a3abc2cb3c90c",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-9a1e51edda09-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7713,
-    "sha256": "21bd8649e97d498795db29e348e5f0725d70d318198fec38305b12853cff0223",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-58afa2ad2ca1-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7814,
-    "sha256": "72330081c71a46d41adf5197893f0ab7ec0f13d98f158f35297ae51750bf8fd1",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-58afa2ad2ca1-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7802,
-    "sha256": "77c4591c662ba0db724e72f35b14a687706ae5b790927c4cf4e470ff09d4b9c9",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -5984,102 +3792,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-4febd767491f-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7815,
-    "sha256": "4e403b489742fa2b1fc8a19663e2b2a7c54a1a05882dd4a5b11edcc08652e29d",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-4febd767491f-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7807,
-    "sha256": "b6e7ec59774516e1391af7b8279895149e0ba027fcf41a5e19cc1f88f22b9d9d",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/towel-hamstring-curl-1.svg",
-    "role": "exercise-phase",
-    "bytes": 18212,
-    "sha256": "1b2c60416afc3d0e84d4a1e96a1f439412cb60164cb595d82dc9df3717c58b3b",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/towel-hamstring-curl-2.svg",
-    "role": "exercise-phase",
-    "bytes": 19666,
-    "sha256": "4059d75ac1e0955448b87a58efa3d25aad8bf6025cc6b6dd406b1d114d21e2ff",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-8b79cd9da2f9-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7724,
-    "sha256": "6518183a495941becade0afb0d18480e3a253be2a4a5d16daf348a876c1c9447",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-8b79cd9da2f9-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7716,
-    "sha256": "42603028ca5c1507d6351682f72996fbab1c56b1740e1399f29601c0775232ea",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-f04b0d349588-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7979,
-    "sha256": "0e2ef7d115bca97ab866ca39d36d6b2de58fc82d1f2ed58b1ac31e5fe331a963",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-f04b0d349588-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7967,
-    "sha256": "a3c4c7c4cfefa4e4803b29a4e2ca8b487375a811d841e9bcc84fc0af17e08f31",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-3096e0c94a80-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7666,
-    "sha256": "c3859f6c135982f2a3fecc54dde11a4292061e73129913fad1b68f8661d3e5d9",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-3096e0c94a80-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7654,
-    "sha256": "d0c9688f35b6e4b3cd52535e6a9f93de6960aa43833143ba90e2adcd4c931879",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-f33539c410ae-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7587,
-    "sha256": "7ca32bcde95d9cb29822b298d606052ac1d611b5933266a9f5a861cfd103de55",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-f33539c410ae-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7577,
-    "sha256": "5751260b88d40e5391ed7d9cdff2c1538dd05f6ea30aaec48254e524fda0e48f",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/banded-glute-bridge-1.svg",
     "role": "exercise-phase",
     "bytes": 14070,
@@ -6092,86 +3804,6 @@
     "role": "exercise-phase",
     "bytes": 16678,
     "sha256": "9af187039fbce32eaa6189505f7845c47c53d2d2958e9d14213e81bf57632fef",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-5e59f19b599f-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7911,
-    "sha256": "4016297ba278696838a1aacdc9c6d1d360c77ec66b39874989fd803e2286978b",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-5e59f19b599f-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7901,
-    "sha256": "97a1f0c3cea555924c7d415cd5535746915049144d8348eb04e685e485b19578",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-fbc2aba9f192-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7595,
-    "sha256": "c396842fcfcdfaef10fff09c7c5792166a981594288fb56c9540f6a8d70144d4",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-fbc2aba9f192-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7585,
-    "sha256": "d31927bacdb0230588968bc8b7700eed5a163aef175f8ae0cd37ab2db5205fa9",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-892759c74385-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7602,
-    "sha256": "6c7ea4764ce8e69f28a7c0ff7e4a64a4b667b07c7ab30a8c41cd581929b190f6",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-892759c74385-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7598,
-    "sha256": "c23de72dedee5ba2237210c68024f3aa2beabc39ca9905651b28fec21ca9289d",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-b420bb20a69c-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7888,
-    "sha256": "ce642376ed73b3d199aba77b0ccac75cbef1e534da4fafbc8e9439d9d8a4f459",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-b420bb20a69c-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7878,
-    "sha256": "32622a17c9f9fbcb2f1b474a3aaec6fba168adc5f6ba0bf7510a16285eb508eb",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-4d085e3a814b-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7486,
-    "sha256": "fba1ed99e4461c75c7a19295fbe7784c3e5c4342794bb9e12173a04b79d51b1f",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-4d085e3a814b-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7476,
-    "sha256": "245b10c7491ee2473b4a1e5ea180a532ecf38b374ce9ccec5c2daa48083d2fd5",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -6208,54 +3840,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-5baa789d2212-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7872,
-    "sha256": "dda2338900049389af060875de987c44904b60d15c4cafd90aee74bdcdbf3301",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-5baa789d2212-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7852,
-    "sha256": "e4ffa5ee9d25e1088d20ab0d6bbd6cd859c4409612d7d084ccfa758f19d5a766",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-91005663b522-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7844,
-    "sha256": "d3f4e4e70a64c136869df2957a81f05b3744ca071a42a5b63502b43b6fde696a",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-91005663b522-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7859,
-    "sha256": "6b40de2ea078145f7a07956073618a86c0b7e01a9968ae93dc0a91aebc062046",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-a97ef2d69138-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7479,
-    "sha256": "e7d3ed01cd28a97f382de1a37faefb4f76e94c35b29088cccf661f0d8ffbf3c8",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-a97ef2d69138-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7488,
-    "sha256": "5815acda80abaccbd69cf25984a145929f17eab3f4f61265f634dc240f21dd7d",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/donkey-kick-1.svg",
     "role": "exercise-phase",
     "bytes": 13824,
@@ -6268,118 +3852,6 @@
     "role": "exercise-phase",
     "bytes": 14631,
     "sha256": "0cdb0c27c37a3c8d4e20341f4a24c45f60216f290cf3faee4085574e686c9ea8",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-2c640b74f3d0-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7830,
-    "sha256": "d85289d914c2dc61e0deda29fe36bb6de92a95936120b9e89c666a28d4d24830",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-2c640b74f3d0-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7826,
-    "sha256": "6ae63e1ddbdb18bc4cfda35ce3c0962acf23cdbf62fca487aedbcfa9ff3a2116",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-5163222b0ca3-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7424,
-    "sha256": "e56772b2ae4a338b115e88010a5064af2b2f1950be911ea084dff379e6b62103",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-5163222b0ca3-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7426,
-    "sha256": "51b44464b484137051f99a0f079af6a0f8f2290d877dfac95ee651e7b62d0c12",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-e50650c642b3-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7511,
-    "sha256": "d9d7a7e372fbd4e9cc8b9adf88fa0159954097d5a10d1725a4062f88061ce093",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-e50650c642b3-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7513,
-    "sha256": "9c39b0e778659fdeb2f532be61ce7ee205b4c796ebaf3d038dc20df44c9b7c40",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-00eaf785feff-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7615,
-    "sha256": "eb275433f114f13da4034d734f23cbce428cf9b9f748853413ed3548026d39c4",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-00eaf785feff-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7617,
-    "sha256": "8cb611ac29736ba3bf2bd769e67e293f804ef57adc0ba358079d93513d6806a3",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-12dc8d1110c1-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7766,
-    "sha256": "680fa81256b6a24729d075a44db5cec5563ccea5aa986446e32255ea64b72f89",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-12dc8d1110c1-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7768,
-    "sha256": "c287484b636471c7671ff02eb7347ff4eba15b605cddeb8c94875505dd899ac8",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-3c9f89b9aac4-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7431,
-    "sha256": "877379b7e9d85fa33979e670482f6ad18dab213617a281891901414a6822ad88",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-3c9f89b9aac4-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7415,
-    "sha256": "d6094dc49556273cc9192316a7b5536a9fe06a30d96120577587a7644755c31d",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-502fd6c3db26-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7450,
-    "sha256": "fc23275ae1984b8a815ebbff7f4b44e39e72db236cff52775d814ac42330a50d",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-502fd6c3db26-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7434,
-    "sha256": "12a3d257d43813ed91f29bbe1f31f82e2667992776398b5dcb9a4d1e257ea2c2",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -6400,82 +3872,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-eca1791a5f91-0.svg",
+    "file": "exercise-contours/ek-0296-relaxation.svg",
     "role": "exercise-phase",
-    "bytes": 7555,
-    "sha256": "cd3d750f288a7d7151f1d8368444ee66d746c6d1726af719008cc378548aad1f",
+    "bytes": 7006,
+    "sha256": "ec437718ce5404cc8761a50e4043327b2738124c440a8a11b7da0344af1cc2ec",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-eca1791a5f91-1.svg",
+    "file": "exercise-contours/ek-0296-tension.svg",
     "role": "exercise-phase",
-    "bytes": 7555,
-    "sha256": "cd3d750f288a7d7151f1d8368444ee66d746c6d1726af719008cc378548aad1f",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-a2ea1e5fbabd-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7492,
-    "sha256": "4dffe518f59e58c942d5f2c1387f7b87428e55a5346cd24b45f8014841fc4d75",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-a2ea1e5fbabd-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7492,
-    "sha256": "4dffe518f59e58c942d5f2c1387f7b87428e55a5346cd24b45f8014841fc4d75",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-b9b98095e291-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7605,
-    "sha256": "8cd4c2cdd1b76bba84775a6b0a58d5e41c019e6c4b389afbc5e5268df39f70c0",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-b9b98095e291-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7605,
-    "sha256": "8cd4c2cdd1b76bba84775a6b0a58d5e41c019e6c4b389afbc5e5268df39f70c0",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-5cc57c53c070-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7576,
-    "sha256": "5356dc78c95fb4e65770a8f2f198cff4a449e70cf5dd90192db5f4080bb16ccd",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-5cc57c53c070-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7566,
-    "sha256": "2eb0d6cd2b907d23285d1365a23e423f27bccb5ffeab9ab68c7458cdc99ed709",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0296-relaxation.svg",
-    "role": "exercise-phase",
-    "bytes": 13957,
-    "sha256": "96cdf9605943ea7b51e9f3828abca85703cbea33fb5d77f525eb1335bc7ada10",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/ek-0296-tension.svg",
-    "role": "exercise-phase",
-    "bytes": 14940,
-    "sha256": "3e1d0a19be24f4cbc1ddcdc3124c0fef2fa158b99d6eb739fa81cb49470dfb4c",
+    "bytes": 7513,
+    "sha256": "dc3219a2bd1891f0d127c0028cd279b4b08cd8872134f75d0a7fb3b3b9ac5573",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -6512,374 +3920,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-c7e9a50f75a4-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7308,
-    "sha256": "6c9cf1a4d665081669c528e156c7f2f921b75d3295cc351f5814751c03276d5b",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-c7e9a50f75a4-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7238,
-    "sha256": "1afe82eb38d64995df11911739f782b848f65bc2b5a9952f88775860ec1c1a55",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-dcc9059d1b5d-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7457,
-    "sha256": "e923978776644a743ad2cd5b2b7e4824297b9dd22e9c90ed277bac21d3d2e7d1",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-dcc9059d1b5d-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7438,
-    "sha256": "97f10d2061159d6c06dd406c1d9837d0ac789d8271f601339b66a730f7a9a159",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-b2f29ebc34f9-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7655,
-    "sha256": "1c68dbc03ff898fc94b782680d421a40ff9875880174daecc0fa715065661105",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-b2f29ebc34f9-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7636,
-    "sha256": "c4b25c7a759c490a9567f388e20249826114a6766639c40e66d236759f704b2c",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-6424d746dbcf-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7718,
-    "sha256": "6197a02be3ab138347c9205fa4e36231601f5143c83e4c58c2f990b11611e67d",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-6424d746dbcf-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7723,
-    "sha256": "dca8ea88bc84719d8631636e4a9552905418ee9dd29452331eab94a19830cecf",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/weighted-russian-twist-1.svg",
-    "role": "exercise-phase",
-    "bytes": 17864,
-    "sha256": "165f3d47c78c7f63f0f17f4db744962ed205a96f9164ebcca2f9dd9dd29e4cfd",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/weighted-russian-twist-2.svg",
-    "role": "exercise-phase",
-    "bytes": 20040,
-    "sha256": "8130b7346ccd4dd042f9abc4a67f25376d4587cf66e07c162705908fb68cd6b2",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-994e718d7942-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7464,
-    "sha256": "0544e7ed21dd696570458c3b247fc7ed986bb1511cb50b689bd7ee7706f7df50",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-994e718d7942-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7446,
-    "sha256": "fc2cef4860221cb91db018071472f73afae2bd7dbeb30e53e4abcf1cdddb63b6",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-45975862ff07-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7458,
-    "sha256": "5d58dc2284bd970dc8fafb89e8410086f72b3845c166d5a14e530c754741e037",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-45975862ff07-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7446,
-    "sha256": "1d755f8e38827239e2c650a00fca9eecea0d3028cd6e0ddc442a7af3560054c7",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-62b5474b8a47-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7657,
-    "sha256": "5ee301537f1bc7c9fa08d73c2a3f1105750ef2fe4eb8dd679ad68228ed4f2107",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-62b5474b8a47-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7645,
-    "sha256": "c472a01f999f4925f7c828200865dc0e13f2b43a41b6ce20aa4c546a4f356a74",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-84923709e328-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7892,
-    "sha256": "452b869c39d0cd113c8f227ad4e602a23bae05e793875f235e33f3bdb6f5c45c",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-84923709e328-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7880,
-    "sha256": "3e7670d611d178f8f1dfe870641f79f3c06f013a6e05e02d18b9870aa4a04717",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-5e8b6b1a5106-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7482,
-    "sha256": "866b29822895d10037d16e1c2d0969d28b295a45733936d8e9300720a59f64a6",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-5e8b6b1a5106-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7470,
-    "sha256": "91786202ebf3758cceeb0f78a8110ebec88052e601fbf93ba9a71ba7485b8ff2",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-45b88620b320-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7992,
-    "sha256": "e7aa015998c5cea72a5d7e9b1de715bc270a634b852aa9c5dd9ae8fdef29a7b7",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-45b88620b320-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7980,
-    "sha256": "101b6cdbd4bfd55c552fae00bb7f66c6ffcace305b84e3119cefb43490521b0c",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-67a3d08e6147-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7989,
-    "sha256": "56c5146f68a373be06e757302274d355b789ccdd7d538f10bd379f502c91e17a",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-67a3d08e6147-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7977,
-    "sha256": "ef8ede90de4763773dae9dfffe816f324ccf9ee5cb62b3028c0ff1685ed452d2",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-a4b92501fdb3-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7487,
-    "sha256": "2dd149bfad158f85b346e15547ceacf8cbcbca64a855e8c3da8a6e5e77713099",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-a4b92501fdb3-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7477,
-    "sha256": "0e6f6ac5edace4e5158511396438401e0af8cc890deaf597035efc0b6bb4aac5",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-e12ddd2ea3cd-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7526,
-    "sha256": "806fa026d79f1efdec8217746fec283677c8b5863a4ff29005ef804425fd9d16",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-e12ddd2ea3cd-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7526,
-    "sha256": "806fa026d79f1efdec8217746fec283677c8b5863a4ff29005ef804425fd9d16",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-d0dc96f19ede-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7831,
-    "sha256": "cbdcca9e2c0837d8009be8f521fd81d0598fddd2b88f9068052ea9d4070ac2b6",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-d0dc96f19ede-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7831,
-    "sha256": "cbdcca9e2c0837d8009be8f521fd81d0598fddd2b88f9068052ea9d4070ac2b6",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-510123737121-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7758,
-    "sha256": "1dc2b310258fdde1712af4fdf6405b57ccd14200c880c44b80b10f33a3e3e876",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-510123737121-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7758,
-    "sha256": "1dc2b310258fdde1712af4fdf6405b57ccd14200c880c44b80b10f33a3e3e876",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-de6548e024cf-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7949,
-    "sha256": "cc64e472c0cdbf8c091bee5db849e9ce3d81bf8c0853c59b85c67bb372264798",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-de6548e024cf-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7949,
-    "sha256": "cc64e472c0cdbf8c091bee5db849e9ce3d81bf8c0853c59b85c67bb372264798",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-45622b3dfdf6-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7953,
-    "sha256": "6e06603c0b120d1069ce30d4d4d09c9db94e9336b2c6d7900a5092252c069c53",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-45622b3dfdf6-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7953,
-    "sha256": "6e06603c0b120d1069ce30d4d4d09c9db94e9336b2c6d7900a5092252c069c53",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-5575ad4a0269-0.svg",
-    "role": "exercise-phase",
-    "bytes": 8283,
-    "sha256": "19cc22825f4d1e4016b1099d8d2c38cc33021aa921d386fcab5187d41fdc6566",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-5575ad4a0269-1.svg",
-    "role": "exercise-phase",
-    "bytes": 8283,
-    "sha256": "19cc22825f4d1e4016b1099d8d2c38cc33021aa921d386fcab5187d41fdc6566",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-897fe90e1f8b-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7750,
-    "sha256": "a752a4f29c2481ca8cf64f2c15394cc9cd3865a3a56e5f3edc3a67eb26f42862",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-897fe90e1f8b-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7750,
-    "sha256": "a752a4f29c2481ca8cf64f2c15394cc9cd3865a3a56e5f3edc3a67eb26f42862",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-12acd24b9c58-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7945,
-    "sha256": "c8f8953e0cf38b656390c6b28d1e906acfdb80984ca669ad639acb0cf357d01b",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-12acd24b9c58-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7945,
-    "sha256": "c8f8953e0cf38b656390c6b28d1e906acfdb80984ca669ad639acb0cf357d01b",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-0682094878cd-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7947,
-    "sha256": "c2ef084204dac10644ab8d2da03460e21abd0b13b2a7540a746a7eb094824fc2",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-0682094878cd-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7947,
-    "sha256": "c2ef084204dac10644ab8d2da03460e21abd0b13b2a7540a746a7eb094824fc2",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-47452e7b2f52-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7506,
-    "sha256": "5189b411435eb704b5b34a22ffc8854a3abea4fcb5e96016b58b56612c0b0129",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-47452e7b2f52-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7521,
-    "sha256": "934dba17ca165ceea24cbedf5ecdfcdc48864207d900ea9111491218acdf4682",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/treadmill-incline-walk-1.svg",
     "role": "exercise-phase",
     "bytes": 18824,
@@ -6892,38 +3932,6 @@
     "role": "exercise-phase",
     "bytes": 17301,
     "sha256": "79b5196e77faf84a1b064085b470951f86bdb348af8c420f8eee1b3381857eb1",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-a8e8e3a9b804-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7413,
-    "sha256": "c2c2964cb30e362e5f517a06242266f6d2478e96129c2e1e7a4a90425a053000",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-a8e8e3a9b804-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7428,
-    "sha256": "e941024153ee3b9b25388647e8c13843ae90a58e3bcb8d8771cfa45aa97ad869",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-d3afd4f96615-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7416,
-    "sha256": "d9065463840fad59b5775188d5f818f8d0408ee57138b07fc992f6eba7043446",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-d3afd4f96615-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7431,
-    "sha256": "4041c5a599b8830cfba83c4be79480fbb239f5db07cf210f5eb79c8b9c382c1d",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -6960,38 +3968,6 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-e31dfbc7ae43-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7519,
-    "sha256": "60723fc617a968e60b7f6c3914ec2bbeb0ff9cc6f6751b744cbd1980314bf5e5",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-e31dfbc7ae43-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7534,
-    "sha256": "4f86d1b52d845a9d597d862c7db69f08317f86d597b7657e0028de0bd9121f48",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-331187b1536c-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7609,
-    "sha256": "450290c3fc18d5b66a57d034bce43278eadf6cfb8c486e32267541fb6a348cd2",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-331187b1536c-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7624,
-    "sha256": "e11f3de0b29a1605fed0b4b46f05fae6ba7d843a180cc05d1d087bf8ebf484a4",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
     "file": "exercise-art/skierg-1.svg",
     "role": "exercise-phase",
     "bytes": 26196,
@@ -7024,306 +4000,114 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/forge-54368297f634-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7506,
-    "sha256": "4019f19c276755f4a989c2d51e16e0e51f8b4fe71c0fa7d2460aef5a77522d97",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-54368297f634-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7497,
-    "sha256": "da6b164faedd49fbda89089e6540fadeacce95e779d17924a303bb2cf4b77a94",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-ed3e80e9dc61-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7443,
-    "sha256": "7bcf8b1b8ba32574fbf1fdcf735950422858767371f9701aad921ebc630b4b87",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-ed3e80e9dc61-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7443,
-    "sha256": "99d5f42fe11a26809b825075f501c5efda2ff3e9dfc5816b89a4cba45f1da33b",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-8f5beea4a181-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7221,
-    "sha256": "f16859e4d0b79c73730f05a8a7ca67bda862000a0f6a08424dbfc535e2dd0c25",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-8f5beea4a181-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7648,
-    "sha256": "c3036fdab0c913f185c8cb84ab0bfbf33abe0ba54ff979c4a352bedacf1272fe",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-b913d0ac030d-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7433,
-    "sha256": "75d4ae78cfa3da326212f06ff5b0408e6ccad3533fee2703d7d0e85a2107ca36",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-b913d0ac030d-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7379,
-    "sha256": "fc851286bc41eb3b02b6fab2bf34302cdabec81a4c3adf9e7a197ad34600753c",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-b34dfd31c12f-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7500,
-    "sha256": "868540ee6c02673611720d98282e78306fda4072d25f5224971677ead8535d0a",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-b34dfd31c12f-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7500,
-    "sha256": "868540ee6c02673611720d98282e78306fda4072d25f5224971677ead8535d0a",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-5fed6c058c41-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7479,
-    "sha256": "9713e48b0796b501345a19279bf0b7d8cd3e3174a5834d45f9e2eebfb141acb6",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-5fed6c058c41-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7479,
-    "sha256": "3d5b18ad42a5831d2a0dca5b68ecfb978c41b082064b96e4ae24d7ab58de17f0",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-81d5a4426176-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7768,
-    "sha256": "9934a83d85a4f767e0f1ee2f2c2551ab55ec27635ba0ffb0eac6b2936393020a",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-81d5a4426176-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7768,
-    "sha256": "9934a83d85a4f767e0f1ee2f2c2551ab55ec27635ba0ffb0eac6b2936393020a",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-10a256339710-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7438,
-    "sha256": "228a20c2ec01b09c7107d09137f160059d259f2ef57ac5c1364ae7130b4340fc",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-10a256339710-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7438,
-    "sha256": "b7e74fb0b65ade7a84503d25e00357bf40cd8f142089ef79082d5405a2507b7a",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-3953684ac931-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7209,
-    "sha256": "43e28cf34ed6e0fbe3d45fef01a819da0f357b29e88913b78d3ec01512b9953d",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-3953684ac931-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7209,
-    "sha256": "43e28cf34ed6e0fbe3d45fef01a819da0f357b29e88913b78d3ec01512b9953d",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-d82da07b24e4-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7449,
-    "sha256": "807bbabe7681557a410d1b88058bd07293609cf371e05e5d286b8899c78ca759",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-d82da07b24e4-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7449,
-    "sha256": "b705aa9bf44617fef5a0dfeac26ac65e6300e6562552f2bb9a4af106ecc4edac",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-55740d50b711-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7428,
-    "sha256": "98ec995fc5eda70768fbdc4add9ee08179f340fc700e1956bf2009a65ac9dcb6",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-55740d50b711-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7428,
-    "sha256": "5464bc287bd53befb5087266f96422b60710b9a82e0c8b023ec06db4d5ff83c6",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-d7eaeb8bd5dc-0.svg",
-    "role": "exercise-phase",
-    "bytes": 7406,
-    "sha256": "7597cf08a3ef1a7e8ec20826417d79c654a74b8215f7c7470264ce2959a72368",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/forge-d7eaeb8bd5dc-1.svg",
-    "role": "exercise-phase",
-    "bytes": 7352,
-    "sha256": "daaf6e209ebba013188991422a2254b266c2294fdd8131b5d0b7e6c064b61f19",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "anatomy/forge-v2/group-0.svg",
+    "file": "anatomy/muscle-0.webp",
     "role": "group-map",
-    "bytes": 6855,
-    "sha256": "6ad6db2ca1c96688431f4f4f2d0bf452f4e49abdba2b635c4849d661713960fe",
+    "bytes": 28922,
+    "sha256": "cace9a099d968db5c547ab9c387ef61d8d2460979d5423d7f837dfeb012e17a4",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "anatomy/forge-v2/group-1.svg",
+    "file": "anatomy/muscle-1.webp",
     "role": "group-map",
-    "bytes": 6856,
-    "sha256": "41c0ecb34fd6724ff1245da7e696ea72b532f25b2007b71f5de558447418f795",
+    "bytes": 30868,
+    "sha256": "4ed9fd5712e492cb6aad98860c5e074a8ee94fb0063f2710f6e35cd8578e805b",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "anatomy/forge-v2/group-2.svg",
+    "file": "anatomy/muscle-2.webp",
     "role": "group-map",
-    "bytes": 6855,
-    "sha256": "b31cebd7877c35fae3f95c2d61d7c9c3b4d494f6464cf3fcb5d7506292a3da73",
+    "bytes": 24506,
+    "sha256": "80c0d8bd2d1f5e7959748e12e3c72f4149b5364460accdc3c82c116cd10f7905",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "anatomy/forge-v2/group-3.svg",
+    "file": "anatomy/muscle-3.webp",
     "role": "group-map",
-    "bytes": 6855,
-    "sha256": "a32abcd22ac55fb8fd3e897a7ec1424323086036cbd72ac4287960d5dadb3134",
+    "bytes": 29416,
+    "sha256": "98b1b91b414f0e5969c2d9f19e05e92eb38fd91ea2ce28b4e5b56280faede555",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "anatomy/forge-v2/group-4.svg",
+    "file": "anatomy/muscle-4.webp",
     "role": "group-map",
-    "bytes": 6856,
-    "sha256": "3c4a30ac6b6d87fbb20558e01af60ca5aaefd8aab6542b08f606882364d86b14",
+    "bytes": 24764,
+    "sha256": "a5b301b123d7d9592fa1b9c93463555f04fdf662646f4b6b9e479f7a3509372c",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "anatomy/forge-v2/group-5.svg",
+    "file": "anatomy/reference-v3/quads.webp",
     "role": "group-map",
-    "bytes": 6856,
-    "sha256": "051d81e932c3ac37887f6eb1d296f00fdda799f07ef80ef381351152ea140fa7",
+    "bytes": 23792,
+    "sha256": "c60eff41b43df14ebd6ef337436523cccc6bae635e712051f3701dbc6994d7c4",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "anatomy/forge-v2/group-6.svg",
+    "file": "anatomy/reference-v3/hamstrings.webp",
     "role": "group-map",
-    "bytes": 6857,
-    "sha256": "c71ffecf53609fdcb7aba736da5431a718a2ad43f97e989de4bc8e07e46c38f4",
+    "bytes": 27512,
+    "sha256": "b9082f45d1faeb0f9d3efb3a754d4b9acf733b01052e95dab6acdc0150248d03",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "anatomy/forge-v2/group-7.svg",
+    "file": "anatomy/reference-v3/glutes.webp",
     "role": "group-map",
-    "bytes": 6857,
-    "sha256": "b340955864a331da3d0f338993d4e18e822111c3aedd0b3de32ee38e8907049a",
+    "bytes": 29588,
+    "sha256": "f526ecb04e08d52f2b138da4665e03e133a6c9e7e1e3b2702452acb12877b51e",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "anatomy/forge-v2/group-8.svg",
+    "file": "anatomy/reference-v3/calves.webp",
     "role": "group-map",
-    "bytes": 6857,
-    "sha256": "db264d217d26420ce95cc57e38ac92f636f576fa2ce86bdf134ae4e417906230",
+    "bytes": 19196,
+    "sha256": "b7c6a597a5279bbd4b5a0a807d7c12d9d20da6074bf977dc12530d12087c2b4c",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "anatomy/forge-v2/group-9.svg",
+    "file": "anatomy/reference-v3/abs.webp",
     "role": "group-map",
-    "bytes": 6855,
-    "sha256": "2bbd5670401b7ce5faf9ee3a9f3054b11dfeb4679dacad94dc8e64207478c40f",
+    "bytes": 29958,
+    "sha256": "a3d287b26ec729d81ab683823180e2f78144d7ba14f37bdd2e7c4599c716ca0c",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "anatomy/forge-v2/group-10.svg",
+    "file": "anatomy/reference-v3/cardio.webp",
     "role": "group-map",
-    "bytes": 6853,
-    "sha256": "f29ffe66b74726f70d5d445ca0b803701e339899285a5f2dd54bd989ee3373a5",
+    "bytes": 10048,
+    "sha256": "c85a4eacf96a95462328c043c0efea9fe7b1e235f653544190c0d04388122a81",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "anatomy/forge-v2/group-11.svg",
+    "file": "anatomy/reference-v3/lower-back.webp",
     "role": "group-map",
-    "bytes": 6857,
-    "sha256": "b679473f3f2250511cdf1baeb27128d0a9e321dccbe77241e4e2e090e8c7588d",
+    "bytes": 31378,
+    "sha256": "829dc249aefaa2cc832fac814e13793baed9dc9fe1cdb13ed6521cbd08115038",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "anatomy/forge-v2/group-12.svg",
+    "file": "anatomy/reference-v3/forearms.webp",
     "role": "group-map",
-    "bytes": 6855,
-    "sha256": "8f28cbe513dbd0ecc12811cd0e2565a551301438e794ac764793aa1fce1e9e6a",
+    "bytes": 25434,
+    "sha256": "cc60de99732a88ffdf36d632524f21dc3e046e0db5a90e4e6d012bc81e91c316",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "anatomy/forge-v2/group-13.svg",
+    "file": "anatomy/reference-v3/mobility.webp",
     "role": "group-map",
-    "bytes": 6853,
-    "sha256": "f29ffe66b74726f70d5d445ca0b803701e339899285a5f2dd54bd989ee3373a5",
+    "bytes": 25004,
+    "sha256": "34d92ad2df592f45b403c288bbf0e9c03101e84c22b6c8b1e0a883b603a7c9dd",
     "pathChecked": true,
     "expertVerified": false
   }

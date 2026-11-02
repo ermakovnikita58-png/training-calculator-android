@@ -1,0 +1,299 @@
+[
+  {
+    "group": "Грудь",
+    "type": "MUSCLE_GROUP_ART",
+    "file": "anatomy/muscle-0.webp",
+    "status": "ready-style",
+    "origin": "restored-project-ImageGen",
+    "rightsBasis": "Original project synthetic generation; historical provenance in artwork/README.md",
+    "historicalPromptAvailable": false,
+    "sha256": "cace9a099d968db5c547ab9c387ef61d8d2460979d5423d7f837dfeb012e17a4",
+    "bytes": 28922,
+    "expertVerified": false,
+    "visualReview": "matches-owner-anatomy-reference",
+    "highlight": "orange"
+  },
+  {
+    "group": "Спина",
+    "type": "MUSCLE_GROUP_ART",
+    "file": "anatomy/muscle-1.webp",
+    "status": "ready-style",
+    "origin": "restored-project-ImageGen",
+    "rightsBasis": "Original project synthetic generation; historical provenance in artwork/README.md",
+    "historicalPromptAvailable": false,
+    "sha256": "4ed9fd5712e492cb6aad98860c5e074a8ee94fb0063f2710f6e35cd8578e805b",
+    "bytes": 30868,
+    "expertVerified": false,
+    "visualReview": "matches-owner-anatomy-reference",
+    "highlight": "orange"
+  },
+  {
+    "group": "Плечи",
+    "type": "MUSCLE_GROUP_ART",
+    "file": "anatomy/muscle-2.webp",
+    "status": "ready-style",
+    "origin": "restored-project-ImageGen",
+    "rightsBasis": "Original project synthetic generation; historical provenance in artwork/README.md",
+    "historicalPromptAvailable": false,
+    "sha256": "80c0d8bd2d1f5e7959748e12e3c72f4149b5364460accdc3c82c116cd10f7905",
+    "bytes": 24506,
+    "expertVerified": false,
+    "visualReview": "matches-owner-anatomy-reference",
+    "highlight": "orange"
+  },
+  {
+    "group": "Бицепс",
+    "type": "MUSCLE_GROUP_ART",
+    "file": "anatomy/muscle-3.webp",
+    "status": "ready-style",
+    "origin": "restored-project-ImageGen",
+    "rightsBasis": "Original project synthetic generation; historical provenance in artwork/README.md",
+    "historicalPromptAvailable": false,
+    "sha256": "98b1b91b414f0e5969c2d9f19e05e92eb38fd91ea2ce28b4e5b56280faede555",
+    "bytes": 29416,
+    "expertVerified": false,
+    "visualReview": "matches-owner-anatomy-reference",
+    "highlight": "orange"
+  },
+  {
+    "group": "Трицепс",
+    "type": "MUSCLE_GROUP_ART",
+    "file": "anatomy/muscle-4.webp",
+    "status": "ready-style",
+    "origin": "restored-project-ImageGen",
+    "rightsBasis": "Original project synthetic generation; historical provenance in artwork/README.md",
+    "historicalPromptAvailable": false,
+    "sha256": "a5b301b123d7d9592fa1b9c93463555f04fdf662646f4b6b9e479f7a3509372c",
+    "bytes": 24764,
+    "expertVerified": false,
+    "visualReview": "matches-owner-anatomy-reference",
+    "highlight": "orange"
+  },
+  {
+    "group": "Предплечья",
+    "type": "MUSCLE_GROUP_ART",
+    "file": "anatomy/reference-v3/forearms.webp",
+    "status": "ready-style",
+    "origin": "ImageGen-2026-11-02",
+    "rightsBasis": "New original project generation using project-owned synthetic style references; no stock image imported",
+    "prompt": "Project FORGE, original synthetic educational muscle-group artwork. Match the supplied project reference image exactly in artistic treatment: highly detailed realistic 3D exposed musculature of the same athletic adult male anatomical model, silver-gray muscle fibres, finely separated muscle bundles, convincing sculptural volume, satin realistic tissue, soft upper-left studio light, dark nearly black graphite background #0b1110, square composition. Saturated warm orange #f57827 ONLY on the specified target muscles, all neighbouring muscles neutral silver gray. No flat diagram, no vector silhouette, no lime, no white background, no text, no labels, no border, no branding, no anatomical percentages. This is muscle-group selection art, not exercise technique. Preserve the visual identity, proportions, lighting, fibre detail and orange used in the references. Create one new standalone card image, not a collage. Target: forearm musculature. Close three-quarter anterior view from the lower upper arm and elbow to wrist, with a small part of the same torso at the edge. The forearm is the main subject and fills most of the square. Highlight ONLY the superficial forearm flexors and extensor mass distal to the elbow in orange; biceps, triceps, shoulder, hand and tendon ends stay gray. Fingers relaxed, arm neutral. Do not put the orange on the biceps.",
+    "referenceFiles": [
+      "anatomy/muscle-3.webp"
+    ],
+    "originalOutputFilename": "exec-551dc75a-ad08-4f8f-9e83-792d977419b6.png",
+    "originalOutputSHA256": "5ef8871310c412884a33e8d8af6487ffda4cdb288b08fc3a77e8cdeddc8e100e",
+    "sha256": "cc60de99732a88ffdf36d632524f21dc3e046e0db5a90e4e6d012bc81e91c316",
+    "bytes": 25434,
+    "encoding": {
+      "width": 480,
+      "height": 480,
+      "format": "webp",
+      "quality": 0.68
+    },
+    "expertVerified": false,
+    "visualReview": "generated-output-and-contact-sheet-review-required",
+    "highlight": "orange"
+  },
+  {
+    "group": "Пресс",
+    "type": "MUSCLE_GROUP_ART",
+    "file": "anatomy/reference-v3/abs.webp",
+    "status": "ready-style",
+    "origin": "ImageGen-2026-11-02",
+    "rightsBasis": "New original project generation using project-owned synthetic style references; no stock image imported",
+    "prompt": "Project FORGE, original synthetic educational muscle-group artwork. Match the supplied project reference image exactly in artistic treatment: highly detailed realistic 3D exposed musculature of the same athletic adult male anatomical model, silver-gray muscle fibres, finely separated muscle bundles, convincing sculptural volume, satin realistic tissue, soft upper-left studio light, dark nearly black graphite background #0b1110, square composition. Saturated warm orange #f57827 ONLY on the specified target muscles, all neighbouring muscles neutral silver gray. No flat diagram, no vector silhouette, no lime, no white background, no text, no labels, no border, no branding, no anatomical percentages. This is muscle-group selection art, not exercise technique. Preserve the visual identity, proportions, lighting, fibre detail and orange used in the references. Create one new standalone card image, not a collage. Target: abdominal muscles. Front torso view, from lower pectorals to the top of pelvis, same camera scale and detailed silver body as the chest reference, but pectorals and arms are completely neutral gray. Highlight the rectus abdominis muscle bellies and external obliques in orange. White-gray linea alba and tendinous divisions remain distinct; do not colour the entire rib cage or serratus. No genitals; crop above the groin.",
+    "referenceFiles": [
+      "anatomy/muscle-0.webp"
+    ],
+    "originalOutputFilename": "exec-4e7c4a96-d11b-4a73-b367-977e868db25d.png",
+    "originalOutputSHA256": "a20fcb22b825a7ae91aaaed4d6ee173f978538b4b6e0660f5252ee2f94c545cb",
+    "sha256": "a3d287b26ec729d81ab683823180e2f78144d7ba14f37bdd2e7c4599c716ca0c",
+    "bytes": 29958,
+    "encoding": {
+      "width": 480,
+      "height": 480,
+      "format": "webp",
+      "quality": 0.68
+    },
+    "expertVerified": false,
+    "visualReview": "generated-output-and-contact-sheet-review-required",
+    "highlight": "orange"
+  },
+  {
+    "group": "Ягодицы",
+    "type": "MUSCLE_GROUP_ART",
+    "file": "anatomy/reference-v3/glutes.webp",
+    "status": "ready-style",
+    "origin": "ImageGen-2026-11-02",
+    "rightsBasis": "New original project generation using project-owned synthetic style references; no stock image imported",
+    "prompt": "Project FORGE, original synthetic educational muscle-group artwork. Match the supplied project reference image exactly in artistic treatment: highly detailed realistic 3D exposed musculature of the same athletic adult male anatomical model, silver-gray muscle fibres, finely separated muscle bundles, convincing sculptural volume, satin realistic tissue, soft upper-left studio light, dark nearly black graphite background #0b1110, square composition. Saturated warm orange #f57827 ONLY on the specified target muscles, all neighbouring muscles neutral silver gray. No flat diagram, no vector silhouette, no lime, no white background, no text, no labels, no border, no branding, no anatomical percentages. This is muscle-group selection art, not exercise technique. Preserve the visual identity, proportions, lighting, fibre detail and orange used in the references. Create one new standalone card image, not a collage. Target: gluteal muscles. Rear anatomical view from the lower back to just below the hips/upper thighs. Show both gluteus maximus muscle masses in saturated orange, with gluteus medius where exposed. Lumbar back muscles, hamstrings, fascia and surrounding muscles stay neutral silver gray. Same model and detailed fibre rendering as the rear torso reference, but camera reframed lower. An educational synthetic anatomy model with no skin; exclude any genitals, no suggestive pose, relaxed symmetric stance.",
+    "referenceFiles": [
+      "anatomy/muscle-1.webp"
+    ],
+    "originalOutputFilename": "exec-81d5cafa-4bf4-40c5-996b-2d91d10125f6.png",
+    "originalOutputSHA256": "60e53270894c2b59c505a7a87acfdd88ec39a47f5571cec594208f7ffa19dd50",
+    "sha256": "f526ecb04e08d52f2b138da4665e03e133a6c9e7e1e3b2702452acb12877b51e",
+    "bytes": 29588,
+    "encoding": {
+      "width": 480,
+      "height": 480,
+      "format": "webp",
+      "quality": 0.68
+    },
+    "expertVerified": false,
+    "visualReview": "generated-output-and-contact-sheet-review-required",
+    "highlight": "orange"
+  },
+  {
+    "group": "Квадрицепс",
+    "type": "MUSCLE_GROUP_ART",
+    "file": "anatomy/reference-v3/quads.webp",
+    "status": "ready-style",
+    "origin": "ImageGen-2026-11-02",
+    "rightsBasis": "New original project generation using project-owned synthetic style references; no stock image imported",
+    "prompt": "Project FORGE, original synthetic educational muscle-group artwork. Match the supplied project reference image exactly in artistic treatment: highly detailed realistic 3D exposed musculature of the same athletic adult male anatomical model, silver-gray muscle fibres, finely separated muscle bundles, convincing sculptural volume, satin realistic tissue, soft upper-left studio light, dark nearly black graphite background #0b1110, square composition. Saturated warm orange #f57827 ONLY on the specified target muscles, all neighbouring muscles neutral silver gray. No flat diagram, no vector silhouette, no lime, no white background, no text, no labels, no border, no branding, no anatomical percentages. This is muscle-group selection art, not exercise technique. Preserve the visual identity, proportions, lighting, fibre detail and orange used in the references. Create one new standalone card image, not a collage. Target: quadriceps femoris. Front anatomical view, cropped from top of hips to below the knees, both thighs filling the frame with clear muscle detail. Highlight only rectus femoris, vastus lateralis and vastus medialis on both anterior thighs in saturated orange. Inner adductors, tensor fasciae latae, pelvis, patellae, patellar tendons and calves neutral gray. Same athletic model, very realistic silver muscle fibres. No text or genital detail; the upper pelvis may be cropped or modestly covered in dark neutral fabric above muscle targets.",
+    "referenceFiles": [
+      "anatomy/muscle-0.webp",
+      "anatomy/muscle-1.webp"
+    ],
+    "originalOutputFilename": "exec-668f4d35-b5f4-487b-b0da-8ed97d438f81.png",
+    "originalOutputSHA256": "5ccf2f73c1e167af908e035220b0da37ca6775ba3244bd802dab0bcb8f0cfb7a",
+    "sha256": "c60eff41b43df14ebd6ef337436523cccc6bae635e712051f3701dbc6994d7c4",
+    "bytes": 23792,
+    "encoding": {
+      "width": 480,
+      "height": 480,
+      "format": "webp",
+      "quality": 0.68
+    },
+    "expertVerified": false,
+    "visualReview": "generated-output-and-contact-sheet-review-required",
+    "highlight": "orange"
+  },
+  {
+    "group": "Бицепс бедра",
+    "type": "MUSCLE_GROUP_ART",
+    "file": "anatomy/reference-v3/hamstrings.webp",
+    "status": "ready-style",
+    "origin": "ImageGen-2026-11-02",
+    "rightsBasis": "New original project generation using project-owned synthetic style references; no stock image imported",
+    "prompt": "Project FORGE, original synthetic educational muscle-group artwork. Match the supplied project reference image exactly in artistic treatment: highly detailed realistic 3D exposed musculature of the same athletic adult male anatomical model, silver-gray muscle fibres, finely separated muscle bundles, convincing sculptural volume, satin realistic tissue, soft upper-left studio light, dark nearly black graphite background #0b1110, square composition. Saturated warm orange #f57827 ONLY on the specified target muscles, all neighbouring muscles neutral silver gray. No flat diagram, no vector silhouette, no lime, no white background, no text, no labels, no border, no branding, no anatomical percentages. This is muscle-group selection art, not exercise technique. Preserve the visual identity, proportions, lighting, fibre detail and orange used in the references. Create one new standalone card image, not a collage. Target: hamstrings (posterior thigh). Rear anatomical view cropped from upper hips to below the knees, both thighs fill the square. Gluteal muscles and lower back remain neutral silver gray. Saturated orange only on the posterior thigh hamstring muscle bellies: biceps femoris and semitendinosus with visible semimembranosus. Maintain a neutral gray central gap and gray tendon insertions near knee; do not highlight the calves or glutes. Same detailed athletic male synthetic anatomy model and lighting. Educational neutral stance, no genitals.",
+    "referenceFiles": [
+      "anatomy/muscle-1.webp"
+    ],
+    "originalOutputFilename": "exec-5d164c1f-6595-4649-a553-115a550b711e.png",
+    "originalOutputSHA256": "fc13f8d4d58205f540684cd3995dedb2fa427ead1d5448bffd5ebabfdaa3f6dd",
+    "sha256": "b9082f45d1faeb0f9d3efb3a754d4b9acf733b01052e95dab6acdc0150248d03",
+    "bytes": 27512,
+    "encoding": {
+      "width": 480,
+      "height": 480,
+      "format": "webp",
+      "quality": 0.68
+    },
+    "expertVerified": false,
+    "visualReview": "generated-output-and-contact-sheet-review-required",
+    "highlight": "orange"
+  },
+  {
+    "group": "Икры",
+    "type": "MUSCLE_GROUP_ART",
+    "file": "anatomy/reference-v3/calves.webp",
+    "status": "ready-style",
+    "origin": "ImageGen-2026-11-02",
+    "rightsBasis": "New original project generation using project-owned synthetic style references; no stock image imported",
+    "prompt": "Project FORGE, original synthetic educational muscle-group artwork. Match the supplied project reference image exactly in artistic treatment: highly detailed realistic 3D exposed musculature of the same athletic adult male anatomical model, silver-gray muscle fibres, finely separated muscle bundles, convincing sculptural volume, satin realistic tissue, soft upper-left studio light, dark nearly black graphite background #0b1110, square composition. Saturated warm orange #f57827 ONLY on the specified target muscles, all neighbouring muscles neutral silver gray. No flat diagram, no vector silhouette, no lime, no white background, no text, no labels, no border, no branding, no anatomical percentages. This is muscle-group selection art, not exercise technique. Preserve the visual identity, proportions, lighting, fibre detail and orange used in the references. Create one new standalone card image, not a collage. Target: calf musculature. Rear view of both lower legs cropped from above the knees to the ankles, same body as the reference. Highlight only the medial and lateral heads of gastrocnemius and the exposed lateral soleus muscle bellies in saturated orange. Hamstrings, knee structures, Achilles tendon and heel remain neutral silver-gray. Clearly separate the two orange heads and the gray Achilles. Detailed fibres, no labels or text.",
+    "referenceFiles": [
+      "anatomy/muscle-1.webp"
+    ],
+    "originalOutputFilename": "exec-9249bb1c-1e5b-4046-aeda-f975567f6723.png",
+    "originalOutputSHA256": "e6b6181c4a1602e1a2cd87dc352c623bd2994d6ee74a4a7f5da74179c7feba0a",
+    "sha256": "b7c6a597a5279bbd4b5a0a807d7c12d9d20da6074bf977dc12530d12087c2b4c",
+    "bytes": 19196,
+    "encoding": {
+      "width": 480,
+      "height": 480,
+      "format": "webp",
+      "quality": 0.68
+    },
+    "expertVerified": false,
+    "visualReview": "generated-output-and-contact-sheet-review-required",
+    "highlight": "orange"
+  },
+  {
+    "group": "Нижняя спина",
+    "type": "MUSCLE_GROUP_ART",
+    "file": "anatomy/reference-v3/lower-back.webp",
+    "status": "ready-style",
+    "origin": "ImageGen-2026-11-02",
+    "rightsBasis": "New original project generation using project-owned synthetic style references; no stock image imported",
+    "prompt": "Project FORGE, original synthetic educational muscle-group artwork. Match the supplied project reference image exactly in artistic treatment: highly detailed realistic 3D exposed musculature of the same athletic adult male anatomical model, silver-gray muscle fibres, finely separated muscle bundles, convincing sculptural volume, satin realistic tissue, soft upper-left studio light, dark nearly black graphite background #0b1110, square composition. Saturated warm orange #f57827 ONLY on the specified target muscles, all neighbouring muscles neutral silver gray. No flat diagram, no vector silhouette, no lime, no white background, no text, no labels, no border, no branding, no anatomical percentages. This is muscle-group selection art, not exercise technique. Preserve the visual identity, proportions, lighting, fibre detail and orange used in the references. Create one new standalone card image, not a collage. Target: lumbar spinal erector muscles, lower back. Rear view from the lower ribs to top of gluteal region, arms partly visible at edges. Highlight ONLY the two paired vertical lumbar erector-spinae muscle columns immediately on either side of the lumbar spine in warm saturated orange. The central spine, thoracolumbar fascia, latissimus dorsi, trapezius and gluteal muscles are neutral silver-gray. Do not colour the broad lat muscles orange. Same anatomical model, fibre-rich detailed rendering and lighting as the supplied back reference. No text, no spine pain symbols.",
+    "referenceFiles": [
+      "anatomy/muscle-1.webp"
+    ],
+    "originalOutputFilename": "exec-55e9fafa-52f3-45ac-b5d2-7cd4b3f63a81.png",
+    "originalOutputSHA256": "e775cc83b1a73cd06ba5cdbc6b6aadb7c6930221689804abf4fdea3aea6774e6",
+    "sha256": "829dc249aefaa2cc832fac814e13793baed9dc9fe1cdb13ed6521cbd08115038",
+    "bytes": 31378,
+    "encoding": {
+      "width": 480,
+      "height": 480,
+      "format": "webp",
+      "quality": 0.68
+    },
+    "expertVerified": false,
+    "visualReview": "generated-output-and-contact-sheet-review-required",
+    "highlight": "orange"
+  },
+  {
+    "group": "Кардио",
+    "type": "MUSCLE_GROUP_ART",
+    "file": "anatomy/reference-v3/cardio.webp",
+    "status": "ready-style",
+    "origin": "ImageGen-2026-11-02",
+    "rightsBasis": "New original project generation using project-owned synthetic style references; no stock image imported",
+    "prompt": "Project FORGE, original synthetic educational muscle-group artwork. Match the supplied project reference image exactly in artistic treatment: highly detailed realistic 3D exposed musculature of the same athletic adult male anatomical model, silver-gray muscle fibres, finely separated muscle bundles, convincing sculptural volume, satin realistic tissue, soft upper-left studio light, dark nearly black graphite background #0b1110, square composition. Saturated warm orange #f57827 ONLY on the specified target muscles, all neighbouring muscles neutral silver gray. No flat diagram, no vector silhouette, no lime, no white background, no text, no labels, no border, no branding, no anatomical percentages. This is muscle-group selection art, not exercise technique. Preserve the visual identity, proportions, lighting, fibre detail and orange used in the references. Create one new standalone card image, not a collage. Category illustration: general cardio, which is NOT one specific muscle group. Show the same realistic athletic silver-gray anatomical mannequin in a full body front three-quarter neutral standing pose, from head to feet, detailed muscles visible. All muscles stay neutral silver-gray: do not invent a single orange target muscle for this category. Modest dark athletic briefs, no genitals, no skin. Hands relaxed beside body. Same black background and professional anatomical detail; no treadmill, no movement diagram, no labels, no text.",
+    "referenceFiles": [
+      "anatomy/muscle-0.webp",
+      "anatomy/muscle-1.webp"
+    ],
+    "originalOutputFilename": "exec-66bb9fe2-f62f-4847-b631-97087ae157af.png",
+    "originalOutputSHA256": "ff0f871e2050e47a4c044bc5cc3712c14189ebb238a233883670f229e507753b",
+    "sha256": "c85a4eacf96a95462328c043c0efea9fe7b1e235f653544190c0d04388122a81",
+    "bytes": 10048,
+    "encoding": {
+      "width": 480,
+      "height": 480,
+      "format": "webp",
+      "quality": 0.68
+    },
+    "expertVerified": false,
+    "visualReview": "generated-output-and-contact-sheet-review-required",
+    "highlight": "none-non-muscle-category"
+  },
+  {
+    "group": "Мобильность",
+    "type": "MUSCLE_GROUP_ART",
+    "file": "anatomy/reference-v3/mobility.webp",
+    "status": "ready-style",
+    "origin": "ImageGen-2026-11-02",
+    "rightsBasis": "New original project generation using project-owned synthetic style references; no stock image imported",
+    "prompt": "Create one original square educational 3D anatomy illustration for the FORGE general mobility category. Use the attached project chest illustration only as a STYLE reference: the same realistic silver-gray anatomical mannequin, finely visible muscle fibres, sculptural volume, soft upper-left studio light and near-black background. Composition: front three-quarter UPPER TORSO only, from neck base to the lower rib cage, both shoulders and upper arms visible, one arm gently extended outward. Strict crop above the waist. All muscles neutral silver-gray; this broad category has no specific target muscle, so there must be no orange, lime or red highlight. This is a realistic anatomical category thumbnail, not an exercise technique diagram. No text, no labels, no accessories, no bright background, no flat SVG silhouette. Match the supplied reference's professional anatomical rendering and body proportions.",
+    "referenceFiles": [
+      "anatomy/muscle-0.webp"
+    ],
+    "originalOutputFilename": "exec-53c9f144-6a5a-4836-ae81-6e4ad8d3b1cc.png",
+    "originalOutputSHA256": "c90e076b16c1482de8687113b3caa2990130a9b24e3e6b1f903693241ab200c2",
+    "sha256": "34d92ad2df592f45b403c288bbf0e9c03101e84c22b6c8b1e0a883b603a7c9dd",
+    "bytes": 25004,
+    "encoding": {
+      "width": 480,
+      "height": 480,
+      "format": "webp",
+      "quality": 0.68
+    },
+    "expertVerified": false,
+    "visualReview": "generated-output-and-contact-sheet-review-required",
+    "highlight": "none-non-muscle-category"
+  }
+]
