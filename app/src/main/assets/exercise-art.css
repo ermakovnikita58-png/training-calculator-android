@@ -10,7 +10,7 @@
 .x7row .thumb,.y8thumb{width:104px!important;height:104px!important;border-radius:16px!important;background:#111c20!important;border:1px solid #34464b!important;flex-shrink:0}
 .x7row .thumb img,.y8thumb img,.forge-exercise-art{width:100%;height:100%;object-fit:contain!important}
 .x7row{min-height:128px!important}.y8ex{min-height:126px!important}
-img[src*="exercise-art/ek-"]{background:#f0f2ee}
+/* Original contour SVGs have transparent backgrounds. No per-filename light rectangle. */
 .n8-mark:has(.forge-exercise-art){width:72px;height:72px;background:#111c20;border-radius:12px;flex-shrink:0;overflow:hidden}
 .forge-art-gallery{width:100%;min-width:0}.forge-art-frames{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;width:100%}
 .forge-art-frames figure{margin:0;background:#111c20;border:1px solid #30454a;border-radius:16px;overflow:hidden;text-align:center}

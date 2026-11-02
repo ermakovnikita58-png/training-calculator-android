@@ -1,8 +1,8 @@
 // Manual, reproducible BEFORE screenshots from the immutable Performance UI base.
 const {chromium}=require('playwright'),fs=require('node:fs'),path=require('node:path'),cp=require('node:child_process');
 (async()=>{
- const root=path.resolve(__dirname,'..'),assets=path.join(root,'app/src/main/assets'),out=path.join(root,'docs/exercise-screenshots');
- const base='f83d306f6c8f4b8e2de473abffc985789fb54549',cache=new Map(),browser=await chromium.launch({headless:true,...(process.env.FORGE_CHROMIUM?{executablePath:process.env.FORGE_CHROMIUM}:{})});
+ const root=path.resolve(__dirname,'..'),assets=path.join(root,'app/src/main/assets'),out=path.join(root,'docs/art-reference-screenshots');
+ const base='97c1299573b7926a1af5a7384b8242e979e6bbec',cache=new Map(),browser=await chromium.launch({headless:true,...(process.env.FORGE_CHROMIUM?{executablePath:process.env.FORGE_CHROMIUM}:{})});
  fs.mkdirSync(out,{recursive:true});
  try{for(const viewport of [{width:360,height:800},{width:390,height:844},{width:412,height:915}]){
   const ctx=await browser.newContext({viewport}),page=await ctx.newPage();

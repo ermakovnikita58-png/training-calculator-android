@@ -1,9 +1,9 @@
 {
-  "physicalImageCount": 948,
-  "physicalImageBytes": 16520874,
-  "renderedExercisePhaseFiles": 902,
+  "physicalImageCount": 1065,
+  "physicalImageBytes": 17901215,
+  "renderedExercisePhaseFiles": 500,
   "renderedGroupMaps": 14,
-  "uniqueRenderedPairs": 451,
+  "uniqueRenderedPairs": 250,
   "expertVerified": false,
   "sameByteFiles": [
     {
@@ -515,13 +515,12 @@
     },
     {
       "files": [
-        "exercise-art/ek-0211-relaxation.svg",
-        "exercise-art/ek-0211-tension.svg"
+        "exercise-contours/ek-0211-relaxation.svg",
+        "exercise-contours/ek-0211-tension.svg"
       ],
       "names": [
         "Подъём штанги на бицепс",
-        "Подъём штанги на бицепс стоя",
-        "Подъём штанги на бицепс у стены"
+        "Подъём штанги на бицепс стоя"
       ],
       "status": "variant-correspondence-requires-review"
     },
@@ -552,8 +551,8 @@
     },
     {
       "files": [
-        "exercise-art/ek-0239-relaxation.svg",
-        "exercise-art/ek-0239-tension.svg"
+        "exercise-contours/ek-0239-relaxation.svg",
+        "exercise-contours/ek-0239-tension.svg"
       ],
       "names": [
         "Сгибание рук на скамье Скотта",
@@ -905,8 +904,8 @@
     },
     {
       "files": [
-        "exercise-art/ek-0037-relaxation.svg",
-        "exercise-art/ek-0037-tension.svg"
+        "exercise-contours/ek-0037-relaxation.svg",
+        "exercise-contours/ek-0037-tension.svg"
       ],
       "names": [
         "Разведение гантелей в стороны лёжа",
@@ -927,8 +926,8 @@
     },
     {
       "files": [
-        "exercise-art/ek-0247-relaxation.svg",
-        "exercise-art/ek-0247-tension.svg"
+        "exercise-contours/ek-0247-relaxation.svg",
+        "exercise-contours/ek-0247-tension.svg"
       ],
       "names": [
         "Сгибание одной руки на блоке",
@@ -1016,8 +1015,8 @@
     },
     {
       "files": [
-        "exercise-art/ek-0114-relaxation.svg",
-        "exercise-art/ek-0114-tension.svg"
+        "exercise-contours/ek-0114-relaxation.svg",
+        "exercise-contours/ek-0114-tension.svg"
       ],
       "names": [
         "Выпады со штангой",
@@ -1093,17 +1092,6 @@
     },
     {
       "files": [
-        "exercise-art/l-sit-hold-1.svg",
-        "exercise-art/l-sit-hold-2.svg"
-      ],
-      "names": [
-        "Уголок на брусьях",
-        "Уголок на полу"
-      ],
-      "status": "variant-correspondence-requires-review"
-    },
-    {
-      "files": [
         "exercise-art/burpee-1.svg",
         "exercise-art/burpee-2.svg"
       ],
@@ -1126,22 +1114,10 @@
     },
     {
       "files": [
-        "exercise-art/rack-pull-1.svg",
-        "exercise-art/rack-pull-2.svg"
-      ],
-      "names": [
-        "Становая тяга с плинтов",
-        "Тяга штанги до колен"
-      ],
-      "status": "variant-correspondence-requires-review"
-    },
-    {
-      "files": [
         "exercise-art/running-1.svg",
         "exercise-art/running-2.svg"
       ],
       "names": [
-        "Бег на улице",
         "Интервальный бег",
         "Спринты",
         "Лёгкий бег с ускорениями"
@@ -1156,17 +1132,6 @@
       "names": [
         "Степпер",
         "Лестничный тренажёр"
-      ],
-      "status": "variant-correspondence-requires-review"
-    },
-    {
-      "files": [
-        "exercise-art/hiking-1.svg",
-        "exercise-art/hiking-2.svg"
-      ],
-      "names": [
-        "Ходьба в гору",
-        "Прогулка в гору с рюкзаком"
       ],
       "status": "variant-correspondence-requires-review"
     },
@@ -1226,49 +1191,7 @@
       "status": "variant-correspondence-requires-review"
     }
   ],
-  "identicalPhasePairs": [
-    "Отжимания на кольцах",
-    "Подтягивания узким хватом",
-    "Подтягивания с резинкой",
-    "Планка на прямых руках",
-    "Колесо для пресса стоя",
-    "Разгибание кистей со штангой",
-    "Сгибание кистей с гантелями",
-    "Сгибание кистей за спиной",
-    "Вис на полотенце",
-    "Удержание дисков пальцами",
-    "Прокручивание роллера для предплечий",
-    "Прогулка фермера с гирями",
-    "Удержание штанги в руках",
-    "Разгибание пальцев с резинкой",
-    "Сжатие кистевого эспандера",
-    "Кистевое вращение с гантелью",
-    "Растяжка ягодиц сидя",
-    "Присед в глубоком положении",
-    "Поза голубя",
-    "Мобилизация запястий",
-    "Отжимания с резинкой",
-    "Жим с эспандером стоя",
-    "Подтягивания на кольцах",
-    "Горизонтальные подтягивания на кольцах",
-    "Сгибание кисти и локтя с эспандером",
-    "Отжимания на узких брусьях с резинкой",
-    "Планка с упором на фитбол",
-    "Планка на предплечьях с отягощением",
-    "Скручивания в тренажёре сидя",
-    "Прогулка фермера с трэп-грифом",
-    "Удержание тяжёлой гири",
-    "Удержание пальцами на турнике",
-    "Сжимание эспандера на время",
-    "Разведение пальцев с резинкой",
-    "Подъём гантели за край рукояти",
-    "Вращение кисти с молотком",
-    "Пронация кисти с резинкой",
-    "Супинация кисти с резинкой",
-    "Вращение бедра сидя 90/90",
-    "Разгибание запястий с опорой",
-    "Растяжка бицепса у стены"
-  ],
+  "identicalPhasePairs": [],
   "files": [
     {
       "file": "anatomy/forge-v2/group-0.svg",
@@ -1469,6 +1392,51 @@
       "file": "anatomy/muscle-9.svg",
       "bytes": 2604,
       "sha256": "f9cade21db98a098a7426d14f27e726733ec734fdfca81481455725e6e883ee9"
+    },
+    {
+      "file": "anatomy/reference-v3/abs.webp",
+      "bytes": 29958,
+      "sha256": "a3d287b26ec729d81ab683823180e2f78144d7ba14f37bdd2e7c4599c716ca0c"
+    },
+    {
+      "file": "anatomy/reference-v3/calves.webp",
+      "bytes": 19196,
+      "sha256": "b7c6a597a5279bbd4b5a0a807d7c12d9d20da6074bf977dc12530d12087c2b4c"
+    },
+    {
+      "file": "anatomy/reference-v3/cardio.webp",
+      "bytes": 10048,
+      "sha256": "c85a4eacf96a95462328c043c0efea9fe7b1e235f653544190c0d04388122a81"
+    },
+    {
+      "file": "anatomy/reference-v3/forearms.webp",
+      "bytes": 25434,
+      "sha256": "cc60de99732a88ffdf36d632524f21dc3e046e0db5a90e4e6d012bc81e91c316"
+    },
+    {
+      "file": "anatomy/reference-v3/glutes.webp",
+      "bytes": 29588,
+      "sha256": "f526ecb04e08d52f2b138da4665e03e133a6c9e7e1e3b2702452acb12877b51e"
+    },
+    {
+      "file": "anatomy/reference-v3/hamstrings.webp",
+      "bytes": 27512,
+      "sha256": "b9082f45d1faeb0f9d3efb3a754d4b9acf733b01052e95dab6acdc0150248d03"
+    },
+    {
+      "file": "anatomy/reference-v3/lower-back.webp",
+      "bytes": 31378,
+      "sha256": "829dc249aefaa2cc832fac814e13793baed9dc9fe1cdb13ed6521cbd08115038"
+    },
+    {
+      "file": "anatomy/reference-v3/mobility.webp",
+      "bytes": 25004,
+      "sha256": "34d92ad2df592f45b403c288bbf0e9c03101e84c22b6c8b1e0a883b603a7c9dd"
+    },
+    {
+      "file": "anatomy/reference-v3/quads.webp",
+      "bytes": 23792,
+      "sha256": "c60eff41b43df14ebd6ef337436523cccc6bae635e712051f3701dbc6994d7c4"
     },
     {
       "file": "exercise-art/ab-wheel-1.svg",
@@ -6009,6 +5977,546 @@
       "file": "exercise-art/wrist-extension-2.svg",
       "bytes": 16280,
       "sha256": "16cf5234242ac8c3a15d97c913ad8ac2234f174fafea64a404373fcddac037fa"
+    },
+    {
+      "file": "exercise-contours/ek-0004-relaxation.svg",
+      "bytes": 11823,
+      "sha256": "123dd65b924812a2ca09669b77cf3f623f25a46449ee979385f27fac69141459"
+    },
+    {
+      "file": "exercise-contours/ek-0004-tension.svg",
+      "bytes": 12251,
+      "sha256": "ba146fa32b04541eec03821b8cf763ea5b8a33e04120a58b3393a2618515c291"
+    },
+    {
+      "file": "exercise-contours/ek-0009-relaxation.svg",
+      "bytes": 10427,
+      "sha256": "47ba7605db63006d10751db5ae1a357946adb4c5e343922dceab77b04696e33a"
+    },
+    {
+      "file": "exercise-contours/ek-0009-tension.svg",
+      "bytes": 10298,
+      "sha256": "4cdf6a18283b0dcb0016e068f4f1b35f1b59e2e6ec3c2a51d7c11ead76e3b496"
+    },
+    {
+      "file": "exercise-contours/ek-0015-relaxation.svg",
+      "bytes": 10412,
+      "sha256": "e1c9bcca78fbd92941405ac9e1124a24dec194fc6f08cfe3f50a009703a37fa2"
+    },
+    {
+      "file": "exercise-contours/ek-0015-tension.svg",
+      "bytes": 11126,
+      "sha256": "c3bf50e3d780a517cba6a21779cfe866a128a51a9b1700c9c29a704f3c51b58a"
+    },
+    {
+      "file": "exercise-contours/ek-0016-relaxation.svg",
+      "bytes": 9582,
+      "sha256": "08168cfce3b7292e57445986a478f6ec856237c5ff002bcefca1a7b217043521"
+    },
+    {
+      "file": "exercise-contours/ek-0016-tension.svg",
+      "bytes": 10039,
+      "sha256": "384e349891de524c14cc57a04ce60773378a33f906aba5bd0ff577dbcf380038"
+    },
+    {
+      "file": "exercise-contours/ek-0026-relaxation.svg",
+      "bytes": 10175,
+      "sha256": "5fc1b9d11e992c1a9c6ceda61c52d4c5b89fd98c4140f660b176822f6c7a26d2"
+    },
+    {
+      "file": "exercise-contours/ek-0026-tension.svg",
+      "bytes": 10042,
+      "sha256": "2ca4e4e3d2f1e8ed32bca983aa6c96cd02e655f56986d8777ce3223752478168"
+    },
+    {
+      "file": "exercise-contours/ek-0027-relaxation.svg",
+      "bytes": 7962,
+      "sha256": "98225844be5ed64101527a890f3be337a1661124cb0b7666a4e043d0e2ef2c87"
+    },
+    {
+      "file": "exercise-contours/ek-0027-tension.svg",
+      "bytes": 8556,
+      "sha256": "09b99b5293e1739a71e911c3f131c1d0629b05cb9cb56db7a717a4eafa7a0bf0"
+    },
+    {
+      "file": "exercise-contours/ek-0037-relaxation.svg",
+      "bytes": 9128,
+      "sha256": "aef3563deec56761a17c19b5ecf4aa887e49d6052531a858bbc4a91576d401ef"
+    },
+    {
+      "file": "exercise-contours/ek-0037-tension.svg",
+      "bytes": 9080,
+      "sha256": "9a8fca5c66fb94a411675e79bfe61a07224f721e6f610b86ecbff8f643c024fd"
+    },
+    {
+      "file": "exercise-contours/ek-0038-relaxation.svg",
+      "bytes": 17988,
+      "sha256": "773f06980ef77c917efce3c093b50fd4287a4113aebeab863c6a38bc5b3718bc"
+    },
+    {
+      "file": "exercise-contours/ek-0038-tension.svg",
+      "bytes": 18817,
+      "sha256": "13b3230e3c365af59867984747a1a4105d50cf26001fe02f556e0aa41756b950"
+    },
+    {
+      "file": "exercise-contours/ek-0041-relaxation.svg",
+      "bytes": 13942,
+      "sha256": "97aea8fb0d43d8b7cd0ff57828fa004e9f7c5874df9be6bda1c94e6c43eac2f1"
+    },
+    {
+      "file": "exercise-contours/ek-0041-tension.svg",
+      "bytes": 13975,
+      "sha256": "76072f04664bce65d354edf9c732bed4c1f691a0d366441ded47b0b6da42a19c"
+    },
+    {
+      "file": "exercise-contours/ek-0046-relaxation.svg",
+      "bytes": 9733,
+      "sha256": "f99e04ad5544885c8a3c1684432a82b68b308b76f112a61bb93ccfcb13b58b80"
+    },
+    {
+      "file": "exercise-contours/ek-0046-tension.svg",
+      "bytes": 10414,
+      "sha256": "480d09310eda8072955f8edb2e75a5de080b4f226c092107780b4ad37c205814"
+    },
+    {
+      "file": "exercise-contours/ek-0053-relaxation.svg",
+      "bytes": 10639,
+      "sha256": "88a314393df0643056ab85ee58e9dbe57efb4b8fa3fea6fbc6298b3e951da1a9"
+    },
+    {
+      "file": "exercise-contours/ek-0053-tension.svg",
+      "bytes": 11844,
+      "sha256": "9cc6279051ef9d373dd8355a73783cf1f946428dc02eafb068ce5a1ce31d8e31"
+    },
+    {
+      "file": "exercise-contours/ek-0062-relaxation.svg",
+      "bytes": 11119,
+      "sha256": "b17edcf0ffcd8298c505bc3c6d5dda997e31675dfeb9d1ca8cdee130cee0d34c"
+    },
+    {
+      "file": "exercise-contours/ek-0062-tension.svg",
+      "bytes": 11091,
+      "sha256": "e2a447554e6a51fbd75bd027489c1cf7cd8f90681c1274d7036fe977a4a584e7"
+    },
+    {
+      "file": "exercise-contours/ek-0072-relaxation.svg",
+      "bytes": 9061,
+      "sha256": "5dbe2de0c128d8951d3e1f543be32802663d3a55abaeade3e6d1aabdcf586fbe"
+    },
+    {
+      "file": "exercise-contours/ek-0072-tension.svg",
+      "bytes": 9895,
+      "sha256": "81a169056187d283eebeca8e67bd5dd26a1b1836c06576775e3479665a27f849"
+    },
+    {
+      "file": "exercise-contours/ek-0082-relaxation.svg",
+      "bytes": 12517,
+      "sha256": "bff05db0418e6839b162bf40064f790947b8cab188e58e5b52ae6910ceea401f"
+    },
+    {
+      "file": "exercise-contours/ek-0082-tension.svg",
+      "bytes": 11748,
+      "sha256": "bd9a0a2a5c7e25c6f11b9dc2f881df2fe609e1f169f47f451026ef911db2383a"
+    },
+    {
+      "file": "exercise-contours/ek-0091-relaxation.svg",
+      "bytes": 9542,
+      "sha256": "c1cffb4842cce0391f16711038b9e8c39779263a5fe028d3d5a67b03e99208ed"
+    },
+    {
+      "file": "exercise-contours/ek-0091-tension.svg",
+      "bytes": 9463,
+      "sha256": "0fc9a33a2937f57ffc5aff94c3e4282aa3fea49d90a144558c2a63df4b93df35"
+    },
+    {
+      "file": "exercise-contours/ek-0093-relaxation.svg",
+      "bytes": 9600,
+      "sha256": "986ae890fe110b46f5951827216619f65da6b0a8f9a563499cae79b1d8b0327e"
+    },
+    {
+      "file": "exercise-contours/ek-0093-tension.svg",
+      "bytes": 8788,
+      "sha256": "1d6773dd0fecca620977361e55ae342169e884c956f09b0d1b1bb5adf4ff1df6"
+    },
+    {
+      "file": "exercise-contours/ek-0114-relaxation.svg",
+      "bytes": 13461,
+      "sha256": "e4043191dadd71ae8247a0b8fda933ceba2e4208a5426606109dd22d3d9a67b1"
+    },
+    {
+      "file": "exercise-contours/ek-0114-tension.svg",
+      "bytes": 14510,
+      "sha256": "ceead1d8a4d1cddc2126cafeca449485dba90032a58a61c33db54bf656df280a"
+    },
+    {
+      "file": "exercise-contours/ek-0120-relaxation.svg",
+      "bytes": 10976,
+      "sha256": "cfb02b02a5ec6ae5f7175ecb3d5c81661eab366fdeb92ff4dd247d63d30d3f83"
+    },
+    {
+      "file": "exercise-contours/ek-0120-tension.svg",
+      "bytes": 12544,
+      "sha256": "b48526d7361bd021162f956618bda42413866054643a2774ce760cf2b9c830d8"
+    },
+    {
+      "file": "exercise-contours/ek-0125-relaxation.svg",
+      "bytes": 9912,
+      "sha256": "4ade4f3f59eea984c04721b6e3a6056fb5ef4c4244a18776b8235cc1cd7c560d"
+    },
+    {
+      "file": "exercise-contours/ek-0125-tension.svg",
+      "bytes": 12311,
+      "sha256": "236c26f24998f338f040d6cc9c7bbed3f23927e0430dad910cd0f4e5239df328"
+    },
+    {
+      "file": "exercise-contours/ek-0130-relaxation.svg",
+      "bytes": 7388,
+      "sha256": "e117355d00553ac75e541d810a666556f3478154ce31b06dc69a6775ba588663"
+    },
+    {
+      "file": "exercise-contours/ek-0130-tension.svg",
+      "bytes": 10013,
+      "sha256": "ed33c4767cb1c94a160297bb0a568e5741a76b86d60c11a47c38993121778898"
+    },
+    {
+      "file": "exercise-contours/ek-0131-relaxation.svg",
+      "bytes": 13460,
+      "sha256": "3b1f11de10259c4aca313fe9d2e662fbd65a30cd2620bf8fffb864c14715e885"
+    },
+    {
+      "file": "exercise-contours/ek-0131-tension.svg",
+      "bytes": 12906,
+      "sha256": "8ef68729c768f6639d7148ba77435da1bcb5a544d6a62d6dc0356f76545cfa98"
+    },
+    {
+      "file": "exercise-contours/ek-0132-relaxation.svg",
+      "bytes": 10032,
+      "sha256": "1ce4c7012d65ea25b7551f9062c0b139e0739c1fe9cfbb3eb14744e2f7245619"
+    },
+    {
+      "file": "exercise-contours/ek-0132-tension.svg",
+      "bytes": 9489,
+      "sha256": "4882daa6214a2f22366ca018dbd6d8bb326f7ffaaef3666eef92220c9c088f73"
+    },
+    {
+      "file": "exercise-contours/ek-0133-relaxation.svg",
+      "bytes": 11807,
+      "sha256": "f58bb194fb8540cc55515f59e096ff9ca0acf321af646a936c72bed7aadc8ac6"
+    },
+    {
+      "file": "exercise-contours/ek-0133-tension.svg",
+      "bytes": 12476,
+      "sha256": "c3d1ef35a0ff27da2e6a4abbfaeaca4c8b7312c61b35ed734f2fef414a335cd9"
+    },
+    {
+      "file": "exercise-contours/ek-0134-relaxation.svg",
+      "bytes": 12765,
+      "sha256": "895a54b6526675762152bceda811668766f6f791cd3416db9df78bc2c1a02c2e"
+    },
+    {
+      "file": "exercise-contours/ek-0134-tension.svg",
+      "bytes": 13471,
+      "sha256": "77bb2176638c0b6203c8ffc817d456618aded6cd849873712cfe3a51f6613546"
+    },
+    {
+      "file": "exercise-contours/ek-0143-relaxation.svg",
+      "bytes": 11090,
+      "sha256": "ef06ad7e1e56bcfa2bf5fa97af1d77150790ef9764a65318c2adc34c6457622b"
+    },
+    {
+      "file": "exercise-contours/ek-0143-tension.svg",
+      "bytes": 12318,
+      "sha256": "bc308cbe7ec2349ca1b8bee2d51942e26de05b2752519089dd1594bafd65989b"
+    },
+    {
+      "file": "exercise-contours/ek-0146-relaxation.svg",
+      "bytes": 9739,
+      "sha256": "2f82b2f08219ecfabf4ffc09abcc48af7dbf904ce2f909f22ede8de855d3ba43"
+    },
+    {
+      "file": "exercise-contours/ek-0146-tension.svg",
+      "bytes": 10656,
+      "sha256": "dd273b2b32e87e83c5c1928ff9878c6dce14b733e204897b3964b773bac31008"
+    },
+    {
+      "file": "exercise-contours/ek-0160-relaxation.svg",
+      "bytes": 11036,
+      "sha256": "a996b75d247067c227f774a7f8709d77d3bc7a15019e33da8195ef70cb3f8e60"
+    },
+    {
+      "file": "exercise-contours/ek-0160-tension.svg",
+      "bytes": 13178,
+      "sha256": "03efa15083aa71191551e27e59be5591f5ab72ba97474ceb45196d4ce8bb83b4"
+    },
+    {
+      "file": "exercise-contours/ek-0161-relaxation.svg",
+      "bytes": 9841,
+      "sha256": "625234b72602babe2597a5c7fd0257154076f8d90796ad79a15596811bb3e885"
+    },
+    {
+      "file": "exercise-contours/ek-0161-tension.svg",
+      "bytes": 11373,
+      "sha256": "140494887208db70a65f36e25c847ba06fa141488bf441e1f62f72876ccb08c1"
+    },
+    {
+      "file": "exercise-contours/ek-0166-relaxation.svg",
+      "bytes": 8904,
+      "sha256": "9417ca9c2cd64a1c963267ef4d5f3e5bb55afe2797df62087711af623e11bd6b"
+    },
+    {
+      "file": "exercise-contours/ek-0166-tension.svg",
+      "bytes": 10291,
+      "sha256": "8d173d300c86b72e411ebc5f710a6bfacf703aa89e59ee4245864a4fd88c4a80"
+    },
+    {
+      "file": "exercise-contours/ek-0175-relaxation.svg",
+      "bytes": 10256,
+      "sha256": "6b664b631a5c5d9984ca08389c660cbb092fb992233da6a730000010df65bb6f"
+    },
+    {
+      "file": "exercise-contours/ek-0175-tension.svg",
+      "bytes": 10825,
+      "sha256": "d86b0a4f0d9a94249c217f891309742463d154b8de279d44e878df7154eeb4a6"
+    },
+    {
+      "file": "exercise-contours/ek-0189-relaxation.svg",
+      "bytes": 9109,
+      "sha256": "59b8b2ded950c8e820c20eb8f0d67eedca4ff54a5b49834dae265b46ca64478a"
+    },
+    {
+      "file": "exercise-contours/ek-0189-tension.svg",
+      "bytes": 10136,
+      "sha256": "61a012c3888b75f6d4af45503762491f9255b514d014a45fb47066fb9fd54c4e"
+    },
+    {
+      "file": "exercise-contours/ek-0195-relaxation.svg",
+      "bytes": 11998,
+      "sha256": "02c4d6960dcc86f52c349bbc945de4b89095f7e71f02e48cabe159ec7fd40f44"
+    },
+    {
+      "file": "exercise-contours/ek-0195-tension.svg",
+      "bytes": 13194,
+      "sha256": "d7209a6aa798eedc8e3c043788d664fca1c4245b253abf419577bd6fdb0b1f3e"
+    },
+    {
+      "file": "exercise-contours/ek-0199-relaxation.svg",
+      "bytes": 11073,
+      "sha256": "d954ef07779b3e7f831e454287ea593670980c752352c1e24c302195a70ac507"
+    },
+    {
+      "file": "exercise-contours/ek-0199-tension.svg",
+      "bytes": 12168,
+      "sha256": "83134dbb3d5eb07bc9cdbd9192c5fe05aae3f228e52ffa9803537d71eef8b57f"
+    },
+    {
+      "file": "exercise-contours/ek-0201-relaxation.svg",
+      "bytes": 11665,
+      "sha256": "b1106f975deaf277f64290fb9b99d9067b5a6dd00d6c8bf910a0c3e71a87207f"
+    },
+    {
+      "file": "exercise-contours/ek-0201-tension.svg",
+      "bytes": 13056,
+      "sha256": "83914bbcb98c4672fc765d814fa976cccecf4314328eb81465005a316e74267b"
+    },
+    {
+      "file": "exercise-contours/ek-0207-relaxation.svg",
+      "bytes": 9440,
+      "sha256": "6c66fcbe6e5fc2fe7663acd1ef21ed478038f4e204c771b34ef21d48b0bdc191"
+    },
+    {
+      "file": "exercise-contours/ek-0207-tension.svg",
+      "bytes": 9902,
+      "sha256": "6da1d218ae1520e652485384b82c68c8d6200111ac04a99be21885e27e70868e"
+    },
+    {
+      "file": "exercise-contours/ek-0209-relaxation.svg",
+      "bytes": 9624,
+      "sha256": "a02449a9fa21cbafcf593ba63f8e887a713a94cf6f83af1070415180d68bdeec"
+    },
+    {
+      "file": "exercise-contours/ek-0209-tension.svg",
+      "bytes": 11371,
+      "sha256": "993bc06d2a73f4c6299ba832d5518bbad4e5e27a8ed0ef2d6500a247895ca5ef"
+    },
+    {
+      "file": "exercise-contours/ek-0210-relaxation.svg",
+      "bytes": 10056,
+      "sha256": "5578999bebc028cc55ca6480b0e00d1a82f41e767069cec9ab12f30e7301203c"
+    },
+    {
+      "file": "exercise-contours/ek-0210-tension.svg",
+      "bytes": 10765,
+      "sha256": "625c9326e5919cba527e58d3c5de38b09ecfa73b088f78e729b9d7cc41e5963c"
+    },
+    {
+      "file": "exercise-contours/ek-0211-relaxation.svg",
+      "bytes": 12704,
+      "sha256": "b77de0271c6b91d68a325463deeb58d5da9b064b65092e699b7e77396a80bc99"
+    },
+    {
+      "file": "exercise-contours/ek-0211-tension.svg",
+      "bytes": 11905,
+      "sha256": "a3faae38226c717d6956ac8469169ea9c914e3baa9084f7d24439526630b93ca"
+    },
+    {
+      "file": "exercise-contours/ek-0221-relaxation.svg",
+      "bytes": 9024,
+      "sha256": "d932f4b418612767c021028cbcbaa58f49a6119ae49373d05b9a184e475ce820"
+    },
+    {
+      "file": "exercise-contours/ek-0221-tension.svg",
+      "bytes": 10049,
+      "sha256": "47ec2cb0c945fa23c8f38203bc9d249d8445615ef604a6f7bd2fda58c5b15617"
+    },
+    {
+      "file": "exercise-contours/ek-0223-relaxation.svg",
+      "bytes": 9350,
+      "sha256": "47fbc8526bdc03ae131585fbff103aa1e6e89d5744c8528ccec567fec6bc367c"
+    },
+    {
+      "file": "exercise-contours/ek-0223-tension.svg",
+      "bytes": 10790,
+      "sha256": "4b13d552d50932df658bb24bba2dbc635ab833e817aed736ff1f396c8e0c14b9"
+    },
+    {
+      "file": "exercise-contours/ek-0229-relaxation.svg",
+      "bytes": 10121,
+      "sha256": "cd597b3a28ceae57139ca2482f06f1a2dba68846308c6ffb08d090895ee4c88d"
+    },
+    {
+      "file": "exercise-contours/ek-0229-tension.svg",
+      "bytes": 8848,
+      "sha256": "d19638bfe09e39ae14a9f49aef22b31554b0b6c76c4b8180061ead8edd949915"
+    },
+    {
+      "file": "exercise-contours/ek-0237-relaxation.svg",
+      "bytes": 7848,
+      "sha256": "3dd32c66ed89a4e1ddea860d342b3f1467d2cbe5293b31f4ec01e0af7b68a915"
+    },
+    {
+      "file": "exercise-contours/ek-0237-tension.svg",
+      "bytes": 8510,
+      "sha256": "dc044e31bf6f00ab18b36212150e913c5a0f3c3d664902d8603ed5f226f8c153"
+    },
+    {
+      "file": "exercise-contours/ek-0239-relaxation.svg",
+      "bytes": 9950,
+      "sha256": "4fe817416d2657065d27005394d414ba1027368ed89a0f6588ac0ec7bf446931"
+    },
+    {
+      "file": "exercise-contours/ek-0239-tension.svg",
+      "bytes": 9474,
+      "sha256": "2e5d400225d6d13cb5ba27d12d0c1f607c1e68358a78d8ae25bb9c747fb09e9d"
+    },
+    {
+      "file": "exercise-contours/ek-0240-relaxation.svg",
+      "bytes": 8478,
+      "sha256": "47881d51fb7ede4d904f2bbff5dfa84f95c56105af6b37f5a06c30f6c13a1f6c"
+    },
+    {
+      "file": "exercise-contours/ek-0240-tension.svg",
+      "bytes": 7890,
+      "sha256": "de1c09f00a8f81b69518ab236bc7e9349de07403931360d022125e58f79edc98"
+    },
+    {
+      "file": "exercise-contours/ek-0243-relaxation.svg",
+      "bytes": 11819,
+      "sha256": "833791513e7e91449753304df900e27d8ec890db5db7f390a0aa495528b622f7"
+    },
+    {
+      "file": "exercise-contours/ek-0243-tension.svg",
+      "bytes": 10809,
+      "sha256": "a9b6584f5f4566ceefc3fc76a301ede8f095b33bd0a77587901fd4cc723ac62c"
+    },
+    {
+      "file": "exercise-contours/ek-0247-relaxation.svg",
+      "bytes": 10862,
+      "sha256": "4391b0592a9ab6bcbe8dc0389681ebbb78584fe061ddffeccd026c098a9b1162"
+    },
+    {
+      "file": "exercise-contours/ek-0247-tension.svg",
+      "bytes": 11726,
+      "sha256": "75e1606d82ce7a24634163a7f4f08e3bdd4c3427b8ac157c82f2758a3b8d5b15"
+    },
+    {
+      "file": "exercise-contours/ek-0248-relaxation.svg",
+      "bytes": 8284,
+      "sha256": "9b566c65d3f06871844bba853ec99d763969ceb4e5788433b58df74986263e68"
+    },
+    {
+      "file": "exercise-contours/ek-0248-tension.svg",
+      "bytes": 8373,
+      "sha256": "9672fbae38c90e16ce6e8a6c3de4d16054b2bf844a03b6b2a31fd922a096bcbf"
+    },
+    {
+      "file": "exercise-contours/ek-0251-relaxation.svg",
+      "bytes": 10906,
+      "sha256": "f07a2d159c0e20862398d568fc68512dcc60a89f4a9e759f668e0dd2064ae067"
+    },
+    {
+      "file": "exercise-contours/ek-0251-tension.svg",
+      "bytes": 9827,
+      "sha256": "d981c49c792f84559e5392b112b61197640348e7b5a344f4112e446af2438e97"
+    },
+    {
+      "file": "exercise-contours/ek-0253-relaxation.svg",
+      "bytes": 15670,
+      "sha256": "df7ebadb1c78296238dcfbb69acfe904082b56f89b543c3c1ac8ae37b2aa4071"
+    },
+    {
+      "file": "exercise-contours/ek-0253-tension.svg",
+      "bytes": 14423,
+      "sha256": "33f9d08d09ff2b3836b5a5192883c1eede17663483ceb50697db758b6c52ea6a"
+    },
+    {
+      "file": "exercise-contours/ek-0261-relaxation.svg",
+      "bytes": 11382,
+      "sha256": "063dcd98e87f0626467402644d94cfdf59e591654f6870e0095ba017290eab97"
+    },
+    {
+      "file": "exercise-contours/ek-0261-tension.svg",
+      "bytes": 11710,
+      "sha256": "64472c54405fc6e815f77a7dc02eeccc67aedc8219aff56ae3b4d5308d8f0bcc"
+    },
+    {
+      "file": "exercise-contours/ek-0276-relaxation.svg",
+      "bytes": 7420,
+      "sha256": "fd5c8982198db860644144e43fdf53e32f9be526c6ec74dc0a06b5d1dd1797c1"
+    },
+    {
+      "file": "exercise-contours/ek-0276-tension.svg",
+      "bytes": 7069,
+      "sha256": "363d19b1ad9e172a6be8fc47ac4343f65c7bd55bc37b80524af3e18845b3a187"
+    },
+    {
+      "file": "exercise-contours/ek-0281-relaxation.svg",
+      "bytes": 11579,
+      "sha256": "0d303678b80c8421900d2dabe1e63e8b47f8f941b3854551c93f5ccc434388a3"
+    },
+    {
+      "file": "exercise-contours/ek-0281-tension.svg",
+      "bytes": 12245,
+      "sha256": "33e36d7676a61e45ff6f92fb7bb447531e82fe8b76a97943cd3e4919d7847768"
+    },
+    {
+      "file": "exercise-contours/ek-0295-relaxation.svg",
+      "bytes": 6354,
+      "sha256": "5c53f74d19a7f8340f9a034e949812b91b4daa0f7a4d0d7b80a90318708cebd2"
+    },
+    {
+      "file": "exercise-contours/ek-0295-tension.svg",
+      "bytes": 6851,
+      "sha256": "da1c9c083b18d335a17e112b48b2d765aea932b1be857b0866bb935877e80493"
+    },
+    {
+      "file": "exercise-contours/ek-0296-relaxation.svg",
+      "bytes": 7006,
+      "sha256": "ec437718ce5404cc8761a50e4043327b2738124c440a8a11b7da0344af1cc2ec"
+    },
+    {
+      "file": "exercise-contours/ek-0296-tension.svg",
+      "bytes": 7513,
+      "sha256": "dc3219a2bd1891f0d127c0028cd279b4b08cd8872134f75d0a7fb3b3b9ac5573"
     }
   ]
 }

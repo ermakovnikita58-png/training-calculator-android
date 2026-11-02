@@ -1,9 +1,9 @@
 {
   "name": "forge-training-checks",
   "private": true,
-  "version": "11.2.1",
+  "version": "11.2.2",
   "scripts": {
-    "test": "node scripts/check-web.mjs && node scripts/check-art.mjs && node scripts/check-exercise-visuals.cjs && node scripts/browser-regression.cjs && node scripts/core-regression.cjs && node --test scripts/nutrition-coach.test.cjs && node scripts/nutrition-coach-browser.cjs && node scripts/navigation-browser.cjs && node scripts/performance-browser.cjs && node scripts/exercise-visual-browser.cjs"
+    "test": "node scripts/check-web.mjs && node scripts/check-art.mjs && node scripts/check-exercise-visuals.cjs && node scripts/art-contact-sheets.cjs && node scripts/browser-regression.cjs && node scripts/core-regression.cjs && node --test scripts/nutrition-coach.test.cjs && node scripts/nutrition-coach-browser.cjs && node scripts/navigation-browser.cjs && node scripts/performance-browser.cjs && node scripts/exercise-visual-browser.cjs"
   },
   "devDependencies": {
     "playwright": "1.62.1"

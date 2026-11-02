@@ -1,0 +1,3005 @@
+{
+  "method": "Chromium SVG decode into transparent 128x128 canvas; alpha/colour/corner checks, not biomechanical verification",
+  "files": [
+    {
+      "file": "exercise-art/bench-press-1.svg",
+      "inkRatio": 0.078369140625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/bench-press-2.svg",
+      "inkRatio": 0.15863037109375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-bench-press-1.svg",
+      "inkRatio": 0.05926513671875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-bench-press-2.svg",
+      "inkRatio": 0.11688232421875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/incline-dumbbell-press-1.svg",
+      "inkRatio": 0.06939697265625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/incline-dumbbell-press-2.svg",
+      "inkRatio": 0.15576171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/incline-bench-press-1.svg",
+      "inkRatio": 0.08514404296875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/incline-bench-press-2.svg",
+      "inkRatio": 0.19342041015625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/pec-deck-1.svg",
+      "inkRatio": 0.1190185546875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/pec-deck-2.svg",
+      "inkRatio": 0.181640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/cable-fly-1.svg",
+      "inkRatio": 0.0462646484375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/cable-fly-2.svg",
+      "inkRatio": 0.1011962890625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/push-up-1.svg",
+      "inkRatio": 0.03521728515625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/push-up-2.svg",
+      "inkRatio": 0.08673095703125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/chest-dip-1.svg",
+      "inkRatio": 0.0537109375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/chest-dip-2.svg",
+      "inkRatio": 0.07635498046875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/pull-up-1.svg",
+      "inkRatio": 0.04522705078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/pull-up-2.svg",
+      "inkRatio": 0.109619140625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/lat-pulldown-1.svg",
+      "inkRatio": 0.05975341796875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/lat-pulldown-2.svg",
+      "inkRatio": 0.14044189453125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/seated-row-1.svg",
+      "inkRatio": 0.0633544921875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/seated-row-2.svg",
+      "inkRatio": 0.09130859375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/barbell-row-1.svg",
+      "inkRatio": 0.0472412109375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/barbell-row-2.svg",
+      "inkRatio": 0.08746337890625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/one-arm-dumbbell-row-1.svg",
+      "inkRatio": 0.10333251953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/one-arm-dumbbell-row-2.svg",
+      "inkRatio": 0.1258544921875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/deadlift-1.svg",
+      "inkRatio": 0.048828125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/deadlift-2.svg",
+      "inkRatio": 0.1192626953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/t-bar-row-1.svg",
+      "inkRatio": 0.103759765625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/t-bar-row-2.svg",
+      "inkRatio": 0.16119384765625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/back-extension-1.svg",
+      "inkRatio": 0.03668212890625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/back-extension-2.svg",
+      "inkRatio": 0.0557861328125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/shrug-1.svg",
+      "inkRatio": 0.10101318359375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/shrug-2.svg",
+      "inkRatio": 0.08514404296875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/overhead-press-1.svg",
+      "inkRatio": 0.070556640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/overhead-press-2.svg",
+      "inkRatio": 0.0777587890625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/seated-dumbbell-press-1.svg",
+      "inkRatio": 0.086181640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/seated-dumbbell-press-2.svg",
+      "inkRatio": 0.114501953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/lateral-raise-1.svg",
+      "inkRatio": 0.04052734375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/lateral-raise-2.svg",
+      "inkRatio": 0.10577392578125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/bent-over-rear-delt-raise-1.svg",
+      "inkRatio": 0.07916259765625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/bent-over-rear-delt-raise-2.svg",
+      "inkRatio": 0.0816650390625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/upright-row-1.svg",
+      "inkRatio": 0.0633544921875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/upright-row-2.svg",
+      "inkRatio": 0.15802001953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/plate-front-raise-1.svg",
+      "inkRatio": 0.0615234375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/plate-front-raise-2.svg",
+      "inkRatio": 0.06048583984375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0211-relaxation.svg",
+      "inkRatio": 0.0809326171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0211-tension.svg",
+      "inkRatio": 0.07958984375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/bicep-curl-1.svg",
+      "inkRatio": 0.048095703125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/bicep-curl-2.svg",
+      "inkRatio": 0.07989501953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/hammer-curl-1.svg",
+      "inkRatio": 0.04498291015625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/hammer-curl-2.svg",
+      "inkRatio": 0.08050537109375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0239-relaxation.svg",
+      "inkRatio": 0.08099365234375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0239-tension.svg",
+      "inkRatio": 0.08001708984375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/tricep-pushdown-1.svg",
+      "inkRatio": 0.04913330078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/tricep-pushdown-2.svg",
+      "inkRatio": 0.09686279296875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/skull-crusher-1.svg",
+      "inkRatio": 0.07147216796875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/skull-crusher-2.svg",
+      "inkRatio": 0.158447265625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/single-arm-dumbbell-tricep-extension-1.svg",
+      "inkRatio": 0.05487060546875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/single-arm-dumbbell-tricep-extension-2.svg",
+      "inkRatio": 0.0714111328125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/close-grip-bench-press-1.svg",
+      "inkRatio": 0.07208251953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/close-grip-bench-press-2.svg",
+      "inkRatio": 0.1553955078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/squat-1.svg",
+      "inkRatio": 0.05010986328125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/squat-2.svg",
+      "inkRatio": 0.093994140625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/front-squat-1.svg",
+      "inkRatio": 0.0543212890625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/front-squat-2.svg",
+      "inkRatio": 0.09124755859375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/leg-press-1.svg",
+      "inkRatio": 0.0496826171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/leg-press-2.svg",
+      "inkRatio": 0.06866455078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/leg-extension-1.svg",
+      "inkRatio": 0.0606689453125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/leg-extension-2.svg",
+      "inkRatio": 0.0904541015625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/walking-lunge-1.svg",
+      "inkRatio": 0.05731201171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/walking-lunge-2.svg",
+      "inkRatio": 0.0838623046875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/bulgarian-split-squat-1.svg",
+      "inkRatio": 0.07733154296875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/bulgarian-split-squat-2.svg",
+      "inkRatio": 0.08831787109375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/romanian-deadlift-1.svg",
+      "inkRatio": 0.04949951171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/romanian-deadlift-2.svg",
+      "inkRatio": 0.11029052734375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/lying-leg-curl-1.svg",
+      "inkRatio": 0.056640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/lying-leg-curl-2.svg",
+      "inkRatio": 0.09149169921875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/glute-bridge-1.svg",
+      "inkRatio": 0.0494384765625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/glute-bridge-2.svg",
+      "inkRatio": 0.06011962890625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/cable-kickback-1.svg",
+      "inkRatio": 0.0460205078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/cable-kickback-2.svg",
+      "inkRatio": 0.091064453125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/calf-raise-1.svg",
+      "inkRatio": 0.1094970703125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/calf-raise-2.svg",
+      "inkRatio": 0.1181640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/seated-calf-raise-1.svg",
+      "inkRatio": 0.0645751953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/seated-calf-raise-2.svg",
+      "inkRatio": 0.09759521484375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/plank-1.svg",
+      "inkRatio": 0.05633544921875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/plank-2.svg",
+      "inkRatio": 0.0643310546875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/crunch-1.svg",
+      "inkRatio": 0.060302734375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/crunch-2.svg",
+      "inkRatio": 0.09619140625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/hanging-leg-raise-1.svg",
+      "inkRatio": 0.127685546875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/hanging-leg-raise-2.svg",
+      "inkRatio": 0.1607666015625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/russian-twist-1.svg",
+      "inkRatio": 0.08135986328125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/russian-twist-2.svg",
+      "inkRatio": 0.1029052734375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/ab-wheel-1.svg",
+      "inkRatio": 0.04046630859375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/ab-wheel-2.svg",
+      "inkRatio": 0.06146240234375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/side-plank-1.svg",
+      "inkRatio": 0.04376220703125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/side-plank-2.svg",
+      "inkRatio": 0.07159423828125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/elliptical-1.svg",
+      "inkRatio": 0.109375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/elliptical-2.svg",
+      "inkRatio": 0.14599609375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/rowing-1.svg",
+      "inkRatio": 0.1153564453125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/rowing-2.svg",
+      "inkRatio": 0.14337158203125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/jump-rope-1.svg",
+      "inkRatio": 0.0682373046875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/jump-rope-2.svg",
+      "inkRatio": 0.10394287109375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/decline-bench-press-1.svg",
+      "inkRatio": 0.07232666015625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/decline-bench-press-2.svg",
+      "inkRatio": 0.120361328125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0082-relaxation.svg",
+      "inkRatio": 0.08551025390625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0082-tension.svg",
+      "inkRatio": 0.0811767578125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/smith-machine-bench-press-1.svg",
+      "inkRatio": 0.1103515625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/smith-machine-bench-press-2.svg",
+      "inkRatio": 0.2281494140625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/decline-dumbbell-press-1.svg",
+      "inkRatio": 0.06866455078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/decline-dumbbell-press-2.svg",
+      "inkRatio": 0.1116943359375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-fly-1.svg",
+      "inkRatio": 0.06640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-fly-2.svg",
+      "inkRatio": 0.12933349609375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0062-relaxation.svg",
+      "inkRatio": 0.087646484375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0062-tension.svg",
+      "inkRatio": 0.0830078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0053-relaxation.svg",
+      "inkRatio": 0.074462890625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0053-tension.svg",
+      "inkRatio": 0.0821533203125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/machine-chest-press-1.svg",
+      "inkRatio": 0.09808349609375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/machine-chest-press-2.svg",
+      "inkRatio": 0.13592529296875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/wide-push-up-1.svg",
+      "inkRatio": 0.05767822265625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/wide-push-up-2.svg",
+      "inkRatio": 0.08111572265625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/decline-push-up-1.svg",
+      "inkRatio": 0.085693359375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/decline-push-up-2.svg",
+      "inkRatio": 0.0992431640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/incline-push-up-1.svg",
+      "inkRatio": 0.0667724609375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/incline-push-up-2.svg",
+      "inkRatio": 0.07763671875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/weighted-push-up-1.svg",
+      "inkRatio": 0.0755615234375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/weighted-push-up-2.svg",
+      "inkRatio": 0.10028076171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0046-relaxation.svg",
+      "inkRatio": 0.0706787109375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0046-tension.svg",
+      "inkRatio": 0.0714111328125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/chin-up-1.svg",
+      "inkRatio": 0.04119873046875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/chin-up-2.svg",
+      "inkRatio": 0.10552978515625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/neutral-grip-pull-up-1.svg",
+      "inkRatio": 0.04119873046875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/neutral-grip-pull-up-2.svg",
+      "inkRatio": 0.10650634765625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0091-relaxation.svg",
+      "inkRatio": 0.05975341796875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0091-tension.svg",
+      "inkRatio": 0.05615234375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/weighted-pull-up-1.svg",
+      "inkRatio": 0.08685302734375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/weighted-pull-up-2.svg",
+      "inkRatio": 0.0877685546875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/assisted-pull-up-1.svg",
+      "inkRatio": 0.115478515625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/assisted-pull-up-2.svg",
+      "inkRatio": 0.17633056640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0093-relaxation.svg",
+      "inkRatio": 0.07403564453125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0093-tension.svg",
+      "inkRatio": 0.073974609375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/close-grip-lat-pulldown-1.svg",
+      "inkRatio": 0.0576171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/close-grip-lat-pulldown-2.svg",
+      "inkRatio": 0.1253662109375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/single-arm-cable-row-1.svg",
+      "inkRatio": 0.1292724609375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/single-arm-cable-row-2.svg",
+      "inkRatio": 0.11224365234375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0026-relaxation.svg",
+      "inkRatio": 0.09454345703125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0026-tension.svg",
+      "inkRatio": 0.09368896484375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/pendlay-row-1.svg",
+      "inkRatio": 0.1070556640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/pendlay-row-2.svg",
+      "inkRatio": 0.1151123046875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-bent-over-row-1.svg",
+      "inkRatio": 0.0875244140625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-bent-over-row-2.svg",
+      "inkRatio": 0.102783203125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/machine-row-1.svg",
+      "inkRatio": 0.15570068359375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/machine-row-2.svg",
+      "inkRatio": 0.2476806640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/straight-arm-pulldown-1.svg",
+      "inkRatio": 0.0455322265625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/straight-arm-pulldown-2.svg",
+      "inkRatio": 0.06396484375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-row-1.svg",
+      "inkRatio": 0.07147216796875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-row-2.svg",
+      "inkRatio": 0.07916259765625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/reverse-hyperextension-1.svg",
+      "inkRatio": 0.1292724609375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/reverse-hyperextension-2.svg",
+      "inkRatio": 0.1390380859375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/superman-1.svg",
+      "inkRatio": 0.04718017578125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/superman-2.svg",
+      "inkRatio": 0.0380859375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-shrug-1.svg",
+      "inkRatio": 0.0538330078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-shrug-2.svg",
+      "inkRatio": 0.1248779296875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0041-relaxation.svg",
+      "inkRatio": 0.1298828125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0041-tension.svg",
+      "inkRatio": 0.1302490234375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/farmer-carry-1.svg",
+      "inkRatio": 0.07208251953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/farmer-carry-2.svg",
+      "inkRatio": 0.0489501953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0004-relaxation.svg",
+      "inkRatio": 0.06719970703125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0004-tension.svg",
+      "inkRatio": 0.06939697265625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/arnold-press-1.svg",
+      "inkRatio": 0.06549072265625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/arnold-press-2.svg",
+      "inkRatio": 0.0665283203125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/machine-shoulder-press-1.svg",
+      "inkRatio": 0.1556396484375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/machine-shoulder-press-2.svg",
+      "inkRatio": 0.194580078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0037-relaxation.svg",
+      "inkRatio": 0.0704345703125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0037-tension.svg",
+      "inkRatio": 0.0699462890625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/cable-lateral-raise-1.svg",
+      "inkRatio": 0.1201171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/cable-lateral-raise-2.svg",
+      "inkRatio": 0.14532470703125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/front-raise-1.svg",
+      "inkRatio": 0.0501708984375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/front-raise-2.svg",
+      "inkRatio": 0.1224365234375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/cable-front-raise-1.svg",
+      "inkRatio": 0.0513916015625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/cable-front-raise-2.svg",
+      "inkRatio": 0.07281494140625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/reverse-pec-deck-1.svg",
+      "inkRatio": 0.14453125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/reverse-pec-deck-2.svg",
+      "inkRatio": 0.199951171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/cable-rear-delt-fly-1.svg",
+      "inkRatio": 0.1541748046875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/cable-rear-delt-fly-2.svg",
+      "inkRatio": 0.1910400390625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/face-pull-1.svg",
+      "inkRatio": 0.1234130859375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/face-pull-2.svg",
+      "inkRatio": 0.1318359375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-face-pull-1.svg",
+      "inkRatio": 0.07916259765625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-face-pull-2.svg",
+      "inkRatio": 0.08544921875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0016-relaxation.svg",
+      "inkRatio": 0.05377197265625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0016-tension.svg",
+      "inkRatio": 0.05865478515625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0015-relaxation.svg",
+      "inkRatio": 0.05975341796875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0015-tension.svg",
+      "inkRatio": 0.06646728515625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/ez-bar-curl-1.svg",
+      "inkRatio": 0.062255859375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/ez-bar-curl-2.svg",
+      "inkRatio": 0.1475830078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/reverse-curl-1.svg",
+      "inkRatio": 0.07452392578125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/reverse-curl-2.svg",
+      "inkRatio": 0.11322021484375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0243-relaxation.svg",
+      "inkRatio": 0.072021484375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0243-tension.svg",
+      "inkRatio": 0.07208251953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0223-relaxation.svg",
+      "inkRatio": 0.05908203125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0223-tension.svg",
+      "inkRatio": 0.06182861328125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0221-relaxation.svg",
+      "inkRatio": 0.0582275390625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0221-tension.svg",
+      "inkRatio": 0.05963134765625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/concentration-curl-1.svg",
+      "inkRatio": 0.05694580078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/concentration-curl-2.svg",
+      "inkRatio": 0.12847900390625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0237-relaxation.svg",
+      "inkRatio": 0.06787109375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0237-tension.svg",
+      "inkRatio": 0.07464599609375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0253-relaxation.svg",
+      "inkRatio": 0.11090087890625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0253-tension.svg",
+      "inkRatio": 0.101806640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/cable-curl-1.svg",
+      "inkRatio": 0.05535888671875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/cable-curl-2.svg",
+      "inkRatio": 0.1134033203125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0229-relaxation.svg",
+      "inkRatio": 0.08294677734375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0229-tension.svg",
+      "inkRatio": 0.07513427734375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0247-relaxation.svg",
+      "inkRatio": 0.0631103515625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0247-tension.svg",
+      "inkRatio": 0.062744140625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/rope-hammer-curl-1.svg",
+      "inkRatio": 0.05230712890625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/rope-hammer-curl-2.svg",
+      "inkRatio": 0.12628173828125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0261-relaxation.svg",
+      "inkRatio": 0.068115234375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0261-tension.svg",
+      "inkRatio": 0.07794189453125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/incline-dumbbell-curl-1.svg",
+      "inkRatio": 0.0567626953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/incline-dumbbell-curl-2.svg",
+      "inkRatio": 0.087158203125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0251-relaxation.svg",
+      "inkRatio": 0.065673828125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0251-tension.svg",
+      "inkRatio": 0.0562744140625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-skull-crusher-1.svg",
+      "inkRatio": 0.057373046875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-skull-crusher-2.svg",
+      "inkRatio": 0.14642333984375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-overhead-tricep-extension-1.svg",
+      "inkRatio": 0.03326416015625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-overhead-tricep-extension-2.svg",
+      "inkRatio": 0.06268310546875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/rope-tricep-pushdown-1.svg",
+      "inkRatio": 0.04949951171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/rope-tricep-pushdown-2.svg",
+      "inkRatio": 0.10809326171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0189-relaxation.svg",
+      "inkRatio": 0.059326171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0189-tension.svg",
+      "inkRatio": 0.062744140625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0166-relaxation.svg",
+      "inkRatio": 0.0545654296875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0166-tension.svg",
+      "inkRatio": 0.0595703125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/overhead-tricep-extension-1.svg",
+      "inkRatio": 0.1065673828125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/overhead-tricep-extension-2.svg",
+      "inkRatio": 0.1480712890625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/tricep-kickback-1.svg",
+      "inkRatio": 0.09381103515625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/tricep-kickback-2.svg",
+      "inkRatio": 0.13897705078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dip-1.svg",
+      "inkRatio": 0.0562744140625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dip-2.svg",
+      "inkRatio": 0.09722900390625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/diamond-push-up-1.svg",
+      "inkRatio": 0.0609130859375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/diamond-push-up-2.svg",
+      "inkRatio": 0.08111572265625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/bench-dip-1.svg",
+      "inkRatio": 0.05157470703125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/bench-dip-2.svg",
+      "inkRatio": 0.0948486328125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0210-relaxation.svg",
+      "inkRatio": 0.1097412109375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0210-tension.svg",
+      "inkRatio": 0.10455322265625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0175-relaxation.svg",
+      "inkRatio": 0.07647705078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0175-tension.svg",
+      "inkRatio": 0.08203125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/single-dumbbell-skullcrusher-1.svg",
+      "inkRatio": 0.0958251953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/single-dumbbell-skullcrusher-2.svg",
+      "inkRatio": 0.0987548828125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/smith-machine-squat-1.svg",
+      "inkRatio": 0.08270263671875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/smith-machine-squat-2.svg",
+      "inkRatio": 0.19354248046875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/goblet-squat-1.svg",
+      "inkRatio": 0.076416015625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/goblet-squat-2.svg",
+      "inkRatio": 0.07763671875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/bodyweight-squat-1.svg",
+      "inkRatio": 0.08819580078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/bodyweight-squat-2.svg",
+      "inkRatio": 0.11572265625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0146-relaxation.svg",
+      "inkRatio": 0.05548095703125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0146-tension.svg",
+      "inkRatio": 0.06097412109375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0160-relaxation.svg",
+      "inkRatio": 0.067626953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0160-tension.svg",
+      "inkRatio": 0.08074951171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0133-relaxation.svg",
+      "inkRatio": 0.06512451171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0133-tension.svg",
+      "inkRatio": 0.07421875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0161-relaxation.svg",
+      "inkRatio": 0.06378173828125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0161-tension.svg",
+      "inkRatio": 0.07537841796875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0130-relaxation.svg",
+      "inkRatio": 0.03857421875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0130-tension.svg",
+      "inkRatio": 0.05615234375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/hack-squat-1.svg",
+      "inkRatio": 0.07373046875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/hack-squat-2.svg",
+      "inkRatio": 0.11444091796875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0125-relaxation.svg",
+      "inkRatio": 0.0482177734375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0125-tension.svg",
+      "inkRatio": 0.059814453125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0143-relaxation.svg",
+      "inkRatio": 0.09075927734375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0143-tension.svg",
+      "inkRatio": 0.09588623046875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/reverse-lunge-1.svg",
+      "inkRatio": 0.04840087890625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/reverse-lunge-2.svg",
+      "inkRatio": 0.11279296875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0114-relaxation.svg",
+      "inkRatio": 0.08233642578125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0114-tension.svg",
+      "inkRatio": 0.09051513671875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/forward-lunge-1.svg",
+      "inkRatio": 0.06805419921875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/forward-lunge-2.svg",
+      "inkRatio": 0.084228515625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0132-relaxation.svg",
+      "inkRatio": 0.0570068359375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0132-tension.svg",
+      "inkRatio": 0.05755615234375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/split-squat-1.svg",
+      "inkRatio": 0.0726318359375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/split-squat-2.svg",
+      "inkRatio": 0.06915283203125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/step-up-1.svg",
+      "inkRatio": 0.03411865234375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/step-up-2.svg",
+      "inkRatio": 0.08355712890625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0134-relaxation.svg",
+      "inkRatio": 0.078857421875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0134-tension.svg",
+      "inkRatio": 0.083251953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/sissy-squat-1.svg",
+      "inkRatio": 0.07708740234375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/sissy-squat-2.svg",
+      "inkRatio": 0.0723876953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/wall-sit-1.svg",
+      "inkRatio": 0.0848388671875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/wall-sit-2.svg",
+      "inkRatio": 0.10162353515625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/assisted-pistol-squat-1.svg",
+      "inkRatio": 0.0804443359375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/assisted-pistol-squat-2.svg",
+      "inkRatio": 0.10498046875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/pistol-squat-1.svg",
+      "inkRatio": 0.07916259765625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/pistol-squat-2.svg",
+      "inkRatio": 0.074951171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/smith-machine-reverse-lunge-1.svg",
+      "inkRatio": 0.17779541015625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/smith-machine-reverse-lunge-2.svg",
+      "inkRatio": 0.14825439453125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-romanian-deadlift-1.svg",
+      "inkRatio": 0.0894775390625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-romanian-deadlift-2.svg",
+      "inkRatio": 0.0906982421875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/single-leg-romanian-deadlift-1.svg",
+      "inkRatio": 0.068359375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/single-leg-romanian-deadlift-2.svg",
+      "inkRatio": 0.078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/seated-leg-curl-1.svg",
+      "inkRatio": 0.0592041015625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/seated-leg-curl-2.svg",
+      "inkRatio": 0.0970458984375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0120-relaxation.svg",
+      "inkRatio": 0.083251953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0120-tension.svg",
+      "inkRatio": 0.092041015625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/stability-ball-hamstring-curl-1.svg",
+      "inkRatio": 0.06512451171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/stability-ball-hamstring-curl-2.svg",
+      "inkRatio": 0.06329345703125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/nordic-hamstring-curl-1.svg",
+      "inkRatio": 0.07757568359375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/nordic-hamstring-curl-2.svg",
+      "inkRatio": 0.074951171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/good-morning-1.svg",
+      "inkRatio": 0.044189453125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/good-morning-2.svg",
+      "inkRatio": 0.09765625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/barbell-glute-bridge-1.svg",
+      "inkRatio": 0.0992431640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/barbell-glute-bridge-2.svg",
+      "inkRatio": 0.0880126953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-glute-bridge-1.svg",
+      "inkRatio": 0.07049560546875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-glute-bridge-2.svg",
+      "inkRatio": 0.074951171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/single-leg-glute-bridge-1.svg",
+      "inkRatio": 0.063232421875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/single-leg-glute-bridge-2.svg",
+      "inkRatio": 0.06658935546875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/hip-thrust-1.svg",
+      "inkRatio": 0.091064453125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/hip-thrust-2.svg",
+      "inkRatio": 0.1373291015625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/smith-machine-hip-thrust-1.svg",
+      "inkRatio": 0.12945556640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/smith-machine-hip-thrust-2.svg",
+      "inkRatio": 0.2327880859375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-hip-thrust-1.svg",
+      "inkRatio": 0.0938720703125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-hip-thrust-2.svg",
+      "inkRatio": 0.106201171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/machine-glute-kickback-1.svg",
+      "inkRatio": 0.1513671875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/machine-glute-kickback-2.svg",
+      "inkRatio": 0.12982177734375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-kickback-1.svg",
+      "inkRatio": 0.06329345703125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-kickback-2.svg",
+      "inkRatio": 0.04010009765625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/hip-abduction-machine-1.svg",
+      "inkRatio": 0.12188720703125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/hip-abduction-machine-2.svg",
+      "inkRatio": 0.15692138671875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-seated-hip-abduction-1.svg",
+      "inkRatio": 0.09307861328125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-seated-hip-abduction-2.svg",
+      "inkRatio": 0.11962890625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/kettlebell-swing-1.svg",
+      "inkRatio": 0.05975341796875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/kettlebell-swing-2.svg",
+      "inkRatio": 0.07330322265625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/sumo-deadlift-1.svg",
+      "inkRatio": 0.09234619140625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/sumo-deadlift-2.svg",
+      "inkRatio": 0.14111328125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-sumo-squat-1.svg",
+      "inkRatio": 0.08551025390625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-sumo-squat-2.svg",
+      "inkRatio": 0.0850830078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-clamshell-1.svg",
+      "inkRatio": 0.07513427734375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-clamshell-2.svg",
+      "inkRatio": 0.0750732421875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-lateral-walk-1.svg",
+      "inkRatio": 0.06378173828125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-lateral-walk-2.svg",
+      "inkRatio": 0.0631103515625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/standing-calf-raise-1.svg",
+      "inkRatio": 0.06146240234375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/standing-calf-raise-2.svg",
+      "inkRatio": 0.117431640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/leg-press-calf-raise-1.svg",
+      "inkRatio": 0.051025390625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/leg-press-calf-raise-2.svg",
+      "inkRatio": 0.09893798828125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0281-relaxation.svg",
+      "inkRatio": 0.07220458984375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0281-tension.svg",
+      "inkRatio": 0.07257080078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/single-leg-calf-raise-1.svg",
+      "inkRatio": 0.0716552734375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/single-leg-calf-raise-2.svg",
+      "inkRatio": 0.06268310546875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/donkey-calf-raise-1.svg",
+      "inkRatio": 0.0574951171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/donkey-calf-raise-2.svg",
+      "inkRatio": 0.09552001953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0276-relaxation.svg",
+      "inkRatio": 0.06231689453125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0276-tension.svg",
+      "inkRatio": 0.06280517578125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/side-plank-hip-dip-1.svg",
+      "inkRatio": 0.0703125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/side-plank-hip-dip-2.svg",
+      "inkRatio": 0.06475830078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/plank-shoulder-tap-1.svg",
+      "inkRatio": 0.06256103515625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/plank-shoulder-tap-2.svg",
+      "inkRatio": 0.0919189453125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0295-relaxation.svg",
+      "inkRatio": 0.04913330078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0295-tension.svg",
+      "inkRatio": 0.05340576171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/cable-crunch-1.svg",
+      "inkRatio": 0.0472412109375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/cable-crunch-2.svg",
+      "inkRatio": 0.09417724609375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/reverse-crunch-1.svg",
+      "inkRatio": 0.0411376953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/reverse-crunch-2.svg",
+      "inkRatio": 0.059814453125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/lying-leg-raise-1.svg",
+      "inkRatio": 0.07073974609375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/lying-leg-raise-2.svg",
+      "inkRatio": 0.065185546875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/hanging-knee-raise-1.svg",
+      "inkRatio": 0.08978271484375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/hanging-knee-raise-2.svg",
+      "inkRatio": 0.1461181640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/captains-chair-knee-raise-1.svg",
+      "inkRatio": 0.08642578125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/captains-chair-knee-raise-2.svg",
+      "inkRatio": 0.131591796875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/bicycle-crunch-1.svg",
+      "inkRatio": 0.03955078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/bicycle-crunch-2.svg",
+      "inkRatio": 0.0628662109375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dead-bug-1.svg",
+      "inkRatio": 0.04779052734375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dead-bug-2.svg",
+      "inkRatio": 0.02935791015625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/bird-dog-1.svg",
+      "inkRatio": 0.0543212890625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/bird-dog-2.svg",
+      "inkRatio": 0.0660400390625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0027-relaxation.svg",
+      "inkRatio": 0.06536865234375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0027-tension.svg",
+      "inkRatio": 0.06561279296875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-woodchop-1.svg",
+      "inkRatio": 0.07220458984375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-woodchop-2.svg",
+      "inkRatio": 0.06475830078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/cable-woodchop-1.svg",
+      "inkRatio": 0.10382080078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/cable-woodchop-2.svg",
+      "inkRatio": 0.15185546875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/decline-sit-up-1.svg",
+      "inkRatio": 0.0814208984375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/decline-sit-up-2.svg",
+      "inkRatio": 0.1024169921875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/l-sit-hold-1.svg",
+      "inkRatio": 0.0986328125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/l-sit-hold-2.svg",
+      "inkRatio": 0.1478271484375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/burpee-1.svg",
+      "inkRatio": 0.06585693359375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/burpee-2.svg",
+      "inkRatio": 0.1015625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/mountain-climber-1.svg",
+      "inkRatio": 0.06610107421875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/mountain-climber-2.svg",
+      "inkRatio": 0.08154296875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/v-up-1.svg",
+      "inkRatio": 0.09814453125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/v-up-2.svg",
+      "inkRatio": 0.04876708984375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/trap-bar-deadlift-1.svg",
+      "inkRatio": 0.12554931640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/trap-bar-deadlift-2.svg",
+      "inkRatio": 0.15545654296875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/superman-hold-1.svg",
+      "inkRatio": 0.044189453125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/superman-hold-2.svg",
+      "inkRatio": 0.03997802734375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/rack-pull-1.svg",
+      "inkRatio": 0.097412109375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/rack-pull-2.svg",
+      "inkRatio": 0.09979248046875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/wrist-curl-1.svg",
+      "inkRatio": 0.0792236328125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/wrist-curl-2.svg",
+      "inkRatio": 0.0928955078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/wrist-extension-1.svg",
+      "inkRatio": 0.073486328125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/wrist-extension-2.svg",
+      "inkRatio": 0.07269287109375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dead-hang-1.svg",
+      "inkRatio": 0.0972900390625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dead-hang-2.svg",
+      "inkRatio": 0.13751220703125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/running-1.svg",
+      "inkRatio": 0.13153076171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/running-2.svg",
+      "inkRatio": 0.1275634765625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/stair-climber-1.svg",
+      "inkRatio": 0.11517333984375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/stair-climber-2.svg",
+      "inkRatio": 0.16717529296875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/walking-1.svg",
+      "inkRatio": 0.1068115234375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/walking-2.svg",
+      "inkRatio": 0.12603759765625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/battle-ropes-1.svg",
+      "inkRatio": 0.111083984375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/battle-ropes-2.svg",
+      "inkRatio": 0.11627197265625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/doorway-chest-stretch-1.svg",
+      "inkRatio": 0.10748291015625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/doorway-chest-stretch-2.svg",
+      "inkRatio": 0.152587890625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/hamstring-stretch-1.svg",
+      "inkRatio": 0.09649658203125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/hamstring-stretch-2.svg",
+      "inkRatio": 0.109130859375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/standing-quad-stretch-1.svg",
+      "inkRatio": 0.0576171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/standing-quad-stretch-2.svg",
+      "inkRatio": 0.04888916015625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/kneeling-hip-flexor-stretch-1.svg",
+      "inkRatio": 0.06866455078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/kneeling-hip-flexor-stretch-2.svg",
+      "inkRatio": 0.08587646484375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/cat-cow-stretch-1.svg",
+      "inkRatio": 0.07513427734375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/cat-cow-stretch-2.svg",
+      "inkRatio": 0.04998779296875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/childs-pose-1.svg",
+      "inkRatio": 0.0601806640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/childs-pose-2.svg",
+      "inkRatio": 0.04510498046875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/band-pull-apart-1.svg",
+      "inkRatio": 0.07806396484375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/band-pull-apart-2.svg",
+      "inkRatio": 0.0594482421875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/arm-circles-1.svg",
+      "inkRatio": 0.07208251953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/arm-circles-2.svg",
+      "inkRatio": 0.0928955078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/wall-calf-stretch-1.svg",
+      "inkRatio": 0.07025146484375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/wall-calf-stretch-2.svg",
+      "inkRatio": 0.09515380859375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/leg-swings-stretch-1.svg",
+      "inkRatio": 0.072509765625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/leg-swings-stretch-2.svg",
+      "inkRatio": 0.086669921875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0072-relaxation.svg",
+      "inkRatio": 0.06732177734375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0072-tension.svg",
+      "inkRatio": 0.0728759765625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/negative-pull-up-1.svg",
+      "inkRatio": 0.11004638671875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/negative-pull-up-2.svg",
+      "inkRatio": 0.1083984375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/inverted-row-1.svg",
+      "inkRatio": 0.08123779296875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/inverted-row-2.svg",
+      "inkRatio": 0.1568603515625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-lat-pulldown-1.svg",
+      "inkRatio": 0.07330322265625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-lat-pulldown-2.svg",
+      "inkRatio": 0.10003662109375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0009-relaxation.svg",
+      "inkRatio": 0.0596923828125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0009-tension.svg",
+      "inkRatio": 0.0584716796875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/landmine-press-1.svg",
+      "inkRatio": 0.062255859375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/landmine-press-2.svg",
+      "inkRatio": 0.0894775390625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/machine-lateral-raise-1.svg",
+      "inkRatio": 0.15386962890625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/machine-lateral-raise-2.svg",
+      "inkRatio": 0.1341552734375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0248-relaxation.svg",
+      "inkRatio": 0.0767822265625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0248-tension.svg",
+      "inkRatio": 0.07696533203125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0240-relaxation.svg",
+      "inkRatio": 0.067138671875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0240-tension.svg",
+      "inkRatio": 0.06591796875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0207-relaxation.svg",
+      "inkRatio": 0.0552978515625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0207-tension.svg",
+      "inkRatio": 0.06109619140625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0199-relaxation.svg",
+      "inkRatio": 0.0577392578125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0199-tension.svg",
+      "inkRatio": 0.06243896484375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0195-relaxation.svg",
+      "inkRatio": 0.107177734375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0195-tension.svg",
+      "inkRatio": 0.11669921875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0209-relaxation.svg",
+      "inkRatio": 0.08551025390625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0209-tension.svg",
+      "inkRatio": 0.10150146484375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0201-relaxation.svg",
+      "inkRatio": 0.06329345703125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0201-tension.svg",
+      "inkRatio": 0.06732177734375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/single-leg-box-squat-1.svg",
+      "inkRatio": 0.08343505859375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/single-leg-box-squat-2.svg",
+      "inkRatio": 0.0975341796875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-squat-1.svg",
+      "inkRatio": 0.079345703125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-squat-2.svg",
+      "inkRatio": 0.1121826171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-lateral-lunge-1.svg",
+      "inkRatio": 0.07061767578125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-lateral-lunge-2.svg",
+      "inkRatio": 0.1192626953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0131-relaxation.svg",
+      "inkRatio": 0.08563232421875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0131-tension.svg",
+      "inkRatio": 0.0858154296875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-curtsy-lunge-1.svg",
+      "inkRatio": 0.06707763671875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/dumbbell-curtsy-lunge-2.svg",
+      "inkRatio": 0.07940673828125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/step-down-1.svg",
+      "inkRatio": 0.06414794921875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/step-down-2.svg",
+      "inkRatio": 0.0628662109375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/smith-machine-romanian-deadlift-1.svg",
+      "inkRatio": 0.15777587890625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/smith-machine-romanian-deadlift-2.svg",
+      "inkRatio": 0.18267822265625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/kettlebell-romanian-deadlift-1.svg",
+      "inkRatio": 0.08221435546875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/kettlebell-romanian-deadlift-2.svg",
+      "inkRatio": 0.0693359375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-glute-bridge-1.svg",
+      "inkRatio": 0.07659912109375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/banded-glute-bridge-2.svg",
+      "inkRatio": 0.05657958984375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/side-lying-hip-abduction-1.svg",
+      "inkRatio": 0.06768798828125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/side-lying-hip-abduction-2.svg",
+      "inkRatio": 0.05426025390625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/cable-standing-hip-abduction-1.svg",
+      "inkRatio": 0.1414794921875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/cable-standing-hip-abduction-2.svg",
+      "inkRatio": 0.1580810546875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/donkey-kick-1.svg",
+      "inkRatio": 0.086669921875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/donkey-kick-2.svg",
+      "inkRatio": 0.10223388671875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/plank-jack-1.svg",
+      "inkRatio": 0.06170654296875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/plank-jack-2.svg",
+      "inkRatio": 0.06866455078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0296-relaxation.svg",
+      "inkRatio": 0.049560546875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/ek-0296-tension.svg",
+      "inkRatio": 0.04949951171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/hollow-body-hold-1.svg",
+      "inkRatio": 0.04931640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/hollow-body-hold-2.svg",
+      "inkRatio": 0.06427001953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/flutter-kick-1.svg",
+      "inkRatio": 0.06781005859375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/flutter-kick-2.svg",
+      "inkRatio": 0.0762939453125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/treadmill-incline-walk-1.svg",
+      "inkRatio": 0.12506103515625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/treadmill-incline-walk-2.svg",
+      "inkRatio": 0.14404296875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/high-knees-1.svg",
+      "inkRatio": 0.06622314453125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/high-knees-2.svg",
+      "inkRatio": 0.08221435546875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/jumping-jack-1.svg",
+      "inkRatio": 0.06475830078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/jumping-jack-2.svg",
+      "inkRatio": 0.0921630859375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/skierg-1.svg",
+      "inkRatio": 0.1058349609375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/skierg-2.svg",
+      "inkRatio": 0.0760498046875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/assault-bike-1.svg",
+      "inkRatio": 0.13787841796875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-art/assault-bike-2.svg",
+      "inkRatio": 0.21075439453125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    }
+  ]
+}
