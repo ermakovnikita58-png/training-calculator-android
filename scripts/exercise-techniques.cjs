@@ -94,10 +94,28 @@ derive('behindHeadPulldown','pulldown',{
  alignment:'Сохраняйте нейтральное положение шеи. Выберите тягу перед собой, если движение за голову вызывает дискомфорт.',
  cues:['Подберите лёгкую нагрузку и амплитуду, в которой плечи двигаются свободно.']
 });
+derive('classicSki','ski',{
+ setup:'На ровном участке поставьте беговые лыжи параллельно, слегка согните колени и вынесите обе палки вперёд.',
+ movement:'Одновременно оттолкнитесь обеими палками, проведите кисти за бёдра и верните руки вперёд для следующего цикла.',
+ alignment:'Держите лыжи параллельно и выполняйте наклон корпусом с контролем положения спины.',
+ finish:'Снизьте темп и остановитесь на свободном участке трассы.',
+ mistakes:['Рывок из поясницы','Постановка палок между лыжами'],
+ cues:['На рисунке показан одновременный бесшажный ход.']
+});
+derive('lowImpactAerobics','walk',{
+ setup:'Встаньте на ровной нескользкой поверхности и слегка согните колени.',
+ movement:'Шагните в сторону и приставьте вторую стопу, затем повторите в другую сторону.',
+ alignment:'Держите хотя бы одну стопу на полу и двигайте руками в комфортном ритме.',
+ finish:'Постепенно уменьшайте ширину и частоту шагов до остановки.',
+ mistakes:['Прыжок при приставлении','Слишком широкий шаг с потерей равновесия'],
+ cues:['Начните с небольшой амплитуды и спокойного темпа.']
+});
 function classify(name,group){const n=name.toLowerCase().replaceAll('ё','е');
  if(n==='тяга нижнего блока широким хватом')return 'wideSeatedRow';
  if(n==='тяга широким хватом в смите')return 'wideSmithRow';
  if(n==='тяга вертикального блока за голову')return 'behindHeadPulldown';
+ if(n==='бег на лыжах')return 'classicSki';
+ if(n==='аэробика низкой интенсивности')return 'lowImpactAerobics';
  if(/сведение ладон/.test(n))return 'isometricChest';if(/вращение плеча|ротация плеча/.test(n))return 'rotator';if(/пистолет/.test(n))return 'squat';if(/махи гир/.test(n))return 'swing';if(/ракушка/.test(n))return 'clamshell';if(/боковые шаги/.test(n))return 'lateralwalk';if(/прыжки/.test(n)&&group!=='Кардио')return 'jump';if(/вис на|удержание штанги/.test(n))return 'grip';if(/удержание спины/.test(n))return 'backextension';if(/велосипед для пресса/.test(n))return 'rotation';if(/подъем корпуса на наклонной/.test(n))return 'crunch';if(group==='Бицепс'&&/подъем|сгибани/.test(n))return 'curl';
  if(/берпи/.test(n))return 'burpee';if(/альпинист/.test(n))return 'climber';if(/мертвый жук/.test(n))return 'deadbug';if(/холлоу/.test(n))return 'hollow';if(/обратные скручив/.test(n))return 'reverseCrunch';if(/вакуум/.test(n))return null;
  if(group==='Кардио'){if(/греб/.test(n))return 'rowing';if(/плаван/.test(n))return 'swim';if(/эллип/.test(n))return 'elliptical';if(/лыж/.test(n))return 'ski';if(/бокс/.test(n))return 'boxing';if(/канат/.test(n))return 'ropes';if(/велосип|велотренаж/.test(n))return 'cycle';if(/скакал/.test(n))return 'ropejump';if(/ходьб|прогулк/.test(n))return 'walk';if(/степ|лестни|платформ/.test(n))return 'step';if(/прыж/.test(n))return 'jump';if(/бег|спринт/.test(n))return 'run';return null;}

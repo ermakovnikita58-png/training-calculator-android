@@ -4908,6 +4908,348 @@
       "status": "style-approved",
       "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
       "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-050-1.svg": {
+      "sha256": "f796e565adaa26315128394038c4e52968c21fe50364dabd3f2b764186bb875e",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-050-2.svg": {
+      "sha256": "3aa9a34fffbb252c1deead1fac3132c971a06a1c6b7f5a7175259b190b1293aa",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-343-1.svg": {
+      "sha256": "f72509cfe501e448421e25454dbe441911025d60b245c125fc1ab68592112a92",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-343-2.svg": {
+      "sha256": "995fed505b6c8dea541554361192ac87fa13b0ad901213841dece7404ad95bc7",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-344-1.svg": {
+      "sha256": "371fc83f25da1ce678d375c65f19dbb69bab86e6dd569ebc1db55adb18b129ee",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-344-2.svg": {
+      "sha256": "d7085553950c7096f6c2af28d68aafa01294c68b065c17efa17ec6dfcf10f17a",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-353-1.svg": {
+      "sha256": "4814d0c11505432ef08c4d78e2b76fc526c080381b9a29c5b412c4599fb8d635",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-353-2.svg": {
+      "sha256": "d5d58909797f8090ebbfe6be21f7d2bb87dc88642327e950682ffce7d6411e72",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-354-1.svg": {
+      "sha256": "5b85dc5c1e03c87554c03cfeec1acd23bc26e0e4d6b02748c41a97200e08406d",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-354-2.svg": {
+      "sha256": "8beb609aac4d05e09a294cfd8d8baeac029e04b615205938a28d4b2786e96b70",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-360-1.svg": {
+      "sha256": "e142f152bcb50ee175252efde46bbd6a4935599ff7724a2449801a25ed9dce49",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-360-2.svg": {
+      "sha256": "de5aadd968991479c346258bee4bb6babad1ba58b490bd52820c6121e3124c2c",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-362-1.svg": {
+      "sha256": "8b397a4cc31ac214ac0b75b979c8cad37c24b6c368e3483ab1ceb8babc84613c",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-362-2.svg": {
+      "sha256": "90cc848dad3b7bb04e3c7641c67e735076cd80ca6826bf18d2a8355f7bc37609",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-363-1.svg": {
+      "sha256": "cedd685c262b1daaa692d70bb6017786b3d964a76ec450e6642feddd66aa8630",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-363-2.svg": {
+      "sha256": "cb820c71d8f7284535836f34f503a032fc684019ac9feeb368aca64dbb791618",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-375-1.svg": {
+      "sha256": "fe47376bd2e2b6b2af589181bffc3b0a3087d45aefafd35481064e05dca8f318",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-376-1.svg": {
+      "sha256": "b71d302dd3cfb00de59e13b975e79be2943922dc6e0da061475b5ac299b97ace",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-376-2.svg": {
+      "sha256": "222c72e30bcf599fa6797ead500d9d9a6003be6de64b56846143df02e5957db0",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-379-1.svg": {
+      "sha256": "c9fbcf92fe88bee2693afab171b7345d1977437fc7de7f751be54c457975e656",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-379-2.svg": {
+      "sha256": "e5c80ba25f3f736ba802cb6bfabf34eafeaafc1e57fc0d75c10f42048cd3ab09",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-382-1.svg": {
+      "sha256": "af158c89e7364ceddd82e6012fc058e5b985669e8848b39c870e032e74cd5ae2",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-382-2.svg": {
+      "sha256": "1da60156866e6182e77f6e90c1c271e159f47ca1137049eb71b3b3e9e1ea6973",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-383-1.svg": {
+      "sha256": "f40c686507173d6de0856c0ad7090cb7a3a2928a568d20ee84f100cbbc96754c",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-383-2.svg": {
+      "sha256": "5b390ced0b139489a228b52ca9b19e704623d4fcd1ebf1f4d7e6e167471ae67b",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-527-1.svg": {
+      "sha256": "6053ed7f29f49069fcc80be81b59b65808b7ce54e2624d26679c8b95364c4a2b",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-527-2.svg": {
+      "sha256": "f25ac4b47c44ed922217640f6b1b5a1c9db7a23b5b922199b737595d42cbfa0d",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-530-1.svg": {
+      "sha256": "c1a9b3681e673d373db40b31324a224e278d9f4f20fe5a7d642178cff0d64b9c",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-530-2.svg": {
+      "sha256": "fec562f10d2cb82c67531926f950855dbf191631b72590c39f05ed18996975e6",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-531-1.svg": {
+      "sha256": "c2bdd0d99880d0b868584507b367431f0a02f227b7b961d66bd8a57c65a76e24",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-531-2.svg": {
+      "sha256": "2938fcb68f488004f2ec5241d5b92cd0b27d70236e4e39a97494c3074f2c8583",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-534-1.svg": {
+      "sha256": "fae2a92295df3b1b65d93bd12319280dcb55cc9562a5602753acae6c718578ee",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-534-2.svg": {
+      "sha256": "416a892c8f0e1570650e6f3d6043c16892423950d1dfba180c213f6fcb1a23ac",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-535-1.svg": {
+      "sha256": "f9fbaf53fa8c2dea1165e6ccb4c4d5b913098ae038ccef8763a08691d1b96af8",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-535-2.svg": {
+      "sha256": "5bb894398d5889bdabe3c31d9cfae7bf73ffc152d42faffd5ee1d729daef2e18",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-542-1.svg": {
+      "sha256": "37fc3e7a6575278f106ee691e78b3a08f2d3e37749c51f1e30b00937d3225014",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-542-2.svg": {
+      "sha256": "595209ead86d439090e5a6fc86cd10cdba46e716a79584a3a48a172e7130a450",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-543-1.svg": {
+      "sha256": "0d2ab60785a51cf3d41b8e526877276ab8c678f23b11bfea4dacf4d99197b433",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-543-2.svg": {
+      "sha256": "edb6a867d8ca83a57e2a1097a8a9f1f842106886e16708969e4524b47407027c",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-544-1.svg": {
+      "sha256": "c2af771ceb832a48e09753888d056cf6b3cf7280783d0bdce021cdded4ec40c4",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-544-2.svg": {
+      "sha256": "d91e3dfcef97118749095ee2618b2f0ff21f157e287771dca968812560499414",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-545-1.svg": {
+      "sha256": "96190a52e26a126fe23df71df044a845eeb8da18adf5aaf74bef5034e7ee12a0",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-545-2.svg": {
+      "sha256": "8b8aa07afac97587ba01f7045a0f5c4007c490d947f0540a2770a0b1b5f12729",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-548-1.svg": {
+      "sha256": "8d1f872a71ea40467a5995e167e23eac5763505fdfe66b6511cb7918d8b62c81",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-548-2.svg": {
+      "sha256": "af8a9a08d18c27b2710bb6061e7b0df2c96c8c27067decb9c6c6590792fc21ae",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-550-1.svg": {
+      "sha256": "48c88f6c150cf902fb6e88bb947d63fe84a6eee0ac8b8c6acfc07115502cf138",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-550-2.svg": {
+      "sha256": "b82dbfefe6d2d6651ea133ba51f36a2a4e8f9e10102bb71db2fe4d5294a657a1",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-551-1.svg": {
+      "sha256": "646d8b96272e7c68814eb07aebe2ed1991b87da39a9d321be498c1b05ad4222a",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-551-2.svg": {
+      "sha256": "fd66c99aff9743e46a7babb4c2fe8fdd813b37ca9d4155fa29c6e6b9f3e9a10b",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-552-1.svg": {
+      "sha256": "26b5b0a056ce3d61fd4cecc95e33e32dd7aa68be2d0a65575df44d472d308f50",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-553-1.svg": {
+      "sha256": "577297e681d8e037ae731e2ea6477926a7446c2cd8e832c77f1adb48e8476b11",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-554-1.svg": {
+      "sha256": "d94f0ad3d5f7bd4b81149e6d9e864e34b0649590b161eb07a13389525d87a031",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-554-2.svg": {
+      "sha256": "9c2e9e9173c2600d0a7b9b98c042160005c9ab645b866d1ffdff115e942b88cf",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-555-1.svg": {
+      "sha256": "8d9623bd722d9b063dd12ae6ccc34b68fbd60d60e5ba7d962fa9a1e26ac31239",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-555-2.svg": {
+      "sha256": "81459c28485a3a70a8df5affed11d21c4ecc91a5de6f8a20eef19005f2ca53b7",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-556-1.svg": {
+      "sha256": "76ee39dbac21722ec511b1995bfb4385d8e402a93b6e20dab3f141949a864993",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-556-2.svg": {
+      "sha256": "39fab92084bce2249f101474816ca7d21b4ea66d24b8fd8c98fa6c38f6727190",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
     }
   }
 }
