@@ -516,10 +516,10 @@
     "equipment": "dumbbell",
     "support": "standing",
     "grip": "neutral",
-    "description": "STANDING NEUTRAL-GRIP TWO-DUMBBELL SHOULDER PRESS. Palms face EACH OTHER, parallel dumbbell handle axes, elbows forward rather than flared wide. Left: dumbbells beside shoulders, elbows bent pointing slightly forwards, palms facing inward. Right: press both dumbbells overhead while maintaining inward-facing neutral grip; torso upright, feet floor, no bench. Three-quarter view so grip is unmistakable. Distinguish from wide pronated press.",
-    "prompt": "Use the reference image ONLY as the exact rendering STYLE, not as poses or equipment. Create a NEW original technical exercise illustration: exactly TWO separate full-body figures side by side, start LEFT / finish RIGHT, same adult athletic man in sports shorts and sneakers, same camera/scale. HOLLOW WHITE ANATOMICAL CONTOUR drawing. All skin, clothing, equipment and bench interiors must be BLACK like background; fine consistent bright WHITE outlines and a few fine interior anatomical muscle curves. At least 92% black canvas. No white-filled skin, gray shading, hatch marks, 3D rendering, colored muscle highlights, simple geometric mannequins, stick figures, labels, words, numbers, arrows, panels or watermark. Pure black flat background with generous margins; entire body and equipment fully within image; clean gap between the two poses. Match realistic muscle shapes and delicate contours of reference. STANDING NEUTRAL-GRIP TWO-DUMBBELL SHOULDER PRESS. Palms face EACH OTHER, parallel dumbbell handle axes, elbows forward rather than flared wide. Left: dumbbells beside shoulders, elbows bent pointing slightly forwards, palms facing inward. Right: press both dumbbells overhead while maintaining inward-facing neutral grip; torso upright, feet floor, no bench. Three-quarter view so grip is unmistakable. Distinguish from wide pronated press.",
+    "description": "True hammer neutral-grip standing dumbbell overhead press. Use front-left oblique view at about 45 degrees so the two dumbbell axles point forward/back from the athlete and slope diagonally in perspective. In BOTH poses hands stay turned so the palms face each other (left palm points right and right palm points left), thumbs toward athlete's own face. Keep BOTH dumbbell axle/handle lines sagittal, visibly oriented front-to-back, parallel to the direction the face points. Do not align the axles left-to-right along the shoulder line. Left figure begins with elbows bent forward a little and two dumbbells at ears; right finishes with dumbbells overhead, same palms-in grip. Both figures stand.",
+    "prompt": "Create one landscape scientific educational exercise pair. Use attached image purely as exact visual style reference, replace pose and equipment as instructed. Flat pure black field, white hollow fine clean contours only, realistic athletic anatomy in shorts, subtle internal muscle lines, no gray fill or shading, no titles, watermark, labels or floor texture. Exactly TWO separate full-body diagrams, one in each equal half with a broad clean blank vertical gap at center. Equal scale. All equipment within the canvas. No extra equipment beyond specified. True hammer neutral-grip standing dumbbell overhead press. Use front-left oblique view at about 45 degrees so the two dumbbell axles point forward/back from the athlete and slope diagonally in perspective. In BOTH poses hands stay turned so the palms face each other (left palm points right and right palm points left), thumbs toward athlete's own face. Keep BOTH dumbbell axle/handle lines sagittal, visibly oriented front-to-back, parallel to the direction the face points. Do not align the axles left-to-right along the shoulder line. Left figure begins with elbows bent forward a little and two dumbbells at ears; right finishes with dumbbells overhead, same palms-in grip. Both figures stand.",
     "sourcePNG": "forge-ex-416.png",
-    "sourcePNG_SHA256": "f9f4227a2f2ce6313abb502baedd826e134e5db63b2a44c3dfbf77d5c9606f58",
+    "sourcePNG_SHA256": "133adb81f07c0ad658e8943642c454cfcff1a2c5ad202aaa3523c3585dcfd88e",
     "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
@@ -533,15 +533,15 @@
     "files": [
       {
         "file": "exercise-contours/original-v4/forge-ex-416-1.svg",
-        "sha256": "82907a2c416a98901b107395682ff4764374086751f01cc9928ae5858c6b6e8a",
-        "inkRatio": 0.025091807047526043,
-        "loops": 290
+        "sha256": "38f50ae0074ebe65fe97163714b075df0f156cf3c69b38b0731cc9da14844445",
+        "inkRatio": 0.022533416748046875,
+        "loops": 276
       },
       {
         "file": "exercise-contours/original-v4/forge-ex-416-2.svg",
-        "sha256": "ab0c5d14d513b1a1cc53b55e847f564bd67efe9fb29b2025ada472a9a5bb1f5a",
-        "inkRatio": 0.0275421142578125,
-        "loops": 269
+        "sha256": "7a241d9b3cf65d422ad1682a892ecc6de745b4a9f17dfc563015c217fadd18cb",
+        "inkRatio": 0.024286905924479168,
+        "loops": 276
       }
     ]
   },
@@ -836,6 +836,1000 @@
         "sha256": "e7eb5c65304002ecfa4297811e0b2a91b9c41f3b1133f2c0282e959c7e01a5b2",
         "inkRatio": 0.0291595458984375,
         "loops": 249
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-080",
+    "name": "Пуловер в тренажёре",
+    "group": "Грудь",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-080-1.svg",
+      "exercise-contours/original-v4/forge-ex-080-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "machine",
+    "support": "seated-machine",
+    "grip": "as-drawn",
+    "description": "Seated pullover machine with upright back pad and feet planted. Bent elbows rest on pivoting arm pads. Start elbows overhead, finish drive down toward ribs with machine lever. No free weights.",
+    "prompt": "Use reference for STYLE ONLY. Exactly two whole figures, start left, finish right, separated by blank vertical gap. Fine bright white hollow anatomical contours, completely black figure interiors and pure black background, realistic proportions, no gray shading, no text. Seated pullover machine with upright back pad and feet planted. Bent elbows rest on pivoting arm pads. Start elbows overhead, finish drive down toward ribs with machine lever. No free weights.",
+    "sourcePNG": "forge-ex-080.png",
+    "sourcePNG_SHA256": "1fbf29b8626b565dd21408b7ee55d795d8c91f27f1ab8eb9e55d63a78d3e57a0",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "machine"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-080-1.svg",
+        "sha256": "c944c502cbe8875dbd6216a023a4f582c5d09a2e3349b658df88ed4a1c972191",
+        "inkRatio": 0.056119283040364586,
+        "loops": 548
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-080-2.svg",
+        "sha256": "466b44ff420a725c81f0dcff00a73f7a2a7c6f1f31cbedd4534ef016fa8669e5",
+        "inkRatio": 0.04982757568359375,
+        "loops": 516
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-081",
+    "name": "Отжимания на кольцах",
+    "group": "Грудь",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-081-1.svg",
+      "exercise-contours/original-v4/forge-ex-081-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "rings",
+    "support": "prone-rings",
+    "grip": "as-drawn",
+    "description": "Ring pushup. Both feet on floor and straight horizontal plank. Hands hold two low suspended gymnastic rings. Start elbows straight, finish chest between rings and bent elbows. Continuous straps to overhead support. No dips.",
+    "prompt": "Use reference for STYLE ONLY. Exactly two whole figures, start left, finish right, separated by blank vertical gap. Fine bright white hollow anatomical contours, completely black figure interiors and pure black background, realistic proportions, no gray shading, no text. Ring pushup. Both feet on floor and straight horizontal plank. Hands hold two low suspended gymnastic rings. Start elbows straight, finish chest between rings and bent elbows. Continuous straps to overhead support. No dips.",
+    "sourcePNG": "forge-ex-081.png",
+    "sourcePNG_SHA256": "1240fbe2927e23c8ea3b747b19e135b06e06b2f77d599728c59988a3c356f35b",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "rings"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-081-1.svg",
+        "sha256": "dddac8123c94cb7a413332f9ddea656b60497cc4cf430d68271eb593a4cf90b6",
+        "inkRatio": 0.032099405924479164,
+        "loops": 387
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-081-2.svg",
+        "sha256": "2b1d7ba6d250acd11c3dfcc38ba2d42dc23c2b9d4c406e206b5a5909ac44d1ee",
+        "inkRatio": 0.028580983479817707,
+        "loops": 360
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-389",
+    "name": "Сведение одной руки на кроссовере",
+    "group": "Грудь",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-389-1.svg",
+      "exercise-contours/original-v4/forge-ex-389-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "cable",
+    "support": "standing",
+    "grip": "as-drawn",
+    "description": "Single arm horizontal cable fly. One side pulley at chest height. One working hand starts extended to side, ends in front of chest, same slight elbow bend. Other hand rests on waist. Show connected cable.",
+    "prompt": "Use reference for STYLE ONLY. Exactly two whole figures, start left, finish right, separated by blank vertical gap. Fine bright white hollow anatomical contours, completely black figure interiors and pure black background, realistic proportions, no gray shading, no text. Single arm horizontal cable fly. One side pulley at chest height. One working hand starts extended to side, ends in front of chest, same slight elbow bend. Other hand rests on waist. Show connected cable.",
+    "sourcePNG": "forge-ex-389.png",
+    "sourcePNG_SHA256": "f411cb77ee4adfdb45ab8ef6ebd46fe0b29e3158cf9f5cde361829e5853707c1",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "cable"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-389-1.svg",
+        "sha256": "3c61008ef7ccc3e064a09f4d2da46d38857f3b6134c39a15d3764c67ca59178a",
+        "inkRatio": 0.030995686848958332,
+        "loops": 310
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-389-2.svg",
+        "sha256": "edae151f01abde7593fd1178c8d6ada6300c5b0dd1f002b18cec0483f9763b58",
+        "inkRatio": 0.02922821044921875,
+        "loops": 291
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-082",
+    "name": "Изометрическое сведение ладоней",
+    "group": "Грудь",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-082-1.svg"
+    ],
+    "phaseStatus": "static-single-frame",
+    "equipment": "bodyweight",
+    "support": "standing",
+    "grip": "as-drawn",
+    "description": "One centered figure only, upper body from waist, standing upright. Both open palms pressed together vertically in front of sternum, fingers pointing up, elbows bent and out to sides at chest height. Show the joined palms clearly. Static isometric hold. No equipment.",
+    "prompt": "Match only the reference's precise hollow white anatomical contour style. Pure black background and black interiors, fine white anatomical linework, realistic athlete in sports shorts, no shading, text or arrows. One centered figure only, upper body from waist, standing upright. Both open palms pressed together vertically in front of sternum, fingers pointing up, elbows bent and out to sides at chest height. Show the joined palms clearly. Static isometric hold. No equipment. Fit both poses, if two, side by side with clear vertical blank gap.",
+    "sourcePNG": "forge-ex-082.png",
+    "sourcePNG_SHA256": "98d7ab2762fc25aea5c02ad413e526c249f46761726136ae36db500d3b36f586",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-082-1.svg",
+        "sha256": "c7f7394a4a1d71fc0c3a5c0069e5a9e8591b2f995b8c36e6c155c6cd1851947e",
+        "inkRatio": 0.024139404296875,
+        "loops": 402
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-395",
+    "name": "Жим на грудь в тренажёре одной рукой",
+    "group": "Грудь",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-395-1.svg",
+      "exercise-contours/original-v4/forge-ex-395-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "machine",
+    "support": "seated-machine",
+    "grip": "as-drawn",
+    "description": "Two phases of seated single-arm machine chest press. Upright back against backrest and feet planted. One hand on right independent lever handle, other hand on thigh. Start right elbow bent and handle next to chest, finish press horizontally forward to extended right arm. Side three-quarter view, show whole machine and pivot.",
+    "prompt": "Match only the reference's precise hollow white anatomical contour style. Pure black background and black interiors, fine white anatomical linework, realistic athlete in sports shorts, no shading, text or arrows. Two phases of seated single-arm machine chest press. Upright back against backrest and feet planted. One hand on right independent lever handle, other hand on thigh. Start right elbow bent and handle next to chest, finish press horizontally forward to extended right arm. Side three-quarter view, show whole machine and pivot. Fit both poses, if two, side by side with clear vertical blank gap.",
+    "sourcePNG": "forge-ex-395.png",
+    "sourcePNG_SHA256": "6c1122e03bffc8e7a0927166a701ba972cfe0dd4d1fad267f66ba3d93973cb77",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "machine"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-395-1.svg",
+        "sha256": "cda046910e05e49644c65ad7490b28a2e37d22e9b2f27ff3dcecaf3e04beafd8",
+        "inkRatio": 0.05706151326497396,
+        "loops": 418
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-395-2.svg",
+        "sha256": "40d6807ee4101b3852a708f470c1b4a61e2e27b6834e33261309bd029f97d172",
+        "inkRatio": 0.057629903157552086,
+        "loops": 436
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-157",
+    "name": "Молотковые сгибания гантелей сидя",
+    "group": "Бицепс",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-157-1.svg",
+      "exercise-contours/original-v4/forge-ex-157-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "dumbbell",
+    "support": "seated flat bench",
+    "grip": "neutral hammer",
+    "description": "SEATED bilateral hammer dumbbell curl. Same short flat bench and both feet flat in both poses. Side-front three-quarter view to reveal the seat and both hands. LEFT arms hanging next to hips with one dumbbell in each hand, thumbs pointing forward. RIGHT elbows still by waist, bent and hands near shoulders. Thumbs point up throughout curl and palms face each other, dumbbell handles remain aligned with fists, recognizable dumbbells.",
+    "prompt": "Use case: scientific-educational. Create a new FORGE exercise contour drawing; use the attached Image 1 only as the EXACT white-line art style reference. Exactly two separate full-body figures side-by-side, left start and right finish; same person, camera and scale, completely empty wide black gutter at center, every object inside its own half, generous margins. SEATED bilateral hammer dumbbell curl. Same short flat bench and both feet flat in both poses. Side-front three-quarter view to reveal the seat and both hands. LEFT arms hanging next to hips with one dumbbell in each hand, thumbs pointing forward. RIGHT elbows still by waist, bent and hands near shoulders. Thumbs point up throughout curl and palms face each other, dumbbell handles remain aligned with fists, recognizable dumbbells. Pure #000 black background AND completely black skin, clothing and equipment interiors, exactly like the reference. Thin continuous clean WHITE anatomical outline and restrained internal muscle line strokes, anatomically proportioned adult athlete in shorts. No white or gray fill, shading, gradients, textures, glow, dark gray background, text, arrows, labels, crops or extra body parts. Style is detailed hollow white ink outlines on pure black. Keep legs and entire equipment visible.",
+    "sourcePNG": "forge-ex-157.png",
+    "sourcePNG_SHA256": "bcb08ed4db36b9a0e67446f75a9136fdd058b2cb4b362ddc74557b742a8aa1f7",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbell"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-157-1.svg",
+        "sha256": "a6c81caf58df409244eec97d5b3a309aaa4ffc78730bd542bf57402011eb3f8f",
+        "inkRatio": 0.03433100382486979,
+        "loops": 280
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-157-2.svg",
+        "sha256": "6f5a340b54f9fbb024ef4204921efdb5e3006392cec22ddc7205d21d2b1426c8",
+        "inkRatio": 0.035465240478515625,
+        "loops": 304
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-171",
+    "name": "Сгибание с акцентом на брахиалис",
+    "group": "Бицепс",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-171-1.svg",
+      "exercise-contours/original-v4/forge-ex-171-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "dumbbell",
+    "support": "standing",
+    "grip": "neutral cross-body hammer",
+    "description": "Illustrate a standing single-arm CROSS-BODY HAMMER CURL as the brachialis-emphasis variant. One dumbbell in active right hand. Front three-quarter view. LEFT right hand by right thigh, neutral grip, elbow beside trunk. RIGHT elbow still beside trunk, right forearm flexes diagonally toward left chest, thumb leads the movement and palm faces torso, never twists palm up. Free left arm relaxed. No bench.",
+    "prompt": "Use case: scientific-educational. Create a new FORGE exercise contour drawing; use the attached Image 1 only as the EXACT white-line art style reference. Exactly two separate full-body figures side-by-side, left start and right finish; same person, camera and scale, completely empty wide black gutter at center, every object inside its own half, generous margins. Illustrate a standing single-arm CROSS-BODY HAMMER CURL as the brachialis-emphasis variant. One dumbbell in active right hand. Front three-quarter view. LEFT right hand by right thigh, neutral grip, elbow beside trunk. RIGHT elbow still beside trunk, right forearm flexes diagonally toward left chest, thumb leads the movement and palm faces torso, never twists palm up. Free left arm relaxed. No bench. Pure #000 black background AND completely black skin, clothing and equipment interiors, exactly like the reference. Thin continuous clean WHITE anatomical outline and restrained internal muscle line strokes, anatomically proportioned adult athlete in shorts. No white or gray fill, shading, gradients, textures, glow, dark gray background, text, arrows, labels, crops or extra body parts. Style is detailed hollow white ink outlines on pure black. Keep legs and entire equipment visible.",
+    "sourcePNG": "forge-ex-171.png",
+    "sourcePNG_SHA256": "b2270681f644fd08ef9f1c0901746e277d78ad288fcfa805fed252f05f7af68f",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbell"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-171-1.svg",
+        "sha256": "289f7e78e7905ccd5d03e615a6092c77900aaa3c54c43503a2396ee41ef54aa4",
+        "inkRatio": 0.026020050048828125,
+        "loops": 259
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-171-2.svg",
+        "sha256": "5b08ecc8870fbd70e67734e640b6952eb5d3cf71e4a61371e9d8a2c52263c2c6",
+        "inkRatio": 0.024967193603515625,
+        "loops": 263
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-428",
+    "name": "Подъём штанги на бицепс у стены",
+    "group": "Бицепс",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-428-1.svg",
+      "exercise-contours/original-v4/forge-ex-428-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "barbell",
+    "support": "standing with upper back against wall",
+    "grip": "supinated",
+    "description": "STRICT WALL BARBELL BICEPS CURL, clearly side-front three-quarter view. Both poses show the same vertical wall behind the person as a thin vertical plane edge, upper back and hips visibly touching the wall throughout, feet a few inches forward. Hold ONE continuous straight barbell with both palms up and a plate on each end. LEFT bar against fronts of upper thighs, elbows nearly extended. RIGHT bar near upper abdomen/lower chest after curling, elbows stay against sides, shoulders and hips stay against wall. Include whole wall edge in each separate half, no bench.",
+    "prompt": "Use case: scientific-educational. Create a new FORGE exercise contour drawing; use the attached Image 1 only as the EXACT white-line art style reference. Exactly two separate full-body figures side-by-side, left start and right finish; same person, camera and scale, completely empty wide black gutter at center, every object inside its own half, generous margins. STRICT WALL BARBELL BICEPS CURL, clearly side-front three-quarter view. Both poses show the same vertical wall behind the person as a thin vertical plane edge, upper back and hips visibly touching the wall throughout, feet a few inches forward. Hold ONE continuous straight barbell with both palms up and a plate on each end. LEFT bar against fronts of upper thighs, elbows nearly extended. RIGHT bar near upper abdomen/lower chest after curling, elbows stay against sides, shoulders and hips stay against wall. Include whole wall edge in each separate half, no bench. Pure #000 black background AND completely black skin, clothing and equipment interiors, exactly like the reference. Thin continuous clean WHITE anatomical outline and restrained internal muscle line strokes, anatomically proportioned adult athlete in shorts. No white or gray fill, shading, gradients, textures, glow, dark gray background, text, arrows, labels, crops or extra body parts. Style is detailed hollow white ink outlines on pure black. Keep legs and entire equipment visible.",
+    "sourcePNG": "forge-ex-428.png",
+    "sourcePNG_SHA256": "bdc8cfbc1ea4388e041a3890fd5181b9b34522b9a736ed57fa6dbafd2fc25755",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "barbell"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-428-1.svg",
+        "sha256": "5673d0cd739389b68366543784982b559f24de2841890cd6f80c6287e292c3b1",
+        "inkRatio": 0.03300348917643229,
+        "loops": 286
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-428-2.svg",
+        "sha256": "69b5b342462eff73140d358175bb152103065bb1cc55e6b081fe0d57f6f99e5e",
+        "inkRatio": 0.031247456868489582,
+        "loops": 253
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-430",
+    "name": "Сгибание рук на низком блоке обратным хватом",
+    "group": "Бицепс",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-430-1.svg",
+      "exercise-contours/original-v4/forge-ex-430-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "low cable and straight bar",
+    "support": "standing",
+    "grip": "pronated reverse",
+    "description": "Standing reverse-grip low cable curl. Repeat the same complete compact cable machine just in front of the person within each half. Its pulley is at ankle level. One taut cable from pulley to midpoint of a short straight bar held in BOTH hands. LEFT arms almost straight at thighs, knuckles on top, palms facing down toward floor. RIGHT both elbows curl while staying beside ribs, bar rises toward upper abdomen, hands remain clearly pronated with backs of hands facing up and toward body. No loose barbell plates and no rope.",
+    "prompt": "Use case: scientific-educational. Create a new FORGE exercise contour drawing; use the attached Image 1 only as the EXACT white-line art style reference. Exactly two separate full-body figures side-by-side, left start and right finish; same person, camera and scale, completely empty wide black gutter at center, every object inside its own half, generous margins. Standing reverse-grip low cable curl. Repeat the same complete compact cable machine just in front of the person within each half. Its pulley is at ankle level. One taut cable from pulley to midpoint of a short straight bar held in BOTH hands. LEFT arms almost straight at thighs, knuckles on top, palms facing down toward floor. RIGHT both elbows curl while staying beside ribs, bar rises toward upper abdomen, hands remain clearly pronated with backs of hands facing up and toward body. No loose barbell plates and no rope. Pure #000 black background AND completely black skin, clothing and equipment interiors, exactly like the reference. Thin continuous clean WHITE anatomical outline and restrained internal muscle line strokes, anatomically proportioned adult athlete in shorts. No white or gray fill, shading, gradients, textures, glow, dark gray background, text, arrows, labels, crops or extra body parts. Style is detailed hollow white ink outlines on pure black. Keep legs and entire equipment visible.",
+    "sourcePNG": "forge-ex-430.png",
+    "sourcePNG_SHA256": "aa9dffa269cb6f8075dbf18ba92ffd41d14aeb19a0cc1dec77590b4d4e27b43f",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "low cable and straight bar"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-430-1.svg",
+        "sha256": "d561057a96fbc7733b83bd96e4dc52804691579b9ad4500579ae87f25cca9e7c",
+        "inkRatio": 0.05605316162109375,
+        "loops": 335
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-430-2.svg",
+        "sha256": "aa93ae51cdfd2097ffdc9bbcb8cd64c52c2ede77cfc641a76f8b89bff3793845",
+        "inkRatio": 0.05786768595377604,
+        "loops": 331
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-432",
+    "name": "Сгибание рук с канатом сидя",
+    "group": "Бицепс",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-432-1.svg",
+      "exercise-contours/original-v4/forge-ex-432-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "low cable and split rope handle",
+    "support": "seated flat bench",
+    "grip": "neutral rope",
+    "description": "SEATED LOW-CABLE ROPE BICEPS CURL. Draw the same person sitting upright on a low flat bench and facing a compact cable station in each half; feet flat and elbows fixed at sides. Cable comes visibly from ankle-level low pulley in front and attaches to midpoint of short split gym rope. Two hands grip one rope end each, palms face each other. LEFT hands low in front of knees, elbows extended. RIGHT hands rise toward shoulders after elbow flexion, seated trunk stays upright. Clearly separate rope handle ends, taut cable, pulley and bench.",
+    "prompt": "Use case: scientific-educational. Create a new FORGE exercise contour drawing; use the attached Image 1 only as the EXACT white-line art style reference. Exactly two separate full-body figures side-by-side, left start and right finish; same person, camera and scale, completely empty wide black gutter at center, every object inside its own half, generous margins. SEATED LOW-CABLE ROPE BICEPS CURL. Draw the same person sitting upright on a low flat bench and facing a compact cable station in each half; feet flat and elbows fixed at sides. Cable comes visibly from ankle-level low pulley in front and attaches to midpoint of short split gym rope. Two hands grip one rope end each, palms face each other. LEFT hands low in front of knees, elbows extended. RIGHT hands rise toward shoulders after elbow flexion, seated trunk stays upright. Clearly separate rope handle ends, taut cable, pulley and bench. Pure #000 black background AND completely black skin, clothing and equipment interiors, exactly like the reference. Thin continuous clean WHITE anatomical outline and restrained internal muscle line strokes, anatomically proportioned adult athlete in shorts. No white or gray fill, shading, gradients, textures, glow, dark gray background, text, arrows, labels, crops or extra body parts. Style is detailed hollow white ink outlines on pure black. Keep legs and entire equipment visible.",
+    "sourcePNG": "forge-ex-432.png",
+    "sourcePNG_SHA256": "5cb0a96f3b56eea8130aebb86d72be13ed6e14ce3b8c36ebd32ceeb9fc0b9abd",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "low cable and split rope handle"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-432-1.svg",
+        "sha256": "6fd452e566e05633c170c5b84af48895d3a9017cd76ab3af33a4dfa24482c34f",
+        "inkRatio": 0.04423196280129829,
+        "loops": 330
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-432-2.svg",
+        "sha256": "1a8d1c01661349973a149b9d44c34e1884bdd878329dd90d5503667a82d9342c",
+        "inkRatio": 0.0460812144521433,
+        "loops": 360
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-435",
+    "name": "Изометрическое удержание гантели на бицепс",
+    "group": "Бицепс",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-435-1.svg"
+    ],
+    "phaseStatus": "static-single-frame",
+    "equipment": "dumbbell",
+    "support": "standing",
+    "grip": "supinated",
+    "description": "ONE FIGURE only, centered, single full-body three-quarter pose of a standing single-arm isometric dumbbell curl hold. One dumbbell in the right hand at waist height, right upper arm vertical by ribs, elbow bent 90 degrees, forearm clearly horizontal and palm faces up supporting the handle. Left arm relaxed and empty. Upright neutral torso, stable feet; no bench. No second pose, no arrows.",
+    "prompt": "Use case: scientific-educational. Create a new FORGE exercise contour drawing; use the attached Image 1 only as the EXACT white-line art style reference. One centered figure. ONE FIGURE only, centered, single full-body three-quarter pose of a standing single-arm isometric dumbbell curl hold. One dumbbell in the right hand at waist height, right upper arm vertical by ribs, elbow bent 90 degrees, forearm clearly horizontal and palm faces up supporting the handle. Left arm relaxed and empty. Upright neutral torso, stable feet; no bench. No second pose, no arrows. Pure #000 black background AND completely black skin, clothing and equipment interiors, exactly like the reference. Thin continuous clean WHITE anatomical outline and restrained internal muscle line strokes, anatomically proportioned adult athlete in shorts. No white or gray fill, shading, gradients, textures, glow, dark gray background, text, arrows, labels, crops or extra body parts. Style is detailed hollow white ink outlines on pure black. Keep legs and entire equipment visible.",
+    "sourcePNG": "forge-ex-435.png",
+    "sourcePNG_SHA256": "ff66f8a271848a15015476efb40fd437d9df62b3d1fb0c17dab124e84cf55648",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbell"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-435-1.svg",
+        "sha256": "bb74e9ed37299ea972123ea9d11ef560bd985bcefa99396d497c088cc7dff1fd",
+        "inkRatio": 0.03230985005696615,
+        "loops": 355
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-434",
+    "name": "Сгибание кисти и локтя с эспандером",
+    "group": "Бицепс",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-434-1.svg",
+      "exercise-contours/original-v4/forge-ex-434-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "resistance band",
+    "support": "standing with band pinned under feet",
+    "grip": "supinated",
+    "description": "Standing combined wrist and elbow curl with a long elastic resistance band clearly pinned under both shoes; thin continuous band drawn up to the hands, no dumbbell, bar or machine. LEFT nearly straight arms by sides, palms face forward, wrists neutral. RIGHT elbows bent about 90 degrees with upper arms still at sides, forearms in front with palms up, hands visibly flexed gently toward inner forearms at wrist. Show a real grip on the band and increased tension. Feet and band anchor in exactly same place in both poses.",
+    "prompt": "Re-illustrate this same two-phase standing resistance-band wrist AND elbow curl in a true SIDE PROFILE facing right in both phases. Reference image defines the exact thin hollow white line style, completely black interiors and background, plus the existing foot-anchored resistance band. The viewpoint change must make wrist flexion unmistakable. Keep two full-body profiles, left start and right finish, generous blank gutter. Band pinned to the floor under both feet, one free end in each closed fist. LEFT upper arm hangs vertical, elbow nearly straight and wrist neutral, palm toward front. RIGHT upper arm remains vertical, elbow bent 90 degrees, forearm level and palm UP. At the right-phase wrist, show a clear 30-degree bend upwards: the closed hand lifts toward the ceiling, thumb side of hand higher than wrist, while forearm remains horizontal, band attached to fist and running taut to floor. Band must remain attached under shoe in BOTH halves. Side profile shows the clear change in wrist angle in addition to elbow bend. No arrows, labels, labels, cropping, fill or shading. White thin outline only, pure black interiors and background. Follow-up edit: Edit the existing image and preserve the two bodies exactly including hand and wrist angles, positions, clean hollow white lines and black interiors. Correct ONLY the elastic band in the right-hand phase: one SINGLE straight diagonal taut white strand from the closed fist down-left directly to the middle of the visible shoe sole, where the band passes behind the shoe. No floor segment, no bend, no L-shape, and no floating floor anchor. The line terminates exactly at the shoe, not in front of it. Keep the left phase unchanged. Keep all white contours thin on pure black, with the original framing and generous separation.",
+    "sourcePNG": "forge-ex-434.png",
+    "sourcePNG_SHA256": "fac5357cccc1e5f61f717986560411c1081e3808e528fd6bcf50d208ecc64e61",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "resistance band"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-434-1.svg",
+        "sha256": "c6f29927a39f5aae42abfb9b8d96f8793764f2b51effcc8c0165f12366ffb961",
+        "inkRatio": 0.0165557861328125,
+        "loops": 158
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-434-2.svg",
+        "sha256": "ec025f7449c7dd7ae7e82fb93089a66a0830f5f2d363ce47052b6000829c628f",
+        "inkRatio": 0.018488566080729168,
+        "loops": 157
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-134",
+    "name": "Отведение руки в сторону на нижнем блоке",
+    "group": "Плечи",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-134-1.svg",
+      "exercise-contours/original-v4/forge-ex-134-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "cable",
+    "support": "standing-low-pulley",
+    "grip": "single-hand-neutral",
+    "description": "SINGLE-ARM low-pulley cable lateral raise, front view. A clearly drawn small cable stack with pulley just above ground stands to the athlete's LEFT in EACH panel. Athlete's RIGHT hand holds ONE D-handle; a single taut diagonal cable leads visibly and continuously from the low pulley on the LEFT, across in front of the legs to RIGHT hand. LEFT hand rests on left hip in BOTH panels, absolutely no equipment in left hand. Left phase: right hand begins just in front of right thigh. Right phase: right arm raises sideways to right shoulder height with gently bent elbow, hand still holding D-handle, same diagonal cable tied to low pulley at lower left. Do not draw a cable terminating at feet or held in both hands.",
+    "prompt": "Create one landscape scientific educational exercise pair. Use attached image purely as exact visual style reference, replace pose and equipment as instructed. Flat pure black field, white hollow fine clean contours only, realistic athletic anatomy in shorts, subtle internal muscle lines, no gray fill or shading, no titles, watermark, labels or floor texture. Exactly TWO separate full-body diagrams, one in each equal half with a broad clean blank vertical gap at center. Equal scale. All equipment within the canvas. No extra equipment beyond specified. SINGLE-ARM low-pulley cable lateral raise, front view. A clearly drawn small cable stack with pulley just above ground stands to the athlete's LEFT in EACH panel. Athlete's RIGHT hand holds ONE D-handle; a single taut diagonal cable leads visibly and continuously from the low pulley on the LEFT, across in front of the legs to RIGHT hand. LEFT hand rests on left hip in BOTH panels, absolutely no equipment in left hand. Left phase: right hand begins just in front of right thigh. Right phase: right arm raises sideways to right shoulder height with gently bent elbow, hand still holding D-handle, same diagonal cable tied to low pulley at lower left. Do not draw a cable terminating at feet or held in both hands.\n\nFollow-up edit: Edit only the cable placement in the two-panel standing single-arm cable lateral raise diagram. Preserve exact poses, one raised right arm in the right panel, one arm lowered in the left panel, other hand on hip, body contours, proportions, black field, white line style and left/right layout. In EACH panel put the cable tower on the viewer's RIGHT, directly next to the side where the free hand rests on hip. Recreate one straight visible taut cable from the low circular pulley near the floor of THAT tower to the D-handle held by the opposite hand. The low pulley is the only fixed end and the D handle is the only moving end. Cable runs visibly across in front of the body, never behind it. Remove both old towers and old disconnected cords completely. Exactly one complete floor cable tower per panel and one cable per panel. Keep every object inside its half of the frame.",
+    "sourcePNG": "forge-ex-134.png",
+    "sourcePNG_SHA256": "fc5364bbf3db93ed43497047211f706d270a9df1f67441a34dc3ba1a7b3f141b",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "cable"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-134-1.svg",
+        "sha256": "90f1229fa3601fa0c40c478bdbbd0122ef7489bf2fa10f52aa5cf76e3904e30b",
+        "inkRatio": 0.031214396158854168,
+        "loops": 300
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-134-2.svg",
+        "sha256": "6905772dc0e8ef76d65c4e833c9fc176153f3c2acf42e146e9e71946299d0ba1",
+        "inkRatio": 0.03298060099283854,
+        "loops": 315
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-415",
+    "name": "Жим штанги стоя из стоек",
+    "group": "Плечи",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-415-1.svg",
+      "exercise-contours/original-v4/forge-ex-415-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "barbell",
+    "support": "standing-squat-rack",
+    "grip": "pronated",
+    "description": "Standing barbell overhead press out of a squat rack, front-three-quarter view. Each panel includes its own clearly visible pair of tall squat rack uprights, J-cups at collarbone height and wide floor feet. LEFT: full-body athlete stands inside rack with stable legs, hands shoulder-width gripping bar at collarbone height, at J-cups, ready to unrack. RIGHT: same standing position inside matching rack, bar pressed overhead with nearly straight arms, now well above empty visible J-cups. No seat. Keep rack uprights fully in respective half.",
+    "prompt": "Create one landscape scientific educational exercise pair. Use attached image purely as exact visual style reference, replace pose and equipment as instructed. Flat pure black field, white hollow fine clean contours only, realistic athletic anatomy in shorts, subtle internal muscle lines, no gray fill or shading, no titles, watermark, labels or floor texture. Exactly TWO separate full-body diagrams, one in each equal half with a broad clean blank vertical gap at center. Equal scale. All equipment within the canvas. No extra equipment beyond specified. Standing barbell overhead press out of a squat rack, front-three-quarter view. Each panel includes its own clearly visible pair of tall squat rack uprights, J-cups at collarbone height and wide floor feet. LEFT: full-body athlete stands inside rack with stable legs, hands shoulder-width gripping bar at collarbone height, at J-cups, ready to unrack. RIGHT: same standing position inside matching rack, bar pressed overhead with nearly straight arms, now well above empty visible J-cups. No seat. Keep rack uprights fully in respective half.",
+    "sourcePNG": "forge-ex-415.png",
+    "sourcePNG_SHA256": "b47ab970e46f101e56530d95242997cb15d8f8d5387b9209fbf10de503431e55",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "barbell"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-415-1.svg",
+        "sha256": "92204f599adf41f73d2ed5c5690c59e649aa77864dd54d66c3f82cb56c5e3326",
+        "inkRatio": 0.05204010009765625,
+        "loops": 413
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-415-2.svg",
+        "sha256": "958910d52723ca9c8fe9dc5b20137ab23a1db965fb8c06dd76db01dca3619aae",
+        "inkRatio": 0.052884419759114586,
+        "loops": 405
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-124",
+    "name": "Жим Арнольда",
+    "group": "Плечи",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-124-1.svg",
+      "exercise-contours/original-v4/forge-ex-124-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "dumbbell",
+    "support": "standing",
+    "grip": "supinated-to-pronated",
+    "description": "Standing Arnold press from three-quarter front view. LEFT phase: hold two separate dumbbells directly in front of lower face, parallel upper arms pointing FORWARD from shoulders, elbows tucked and close together in front of chest, vertical forearms, palms facing toward own face (backs of knuckles toward viewer), dumbbells at about chin level. The two elbows stay inside shoulder width and are not flared. RIGHT phase: both dumbbells fully overhead, elbows nearly straight, palms have rotated to face forward (fingers/grip facing viewer). Keep the same feet and athletic posture. Make the two different grips clear and never draw the ordinary wide goalpost lower pose.",
+    "prompt": "Create one landscape scientific educational exercise pair. Use attached image purely as exact visual style reference, replace pose and equipment as instructed. Flat pure black field, white hollow fine clean contours only, realistic athletic anatomy in shorts, subtle internal muscle lines, no gray fill or shading, no titles, watermark, labels or floor texture. Exactly TWO separate full-body diagrams, one in each equal half with a broad clean blank vertical gap at center. Equal scale. All equipment within the canvas. No extra equipment beyond specified. Standing Arnold press from three-quarter front view. LEFT phase: hold two separate dumbbells directly in front of lower face, parallel upper arms pointing FORWARD from shoulders, elbows tucked and close together in front of chest, vertical forearms, palms facing toward own face (backs of knuckles toward viewer), dumbbells at about chin level. The two elbows stay inside shoulder width and are not flared. RIGHT phase: both dumbbells fully overhead, elbows nearly straight, palms have rotated to face forward (fingers/grip facing viewer). Keep the same feet and athletic posture. Make the two different grips clear and never draw the ordinary wide goalpost lower pose.",
+    "sourcePNG": "forge-ex-124.png",
+    "sourcePNG_SHA256": "6d962b57b6c4407afb42dbfd40782b7f9331ca5c292a2b10e07797f5c7f54241",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbell"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-124-1.svg",
+        "sha256": "3befbce1142bebb25c0601e59100e024e2b099906507e7dacd644b6bb46690c1",
+        "inkRatio": 0.022533416748046875,
+        "loops": 253
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-124-2.svg",
+        "sha256": "650edf8423d3f03e43f81b1a4ea21cb1b282abd88c2f3b27d8a3abdea5f4505a",
+        "inkRatio": 0.028460184733072918,
+        "loops": 298
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-417",
+    "name": "Жим гантелей с поворотом кистей",
+    "group": "Плечи",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-417-1.svg",
+      "exercise-contours/original-v4/forge-ex-417-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "dumbbell",
+    "support": "standing",
+    "grip": "supinated-to-pronated",
+    "description": "Standing rotating dumbbell press from oblique side-front view, 45 degrees, so forearm rotation is visible. Left: two independent dumbbells near chin, elbows held ahead of torso and near each other, both palms facing the athlete's face and visible backs of hands. Upper arms project forward rather than sideways. Right: matching athlete presses both dumbbells overhead as palms rotate outward to face forward, elbows fully elevated. Show fully extended upper and lower arms overhead. The end positions must make visible the change in direction of the palms. No ordinary wide goalpost position in left.",
+    "prompt": "Create one landscape scientific educational exercise pair. Use attached image purely as exact visual style reference, replace pose and equipment as instructed. Flat pure black field, white hollow fine clean contours only, realistic athletic anatomy in shorts, subtle internal muscle lines, no gray fill or shading, no titles, watermark, labels or floor texture. Exactly TWO separate full-body diagrams, one in each equal half with a broad clean blank vertical gap at center. Equal scale. All equipment within the canvas. No extra equipment beyond specified. Standing rotating dumbbell press from oblique side-front view, 45 degrees, so forearm rotation is visible. Left: two independent dumbbells near chin, elbows held ahead of torso and near each other, both palms facing the athlete's face and visible backs of hands. Upper arms project forward rather than sideways. Right: matching athlete presses both dumbbells overhead as palms rotate outward to face forward, elbows fully elevated. Show fully extended upper and lower arms overhead. The end positions must make visible the change in direction of the palms. No ordinary wide goalpost position in left.",
+    "sourcePNG": "forge-ex-417.png",
+    "sourcePNG_SHA256": "351d9da9b0e03e261d5052d1dc845bba336a7b1bedb84f46f73a658c4c63ff86",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbell"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-417-1.svg",
+        "sha256": "2e62cab100869b2fb8ebac8ac55c936bc189992a05f459680bf83d816eaa692f",
+        "inkRatio": 0.021746317545572918,
+        "loops": 309
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-417-2.svg",
+        "sha256": "422fb4209711e7b1fb32db027425ecf6a46ebfd1706eaf1485573eaf8f2ca0bb",
+        "inkRatio": 0.025850931803385418,
+        "loops": 379
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-421",
+    "name": "Подъём гантелей перед собой поочерёдно",
+    "group": "Плечи",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-421-1.svg",
+      "exercise-contours/original-v4/forge-ex-421-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "dumbbell",
+    "support": "standing",
+    "grip": "pronated",
+    "description": "Alternating front dumbbell raise. Same realistic athlete stands in each frame from a 30-degree front three-quarter angle, with two individual dumbbells. LEFT frame: his anatomical RIGHT arm extends straight FORWARD to shoulder height with dumbbell in hand, and his LEFT arm hangs entirely straight at the LEFT thigh holding the other dumbbell. RIGHT frame: swap the roles exactly. Now his LEFT arm extends straight FORWARD to shoulder height, and his RIGHT arm hangs entirely straight at the RIGHT thigh. Elbows just soft. Stable body, no twisting, two obvious alternating raised arms and never a simultaneous raise. Forward reaches toward the direction the nose points, never sideways.",
+    "prompt": "Create one landscape scientific educational exercise pair. Use attached image purely as exact visual style reference, replace pose and equipment as instructed. Flat pure black field, white hollow fine clean contours only, realistic athletic anatomy in shorts, subtle internal muscle lines, no gray fill or shading, no titles, watermark, labels or floor texture. Exactly TWO separate full-body diagrams, one in each equal half with a broad clean blank vertical gap at center. Equal scale. All equipment within the canvas. No extra equipment beyond specified. Alternating front dumbbell raise. Same realistic athlete stands in each frame from a 30-degree front three-quarter angle, with two individual dumbbells. LEFT frame: his anatomical RIGHT arm extends straight FORWARD to shoulder height with dumbbell in hand, and his LEFT arm hangs entirely straight at the LEFT thigh holding the other dumbbell. RIGHT frame: swap the roles exactly. Now his LEFT arm extends straight FORWARD to shoulder height, and his RIGHT arm hangs entirely straight at the RIGHT thigh. Elbows just soft. Stable body, no twisting, two obvious alternating raised arms and never a simultaneous raise. Forward reaches toward the direction the nose points, never sideways.",
+    "sourcePNG": "forge-ex-421.png",
+    "sourcePNG_SHA256": "6487d2dba0d58bd8fc3a7ac5f0063bddf05b0c61eb49f652097dc3be8b0afb60",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbell"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-421-1.svg",
+        "sha256": "26719ad32e9b9903031c053b3d7e8822ccb2ce25a6705c85bdadbe00feb85bb6",
+        "inkRatio": 0.0251312255859375,
+        "loops": 312
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-421-2.svg",
+        "sha256": "919d94d828b096484a5d5dcb4f9b8ad647542bb85f98ebc67164c19c31cae584",
+        "inkRatio": 0.026139577229817707,
+        "loops": 318
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-060",
+    "name": "Жим штанги лёжа с пола",
+    "group": "Грудь",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-060-1.svg",
+      "exercise-contours/original-v4/forge-ex-060-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "barbell",
+    "support": "supine-floor",
+    "grip": "pronated",
+    "description": "BARBELL FLOOR PRESS. Both figures lie FACE UP directly on the FLOOR, knees bent and feet flat, NO bench. Front-side 3/4 view showing ground contact. Both hands grasp one barbell slightly wider than shoulders. Left: elbows bent, upper arms rest on floor, bar above lower chest, forearms upright. Right: arms extend vertically above chest, bar high over chest. Shoulder blades/back stay on floor; not a bridge or bench press. Whole bar and plates visible.",
+    "prompt": "Use the reference image ONLY as the exact rendering STYLE, not as poses or equipment. Create a NEW original technical exercise illustration: exactly TWO separate full-body figures side by side, start LEFT / finish RIGHT, same adult athletic man in sports shorts and sneakers, same camera/scale. HOLLOW WHITE ANATOMICAL CONTOUR drawing. All skin, clothing, equipment and bench interiors must be BLACK like background; fine consistent bright WHITE outlines and a few fine interior anatomical muscle curves. At least 92% black canvas. No white-filled skin, gray shading, hatch marks, 3D rendering, colored muscle highlights, simple geometric mannequins, stick figures, labels, words, numbers, arrows, panels or watermark. Pure black flat background with generous margins; entire body and equipment fully within image; clean gap between the two poses. Match realistic muscle shapes and delicate contours of reference. BARBELL FLOOR PRESS. Both figures lie FACE UP directly on the FLOOR, knees bent and feet flat, NO bench. Front-side 3/4 view showing ground contact. Both hands grasp one barbell slightly wider than shoulders. Left: elbows bent, upper arms rest on floor, bar above lower chest, forearms upright. Right: arms extend vertically above chest, bar high over chest. Shoulder blades/back stay on floor; not a bridge or bench press. Whole bar and plates visible.",
+    "sourcePNG": "forge-ex-060.png",
+    "sourcePNG_SHA256": "dd288a816114a7b5b5ca1b1a244e59b4a51b51703b5654408f72db57033269cb",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "barbell"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-060-1.svg",
+        "sha256": "89aaefedf1117f17d72e0ca0eb66aad81d684409cef8f01c797b8724d0b4b3a7",
+        "inkRatio": 0.022748311360677082,
+        "loops": 231
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-060-2.svg",
+        "sha256": "3ca28f69c93bb7a9fd181943c3868100508763a37f43945f1f6e740e82564694",
+        "inkRatio": 0.0261993408203125,
+        "loops": 254
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-384",
+    "name": "Жим гантелей на полу",
+    "group": "Грудь",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-384-1.svg",
+      "exercise-contours/original-v4/forge-ex-384-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "dumbbell",
+    "support": "supine-floor",
+    "grip": "pronated",
+    "description": "TWO-DUMBBELL FLOOR PRESS. Both figures lie face up directly on FLOOR with knees bent/feet planted. NO bench. Left: one dumbbell each hand at sides of chest, elbows bent and upper arms touching floor, forearms vertical. Right: arms press dumbbells vertically above chest with elbows nearly straight; separate dumbbells remain in both hands, no barbell. Side three-quarter view makes back and elbow FLOOR contact clear.",
+    "prompt": "Use the reference image ONLY as the exact rendering STYLE, not as poses or equipment. Create a NEW original technical exercise illustration: exactly TWO separate full-body figures side by side, start LEFT / finish RIGHT, same adult athletic man in sports shorts and sneakers, same camera/scale. HOLLOW WHITE ANATOMICAL CONTOUR drawing. All skin, clothing, equipment and bench interiors must be BLACK like background; fine consistent bright WHITE outlines and a few fine interior anatomical muscle curves. At least 92% black canvas. No white-filled skin, gray shading, hatch marks, 3D rendering, colored muscle highlights, simple geometric mannequins, stick figures, labels, words, numbers, arrows, panels or watermark. Pure black flat background with generous margins; entire body and equipment fully within image; clean gap between the two poses. Match realistic muscle shapes and delicate contours of reference. TWO-DUMBBELL FLOOR PRESS. Both figures lie face up directly on FLOOR with knees bent/feet planted. NO bench. Left: one dumbbell each hand at sides of chest, elbows bent and upper arms touching floor, forearms vertical. Right: arms press dumbbells vertically above chest with elbows nearly straight; separate dumbbells remain in both hands, no barbell. Side three-quarter view makes back and elbow FLOOR contact clear.",
+    "sourcePNG": "forge-ex-384.png",
+    "sourcePNG_SHA256": "eaef91a0e59569734e1545e859ea9ee0b3ef16221e4e45fff19eae9828400e67",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbell"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-384-1.svg",
+        "sha256": "ed95f04079228be48ff05d33235aa4b05fefda3371326465b67bb2b72db4786b",
+        "inkRatio": 0.021823883056640625,
+        "loops": 375
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-384-2.svg",
+        "sha256": "51a09fc067c0e29f0465244c46994b62750bf36f87d39f0751befe4bb0416efc",
+        "inkRatio": 0.024012247721354168,
+        "loops": 400
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-062",
+    "name": "Жим гантелей нейтральным хватом лёжа",
+    "group": "Грудь",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-062-1.svg",
+      "exercise-contours/original-v4/forge-ex-062-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "dumbbell",
+    "support": "supine-flat-bench",
+    "grip": "neutral",
+    "description": "FLAT BENCH DUMBBELL CHEST PRESS WITH NEUTRAL GRIP. Both figures lie FACE UP on a clearly visible horizontal weight bench supporting head/back/hips, feet floor. Palms face EACH OTHER throughout, dumbbells parallel with ends visible. Left: dumbbells beside lower chest, elbows tucked nearer torso than normal flared press. Right: arms extend vertically above chest, palms still inward. NO floor press, no incline, no standing. Three-quarter side view.",
+    "prompt": "Use the reference image ONLY as the exact rendering STYLE, not as poses or equipment. Create a NEW original technical exercise illustration: exactly TWO separate full-body figures side by side, start LEFT / finish RIGHT, same adult athletic man in sports shorts and sneakers, same camera/scale. HOLLOW WHITE ANATOMICAL CONTOUR drawing. All skin, clothing, equipment and bench interiors must be BLACK like background; fine consistent bright WHITE outlines and a few fine interior anatomical muscle curves. At least 92% black canvas. No white-filled skin, gray shading, hatch marks, 3D rendering, colored muscle highlights, simple geometric mannequins, stick figures, labels, words, numbers, arrows, panels or watermark. Pure black flat background with generous margins; entire body and equipment fully within image; clean gap between the two poses. Match realistic muscle shapes and delicate contours of reference. FLAT BENCH DUMBBELL CHEST PRESS WITH NEUTRAL GRIP. Both figures lie FACE UP on a clearly visible horizontal weight bench supporting head/back/hips, feet floor. Palms face EACH OTHER throughout, dumbbells parallel with ends visible. Left: dumbbells beside lower chest, elbows tucked nearer torso than normal flared press. Right: arms extend vertically above chest, palms still inward. NO floor press, no incline, no standing. Three-quarter side view.",
+    "sourcePNG": "forge-ex-062.png",
+    "sourcePNG_SHA256": "4c09fa35004c311c04b78a84e8aee036bc279b0479dcad836d441e07f6b0b024",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbell"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-062-1.svg",
+        "sha256": "5fe60e19a947b2da6be28124dcd67e80f6c1dd6be8b99c3118b3ca98ede40039",
+        "inkRatio": 0.029748280843098957,
+        "loops": 414
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-062-2.svg",
+        "sha256": "c095a168b100f1baae49335657acbc314857db4a2b9cd20be992dd7ea53d7d4c",
+        "inkRatio": 0.03282801310221354,
+        "loops": 447
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-063",
+    "name": "Жим гантелей поочерёдно лёжа",
+    "group": "Грудь",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-063-1.svg",
+      "exercise-contours/original-v4/forge-ex-063-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "dumbbell",
+    "support": "supine-flat-bench",
+    "grip": "alternating-pronated",
+    "description": "ALTERNATING DUMBBELL BENCH PRESS. Both figures lie face up on flat bench, feet floor, ONE dumbbell EACH hand. Left pose: LEFT arm holds dumbbell EXTENDED vertically above chest while RIGHT elbow is bent with right dumbbell at chest. Right pose: RIGHT arm now EXTENDED above chest while LEFT elbow is bent and left dumbbell at chest. Clearly alternating, never both arms bent or both extended simultaneously. Same torso/bench and camera. Detailed hollow contours.",
+    "prompt": "Use the reference image ONLY as the exact rendering STYLE, not as poses or equipment. Create a NEW original technical exercise illustration: exactly TWO separate full-body figures side by side, start LEFT / finish RIGHT, same adult athletic man in sports shorts and sneakers, same camera/scale. HOLLOW WHITE ANATOMICAL CONTOUR drawing. All skin, clothing, equipment and bench interiors must be BLACK like background; fine consistent bright WHITE outlines and a few fine interior anatomical muscle curves. At least 92% black canvas. No white-filled skin, gray shading, hatch marks, 3D rendering, colored muscle highlights, simple geometric mannequins, stick figures, labels, words, numbers, arrows, panels or watermark. Pure black flat background with generous margins; entire body and equipment fully within image; clean gap between the two poses. Match realistic muscle shapes and delicate contours of reference. ALTERNATING DUMBBELL BENCH PRESS. Both figures lie face up on flat bench, feet floor, ONE dumbbell EACH hand. Left pose: LEFT arm holds dumbbell EXTENDED vertically above chest while RIGHT elbow is bent with right dumbbell at chest. Right pose: RIGHT arm now EXTENDED above chest while LEFT elbow is bent and left dumbbell at chest. Clearly alternating, never both arms bent or both extended simultaneously. Same torso/bench and camera. Detailed hollow contours.",
+    "sourcePNG": "forge-ex-063.png",
+    "sourcePNG_SHA256": "7f1c4ea037146e8720e48715d123401a0f70a77e5ff870300d2fd97f894d5f32",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbell"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-063-1.svg",
+        "sha256": "b23228ea141fba936213008bfefef48585e426d955dd14411fce7b78709d6756",
+        "inkRatio": 0.034726460774739586,
+        "loops": 235
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-063-2.svg",
+        "sha256": "4ab569042e5fdf20a78db2bf33c3a77897561223aeab6d02d1b50916c8c10f61",
+        "inkRatio": 0.03408177693684896,
+        "loops": 271
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-068",
+    "name": "Сведение рук в кроссовере снизу",
+    "group": "Грудь",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-068-1.svg",
+      "exercise-contours/original-v4/forge-ex-068-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "cable",
+    "support": "standing",
+    "grip": "as-drawn",
+    "description": "Correct RIGHT phase only. Both arms reach forward and slightly upward away from chest with almost straight elbows, hands meet in front at shoulder height. Show the forearms foreshortened from a 3/4 view. Currently elbows are bent too much and hands sit on chest; this is a fly, not a curl. Keep two low pulley cables connected.",
+    "prompt": "Fine hollow white anatomical contour lines on pure black, black interiors, no shading, no labels. Preserve overall scale and separate phases with clear black gap. Correct RIGHT phase only. Both arms reach forward and slightly upward away from chest with almost straight elbows, hands meet in front at shoulder height. Show the forearms foreshortened from a 3/4 view. Currently elbows are bent too much and hands sit on chest; this is a fly, not a curl. Keep two low pulley cables connected.",
+    "sourcePNG": "forge-ex-068.png",
+    "sourcePNG_SHA256": "4fdd6c4fc3999a2c20abd662632348d8fa9b69decb1b556f845b9902441e7466",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "cable"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-068-1.svg",
+        "sha256": "f69c0975ff92b78fdbdc59a5c74059a8b723254011c66a13bed5164e2e140c2b",
+        "inkRatio": 0.028911590576171875,
+        "loops": 311
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-068-2.svg",
+        "sha256": "5c041b4eedf2b4342ff34b0546eb7853965fcd1454165e2a1903cf9aed0e8606",
+        "inkRatio": 0.0276641845703125,
+        "loops": 276
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-388",
+    "name": "Сведение рук на нижнем блоке поочерёдно",
+    "group": "Грудь",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-388-1.svg",
+      "exercise-contours/original-v4/forge-ex-388-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "cable",
+    "support": "standing",
+    "grip": "as-drawn",
+    "description": "Correct BOTH raised arms. Raised hand reaches diagonally FORWARD across chest, away from torso at shoulder level. Keep raised elbow nearly straight, not bent in a biceps curl. In each pose opposite arm stays low. Cables remain continuously connected to both low pulleys.",
+    "prompt": "Fine hollow white anatomical contour lines on pure black, black interiors, no shading, no labels. Preserve overall scale and separate phases with clear black gap. Correct BOTH raised arms. Raised hand reaches diagonally FORWARD across chest, away from torso at shoulder level. Keep raised elbow nearly straight, not bent in a biceps curl. In each pose opposite arm stays low. Cables remain continuously connected to both low pulleys.",
+    "sourcePNG": "forge-ex-388.png",
+    "sourcePNG_SHA256": "d0ebe2d93aeda5ccb9bb228818304b3541d5d2b4590c7939c6f1a74002624b1a",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "cable"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-388-1.svg",
+        "sha256": "829db13e2a117230249a400e658a54f8f7313478c2e0f1c6b1535fe4b3d88473",
+        "inkRatio": 0.057758331298828125,
+        "loops": 398
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-388-2.svg",
+        "sha256": "9844a69bd1e4452949afdda484b1bfd8196d20b99994bb293c3d1c0647761dfe",
+        "inkRatio": 0.058224995930989586,
+        "loops": 407
+      }
+    ]
+  },
+  {
+    "id": "forge-ex-386",
+    "name": "Жим гири лёжа двумя руками",
+    "group": "Грудь",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-386-1.svg",
+      "exercise-contours/original-v4/forge-ex-386-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "kettlebell",
+    "support": "supine-floor",
+    "grip": "as-drawn",
+    "description": "Make both hands clearly visible holding the SAME single kettlebell, one hand on each horn of its handle. Use head-end elevated 3/4 view so both forearms and grips visibly separate. Left both elbows bent, upper arms on floor. Right both elbows nearly straight, bell above chest. Both figures lie face up on floor, no bench.",
+    "prompt": "Fine hollow white anatomical contour lines on pure black, black interiors, no shading, no labels. Preserve overall scale and separate phases with clear black gap. Make both hands clearly visible holding the SAME single kettlebell, one hand on each horn of its handle. Use head-end elevated 3/4 view so both forearms and grips visibly separate. Left both elbows bent, upper arms on floor. Right both elbows nearly straight, bell above chest. Both figures lie face up on floor, no bench.",
+    "sourcePNG": "forge-ex-386.png",
+    "sourcePNG_SHA256": "9619970123239e1cd840070e50ab866cf9f5a916f1d36cc70480d93e196f7be0",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "kettlebell"
+    },
+    "license": "Original project generated artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-386-1.svg",
+        "sha256": "c8a83a4bfd415a8fbaefe9bc5cb5640def9a8e2f6ca7d7cc56dd016c63044c75",
+        "inkRatio": 0.019616444905598957,
+        "loops": 278
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-386-2.svg",
+        "sha256": "2b488aa24ff249ea7fb487eaacc1900e006a9067566ff2aec13352bdef1639d2",
+        "inkRatio": 0.022233327229817707,
+        "loops": 345
       }
     ]
   }

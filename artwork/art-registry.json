@@ -2262,6 +2262,46 @@
       "expertVerified": false,
       "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
     },
+    "exercise-art/verified-11.2.3/cycling-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-art/verified-11.2.3/cycling-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-art/verified-11.2.3/cycling-1.svg",
+      "sourceSHA256": "60a95a298f39c4c0ca9c0136dc67f9047032d6d21cc126853ef08e425ca8870a",
+      "sha256": "60a95a298f39c4c0ca9c0136dc67f9047032d6d21cc126853ef08e425ca8870a",
+      "bytes": 25833,
+      "source": {
+        "name": "Cycling, stationary exercise bike",
+        "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/cycling",
+        "equipment": "Stationary exercise bike"
+      },
+      "credit": "Workout Guide / Bryl Lim · CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "changes": "Original light contour retained; no colour filter.",
+      "expertVerified": false,
+      "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
+    },
+    "exercise-art/verified-11.2.3/cycling-3.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-art/verified-11.2.3/cycling-3.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-art/verified-11.2.3/cycling-3.svg",
+      "sourceSHA256": "fc5a01e10a8722a93e4ab56e14a9f9a1d34d5b0b42d45cfe78e02176ecedf8f4",
+      "sha256": "fc5a01e10a8722a93e4ab56e14a9f9a1d34d5b0b42d45cfe78e02176ecedf8f4",
+      "bytes": 111880,
+      "source": {
+        "name": "Cycling, stationary exercise bike",
+        "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/cycling",
+        "equipment": "Stationary exercise bike"
+      },
+      "credit": "Workout Guide / Bryl Lim · CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "changes": "Original light contour retained; no colour filter.",
+      "expertVerified": false,
+      "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
+    },
     "exercise-art/elliptical-1.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
       "file": "exercise-art/elliptical-1.svg",
@@ -2502,6 +2542,46 @@
       "expertVerified": false,
       "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
     },
+    "exercise-contours/original-v4/forge-ex-060-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-060-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-060-1.svg",
+      "sourceSHA256": "89aaefedf1117f17d72e0ca0eb66aad81d684409cef8f01c797b8724d0b4b3a7",
+      "sha256": "89aaefedf1117f17d72e0ca0eb66aad81d684409cef8f01c797b8724d0b4b3a7",
+      "bytes": 92088,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "barbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-060-2.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-060-2.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-060-2.svg",
+      "sourceSHA256": "3ca28f69c93bb7a9fd181943c3868100508763a37f43945f1f6e740e82564694",
+      "sha256": "3ca28f69c93bb7a9fd181943c3868100508763a37f43945f1f6e740e82564694",
+      "bytes": 105991,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "barbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
     "exercise-art/decline-dumbbell-press-1.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
       "file": "exercise-art/decline-dumbbell-press-1.svg",
@@ -2541,6 +2621,86 @@
       "changes": "Original light contour retained; no colour filter.",
       "expertVerified": false,
       "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
+    },
+    "exercise-contours/original-v4/forge-ex-062-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-062-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-062-1.svg",
+      "sourceSHA256": "5fe60e19a947b2da6be28124dcd67e80f6c1dd6be8b99c3118b3ca98ede40039",
+      "sha256": "5fe60e19a947b2da6be28124dcd67e80f6c1dd6be8b99c3118b3ca98ede40039",
+      "bytes": 113190,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-062-2.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-062-2.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-062-2.svg",
+      "sourceSHA256": "c095a168b100f1baae49335657acbc314857db4a2b9cd20be992dd7ea53d7d4c",
+      "sha256": "c095a168b100f1baae49335657acbc314857db4a2b9cd20be992dd7ea53d7d4c",
+      "bytes": 124119,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-063-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-063-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-063-1.svg",
+      "sourceSHA256": "b23228ea141fba936213008bfefef48585e426d955dd14411fce7b78709d6756",
+      "sha256": "b23228ea141fba936213008bfefef48585e426d955dd14411fce7b78709d6756",
+      "bytes": 120806,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-063-2.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-063-2.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-063-2.svg",
+      "sourceSHA256": "4ab569042e5fdf20a78db2bf33c3a77897561223aeab6d02d1b50916c8c10f61",
+      "sha256": "4ab569042e5fdf20a78db2bf33c3a77897561223aeab6d02d1b50916c8c10f61",
+      "bytes": 121037,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
     },
     "exercise-art/dumbbell-fly-1.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
@@ -2661,6 +2821,46 @@
       "changes": "Removed the separate white background layer preceding all dark contour paths. Retained original contour geometry and set its vector fill to #eef2ef; normalized viewport size. No CSS filter or shaded-body conversion.",
       "expertVerified": false,
       "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
+    },
+    "exercise-contours/original-v4/forge-ex-068-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-068-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-068-1.svg",
+      "sourceSHA256": "f69c0975ff92b78fdbdc59a5c74059a8b723254011c66a13bed5164e2e140c2b",
+      "sha256": "f69c0975ff92b78fdbdc59a5c74059a8b723254011c66a13bed5164e2e140c2b",
+      "bytes": 115953,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "cable"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-068-2.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-068-2.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-068-2.svg",
+      "sourceSHA256": "5c041b4eedf2b4342ff34b0546eb7853965fcd1454165e2a1903cf9aed0e8606",
+      "sha256": "5c041b4eedf2b4342ff34b0546eb7853965fcd1454165e2a1903cf9aed0e8606",
+      "bytes": 100055,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "cable"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
     },
     "exercise-art/machine-chest-press-1.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
@@ -2902,6 +3102,106 @@
       "expertVerified": false,
       "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
     },
+    "exercise-contours/original-v4/forge-ex-080-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-080-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-080-1.svg",
+      "sourceSHA256": "c944c502cbe8875dbd6216a023a4f582c5d09a2e3349b658df88ed4a1c972191",
+      "sha256": "c944c502cbe8875dbd6216a023a4f582c5d09a2e3349b658df88ed4a1c972191",
+      "bytes": 154333,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "machine"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-080-2.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-080-2.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-080-2.svg",
+      "sourceSHA256": "466b44ff420a725c81f0dcff00a73f7a2a7c6f1f31cbedd4534ef016fa8669e5",
+      "sha256": "466b44ff420a725c81f0dcff00a73f7a2a7c6f1f31cbedd4534ef016fa8669e5",
+      "bytes": 141541,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "machine"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-081-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-081-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-081-1.svg",
+      "sourceSHA256": "dddac8123c94cb7a413332f9ddea656b60497cc4cf430d68271eb593a4cf90b6",
+      "sha256": "dddac8123c94cb7a413332f9ddea656b60497cc4cf430d68271eb593a4cf90b6",
+      "bytes": 108737,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "rings"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-081-2.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-081-2.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-081-2.svg",
+      "sourceSHA256": "2b1d7ba6d250acd11c3dfcc38ba2d42dc23c2b9d4c406e206b5a5909ac44d1ee",
+      "sha256": "2b1d7ba6d250acd11c3dfcc38ba2d42dc23c2b9d4c406e206b5a5909ac44d1ee",
+      "bytes": 94841,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "rings"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-082-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-082-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-082-1.svg",
+      "sourceSHA256": "c7f7394a4a1d71fc0c3a5c0069e5a9e8591b2f995b8c36e6c155c6cd1851947e",
+      "sha256": "c7f7394a4a1d71fc0c3a5c0069e5a9e8591b2f995b8c36e6c155c6cd1851947e",
+      "bytes": 161777,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "bodyweight"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
     "exercise-art/chin-up-1.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
       "file": "exercise-art/chin-up-1.svg",
@@ -3017,6 +3317,46 @@
         "equipment": "body, pull-up bar"
       },
       "credit": "Everkinetic · CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "changes": "Removed the separate white background layer preceding all dark contour paths. Retained original contour geometry and set its vector fill to #eef2ef; normalized viewport size. No CSS filter or shaded-body conversion.",
+      "expertVerified": false,
+      "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
+    },
+    "exercise-contours/ek-0090-relaxation.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/ek-0090-relaxation.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-art/verified-11.2.3/ek-0090-relaxation.svg",
+      "sourceSHA256": "5a858e1cb2ee1507b8258a3349b80bf280f5b4c8bfd7d456553e9438e5ff0a06",
+      "sha256": "5df74c129e5087aeca4777ed7ac3f684ce4fb216573505ccdaf333a01afc5d68",
+      "bytes": 8626,
+      "source": {
+        "name": "Narrow Parallel Grip Chin-ups",
+        "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0090-relaxation.svg",
+        "equipment": "Pull-up bar"
+      },
+      "credit": "Everkinetic / Greg Priday · CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "changes": "Removed the separate white background layer preceding all dark contour paths. Retained original contour geometry and set its vector fill to #eef2ef; normalized viewport size. No CSS filter or shaded-body conversion.",
+      "expertVerified": false,
+      "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
+    },
+    "exercise-contours/ek-0090-tension.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/ek-0090-tension.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-art/verified-11.2.3/ek-0090-tension.svg",
+      "sourceSHA256": "2916c9974082935a217192c80ab9b4e4daa3cf48e1be9dbfc38f23f229566538",
+      "sha256": "48f32c7d4d5fa4285f74567dbc7c2fa58dabdd00f36e495823a1b5fa54b155fd",
+      "bytes": 7804,
+      "source": {
+        "name": "Narrow Parallel Grip Chin-ups",
+        "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0090-relaxation.svg",
+        "equipment": "Pull-up bar"
+      },
+      "credit": "Everkinetic / Greg Priday · CC BY-SA 4.0",
       "license": "CC BY-SA 4.0",
       "changes": "Removed the separate white background layer preceding all dark contour paths. Retained original contour geometry and set its vector fill to #eef2ef; normalized viewport size. No CSS filter or shaded-body conversion.",
       "expertVerified": false,
@@ -3782,45 +4122,45 @@
       "expertVerified": false,
       "styleReview": "approved-style-pose-preliminary"
     },
-    "exercise-art/arnold-press-1.svg": {
+    "exercise-contours/original-v4/forge-ex-124-1.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
-      "file": "exercise-art/arnold-press-1.svg",
+      "file": "exercise-contours/original-v4/forge-ex-124-1.svg",
       "format": "svg",
       "style": "light-contour-on-transparent",
-      "sourceFile": "exercise-art/arnold-press-1.svg",
-      "sourceSHA256": "77e4e7b2aac788a69af2fbf63b37ba9f8fbcffddd6986a4f6d5864eb29b93ccb",
-      "sha256": "77e4e7b2aac788a69af2fbf63b37ba9f8fbcffddd6986a4f6d5864eb29b93ccb",
-      "bytes": 19415,
+      "sourceFile": "exercise-contours/original-v4/forge-ex-124-1.svg",
+      "sourceSHA256": "3befbce1142bebb25c0601e59100e024e2b099906507e7dacd644b6bb46690c1",
+      "sha256": "3befbce1142bebb25c0601e59100e024e2b099906507e7dacd644b6bb46690c1",
+      "bytes": 79117,
       "source": {
-        "name": "Arnold Press",
-        "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/arnold-press/frame-1.svg",
-        "equipment": "Dumbbell"
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
       },
-      "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
-      "license": "CC BY-SA 4.0",
-      "changes": "Original light contour retained; no colour filter.",
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
       "expertVerified": false,
-      "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
+      "styleReview": "approved-style-pose-preliminary"
     },
-    "exercise-art/arnold-press-2.svg": {
+    "exercise-contours/original-v4/forge-ex-124-2.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
-      "file": "exercise-art/arnold-press-2.svg",
+      "file": "exercise-contours/original-v4/forge-ex-124-2.svg",
       "format": "svg",
       "style": "light-contour-on-transparent",
-      "sourceFile": "exercise-art/arnold-press-2.svg",
-      "sourceSHA256": "88122b43a975f4728741ca5acbf7fcc3b98d944a27ee5f9a86ad26f70ef206fa",
-      "sha256": "88122b43a975f4728741ca5acbf7fcc3b98d944a27ee5f9a86ad26f70ef206fa",
-      "bytes": 25191,
+      "sourceFile": "exercise-contours/original-v4/forge-ex-124-2.svg",
+      "sourceSHA256": "650edf8423d3f03e43f81b1a4ea21cb1b282abd88c2f3b27d8a3abdea5f4505a",
+      "sha256": "650edf8423d3f03e43f81b1a4ea21cb1b282abd88c2f3b27d8a3abdea5f4505a",
+      "bytes": 93338,
       "source": {
-        "name": "Arnold Press",
-        "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/arnold-press/frame-1.svg",
-        "equipment": "Dumbbell"
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
       },
-      "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
-      "license": "CC BY-SA 4.0",
-      "changes": "Original light contour retained; no colour filter.",
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
       "expertVerified": false,
-      "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
+      "styleReview": "approved-style-pose-preliminary"
     },
     "exercise-contours/original-v4/forge-ex-125-1.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
@@ -4142,45 +4482,45 @@
       "expertVerified": false,
       "styleReview": "approved-style-pose-preliminary"
     },
-    "exercise-art/cable-lateral-raise-1.svg": {
+    "exercise-contours/original-v4/forge-ex-134-1.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
-      "file": "exercise-art/cable-lateral-raise-1.svg",
+      "file": "exercise-contours/original-v4/forge-ex-134-1.svg",
       "format": "svg",
       "style": "light-contour-on-transparent",
-      "sourceFile": "exercise-art/cable-lateral-raise-1.svg",
-      "sourceSHA256": "3303803e2b2b5a01496989e7e3cbf75e70c4324ef7e392ed9dbd4bebdbb071b0",
-      "sha256": "3303803e2b2b5a01496989e7e3cbf75e70c4324ef7e392ed9dbd4bebdbb071b0",
-      "bytes": 19499,
+      "sourceFile": "exercise-contours/original-v4/forge-ex-134-1.svg",
+      "sourceSHA256": "90f1229fa3601fa0c40c478bdbbd0122ef7489bf2fa10f52aa5cf76e3904e30b",
+      "sha256": "90f1229fa3601fa0c40c478bdbbd0122ef7489bf2fa10f52aa5cf76e3904e30b",
+      "bytes": 96768,
       "source": {
-        "name": "Cable Lateral Raise",
-        "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/cable-lateral-raise/frame-1.svg",
-        "equipment": "Cable"
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "cable"
       },
-      "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
-      "license": "CC BY-SA 4.0",
-      "changes": "Original light contour retained; no colour filter.",
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
       "expertVerified": false,
-      "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
+      "styleReview": "approved-style-pose-preliminary"
     },
-    "exercise-art/cable-lateral-raise-2.svg": {
+    "exercise-contours/original-v4/forge-ex-134-2.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
-      "file": "exercise-art/cable-lateral-raise-2.svg",
+      "file": "exercise-contours/original-v4/forge-ex-134-2.svg",
       "format": "svg",
       "style": "light-contour-on-transparent",
-      "sourceFile": "exercise-art/cable-lateral-raise-2.svg",
-      "sourceSHA256": "64d06501c394ec372a5a76306db872212ef1c7f657ecdb462931bb61c6e09c14",
-      "sha256": "64d06501c394ec372a5a76306db872212ef1c7f657ecdb462931bb61c6e09c14",
-      "bytes": 38411,
+      "sourceFile": "exercise-contours/original-v4/forge-ex-134-2.svg",
+      "sourceSHA256": "6905772dc0e8ef76d65c4e833c9fc176153f3c2acf42e146e9e71946299d0ba1",
+      "sha256": "6905772dc0e8ef76d65c4e833c9fc176153f3c2acf42e146e9e71946299d0ba1",
+      "bytes": 101807,
       "source": {
-        "name": "Cable Lateral Raise",
-        "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/cable-lateral-raise/frame-1.svg",
-        "equipment": "Cable"
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "cable"
       },
-      "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
-      "license": "CC BY-SA 4.0",
-      "changes": "Original light contour retained; no colour filter.",
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
       "expertVerified": false,
-      "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
+      "styleReview": "approved-style-pose-preliminary"
     },
     "exercise-contours/original-v4/forge-ex-135-1.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
@@ -4902,6 +5242,46 @@
       "expertVerified": false,
       "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
     },
+    "exercise-contours/original-v4/forge-ex-157-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-157-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-157-1.svg",
+      "sourceSHA256": "a6c81caf58df409244eec97d5b3a309aaa4ffc78730bd542bf57402011eb3f8f",
+      "sha256": "a6c81caf58df409244eec97d5b3a309aaa4ffc78730bd542bf57402011eb3f8f",
+      "bytes": 112751,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-157-2.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-157-2.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-157-2.svg",
+      "sourceSHA256": "6f5a340b54f9fbb024ef4204921efdb5e3006392cec22ddc7205d21d2b1426c8",
+      "sha256": "6f5a340b54f9fbb024ef4204921efdb5e3006392cec22ddc7205d21d2b1426c8",
+      "bytes": 119799,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
     "exercise-contours/ek-0221-relaxation.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
       "file": "exercise-contours/ek-0221-relaxation.svg",
@@ -5262,6 +5642,46 @@
       "expertVerified": false,
       "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
     },
+    "exercise-contours/ek-0225-relaxation.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/ek-0225-relaxation.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-art/verified-11.2.3/ek-0225-relaxation.svg",
+      "sourceSHA256": "4fa99a3307be1cc6b91f973d10dbcb3722b29076d9287d10b727e881af76c9cc",
+      "sha256": "f280e8c3644e743d1d5c20f260e28efe4ae0bddc21b7db1fc11a80a57518ff0c",
+      "bytes": 7719,
+      "source": {
+        "name": "Prone Incline Biceps Curl with Dumbbell",
+        "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0225-relaxation.svg",
+        "equipment": "Dumbbell, incline bench"
+      },
+      "credit": "Everkinetic / Greg Priday · CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "changes": "Removed the separate white background layer preceding all dark contour paths. Retained original contour geometry and set its vector fill to #eef2ef; normalized viewport size. No CSS filter or shaded-body conversion.",
+      "expertVerified": false,
+      "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
+    },
+    "exercise-contours/ek-0225-tension.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/ek-0225-tension.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-art/verified-11.2.3/ek-0225-tension.svg",
+      "sourceSHA256": "d5d4a4db715e6d18868ee092724cb16e1a952de347904758fd0509bfabc74314",
+      "sha256": "87785e25037d25b4dbeeb0a2a93058610ba6c14b7f7042a9808358d811816388",
+      "bytes": 6939,
+      "source": {
+        "name": "Prone Incline Biceps Curl with Dumbbell",
+        "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0225-relaxation.svg",
+        "equipment": "Dumbbell, incline bench"
+      },
+      "credit": "Everkinetic / Greg Priday · CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "changes": "Removed the separate white background layer preceding all dark contour paths. Retained original contour geometry and set its vector fill to #eef2ef; normalized viewport size. No CSS filter or shaded-body conversion.",
+      "expertVerified": false,
+      "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
+    },
     "exercise-art/incline-dumbbell-curl-1.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
       "file": "exercise-art/incline-dumbbell-curl-1.svg",
@@ -5341,6 +5761,46 @@
       "changes": "Removed the separate white background layer preceding all dark contour paths. Retained original contour geometry and set its vector fill to #eef2ef; normalized viewport size. No CSS filter or shaded-body conversion.",
       "expertVerified": false,
       "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
+    },
+    "exercise-contours/original-v4/forge-ex-171-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-171-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-171-1.svg",
+      "sourceSHA256": "289f7e78e7905ccd5d03e615a6092c77900aaa3c54c43503a2396ee41ef54aa4",
+      "sha256": "289f7e78e7905ccd5d03e615a6092c77900aaa3c54c43503a2396ee41ef54aa4",
+      "bytes": 92480,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-171-2.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-171-2.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-171-2.svg",
+      "sourceSHA256": "5b08ecc8870fbd70e67734e640b6952eb5d3cf71e4a61371e9d8a2c52263c2c6",
+      "sha256": "5b08ecc8870fbd70e67734e640b6952eb5d3cf71e4a61371e9d8a2c52263c2c6",
+      "bytes": 89306,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
     },
     "exercise-art/dumbbell-skull-crusher-1.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
@@ -7902,6 +8362,26 @@
       "expertVerified": false,
       "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
     },
+    "exercise-contours/ek-0077-tension.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/ek-0077-tension.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-art/verified-11.2.3/ek-0077-tension.svg",
+      "sourceSHA256": "c4a9564295999f0a10f9924b4b09fe9cf7a105dd0dccab75bf667d606883240e",
+      "sha256": "933d6a1a01d1c23431815806a50bf7b9a282425379a6a922cf6a1b69b6db44ff",
+      "bytes": 9115,
+      "source": {
+        "name": "Push Up: Body Weight, selected straight-arm hold position",
+        "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0077-tension.svg",
+        "equipment": "Bodyweight"
+      },
+      "credit": "Everkinetic / Greg Priday · CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "changes": "Removed the separate white background layer preceding all dark contour paths. Retained original contour geometry and set its vector fill to #eef2ef; normalized viewport size. No CSS filter or shaded-body conversion.",
+      "expertVerified": false,
+      "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
+    },
     "exercise-art/side-plank-hip-dip-1.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
       "file": "exercise-art/side-plank-hip-dip-1.svg",
@@ -9462,6 +9942,166 @@
       "expertVerified": false,
       "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
     },
+    "exercise-contours/original-v4/forge-ex-384-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-384-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-384-1.svg",
+      "sourceSHA256": "ed95f04079228be48ff05d33235aa4b05fefda3371326465b67bb2b72db4786b",
+      "sha256": "ed95f04079228be48ff05d33235aa4b05fefda3371326465b67bb2b72db4786b",
+      "bytes": 100351,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-384-2.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-384-2.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-384-2.svg",
+      "sourceSHA256": "51a09fc067c0e29f0465244c46994b62750bf36f87d39f0751befe4bb0416efc",
+      "sha256": "51a09fc067c0e29f0465244c46994b62750bf36f87d39f0751befe4bb0416efc",
+      "bytes": 110033,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-386-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-386-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-386-1.svg",
+      "sourceSHA256": "c8a83a4bfd415a8fbaefe9bc5cb5640def9a8e2f6ca7d7cc56dd016c63044c75",
+      "sha256": "c8a83a4bfd415a8fbaefe9bc5cb5640def9a8e2f6ca7d7cc56dd016c63044c75",
+      "bytes": 86164,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "kettlebell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-386-2.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-386-2.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-386-2.svg",
+      "sourceSHA256": "2b488aa24ff249ea7fb487eaacc1900e006a9067566ff2aec13352bdef1639d2",
+      "sha256": "2b488aa24ff249ea7fb487eaacc1900e006a9067566ff2aec13352bdef1639d2",
+      "bytes": 94052,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "kettlebell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-388-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-388-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-388-1.svg",
+      "sourceSHA256": "829db13e2a117230249a400e658a54f8f7313478c2e0f1c6b1535fe4b3d88473",
+      "sha256": "829db13e2a117230249a400e658a54f8f7313478c2e0f1c6b1535fe4b3d88473",
+      "bytes": 122080,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "cable"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-388-2.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-388-2.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-388-2.svg",
+      "sourceSHA256": "9844a69bd1e4452949afdda484b1bfd8196d20b99994bb293c3d1c0647761dfe",
+      "sha256": "9844a69bd1e4452949afdda484b1bfd8196d20b99994bb293c3d1c0647761dfe",
+      "bytes": 127776,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "cable"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-389-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-389-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-389-1.svg",
+      "sourceSHA256": "3c61008ef7ccc3e064a09f4d2da46d38857f3b6134c39a15d3764c67ca59178a",
+      "sha256": "3c61008ef7ccc3e064a09f4d2da46d38857f3b6134c39a15d3764c67ca59178a",
+      "bytes": 100498,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "cable"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-389-2.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-389-2.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-389-2.svg",
+      "sourceSHA256": "edae151f01abde7593fd1178c8d6ada6300c5b0dd1f002b18cec0483f9763b58",
+      "sha256": "edae151f01abde7593fd1178c8d6ada6300c5b0dd1f002b18cec0483f9763b58",
+      "bytes": 94618,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "cable"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
     "exercise-contours/ek-0072-relaxation.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
       "file": "exercise-contours/ek-0072-relaxation.svg",
@@ -9501,6 +10141,46 @@
       "changes": "Removed the separate white background layer preceding all dark contour paths. Retained original contour geometry and set its vector fill to #eef2ef; normalized viewport size. No CSS filter or shaded-body conversion.",
       "expertVerified": false,
       "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
+    },
+    "exercise-contours/original-v4/forge-ex-395-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-395-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-395-1.svg",
+      "sourceSHA256": "cda046910e05e49644c65ad7490b28a2e37d22e9b2f27ff3dcecaf3e04beafd8",
+      "sha256": "cda046910e05e49644c65ad7490b28a2e37d22e9b2f27ff3dcecaf3e04beafd8",
+      "bytes": 156366,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "machine"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-395-2.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-395-2.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-395-2.svg",
+      "sourceSHA256": "40d6807ee4101b3852a708f470c1b4a61e2e27b6834e33261309bd029f97d172",
+      "sha256": "40d6807ee4101b3852a708f470c1b4a61e2e27b6834e33261309bd029f97d172",
+      "bytes": 154941,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "machine"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
     },
     "exercise-art/negative-pull-up-1.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
@@ -9742,15 +10422,55 @@
       "expertVerified": false,
       "styleReview": "approved-style-pose-preliminary"
     },
+    "exercise-contours/original-v4/forge-ex-415-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-415-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-415-1.svg",
+      "sourceSHA256": "92204f599adf41f73d2ed5c5690c59e649aa77864dd54d66c3f82cb56c5e3326",
+      "sha256": "92204f599adf41f73d2ed5c5690c59e649aa77864dd54d66c3f82cb56c5e3326",
+      "bytes": 125589,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "barbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-415-2.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-415-2.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-415-2.svg",
+      "sourceSHA256": "958910d52723ca9c8fe9dc5b20137ab23a1db965fb8c06dd76db01dca3619aae",
+      "sha256": "958910d52723ca9c8fe9dc5b20137ab23a1db965fb8c06dd76db01dca3619aae",
+      "bytes": 127380,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "barbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
     "exercise-contours/original-v4/forge-ex-416-1.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
       "file": "exercise-contours/original-v4/forge-ex-416-1.svg",
       "format": "svg",
       "style": "light-contour-on-transparent",
       "sourceFile": "exercise-contours/original-v4/forge-ex-416-1.svg",
-      "sourceSHA256": "82907a2c416a98901b107395682ff4764374086751f01cc9928ae5858c6b6e8a",
-      "sha256": "82907a2c416a98901b107395682ff4764374086751f01cc9928ae5858c6b6e8a",
-      "bytes": 92629,
+      "sourceSHA256": "38f50ae0074ebe65fe97163714b075df0f156cf3c69b38b0731cc9da14844445",
+      "sha256": "38f50ae0074ebe65fe97163714b075df0f156cf3c69b38b0731cc9da14844445",
+      "bytes": 87897,
       "source": {
         "name": "Original FORGE ImageGen contour, vector traced",
         "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9768,9 +10488,49 @@
       "format": "svg",
       "style": "light-contour-on-transparent",
       "sourceFile": "exercise-contours/original-v4/forge-ex-416-2.svg",
-      "sourceSHA256": "ab0c5d14d513b1a1cc53b55e847f564bd67efe9fb29b2025ada472a9a5bb1f5a",
-      "sha256": "ab0c5d14d513b1a1cc53b55e847f564bd67efe9fb29b2025ada472a9a5bb1f5a",
-      "bytes": 98940,
+      "sourceSHA256": "7a241d9b3cf65d422ad1682a892ecc6de745b4a9f17dfc563015c217fadd18cb",
+      "sha256": "7a241d9b3cf65d422ad1682a892ecc6de745b4a9f17dfc563015c217fadd18cb",
+      "bytes": 91306,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-417-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-417-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-417-1.svg",
+      "sourceSHA256": "2e62cab100869b2fb8ebac8ac55c936bc189992a05f459680bf83d816eaa692f",
+      "sha256": "2e62cab100869b2fb8ebac8ac55c936bc189992a05f459680bf83d816eaa692f",
+      "bytes": 85434,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-417-2.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-417-2.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-417-2.svg",
+      "sourceSHA256": "422fb4209711e7b1fb32db027425ecf6a46ebfd1706eaf1485573eaf8f2ca0bb",
+      "sha256": "422fb4209711e7b1fb32db027425ecf6a46ebfd1706eaf1485573eaf8f2ca0bb",
+      "bytes": 97085,
       "source": {
         "name": "Original FORGE ImageGen contour, vector traced",
         "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9861,6 +10621,46 @@
       "changes": "Original light contour retained; no colour filter.",
       "expertVerified": false,
       "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
+    },
+    "exercise-contours/original-v4/forge-ex-421-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-421-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-421-1.svg",
+      "sourceSHA256": "26719ad32e9b9903031c053b3d7e8822ccb2ce25a6705c85bdadbe00feb85bb6",
+      "sha256": "26719ad32e9b9903031c053b3d7e8822ccb2ce25a6705c85bdadbe00feb85bb6",
+      "bytes": 98458,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-421-2.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-421-2.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-421-2.svg",
+      "sourceSHA256": "919d94d828b096484a5d5dcb4f9b8ad647542bb85f98ebc67164c19c31cae584",
+      "sha256": "919d94d828b096484a5d5dcb4f9b8ad647542bb85f98ebc67164c19c31cae584",
+      "bytes": 102192,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
     },
     "exercise-contours/original-v4/forge-ex-423-1.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
@@ -9982,6 +10782,46 @@
       "expertVerified": false,
       "styleReview": "approved-style-pose-preliminary"
     },
+    "exercise-contours/original-v4/forge-ex-428-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-428-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-428-1.svg",
+      "sourceSHA256": "5673d0cd739389b68366543784982b559f24de2841890cd6f80c6287e292c3b1",
+      "sha256": "5673d0cd739389b68366543784982b559f24de2841890cd6f80c6287e292c3b1",
+      "bytes": 99832,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "barbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-428-2.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-428-2.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-428-2.svg",
+      "sourceSHA256": "69b5b342462eff73140d358175bb152103065bb1cc55e6b081fe0d57f6f99e5e",
+      "sha256": "69b5b342462eff73140d358175bb152103065bb1cc55e6b081fe0d57f6f99e5e",
+      "bytes": 94103,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "barbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
     "exercise-contours/ek-0248-relaxation.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
       "file": "exercise-contours/ek-0248-relaxation.svg",
@@ -10022,6 +10862,86 @@
       "expertVerified": false,
       "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
     },
+    "exercise-contours/original-v4/forge-ex-430-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-430-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-430-1.svg",
+      "sourceSHA256": "d561057a96fbc7733b83bd96e4dc52804691579b9ad4500579ae87f25cca9e7c",
+      "sha256": "d561057a96fbc7733b83bd96e4dc52804691579b9ad4500579ae87f25cca9e7c",
+      "bytes": 106862,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "low cable and straight bar"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-430-2.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-430-2.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-430-2.svg",
+      "sourceSHA256": "aa93ae51cdfd2097ffdc9bbcb8cd64c52c2ede77cfc641a76f8b89bff3793845",
+      "sha256": "aa93ae51cdfd2097ffdc9bbcb8cd64c52c2ede77cfc641a76f8b89bff3793845",
+      "bytes": 106676,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "low cable and straight bar"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-432-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-432-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-432-1.svg",
+      "sourceSHA256": "6fd452e566e05633c170c5b84af48895d3a9017cd76ab3af33a4dfa24482c34f",
+      "sha256": "6fd452e566e05633c170c5b84af48895d3a9017cd76ab3af33a4dfa24482c34f",
+      "bytes": 100242,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "low cable and split rope handle"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-432-2.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-432-2.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-432-2.svg",
+      "sourceSHA256": "1a8d1c01661349973a149b9d44c34e1884bdd878329dd90d5503667a82d9342c",
+      "sha256": "1a8d1c01661349973a149b9d44c34e1884bdd878329dd90d5503667a82d9342c",
+      "bytes": 100120,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "low cable and split rope handle"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
     "exercise-contours/ek-0240-relaxation.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
       "file": "exercise-contours/ek-0240-relaxation.svg",
@@ -10061,6 +10981,66 @@
       "changes": "Removed the separate white background layer preceding all dark contour paths. Retained original contour geometry and set its vector fill to #eef2ef; normalized viewport size. No CSS filter or shaded-body conversion.",
       "expertVerified": false,
       "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
+    },
+    "exercise-contours/original-v4/forge-ex-434-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-434-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-434-1.svg",
+      "sourceSHA256": "c6f29927a39f5aae42abfb9b8d96f8793764f2b51effcc8c0165f12366ffb961",
+      "sha256": "c6f29927a39f5aae42abfb9b8d96f8793764f2b51effcc8c0165f12366ffb961",
+      "bytes": 51887,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "resistance band"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-434-2.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-434-2.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-434-2.svg",
+      "sourceSHA256": "ec025f7449c7dd7ae7e82fb93089a66a0830f5f2d363ce47052b6000829c628f",
+      "sha256": "ec025f7449c7dd7ae7e82fb93089a66a0830f5f2d363ce47052b6000829c628f",
+      "bytes": 59014,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "resistance band"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
+    },
+    "exercise-contours/original-v4/forge-ex-435-1.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/original-v4/forge-ex-435-1.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-contours/original-v4/forge-ex-435-1.svg",
+      "sourceSHA256": "bb74e9ed37299ea972123ea9d11ef560bd985bcefa99396d497c088cc7dff1fd",
+      "sha256": "bb74e9ed37299ea972123ea9d11ef560bd985bcefa99396d497c088cc7dff1fd",
+      "bytes": 177131,
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "license": "Original project generated artwork; no third-party illustration copied",
+      "changes": "Original authored FORGE contour geometry, not a conversion from a shaded model.",
+      "expertVerified": false,
+      "styleReview": "approved-style-pose-preliminary"
     },
     "exercise-contours/ek-0207-relaxation.svg": {
       "type": "EXERCISE_TECHNIQUE_ART",
@@ -10899,6 +11879,26 @@
       "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
       "license": "CC BY-SA 4.0",
       "changes": "Original light contour retained; no colour filter.",
+      "expertVerified": false,
+      "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
+    },
+    "exercise-contours/ek-0109-tension.svg": {
+      "type": "EXERCISE_TECHNIQUE_ART",
+      "file": "exercise-contours/ek-0109-tension.svg",
+      "format": "svg",
+      "style": "light-contour-on-transparent",
+      "sourceFile": "exercise-art/verified-11.2.3/ek-0109-tension.svg",
+      "sourceSHA256": "8958a3bf8c3f9f1abb62f36e154dcf876c1783890564bb3acc14ab215bbe02f3",
+      "sha256": "2eb252cdce50ec3fae22cd0a62a31d053c040dc63dc923656bfb19ce8b211401",
+      "bytes": 6396,
+      "source": {
+        "name": "Bridging, selected elevated-hips hold position",
+        "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0109-tension.svg",
+        "equipment": "Bodyweight"
+      },
+      "credit": "Everkinetic / Greg Priday · CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "changes": "Removed the separate white background layer preceding all dark contour paths. Retained original contour geometry and set its vector fill to #eef2ef; normalized viewport size. No CSS filter or shaded-body conversion.",
       "expertVerified": false,
       "styleReview": "contour-source-palette-checked; contact-sheet-review-required"
     },
@@ -12338,13 +13338,20 @@
       "name": "Велотренажёр",
       "group": "Кардио",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-art/verified-11.2.3/cycling-1.svg",
+        "exercise-art/verified-11.2.3/cycling-3.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Cycling, stationary exercise bike",
+        "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/cycling",
+        "equipment": "Stationary exercise bike"
+      },
+      "credit": "Workout Guide / Bryl Lim · CC BY-SA 4.0",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "two-source-frames",
       "expertVerified": false,
       "authoredSpec": null,
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
@@ -12538,15 +13545,27 @@
       "name": "Жим штанги лёжа с пола",
       "group": "Грудь",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-contours/original-v4/forge-ex-060-1.svg",
+        "exercise-contours/original-v4/forge-ex-060-2.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "barbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "barbell",
+        "support": "supine-floor",
+        "grip": "pronated",
+        "description": "BARBELL FLOOR PRESS. Both figures lie FACE UP directly on the FLOOR, knees bent and feet flat, NO bench. Front-side 3/4 view showing ground contact. Both hands grasp one barbell slightly wider than shoulders. Left: elbows bent, upper arms rest on floor, bar above lower chest, forearms upright. Right: arms extend vertically above chest, bar high over chest. Shoulder blades/back stay on floor; not a bridge or bench press. Whole bar and plates visible."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "жим гантелей на отрицательном наклоне": {
@@ -12577,15 +13596,27 @@
       "name": "Жим гантелей нейтральным хватом лёжа",
       "group": "Грудь",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-contours/original-v4/forge-ex-062-1.svg",
+        "exercise-contours/original-v4/forge-ex-062-2.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "dumbbell",
+        "support": "supine-flat-bench",
+        "grip": "neutral",
+        "description": "FLAT BENCH DUMBBELL CHEST PRESS WITH NEUTRAL GRIP. Both figures lie FACE UP on a clearly visible horizontal weight bench supporting head/back/hips, feet floor. Palms face EACH OTHER throughout, dumbbells parallel with ends visible. Left: dumbbells beside lower chest, elbows tucked nearer torso than normal flared press. Right: arms extend vertically above chest, palms still inward. NO floor press, no incline, no standing. Three-quarter side view."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "жим гантелей поочередно лежа": {
@@ -12593,15 +13624,27 @@
       "name": "Жим гантелей поочерёдно лёжа",
       "group": "Грудь",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-contours/original-v4/forge-ex-063-1.svg",
+        "exercise-contours/original-v4/forge-ex-063-2.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "dumbbell",
+        "support": "supine-flat-bench",
+        "grip": "alternating-pronated",
+        "description": "ALTERNATING DUMBBELL BENCH PRESS. Both figures lie face up on flat bench, feet floor, ONE dumbbell EACH hand. Left pose: LEFT arm holds dumbbell EXTENDED vertically above chest while RIGHT elbow is bent with right dumbbell at chest. Right pose: RIGHT arm now EXTENDED above chest while LEFT elbow is bent and left dumbbell at chest. Clearly alternating, never both arms bent or both extended simultaneously. Same torso/bench and camera. Detailed hollow contours."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "разведение гантелей лежа": {
@@ -12701,15 +13744,27 @@
       "name": "Сведение рук в кроссовере снизу",
       "group": "Грудь",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-contours/original-v4/forge-ex-068-1.svg",
+        "exercise-contours/original-v4/forge-ex-068-2.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "cable"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "cable",
+        "support": "standing",
+        "grip": "as-drawn",
+        "description": "Correct RIGHT phase only. Both arms reach forward and slightly upward away from chest with almost straight elbows, hands meet in front at shoulder height. Show the forearms foreshortened from a 3/4 view. Currently elbows are bent too much and hands sit on chest; this is a fly, not a curl. Keep two low pulley cables connected."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "сведение рук в кроссовере на уровне груди": {
@@ -12970,15 +14025,27 @@
       "name": "Пуловер в тренажёре",
       "group": "Грудь",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-contours/original-v4/forge-ex-080-1.svg",
+        "exercise-contours/original-v4/forge-ex-080-2.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "machine"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "machine",
+        "support": "seated-machine",
+        "grip": "as-drawn",
+        "description": "Seated pullover machine with upright back pad and feet planted. Bent elbows rest on pivoting arm pads. Start elbows overhead, finish drive down toward ribs with machine lever. No free weights."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "отжимания на кольцах": {
@@ -12986,15 +14053,27 @@
       "name": "Отжимания на кольцах",
       "group": "Грудь",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-contours/original-v4/forge-ex-081-1.svg",
+        "exercise-contours/original-v4/forge-ex-081-2.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "rings"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "rings",
+        "support": "prone-rings",
+        "grip": "as-drawn",
+        "description": "Ring pushup. Both feet on floor and straight horizontal plank. Hands hold two low suspended gymnastic rings. Start elbows straight, finish chest between rings and bent elbows. Continuous straps to overhead support. No dips."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "изометрическое сведение ладоней": {
@@ -13002,15 +14081,26 @@
       "name": "Изометрическое сведение ладоней",
       "group": "Грудь",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-contours/original-v4/forge-ex-082-1.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "bodyweight"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "static-single-frame",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "bodyweight",
+        "support": "standing",
+        "grip": "as-drawn",
+        "description": "One centered figure only, upper body from waist, standing upright. Both open palms pressed together vertically in front of sternum, fingers pointing up, elbows bent and out to sides at chest height. Show the joined palms clearly. Static isometric hold. No equipment."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "подтягивания прямым хватом": {
@@ -13110,13 +14200,20 @@
       "name": "Подтягивания узким хватом",
       "group": "Спина",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-contours/ek-0090-relaxation.svg",
+        "exercise-contours/ek-0090-tension.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Narrow Parallel Grip Chin-ups",
+        "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0090-relaxation.svg",
+        "equipment": "Pull-up bar"
+      },
+      "credit": "Everkinetic / Greg Priday · CC BY-SA 4.0",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "two-source-frames",
       "expertVerified": false,
       "authoredSpec": null,
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
@@ -13906,21 +15003,26 @@
       "group": "Плечи",
       "type": "EXERCISE_TECHNIQUE_ART",
       "frames": [
-        "exercise-art/arnold-press-1.svg",
-        "exercise-art/arnold-press-2.svg"
+        "exercise-contours/original-v4/forge-ex-124-1.svg",
+        "exercise-contours/original-v4/forge-ex-124-2.svg"
       ],
       "status": "ready-style-needs-biomechanics-review",
       "source": {
-        "name": "Arnold Press",
-        "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/arnold-press/frame-1.svg",
-        "equipment": "Dumbbell"
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
       },
-      "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+      "credit": "FORGE · original ImageGen contour",
       "missingReason": "",
-      "replacedSourceReason": null,
-      "phaseStatus": "two-source-frames",
+      "replacedSourceReason": "",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "dumbbell",
+        "support": "standing",
+        "grip": "supinated-to-pronated",
+        "description": "Standing Arnold press from three-quarter front view. LEFT phase: hold two separate dumbbells directly in front of lower face, parallel upper arms pointing FORWARD from shoulders, elbows tucked and close together in front of chest, vertical forearms, palms facing toward own face (backs of knuckles toward viewer), dumbbells at about chin level. The two elbows stay inside shoulder width and are not flared. RIGHT phase: both dumbbells fully overhead, elbows nearly straight, palms have rotated to face forward (fingers/grip facing viewer). Keep the same feet and athletic posture. Make the two different grips clear and never draw the ordinary wide goalpost lower pose."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "жим гири одной рукой": {
@@ -14166,21 +15268,26 @@
       "group": "Плечи",
       "type": "EXERCISE_TECHNIQUE_ART",
       "frames": [
-        "exercise-art/cable-lateral-raise-1.svg",
-        "exercise-art/cable-lateral-raise-2.svg"
+        "exercise-contours/original-v4/forge-ex-134-1.svg",
+        "exercise-contours/original-v4/forge-ex-134-2.svg"
       ],
       "status": "ready-style-needs-biomechanics-review",
       "source": {
-        "name": "Cable Lateral Raise",
-        "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/cable-lateral-raise/frame-1.svg",
-        "equipment": "Cable"
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "cable"
       },
-      "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+      "credit": "FORGE · original ImageGen contour",
       "missingReason": "",
-      "replacedSourceReason": null,
-      "phaseStatus": "two-source-frames",
+      "replacedSourceReason": "",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "cable",
+        "support": "standing-low-pulley",
+        "grip": "single-hand-neutral",
+        "description": "SINGLE-ARM low-pulley cable lateral raise, front view. A clearly drawn small cable stack with pulley just above ground stands to the athlete's LEFT in EACH panel. Athlete's RIGHT hand holds ONE D-handle; a single taut diagonal cable leads visibly and continuously from the low pulley on the LEFT, across in front of the legs to RIGHT hand. LEFT hand rests on left hip in BOTH panels, absolutely no equipment in left hand. Left phase: right hand begins just in front of right thigh. Right phase: right arm raises sideways to right shoulder height with gently bent elbow, hand still holding D-handle, same diagonal cable tied to low pulley at lower left. Do not draw a cable terminating at feet or held in both hands."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "отведение руки в сторону с резинкой": {
@@ -14724,15 +15831,27 @@
       "name": "Молотковые сгибания гантелей сидя",
       "group": "Бицепс",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-contours/original-v4/forge-ex-157-1.svg",
+        "exercise-contours/original-v4/forge-ex-157-2.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "dumbbell",
+        "support": "seated flat bench",
+        "grip": "neutral hammer",
+        "description": "SEATED bilateral hammer dumbbell curl. Same short flat bench and both feet flat in both poses. Side-front three-quarter view to reveal the seat and both hands. LEFT arms hanging next to hips with one dumbbell in each hand, thumbs pointing forward. RIGHT elbows still by waist, bent and hands near shoulders. Thumbs point up throughout curl and palms face each other, dumbbell handles remain aligned with fists, recognizable dumbbells."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "молотковые сгибания через корпус": {
@@ -14970,17 +16089,20 @@
       "name": "Паучьи сгибания гантелей",
       "group": "Бицепс",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
+      "frames": [
+        "exercise-contours/ek-0225-relaxation.svg",
+        "exercise-contours/ek-0225-tension.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
       "source": {
-        "name": "Spider Curl",
-        "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/spider-curl/frame-1.svg",
-        "equipment": "Dumbbell"
+        "name": "Prone Incline Biceps Curl with Dumbbell",
+        "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0225-relaxation.svg",
+        "equipment": "Dumbbell, incline bench"
       },
-      "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
-      "missingReason": "Исходная пара spider-curl показывает штангу и подушку Скотта, а название требует гантели и положение паучьих сгибаний.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "credit": "Everkinetic / Greg Priday · CC BY-SA 4.0",
+      "missingReason": "",
+      "replacedSourceReason": "Исходная пара spider-curl показывает штангу и подушку Скотта, а название требует гантели и положение паучьих сгибаний.",
+      "phaseStatus": "two-source-frames",
       "expertVerified": false,
       "authoredSpec": null,
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
@@ -15036,15 +16158,27 @@
       "name": "Сгибание с акцентом на брахиалис",
       "group": "Бицепс",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-contours/original-v4/forge-ex-171-1.svg",
+        "exercise-contours/original-v4/forge-ex-171-2.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "dumbbell",
+        "support": "standing",
+        "grip": "neutral cross-body hammer",
+        "description": "Illustrate a standing single-arm CROSS-BODY HAMMER CURL as the brachialis-emphasis variant. One dumbbell in active right hand. Front three-quarter view. LEFT right hand by right thigh, neutral grip, elbow beside trunk. RIGHT elbow still beside trunk, right forearm flexes diagonally toward left chest, thumb leads the movement and palm faces torso, never twists palm up. Free left arm relaxed. No bench."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "жим штанги узким хватом": {
@@ -17432,13 +18566,19 @@
       "name": "Планка на прямых руках",
       "group": "Пресс",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-contours/ek-0077-tension.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Push Up: Body Weight, selected straight-arm hold position",
+        "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0077-tension.svg",
+        "equipment": "Bodyweight"
+      },
+      "credit": "Everkinetic / Greg Priday · CC BY-SA 4.0",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "static-single-frame",
       "expertVerified": false,
       "authoredSpec": null,
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
@@ -19481,15 +20621,27 @@
       "name": "Жим гантелей на полу",
       "group": "Грудь",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-contours/original-v4/forge-ex-384-1.svg",
+        "exercise-contours/original-v4/forge-ex-384-2.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "dumbbell",
+        "support": "supine-floor",
+        "grip": "pronated",
+        "description": "TWO-DUMBBELL FLOOR PRESS. Both figures lie face up directly on FLOOR with knees bent/feet planted. NO bench. Left: one dumbbell each hand at sides of chest, elbows bent and upper arms touching floor, forearms vertical. Right: arms press dumbbells vertically above chest with elbows nearly straight; separate dumbbells remain in both hands, no barbell. Side three-quarter view makes back and elbow FLOOR contact clear."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "жим гири лежа одной рукой": {
@@ -19513,15 +20665,27 @@
       "name": "Жим гири лёжа двумя руками",
       "group": "Грудь",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-contours/original-v4/forge-ex-386-1.svg",
+        "exercise-contours/original-v4/forge-ex-386-2.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "kettlebell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "kettlebell",
+        "support": "supine-floor",
+        "grip": "as-drawn",
+        "description": "Make both hands clearly visible holding the SAME single kettlebell, one hand on each horn of its handle. Use head-end elevated 3/4 view so both forearms and grips visibly separate. Left both elbows bent, upper arms on floor. Right both elbows nearly straight, bell above chest. Both figures lie face up on floor, no bench."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "сведение гантелей перед грудью стоя": {
@@ -19545,15 +20709,27 @@
       "name": "Сведение рук на нижнем блоке поочерёдно",
       "group": "Грудь",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-contours/original-v4/forge-ex-388-1.svg",
+        "exercise-contours/original-v4/forge-ex-388-2.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "cable"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "cable",
+        "support": "standing",
+        "grip": "as-drawn",
+        "description": "Correct BOTH raised arms. Raised hand reaches diagonally FORWARD across chest, away from torso at shoulder level. Keep raised elbow nearly straight, not bent in a biceps curl. In each pose opposite arm stays low. Cables remain continuously connected to both low pulleys."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "сведение одной руки на кроссовере": {
@@ -19561,15 +20737,27 @@
       "name": "Сведение одной руки на кроссовере",
       "group": "Грудь",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-contours/original-v4/forge-ex-389-1.svg",
+        "exercise-contours/original-v4/forge-ex-389-2.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "cable"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "cable",
+        "support": "standing",
+        "grip": "as-drawn",
+        "description": "Single arm horizontal cable fly. One side pulley at chest height. One working hand starts extended to side, ends in front of chest, same slight elbow bend. Other hand rests on waist. Show connected cable."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "отжимания с паузой": {
@@ -19678,15 +20866,27 @@
       "name": "Жим на грудь в тренажёре одной рукой",
       "group": "Грудь",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-contours/original-v4/forge-ex-395-1.svg",
+        "exercise-contours/original-v4/forge-ex-395-2.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "machine"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "machine",
+        "support": "seated-machine",
+        "grip": "as-drawn",
+        "description": "Two phases of seated single-arm machine chest press. Upright back against backrest and feet planted. One hand on right independent lever handle, other hand on thigh. Start right elbow bent and handle next to chest, finish press horizontally forward to extended right arm. Side three-quarter view, show whole machine and pivot."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "подтягивания с паузой наверху": {
@@ -20067,21 +21267,26 @@
       "group": "Плечи",
       "type": "EXERCISE_TECHNIQUE_ART",
       "frames": [
-        "exercise-art/overhead-press-1.svg",
-        "exercise-art/overhead-press-2.svg"
+        "exercise-contours/original-v4/forge-ex-415-1.svg",
+        "exercise-contours/original-v4/forge-ex-415-2.svg"
       ],
       "status": "ready-style-needs-biomechanics-review",
       "source": {
-        "name": "Overhead Press",
-        "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/overhead-press/frame-1.svg",
-        "equipment": "Barbell"
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "barbell"
       },
-      "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+      "credit": "FORGE · original ImageGen contour",
       "missingReason": "",
-      "replacedSourceReason": null,
-      "phaseStatus": "two-source-frames",
+      "replacedSourceReason": "",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "barbell",
+        "support": "standing-squat-rack",
+        "grip": "pronated",
+        "description": "Standing barbell overhead press out of a squat rack, front-three-quarter view. Each panel includes its own clearly visible pair of tall squat rack uprights, J-cups at collarbone height and wide floor feet. LEFT: full-body athlete stands inside rack with stable legs, hands shoulder-width gripping bar at collarbone height, at J-cups, ready to unrack. RIGHT: same standing position inside matching rack, bar pressed overhead with nearly straight arms, now well above empty visible J-cups. No seat. Keep rack uprights fully in respective half."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "жим гантелей нейтральным хватом": {
@@ -20108,7 +21313,7 @@
         "equipment": "dumbbell",
         "support": "standing",
         "grip": "neutral",
-        "description": "STANDING NEUTRAL-GRIP TWO-DUMBBELL SHOULDER PRESS. Palms face EACH OTHER, parallel dumbbell handle axes, elbows forward rather than flared wide. Left: dumbbells beside shoulders, elbows bent pointing slightly forwards, palms facing inward. Right: press both dumbbells overhead while maintaining inward-facing neutral grip; torso upright, feet floor, no bench. Three-quarter view so grip is unmistakable. Distinguish from wide pronated press."
+        "description": "True hammer neutral-grip standing dumbbell overhead press. Use front-left oblique view at about 45 degrees so the two dumbbell axles point forward/back from the athlete and slope diagonally in perspective. In BOTH poses hands stay turned so the palms face each other (left palm points right and right palm points left), thumbs toward athlete's own face. Keep BOTH dumbbell axle/handle lines sagittal, visibly oriented front-to-back, parallel to the direction the face points. Do not align the axles left-to-right along the shoulder line. Left figure begins with elbows bent forward a little and two dumbbells at ears; right finishes with dumbbells overhead, same palms-in grip. Both figures stand."
       },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
@@ -20118,21 +21323,26 @@
       "group": "Плечи",
       "type": "EXERCISE_TECHNIQUE_ART",
       "frames": [
-        "exercise-art/arnold-press-1.svg",
-        "exercise-art/arnold-press-2.svg"
+        "exercise-contours/original-v4/forge-ex-417-1.svg",
+        "exercise-contours/original-v4/forge-ex-417-2.svg"
       ],
       "status": "ready-style-needs-biomechanics-review",
       "source": {
-        "name": "Arnold Press",
-        "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/arnold-press/frame-1.svg",
-        "equipment": "Dumbbell"
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
       },
-      "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+      "credit": "FORGE · original ImageGen contour",
       "missingReason": "",
-      "replacedSourceReason": null,
-      "phaseStatus": "two-source-frames",
+      "replacedSourceReason": "",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "dumbbell",
+        "support": "standing",
+        "grip": "supinated-to-pronated",
+        "description": "Standing rotating dumbbell press from oblique side-front view, 45 degrees, so forearm rotation is visible. Left: two independent dumbbells near chin, elbows held ahead of torso and near each other, both palms facing the athlete's face and visible backs of hands. Upper arms project forward rather than sideways. Right: matching athlete presses both dumbbells overhead as palms rotate outward to face forward, elbows fully elevated. Show fully extended upper and lower arms overhead. The end positions must make visible the change in direction of the palms. No ordinary wide goalpost position in left."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "отведение рук с дисками": {
@@ -20215,21 +21425,26 @@
       "group": "Плечи",
       "type": "EXERCISE_TECHNIQUE_ART",
       "frames": [
-        "exercise-art/front-raise-1.svg",
-        "exercise-art/front-raise-2.svg"
+        "exercise-contours/original-v4/forge-ex-421-1.svg",
+        "exercise-contours/original-v4/forge-ex-421-2.svg"
       ],
       "status": "ready-style-needs-biomechanics-review",
       "source": {
-        "name": "Front Raise",
-        "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/front-raise/frame-1.svg",
-        "equipment": "Dumbbell"
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
       },
-      "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+      "credit": "FORGE · original ImageGen contour",
       "missingReason": "",
-      "replacedSourceReason": null,
-      "phaseStatus": "two-source-frames",
+      "replacedSourceReason": "",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "dumbbell",
+        "support": "standing",
+        "grip": "pronated",
+        "description": "Alternating front dumbbell raise. Same realistic athlete stands in each frame from a 30-degree front three-quarter angle, with two individual dumbbells. LEFT frame: his anatomical RIGHT arm extends straight FORWARD to shoulder height with dumbbell in hand, and his LEFT arm hangs entirely straight at the LEFT thigh holding the other dumbbell. RIGHT frame: swap the roles exactly. Now his LEFT arm extends straight FORWARD to shoulder height, and his RIGHT arm hangs entirely straight at the RIGHT thigh. Elbows just soft. Stable body, no twisting, two obvious alternating raised arms and never a simultaneous raise. Forward reaches toward the direction the nose points, never sideways."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "разведение рук на заднюю дельту с резинкой": {
@@ -20390,19 +21605,27 @@
       "name": "Подъём штанги на бицепс у стены",
       "group": "Бицепс",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
+      "frames": [
+        "exercise-contours/original-v4/forge-ex-428-1.svg",
+        "exercise-contours/original-v4/forge-ex-428-2.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
       "source": {
-        "name": "Biceps Curl: Barbell",
-        "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0211-relaxation.svg",
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
         "equipment": "barbell"
       },
-      "credit": "Everkinetic · CC BY-SA 4.0",
-      "missingReason": "В исходной паре нет требуемой названием стены или опоры спины.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "credit": "FORGE · original ImageGen contour",
+      "missingReason": "",
+      "replacedSourceReason": "В исходной паре нет требуемой названием стены или опоры спины.",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "barbell",
+        "support": "standing with upper back against wall",
+        "grip": "supinated",
+        "description": "STRICT WALL BARBELL BICEPS CURL, clearly side-front three-quarter view. Both poses show the same vertical wall behind the person as a thin vertical plane edge, upper back and hips visibly touching the wall throughout, feet a few inches forward. Hold ONE continuous straight barbell with both palms up and a plate on each end. LEFT bar against fronts of upper thighs, elbows nearly extended. RIGHT bar near upper abdomen/lower chest after curling, elbows stay against sides, shoulders and hips stay against wall. Include whole wall edge in each separate half, no bench."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "сгибание руки на наклонной скамье": {
@@ -20433,15 +21656,27 @@
       "name": "Сгибание рук на низком блоке обратным хватом",
       "group": "Бицепс",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-contours/original-v4/forge-ex-430-1.svg",
+        "exercise-contours/original-v4/forge-ex-430-2.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "low cable and straight bar"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "low cable and straight bar",
+        "support": "standing",
+        "grip": "pronated reverse",
+        "description": "Standing reverse-grip low cable curl. Repeat the same complete compact cable machine just in front of the person within each half. Its pulley is at ankle level. One taut cable from pulley to midpoint of a short straight bar held in BOTH hands. LEFT arms almost straight at thighs, knuckles on top, palms facing down toward floor. RIGHT both elbows curl while staying beside ribs, bar rises toward upper abdomen, hands remain clearly pronated with backs of hands facing up and toward body. No loose barbell plates and no rope."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "сгибание рук на блоке поочередно": {
@@ -20472,15 +21707,27 @@
       "name": "Сгибание рук с канатом сидя",
       "group": "Бицепс",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-contours/original-v4/forge-ex-432-1.svg",
+        "exercise-contours/original-v4/forge-ex-432-2.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "low cable and split rope handle"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "low cable and split rope handle",
+        "support": "seated flat bench",
+        "grip": "neutral rope",
+        "description": "SEATED LOW-CABLE ROPE BICEPS CURL. Draw the same person sitting upright on a low flat bench and facing a compact cable station in each half; feet flat and elbows fixed at sides. Cable comes visibly from ankle-level low pulley in front and attaches to midpoint of short split gym rope. Two hands grip one rope end each, palms face each other. LEFT hands low in front of knees, elbows extended. RIGHT hands rise toward shoulders after elbow flexion, seated trunk stays upright. Clearly separate rope handle ends, taut cable, pulley and bench."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "молотковые сгибания на скамье скотта": {
@@ -20511,15 +21758,27 @@
       "name": "Сгибание кисти и локтя с эспандером",
       "group": "Бицепс",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-contours/original-v4/forge-ex-434-1.svg",
+        "exercise-contours/original-v4/forge-ex-434-2.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "resistance band"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "two-authored-phases",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "resistance band",
+        "support": "standing with band pinned under feet",
+        "grip": "supinated",
+        "description": "Standing combined wrist and elbow curl with a long elastic resistance band clearly pinned under both shoes; thin continuous band drawn up to the hands, no dumbbell, bar or machine. LEFT nearly straight arms by sides, palms face forward, wrists neutral. RIGHT elbows bent about 90 degrees with upper arms still at sides, forearms in front with palms up, hands visibly flexed gently toward inner forearms at wrist. Show a real grip on the band and increased tension. Feet and band anchor in exactly same place in both poses."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "изометрическое удержание гантели на бицепс": {
@@ -20527,15 +21786,26 @@
       "name": "Изометрическое удержание гантели на бицепс",
       "group": "Бицепс",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-contours/original-v4/forge-ex-435-1.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Original FORGE ImageGen contour, vector traced",
+        "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+        "equipment": "dumbbell"
+      },
+      "credit": "FORGE · original ImageGen contour",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "static-single-frame",
       "expertVerified": false,
-      "authoredSpec": null,
+      "authoredSpec": {
+        "equipment": "dumbbell",
+        "support": "standing",
+        "grip": "supinated",
+        "description": "ONE FIGURE only, centered, single full-body three-quarter pose of a standing single-arm isometric dumbbell curl hold. One dumbbell in the right hand at waist height, right upper arm vertical by ribs, elbow bent 90 degrees, forearm clearly horizontal and palm faces up supporting the handle. Left arm relaxed and empty. Upright neutral torso, stable feet; no bench. No second pose, no arrows."
+      },
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"
     },
     "разгибание рук на блоке с v-рукоятью": {
@@ -22080,13 +23350,19 @@
       "name": "Статический мост на полу",
       "group": "Нижняя спина",
       "type": "EXERCISE_TECHNIQUE_ART",
-      "frames": [],
-      "status": "not-ready",
-      "source": null,
-      "credit": "FORGE",
-      "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-      "replacedSourceReason": null,
-      "phaseStatus": "not-available",
+      "frames": [
+        "exercise-contours/ek-0109-tension.svg"
+      ],
+      "status": "ready-style-needs-biomechanics-review",
+      "source": {
+        "name": "Bridging, selected elevated-hips hold position",
+        "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0109-tension.svg",
+        "equipment": "Bodyweight"
+      },
+      "credit": "Everkinetic / Greg Priday · CC BY-SA 4.0",
+      "missingReason": "",
+      "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+      "phaseStatus": "static-single-frame",
       "expertVerified": false,
       "authoredSpec": null,
       "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval"

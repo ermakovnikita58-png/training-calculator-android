@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Паучьи сгибания гантелей",
+    "files": [
+      "exercise-art/verified-11.2.3/ek-0225-relaxation.svg",
+      "exercise-art/verified-11.2.3/ek-0225-tension.svg"
+    ],
+    "source": {
+      "name": "Prone Incline Biceps Curl with Dumbbell",
+      "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0225-relaxation.svg",
+      "equipment": "Dumbbell, incline bench"
+    },
+    "credit": "Everkinetic / Greg Priday · CC BY-SA 4.0",
+    "static": false,
+    "notes": "Chest supported on the incline bench in both frames. Two dumbbells move from hanging arms to bent elbows. The source is retained byte for byte."
+  },
+  {
+    "name": "Подтягивания узким хватом",
+    "files": [
+      "exercise-art/verified-11.2.3/ek-0090-relaxation.svg",
+      "exercise-art/verified-11.2.3/ek-0090-tension.svg"
+    ],
+    "source": {
+      "name": "Narrow Parallel Grip Chin-ups",
+      "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0090-relaxation.svg",
+      "equipment": "Pull-up bar"
+    },
+    "credit": "Everkinetic / Greg Priday · CC BY-SA 4.0",
+    "static": false,
+    "notes": "Hands are close together in both frames. The catalogue specifies grip width without prescribing a pronated grip. The upstream variant is named parallel grip. The source is retained byte for byte."
+  },
+  {
+    "name": "Планка на прямых руках",
+    "files": [
+      "exercise-art/verified-11.2.3/ek-0077-tension.svg"
+    ],
+    "source": {
+      "name": "Push Up: Body Weight, selected straight-arm hold position",
+      "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0077-tension.svg",
+      "equipment": "Bodyweight"
+    },
+    "credit": "Everkinetic / Greg Priday · CC BY-SA 4.0",
+    "static": true,
+    "notes": "The extended-elbow frame shows the same floor support and straight-body position as a high plank. Only the static position is assigned. The source is retained byte for byte."
+  },
+  {
+    "name": "Статический мост на полу",
+    "files": [
+      "exercise-art/verified-11.2.3/ek-0109-tension.svg"
+    ],
+    "source": {
+      "name": "Bridging, selected elevated-hips hold position",
+      "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0109-tension.svg",
+      "equipment": "Bodyweight"
+    },
+    "credit": "Everkinetic / Greg Priday · CC BY-SA 4.0",
+    "static": true,
+    "notes": "Only the elevated-hips hold is shown, with shoulder and foot support on the floor. The source is retained byte for byte."
+  },
+  {
+    "name": "Велотренажёр",
+    "files": [
+      "exercise-art/verified-11.2.3/cycling-1.svg",
+      "exercise-art/verified-11.2.3/cycling-3.svg"
+    ],
+    "source": {
+      "name": "Cycling, stationary exercise bike",
+      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/cycling",
+      "equipment": "Stationary exercise bike"
+    },
+    "credit": "Workout Guide / Bryl Lim · CC BY-SA 4.0",
+    "static": false,
+    "notes": "Both frames show an indoor bike on a fixed base with a seated rider. Pedal and leg positions differ. The original transparent white contours are retained byte for byte."
+  }
+]
