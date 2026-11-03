@@ -2591,30 +2591,34 @@
     "name": "Подтягивания с резинкой",
     "group": "Спина",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-089-1.svg",
+      "exercise-contours/original-v4/forge-ex-089-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "pull-up-bar-band"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "pull-up-bar-band",
+      "support": "hanging-one-knee-band",
+      "grip": "pronated",
+      "description": "Resistance-band-assisted pull-up, front-three-quarter view. Each half has its own two-post horizontal pull-up station. Same athlete holds the overhead bar with both hands, slightly wider than shoulders, palms away. A single unmistakable flat elastic loop is hitched to the horizontal bar between hands; its long vertical twin strands descend down in front of the athlete and its bottom cradle securely supports one bent knee in BOTH panels. Start left: body hangs, elbows straight, supported knee bent. Finish right: elbows flexed down beside torso, chin visibly above bar, knee still supported in the same elastic loop. No weights or platform supporting feet."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-a86ce1964bcc-0.svg",
       "exercise-art/forge-a86ce1964bcc-1.svg"
     ],
     "equipment": "Резинка",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Резинка",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-090",
@@ -2766,30 +2770,34 @@
     "name": "Тяга верхнего блока одной рукой",
     "group": "Спина",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-095-1.svg",
+      "exercise-contours/original-v4/forge-ex-095-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "cable-d-handle"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "cable-d-handle",
+      "support": "seated-lat-machine",
+      "grip": "single-neutral",
+      "description": "One-arm seated high cable lat pulldown, three-quarter view facing the tall high pulley. The same person sits upright on a lat-pulldown seat with thigh restraint pads. ONE short single D-shaped handle is attached to one continuous cable from the HIGH overhead pulley. Only the right hand grasps the handle, free left hand remains on left thigh in both phases. Left figure working arm reaches high above shoulder; right figure pulls that handle down beside the shoulder with elbow close to side, upper arm low. Cable visibly connects handle to overhead pulley in both views. No bar."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-f1dda4b08d3b-0.svg",
       "exercise-art/forge-f1dda4b08d3b-1.svg"
     ],
     "equipment": "Блок",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Блок",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-096",
@@ -2825,60 +2833,68 @@
     "name": "Тяга горизонтального блока широкой рукоятью",
     "group": "Спина",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-097-1.svg",
+      "exercise-contours/original-v4/forge-ex-097-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "wide-cable-handle"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "wide-cable-handle",
+      "support": "seated-low-row",
+      "grip": "wide-pronated",
+      "description": "Wide-handle seated low cable row, 45-degree side-front camera that clearly shows the width of both hands. One intact horizontal straight wide row bar held overhand, with hands farther apart than shoulders. A single horizontal cable visibly connects the center of that wide bar to the low pulley in front. Athlete sits on low bench, feet on foot plates, knees soft and spine upright. Left: both arms extended toward pulley. Right: bar pulled toward lower chest with elbows bent and clearly flared outward. Same machine, same wide bar, same low cable and foot support in both panels."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-3ce513d8d970-0.svg",
       "exercise-art/forge-3ce513d8d970-1.svg"
     ],
     "equipment": "Блок",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Блок",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-098",
     "name": "Тяга горизонтального блока обратным хватом",
     "group": "Спина",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-098-1.svg",
+      "exercise-contours/original-v4/forge-ex-098-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "straight-cable-bar"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "straight-cable-bar",
+      "support": "seated-low-row",
+      "grip": "supinated",
+      "description": "Seated underhand reverse-grip cable row, 45-degree side-front view. One straight horizontal bar with central cable attachment; both hands shoulder-width and clearly UNDERHAND with palms facing upward, wrists straight, thumbs outward. Distinct fingers curl up from underneath the bar. A single line from the center attachment to a low pulley in front is fully visible. Person sits on low bench with feet on machine footrests and knees lightly bent, torso erect. Left arms reach toward machine; right elbows pulled back close to ribs, bar near lower abdomen. Same underhand grip and same equipment both frames."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-ccc16c081d81-0.svg",
       "exercise-art/forge-ccc16c081d81-1.svg"
     ],
     "equipment": "Блок",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Блок",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-099",
@@ -2972,30 +2988,34 @@
     "name": "Тяга Т-грифа с упором грудью",
     "group": "Спина",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-102-1.svg",
+      "exercise-contours/original-v4/forge-ex-102-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "t-bar-row-machine"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "t-bar-row-machine",
+      "support": "prone-incline-chest-pad",
+      "grip": "neutral",
+      "description": "Chest-supported T-bar row machine. Three-quarter side view that clearly shows the athlete leaning chest-down on an angled padded chest rest, standing with both feet on the raised machine footplate, facing the weighted end of the machine. Show a long single floor-pivoted T-bar lever underneath the body with a transverse handle crosspiece and circular weight plates on the one free end. Both hands hold the crosspiece's two handles. Left arms down with weight lowered. Right elbows pulled up/back, weighted lever visibly lifted, chest continuously on support pad and both feet planted. No cable, no handheld dumbbells, no two-ended free barbell."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-af7bd4ddf6c6-0.svg",
       "exercise-art/forge-af7bd4ddf6c6-1.svg"
     ],
     "equipment": "Штанга",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Штанга",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-103",
@@ -3060,64 +3080,68 @@
     "name": "Тяга гантелей грудью на наклонной скамье",
     "group": "Спина",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-105-1.svg",
+      "exercise-contours/original-v4/forge-ex-105-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Chest Supported Row",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/chest-supported-row/frame-1.svg",
-      "equipment": "Machine"
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbell"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
-    "missingReason": "Источник chest-supported-row помечен Machine, а упражнение требует гантели и наклонную опору. Достоверное точное соответствие не установлено. Снаряд в названии (гантели) не подтверждён метаданными источника (Machine).",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Источник chest-supported-row помечен Machine, а упражнение требует гантели и наклонную опору. Достоверное точное соответствие не установлено. Снаряд в названии (гантели) не подтверждён метаданными источника (Machine).",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "dumbbell",
+      "support": "prone-incline-bench",
+      "grip": "neutral",
+      "description": "Chest-supported dumbbell row lying face down on a clearly inclined adjustable exercise bench, about 35 degrees. Three-quarter side view, upper chest stays firmly against long sloping backrest, head above the top edge, feet braced on floor behind. Two independent dumbbells, one in each hand. Left arms hang vertically below shoulders with dumbbells low. Right elbows draw up behind ribs, dumbbells pulled close to sides of lower chest. Same visible chest contact, bench incline and foot placement in both poses. No cable or barbell."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/chest-supported-row-1.svg",
       "exercise-art/chest-supported-row-2.svg"
     ],
     "equipment": "Гантели",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Гантели",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-106",
     "name": "Тяга в хаммере сверху",
     "group": "Спина",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-106-1.svg",
+      "exercise-contours/original-v4/forge-ex-106-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "plate-loaded-high-row-machine"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "plate-loaded-high-row-machine",
+      "support": "seated-chest-pad",
+      "grip": "neutral",
+      "description": "Seated Hammer Strength style plate-loaded HIGH ROW machine, side-front view, athlete facing and leaning against an upright chest pad, both feet down. Tall overhead pivot assembly with two individual rigid lever arms and visible round weight plates loaded on side pegs. Both hands grasp high handles on the rigid arms, never cables. Start left: arms reach diagonally forward and upward above shoulder level. Finish right: elbows drive down and back beside ribs, handles pulled to sides of upper torso. Same chest pad, seat and machine in both phases; clearly show rigid levers connecting handles to upper pivots and visible plate-loaded pegs."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-c1f243aa50a5-0.svg",
       "exercise-art/forge-c1f243aa50a5-1.svg"
     ],
     "equipment": "Тренажёр",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Тренажёр",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-107",
@@ -3211,30 +3235,34 @@
     "name": "Тяга гири одной рукой",
     "group": "Спина",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-110-1.svg",
+      "exercise-contours/original-v4/forge-ex-110-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "kettlebell"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "kettlebell",
+      "support": "standing-split-stance-hand-on-thigh",
+      "grip": "neutral",
+      "description": "One-arm bent-over kettlebell row. Three-quarter side view, same stable split stance and hips hinged, near-horizontal straight back. Working hand holds exactly ONE distinct round kettlebell with rounded loop handle; free hand braces on front thigh in both phases. Start left: kettlebell hangs directly below shoulder from straight arm. Finish right: working elbow flexed and drawn back next to ribs, kettlebell raised to side of waist. Torso does not rotate. No dumbbell, no second kettlebell and no machinery."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-8f480b55cf7e-0.svg",
       "exercise-art/forge-8f480b55cf7e-1.svg"
     ],
     "equipment": "Гиря",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Гиря",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-111",
@@ -5652,30 +5680,34 @@
     "name": "Разгибание рук с резинкой",
     "group": "Трицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-191-1.svg",
+      "exercise-contours/original-v4/forge-ex-191-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "resistance band with high anchor"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "resistance band with high anchor",
+      "support": "standing",
+      "grip": "neutral bilateral grip",
+      "description": "Standing resistance-band triceps pushdown, side three-quarter view. Show a simple visible high fixed ring on a narrow upright post in front of the athlete, a continuous taut elastic band running directly from ring to two hands. In both phases upper arms vertical beside ribs, upright torso. START elbows bent 90 degrees, hands near lower chest. FINISH forearms extended down to hands by thighs, elbows nearly straight, upper arms and fixed overhead anchor unchanged. No cable or weight stack."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-ab0a902008b6-0.svg",
       "exercise-art/forge-ab0a902008b6-1.svg"
     ],
     "equipment": "Резинка",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Резинка",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-192",
@@ -5856,30 +5888,34 @@
     "name": "Приседания с гирей гоблет",
     "group": "Квадрицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-198-1.svg",
+      "exercise-contours/original-v4/forge-ex-198-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "kettlebell"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "kettlebell",
+      "support": "standing feet on floor",
+      "grip": "two hands holding kettlebell horns",
+      "description": "Goblet squat with one kettlebell held close against the sternum, both hands on its handle horns, bell below handle. Left: stand tall, both feet a little wider than shoulders, stable on floor. Right: same stance and bell at chest, hips lowered in squat with knees bent and tracking toward toes, heels remain down. Three-quarter front view."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-2c00b89a579b-0.svg",
       "exercise-art/forge-2c00b89a579b-1.svg"
     ],
     "equipment": "Гиря",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Гиря",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-199",
@@ -6147,90 +6183,102 @@
     "name": "Жим ногами широкой постановкой",
     "group": "Квадрицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-208-1.svg",
+      "exercise-contours/original-v4/forge-ex-208-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "45-degree sled leg press machine"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "45-degree sled leg press machine",
+      "support": "seated with back and hips braced against reclined pad",
+      "grip": "both hands on side handles",
+      "description": "A true 45-degree sled leg press on diagonal guide rails. The athlete lies back with hips on the low seat and both hands holding stationary side handles. BOTH feet on the same broad footplate, visibly near opposite lateral edges, distinctly wider than shoulders, toes slightly out, whole soles contacting the footplate. Left: sled near athlete, both knees bent toward torso. Right: sled moved up diagonal rails, both legs almost straight with slight knee flexion. Same machine and wide foot placement in both frames. Three-quarter side view making both soles and the full footplate readable."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-c412fcb18871-0.svg",
       "exercise-art/forge-c412fcb18871-1.svg"
     ],
     "equipment": "Тренажёр",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Тренажёр",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-209",
     "name": "Жим ногами одной ногой",
     "group": "Квадрицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-209-1.svg",
+      "exercise-contours/original-v4/forge-ex-209-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "45-degree sled leg press machine"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "45-degree sled leg press machine",
+      "support": "seated with back and hips braced against reclined pad",
+      "grip": "both hands on side handles",
+      "description": "A single-leg 45-degree sled leg press, side three-quarter view. Athlete sits low on reclined machine seat with upper back and hips contacting pad, hands on fixed handles. Exactly ONE working foot is centered against the slanted sled footplate. The other foot stays clearly off the moving footplate on a stationary support beside the low seat in both phases. Left: working knee bends deeply with sled closer. Right: working leg is nearly straight, sled farther up the guide rails, working sole still against same point on footplate. Keep both legs anatomically clear. No use of the second leg on the moving plate."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-bec259ce596c-0.svg",
       "exercise-art/forge-bec259ce596c-1.svg"
     ],
     "equipment": "Тренажёр",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Тренажёр",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-210",
     "name": "Жим ногами вертикальный",
     "group": "Квадрицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-210-1.svg",
+      "exercise-contours/original-v4/forge-ex-210-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "vertical leg press machine"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "vertical leg press machine",
+      "support": "lying supine on horizontal floor-level bench",
+      "grip": "hands on fixed handles by hips",
+      "description": "Vertical leg press in strict side three-quarter view. Athlete is on his back on a horizontal low bench, face looking straight upward. Directly above hips is a broad HORIZONTAL moving footplate held by clearly VERTICAL parallel metal guide rails perpendicular to floor. Both feet push the underside of this overhead plate, soles point toward ceiling and remain flat against underside. Left: lowered footplate, knees bent near chest. Right: plate moves straight UP its vertical rails, legs almost straight upward. Same machine in both frames, feet never leave plate. No inclined rails, no angled seat, no hanging weights on ankles."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-122932eeb67e-0.svg",
       "exercise-art/forge-122932eeb67e-1.svg"
     ],
     "equipment": "Тренажёр",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Тренажёр",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-211",
@@ -6266,30 +6314,34 @@
     "name": "Разгибание одной ноги в тренажёре",
     "group": "Квадрицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-212-1.svg",
+      "exercise-contours/original-v4/forge-ex-212-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "seated leg extension machine"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "seated leg extension machine",
+      "support": "upright seated machine bench with back support",
+      "grip": "both hands on side handles",
+      "description": "Seated single-leg knee extension using a selectorized leg-extension machine. Three-quarter view shows padded seat and backrest, side handles and low cylindrical shin roller on machine lever. Left: working knee bent near ninety degrees, working lower shin behind roller, foot raised off floor. Right: same thigh stays fully against seat, ONLY working knee straightens so its lower shin lifts the roller up to near horizontal. Other knee remains bent, other foot clearly off the moving roller, below and to side in BOTH phases. No kicking, no hip rise. Show the hinge at working knee level and the lower leg pushing a roller."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-bed5c27a5278-0.svg",
       "exercise-art/forge-bed5c27a5278-1.svg"
     ],
     "equipment": "Тренажёр",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Тренажёр",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-213",
@@ -7436,30 +7488,34 @@
     "name": "Хип-траст в тренажёре",
     "group": "Ягодицы",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-252-1.svg",
+      "exercise-contours/original-v4/forge-ex-252-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "lever hip thrust machine"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "lever hip thrust machine",
+      "support": "upper back supported on machine pad, feet on platform",
+      "grip": "hands hold machine handles",
+      "description": "Lever hip-thrust machine, clear side view. Athlete's shoulder blades rest against a low raised machine back pad, feet flat on the integrated foot platform and knees bent; machine's curved padded lever restraint touches FRONT of hips in both positions and visibly connects to its pivot on the frame. Draw unmistakable integrated machine with frame and footplate and a lever arm, no free barbell. START pelvis dropped well below shoulders, hips flexed. FINISH pelvis lifted, shoulders–hips–knees form near horizontal straight line, shoulders remain against same pad, feet and platform stay in place. Lever follows the hips."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-76c44d3d1a3b-0.svg",
       "exercise-art/forge-76c44d3d1a3b-1.svg"
     ],
     "equipment": "Тренажёр",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Тренажёр",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-253",
@@ -7582,30 +7638,34 @@
     "name": "Отведение ноги в сторону стоя",
     "group": "Ягодицы",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-257-1.svg",
+      "exercise-contours/original-v4/forge-ex-257-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "bodyweight",
+      "support": "standing on one foot, light hand support on upright rail",
+      "grip": "light hand support",
+      "description": "Standing lateral hip abduction with own body weight, FRONT view. Athlete upright next to one slim support post and touching it lightly with the right hand. Right stance leg and post fixed. START both legs close together, left foot lightly off floor. FINISH straight left leg extends laterally toward image right at about 30 degrees, toes and hips still face camera, stable pelvis, no lean. No bands, cables, weights or ankle attachments."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-f227b59e34b2-0.svg",
       "exercise-art/forge-f227b59e34b2-1.svg"
     ],
     "equipment": "Свой вес/другое",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Свой вес/другое",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-258",
@@ -7786,30 +7846,34 @@
     "name": "Степ-ап на высокую платформу",
     "group": "Ягодицы",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-264-1.svg",
+      "exercise-contours/original-v4/forge-ex-264-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "high step platform"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "high step platform",
+      "support": "lead foot on top of stable tall platform",
+      "grip": "no handheld equipment",
+      "description": "Unweighted high-platform step-up, full side profile. One tall stable rectangular gym step box, top just under knee height. START lead right foot flat entirely on top, lead knee bent, trailing left foot clearly on floor behind the box. FINISH right foot stays in SAME spot and right leg is straight as athlete stands ON TOP of box, left foot joins the top beside it, torso upright. Keep box identical and draw shoe soles visibly touching top surface, avoid floating shoes or feet disappearing inside box. No weights, rails or steps in between."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-5d90850361e7-0.svg",
       "exercise-art/forge-5d90850361e7-1.svg"
     ],
     "equipment": "Тренажёр",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Тренажёр",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-265",
@@ -11386,30 +11450,34 @@
     "name": "Жим гири лёжа одной рукой",
     "group": "Грудь",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-385-1.svg",
+      "exercise-contours/original-v4/forge-ex-385-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "kettlebell"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "kettlebell",
+      "support": "supine-floor",
+      "grip": "as-drawn",
+      "description": "New pose, reference only for style. SINGLE ARM KETTLEBELL FLOOR PRESS, viewed from above head at a high 3/4 angle so both shoulders distinctly visible. Both figures face up on floor, bent knees, planted feet. The same anatomically right arm on viewer LEFT holds one round kettlebell with loop handle in BOTH phases. Left panel right elbow bent 90 degrees with upper arm on floor. Right panel same arm extended straight up with kettlebell over right shoulder. Anatomically left arm lies straight out on floor to viewer RIGHT in BOTH panels, empty hand clearly visible. Exactly two arms each, no bench."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-4345ae6c0260-0.svg",
       "exercise-art/forge-4345ae6c0260-1.svg"
     ],
     "equipment": "Гиря",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Гиря",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-386",
@@ -11450,30 +11518,34 @@
     "name": "Сведение гантелей перед грудью стоя",
     "group": "Грудь",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-387-1.svg",
+      "exercise-contours/original-v4/forge-ex-387-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbell"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "dumbbell",
+      "support": "standing",
+      "grip": "as-drawn",
+      "description": "Fix RIGHT pose only. Exactly TWO separate vertically oriented dumbbells, one in each hand, no third central disk. Arms reach forward so hands meet in front of chest at shoulder height. Elbows softly bent, not curled to chest. Keep left pose."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-d994ab49813a-0.svg",
       "exercise-art/forge-d994ab49813a-1.svg"
     ],
     "equipment": "Гантели",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Гантели",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-388",
@@ -11577,30 +11649,34 @@
     "name": "Отжимания с резинкой",
     "group": "Грудь",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-391-1.svg",
+      "exercise-contours/original-v4/forge-ex-391-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "band"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "band",
+      "support": "prone-floor",
+      "grip": "as-drawn",
+      "description": "Fix resistance band route: flat loop crosses upper BACK over shoulder blades, never front chest or neck. Draw rear three-quarter view so both phases show band across shoulder blades and sides descending continuously to hands pinned on floor. Preserve feet on toes and straight body, straight elbows left, bent elbows right."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-adc0f49ac2c6-0.svg",
       "exercise-art/forge-adc0f49ac2c6-1.svg"
     ],
     "equipment": "Резинка",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Резинка",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-392",
@@ -11665,30 +11741,34 @@
     "name": "Жим с эспандером стоя",
     "group": "Грудь",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-394-1.svg",
+      "exercise-contours/original-v4/forge-ex-394-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "band"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "band",
+      "support": "standing",
+      "grip": "as-drawn",
+      "description": "Fix band routing. Each of two independent elastic cords goes continuously from the rear wall eye to one hand. No connector BETWEEN the two hands. Show one taut line from each handle tracking back beside its respective arm toward rear wall anchor, far line partly occluded by body. Preserve split stance and press phases."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-a8995e725f85-0.svg",
       "exercise-art/forge-a8995e725f85-1.svg"
     ],
     "equipment": "Свой вес/другое",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Свой вес/другое",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-395",
@@ -13084,30 +13164,34 @@
     "name": "Отжимания на узких брусьях с резинкой",
     "group": "Трицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-440-1.svg",
+      "exercise-contours/original-v4/forge-ex-440-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "narrow parallel bars and closed loop resistance band"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "narrow parallel bars and closed loop resistance band",
+      "support": "hands on parallel bars, knees on band",
+      "grip": "neutral",
+      "description": "Narrow parallel-bar assisted triceps dip. One hand on each of two recognizable fixed shoulder-width parallel bars, with both bars visible, true front-side oblique angle. One taut closed-loop elastic assist band spans BETWEEN both bars and slings UNDER the bent knees, supporting knee weight in both phases. START top arms almost straight, vertical torso, knees bent and feet suspended. FINISH body visibly lower, elbows bend backward about 90 degrees beside upright torso, shoulders remain above bar height. Hands stay at same points, same frame and feet never touch floor. Show clear continuous band segments from both bar attachments to underside of knees."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-ebe42b1a2288-0.svg",
       "exercise-art/forge-ebe42b1a2288-1.svg"
     ],
     "equipment": "Резинка",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Резинка",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-441",
@@ -13201,30 +13285,33 @@
     "name": "Изометрическое разгибание локтя с резинкой",
     "group": "Трицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-444-1.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "resistance band with high anchor"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "static-single-frame",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "resistance band with high anchor",
+      "support": "standing",
+      "grip": "neutral single-hand",
+      "description": "One full-body side three-quarter figure only. Static single-arm triceps elbow extension hold against resistance band. One hand holds a clearly visible taut resistance band anchored to a small fixed ring on an upright post above head height in front of body. Upper arm vertical beside torso, elbow almost straight, working fist next to thigh, other arm relaxed and empty. Show complete taut straight band to high anchor and no movement arrows."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-7bade2b4bee1-0.svg",
       "exercise-art/forge-7bade2b4bee1-1.svg"
     ],
     "equipment": "Резинка",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Резинка",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-445",
@@ -13260,30 +13347,34 @@
     "name": "Присед с пятками на блинах",
     "group": "Квадрицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-446-1.svg",
+      "exercise-contours/original-v4/forge-ex-446-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "two small weight plates under heels"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "two small weight plates under heels",
+      "support": "standing toes and forefeet on floor, heels elevated on plates",
+      "grip": "empty hands held forward",
+      "description": "Bodyweight squat with heels elevated on TWO separate flat round weight plates placed flat on floor, one plate beneath each heel. Front three-quarter view enough side angle to see the plate thickness, BOTH heels on plates and BOTH forefeet down on floor outside the plates. Left: standing tall. Right: lower into a squat with hips and knees bent and arms forward for balance. Same fixed plates and foot position. Empty hands; no barbell, dumbbell, shoes with raised heels, platforms or wedge."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-ed6bda54526f-0.svg",
       "exercise-art/forge-ed6bda54526f-1.svg"
     ],
     "equipment": "Свой вес/другое",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Свой вес/другое",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-447",
@@ -13493,30 +13584,34 @@
     "name": "Подъём на тумбу с гирями",
     "group": "Квадрицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-454-1.svg",
+      "exercise-contours/original-v4/forge-ex-454-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "two kettlebells and a stable step box"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "two kettlebells and a stable step box",
+      "support": "working foot flat on a stable step box",
+      "grip": "one kettlebell in each hand at sides",
+      "description": "Kettlebell box step-up. Athlete faces a single stable knee-high step box and holds exactly two kettlebells, one hanging from its top handle in each hand at sides. Left: front working foot planted fully flat on top of box, its knee bent about 90 degrees; trailing foot on floor, hips low. Right: athlete stands tall on TOP of the same box after pushing through the working foot, trailing foot next to it on top, knees and hips extended. Box height and floor remain constant in both phases. Side three-quarter view, complete box and athlete visible. Both weights are bell-shaped with clear loop handles, no dumbbells."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-da775ce97ba3-0.svg",
       "exercise-art/forge-da775ce97ba3-1.svg"
     ],
     "equipment": "Гиря",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Гиря",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-455",
@@ -13552,60 +13647,68 @@
     "name": "Присед на одной ноге в Смите",
     "group": "Квадрицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-456-1.svg",
+      "exercise-contours/original-v4/forge-ex-456-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "Smith machine"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "Smith machine",
+      "support": "standing on one working foot",
+      "grip": "both hands grip guided bar behind shoulders",
+      "description": "Single-leg Smith machine squat, front three-quarter view. Show two fixed vertical rails and a single horizontal guided bar attached via sliders, resting across upper back on rear shoulders. Hands grip it at each side of shoulders. Both panels: exactly ONE working foot fixed flat on the floor beneath the bar; the other leg points diagonally forward with its foot CLEARLY HOVERING above floor throughout. Left: tall on working leg. Right: hips lowered, working knee bends while heel stays down, free leg stays in air forward, the same bar and sliders have moved down vertical rails. Not a lunge; do not place the free foot on any support."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-704e4abd6e4b-0.svg",
       "exercise-art/forge-704e4abd6e4b-1.svg"
     ],
     "equipment": "Тренажёр",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Тренажёр",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-457",
     "name": "Гакк-приседания одной ногой",
     "group": "Квадрицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-457-1.svg",
+      "exercise-contours/original-v4/forge-ex-457-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "hack squat sled machine"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "hack squat sled machine",
+      "support": "back and shoulders supported by angled sled pads",
+      "grip": "both hands on sled handles",
+      "description": "Single-leg hack squat, side three-quarter view, using a true inclined hack squat machine: broad stationary lower footplate on floor base, and movable back pad with shoulder yokes on 45 degree rails. Athlete is standing against the sled with shoulders under yokes and back contacting pad, face away from back pad. ONE working foot flat on stationary footplate. The other leg is bent and held off footplate, clearly no weight on that foot. Left: sled high, supporting leg nearly straight. Right: sled has moved diagonally down, supporting knee bent into squat and same foot still on the fixed plate. Both hands hold the yoke handles. Never show a leg press or free barbell."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-9a1e51edda09-0.svg",
       "exercise-art/forge-9a1e51edda09-1.svg"
     ],
     "equipment": "Свой вес/другое",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Свой вес/другое",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-458",
@@ -14000,60 +14103,68 @@
     "name": "Ягодичный мост с двумя гирями",
     "group": "Ягодицы",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-471-1.svg",
+      "exercise-contours/original-v4/forge-ex-471-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "two kettlebells"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "two kettlebells",
+      "support": "upper back on floor, feet on floor",
+      "grip": "one hand stabilizes each kettlebell",
+      "description": "Floor glute bridge holding TWO kettlebells securely on front of pelvis, three-quarter side view from low enough to see hips and both distinct kettlebell loops. Shoulders and head on same floor, both feet flat knees bent in both phases. One clearly shaped kettlebell resting on each side of front pelvis with hands stabilizing their separate loop handles. START buttocks down at floor, weights on pelvis. FINISH lift pelvis until shoulder–hip–knee line straight, both kettlebells travel with hips; both shoulders and feet stay on floor. No bench, no dumbbells, no barbell."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-5e59f19b599f-0.svg",
       "exercise-art/forge-5e59f19b599f-1.svg"
     ],
     "equipment": "Гиря",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Гиря",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-472",
     "name": "Ягодичный мост с ногами на скамье",
     "group": "Ягодицы",
     "type": "EXERCISE_TECHNIQUE_ART",
-    "frames": [],
-    "status": "not-ready",
-    "source": null,
-    "credit": "FORGE",
-    "missingReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
-    "replacedSourceReason": null,
-    "phaseStatus": "not-available",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-472-1.svg",
+      "exercise-contours/original-v4/forge-ex-472-2.svg"
+    ],
+    "status": "ready-style-needs-biomechanics-review",
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "flat bench"
+    },
+    "credit": "FORGE · original ImageGen contour",
+    "missingReason": "",
+    "replacedSourceReason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация.",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "flat bench",
+      "support": "shoulders on floor, both heels on bench",
+      "grip": "bodyweight",
+      "description": "Heels-elevated glute bridge, clear full side or side three-quarter view. Athlete lies on floor with head and shoulders on floor, BOTH heels clearly planted on top of a stable low flat exercise bench in front, knees bent, hands relaxed on floor. START pelvis on floor. FINISH pelvis raised so shoulders, hips and knees form an almost straight sloped line; same heels remain visibly planted on bench and shoulders on floor. Bench is under the FEET, never under back. Bodyweight only, no barbell or weights."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/forge-fbc2aba9f192-0.svg",
       "exercise-art/forge-fbc2aba9f192-1.svg"
     ],
     "equipment": "Свой вес/другое",
-    "requiredReplacement": {
-      "type": "EXERCISE_TECHNIQUE_ART",
-      "style": "Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill",
-      "equipment": "Свой вес/другое",
-      "poses": "Source and final phase appropriate to the exact name; static holds must not invent movement",
-      "size": "512x512 viewBox, complete equipment visible",
-      "rights": "Original project vector or traceable CC BY-SA 4.0 source",
-      "doNotUse": "Unrelated exercise, 3D anatomy, photographs or CSS inversion"
-    }
+    "requiredReplacement": null
   },
   {
     "id": "forge-ex-473",

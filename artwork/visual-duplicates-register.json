@@ -1,9 +1,9 @@
 {
-  "physicalImageCount": 1165,
-  "physicalImageBytes": 27765318,
-  "renderedExercisePhaseFiles": 590,
+  "physicalImageCount": 1222,
+  "physicalImageBytes": 33978923,
+  "renderedExercisePhaseFiles": 647,
   "renderedGroupMaps": 14,
-  "uniqueRenderedPairs": 297,
+  "uniqueRenderedPairs": 326,
   "expertVerified": false,
   "sameByteFiles": [
     {
@@ -6639,6 +6639,86 @@
       "sha256": "c7f7394a4a1d71fc0c3a5c0069e5a9e8591b2f995b8c36e6c155c6cd1851947e"
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-089-1.svg",
+      "bytes": 103214,
+      "sha256": "5fd8e91041fc9676e726490436c6e54e9c7046c9ecf8fdeff5631005bb683100"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-089-2.svg",
+      "bytes": 100623,
+      "sha256": "b8d0bd29facfb5d9bb313c54c34dbbbdbaf17e8e778ad142662f6f0dc88b55df"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-095-1.svg",
+      "bytes": 135985,
+      "sha256": "1cfffecddfcfb3ff4a888456f6a12d40f436b9259aeb749f9af3e07364826940"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-095-2.svg",
+      "bytes": 129211,
+      "sha256": "3284f8cecf6f8c1227670ec081d8537d86c32b42a8b11e2a9b0ae9a88d44176f"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-097-1.svg",
+      "bytes": 143409,
+      "sha256": "d793e144e44122bad2bc41d12de50c4731dba6b600052309da3dc4f4b93ba549"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-097-2.svg",
+      "bytes": 145403,
+      "sha256": "be2b1dd4760f6753d1c38cccc02c7cd93b520b5a9981b47f338f6059d825388c"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-098-1.svg",
+      "bytes": 131618,
+      "sha256": "9648abee9287859622d31f2bc8d53b7b7c2ead851216b91212a6ed98b1cd3efc"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-098-2.svg",
+      "bytes": 124865,
+      "sha256": "01f9c9dfd48f9a2bd4e3a632957a15afc71bc2fcdcb16bd01f8b4edfd561ec42"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-102-1.svg",
+      "bytes": 142776,
+      "sha256": "f281c61f93b6c303dcf00f9f23689befa9373cc5c1711edc7b56cdaa5be58c77"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-102-2.svg",
+      "bytes": 159362,
+      "sha256": "dd74245d6e659723251e9d62ee4109cae8d190ed1c02e550ec250db632a87774"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-105-1.svg",
+      "bytes": 141963,
+      "sha256": "7f173abd2aace3da111f40bbbc4ab08d6404b1470041e064f333e2acc1f5e900"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-105-2.svg",
+      "bytes": 140473,
+      "sha256": "267af6de24a42ecd764655388173c22e3f66599ab124066533c9f7398d19db2a"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-106-1.svg",
+      "bytes": 201275,
+      "sha256": "f5d380b2e6bb878de59c62cc7eb6037c8faf04691d761346f63c2210bda17e18"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-106-2.svg",
+      "bytes": 190154,
+      "sha256": "6c33f408f799a4b058c743acdf4e58712b2a9f34ec3ff1aa315b91e31ff6e351"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-110-1.svg",
+      "bytes": 117083,
+      "sha256": "8e9158baf2c3d795ec8c0fdb0d6df8b5b3dc4f5ac277607721638c23cb129f39"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-110-2.svg",
+      "bytes": 108799,
+      "sha256": "35b38eaa20c082bd6691d32c820a02e3648c3eaf251d2bd2a8e099753605af66"
+    },
+    {
       "file": "exercise-contours/original-v4/forge-ex-122-1.svg",
       "bytes": 135007,
       "sha256": "de73e8f46228e05d71ed5d189fdf0f65de4c3e9ceff0230a8fc67d43b1d830a1"
@@ -6819,6 +6899,96 @@
       "sha256": "5b08ecc8870fbd70e67734e640b6952eb5d3cf71e4a61371e9d8a2c52263c2c6"
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-191-1.svg",
+      "bytes": 89410,
+      "sha256": "a8caf2f32d3d23865eacb2fa89502bb5cbbdb28968bdd7d6d3d1cac202ed6c23"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-191-2.svg",
+      "bytes": 94704,
+      "sha256": "d6571dc21668972e724c92a7c5e336d565bfc72927105a8807f58a0cc60c3f1e"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-198-1.svg",
+      "bytes": 80731,
+      "sha256": "26d86cf591a0313fbd627d92817e4bdd27921e0d792e14bfeaed939d6226866c"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-198-2.svg",
+      "bytes": 83688,
+      "sha256": "f4171aa5c24de5b7799aeded2bff40bd5329c8235fb5b9d3ba362e42477268fc"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-208-1.svg",
+      "bytes": 134925,
+      "sha256": "3de89140f39227f6eb9cce2f869e1780897118ab7efab1b0b3e3e1f4163a8782"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-208-2.svg",
+      "bytes": 155402,
+      "sha256": "982855eddd2139400692d2f8d848337741790fb2feca8df8e8446928266f8bc0"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-209-1.svg",
+      "bytes": 139048,
+      "sha256": "e4b91b8f7f621ac5176bfbf7cbbd83b2d30ab03488a7d2eb72502556c2dacd0e"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-209-2.svg",
+      "bytes": 150969,
+      "sha256": "6c1e274c37ab910cd15656789f85640bb70e992cf878b10ae473a2584e24f912"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-210-1.svg",
+      "bytes": 59430,
+      "sha256": "5c074ddaf6a5a45ade34dd813e12dfabbdb74ff8f0cbfcdd55fbdc8fb4587feb"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-210-2.svg",
+      "bytes": 64723,
+      "sha256": "b5562a6c6882e3cb4e4b39062526d2e24ae91141612b5f789dad832e595ea585"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-212-1.svg",
+      "bytes": 110771,
+      "sha256": "a2c0fe63be0a8abb1b41b4b96c58fdb2531826ed598e59964b3922c98c463dee"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-212-2.svg",
+      "bytes": 110340,
+      "sha256": "e92d1a3cf3bdbb14875696c6dff6031ee68e113a65e5685d40c363b26ff32c81"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-252-1.svg",
+      "bytes": 113432,
+      "sha256": "7a4d66851fc28d2fcd84258b53baa254a7492d7bea934f2f2a065215edcd36f6"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-252-2.svg",
+      "bytes": 106999,
+      "sha256": "347de8bc1f9ad4e65fce9dca898116fe2d1df3adc8f0ba79bb77436d774ad9fa"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-257-1.svg",
+      "bytes": 69977,
+      "sha256": "40b6c6d900ba1a5fdde139868f6c036d2421573905ac755f13f13a63558fda93"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-257-2.svg",
+      "bytes": 79306,
+      "sha256": "482d41bcf3de007fc576a39267e6a42d84a74a6ab52644610da8eb7f3ab1d112"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-264-1.svg",
+      "bytes": 68050,
+      "sha256": "45366db698abbe7240a8ff4b91bde4d4030f32f61cd4b46da3d497f00f9fb8bc"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-264-2.svg",
+      "bytes": 51659,
+      "sha256": "7b653d6ca9a6fb0f4cd87435890cbd68474db611dec919f9a3ed4c7081bb3565"
+    },
+    {
       "file": "exercise-contours/original-v4/forge-ex-384-1.svg",
       "bytes": 100351,
       "sha256": "ed95f04079228be48ff05d33235aa4b05fefda3371326465b67bb2b72db4786b"
@@ -6829,6 +6999,16 @@
       "sha256": "51a09fc067c0e29f0465244c46994b62750bf36f87d39f0751befe4bb0416efc"
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-385-1.svg",
+      "bytes": 105736,
+      "sha256": "1cef221b3f0014fcb47aa686614894f44336ce681dd272d6b2a50806cfe12150"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-385-2.svg",
+      "bytes": 106301,
+      "sha256": "49c80bb77da9d68bfea7603c987d73083b1499c73968cc3f765343ecce9cb147"
+    },
+    {
       "file": "exercise-contours/original-v4/forge-ex-386-1.svg",
       "bytes": 86164,
       "sha256": "c8a83a4bfd415a8fbaefe9bc5cb5640def9a8e2f6ca7d7cc56dd016c63044c75"
@@ -6837,6 +7017,16 @@
       "file": "exercise-contours/original-v4/forge-ex-386-2.svg",
       "bytes": 94052,
       "sha256": "2b488aa24ff249ea7fb487eaacc1900e006a9067566ff2aec13352bdef1639d2"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-387-1.svg",
+      "bytes": 100707,
+      "sha256": "b7e8f48065a5c99a4cced12593054257d0b5856aac286034e05ebcf4a059db93"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-387-2.svg",
+      "bytes": 86387,
+      "sha256": "6af7cfee186ed326f2c5eb66719d62d4670302227d496cff88c16efa3dd463c6"
     },
     {
       "file": "exercise-contours/original-v4/forge-ex-388-1.svg",
@@ -6857,6 +7047,26 @@
       "file": "exercise-contours/original-v4/forge-ex-389-2.svg",
       "bytes": 94618,
       "sha256": "edae151f01abde7593fd1178c8d6ada6300c5b0dd1f002b18cec0483f9763b58"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-391-1.svg",
+      "bytes": 100516,
+      "sha256": "9c9e6a779f066c83bc978e4af7d59cfb0317baefd75e90cff4d4380e35c3fd1f"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-391-2.svg",
+      "bytes": 82216,
+      "sha256": "97995525352717f17ff655e6cfaf51fefd72be92257912d3bed17eef7b549d82"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-394-1.svg",
+      "bytes": 114540,
+      "sha256": "ac58d8fa421eef7c4b8756b4ad86db60e6038211a4b616cc0740e8fc3fc2ab3d"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-394-2.svg",
+      "bytes": 113193,
+      "sha256": "149adad1f67c65aabb93d692179456f41f6787c0d27880c0eab0801429f836fd"
     },
     {
       "file": "exercise-contours/original-v4/forge-ex-395-1.svg",
@@ -7002,6 +7212,81 @@
       "file": "exercise-contours/original-v4/forge-ex-435-1.svg",
       "bytes": 177131,
       "sha256": "bb74e9ed37299ea972123ea9d11ef560bd985bcefa99396d497c088cc7dff1fd"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-440-1.svg",
+      "bytes": 81875,
+      "sha256": "7f98971ccfc337e6d6bcfa860904501214f41c6816c767a087529e88f50a2063"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-440-2.svg",
+      "bytes": 80631,
+      "sha256": "efe18ecc1d3e4bf7fa25c57472716ad392f7e30bc780e5c3b6d09516298b52a2"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-444-1.svg",
+      "bytes": 106196,
+      "sha256": "250939b4aedd47906e32180661277cb6b090930302c1ffbd616504762d69e665"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-446-1.svg",
+      "bytes": 91719,
+      "sha256": "06f6e2311302f380a982415f99635817e80bf0b986dc51c994addc34da51ead8"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-446-2.svg",
+      "bytes": 86843,
+      "sha256": "89a5d98f5fd2f9b5705eb4b43f6ae8c0551298278c2b8bf95e83e18c3b935819"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-454-1.svg",
+      "bytes": 72805,
+      "sha256": "6d9fd6bb6c64c835c7ed82799f494724f44326d13a2ab0cf9dc8830e01c7d51b"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-454-2.svg",
+      "bytes": 68282,
+      "sha256": "4c6067cd644fa7dbbd103c84fc11fec876d9f0807f8b730b505fc130c9da5379"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-456-1.svg",
+      "bytes": 99306,
+      "sha256": "dfd34f40b7b6ba316a594c45a8a7409e0ce59bf464ac54185a2262d801f18b5f"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-456-2.svg",
+      "bytes": 99276,
+      "sha256": "949db36fa9f0a28e05ac1bd751c015e27cd9d0d394d766f7e439e4309f5fd41c"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-457-1.svg",
+      "bytes": 148896,
+      "sha256": "e8b1d96842c8bcfe3a7e2a0fc92af73574847f6eb9a05e0b73016cb0d70830e7"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-457-2.svg",
+      "bytes": 139175,
+      "sha256": "8c79897118afe14e5a558d0a4edc04151095c8f8372d14c6573e31eacf904441"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-471-1.svg",
+      "bytes": 96771,
+      "sha256": "db5f9ca6fdd34b52c68b13b446b6603435c567e52f8f45bdbbc20614249584c4"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-471-2.svg",
+      "bytes": 105601,
+      "sha256": "75a4f07c0a33dded0599c11bf73d5317926f4284414b1ac8ce2457aead5a67a0"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-472-1.svg",
+      "bytes": 68732,
+      "sha256": "194eeab0e005f0e195fd66304b431683efb4360aeebfc7668912d74f92fec7c4"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-472-2.svg",
+      "bytes": 78124,
+      "sha256": "259c35eb51d23c71d48242201d27de0b8420f9f330d048983c6e8361b9bdc087"
     }
   ]
 }
