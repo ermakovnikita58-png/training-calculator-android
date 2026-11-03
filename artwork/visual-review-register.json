@@ -3127,7 +3127,7 @@
   {
     "name": "Тяга нижнего блока широким хватом",
     "group": "Спина",
-    "family": "deadlift",
+    "family": "wideSeatedRow",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
@@ -7366,15 +7366,21 @@
     "family": "plank",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-483f26dc1890-0.svg",
       "exercise-art/forge-483f26dc1890-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-285-1.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -7590,15 +7596,22 @@
     "family": "legraise",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "captains-chair"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-b7bd3f49541e-0.svg",
       "exercise-art/forge-b7bd3f49541e-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-294-1.svg",
+      "exercise-contours/original-v4/forge-ex-294-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -7635,15 +7648,22 @@
     "family": "abwheel",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "ab-wheel"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-8aa284a7e0df-0.svg",
       "exercise-art/forge-8aa284a7e0df-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-296-1.svg",
+      "exercise-contours/original-v4/forge-ex-296-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -7753,19 +7773,22 @@
     "family": "pallof",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
     "source": {
-      "name": "Pallof Press",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/pallof-press/frame-1.svg",
-      "equipment": "Cable"
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "cable-d-handle"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/pallof-press-1.svg",
       "exercise-art/pallof-press-2.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-301-1.svg",
+      "exercise-contours/original-v4/forge-ex-301-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -7852,15 +7875,22 @@
     "family": "rotation",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "cable-d-handle"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-fe3a7b7f732d-0.svg",
       "exercise-art/forge-fe3a7b7f732d-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-305-1.svg",
+      "exercise-contours/original-v4/forge-ex-305-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -7920,19 +7950,21 @@
     "family": "legraise",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
     "source": {
-      "name": "L-Sit Hold",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/l-sit-hold/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/l-sit-hold-1.svg",
       "exercise-art/l-sit-hold-2.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-308-1.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -8019,15 +8051,22 @@
     "family": "legraise",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "swiss-ball"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-a061b04bac84-0.svg",
       "exercise-art/forge-a061b04bac84-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-312-1.svg",
+      "exercise-contours/original-v4/forge-ex-312-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -8147,19 +8186,22 @@
     "family": "deadlift",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
     "source": {
-      "name": "Rack Pull",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/rack-pull/frame-1.svg",
-      "equipment": "Barbell"
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "barbell and two rigid lifting blocks"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/rack-pull-1.svg",
       "exercise-art/rack-pull-2.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-317-1.svg",
+      "exercise-contours/original-v4/forge-ex-317-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -8169,15 +8211,22 @@
     "family": "deadlift",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "barbell and one flat deficit platform"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-655bba5913a0-0.svg",
       "exercise-art/forge-655bba5913a0-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-318-1.svg",
+      "exercise-contours/original-v4/forge-ex-318-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -8187,15 +8236,22 @@
     "family": "deadlift",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "one kettlebell"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-458ddb1a8565-0.svg",
       "exercise-art/forge-458ddb1a8565-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-319-1.svg",
+      "exercise-contours/original-v4/forge-ex-319-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -8205,15 +8261,22 @@
     "family": "backextension",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "45-degree Roman chair and one round weight plate"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-044db3c2cfba-0.svg",
       "exercise-art/forge-044db3c2cfba-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-320-1.svg",
+      "exercise-contours/original-v4/forge-ex-320-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -8277,15 +8340,22 @@
     "family": "goodmorning",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "barbell and flat bench"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-0d63a9eb3d85-0.svg",
       "exercise-art/forge-0d63a9eb3d85-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-323-1.svg",
+      "exercise-contours/original-v4/forge-ex-323-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -8400,15 +8470,22 @@
     "family": "deadlift",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "barbell"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-8ac087bea30f-0.svg",
       "exercise-art/forge-8ac087bea30f-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-328-1.svg",
+      "exercise-contours/original-v4/forge-ex-328-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -10203,7 +10280,7 @@
   {
     "name": "Тяга вертикального блока за голову",
     "group": "Спина",
-    "family": "pulldown",
+    "family": "behindHeadPulldown",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
@@ -10303,7 +10380,7 @@
   {
     "name": "Тяга широким хватом в Смите",
     "group": "Спина",
-    "family": "deadlift",
+    "family": "wideSmithRow",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
@@ -12501,15 +12578,21 @@
     "family": "plank",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "swiss-ball"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-eca1791a5f91-0.svg",
       "exercise-art/forge-eca1791a5f91-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-494-1.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -12519,15 +12602,21 @@
     "family": "plank",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "weight-plate"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-a2ea1e5fbabd-0.svg",
       "exercise-art/forge-a2ea1e5fbabd-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-495-1.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -12537,19 +12626,22 @@
     "family": "crunch",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
     "source": {
-      "name": "Weighted Crunch",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/weighted-crunch/frame-1.svg",
-      "equipment": "Plate"
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbell"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/weighted-crunch-1.svg",
       "exercise-art/weighted-crunch-2.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-496-1.svg",
+      "exercise-contours/original-v4/forge-ex-496-2.svg"
+    ],
     "sharedWith": [],
     "correction": "Источник weighted-crunch использует Plate. Гантель вместо диска не подтверждена точной иллюстрацией."
   },
@@ -12559,15 +12651,22 @@
     "family": "crunch",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "seated-ab-crunch-machine"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-b9b98095e291-0.svg",
       "exercise-art/forge-b9b98095e291-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-497-1.svg",
+      "exercise-contours/original-v4/forge-ex-497-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -12577,15 +12676,22 @@
     "family": "legraise",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "flat-bench"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-5cc57c53c070-0.svg",
       "exercise-art/forge-5cc57c53c070-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-498-1.svg",
+      "exercise-contours/original-v4/forge-ex-498-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -12670,15 +12776,21 @@
     "family": "legraise",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "pull-up-bar"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-c7e9a50f75a4-0.svg",
       "exercise-art/forge-c7e9a50f75a4-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-502-1.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -12688,15 +12800,22 @@
     "family": "pallof",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "resistance-band"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-dcc9059d1b5d-0.svg",
       "exercise-art/forge-dcc9059d1b5d-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-503-1.svg",
+      "exercise-contours/original-v4/forge-ex-503-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -12706,15 +12825,22 @@
     "family": "pallof",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "resistance-band"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-b2f29ebc34f9-0.svg",
       "exercise-art/forge-b2f29ebc34f9-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-504-1.svg",
+      "exercise-contours/original-v4/forge-ex-504-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -12724,15 +12850,22 @@
     "family": "rotation",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "cable-rope"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-6424d746dbcf-0.svg",
       "exercise-art/forge-6424d746dbcf-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-505-1.svg",
+      "exercise-contours/original-v4/forge-ex-505-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -12742,19 +12875,22 @@
     "family": "rotation",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
     "source": {
-      "name": "Weighted Russian Twist",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/weighted-russian-twist/frame-1.svg",
-      "equipment": "Dumbbell"
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "weight-plate"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/weighted-russian-twist-1.svg",
       "exercise-art/weighted-russian-twist-2.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-506-1.svg",
+      "exercise-contours/original-v4/forge-ex-506-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -12791,15 +12927,22 @@
     "family": "deadlift",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "barbell"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-994e718d7942-0.svg",
       "exercise-art/forge-994e718d7942-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-508-1.svg",
+      "exercise-contours/original-v4/forge-ex-508-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -12809,15 +12952,22 @@
     "family": "deadlift",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "barbell with paired hanging steel chains"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-45975862ff07-0.svg",
       "exercise-art/forge-45975862ff07-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-509-1.svg",
+      "exercise-contours/original-v4/forge-ex-509-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -12827,15 +12977,22 @@
     "family": "deadlift",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "barbell and a long resistance band"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-62b5474b8a47-0.svg",
       "exercise-art/forge-62b5474b8a47-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-510-1.svg",
+      "exercise-contours/original-v4/forge-ex-510-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -12845,15 +13002,22 @@
     "family": "deadlift",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "one kettlebell"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-84923709e328-0.svg",
       "exercise-art/forge-84923709e328-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-511-1.svg",
+      "exercise-contours/original-v4/forge-ex-511-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -12863,15 +13027,21 @@
     "family": "deadlift",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-5e8b6b1a5106-0.svg",
       "exercise-art/forge-5e8b6b1a5106-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-512-1.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -12909,15 +13079,22 @@
     "family": "goodmorning",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "two dumbbells"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-45b88620b320-0.svg",
       "exercise-art/forge-45b88620b320-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-514-1.svg",
+      "exercise-contours/original-v4/forge-ex-514-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -12927,15 +13104,22 @@
     "family": "backextension",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
+    "imageStatus": "contour-reference",
     "phaseStatus": "two-source-frames",
-    "source": null,
+    "source": {
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "45-degree Roman chair and one dumbbell"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-67a3d08e6147-0.svg",
       "exercise-art/forge-67a3d08e6147-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-515-1.svg",
+      "exercise-contours/original-v4/forge-ex-515-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },

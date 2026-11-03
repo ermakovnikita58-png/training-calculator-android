@@ -77,7 +77,27 @@ derive('clamshell','abduction',{setup:'Лягте на бок, согните н
 derive('lateralwalk','abduction',{setup:'Установите резинку и примите устойчивую небольшую разножку/полуприсед.',movement:'Делайте контролируемые шаги в сторону, сохраняя натяжение и положение таза.'});
 derive('swing','rdl',{setup:'Установите гирю перед собой и подготовьте устойчивый наклон в тазобедренных суставах.',movement:'Создайте мах разгибанием бёдер и направьте гирю обратно между ног, сохраняя контроль корпуса.',alignment:'Не поднимайте гирю одним плечевым усилием и не запрокидывайте поясницу.',cues:['Баллистический вариант требует очного освоения; не переносите на него темп обычной румынской тяги.']});
 derive('isometricChest','fly',{setup:'Соедините ладони перед грудью, корпус удерживайте устойчиво.',movement:'Создайте контролируемое давление ладонями друг на друга без перемещения рук.',finish:'Плавно уменьшите давление и опустите руки.',alignment:'Не поднимайте плечи к ушам и продолжайте дышать.'});
+derive('wideSeatedRow','row',{
+ setup:'Сядьте перед нижним блоком, поставьте стопы на упоры и возьмите широкую рукоять прямым хватом.',
+ movement:'Потяните рукоять к нижней части груди и верните её под контролем.',
+ alignment:'Удерживайте корпус устойчивым и ведите локти в стороны без раскачивания.'
+});
+derive('wideSmithRow','row',{
+ setup:'Выставьте ограничители тренажёра Смита, возьмите гриф широким хватом и наклонитесь в тазобедренных суставах.',
+ movement:'Подтяните гриф к корпусу по направляющим и плавно опустите.',
+ alignment:'Сохраняйте выбранный угол корпуса и устойчивое положение стоп.',
+ finish:'Верните гриф на фиксаторы тренажёра перед тем, как выпрямиться.'
+});
+derive('behindHeadPulldown','pulldown',{
+ setup:'Сядьте под верхним блоком, зафиксируйте бёдра упорами и возьмите длинную рукоять широким хватом.',
+ movement:'Плавно опустите рукоять за голову в комфортной амплитуде, затем верните её вверх под контролем.',
+ alignment:'Сохраняйте нейтральное положение шеи. Выберите тягу перед собой, если движение за голову вызывает дискомфорт.',
+ cues:['Подберите лёгкую нагрузку и амплитуду, в которой плечи двигаются свободно.']
+});
 function classify(name,group){const n=name.toLowerCase().replaceAll('ё','е');
+ if(n==='тяга нижнего блока широким хватом')return 'wideSeatedRow';
+ if(n==='тяга широким хватом в смите')return 'wideSmithRow';
+ if(n==='тяга вертикального блока за голову')return 'behindHeadPulldown';
  if(/сведение ладон/.test(n))return 'isometricChest';if(/вращение плеча|ротация плеча/.test(n))return 'rotator';if(/пистолет/.test(n))return 'squat';if(/махи гир/.test(n))return 'swing';if(/ракушка/.test(n))return 'clamshell';if(/боковые шаги/.test(n))return 'lateralwalk';if(/прыжки/.test(n)&&group!=='Кардио')return 'jump';if(/вис на|удержание штанги/.test(n))return 'grip';if(/удержание спины/.test(n))return 'backextension';if(/велосипед для пресса/.test(n))return 'rotation';if(/подъем корпуса на наклонной/.test(n))return 'crunch';if(group==='Бицепс'&&/подъем|сгибани/.test(n))return 'curl';
  if(/берпи/.test(n))return 'burpee';if(/альпинист/.test(n))return 'climber';if(/мертвый жук/.test(n))return 'deadbug';if(/холлоу/.test(n))return 'hollow';if(/обратные скручив/.test(n))return 'reverseCrunch';if(/вакуум/.test(n))return null;
  if(group==='Кардио'){if(/греб/.test(n))return 'rowing';if(/плаван/.test(n))return 'swim';if(/эллип/.test(n))return 'elliptical';if(/лыж/.test(n))return 'ski';if(/бокс/.test(n))return 'boxing';if(/канат/.test(n))return 'ropes';if(/велосип|велотренаж/.test(n))return 'cycle';if(/скакал/.test(n))return 'ropejump';if(/ходьб|прогулк/.test(n))return 'walk';if(/степ|лестни|платформ/.test(n))return 'step';if(/прыж/.test(n))return 'jump';if(/бег|спринт/.test(n))return 'run';return null;}
