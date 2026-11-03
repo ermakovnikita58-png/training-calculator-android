@@ -10,8 +10,8 @@
     "group": "Спина",
     "file": "exercises-1.png",
     "entries": 63,
-    "contour": 52,
-    "notReady": 11
+    "contour": 61,
+    "notReady": 2
   },
   {
     "group": "Плечи",
@@ -45,22 +45,22 @@
     "group": "Бицепс бедра",
     "file": "exercises-6.png",
     "entries": 30,
-    "contour": 14,
-    "notReady": 16
+    "contour": 24,
+    "notReady": 6
   },
   {
     "group": "Ягодицы",
     "file": "exercises-7.png",
     "entries": 37,
-    "contour": 31,
-    "notReady": 6
+    "contour": 37,
+    "notReady": 0
   },
   {
     "group": "Икры",
     "file": "exercises-8.png",
     "entries": 25,
-    "contour": 14,
-    "notReady": 11
+    "contour": 18,
+    "notReady": 7
   },
   {
     "group": "Пресс",
