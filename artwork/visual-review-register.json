@@ -6,11 +6,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Bench Press",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/bench-press/frame-1.svg",
-      "equipment": "Barbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "barbell"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -18,12 +18,10 @@
       "exercise-art/bench-press-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/bench-press-1.svg",
-      "exercise-art/bench-press-2.svg"
+      "exercise-contours/original-v4/forge-ex-001-1.svg",
+      "exercise-contours/original-v4/forge-ex-001-2.svg"
     ],
-    "sharedWith": [
-      "Жим штанги лёжа с паузой"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -33,11 +31,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Dumbbell Bench Press",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/dumbbell-bench-press/frame-1.svg",
-      "equipment": "Dumbbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbells"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -45,8 +43,8 @@
       "exercise-art/dumbbell-bench-press-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/dumbbell-bench-press-1.svg",
-      "exercise-art/dumbbell-bench-press-2.svg"
+      "exercise-contours/original-v4/forge-ex-002-1.svg",
+      "exercise-contours/original-v4/forge-ex-002-2.svg"
     ],
     "sharedWith": [],
     "correction": null
@@ -768,10 +766,7 @@
       "exercise-art/skull-crusher-1.svg",
       "exercise-art/skull-crusher-2.svg"
     ],
-    "sharedWith": [
-      "Французский жим лёжа со штангой",
-      "Французский жим лёжа с EZ-штангой"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -1324,7 +1319,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -1549,9 +1544,7 @@
       "exercise-art/bench-press-1.svg",
       "exercise-art/bench-press-2.svg"
     ],
-    "sharedWith": [
-      "Жим штанги лёжа"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -1586,7 +1579,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -1636,7 +1629,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -1661,7 +1654,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -1686,11 +1679,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Dumbbell Fly",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/dumbbell-fly/frame-1.svg",
-      "equipment": "Dumbbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbells"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -1698,8 +1691,8 @@
       "exercise-art/dumbbell-fly-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/dumbbell-fly-1.svg",
-      "exercise-art/dumbbell-fly-2.svg"
+      "exercise-contours/original-v4/forge-ex-064-1.svg",
+      "exercise-contours/original-v4/forge-ex-064-2.svg"
     ],
     "sharedWith": [],
     "correction": null
@@ -1789,7 +1782,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -2103,7 +2096,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -2128,7 +2121,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -2153,7 +2146,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -2330,7 +2323,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -2486,7 +2479,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -2538,7 +2531,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -2563,7 +2556,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -2663,7 +2656,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -2742,7 +2735,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -2767,7 +2760,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -2873,7 +2866,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -3138,7 +3131,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -3188,7 +3181,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -3213,7 +3206,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -3238,7 +3231,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -3263,7 +3256,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -3288,7 +3281,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -3313,7 +3306,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -3363,7 +3356,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -3415,7 +3408,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -3436,15 +3429,15 @@
   {
     "name": "Разведение гантелей в стороны лёжа",
     "group": "Плечи",
-    "family": "lateral",
+    "family": "proneDumbbellRaise",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Lying One Arm Rear Lateral Raise",
-      "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0037-relaxation.svg",
-      "equipment": "dumbbell, flat bench"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbells"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -3452,12 +3445,10 @@
       "exercise-art/ek-0037-tension.svg"
     ],
     "renderFrames": [
-      "exercise-contours/ek-0037-relaxation.svg",
-      "exercise-contours/ek-0037-tension.svg"
+      "exercise-contours/original-v4/forge-ex-132-1.svg",
+      "exercise-contours/original-v4/forge-ex-132-2.svg"
     ],
-    "sharedWith": [
-      "Отведение руки в сторону лёжа на боку"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -3467,7 +3458,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -3492,7 +3483,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -3517,7 +3508,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -3567,7 +3558,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -3767,7 +3758,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -3792,7 +3783,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -3817,7 +3808,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -3842,7 +3833,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -4080,7 +4071,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -4434,7 +4425,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -4487,11 +4478,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Skull Crusher",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/skull-crusher/frame-1.svg",
-      "equipment": "Barbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "barbell"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -4499,13 +4490,10 @@
       "exercise-art/skull-crusher-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/skull-crusher-1.svg",
-      "exercise-art/skull-crusher-2.svg"
+      "exercise-contours/original-v4/forge-ex-173-1.svg",
+      "exercise-contours/original-v4/forge-ex-173-2.svg"
     ],
-    "sharedWith": [
-      "Французский жим",
-      "Французский жим лёжа с EZ-штангой"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -4515,11 +4503,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Skull Crusher",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/skull-crusher/frame-1.svg",
-      "equipment": "Barbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "barbell-ez"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -4527,13 +4515,10 @@
       "exercise-art/skull-crusher-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/skull-crusher-1.svg",
-      "exercise-art/skull-crusher-2.svg"
+      "exercise-contours/original-v4/forge-ex-174-1.svg",
+      "exercise-contours/original-v4/forge-ex-174-2.svg"
     ],
-    "sharedWith": [
-      "Французский жим",
-      "Французский жим лёжа со штангой"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -4909,15 +4894,15 @@
   {
     "name": "Отжимания от скамьи сзади",
     "group": "Трицепс",
-    "family": "dip",
+    "family": "benchDip",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Bench Dip",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/bench-dip/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "one flat exercise bench"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -4925,12 +4910,10 @@
       "exercise-art/bench-dip-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/bench-dip-1.svg",
-      "exercise-art/bench-dip-2.svg"
+      "exercise-contours/original-v4/forge-ex-189-1.svg",
+      "exercise-contours/original-v4/forge-ex-189-2.svg"
     ],
-    "sharedWith": [
-      "Отжимания между скамьями"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -4965,7 +4948,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -5147,7 +5130,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -5397,7 +5380,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -5422,7 +5405,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -5447,7 +5430,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -5500,7 +5483,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -5991,7 +5974,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -6016,7 +5999,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -6143,7 +6126,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -6168,7 +6151,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -6220,7 +6203,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -6245,7 +6228,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -6270,7 +6253,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -6322,7 +6305,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -6347,7 +6330,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -6527,7 +6510,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -6654,7 +6637,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -6833,7 +6816,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -7038,7 +7021,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -7118,7 +7101,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -7193,7 +7176,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -7218,7 +7201,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -7300,7 +7283,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Push Up: Body Weight, selected straight-arm hold position",
       "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0077-tension.svg",
@@ -7374,7 +7357,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -7604,7 +7587,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -7656,7 +7639,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -7781,7 +7764,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -7883,7 +7866,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -7958,7 +7941,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -8059,7 +8042,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -8194,7 +8177,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -8219,7 +8202,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -8244,7 +8227,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -8269,7 +8252,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -8348,7 +8331,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -8478,7 +8461,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -8528,7 +8511,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -8553,7 +8536,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -8603,7 +8586,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -8653,7 +8636,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -8677,7 +8660,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -8701,7 +8684,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -8725,15 +8708,22 @@
     "family": "carry",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
-    "phaseStatus": "two-source-frames",
-    "source": null,
+    "imageStatus": "contour-reference",
+    "phaseStatus": "two-authored-phases",
+    "source": {
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "kettlebell"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-70ad95f971da-0.svg",
       "exercise-art/forge-70ad95f971da-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-338-1.svg",
+      "exercise-contours/original-v4/forge-ex-338-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -8743,15 +8733,21 @@
     "family": "grip",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
-    "phaseStatus": "two-source-frames",
-    "source": null,
+    "imageStatus": "contour-reference",
+    "phaseStatus": "static-single-frame",
+    "source": {
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "barbell"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-67f21582b313-0.svg",
       "exercise-art/forge-67f21582b313-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-339-1.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -8761,15 +8757,22 @@
     "family": "grip",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
-    "phaseStatus": "two-source-frames",
-    "source": null,
+    "imageStatus": "contour-reference",
+    "phaseStatus": "two-authored-phases",
+    "source": {
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "band"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-d3c62cbddd06-0.svg",
       "exercise-art/forge-d3c62cbddd06-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-340-1.svg",
+      "exercise-contours/original-v4/forge-ex-340-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -8779,15 +8782,22 @@
     "family": "wrist",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
-    "phaseStatus": "two-source-frames",
-    "source": null,
+    "imageStatus": "contour-reference",
+    "phaseStatus": "two-authored-phases",
+    "source": {
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "hand-gripper"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-cec6944e067b-0.svg",
       "exercise-art/forge-cec6944e067b-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-341-1.svg",
+      "exercise-contours/original-v4/forge-ex-341-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -8797,15 +8807,22 @@
     "family": "wrist",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
-    "phaseStatus": "two-source-frames",
-    "source": null,
+    "imageStatus": "contour-reference",
+    "phaseStatus": "two-authored-phases",
+    "source": {
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbell"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-f871323ac6c9-0.svg",
       "exercise-art/forge-f871323ac6c9-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-342-1.svg",
+      "exercise-contours/original-v4/forge-ex-342-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -8816,7 +8833,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -8841,7 +8858,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -8866,7 +8883,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -8947,7 +8964,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9053,7 +9070,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9078,7 +9095,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9103,7 +9120,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9128,7 +9145,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9152,15 +9169,22 @@
     "family": "walk",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
-    "phaseStatus": "two-source-frames",
-    "source": null,
+    "imageStatus": "contour-reference",
+    "phaseStatus": "two-authored-phases",
+    "source": {
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "two Nordic walking poles"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-f767a9bd0bbf-0.svg",
       "exercise-art/forge-f767a9bd0bbf-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-356-1.svg",
+      "exercise-contours/original-v4/forge-ex-356-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -9253,7 +9277,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9303,7 +9327,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9328,7 +9352,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9353,11 +9377,11 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
-      "name": "Doorway Chest Stretch",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/doorway-chest-stretch/frame-1.svg",
-      "equipment": "Doorway"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "solid wall"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -9365,12 +9389,9 @@
       "exercise-art/doorway-chest-stretch-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/doorway-chest-stretch-1.svg",
-      "exercise-art/doorway-chest-stretch-2.svg"
+      "exercise-contours/original-v4/forge-ex-364-1.svg"
     ],
-    "sharedWith": [
-      "Растяжка грудных в дверном проёме"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -9380,7 +9401,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9454,7 +9475,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9505,7 +9526,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9530,7 +9551,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9554,7 +9575,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9629,7 +9650,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9653,7 +9674,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9730,7 +9751,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9807,7 +9828,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9832,7 +9853,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9857,7 +9878,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9882,7 +9903,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9907,7 +9928,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9932,7 +9953,7 @@
     "contentStatus": "needs-authoring",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9957,7 +9978,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -9982,7 +10003,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10035,7 +10056,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10113,7 +10134,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10138,7 +10159,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10216,7 +10237,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10266,7 +10287,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10291,7 +10312,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10370,7 +10391,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10395,7 +10416,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10420,7 +10441,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10445,7 +10466,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10470,7 +10491,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10495,7 +10516,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10520,7 +10541,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10622,7 +10643,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10647,7 +10668,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10672,7 +10693,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10697,7 +10718,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10722,7 +10743,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10743,15 +10764,15 @@
   {
     "name": "Отведение руки в сторону лёжа на боку",
     "group": "Плечи",
-    "family": "abduction",
+    "family": "sideLyingArmRaise",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Lying One Arm Rear Lateral Raise",
-      "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0037-relaxation.svg",
-      "equipment": "dumbbell, flat bench"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbell"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -10759,12 +10780,10 @@
       "exercise-art/ek-0037-tension.svg"
     ],
     "renderFrames": [
-      "exercise-contours/ek-0037-relaxation.svg",
-      "exercise-contours/ek-0037-tension.svg"
+      "exercise-contours/original-v4/forge-ex-419-1.svg",
+      "exercise-contours/original-v4/forge-ex-419-2.svg"
     ],
-    "sharedWith": [
-      "Разведение гантелей в стороны лёжа"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -10799,7 +10818,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10851,7 +10870,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10876,7 +10895,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10901,7 +10920,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -10983,7 +11002,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -11033,7 +11052,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -11085,7 +11104,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -11135,7 +11154,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -11160,7 +11179,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -11288,7 +11307,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -11309,15 +11328,15 @@
   {
     "name": "Отжимания между скамьями",
     "group": "Трицепс",
-    "family": "dip",
+    "family": "benchDip",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Bench Dip",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/bench-dip/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "two flat exercise benches"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -11325,12 +11344,10 @@
       "exercise-art/bench-dip-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/bench-dip-1.svg",
-      "exercise-art/bench-dip-2.svg"
+      "exercise-contours/original-v4/forge-ex-441-1.svg",
+      "exercise-contours/original-v4/forge-ex-441-2.svg"
     ],
-    "sharedWith": [
-      "Отжимания от скамьи сзади"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -11390,7 +11407,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -11439,7 +11456,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -11644,7 +11661,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -11694,7 +11711,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -11719,7 +11736,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -11799,7 +11816,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -11901,7 +11918,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -11926,7 +11943,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -11951,7 +11968,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -11976,7 +11993,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12001,7 +12018,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12025,7 +12042,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12074,7 +12091,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12099,7 +12116,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12124,7 +12141,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12149,7 +12166,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12174,7 +12191,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12249,7 +12266,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12274,7 +12291,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12299,7 +12316,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12435,7 +12452,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12490,7 +12507,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12515,7 +12532,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12540,7 +12557,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12565,7 +12582,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12590,7 +12607,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12615,7 +12632,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12665,7 +12682,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12689,7 +12706,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12713,7 +12730,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12738,7 +12755,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12763,7 +12780,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12863,7 +12880,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12887,7 +12904,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12912,7 +12929,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12937,7 +12954,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -12962,7 +12979,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -13014,7 +13031,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -13039,7 +13056,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -13064,7 +13081,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -13089,7 +13106,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -13114,7 +13131,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -13166,7 +13183,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -13191,7 +13208,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -13216,7 +13233,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Bridging, selected elevated-hips hold position",
       "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0109-tension.svg",
@@ -13266,15 +13283,22 @@
     "family": "carry",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
-    "phaseStatus": "two-source-frames",
-    "source": null,
+    "imageStatus": "contour-reference",
+    "phaseStatus": "two-authored-phases",
+    "source": {
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "trap-bar"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-e12ddd2ea3cd-0.svg",
       "exercise-art/forge-e12ddd2ea3cd-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-518-1.svg",
+      "exercise-contours/original-v4/forge-ex-518-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -13284,15 +13308,21 @@
     "family": "carry",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
-    "phaseStatus": "two-source-frames",
-    "source": null,
+    "imageStatus": "contour-reference",
+    "phaseStatus": "static-single-frame",
+    "source": {
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "kettlebell"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-d0dc96f19ede-0.svg",
       "exercise-art/forge-d0dc96f19ede-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-519-1.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -13302,15 +13332,21 @@
     "family": "grip",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
-    "phaseStatus": "two-source-frames",
-    "source": null,
+    "imageStatus": "contour-reference",
+    "phaseStatus": "static-single-frame",
+    "source": {
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "pullup-bar"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-510123737121-0.svg",
       "exercise-art/forge-510123737121-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-520-1.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -13320,15 +13356,21 @@
     "family": "overhead",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
-    "phaseStatus": "two-source-frames",
-    "source": null,
+    "imageStatus": "contour-reference",
+    "phaseStatus": "static-single-frame",
+    "source": {
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "hand-gripper"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-de6548e024cf-0.svg",
       "exercise-art/forge-de6548e024cf-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-521-1.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -13338,15 +13380,22 @@
     "family": "grip",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
-    "phaseStatus": "two-source-frames",
-    "source": null,
+    "imageStatus": "contour-reference",
+    "phaseStatus": "two-authored-phases",
+    "source": {
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "band"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-45622b3dfdf6-0.svg",
       "exercise-art/forge-45622b3dfdf6-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-522-1.svg",
+      "exercise-contours/original-v4/forge-ex-522-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -13356,15 +13405,22 @@
     "family": "grip",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
-    "phaseStatus": "two-source-frames",
-    "source": null,
+    "imageStatus": "contour-reference",
+    "phaseStatus": "two-authored-phases",
+    "source": {
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbell"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-5575ad4a0269-0.svg",
       "exercise-art/forge-5575ad4a0269-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-523-1.svg",
+      "exercise-contours/original-v4/forge-ex-523-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -13374,15 +13430,22 @@
     "family": "forearmrotation",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
-    "phaseStatus": "two-source-frames",
-    "source": null,
+    "imageStatus": "contour-reference",
+    "phaseStatus": "two-authored-phases",
+    "source": {
+      "name": "FORGE · original hand-drawn SVG, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "claw hammer"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-897fe90e1f8b-0.svg",
       "exercise-art/forge-897fe90e1f8b-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-524-1.svg",
+      "exercise-contours/original-v4/forge-ex-524-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -13392,15 +13455,22 @@
     "family": "forearmrotation",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
-    "phaseStatus": "two-source-frames",
-    "source": null,
+    "imageStatus": "contour-reference",
+    "phaseStatus": "two-authored-phases",
+    "source": {
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "band"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-12acd24b9c58-0.svg",
       "exercise-art/forge-12acd24b9c58-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-525-1.svg",
+      "exercise-contours/original-v4/forge-ex-525-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -13410,15 +13480,22 @@
     "family": "forearmrotation",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
-    "imageStatus": "missing-outline",
-    "phaseStatus": "two-source-frames",
-    "source": null,
+    "imageStatus": "contour-reference",
+    "phaseStatus": "two-authored-phases",
+    "source": {
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "band"
+    },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
       "exercise-art/forge-0682094878cd-0.svg",
       "exercise-art/forge-0682094878cd-1.svg"
     ],
-    "renderFrames": [],
+    "renderFrames": [
+      "exercise-contours/original-v4/forge-ex-526-1.svg",
+      "exercise-contours/original-v4/forge-ex-526-2.svg"
+    ],
     "sharedWith": [],
     "correction": null
   },
@@ -13429,7 +13506,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -13507,7 +13584,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -13532,7 +13609,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -13607,7 +13684,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -13632,7 +13709,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -13789,7 +13866,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -13814,7 +13891,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -13839,7 +13916,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -13864,7 +13941,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -13889,7 +13966,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -13914,11 +13991,11 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
-      "name": "Doorway Chest Stretch",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/doorway-chest-stretch/frame-1.svg",
-      "equipment": "Doorway"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "doorway"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -13926,12 +14003,9 @@
       "exercise-art/doorway-chest-stretch-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/doorway-chest-stretch-1.svg",
-      "exercise-art/doorway-chest-stretch-2.svg"
+      "exercise-contours/original-v4/forge-ex-546-1.svg"
     ],
-    "sharedWith": [
-      "Растяжка грудных мышц у стены"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -13968,7 +14042,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -14020,7 +14094,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -14045,7 +14119,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -14070,7 +14144,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -14094,7 +14168,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -14118,7 +14192,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -14143,7 +14217,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
@@ -14168,7 +14242,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
       "name": "Original FORGE ImageGen contour, vector traced",
       "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",

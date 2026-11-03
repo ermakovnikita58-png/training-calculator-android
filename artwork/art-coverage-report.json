@@ -1,107 +1,16 @@
 {
   "metrics": {
     "TOTAL_EXERCISES": 556,
-    "EXERCISES_WITH_ASSIGNED_ART": 541,
-    "EXERCISES_WITH_VERIFIED_FILE": 541,
-    "EXERCISES_WITH_STYLE_APPROVED": 541,
+    "EXERCISES_WITH_ASSIGNED_ART": 556,
+    "EXERCISES_WITH_VERIFIED_FILE": 556,
+    "EXERCISES_WITH_STYLE_APPROVED": 556,
     "EXERCISES_REQUIRING_EXPERT_REVIEW": 556,
-    "MISSING_ART": 15,
+    "MISSING_ART": 0,
     "WRONG_EQUIPMENT": 0,
     "WRONG_POSE": 0,
     "BROKEN_IMAGES": 0
   },
-  "missing": [
-    {
-      "id": "forge-ex-338",
-      "name": "Прогулка фермера с гирями",
-      "group": "Предплечья",
-      "reason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация."
-    },
-    {
-      "id": "forge-ex-339",
-      "name": "Удержание штанги в руках",
-      "group": "Предплечья",
-      "reason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация."
-    },
-    {
-      "id": "forge-ex-340",
-      "name": "Разгибание пальцев с резинкой",
-      "group": "Предплечья",
-      "reason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация."
-    },
-    {
-      "id": "forge-ex-341",
-      "name": "Сжатие кистевого эспандера",
-      "group": "Предплечья",
-      "reason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация."
-    },
-    {
-      "id": "forge-ex-342",
-      "name": "Кистевое вращение с гантелью",
-      "group": "Предплечья",
-      "reason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация."
-    },
-    {
-      "id": "forge-ex-356",
-      "name": "Скандинавская ходьба",
-      "group": "Кардио",
-      "reason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация."
-    },
-    {
-      "id": "forge-ex-518",
-      "name": "Прогулка фермера с трэп-грифом",
-      "group": "Предплечья",
-      "reason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация."
-    },
-    {
-      "id": "forge-ex-519",
-      "name": "Удержание тяжёлой гири",
-      "group": "Предплечья",
-      "reason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация."
-    },
-    {
-      "id": "forge-ex-520",
-      "name": "Удержание пальцами на турнике",
-      "group": "Предплечья",
-      "reason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация."
-    },
-    {
-      "id": "forge-ex-521",
-      "name": "Сжимание эспандера на время",
-      "group": "Предплечья",
-      "reason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация."
-    },
-    {
-      "id": "forge-ex-522",
-      "name": "Разведение пальцев с резинкой",
-      "group": "Предплечья",
-      "reason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация."
-    },
-    {
-      "id": "forge-ex-523",
-      "name": "Подъём гантели за край рукояти",
-      "group": "Предплечья",
-      "reason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация."
-    },
-    {
-      "id": "forge-ex-524",
-      "name": "Вращение кисти с молотком",
-      "group": "Предплечья",
-      "reason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация."
-    },
-    {
-      "id": "forge-ex-525",
-      "name": "Пронация кисти с резинкой",
-      "group": "Предплечья",
-      "reason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация."
-    },
-    {
-      "id": "forge-ex-526",
-      "name": "Супинация кисти с резинкой",
-      "group": "Предплечья",
-      "reason": "Объёмная цветная схема не соответствует EXERCISE_TECHNIQUE_ART; требуется оригинальная контурная иллюстрация."
-    }
-  ],
+  "missing": [],
   "failures": [],
   "note": "Assigned/file/style checks are separate from expert biomechanics. Wrong equipment/pose counts refer to confirmed metadata conflicts, not automatic expert approval."
 }

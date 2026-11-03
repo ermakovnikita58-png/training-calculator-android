@@ -1,33 +1,33 @@
 [
   {
-    "file": "exercise-art/bench-press-1.svg",
+    "file": "exercise-contours/original-v4/forge-ex-001-1.svg",
     "role": "exercise-phase",
-    "bytes": 20294,
-    "sha256": "8d2e44a4623545d6de7318bd7e9e61ca6c70b79847ef0360973a8ad6ec4a7d27",
+    "bytes": 100384,
+    "sha256": "e4b6228e77a194979eedc93c549c0b4153ad51fff874fcf78833fa1cfaaf69cd",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/bench-press-2.svg",
+    "file": "exercise-contours/original-v4/forge-ex-001-2.svg",
     "role": "exercise-phase",
-    "bytes": 47484,
-    "sha256": "5803a111505f7d6e64c1f71e06d689ef2c701678e514147eca490a74608973fe",
+    "bytes": 107911,
+    "sha256": "50976d1fedcd9f4474fc3f61a02b57b5ed543de9d0340a8d08ddd93d0908145b",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/dumbbell-bench-press-1.svg",
+    "file": "exercise-contours/original-v4/forge-ex-002-1.svg",
     "role": "exercise-phase",
-    "bytes": 16878,
-    "sha256": "11be05184926c40731c131b8925907253f54229b47bd3dd1ebb406e76f9a52cf",
+    "bytes": 102972,
+    "sha256": "c276339ae1abb78591615b199341ca078ac18d512e616f07531c3c1017aa7e3b",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/dumbbell-bench-press-2.svg",
+    "file": "exercise-contours/original-v4/forge-ex-002-2.svg",
     "role": "exercise-phase",
-    "bytes": 22834,
-    "sha256": "b40c240613024c2c625866ef677e27b6b1adb0f20c6c272d93e300025343f95b",
+    "bytes": 112705,
+    "sha256": "72596773affd42524a192c8150661e4d806f913a41af672c895f1b50dd98f0bd",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -896,6 +896,22 @@
     "expertVerified": false
   },
   {
+    "file": "exercise-art/bench-press-1.svg",
+    "role": "exercise-phase",
+    "bytes": 20294,
+    "sha256": "8d2e44a4623545d6de7318bd7e9e61ca6c70b79847ef0360973a8ad6ec4a7d27",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-art/bench-press-2.svg",
+    "role": "exercise-phase",
+    "bytes": 47484,
+    "sha256": "5803a111505f7d6e64c1f71e06d689ef2c701678e514147eca490a74608973fe",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
     "file": "exercise-art/smith-machine-bench-press-1.svg",
     "role": "exercise-phase",
     "bytes": 22120,
@@ -976,18 +992,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/dumbbell-fly-1.svg",
+    "file": "exercise-contours/original-v4/forge-ex-064-1.svg",
     "role": "exercise-phase",
-    "bytes": 15689,
-    "sha256": "7306d1d3fd1dfb77900b5c3be75c5858dc1f6133c255110bbb5838c3a9aceae8",
+    "bytes": 94621,
+    "sha256": "3cfc8db523bb57a7fb793e7f638f430ebc95ec28c1a9e2111b1b3cc8859f0c26",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/dumbbell-fly-2.svg",
+    "file": "exercise-contours/original-v4/forge-ex-064-2.svg",
     "role": "exercise-phase",
-    "bytes": 22897,
-    "sha256": "96653aa48a8bdbe8e6dbfd50ae20fea76540bceb014994ec7cd20559d66e5ee3",
+    "bytes": 103711,
+    "sha256": "4cbdefc4bd1bcbd8f6150dc8fd4d74f0bc64fc800650534229b06fad6659856e",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -1800,18 +1816,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-contours/ek-0037-relaxation.svg",
+    "file": "exercise-contours/original-v4/forge-ex-132-1.svg",
     "role": "exercise-phase",
-    "bytes": 9128,
-    "sha256": "aef3563deec56761a17c19b5ecf4aa887e49d6052531a858bbc4a91576d401ef",
+    "bytes": 92396,
+    "sha256": "90866b9ea87beb91c871565c628b464fa033a3df6c8a2b3f4ebf3b9b7fe4d3be",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-contours/ek-0037-tension.svg",
+    "file": "exercise-contours/original-v4/forge-ex-132-2.svg",
     "role": "exercise-phase",
-    "bytes": 9080,
-    "sha256": "9a8fca5c66fb94a411675e79bfe61a07224f721e6f610b86ecbff8f643c024fd",
+    "bytes": 78890,
+    "sha256": "5631652e9fbe8ab63c47ea3c0482213db8ccaab34e8974483168f44228138ee2",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -2360,6 +2376,38 @@
     "expertVerified": false
   },
   {
+    "file": "exercise-contours/original-v4/forge-ex-173-1.svg",
+    "role": "exercise-phase",
+    "bytes": 97461,
+    "sha256": "fa5fb795ddcb728f1b9f14e3a2ff28e1e37747923e0bcde04d6e6ce2fbd7e6f3",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-173-2.svg",
+    "role": "exercise-phase",
+    "bytes": 90314,
+    "sha256": "b98f5cb1fecbb686b01cb787b4c88ce92fd644d1937be252e12c9ff26dec38c5",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-174-1.svg",
+    "role": "exercise-phase",
+    "bytes": 135287,
+    "sha256": "80da3cbfab2eb4109705ed779eae4a84737060904365bbe5ad504e2f889eb7a5",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-174-2.svg",
+    "role": "exercise-phase",
+    "bytes": 128926,
+    "sha256": "751059815271ab74bd35ce9b64c86188727b44a0b596d1f9d4933debbf109a0d",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
     "file": "exercise-art/dumbbell-skull-crusher-1.svg",
     "role": "exercise-phase",
     "bytes": 13320,
@@ -2504,18 +2552,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/bench-dip-1.svg",
+    "file": "exercise-contours/original-v4/forge-ex-189-1.svg",
     "role": "exercise-phase",
-    "bytes": 14240,
-    "sha256": "344dca9aa4bb0f58f037d75c9e0a7b2ab9b8e240ce9e3c44eb3f8d16752c2c88",
+    "bytes": 76615,
+    "sha256": "ec89924b6b687b7ecc9b2be26f96de45f8223ecdc9745aa53a8f6617ad6d72d8",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/bench-dip-2.svg",
+    "file": "exercise-contours/original-v4/forge-ex-189-2.svg",
     "role": "exercise-phase",
-    "bytes": 15365,
-    "sha256": "17a60e66261a25debcb0605877388cc3f34e53fc0469eca9c3c08e58bcf748ad",
+    "bytes": 73228,
+    "sha256": "73a0b7131a4b084ad45d1cecc96d3dd0f9d573ee8993f7150f485e25f06a30f9",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -4416,6 +4464,78 @@
     "expertVerified": false
   },
   {
+    "file": "exercise-contours/original-v4/forge-ex-338-1.svg",
+    "role": "exercise-phase",
+    "bytes": 101229,
+    "sha256": "da56581269444c8550b6faf32205dd36d1e5503141186e110f0e89b552165ec5",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-338-2.svg",
+    "role": "exercise-phase",
+    "bytes": 90008,
+    "sha256": "95c0d5e3daa79e3765fe38b6ee75329ea513d61edf28e350cddb36cccb6b1982",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-339-1.svg",
+    "role": "exercise-phase",
+    "bytes": 189812,
+    "sha256": "b5332cc360b8ef04672579ef9cec529cc1b4cd349ef67a931488ba6ae203237a",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-340-1.svg",
+    "role": "exercise-phase",
+    "bytes": 65041,
+    "sha256": "9b440bd3e363132f1b87069d77c57d1858fe681736c1baf8565675c772037536",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-340-2.svg",
+    "role": "exercise-phase",
+    "bytes": 98618,
+    "sha256": "28b1b7b133e9c81117eb0a72d8006c502b295ff891094c3dce509c39e62c717e",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-341-1.svg",
+    "role": "exercise-phase",
+    "bytes": 118795,
+    "sha256": "73fb22466482528cb89fd324347444cd94bc22ca2d95c8f06715036c33a3e755",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-341-2.svg",
+    "role": "exercise-phase",
+    "bytes": 107658,
+    "sha256": "9cd6caef8cc6ffcd8b263b9fda2dcc959c01b2ac0f2b23cc1676509338e1d1e3",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-342-1.svg",
+    "role": "exercise-phase",
+    "bytes": 128911,
+    "sha256": "7c130ec381df97f47938221f024b250730cdbfe4ec921dd4c54576c3e2cbbab0",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-342-2.svg",
+    "role": "exercise-phase",
+    "bytes": 130499,
+    "sha256": "af2caf8c0922b8e1e6fefa299db6a9705c9204546874997afb9cee4d14844d3d",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
     "file": "exercise-contours/original-v4/forge-ex-343-1.svg",
     "role": "exercise-phase",
     "bytes": 102457,
@@ -4576,6 +4696,22 @@
     "expertVerified": false
   },
   {
+    "file": "exercise-contours/original-v4/forge-ex-356-1.svg",
+    "role": "exercise-phase",
+    "bytes": 118535,
+    "sha256": "3b08022a987c104e0409a6dcc0f53d853f03c4f76024b1dbf9e78081aa78e9e6",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-356-2.svg",
+    "role": "exercise-phase",
+    "bytes": 93844,
+    "sha256": "254fa9dfb0bff711b127134feb3a083c8e4558f424975725e0293b4ff251d6d0",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
     "file": "exercise-art/walking-1.svg",
     "role": "exercise-phase",
     "bytes": 23537,
@@ -4656,18 +4792,10 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/doorway-chest-stretch-1.svg",
+    "file": "exercise-contours/original-v4/forge-ex-364-1.svg",
     "role": "exercise-phase",
-    "bytes": 15613,
-    "sha256": "c8ccf7339662784df89a363ed9fe7acfb4d739b55a0cfc66b92f986ddc036b75",
-    "pathChecked": true,
-    "expertVerified": false
-  },
-  {
-    "file": "exercise-art/doorway-chest-stretch-2.svg",
-    "role": "exercise-phase",
-    "bytes": 26080,
-    "sha256": "b7e9ba44209037b10b1fddb0ceb1c7f0df03e4045e2ae5c7941648d5726c211f",
+    "bytes": 106815,
+    "sha256": "f72f5d4185c60201a92d8aff50cf79737d1e2a207f57998c3f6c6635846b60db",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -5424,6 +5552,22 @@
     "expertVerified": false
   },
   {
+    "file": "exercise-contours/original-v4/forge-ex-419-1.svg",
+    "role": "exercise-phase",
+    "bytes": 82664,
+    "sha256": "e91fc18bb268c06b7d756f56c41988ebc6b5062a17d2ece4762ebad4eb553712",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-419-2.svg",
+    "role": "exercise-phase",
+    "bytes": 85758,
+    "sha256": "47300ddb69cfa92b880ee79f62d3aa23f616dc923e5a9a16d82c600fb083a901",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
     "file": "exercise-art/machine-lateral-raise-1.svg",
     "role": "exercise-phase",
     "bytes": 38997,
@@ -5652,6 +5796,22 @@
     "role": "exercise-phase",
     "bytes": 80631,
     "sha256": "efe18ecc1d3e4bf7fa25c57472716ad392f7e30bc780e5c3b6d09516298b52a2",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-441-1.svg",
+    "role": "exercise-phase",
+    "bytes": 58368,
+    "sha256": "e68749e216a7f60f01a0b576999b87237504b600a53a402146e30ac7775fff7c",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-441-2.svg",
+    "role": "exercise-phase",
+    "bytes": 58648,
+    "sha256": "2000235c309b6fc21bc1934b36471fcd6f7f377f59e848a88dec14cbf9ec0e41",
     "pathChecked": true,
     "expertVerified": false
   },
@@ -6616,6 +6776,126 @@
     "expertVerified": false
   },
   {
+    "file": "exercise-contours/original-v4/forge-ex-518-1.svg",
+    "role": "exercise-phase",
+    "bytes": 114382,
+    "sha256": "1f3a26293b5564fcb6f9a1f910b4bc889b1af373fe4d60762ca590bff6688e65",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-518-2.svg",
+    "role": "exercise-phase",
+    "bytes": 101681,
+    "sha256": "cc137bf3b2f9552d67140302903ac91b80e2221a7efaaca7bd836b9388437acc",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-519-1.svg",
+    "role": "exercise-phase",
+    "bytes": 163675,
+    "sha256": "ab48e8a20b30358c117b8bc00d71e3f67673f9b9d10b8268624c7a86c2d05321",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-520-1.svg",
+    "role": "exercise-phase",
+    "bytes": 151047,
+    "sha256": "7129a8d177ef28d5cd52bb66a05a74889a62ee9dacad2ee3de5aa9c4ba5cb1c1",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-521-1.svg",
+    "role": "exercise-phase",
+    "bytes": 247631,
+    "sha256": "f853bceb3fee3861121975439577bdc96a5ba776bc10ef6c1b8e473013051027",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-522-1.svg",
+    "role": "exercise-phase",
+    "bytes": 70391,
+    "sha256": "7ac8b1cb3f4991bc14b563eecdbb0571d1518fbb5779b56c228dfc3498f5fc33",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-522-2.svg",
+    "role": "exercise-phase",
+    "bytes": 89707,
+    "sha256": "2d9d177178d352199f60c0caaaceac32efc2fb440f352c076d91e24ef6351e3f",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-523-1.svg",
+    "role": "exercise-phase",
+    "bytes": 88204,
+    "sha256": "f714752b3d86cb6702c209dcd3d728ff3def730cea470bf3dea37908153b44bb",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-523-2.svg",
+    "role": "exercise-phase",
+    "bytes": 84393,
+    "sha256": "2a2e2641cc54b9d4b5d31ec8d2990c5e3dbbc01d8cddd4fdb3c6910c0d3de7f9",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-524-1.svg",
+    "role": "exercise-phase",
+    "bytes": 19873,
+    "sha256": "432668a1bf6efd651dfd0e54caa619545cb6f9efa8b20a7af0784dfab99a5ea9",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-524-2.svg",
+    "role": "exercise-phase",
+    "bytes": 26085,
+    "sha256": "f56af5acccd1c2c75efba287e8578590429223f506c17edea6ce4e1969062892",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-525-1.svg",
+    "role": "exercise-phase",
+    "bytes": 118874,
+    "sha256": "29580da81bc921eae7035d0e808bcd8c51145287709572a8974071c7c3a1c24d",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-525-2.svg",
+    "role": "exercise-phase",
+    "bytes": 123474,
+    "sha256": "3772f3f3c1ec7e4c3b29b9fee50c75f985f95f48294da2ca37b9c01ad534a6ff",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-526-1.svg",
+    "role": "exercise-phase",
+    "bytes": 104937,
+    "sha256": "bcde40cb11a4562d0f981f5fe6af094e40dd49994bf36647b3d0820ca34a4b75",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-526-2.svg",
+    "role": "exercise-phase",
+    "bytes": 105989,
+    "sha256": "9554b49fb41ffc1ba7efaed7b880c88f6742ccdbb8b990cdc3621565dba7d499",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
     "file": "exercise-contours/original-v4/forge-ex-527-1.svg",
     "role": "exercise-phase",
     "bytes": 71780,
@@ -6852,6 +7132,14 @@
     "role": "exercise-phase",
     "bytes": 82148,
     "sha256": "8b8aa07afac97587ba01f7045a0f5c4007c490d947f0540a2770a0b1b5f12729",
+    "pathChecked": true,
+    "expertVerified": false
+  },
+  {
+    "file": "exercise-contours/original-v4/forge-ex-546-1.svg",
+    "role": "exercise-phase",
+    "bytes": 126249,
+    "sha256": "7130b32208014df48ead90182247cac7a11beec8282e4663f1a8c5831a232021",
     "pathChecked": true,
     "expertVerified": false
   },

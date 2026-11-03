@@ -73,8 +73,8 @@
     "group": "Кардио",
     "file": "exercises-10.png",
     "entries": 41,
-    "contour": 40,
-    "notReady": 1
+    "contour": 41,
+    "notReady": 0
   },
   {
     "group": "Нижняя спина",
@@ -87,8 +87,8 @@
     "group": "Предплечья",
     "file": "exercises-12.png",
     "entries": 24,
-    "contour": 10,
-    "notReady": 14
+    "contour": 24,
+    "notReady": 0
   },
   {
     "group": "Мобильность",
