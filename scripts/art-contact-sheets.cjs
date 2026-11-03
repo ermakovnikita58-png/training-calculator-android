@@ -11,7 +11,7 @@ const {chromium}=require('playwright'),fs=require('node:fs'),path=require('node:
   const groups=[...new Set(Object.values(registry.exercises).map(e=>e.group))],index=[];
   for(const [i,g] of groups.entries()){
    const rows=Object.values(registry.exercises).filter(e=>e.group===g),ready=rows.filter(x=>x.frames.length).length;
-   const cards=rows.map(e=>`<article class="card"><div class="art">${e.frames.length?e.frames.map(f=>`<img src="${url(f)}" alt="${esc(e.name)}">`).join(''):'<div class="missing">НЕ ГОТОВО<br>Нужна точная контурная схема</div>'}</div><div class="title">${esc(e.name)}</div><div class="status">${e.frames.length?'EXERCISE_TECHNIQUE_ART':esc(e.missingReason)}</div></article>`).join('');
+   const cards=rows.map(e=>`<article class="card"><div class="art">${e.frames.length?e.frames.map(f=>`<img src="${url(f)}" alt="${esc(e.name)}">`).join(''):'<div class="missing">НЕ ГОТОВО<br>Нужна точная контурная схема</div>'}</div><div class="title">${esc(e.name)}</div><div class="status">${esc(e.id||e.name)} · ${esc(e.status)} · ${e.frames.length?'EXERCISE_TECHNIQUE_ART':esc(e.missingReason)}</div></article>`).join('');
    const file=g==='Плечи'?'shoulders.png':`exercises-${i}.png`;await page.setContent(html(`FORGE — ${g}: ${ready}/${rows.length} контурных, ${rows.length-ready} на доработке`,cards,6));await page.evaluate(()=>Promise.all([...document.images].map(im=>im.decode())));await page.screenshot({path:path.join(out,file),fullPage:true});index.push({group:g,file,entries:rows.length,contour:ready,notReady:rows.length-ready});
   }
   const files=Object.values(registry.resources).filter(r=>r.type==='EXERCISE_TECHNIQUE_ART'),pixels=[];

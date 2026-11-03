@@ -1,0 +1,3245 @@
+{
+  "scope": "Visible white contour style only; exact mechanics and stroke equality need specialist/owner confirmation",
+  "files": {
+    "exercise-art/bench-press-1.svg": {
+      "sha256": "8d2e44a4623545d6de7318bd7e9e61ca6c70b79847ef0360973a8ad6ec4a7d27",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/bench-press-2.svg": {
+      "sha256": "5803a111505f7d6e64c1f71e06d689ef2c701678e514147eca490a74608973fe",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-bench-press-1.svg": {
+      "sha256": "11be05184926c40731c131b8925907253f54229b47bd3dd1ebb406e76f9a52cf",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-bench-press-2.svg": {
+      "sha256": "b40c240613024c2c625866ef677e27b6b1adb0f20c6c272d93e300025343f95b",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/incline-dumbbell-press-1.svg": {
+      "sha256": "3ffeec079bf2c02040e9f67ea8580b301e2929d8ce4c6ffc33dbb20118a28844",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/incline-dumbbell-press-2.svg": {
+      "sha256": "e9c87c322f68d5fc2875817249ffab30323c85e12589007f64bd428e138d916d",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/incline-bench-press-1.svg": {
+      "sha256": "732b5e42719b4799ec9646122a3ab763a57959e8fcb3ed6020d1ff46ac910516",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/incline-bench-press-2.svg": {
+      "sha256": "e4073128dee0b0134ca07c4e88fa677a0e71984790bb6f9f3b2ba69d1f5f1314",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/pec-deck-1.svg": {
+      "sha256": "c3d1e4ee8abd93c5e5ccbb5de8d7fba788313a303ef3ffc3eaca593328f4020b",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/pec-deck-2.svg": {
+      "sha256": "cfa7a5883d1525ae1af579880a6c095d97b5bf6e62e4e16ca4d6f0af07bfd5ef",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/cable-fly-1.svg": {
+      "sha256": "5f875724f82e91a189cec02adc94cf2bc430818882119ca674fe59bf43eb5aa7",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/cable-fly-2.svg": {
+      "sha256": "9d55c1e95679e7d47811212754668ab425b3db7ab7843c196aa3a3383f10c456",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/push-up-1.svg": {
+      "sha256": "52513e555c392c30e2b3f33a4b99cd4308295ca8b9fb843acd566c287f13a316",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/push-up-2.svg": {
+      "sha256": "2a9b7c9ee2a1aac8c72365ecabb17fc4bbbaf256cf1d7bcfdc7d0be50268673d",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/chest-dip-1.svg": {
+      "sha256": "7d02dfae8c7ebecb29c533cc5070123b062de4073ad68386fb13e0e3a89c2de7",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/chest-dip-2.svg": {
+      "sha256": "1c7205e4bfd3808b6f9ff7c8bfa8761650c574ca13d1eb9b994e7461950d2f27",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/pull-up-1.svg": {
+      "sha256": "bacba06517e970acecfeda6cea53c5a54a169ab3229eff4757a7ad40e1db62d0",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/pull-up-2.svg": {
+      "sha256": "bfe46411871d4d653c7aeb954fd25abf14585d301b33232cd6aeceb0bafd1a20",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/lat-pulldown-1.svg": {
+      "sha256": "6bd3bf4edda543bb2cf255e0071122f00b0846d7f92f661c6139035271330e3e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/lat-pulldown-2.svg": {
+      "sha256": "2141b7381f05cb6756a787039db8e26e58b98af4fc5a7aeca62c33d661986ef2",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/seated-row-1.svg": {
+      "sha256": "c58eccc52903c9ea97544b201bc77996054a1743dd9efba14d5fc102674f1a4f",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/seated-row-2.svg": {
+      "sha256": "270873379c7cd3515caeac47fcf63c1b39742ead82b937cd8ac2403099e6fea3",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/barbell-row-1.svg": {
+      "sha256": "83c883bca332edf8f30b8283245d7db131310804483c82a9bf66ae5d6bca7f4e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/barbell-row-2.svg": {
+      "sha256": "43c19bbe88c9a6736ee41c6c8bb9fe1568eeae129ebd72c12a5c7e3deacbfd48",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/one-arm-dumbbell-row-1.svg": {
+      "sha256": "b818e63d8dc40bf3bd1b59aa9fa91fd5c7bdfed99bbb2ac599c4bed328a7de2f",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/one-arm-dumbbell-row-2.svg": {
+      "sha256": "0d1000130af10a095a2625e2f0fda0c11a4f8aa126ebf583a100ae21e1b467f7",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/deadlift-1.svg": {
+      "sha256": "79b0f94bd60fad1fdd74590a87b74b5daa321d46902439561c71b64f82168fac",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/deadlift-2.svg": {
+      "sha256": "93a9baace2f4589a22698556dce47b635c14f690ba73d70273217c1f8ed34eca",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/t-bar-row-1.svg": {
+      "sha256": "f3de3ccb074e10aa2e1b9c7934a5873f89f8b0423d3f99db186aa2f1ea75bb28",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/t-bar-row-2.svg": {
+      "sha256": "e8f43881af107cb39bf430f884ca2160cbef1a8029038346580214e68dd247e4",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/back-extension-1.svg": {
+      "sha256": "65d48f0e8791e6a53bbcb8c89406703ba12ac17e7043b9e15072a9aca45e0a30",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/back-extension-2.svg": {
+      "sha256": "40d42fa86d816942f58e5c972ccdfb3c354e42f4451d34dacde512126272f39a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/shrug-1.svg": {
+      "sha256": "a4e8690d7fbbf9ad1d7ce89f4ee413450b13273b787f84d3e2ec7ca5fd6d4b25",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/shrug-2.svg": {
+      "sha256": "2e0339dc7d26fa9a6f9d7730599a801b90051ba3a446425b8a02e0744b660650",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/overhead-press-1.svg": {
+      "sha256": "f8f67ba53c56532712b0eab6b4372038d45258a039bf53e641d154807de33922",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/overhead-press-2.svg": {
+      "sha256": "4d349a9f47ca1260e94e23111ba0d768f65b312d61500e46bf87ada8b40c6f22",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/seated-dumbbell-press-1.svg": {
+      "sha256": "78d50c1ac770871a58d7637777f60e9b7fcb0c939415ca4c7e1fdd9919e7536e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/seated-dumbbell-press-2.svg": {
+      "sha256": "bbc8675ddb73d4131836950ccbf7abefe526b670840473fd363e118d0dc926e9",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/lateral-raise-1.svg": {
+      "sha256": "51716817454492e555ac9796a030fc985b244c6b2b169e44ec51a9896902c34d",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/lateral-raise-2.svg": {
+      "sha256": "29537f101f7d0a4bcd3cf302ae2fb7e5c38a88dfbb7ee80c4d3dd273892e163b",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/bent-over-rear-delt-raise-1.svg": {
+      "sha256": "e801c21ee1f17f0a967fa018adc2562f42b86d96e3512d5999924ecc40fdbc88",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/bent-over-rear-delt-raise-2.svg": {
+      "sha256": "c891b65779b11914e7b9fe72f6ea35e96e04835d8b3592b2e1b8b7895a8d3cfa",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/upright-row-1.svg": {
+      "sha256": "302bb0866cd3f5fcb37ca8f31e1169e06400065b83b8331c0571d70e5c631913",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/upright-row-2.svg": {
+      "sha256": "2e56c7d51f3ea920dbc7114c2d6f7a5e392c7b861bfe95c3e22a37d634a41fe3",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/plate-front-raise-1.svg": {
+      "sha256": "114749ef6b024d964c2acee62a9d5afe5c91e7e17067b34a5d2a4f17fe602c1e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/plate-front-raise-2.svg": {
+      "sha256": "537c6bb7dff5e0438bea3ccb299110112236e4041e6d4656a45f4d0f67084343",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0211-relaxation.svg": {
+      "sha256": "b77de0271c6b91d68a325463deeb58d5da9b064b65092e699b7e77396a80bc99",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0211-tension.svg": {
+      "sha256": "a3faae38226c717d6956ac8469169ea9c914e3baa9084f7d24439526630b93ca",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/bicep-curl-1.svg": {
+      "sha256": "d1af040a7d87a0778dbdb18417a877f7bfe0b8c5f3d1333c36739f5e8e4a83d9",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/bicep-curl-2.svg": {
+      "sha256": "28d48b887e25fdf20f958044f1fc7e7d3510612b690b6506052145fa66d83b36",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/hammer-curl-1.svg": {
+      "sha256": "b1341a8df0d30d4f8d63700a5b879f47994fbd0825346528469c591276ea94d0",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/hammer-curl-2.svg": {
+      "sha256": "6e7d577167c8ad1ed2708fd79a6ac9b5bf83dc2a22ae93473126b5b6e2cde354",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0239-relaxation.svg": {
+      "sha256": "4fe817416d2657065d27005394d414ba1027368ed89a0f6588ac0ec7bf446931",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0239-tension.svg": {
+      "sha256": "2e5d400225d6d13cb5ba27d12d0c1f607c1e68358a78d8ae25bb9c747fb09e9d",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/tricep-pushdown-1.svg": {
+      "sha256": "db8b6297818d007d3243bd767fa65b478519ac4b1ed7aedc908ea297e36ddcaf",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/tricep-pushdown-2.svg": {
+      "sha256": "85d16692c66401acdf2cbe206bab356d223bdd71c957f8772b636d8c7b4404a2",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/skull-crusher-1.svg": {
+      "sha256": "542bd7378068fc1aee8fcc6481f4b2d2a02b465a98beafb9a1603a36a460e465",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/skull-crusher-2.svg": {
+      "sha256": "db39dda7b535503dc41ce744d6c1b1a3ab3208f6bdb36edeb010e8cedaedb523",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/single-arm-dumbbell-tricep-extension-1.svg": {
+      "sha256": "3b8d576408b48d7fa25880dcd6597e28186bcfa72ca5a2b226197eb3e948703a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/single-arm-dumbbell-tricep-extension-2.svg": {
+      "sha256": "3a32bd5ede2cc8204dee74ba8a4a028fdfb9f13112c37749d6e7676f67368ae1",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/close-grip-bench-press-1.svg": {
+      "sha256": "95ea51250bd647838e448664e764a2a141ac081aa186d77d3749f0a50ba176f8",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/close-grip-bench-press-2.svg": {
+      "sha256": "99182a2d1b926a27197a9c1585355932232abac5d7c8451dcb2e7b79fa7eaefb",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/squat-1.svg": {
+      "sha256": "3c77a2088edf3271b7f2034154979e1adcdbb2e1c467ad2cc58cedc6e92d98b9",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/squat-2.svg": {
+      "sha256": "5bc4894cf2c9dc28d500ed6cae394c68ad9ae50cdc998414ff71f831fde5cd03",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/front-squat-1.svg": {
+      "sha256": "6489534c678d8f8f3b510a26de18b14e2e26c56afa993ab89a864a0d62fb74cb",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/front-squat-2.svg": {
+      "sha256": "caefb746b4f2aadf84fcb72d624230596d1961cad0e97782083294cce217386f",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/leg-press-1.svg": {
+      "sha256": "901c793a231b2b4e9920a7f26f00c33f09327ee8157bd850fbaca5c5153d54b3",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/leg-press-2.svg": {
+      "sha256": "88634cfc8086430adaa738fc9e527f48fe4c45928e75ad7d62fbcdc9571994e8",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/leg-extension-1.svg": {
+      "sha256": "b4d2100d0d610a9812f683cba1b83db9d8114bb8e956830f1c89121ef9a9f848",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/leg-extension-2.svg": {
+      "sha256": "58e5cb69403597151c188c4b2b197ba03ef18b9a9265eff54642a1c5f58b67cf",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/walking-lunge-1.svg": {
+      "sha256": "f8824b193196979f7742db392146255abab276c22063e812b3e6db333088e018",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/walking-lunge-2.svg": {
+      "sha256": "65b5a43e53c48119b42dd9ef8654b5a079d56591b2d53369b138914c2efce109",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/bulgarian-split-squat-1.svg": {
+      "sha256": "a4fcfffb3d8a51946329cb086c345b98d4bd2614dcdf99f04c358bb2361be017",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/bulgarian-split-squat-2.svg": {
+      "sha256": "7c4fcb4403b6731abd40dbc3dd519f2c6f3591c41c46e35a43f4313cf8d9d797",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/romanian-deadlift-1.svg": {
+      "sha256": "d7fc95623dc527caaaa0528aacc682f42c7c2c42fc4824fc27ad211eff242bc5",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/romanian-deadlift-2.svg": {
+      "sha256": "199360ca192792c267414c01fce1f1170b7315577684fb107dc54f3426b921d3",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/lying-leg-curl-1.svg": {
+      "sha256": "c80998d0d80c53b5379ec53f90b3fdea0bf802d1709e7338c0e5fda686ecda9c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/lying-leg-curl-2.svg": {
+      "sha256": "a801383038b2a6802d930efcff8dff038c13d892516a5ccc28eecb7a5aa7ecdf",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/glute-bridge-1.svg": {
+      "sha256": "64830d042d3ef122b54391cee0339f60d10dc05a79007893f56f6ba35c344e96",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/glute-bridge-2.svg": {
+      "sha256": "4eeffd0c95b32e0306bed86b9cda802ad3b3ac52135bd1f49f4939569f113375",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/cable-kickback-1.svg": {
+      "sha256": "75443d546ae3d0c5ef96f6d734fe12da0cd48b2d60bf8663222c703facec1754",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/cable-kickback-2.svg": {
+      "sha256": "da9c8b4266a64a222f40ccaba82a5309aa3b457afa5ffa4cef6c36aa57c32ecc",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/calf-raise-1.svg": {
+      "sha256": "9a933f3705dd8825d0a4aa1151248ef7445be00714cd59c56017b75e1455f74b",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/calf-raise-2.svg": {
+      "sha256": "72fa56fbe4e9540b35a2ef4d6de46c6b272903eaa369722b02890a3232f722a2",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/seated-calf-raise-1.svg": {
+      "sha256": "98af70dee19466bd47702f311390258a27eb006f2c554262adff14bb3b622a6f",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/seated-calf-raise-2.svg": {
+      "sha256": "bf6c3a82986beca217d87d1671f9a1714d2f554ededa5b655b6f08a78e24d048",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/plank-1.svg": {
+      "sha256": "0f65a842d151f80918e4ee45d1a9f659dd5a82e2d9857c9ad6ae06832a872e94",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/plank-2.svg": {
+      "sha256": "00210f9137bfe8e801e9287f1ba9427fe841b1128a4e8f69ea8b1bcb96c9d4a7",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/crunch-1.svg": {
+      "sha256": "7e4a03a575a2e0e68a8c9232242414920285ab5b4159d818f5c228650137788d",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/crunch-2.svg": {
+      "sha256": "9654b6f276d318d05e47256658703337df5445e0b14eed2ce9e20689174d4d1a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/hanging-leg-raise-1.svg": {
+      "sha256": "bacd358b4beab5001cbbafc1c7d9162fda29fff2a1b26ed69177c3adf749dd28",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/hanging-leg-raise-2.svg": {
+      "sha256": "257b2165072bfee8a2987c2549cd579b009b79e36843bee0903503ca312b77df",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/russian-twist-1.svg": {
+      "sha256": "6b8bc1b9b0c54d04879cd421f0c1a1762ff867b24ac6d378dcc67196c7b9d84e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/russian-twist-2.svg": {
+      "sha256": "0a6d6ed5a80601480804e7f853e72ba4cabaffa6f783c24c34a0eb665ea7d1dd",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/ab-wheel-1.svg": {
+      "sha256": "75dd7b8d2ff79ae7e6e2d43d2c62a606a321b16ade62635976cb9d403fab9c32",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/ab-wheel-2.svg": {
+      "sha256": "a245d7e3e0f8ad31ec52ad63b449afac84d1eff914d6fb76e21ed68b255885a1",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/side-plank-1.svg": {
+      "sha256": "5a63eb2766074fc6a9f3d370496caf5e3e56c9b141cbd14c60939c7b9f86e36f",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/side-plank-2.svg": {
+      "sha256": "2987e17ca9d9ddc8c02927af07f2eb8ebae4ba4e8eb84e656983752fc326ada4",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/elliptical-1.svg": {
+      "sha256": "6b1d97a04562cb9f2e1e4df43d5c705e7c94fa9235b2b97389f6d165d482f0d7",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/elliptical-2.svg": {
+      "sha256": "16562a49353d202fb76342a602b70d6e64d670f5d0612c8bd774e3f94dfdd1a6",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/rowing-1.svg": {
+      "sha256": "c31429ed2c220a83c49e6ff51c31cb45b983d4be5754258e3eb5cf7d22781bbf",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/rowing-2.svg": {
+      "sha256": "a8351d67470e1a480b146f83a27e82fdd9264ceadee89b87726104eee773aa1c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/jump-rope-1.svg": {
+      "sha256": "281e0e35bbbcc5279fc9e7bb21c883a6e653308f12ba2119a123583153e88790",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/jump-rope-2.svg": {
+      "sha256": "d47ee0a6bdb242d3365493d4b175b6ca6ff6e06baea67553bfc3cfdeca5e26a1",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/decline-bench-press-1.svg": {
+      "sha256": "3fc73bf0dd6081a83b927b0c7631f6dd4e2417ef041f5497a93ec64ce8bdbc3c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/decline-bench-press-2.svg": {
+      "sha256": "cbb1318fec953b2849c76179a444aae1bbfbafdfc82bb3b1cbad99783aa10385",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0082-relaxation.svg": {
+      "sha256": "bff05db0418e6839b162bf40064f790947b8cab188e58e5b52ae6910ceea401f",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0082-tension.svg": {
+      "sha256": "bd9a0a2a5c7e25c6f11b9dc2f881df2fe609e1f169f47f451026ef911db2383a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/smith-machine-bench-press-1.svg": {
+      "sha256": "7c860b65a608ddaa4db0b61daed26628abf31a63c0fd7c59ab798c84318abe0d",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/smith-machine-bench-press-2.svg": {
+      "sha256": "e431ddaf8b2fa4c16dac677307a7b456b6683fb5878a2fd9589cd7eb2c3ed396",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/decline-dumbbell-press-1.svg": {
+      "sha256": "ec3abca6b3cafddffbcefb9886cc86602edc24be4c79deee534d7afdbbb752a8",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/decline-dumbbell-press-2.svg": {
+      "sha256": "c6c2eaf5f0a3748c4057e46840aed4f89fb37759a03eaa3f2a8fff15248e590a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-fly-1.svg": {
+      "sha256": "7306d1d3fd1dfb77900b5c3be75c5858dc1f6133c255110bbb5838c3a9aceae8",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-fly-2.svg": {
+      "sha256": "96653aa48a8bdbe8e6dbfd50ae20fea76540bceb014994ec7cd20559d66e5ee3",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0062-relaxation.svg": {
+      "sha256": "b17edcf0ffcd8298c505bc3c6d5dda997e31675dfeb9d1ca8cdee130cee0d34c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0062-tension.svg": {
+      "sha256": "e2a447554e6a51fbd75bd027489c1cf7cd8f90681c1274d7036fe977a4a584e7",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0053-relaxation.svg": {
+      "sha256": "88a314393df0643056ab85ee58e9dbe57efb4b8fa3fea6fbc6298b3e951da1a9",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0053-tension.svg": {
+      "sha256": "9cc6279051ef9d373dd8355a73783cf1f946428dc02eafb068ce5a1ce31d8e31",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/machine-chest-press-1.svg": {
+      "sha256": "f5522f5d953636e5c9382c4b3679bcffd968eea72afe3881ad75d3a028d5fb04",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/machine-chest-press-2.svg": {
+      "sha256": "5f4964e758a0d0c66d9fb88c61ea61b8e8881cdb2e6accf94f061c5ac57912d2",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/wide-push-up-1.svg": {
+      "sha256": "92538c6e34854bd01692787d347c844015dcebad37b6156c3de92eac5566dfac",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/wide-push-up-2.svg": {
+      "sha256": "d44901e186ed41f1ba6d1485f5bd417bdb8abfd4e611ac7d39ee0307685f1760",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/decline-push-up-1.svg": {
+      "sha256": "68363b43cb62419e41ec9f386f3e26b42300214e292a7e0a35863837c718300d",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/decline-push-up-2.svg": {
+      "sha256": "673c4a727d662c00f39ae7fa8c94b901e3763048348c090f09e96dd8af2e8589",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/incline-push-up-1.svg": {
+      "sha256": "14278ef039b0942e06b7aba35a1e5836662c332ece834f83f6828b98edfac22c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/incline-push-up-2.svg": {
+      "sha256": "38ca6cfa445582bca9cd95c0dc44ad1ae8fd1da63d2b650bc3b7e926325aab80",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/weighted-push-up-1.svg": {
+      "sha256": "456dee130ec62b8280727a81845f62fc371659da32d0cbc02635efe6b3e22a88",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/weighted-push-up-2.svg": {
+      "sha256": "209b1ea175e3ab7deacc8f2902920990ba9e1b34c9afce32a76baadfc43b8fa8",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0046-relaxation.svg": {
+      "sha256": "f99e04ad5544885c8a3c1684432a82b68b308b76f112a61bb93ccfcb13b58b80",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0046-tension.svg": {
+      "sha256": "480d09310eda8072955f8edb2e75a5de080b4f226c092107780b4ad37c205814",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/chin-up-1.svg": {
+      "sha256": "26cf91b771d937b68d120954e88644aba2c9bf127c16dea4f8ef68cc3d410f5a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/chin-up-2.svg": {
+      "sha256": "24772b4ee04d9060097f9f4682f24fdb634b69a781c402649cb427467975ad76",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/neutral-grip-pull-up-1.svg": {
+      "sha256": "26cf91b771d937b68d120954e88644aba2c9bf127c16dea4f8ef68cc3d410f5a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/neutral-grip-pull-up-2.svg": {
+      "sha256": "0270af4a6fa8e05ddb31770adfd1dbc5040df03b69e74d9dfa8fb6addf34253c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0091-relaxation.svg": {
+      "sha256": "c1cffb4842cce0391f16711038b9e8c39779263a5fe028d3d5a67b03e99208ed",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0091-tension.svg": {
+      "sha256": "0fc9a33a2937f57ffc5aff94c3e4282aa3fea49d90a144558c2a63df4b93df35",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/weighted-pull-up-1.svg": {
+      "sha256": "218adaf97ac50da234195602d20f00f7c973662f1abfe35344eebba9ad4faa00",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/weighted-pull-up-2.svg": {
+      "sha256": "2f6daa9cb07493ca0e112d6bda1b85ebe6c49ff7c87c6ca0e20c3f523538aba1",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/assisted-pull-up-1.svg": {
+      "sha256": "e9550d7e146e2b477aa942839edb9d0a2324c55b7cd4a55d8a234a38b84d9a1f",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/assisted-pull-up-2.svg": {
+      "sha256": "dd7cc615792e12d2e90439c8be607f1df8afa67f693e80fa018dc5b886419f8d",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0093-relaxation.svg": {
+      "sha256": "986ae890fe110b46f5951827216619f65da6b0a8f9a563499cae79b1d8b0327e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0093-tension.svg": {
+      "sha256": "1d6773dd0fecca620977361e55ae342169e884c956f09b0d1b1bb5adf4ff1df6",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/close-grip-lat-pulldown-1.svg": {
+      "sha256": "c251fd11bdd8f11f590f2cafe3bea3f48c2f5d8700f656984c007f77ac82989d",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/close-grip-lat-pulldown-2.svg": {
+      "sha256": "eac06b6a41bb8105749ce501129c9ccdc01bac35f13c9d1f1c4af6a84087082b",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/single-arm-cable-row-1.svg": {
+      "sha256": "cb673fabb0dcaba31b713a9ae84f320195426e05a40dd556c70fc0b87894e485",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/single-arm-cable-row-2.svg": {
+      "sha256": "f354081bd51736ae0648be447d3675138fad8cdff351cd3a2a184ca2de7d6a75",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0026-relaxation.svg": {
+      "sha256": "5fc1b9d11e992c1a9c6ceda61c52d4c5b89fd98c4140f660b176822f6c7a26d2",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0026-tension.svg": {
+      "sha256": "2ca4e4e3d2f1e8ed32bca983aa6c96cd02e655f56986d8777ce3223752478168",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/pendlay-row-1.svg": {
+      "sha256": "e462be8e5f5b52b62e2b41185ef404bf8919a7525ff17d34343b2ce411f328b9",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/pendlay-row-2.svg": {
+      "sha256": "5f9aaedf3fe4d8d8cb12df48fc5ef9dcd39b867cd195074771f873de52a87c6a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-bent-over-row-1.svg": {
+      "sha256": "bf3875d52b4414fddda35c66f2b151531cf27360b9102ccf655707889cca0a6a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-bent-over-row-2.svg": {
+      "sha256": "f980052512d4e710c6426cf524d563c100504a3c40af997bc1724e875c2f9849",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/machine-row-1.svg": {
+      "sha256": "7c981719a63c592d970a468c5daf36e63815683a2e6ae276cae01808c3b9bd99",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/machine-row-2.svg": {
+      "sha256": "679cfab440195ee5f3c2227ba0c142ab05743495cb187c19dce3e8cec3df0913",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/straight-arm-pulldown-1.svg": {
+      "sha256": "69edc39ec47ff36e50bd17cc55640ad9ae21297954723d461b67c57d11652deb",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/straight-arm-pulldown-2.svg": {
+      "sha256": "b1957cfc0c8cc21b41a827891665e8e0e6076084bf30efac6b906b5df8263d9c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-row-1.svg": {
+      "sha256": "76ff5bff05eb6344c4c800a523449c923add18a368b67845c17f7f39171c1cfe",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-row-2.svg": {
+      "sha256": "66ff0ce671ec604d4ad40006334a7eca1b3476786d91042c44f44ace60f27991",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/reverse-hyperextension-1.svg": {
+      "sha256": "5ba4e0e7cb1459599ddd58fa970150376462f4ce0cdb9a60c165598a910a20fd",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/reverse-hyperextension-2.svg": {
+      "sha256": "9a71602fb4aba94faa146f79348345f64b525b3bb77d37439571b00b213fa864",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/superman-1.svg": {
+      "sha256": "20bc38f9bde8ae343046dfec007983c097187b45b1802894dae94de17b3c7923",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/superman-2.svg": {
+      "sha256": "1b29caffe30907f86af393885c38e3220fce73e4955510e15a9d8f864795216d",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-shrug-1.svg": {
+      "sha256": "e6ef38df1abb8b1be80fd6c53abdae0e150668a5b8b142f3f214f7d393ca9d73",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-shrug-2.svg": {
+      "sha256": "ffe171ffc4e761b45dfd94ec9d2e41f063cc4884ed4f530dafed352f4c62ba09",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0041-relaxation.svg": {
+      "sha256": "97aea8fb0d43d8b7cd0ff57828fa004e9f7c5874df9be6bda1c94e6c43eac2f1",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0041-tension.svg": {
+      "sha256": "76072f04664bce65d354edf9c732bed4c1f691a0d366441ded47b0b6da42a19c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/farmer-carry-1.svg": {
+      "sha256": "370072cc32e7417d74e5f32eb911de4a59886b763f26887aa204dc93130a536c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/farmer-carry-2.svg": {
+      "sha256": "43660d0353484dd707655ed16ef9dd6fdbb9f0506d0ed472f31f7fcc2c047404",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0004-relaxation.svg": {
+      "sha256": "123dd65b924812a2ca09669b77cf3f623f25a46449ee979385f27fac69141459",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0004-tension.svg": {
+      "sha256": "ba146fa32b04541eec03821b8cf763ea5b8a33e04120a58b3393a2618515c291",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-122-1.svg": {
+      "sha256": "de73e8f46228e05d71ed5d189fdf0f65de4c3e9ceff0230a8fc67d43b1d830a1",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-122-2.svg": {
+      "sha256": "7a7a89d3bd0b42948684429699646a655ea4b3c4799f96d028265ee821c8c5ed",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-123-1.svg": {
+      "sha256": "a97ee747768c5ba9e49c4e6abb3c3a1628d49856d32e39304a94ccd1e7fc6337",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-123-2.svg": {
+      "sha256": "31b0b6c12f782e61b5371d638024cb455f17636ffdd3d16af3acc0ee2252b2c0",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/arnold-press-1.svg": {
+      "sha256": "77e4e7b2aac788a69af2fbf63b37ba9f8fbcffddd6986a4f6d5864eb29b93ccb",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/arnold-press-2.svg": {
+      "sha256": "88122b43a975f4728741ca5acbf7fcc3b98d944a27ee5f9a86ad26f70ef206fa",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-125-1.svg": {
+      "sha256": "faba40b43d9aee3df8ca1c0bfa61c75035e1ef29a6abe8b4857ab8b7126ea546",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-125-2.svg": {
+      "sha256": "6d6f3cde117257074a9c65e9afb2399e2ff7a146feb4797b672cd2106b3ffbd7",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-126-1.svg": {
+      "sha256": "1dd05f67c3237c8e0be144c5a04cf93ef18d82eb111f5362e4d527059c263447",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-126-2.svg": {
+      "sha256": "c5c521cecf82b0139c6487f1f6d30ed2d232b5cd0174dab920dcf6b241b7be2f",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-127-1.svg": {
+      "sha256": "b08c6fe085b48cae8b3acff30861336d31a84d7d5cde246c6ea5fc2ad3dde160",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-127-2.svg": {
+      "sha256": "70ee311a7c110f8979f3d2a1110b3f62af16a1bb826331e09782f9d500bfc0a9",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/machine-shoulder-press-1.svg": {
+      "sha256": "583ba77512afc42ae7ab010f791249bd00e3c3a5072e6e6df7f3bfdf5215f154",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/machine-shoulder-press-2.svg": {
+      "sha256": "2552c64bb57c419cd9f4a07296a4f3abd26d9be7b94982075d971b472f6db405",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-129-1.svg": {
+      "sha256": "67b4ab33b44a6c2950e2258e9090b5157fa090833480e56a334de6bd77268856",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-129-2.svg": {
+      "sha256": "eaa026dfc33aa95e1b9efe4dcc6d3823c86319743044bc648486b3d3fd0dfea2",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-131-1.svg": {
+      "sha256": "b75c9acb061cc5e1826b5441f462550b1b919c0c4704c36508ccc631d48cc61b",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-131-2.svg": {
+      "sha256": "6e5358e708efdf6e8239929a7bc3ff3d72dbbca3b6b843809837f43bd5497cd8",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0037-relaxation.svg": {
+      "sha256": "aef3563deec56761a17c19b5ecf4aa887e49d6052531a858bbc4a91576d401ef",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0037-tension.svg": {
+      "sha256": "9a8fca5c66fb94a411675e79bfe61a07224f721e6f610b86ecbff8f643c024fd",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-133-1.svg": {
+      "sha256": "f1757d09d27a652a40f0735801f84ae972e91bc284a31ada75ab7d1893f7d5f0",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-133-2.svg": {
+      "sha256": "99a53e0b1b0a716010b94f485262ceaebf3e3af054136c484087f990cf5af017",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/cable-lateral-raise-1.svg": {
+      "sha256": "3303803e2b2b5a01496989e7e3cbf75e70c4324ef7e392ed9dbd4bebdbb071b0",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/cable-lateral-raise-2.svg": {
+      "sha256": "64d06501c394ec372a5a76306db872212ef1c7f657ecdb462931bb61c6e09c14",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-135-1.svg": {
+      "sha256": "b88a766aeac773c4f3e7849ca52811170332d87bd98a6f9b26e3104c5a1d681f",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-135-2.svg": {
+      "sha256": "622bce57aea76349ed47c4577763fdc4086d4f39c8da097efba5d55e0b7b1a0b",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/front-raise-1.svg": {
+      "sha256": "794cf691e9fabde7dd0772653c625f13538f4e2779f3e2e7f0df7fa367d82a46",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/front-raise-2.svg": {
+      "sha256": "0adeb78eda7cc1ff1d0540a61a8d3abb5735d9395bc194251f130d7374c870a8",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-137-1.svg": {
+      "sha256": "7ac58860deb4040d020ab3fba1571054e45e3c57ac9d9df4382585f3dce68712",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-137-2.svg": {
+      "sha256": "63f8b48060e74a21b77cf1f5d5b1e1c2fc212b212295bc0b64ef3f8be06cbf48",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/cable-front-raise-1.svg": {
+      "sha256": "bab5c2a490d8fc00590bf30c695f59b12b7e7452cbfcf2bc9c3702646a49a1f5",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/cable-front-raise-2.svg": {
+      "sha256": "e39c4fab99bc16c63b3385d9c85250742ac096566999d92be262dd78bba055b2",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/reverse-pec-deck-1.svg": {
+      "sha256": "51ee3fedca4d087fa4e487ae6339d85429a0e089d5611bbefe2be414e74fc2d4",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/reverse-pec-deck-2.svg": {
+      "sha256": "f212c0481a5a55354a28f923970ac565ab3fc8db4faf745cdab72abc3a343147",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/cable-rear-delt-fly-1.svg": {
+      "sha256": "d8a8761256e8e515a4e68b26ce55c3c46b727e2be3df34b9b65c01f9cff2c66f",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/cable-rear-delt-fly-2.svg": {
+      "sha256": "e1f507b6c333a931d361b6a18707b3ef74308f36f1b8fa0be7e299609bf12068",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/face-pull-1.svg": {
+      "sha256": "08a568b9c5f39101cd27fba77fca1e908e7cd91ec2c4879907bd7c58756e3c07",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/face-pull-2.svg": {
+      "sha256": "c65c0db910109dfd1ba3d993684fdba493aff29e9e267840717a6aa2060ca35d",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-face-pull-1.svg": {
+      "sha256": "43d98a9d1283ea97fbdb682d33098fcebe66231214624af8c7b2c6cfd0dfef31",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-face-pull-2.svg": {
+      "sha256": "1e4591388eef920279c210bf2853c9ff9f8bef5002591514fa68aff3124639d0",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0016-relaxation.svg": {
+      "sha256": "08168cfce3b7292e57445986a478f6ec856237c5ff002bcefca1a7b217043521",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0016-tension.svg": {
+      "sha256": "384e349891de524c14cc57a04ce60773378a33f906aba5bd0ff577dbcf380038",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0015-relaxation.svg": {
+      "sha256": "e1c9bcca78fbd92941405ac9e1124a24dec194fc6f08cfe3f50a009703a37fa2",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0015-tension.svg": {
+      "sha256": "c3bf50e3d780a517cba6a21779cfe866a128a51a9b1700c9c29a704f3c51b58a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-145-1.svg": {
+      "sha256": "4bd15c45a866f82621620949d84270e8ec8db9414593ab5211912a13a45a8d46",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-145-2.svg": {
+      "sha256": "614e7d09816091194e824014f34881ab0a6cfbaf0b29fa80a24c5f432672369d",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-146-1.svg": {
+      "sha256": "6e26d58a0c0f1f5e1e4bece273e8baf25b986fea56b808b936b01ea5192f3058",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-146-2.svg": {
+      "sha256": "e1473d717453fb2c774c63c8baf063dbdcadbe79f7030189968855cac675294c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-147-1.svg": {
+      "sha256": "7d5d56eb3e2157151f90088ed85ac019fbfe270eaac046b6dc65b756e3a65894",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-147-2.svg": {
+      "sha256": "480fadeadb926c8d9587f2fee5674c43ff4b92fda107ae8108ff34e578291ea4",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-148-1.svg": {
+      "sha256": "c945c5ad9190867b41bc13c99ebe60509cff998978b1fe248dbb61a9d94a3270",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-148-2.svg": {
+      "sha256": "e8adcfbf90295c4db07a365801a68202194c58862b0fede7d845ecfd3bc329f4",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/ez-bar-curl-1.svg": {
+      "sha256": "a78964ec8b4c47b98cae3530c1ae2c5a39c2f88ec11d33989394eb9e6b4b2b35",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/ez-bar-curl-2.svg": {
+      "sha256": "cd2393314fa6fbfeea882423c467b5c535d006f3be23b06f91cf1c02f6e56e23",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/reverse-curl-1.svg": {
+      "sha256": "87307b80aa37080f354e306f16e5ae3d6f16dd6d06c32fa8e7c5d80c2cacef7c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/reverse-curl-2.svg": {
+      "sha256": "86e214ba9dcaa21841943006053248798a96d2bc2ae29a9d2273e0dfc81a3d7e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0243-relaxation.svg": {
+      "sha256": "833791513e7e91449753304df900e27d8ec890db5db7f390a0aa495528b622f7",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0243-tension.svg": {
+      "sha256": "a9b6584f5f4566ceefc3fc76a301ede8f095b33bd0a77587901fd4cc723ac62c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0223-relaxation.svg": {
+      "sha256": "47fbc8526bdc03ae131585fbff103aa1e6e89d5744c8528ccec567fec6bc367c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0223-tension.svg": {
+      "sha256": "4b13d552d50932df658bb24bba2dbc635ab833e817aed736ff1f396c8e0c14b9",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0221-relaxation.svg": {
+      "sha256": "d932f4b418612767c021028cbcbaa58f49a6119ae49373d05b9a184e475ce820",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0221-tension.svg": {
+      "sha256": "47ec2cb0c945fa23c8f38203bc9d249d8445615ef604a6f7bd2fda58c5b15617",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/concentration-curl-1.svg": {
+      "sha256": "3313275bb481cdad3588e613f96215c014e9f75c115be7635a2101a1f74a1fed",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/concentration-curl-2.svg": {
+      "sha256": "2199215e90fbf52e30d54581fc169efcffc3fa1ace84a8a3fd11d35f8d977add",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0237-relaxation.svg": {
+      "sha256": "3dd32c66ed89a4e1ddea860d342b3f1467d2cbe5293b31f4ec01e0af7b68a915",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0237-tension.svg": {
+      "sha256": "dc044e31bf6f00ab18b36212150e913c5a0f3c3d664902d8603ed5f226f8c153",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0253-relaxation.svg": {
+      "sha256": "df7ebadb1c78296238dcfbb69acfe904082b56f89b543c3c1ac8ae37b2aa4071",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0253-tension.svg": {
+      "sha256": "33f9d08d09ff2b3836b5a5192883c1eede17663483ceb50697db758b6c52ea6a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/cable-curl-1.svg": {
+      "sha256": "ef3c1b0b5bafa4107a06d0aa1ac1f85fe7f703815e48434647e582d1cdca89b3",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/cable-curl-2.svg": {
+      "sha256": "9995cced68e4be55b284abaa91ae587b509ccd2f38637bec7394223d433e41ca",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0229-relaxation.svg": {
+      "sha256": "cd597b3a28ceae57139ca2482f06f1a2dba68846308c6ffb08d090895ee4c88d",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0229-tension.svg": {
+      "sha256": "d19638bfe09e39ae14a9f49aef22b31554b0b6c76c4b8180061ead8edd949915",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0247-relaxation.svg": {
+      "sha256": "4391b0592a9ab6bcbe8dc0389681ebbb78584fe061ddffeccd026c098a9b1162",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0247-tension.svg": {
+      "sha256": "75e1606d82ce7a24634163a7f4f08e3bdd4c3427b8ac157c82f2758a3b8d5b15",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/rope-hammer-curl-1.svg": {
+      "sha256": "7345aa635bab27b782555b0d8c88ae8c5a6b09015478a0a80b2ef834bee39098",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/rope-hammer-curl-2.svg": {
+      "sha256": "1bfe62d2d09788270c88af58f15f20d679eb29454bc1f5de807f2e2826b7ba4e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0261-relaxation.svg": {
+      "sha256": "063dcd98e87f0626467402644d94cfdf59e591654f6870e0095ba017290eab97",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0261-tension.svg": {
+      "sha256": "64472c54405fc6e815f77a7dc02eeccc67aedc8219aff56ae3b4d5308d8f0bcc",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/incline-dumbbell-curl-1.svg": {
+      "sha256": "0c46ec68cea140be69f2c7ba382d3e7675b55da23a9fc6a1eecb6d18d76e7aa0",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/incline-dumbbell-curl-2.svg": {
+      "sha256": "09427394f15b4cd46842ba57eb71d930dab5315a221e8c7b94ce837bed6a6986",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0251-relaxation.svg": {
+      "sha256": "f07a2d159c0e20862398d568fc68512dcc60a89f4a9e759f668e0dd2064ae067",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0251-tension.svg": {
+      "sha256": "d981c49c792f84559e5392b112b61197640348e7b5a344f4112e446af2438e97",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-skull-crusher-1.svg": {
+      "sha256": "956357ac205e5d75e31a3d9967d2eadcf829f856c39c800b7f3be7aaf69a97cd",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-skull-crusher-2.svg": {
+      "sha256": "bfb05c4fa8b1a43250a20bc214c98bcc475d112e342b6bec2dd6826b744ec5ac",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-overhead-tricep-extension-1.svg": {
+      "sha256": "87ca26b4e51574a83a9824be3fd018661990f81943ef2284f70a8126857bfd27",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-overhead-tricep-extension-2.svg": {
+      "sha256": "70083e1dfb9bcb761dff7d6b1fba7c5188617b7a52a76c35c49385e48cd83b1d",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/rope-tricep-pushdown-1.svg": {
+      "sha256": "e3a9eb0b51a258b75753c34ad7268216bf1a4038c05407ae1c7d16c04ef2c095",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/rope-tricep-pushdown-2.svg": {
+      "sha256": "bec4e864091717fff2737713b200158e183068908f8e3fe294d5dc7bce0b6fd2",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0189-relaxation.svg": {
+      "sha256": "59b8b2ded950c8e820c20eb8f0d67eedca4ff54a5b49834dae265b46ca64478a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0189-tension.svg": {
+      "sha256": "61a012c3888b75f6d4af45503762491f9255b514d014a45fb47066fb9fd54c4e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0166-relaxation.svg": {
+      "sha256": "9417ca9c2cd64a1c963267ef4d5f3e5bb55afe2797df62087711af623e11bd6b",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0166-tension.svg": {
+      "sha256": "8d173d300c86b72e411ebc5f710a6bfacf703aa89e59ee4245864a4fd88c4a80",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/overhead-tricep-extension-1.svg": {
+      "sha256": "480d6b597787087cec09d25e8ff671615f43a92265009ef8c721ef0ae97a5c45",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/overhead-tricep-extension-2.svg": {
+      "sha256": "7a29a850936943382bb03008cd84658851c45962d72953dec592b3f2f01ce537",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/tricep-kickback-1.svg": {
+      "sha256": "e03b3d020744f736b665c9a78b14a25f5c9f98804914e21ff898a4441b6eda95",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/tricep-kickback-2.svg": {
+      "sha256": "3d12469698eb65a222c187f26fd08c971bc904a00fa1fbc83f4a30ec4c466cb6",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dip-1.svg": {
+      "sha256": "dae0525dda96e7497b839f24ee921d469785942226d23ff95e7f5f767fbd47b1",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dip-2.svg": {
+      "sha256": "580dd07fe0db3479d0f0949d780a43a64e3f97d7eb4eb741d8b74db081936fe9",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/diamond-push-up-1.svg": {
+      "sha256": "cdad9a6bd4c55785b0cda57b81d1b4d2e3799ce9b52479f95cd1dff2b8588890",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/diamond-push-up-2.svg": {
+      "sha256": "3c6212be1dca22b9cab1669a32d62473f0f095ad2dd11caf3a7f85d1d8e1bb31",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/bench-dip-1.svg": {
+      "sha256": "344dca9aa4bb0f58f037d75c9e0a7b2ab9b8e240ce9e3c44eb3f8d16752c2c88",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/bench-dip-2.svg": {
+      "sha256": "17a60e66261a25debcb0605877388cc3f34e53fc0469eca9c3c08e58bcf748ad",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0210-relaxation.svg": {
+      "sha256": "5578999bebc028cc55ca6480b0e00d1a82f41e767069cec9ab12f30e7301203c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0210-tension.svg": {
+      "sha256": "625c9326e5919cba527e58d3c5de38b09ecfa73b088f78e729b9d7cc41e5963c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0175-relaxation.svg": {
+      "sha256": "6b664b631a5c5d9984ca08389c660cbb092fb992233da6a730000010df65bb6f",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0175-tension.svg": {
+      "sha256": "d86b0a4f0d9a94249c217f891309742463d154b8de279d44e878df7154eeb4a6",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/single-dumbbell-skullcrusher-1.svg": {
+      "sha256": "2619605c798fd59b73a43792ddd0eaf7fc061500302e62af0ba4c6dcb886e60d",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/single-dumbbell-skullcrusher-2.svg": {
+      "sha256": "3a82b90e10217d963948a9506c1c89569e0495fa162f6cca5e8e74e03df0effe",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/smith-machine-squat-1.svg": {
+      "sha256": "836a7961e07b89c77f92c43b253e01855a9afa7d670be13f140eebe1105f9e46",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/smith-machine-squat-2.svg": {
+      "sha256": "31748d3a5cc0f4fd1ed9cc85b109918f7b3cf9bfcc607dfd90e2bfa30b7a455a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/goblet-squat-1.svg": {
+      "sha256": "f94a73243089f6a472e0fdcca604ae26f940b2dae4216b7280cf0f6867a34c63",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/goblet-squat-2.svg": {
+      "sha256": "cbe23f873b6d1f4102356553df02b25fdee21897d82c261b8d09bbcdd2b2e10e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/bodyweight-squat-1.svg": {
+      "sha256": "eb098cb6d5117b477759368678e1a4ee00397c4f4ba8a862509b24bae4cb2f9e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/bodyweight-squat-2.svg": {
+      "sha256": "5a17616e0e035ca386c79cc2a7977eec399cf69314279c09f5aad103714a0e1e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0146-relaxation.svg": {
+      "sha256": "2f82b2f08219ecfabf4ffc09abcc48af7dbf904ce2f909f22ede8de855d3ba43",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0146-tension.svg": {
+      "sha256": "dd273b2b32e87e83c5c1928ff9878c6dce14b733e204897b3964b773bac31008",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0160-relaxation.svg": {
+      "sha256": "a996b75d247067c227f774a7f8709d77d3bc7a15019e33da8195ef70cb3f8e60",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0160-tension.svg": {
+      "sha256": "03efa15083aa71191551e27e59be5591f5ab72ba97474ceb45196d4ce8bb83b4",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0133-relaxation.svg": {
+      "sha256": "f58bb194fb8540cc55515f59e096ff9ca0acf321af646a936c72bed7aadc8ac6",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0133-tension.svg": {
+      "sha256": "c3d1ef35a0ff27da2e6a4abbfaeaca4c8b7312c61b35ed734f2fef414a335cd9",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0161-relaxation.svg": {
+      "sha256": "625234b72602babe2597a5c7fd0257154076f8d90796ad79a15596811bb3e885",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0161-tension.svg": {
+      "sha256": "140494887208db70a65f36e25c847ba06fa141488bf441e1f62f72876ccb08c1",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0130-relaxation.svg": {
+      "sha256": "e117355d00553ac75e541d810a666556f3478154ce31b06dc69a6775ba588663",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0130-tension.svg": {
+      "sha256": "ed33c4767cb1c94a160297bb0a568e5741a76b86d60c11a47c38993121778898",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/hack-squat-1.svg": {
+      "sha256": "04ed6959b9017a0678910975dd5263d02b3f5446812db1a8f68bf053009a0ad5",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/hack-squat-2.svg": {
+      "sha256": "6fb1d7296c51794528b6450a1f073702bd2f6a488f1e6ebdd884c5a437a2317f",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0125-relaxation.svg": {
+      "sha256": "4ade4f3f59eea984c04721b6e3a6056fb5ef4c4244a18776b8235cc1cd7c560d",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0125-tension.svg": {
+      "sha256": "236c26f24998f338f040d6cc9c7bbed3f23927e0430dad910cd0f4e5239df328",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0143-relaxation.svg": {
+      "sha256": "ef06ad7e1e56bcfa2bf5fa97af1d77150790ef9764a65318c2adc34c6457622b",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0143-tension.svg": {
+      "sha256": "bc308cbe7ec2349ca1b8bee2d51942e26de05b2752519089dd1594bafd65989b",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/reverse-lunge-1.svg": {
+      "sha256": "75dfa605c953204efc0a6d754d9db78b4ba2c32b9221913227d91a768ace0594",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/reverse-lunge-2.svg": {
+      "sha256": "1de7af8d4948af6399da11c60794542d046a404a410f4c2aff7401e29b34f0c7",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0114-relaxation.svg": {
+      "sha256": "e4043191dadd71ae8247a0b8fda933ceba2e4208a5426606109dd22d3d9a67b1",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0114-tension.svg": {
+      "sha256": "ceead1d8a4d1cddc2126cafeca449485dba90032a58a61c33db54bf656df280a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/forward-lunge-1.svg": {
+      "sha256": "b7f450b9d0a31c32874c80b13faea5dfcc27463e272b56de6ae3d53e6a434887",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/forward-lunge-2.svg": {
+      "sha256": "66ec286fd577ba43e2b009460f323670dee7e65c8dde8e25694cbb8cb83595b2",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0132-relaxation.svg": {
+      "sha256": "1ce4c7012d65ea25b7551f9062c0b139e0739c1fe9cfbb3eb14744e2f7245619",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0132-tension.svg": {
+      "sha256": "4882daa6214a2f22366ca018dbd6d8bb326f7ffaaef3666eef92220c9c088f73",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/split-squat-1.svg": {
+      "sha256": "f90ccc390934a79a9086b0eb7df46e92bcd02bd9fa47b466d3bbdc6e49c21b12",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/split-squat-2.svg": {
+      "sha256": "60669abf49ce69010f94667c590c2bc900eea033f44b9f84bf0f7199fdf09406",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/step-up-1.svg": {
+      "sha256": "3b0939930d327f874143577128f75d4ed979494bc0c554b6599610e0e4da4449",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/step-up-2.svg": {
+      "sha256": "d80289afc9bc4411e6e5775b43e65db3e10dfcb225458b1008d34069c4f833b5",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0134-relaxation.svg": {
+      "sha256": "895a54b6526675762152bceda811668766f6f791cd3416db9df78bc2c1a02c2e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0134-tension.svg": {
+      "sha256": "77bb2176638c0b6203c8ffc817d456618aded6cd849873712cfe3a51f6613546",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/sissy-squat-1.svg": {
+      "sha256": "b4ca4b16d8f5107e5e8c78de9e841191e7b91251e3f9d37ec08f9fb23bcdfbc4",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/sissy-squat-2.svg": {
+      "sha256": "0eb56e140bf4b8470a30e1d939596a1c4e161b40a741c4476274f2869b062b60",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/wall-sit-1.svg": {
+      "sha256": "5a29013951a2c91bf063f36c37ae9ce5341df3111b6c02703f4c94cc6116f8fd",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/wall-sit-2.svg": {
+      "sha256": "8a6e59b41b958422ccbbeb39a6c15be5f39b7ada3860b863c2063f03354e3ae6",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/assisted-pistol-squat-1.svg": {
+      "sha256": "628f2550e103b9d1827ed3cd022b458e039dfd591175a68f20875471a9712270",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/assisted-pistol-squat-2.svg": {
+      "sha256": "671b08ba3284ca08b66dd94a22ded9734049655ef50a58b90372e0fa3fd962ba",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/pistol-squat-1.svg": {
+      "sha256": "3d9e3d625d3815e388a7af4beafd5a2ed22246890decb10a8d018c4c48b285cd",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/pistol-squat-2.svg": {
+      "sha256": "7853fe9277dd6fa84ac8d93d81cb647aba7add43fa76e514672cb8c89c0c485d",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/smith-machine-reverse-lunge-1.svg": {
+      "sha256": "c01314ac98c6b216a0333c682017a5c9ef2e7db5acfda50f3bcd1d2b6ec9dd27",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/smith-machine-reverse-lunge-2.svg": {
+      "sha256": "d54d25f0d540b516004b8f31ee01038fcace4584bd4fcf07f2d985682672526a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-romanian-deadlift-1.svg": {
+      "sha256": "ff05da6e13d1f1cc053af32e37b0cf4c2c47f472bf2f53706c7061b484f9ad05",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-romanian-deadlift-2.svg": {
+      "sha256": "6b34ffe50fb458f1386a06bf953d8c5d711383a3c42656282c65abc857f5cb29",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/single-leg-romanian-deadlift-1.svg": {
+      "sha256": "3c5d0ec26feabfd5c0d51fcaead652ed6d5ceb42d838bd88e788c52f08d15e6a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/single-leg-romanian-deadlift-2.svg": {
+      "sha256": "197dbf05ebf0717e781c7a78fa4d4c715be2f226bd4f0df23556298b8ae36d67",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/seated-leg-curl-1.svg": {
+      "sha256": "5523521a2db068377790f52b91556a14e7b630bbf66e8e54efa110be57ecaa72",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/seated-leg-curl-2.svg": {
+      "sha256": "ab2e64690e422c5de0e524962140018d403a977daaf3ba2d5f207021094c9c02",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0120-relaxation.svg": {
+      "sha256": "cfb02b02a5ec6ae5f7175ecb3d5c81661eab366fdeb92ff4dd247d63d30d3f83",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0120-tension.svg": {
+      "sha256": "b48526d7361bd021162f956618bda42413866054643a2774ce760cf2b9c830d8",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/stability-ball-hamstring-curl-1.svg": {
+      "sha256": "e737c5567616e2fbf102416dbb581311edab35468326d0ae0d1bf6eaf8f5a00a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/stability-ball-hamstring-curl-2.svg": {
+      "sha256": "f16bc9381b0132c0a831cc6926b52f3eafc4dacd004847aa8aa968bbdb8270c2",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/nordic-hamstring-curl-1.svg": {
+      "sha256": "5f6896e96757755f220b8277baca5358a29aee9f526d11cdade2d49011e23c96",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/nordic-hamstring-curl-2.svg": {
+      "sha256": "02120bdb5c2aa44351b4c87e8abe251a9bb7809aed704e089fd719eb0bc239f7",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/good-morning-1.svg": {
+      "sha256": "d3481c059d553736d1f059f346a3b5821748f3bf9efd284f50fa6e081bf7cf77",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/good-morning-2.svg": {
+      "sha256": "aedb60614cd3256476e2a2701dc6a4a896c57a9cc7c438d98080fe7b4d039a27",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/barbell-glute-bridge-1.svg": {
+      "sha256": "c8f56a9770c0b44f08e1169b5eaba86dd1b920cc24ba179630028282ce9e69d1",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/barbell-glute-bridge-2.svg": {
+      "sha256": "1f23e753134d21633760c8b8f627953327e816ced79e065a709e4940741e4f39",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-glute-bridge-1.svg": {
+      "sha256": "a5b396de338063808eadad8db1f9701233ca0dc1a18780ba51706b77392cfbaa",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-glute-bridge-2.svg": {
+      "sha256": "2d383263eec29b8e311c2be909cc18acafc7e9da03754431294e1a965f76a5e0",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/single-leg-glute-bridge-1.svg": {
+      "sha256": "c29bd6a88692f886ae82fe51fbcdfa41a5b8c50cba463665b10031014122e794",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/single-leg-glute-bridge-2.svg": {
+      "sha256": "96635193396a8343afe4a639b5fe0caed199f6fe61acd69f6e1249fa0c5ecfd0",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/hip-thrust-1.svg": {
+      "sha256": "67afc4108e8e6e523a26fa59c9239346f368cc86d300da49c593de28deaf016e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/hip-thrust-2.svg": {
+      "sha256": "f13c222022d3eef114f179766fd7936623061bd94c85d92f653a310cc35e2e72",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/smith-machine-hip-thrust-1.svg": {
+      "sha256": "59021861d071adacc20054dbb95ab69cff092d7ac0fd51824e4fe24b0117c09f",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/smith-machine-hip-thrust-2.svg": {
+      "sha256": "236937df8720bf754855dd6c3713c8e196a66f476c88c41f2f50109d6f8c03a1",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-hip-thrust-1.svg": {
+      "sha256": "c47e3356d57af3a5c7141e0b94a63a08820bb9a3621f01262d5c39c7e9291e61",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-hip-thrust-2.svg": {
+      "sha256": "f63eb64aea985b11b40af837e98c361aa8434a86c6d6e199df52fb14f4b5ebb3",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/machine-glute-kickback-1.svg": {
+      "sha256": "d1da626d93a82f278e195d63ffe7fb8dd6b0815729a4a3d3f0d86b719418fbe5",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/machine-glute-kickback-2.svg": {
+      "sha256": "9e5faf45c0479d1781ada28318a25ed3dacfae1d917d2b442a17d9aa9d4ccde9",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-kickback-1.svg": {
+      "sha256": "2c815c9e3343b810300cab2c5582ca578f7fe18f3ebed4450ac5090d7be2bae7",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-kickback-2.svg": {
+      "sha256": "04d5a59934d39423a32345ccdad6ca904619d1f34b37cb42ebb7be8e8ec9c506",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/hip-abduction-machine-1.svg": {
+      "sha256": "f5baec20ecd8eec625b8e9f62ff7c0d419d45d879d8741e9ca5f350a1b978b35",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/hip-abduction-machine-2.svg": {
+      "sha256": "eaff18d1c9cf895f0ec772f3397ce305401ec6bc855d6dfdd857b07dcff64785",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-seated-hip-abduction-1.svg": {
+      "sha256": "781e2fe189d4ddae3378ea4a5d9bc7e232dbf6629ceab950cbabe5abae19b53b",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-seated-hip-abduction-2.svg": {
+      "sha256": "34d383e93163313f31c402ad4fd02ddc11eec2c799ff3b3d4ce9b499deba2578",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/kettlebell-swing-1.svg": {
+      "sha256": "bbb5e30cb126ce2c81c67eb54e04ee2fd80fcc25403034172d66ed86a8b7b7a3",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/kettlebell-swing-2.svg": {
+      "sha256": "fbfa9f1106f3e68a0089930cab562666764684bb13b4bdeaee7b137a23345810",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/sumo-deadlift-1.svg": {
+      "sha256": "360f8e8c6c584f66cad3689ffdbce04289c1265d403db04b05f89166a77a2bb9",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/sumo-deadlift-2.svg": {
+      "sha256": "26b8b731a5e2589f107f65bc8e9e91983a53d4d0722f7119c77361835c79455c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-sumo-squat-1.svg": {
+      "sha256": "97d883d97d94d0391b1744e5b6c881866cb39caa1a4ed8f5c395767e10ef7b18",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-sumo-squat-2.svg": {
+      "sha256": "2ce592368cf6f86bc450ae3f4c34015d460128a84f35b871e9eef49272a009e8",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-clamshell-1.svg": {
+      "sha256": "1344086ed57bd485562d88332cea05d9fb5554d44fce066dc29f255cd0e20f8b",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-clamshell-2.svg": {
+      "sha256": "84f631d175f4bc7ec56c8bce23fdb465599aebd49612c1163a4daed65f08086c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-lateral-walk-1.svg": {
+      "sha256": "c4962048554d41ce1809b97a72a6ea04b02a1c50da516c3bf39345f00cddedac",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-lateral-walk-2.svg": {
+      "sha256": "e6202ddee792e5a30f80a9cda24ce0e853c168747f493bc12564a5161e4c9211",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/standing-calf-raise-1.svg": {
+      "sha256": "7de000c4b9dd9339201df956e74d8d527ae4eceab86a49e5e2a22e0043994320",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/standing-calf-raise-2.svg": {
+      "sha256": "05bc3300295f8135455651aaa4c04b834487b85878cf5ad7081bfacf19cef788",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/leg-press-calf-raise-1.svg": {
+      "sha256": "11846c56cae7cad4a53802ac9f602119f84f5b7a225e099dc113e2ba395708d9",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/leg-press-calf-raise-2.svg": {
+      "sha256": "d462c9c716b7f30b1c4baf195b3c252f0cb22d48fedfb11680d8a7e1ffdc617c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0281-relaxation.svg": {
+      "sha256": "0d303678b80c8421900d2dabe1e63e8b47f8f941b3854551c93f5ccc434388a3",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0281-tension.svg": {
+      "sha256": "33e36d7676a61e45ff6f92fb7bb447531e82fe8b76a97943cd3e4919d7847768",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/single-leg-calf-raise-1.svg": {
+      "sha256": "445b33e98b591aa844524110afab0c1bc3a51d9977204dcf9cc70d6e998191f4",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/single-leg-calf-raise-2.svg": {
+      "sha256": "f8803092b6dce9140291bf933f71887a9127d4ed5d402f882faa4c6dd16fd684",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/donkey-calf-raise-1.svg": {
+      "sha256": "0cbc06bf8b6c968245bab29199528a17a43d885a68b1f3fbb819cc68c8e7a636",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/donkey-calf-raise-2.svg": {
+      "sha256": "e9d4f0f905c0ee3dc835a6148ff971abad5aa6eb22328b34d192d8d0835fdf7a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0276-relaxation.svg": {
+      "sha256": "fd5c8982198db860644144e43fdf53e32f9be526c6ec74dc0a06b5d1dd1797c1",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0276-tension.svg": {
+      "sha256": "363d19b1ad9e172a6be8fc47ac4343f65c7bd55bc37b80524af3e18845b3a187",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/side-plank-hip-dip-1.svg": {
+      "sha256": "f7b6875fcdabde9bb2b8e6920c748aeb38f168ee8fef0a4f28cbf01b9e040fea",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/side-plank-hip-dip-2.svg": {
+      "sha256": "1a3f89ba580994b0c3bf58dc5b48d99264917c5266b4908af1480da6d4a8064b",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/plank-shoulder-tap-1.svg": {
+      "sha256": "af1e27a0fe619ecaf8ab92f4773c86e7eb22e98b6f794f268ab39da59fd9d6fe",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/plank-shoulder-tap-2.svg": {
+      "sha256": "11534aad5b06367f4ef8f778b512368dc0192689b249dc695e0c3b6913881b23",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0295-relaxation.svg": {
+      "sha256": "5c53f74d19a7f8340f9a034e949812b91b4daa0f7a4d0d7b80a90318708cebd2",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0295-tension.svg": {
+      "sha256": "da1c9c083b18d335a17e112b48b2d765aea932b1be857b0866bb935877e80493",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/cable-crunch-1.svg": {
+      "sha256": "33fec92d74f97a2bdaa9c55b7de1ccf51cb260d9a8cf9b646b6a36cf35754ff8",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/cable-crunch-2.svg": {
+      "sha256": "9245be292c1bc05a6fc39cb6118bccae77bf30fc606db3a59a24a819bc5e8cd4",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/reverse-crunch-1.svg": {
+      "sha256": "ace4554c9155969e2116f88068c9b6fe1e8806844c3d4a99e2e31bed2176862f",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/reverse-crunch-2.svg": {
+      "sha256": "fabcfdb7d3ffc1d1dc410e2100862c7ae6590ca5b423700fb1c37b546e6d0cca",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/lying-leg-raise-1.svg": {
+      "sha256": "c5257476d7aa6d71787ec278c9d02a84829f2629311f00066c778df932addf7e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/lying-leg-raise-2.svg": {
+      "sha256": "343ffddc132fdda9dac857c9c7260577dc76470b3427f4b31e9f46a3031930c9",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/hanging-knee-raise-1.svg": {
+      "sha256": "9c1d00d9967c87b294385c7fbf5160049de8d4870106ddb08646250b0a94201c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/hanging-knee-raise-2.svg": {
+      "sha256": "cfca36492979edd80166d86091f28c4fffd3554684c6c855ea14855300f5e04c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/captains-chair-knee-raise-1.svg": {
+      "sha256": "b0f7cd9155f160d7bd59e8c2cd19cfa2e3535da8cf9f46056640484dfd79934b",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/captains-chair-knee-raise-2.svg": {
+      "sha256": "d5d251069e2d82cba9cea328a8c976de1c29634db173d09fa2e24a05dfd2cdf5",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/bicycle-crunch-1.svg": {
+      "sha256": "a88ca6176d3390346c386c9ed33720e13c196674d99f582c3388d732fc972dc2",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/bicycle-crunch-2.svg": {
+      "sha256": "59f4a013abb627d210ccb2bc03bc3ac7a5a9d9eba1f1b75b92ecec27102d2c17",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dead-bug-1.svg": {
+      "sha256": "0e1208250b923348fbf170f163e581be3dcc1ce7f906b14766da59a7801206a2",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dead-bug-2.svg": {
+      "sha256": "333a91ce60ff475586a813310cffc705231956511f86d1c191b31d0878005842",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/bird-dog-1.svg": {
+      "sha256": "ab25efcaa49bc373d47f4bcf9fa9dacc7d3170bd7cd4f6d3a29bcb0d98c705ac",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/bird-dog-2.svg": {
+      "sha256": "51e9ec9088bac460c64143eadb53e61396b89284b2ef9f8b5142dbbb8fe22c2f",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0027-relaxation.svg": {
+      "sha256": "98225844be5ed64101527a890f3be337a1661124cb0b7666a4e043d0e2ef2c87",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0027-tension.svg": {
+      "sha256": "09b99b5293e1739a71e911c3f131c1d0629b05cb9cb56db7a717a4eafa7a0bf0",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-woodchop-1.svg": {
+      "sha256": "f89546a5c3bfe711a174cba8a34efef585d4f8de2a43d9c5e4aae6cc3625ec3b",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-woodchop-2.svg": {
+      "sha256": "22d16d6f57f16d3d2fd4338545875c8623a6b716f0c918139cfc73a5f20c28cd",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/cable-woodchop-1.svg": {
+      "sha256": "4e9a7684432ba9293a0ff620b31cb0b985d5460f52ea697a863efe35fd9153de",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/cable-woodchop-2.svg": {
+      "sha256": "2b0e7087338954573b2a502a9ae47c5e19968a1e9f15e3d151f53e8e6f02c460",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/decline-sit-up-1.svg": {
+      "sha256": "4143ef5506c9a83f03e34af8fc7579a74bbb0617db4ff7fe5301396ed117917c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/decline-sit-up-2.svg": {
+      "sha256": "a215a3bfb2e101502bbf1f203eb94c049732df50fbc7c9ae6dddd621eabc4d86",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/l-sit-hold-1.svg": {
+      "sha256": "32cfcdddaeb845e8da8b25b7066838e5a81ec7b50179fe1bffc982bdb7e5d5ca",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/l-sit-hold-2.svg": {
+      "sha256": "b84de88284f232d93a5024cec4b2df9f8e7243c60fe8a8ac331f3d64dff4f5f6",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/burpee-1.svg": {
+      "sha256": "043442c1bd2ed73f387951f335a80ee2b01ddd9f8e9f8c2261886a7eeca21ed3",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/burpee-2.svg": {
+      "sha256": "76e68827ee48eabde283f36eaacdd30692065b91f86b900df4b61fbf60207ab1",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/mountain-climber-1.svg": {
+      "sha256": "0ccc0b219fd082d7451f548e989458520fb7959130e3fbc69926860c4f6a0bed",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/mountain-climber-2.svg": {
+      "sha256": "4fdbc8ea539bbe9e216d28bedb6588b1b0c7c3c5cdde2912e5d460517aa4e7dd",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/v-up-1.svg": {
+      "sha256": "651af3c40bfa1362997794788236c7a82f7959a672aba03bc1d55dbca429c45e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/v-up-2.svg": {
+      "sha256": "36e65761edf94872996c565bcf1cef0c30c462bb04ecee51831f002100a44121",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/trap-bar-deadlift-1.svg": {
+      "sha256": "939dc7a0b84665edd0bce43dab1b0dc292699a57341188312abcc50bf04e5557",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/trap-bar-deadlift-2.svg": {
+      "sha256": "dcf7bc924695a391778b97cc003e0b5a14b7764ec2c54ef6c483f905b91ac86a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/superman-hold-1.svg": {
+      "sha256": "e3e7f966a41bf515ac4f6583c9107d39158fa5fa7a38f7594d645d4a0479832a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/superman-hold-2.svg": {
+      "sha256": "cd289cdce54e0cdf8fb4d7ed718b32cb9c8fba7eede336ffc9298c64ed46a841",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/rack-pull-1.svg": {
+      "sha256": "d9b9817a72be95d23145ffa466dfc32a028fe4858aa6635bb12d885cc8dcc75e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/rack-pull-2.svg": {
+      "sha256": "93db88fb2fa853193fea31da7f43d87104f94ca91089014aaad0b16a2cd10478",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/wrist-curl-1.svg": {
+      "sha256": "f19588288ed58a99ca0cb98040515c097bb4a850edcb75ccb037907b08b69195",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/wrist-curl-2.svg": {
+      "sha256": "8499dfb42b71a4b75b5dd5028ad21792d8641c93b2d9938bf8a9bb11c7342129",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/wrist-extension-1.svg": {
+      "sha256": "dfbe01ff230682eb3b8322543d5a78b956a194dfb9212c8ed998cac9d44b745c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/wrist-extension-2.svg": {
+      "sha256": "16cf5234242ac8c3a15d97c913ad8ac2234f174fafea64a404373fcddac037fa",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dead-hang-1.svg": {
+      "sha256": "1c4426d126d7264a5b5564712880f1203dff410c014566ef134f42f85d382df4",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dead-hang-2.svg": {
+      "sha256": "997ea29832ed1851d152d29b5520f67f63c9d9e45882fa52cc80ec4535b103e2",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/running-1.svg": {
+      "sha256": "2c91eb272d6201d9a3f79dcd8aa6fdde8811c940146748b09050bf111ec131a2",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/running-2.svg": {
+      "sha256": "753166e2e20aa2c0d71cb1e778774f9042d28c887b237446e334f4381cc25173",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/stair-climber-1.svg": {
+      "sha256": "1c864becfd1e7b0556026af659be7be8f5b2c9d51e62e2cab7c26970c8a2a4e4",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/stair-climber-2.svg": {
+      "sha256": "1f5843aa98804cf2ca4eaa2b6b2bda7d971149021260559d65f2f457670b6fa6",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/walking-1.svg": {
+      "sha256": "bfacc7f4c46f8f682b24f5e645e2e2a5262fc13aaee0a59f95cd8f195ac5ed95",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/walking-2.svg": {
+      "sha256": "8661f5b938bfc6cf0eed3a7b446d7ac835e05d1ec9a7fcef50c80bfc7d4b36a5",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/battle-ropes-1.svg": {
+      "sha256": "24fd07a9f203d8f39920c3e9e7c5b7c1b46694d0ce3dc8fe07b31118e62c380e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/battle-ropes-2.svg": {
+      "sha256": "be121f3c28253799c1250329d8c9d87f66753274b5693113d164f9d22b31c259",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/doorway-chest-stretch-1.svg": {
+      "sha256": "c8ccf7339662784df89a363ed9fe7acfb4d739b55a0cfc66b92f986ddc036b75",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/doorway-chest-stretch-2.svg": {
+      "sha256": "b7e9ba44209037b10b1fddb0ceb1c7f0df03e4045e2ae5c7941648d5726c211f",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/hamstring-stretch-1.svg": {
+      "sha256": "06976c3dff8b7253631587dc08b4db9d70f3477d8564a988c5de5b056daff8a7",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/hamstring-stretch-2.svg": {
+      "sha256": "853f49316ae56fc27dc1cd144a83be91d7dd0468f2123e5618d0ac8e264e43bf",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/standing-quad-stretch-1.svg": {
+      "sha256": "7c1c1b0ef2e08afc323d6a30d089fe7caab188c17799a984473cada1502347df",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/standing-quad-stretch-2.svg": {
+      "sha256": "93a2237451eefec777aecf6ca5caa5ffc49b10a5a797d07904cc2b645ec4b1f6",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/kneeling-hip-flexor-stretch-1.svg": {
+      "sha256": "abb40fc2c959a9a3cfbd0338fd7b1cbe03d1c8e8ddab0d6147d5cc50a42a2d39",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/kneeling-hip-flexor-stretch-2.svg": {
+      "sha256": "a248e3041142107dc2217460b191284edcab2d9a164e6583380826bb52d356de",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/cat-cow-stretch-1.svg": {
+      "sha256": "710c002be440b3bb2b01c4a3b04158acbe1aace8fda0d00b1e0da0b7224be0a4",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/cat-cow-stretch-2.svg": {
+      "sha256": "278c9806c3136bb1309a2d7dbd3483cbcb8b949b5187c2f0d08265c271ce4c0d",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/childs-pose-1.svg": {
+      "sha256": "bb900c9aa30fb437799e6143d0f617ec13fd7b4cebb98804da6ce9c9ce669336",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/childs-pose-2.svg": {
+      "sha256": "01450139f78335be2f9d75c51203bc7575ec43a7ebdfe8450ca143dfe1b84e9e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/band-pull-apart-1.svg": {
+      "sha256": "7491828635cbcb7354b65f488e1e51bc6c695e9a236009862aac75d6cc083f64",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/band-pull-apart-2.svg": {
+      "sha256": "91d0a876c26032d17d5596529cbb0aeca81ac674b7965c207da93c6a2894e577",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/arm-circles-1.svg": {
+      "sha256": "57b1657908525904602c962d206083ceec8e06f58eafb83df781c7f6d7b211ac",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/arm-circles-2.svg": {
+      "sha256": "f283649a38fcb7eec17fbb2ae1c57910a680d1eb2fdc377365ecf26bf536643f",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/wall-calf-stretch-1.svg": {
+      "sha256": "49864dda884c72ce639f660aa3e074425292fcf2d85a2062d0744d5581a7c4c2",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/wall-calf-stretch-2.svg": {
+      "sha256": "cb9dfe80a31e0a2711babc6289614e15ea2a847dbaea6b6a263dde05364f2094",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/leg-swings-stretch-1.svg": {
+      "sha256": "a0fba75fa4818ac76541a5099f258dce9569c8cf6ad52fed40286e5c1ff2d83b",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/leg-swings-stretch-2.svg": {
+      "sha256": "4d4b18a6ea47354805e7fe6d19eac1cd667916977d9b85d0b790c73bf267a78a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0072-relaxation.svg": {
+      "sha256": "5dbe2de0c128d8951d3e1f543be32802663d3a55abaeade3e6d1aabdcf586fbe",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0072-tension.svg": {
+      "sha256": "81a169056187d283eebeca8e67bd5dd26a1b1836c06576775e3479665a27f849",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/negative-pull-up-1.svg": {
+      "sha256": "89795404487d9e8e36b78d9b19c752921d04ad53b2646550d7ece3162831fd09",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/negative-pull-up-2.svg": {
+      "sha256": "15637eafaae4e2dc8eb04f5aca1c8473d193873b624602c215865e326cdeb0f4",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/inverted-row-1.svg": {
+      "sha256": "df3bcc0e4927550ae86cacd22297bb7d311449cbe8962600f205175dce1a945e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/inverted-row-2.svg": {
+      "sha256": "ca2b739cfc64317f5d9095379fa7b2d5a2aa9de999512fb7eff272cad1580dee",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-lat-pulldown-1.svg": {
+      "sha256": "d053a4d6a728da9dcdbce5f0610c79ab3963a8175efe2e150c79ae80f77ca307",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-lat-pulldown-2.svg": {
+      "sha256": "b3b7ef829e34adc39805bd920a8a66e279748534b424ecc65dcba95c1c452b36",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0009-relaxation.svg": {
+      "sha256": "47ba7605db63006d10751db5ae1a357946adb4c5e343922dceab77b04696e33a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0009-tension.svg": {
+      "sha256": "4cdf6a18283b0dcb0016e068f4f1b35f1b59e2e6ec3c2a51d7c11ead76e3b496",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/landmine-press-1.svg": {
+      "sha256": "6cce0e112f1698a3933cae1d49791fbb571174789e57777d2357ed5111c6fd3e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/landmine-press-2.svg": {
+      "sha256": "46844b8cdf94284046734ddc54279342160a33d09d32c6b88959c0767c883e67",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-414-1.svg": {
+      "sha256": "59a734967bebb05bcb61f2b058e4e91567c45868576a648979e5d53efa73d3aa",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-414-2.svg": {
+      "sha256": "e7eb5c65304002ecfa4297811e0b2a91b9c41f3b1133f2c0282e959c7e01a5b2",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-416-1.svg": {
+      "sha256": "82907a2c416a98901b107395682ff4764374086751f01cc9928ae5858c6b6e8a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-416-2.svg": {
+      "sha256": "ab0c5d14d513b1a1cc53b55e847f564bd67efe9fb29b2025ada472a9a5bb1f5a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-418-1.svg": {
+      "sha256": "238fba35a2482f5cecdebe132f515741d9c80baf79b5503a554397db590ce9eb",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-418-2.svg": {
+      "sha256": "d959b34f89fbd5ec62421b3bfb89a08d72d6070d9cb8c42e6b7bb7e1024da3eb",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/machine-lateral-raise-1.svg": {
+      "sha256": "2971a1bdf46524ea2b6f44a622afaf3870262d95a3f42ad9ecf4220c97eccc02",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/machine-lateral-raise-2.svg": {
+      "sha256": "65d7a9e7b28362f0d1cad54d8923d12b15f4c3a6d42a005ce9c60b592d56ee61",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-423-1.svg": {
+      "sha256": "3324595a44963ee60dc599a0819f6b9ff14bb4002cc9642428a4496bfa13b2b9",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-423-2.svg": {
+      "sha256": "6537d8059337d7e5b163b22cf20bd8b261577af482612a19c1edd24fa608ce6e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-424-1.svg": {
+      "sha256": "b032af72ca08710846649c29c061980db3dda3e9e4a7a3a0e031bbe42ce5c5d2",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-424-2.svg": {
+      "sha256": "44c3a7b5994032d81830e752c9d3de636216fa99ad28d4a8e2fa711e97c66207",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-425-1.svg": {
+      "sha256": "2a5efa29f46101f259144764c0c7ea35db94c1681817e7f3e8adf17d261b2db0",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/original-v4/forge-ex-425-2.svg": {
+      "sha256": "eff590fa9de9d2964f6f2586121638a2b093ac7dbead43ae1805041905976c60",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0248-relaxation.svg": {
+      "sha256": "9b566c65d3f06871844bba853ec99d763969ceb4e5788433b58df74986263e68",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0248-tension.svg": {
+      "sha256": "9672fbae38c90e16ce6e8a6c3de4d16054b2bf844a03b6b2a31fd922a096bcbf",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0240-relaxation.svg": {
+      "sha256": "47881d51fb7ede4d904f2bbff5dfa84f95c56105af6b37f5a06c30f6c13a1f6c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0240-tension.svg": {
+      "sha256": "de1c09f00a8f81b69518ab236bc7e9349de07403931360d022125e58f79edc98",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0207-relaxation.svg": {
+      "sha256": "6c66fcbe6e5fc2fe7663acd1ef21ed478038f4e204c771b34ef21d48b0bdc191",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0207-tension.svg": {
+      "sha256": "6da1d218ae1520e652485384b82c68c8d6200111ac04a99be21885e27e70868e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0199-relaxation.svg": {
+      "sha256": "d954ef07779b3e7f831e454287ea593670980c752352c1e24c302195a70ac507",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0199-tension.svg": {
+      "sha256": "83134dbb3d5eb07bc9cdbd9192c5fe05aae3f228e52ffa9803537d71eef8b57f",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0195-relaxation.svg": {
+      "sha256": "02c4d6960dcc86f52c349bbc945de4b89095f7e71f02e48cabe159ec7fd40f44",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0195-tension.svg": {
+      "sha256": "d7209a6aa798eedc8e3c043788d664fca1c4245b253abf419577bd6fdb0b1f3e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0209-relaxation.svg": {
+      "sha256": "a02449a9fa21cbafcf593ba63f8e887a713a94cf6f83af1070415180d68bdeec",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0209-tension.svg": {
+      "sha256": "993bc06d2a73f4c6299ba832d5518bbad4e5e27a8ed0ef2d6500a247895ca5ef",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0201-relaxation.svg": {
+      "sha256": "b1106f975deaf277f64290fb9b99d9067b5a6dd00d6c8bf910a0c3e71a87207f",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0201-tension.svg": {
+      "sha256": "83914bbcb98c4672fc765d814fa976cccecf4314328eb81465005a316e74267b",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/single-leg-box-squat-1.svg": {
+      "sha256": "70c3b893772f062106f8517b971d50248982459176eabf6dd4b20520d29f201a",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/single-leg-box-squat-2.svg": {
+      "sha256": "0d8fad31cad85ef9177969cc68fb2252cb4efa0cc3301e6b105fec87f0ef26e2",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-squat-1.svg": {
+      "sha256": "43a8505fbf15f1a0afcfaf13d1cefac3228c0e10be29ffc70d25037cd0984428",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-squat-2.svg": {
+      "sha256": "d8f33ac01311c1c59c011b3738070485c1f4e081b1e49edc1229c70247042de3",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-lateral-lunge-1.svg": {
+      "sha256": "72dc93130d3c789465532bffe92b35473b1a8630f3c1274b2eaef9b293291bed",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-lateral-lunge-2.svg": {
+      "sha256": "3cc3fb56aee61b680359611c5ead72c7be1bf5090f561a418608bcdfaedc120c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0131-relaxation.svg": {
+      "sha256": "3b1f11de10259c4aca313fe9d2e662fbd65a30cd2620bf8fffb864c14715e885",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0131-tension.svg": {
+      "sha256": "8ef68729c768f6639d7148ba77435da1bcb5a544d6a62d6dc0356f76545cfa98",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-curtsy-lunge-1.svg": {
+      "sha256": "eccb87446959766dbc29e8902d6109e15e0914757e423bbca15b331b9f4a64a7",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/dumbbell-curtsy-lunge-2.svg": {
+      "sha256": "5c8b98ee7da61b2284a50ac31c087330257713a2013bec7728ca2d3e818b332e",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/step-down-1.svg": {
+      "sha256": "68187a9d3adca33b04d67342756618e057da068e1e9057faeeaaf1cff051412b",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/step-down-2.svg": {
+      "sha256": "18339420571fdc00a4c181f5f16ae0aaeb89f7c62c980863a87e83f6212735cc",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/smith-machine-romanian-deadlift-1.svg": {
+      "sha256": "d640b8e059dd2273431892cf23995761014bf43fb719c8101fe310f65a0157ad",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/smith-machine-romanian-deadlift-2.svg": {
+      "sha256": "63f5c086e5936be8e20f48c1f246a70bfd096ad6ecbd48fbecd729e3949f82bb",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/kettlebell-romanian-deadlift-1.svg": {
+      "sha256": "10fde0c2d16f9aab7a7b4304488b01e09ebb89de26727b3cf4e61b374ef31e14",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/kettlebell-romanian-deadlift-2.svg": {
+      "sha256": "d5531fd98c9910b7aa566854a9731efb5ad6b34d86947087c1635a729c306604",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-glute-bridge-1.svg": {
+      "sha256": "8c596eecab101a9732f6102481b1069258c1f1814566c100834f9cf61836902b",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/banded-glute-bridge-2.svg": {
+      "sha256": "9af187039fbce32eaa6189505f7845c47c53d2d2958e9d14213e81bf57632fef",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/side-lying-hip-abduction-1.svg": {
+      "sha256": "68533f05be8236f4fb3bc1c6930a6450cd8eb2d8c00f2709f2b45c874d8bd87b",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/side-lying-hip-abduction-2.svg": {
+      "sha256": "439fc990e36f10b8b18dff348a2507c9532ad6fbf3ec5b3f7a6723c4f473a6bc",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/cable-standing-hip-abduction-1.svg": {
+      "sha256": "436a0fc1266b911c9bf89b041c31caf2d6464c82cd84b361e3726cedd2bed952",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/cable-standing-hip-abduction-2.svg": {
+      "sha256": "f5f5ef69f7839557b5f5402ec8c029284029458b582c57b8731fb487578b5857",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/donkey-kick-1.svg": {
+      "sha256": "62791496c1ec35f81778ef9a4d0b270ba33ba33fa511d053cb94ee5459f203e9",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/donkey-kick-2.svg": {
+      "sha256": "0cdb0c27c37a3c8d4e20341f4a24c45f60216f290cf3faee4085574e686c9ea8",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/plank-jack-1.svg": {
+      "sha256": "e93a1d587fc17a3aa658bb9bca48d8eeb3ca915f7005bc833130d8a15d993259",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/plank-jack-2.svg": {
+      "sha256": "f6f6db127490a0afd1d8830a96affb04a6ee620b8e8157ca028dab0270fabea9",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0296-relaxation.svg": {
+      "sha256": "ec437718ce5404cc8761a50e4043327b2738124c440a8a11b7da0344af1cc2ec",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-contours/ek-0296-tension.svg": {
+      "sha256": "dc3219a2bd1891f0d127c0028cd279b4b08cd8872134f75d0a7fb3b3b9ac5573",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/hollow-body-hold-1.svg": {
+      "sha256": "e7e768cd0d0fcc2d6413ad0d55440f50194bd14e850d75a57153657c23432f87",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/hollow-body-hold-2.svg": {
+      "sha256": "3bc9858570ceaaa552502f7f88f7192b330c1ccdd071f6eb2daa295db06a4d60",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/flutter-kick-1.svg": {
+      "sha256": "b9d0c183b154a8f798526749d53385e6976cdc46afe8477d19aa613e0ced0f1f",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/flutter-kick-2.svg": {
+      "sha256": "15fea3008a35053ef8f582b6c05fa3eeaaf031b496dedb6aa9665ec47fc5f8c1",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/treadmill-incline-walk-1.svg": {
+      "sha256": "b8754fe1afd7100276389437e20db09a6a79b154871e368394823a8dbdbfd456",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/treadmill-incline-walk-2.svg": {
+      "sha256": "79b5196e77faf84a1b064085b470951f86bdb348af8c420f8eee1b3381857eb1",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/high-knees-1.svg": {
+      "sha256": "bb809a2074aa31806ad4481b01ef11f7c4f569442464840a8980c6b5962fe3a7",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/high-knees-2.svg": {
+      "sha256": "43c53e014324426d933861bf5f73faa0c1b8cf87c8e6e79bf610dd88cdd4aa09",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/jumping-jack-1.svg": {
+      "sha256": "98fb9a29a8401ba9db367f62db7fb415b1233fd0cc7c40e1f7c634d3481d9d31",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/jumping-jack-2.svg": {
+      "sha256": "b69e2176c17c60b913d0f4409ab3a90da4fbe50669fb43a659f0286d3e8d8ec1",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/skierg-1.svg": {
+      "sha256": "fe642236b37414c2a3ff34ca0e6796e543d11d40bc6bad1140e95ec480f60d9d",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/skierg-2.svg": {
+      "sha256": "7d945c18103df2f56a6c6df425989bb3ea36746e12a65ebab5a3b6c57f926b76",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/assault-bike-1.svg": {
+      "sha256": "6230adf8fd5a32b9f894c567c94f7d5f5ff2b44a16405ef9b937847c3132821c",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    },
+    "exercise-art/assault-bike-2.svg": {
+      "sha256": "6c6e5cb39254956bf6b8f00a81b2c47d0eecb2728b90d3f8d2bba0d5470856d6",
+      "status": "style-approved",
+      "reviewer": "Codex visual contact-sheet inspection; not owner acceptance or expert biomechanics approval",
+      "date": "2026-11-02"
+    }
+  }
+}

@@ -17,8 +17,8 @@
     "group": "Плечи",
     "file": "shoulders.png",
     "entries": 48,
-    "contour": 28,
-    "notReady": 20
+    "contour": 48,
+    "notReady": 0
   },
   {
     "group": "Бицепс",
