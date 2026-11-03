@@ -2780,6 +2780,18 @@
       "opaqueCorners": 0
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-279-1.svg",
+      "inkRatio": 0.09039306640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-279-2.svg",
+      "inkRatio": 0.0869140625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
       "file": "exercise-contours/ek-0077-tension.svg",
       "inkRatio": 0.06402587890625,
       "colouredPixels": 0,
@@ -3062,6 +3074,30 @@
       "opaqueCorners": 0
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-330-1.svg",
+      "inkRatio": 0.16400146484375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-330-2.svg",
+      "inkRatio": 0.15972900390625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-331-1.svg",
+      "inkRatio": 0.1768798828125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-331-2.svg",
+      "inkRatio": 0.16619873046875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
       "file": "exercise-art/wrist-extension-1.svg",
       "inkRatio": 0.073486328125,
       "colouredPixels": 0,
@@ -3070,6 +3106,18 @@
     {
       "file": "exercise-art/wrist-extension-2.svg",
       "inkRatio": 0.07269287109375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-333-1.svg",
+      "inkRatio": 0.119384765625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-333-2.svg",
+      "inkRatio": 0.11773681640625,
       "colouredPixels": 0,
       "opaqueCorners": 0
     },
@@ -3086,6 +3134,42 @@
       "opaqueCorners": 0
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-335-1.svg",
+      "inkRatio": 0.10992431640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-336-1.svg",
+      "inkRatio": 0.12921142578125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-337-1.svg",
+      "inkRatio": 0.16864013671875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-337-2.svg",
+      "inkRatio": 0.173828125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-345-1.svg",
+      "inkRatio": 0.1007080078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-345-2.svg",
+      "inkRatio": 0.1041259765625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
       "file": "exercise-art/running-1.svg",
       "inkRatio": 0.13153076171875,
       "colouredPixels": 0,
@@ -3098,6 +3182,18 @@
       "opaqueCorners": 0
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-348-1.svg",
+      "inkRatio": 0.21502685546875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-348-2.svg",
+      "inkRatio": 0.21954345703125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
       "file": "exercise-art/stair-climber-1.svg",
       "inkRatio": 0.11517333984375,
       "colouredPixels": 0,
@@ -3106,6 +3202,30 @@
     {
       "file": "exercise-art/stair-climber-2.svg",
       "inkRatio": 0.16717529296875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-352-1.svg",
+      "inkRatio": 0.04974365234375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-352-2.svg",
+      "inkRatio": 0.04632568359375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-355-1.svg",
+      "inkRatio": 0.11163330078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-355-2.svg",
+      "inkRatio": 0.11334228515625,
       "colouredPixels": 0,
       "opaqueCorners": 0
     },
@@ -3146,6 +3266,12 @@
       "opaqueCorners": 0
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-365-1.svg",
+      "inkRatio": 0.09991455078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
       "file": "exercise-art/hamstring-stretch-1.svg",
       "inkRatio": 0.09649658203125,
       "colouredPixels": 0,
@@ -3170,6 +3296,12 @@
       "opaqueCorners": 0
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-368-1.svg",
+      "inkRatio": 0.14208984375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
       "file": "exercise-art/kneeling-hip-flexor-stretch-1.svg",
       "inkRatio": 0.06866455078125,
       "colouredPixels": 0,
@@ -3178,6 +3310,36 @@
     {
       "file": "exercise-art/kneeling-hip-flexor-stretch-2.svg",
       "inkRatio": 0.08587646484375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-370-1.svg",
+      "inkRatio": 0.1260986328125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-370-2.svg",
+      "inkRatio": 0.12017822265625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-371-1.svg",
+      "inkRatio": 0.14178466796875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-372-1.svg",
+      "inkRatio": 0.086181640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-372-2.svg",
+      "inkRatio": 0.09552001953125,
       "colouredPixels": 0,
       "opaqueCorners": 0
     },
@@ -3470,6 +3632,18 @@
       "opaqueCorners": 0
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-406-1.svg",
+      "inkRatio": 0.2222900390625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-406-2.svg",
+      "inkRatio": 0.2310791015625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
       "file": "exercise-contours/original-v4/forge-ex-407-1.svg",
       "inkRatio": 0.19287109375,
       "colouredPixels": 0,
@@ -3490,6 +3664,18 @@
     {
       "file": "exercise-contours/original-v4/forge-ex-408-2.svg",
       "inkRatio": 0.21661376953125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-409-1.svg",
+      "inkRatio": 0.2349853515625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-409-2.svg",
+      "inkRatio": 0.24261474609375,
       "colouredPixels": 0,
       "opaqueCorners": 0
     },
@@ -3962,6 +4148,66 @@
       "opaqueCorners": 0
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-464-1.svg",
+      "inkRatio": 0.1282958984375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-464-2.svg",
+      "inkRatio": 0.1248779296875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-465-1.svg",
+      "inkRatio": 0.08148193359375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-465-2.svg",
+      "inkRatio": 0.08740234375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-466-1.svg",
+      "inkRatio": 0.1016845703125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-466-2.svg",
+      "inkRatio": 0.11260986328125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-467-1.svg",
+      "inkRatio": 0.0989990234375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-467-2.svg",
+      "inkRatio": 0.09466552734375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-468-1.svg",
+      "inkRatio": 0.12493896484375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-469-1.svg",
+      "inkRatio": 0.0863037109375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
       "file": "exercise-art/banded-glute-bridge-1.svg",
       "inkRatio": 0.07659912109375,
       "colouredPixels": 0,
@@ -4118,6 +4364,78 @@
       "opaqueCorners": 0
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-487-1.svg",
+      "inkRatio": 0.06640625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-487-2.svg",
+      "inkRatio": 0.06011962890625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-488-1.svg",
+      "inkRatio": 0.14129638671875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-488-2.svg",
+      "inkRatio": 0.14111328125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-489-1.svg",
+      "inkRatio": 0.0970458984375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-489-2.svg",
+      "inkRatio": 0.0987548828125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-490-1.svg",
+      "inkRatio": 0.14105224609375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-490-2.svg",
+      "inkRatio": 0.141357421875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-491-1.svg",
+      "inkRatio": 0.08746337890625,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-491-2.svg",
+      "inkRatio": 0.10052490234375,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-492-1.svg",
+      "inkRatio": 0.0810546875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-492-2.svg",
+      "inkRatio": 0.08428955078125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
       "file": "exercise-art/plank-jack-1.svg",
       "inkRatio": 0.06170654296875,
       "colouredPixels": 0,
@@ -4228,6 +4546,18 @@
     {
       "file": "exercise-art/assault-bike-2.svg",
       "inkRatio": 0.21075439453125,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-541-1.svg",
+      "inkRatio": 0.1199951171875,
+      "colouredPixels": 0,
+      "opaqueCorners": 0
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-541-2.svg",
+      "inkRatio": 0.1141357421875,
       "colouredPixels": 0,
       "opaqueCorners": 0
     }
