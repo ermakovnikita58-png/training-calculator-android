@@ -4,11 +4,13 @@ const root=path.resolve(__dirname,'..'),assets=path.join(root,'app/src/main/asse
 const raster=fs.existsSync(path.join(root,'artwork/art-raster-qa.json'))?new Map(read('artwork/art-raster-qa.json').files.map(x=>[x.file,x])):new Map();
 const inspection=fs.existsSync(path.join(root,'artwork/style-inspection.json'))?read('artwork/style-inspection.json').files:{};
 const authoredGeometry=new Map();
+const requiredHolds=new Set(['Изометрическое удержание на носках','Изометрическое удержание ягодичного моста','Изометрическое удержание холлоу-боди','Изометрическое удержание в полуприседе','Планка','Боковая планка','Планка на предплечьях','Уголок на брусьях','Вис на турнике']);
 const metrics={TOTAL_EXERCISES:556,EXERCISES_WITH_ASSIGNED_ART:0,EXERCISES_WITH_VERIFIED_FILE:0,EXERCISES_WITH_STYLE_APPROVED:0,EXERCISES_REQUIRING_EXPERT_REVIEW:0,MISSING_ART:0,WRONG_EQUIPMENT:0,WRONG_POSE:0,BROKEN_IMAGES:0},missing=[],failures=[];
 assert.equal(catalog.length,556);assert.equal(Object.keys(registry.exercises).length,556);
 for(const [name,group]of catalog){const entry=registry.exercises[norm(name)];assert.ok(entry,'Missing registry record: '+name);assert.equal(entry.name,name);assert.equal(entry.group,group);assert.equal(entry.type,'EXERCISE_TECHNIQUE_ART');if(!entry.expertVerified)metrics.EXERCISES_REQUIRING_EXPERT_REVIEW++;
  if(!entry.frames.length||entry.status==='not-ready'){missing.push({id:entry.id,name,group,reason:entry.missingReason});continue;}metrics.EXERCISES_WITH_ASSIGNED_ART++;
  assert.equal(entry.frames.length,entry.phaseStatus==='static-single-frame'?1:2,'Frame count for '+name);
+ if(requiredHolds.has(name))assert.equal(entry.phaseStatus,'static-single-frame','Expected one held position for '+name);
  let valid=true,style=true;for(const file of entry.frames){try{assert.ok(!file.includes('..')&&!path.isAbsolute(file));const resource=registry.resources[file],bytes=fs.readFileSync(path.join(assets,file));assert.equal(resource.type,'EXERCISE_TECHNIQUE_ART');assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),resource.sha256);const svg=bytes.toString('utf8');assert.match(svg,/<svg\b/);assert.ok(!/<image|<script|foreignObject|https?:\/\//.test(svg.replace(/<svg[^>]+>/,'')),'No remote images or embedded bitmap');assert.ok(!/НЕ ГОТОВО|Схема на проверке|Контурная схема не готова/.test(svg),'No placeholder');assert.ok(resource.source?.url||resource.creation);const p=raster.get(file);assert.ok(p&&p.inkRatio>.0003&&p.inkRatio<.60&&p.colouredPixels===0&&p.opaqueCorners<4,'SVG decoded and passed pixel QA');style&&=inspection[file]?.sha256===resource.sha256&&inspection[file]?.status==='style-approved';}catch(e){valid=false;style=false;failures.push({name,file,error:e.message});}}
  if(valid)metrics.EXERCISES_WITH_VERIFIED_FILE++;else metrics.BROKEN_IMAGES++;
  if(style&&valid)metrics.EXERCISES_WITH_STYLE_APPROVED++;
@@ -17,7 +19,7 @@ for(const [name,group]of catalog){const entry=registry.exercises[norm(name)];ass
    const svg=fs.readFileSync(path.join(assets,file),'utf8');
    const geometry=[...svg.matchAll(/<path\b[^>]*\bd="([^"]+)"/g)].map(match=>match[1]).join('\n');
    assert.ok(geometry,'Missing vector paths in '+file);
-   assert.ok(!authoredGeometry.has(geometry),'Repeated authored frame: '+file+' and '+authoredGeometry.get(geometry));
+   assert.ok(!authoredGeometry.has(geometry)||authoredGeometry.get(geometry)===file,'Repeated authored frame: '+file+' and '+authoredGeometry.get(geometry));
    authoredGeometry.set(geometry,file);
   }
  }

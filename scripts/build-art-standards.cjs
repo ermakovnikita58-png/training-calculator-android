@@ -6,6 +6,11 @@ const manifest=read('artwork/exercise-manifest.json'),catalog=read('artwork/cata
 const decisions=read('artwork/art-visual-decisions.json');
 const originals=fs.existsSync(path.join(root,'artwork/original-contour-register.json'))?read('artwork/original-contour-register.json'):[];
 const licensed=fs.existsSync(path.join(root,'artwork/licensed-contour-additions.json'))?read('artwork/licensed-contour-additions.json'):[];
+const aliases=read('artwork/verified-contour-aliases.json');
+if(new Set(aliases.map(x=>x.name)).size!==aliases.length)throw Error('Duplicate verified alias name');
+for(const alias of aliases){
+ if(alias.name===alias.sourceName||!alias.reason||!originals.some(x=>x.name===alias.sourceName)||!manifest.some(x=>x.name===alias.name))throw Error('Invalid verified contour alias: '+alias.name);
+}
 const registry={version:3,types:['MUSCLE_GROUP_ART','EXERCISE_TECHNIQUE_ART'],resources:{},muscleGroups:{},exercises:{}};
 for(const g of groups){const bytes=fs.readFileSync(path.join(assets,g.file));if(!g.file.endsWith('.webp')||hash(bytes)!==g.sha256)throw Error('Invalid group source '+g.group);registry.resources[g.file]={...g};registry.muscleGroups[g.group]={type:'MUSCLE_GROUP_ART',file:g.file,status:g.status,highlight:g.highlight};}
 fs.mkdirSync(path.join(assets,'exercise-contours'),{recursive:true});
@@ -51,9 +56,10 @@ for(const item of manifest){
   if(/стоя/.test(n)&&/seated|sitting/.test(s))reasons.push('Название требует стойки, источник явно указывает seated.');
   if(/наклонной/.test(n)&&/flat bench/.test(eq))reasons.push('Название требует наклонной скамьи, источник указывает flat bench.');
  }
- const authored=originals.find(x=>x.name===item.name);
+ const alias=aliases.find(x=>x.name===item.name);
+ const authored=originals.find(x=>x.name===(alias?.sourceName||item.name));
  let frames=[];if(authored){
-  if(authored.group!==item.group||authored.type!=='EXERCISE_TECHNIQUE_ART')throw Error('Invalid authored mapping: '+item.name);
+  if((!alias&&authored.group!==item.group)||authored.type!=='EXERCISE_TECHNIQUE_ART')throw Error('Invalid authored mapping: '+item.name);
   frames=authored.frames;
   for(const file of frames){const b=fs.readFileSync(path.join(assets,file)),h=hash(b);if(authored.files.find(x=>x.file===file)?.sha256!==h)throw Error('Stale authored SVG hash: '+file);registry.resources[file]={type:'EXERCISE_TECHNIQUE_ART',file,format:'svg',style:'light-contour-on-transparent',sourceFile:file,sourceSHA256:h,sha256:h,bytes:b.length,source:authored.source,credit:authored.credit,license:authored.license,changes:'Original authored FORGE contour geometry, not a conversion from a shaded model.',expertVerified:false,styleReview:authored.styleReview};}
  }else if(licensedMatch){
@@ -61,6 +67,7 @@ for(const item of manifest){
  }else if(!reasons.length)frames=files.map(f=>contour(f,source,fix?.action==='replace'?'Everkinetic / Greg Priday · CC BY-SA 4.0':item.credit));
  const status=frames.length?'ready-style-needs-biomechanics-review':'not-ready',samePhase=frames.length===2&&fs.readFileSync(path.join(assets,frames[0])).equals(fs.readFileSync(path.join(assets,frames[1])));
  registry.exercises[norm(item.name)]={id:'forge-ex-'+String(manifest.indexOf(item)+1).padStart(3,'0'),name:item.name,group:item.group,type:'EXERCISE_TECHNIQUE_ART',frames,status,source:authored?.source||source,credit:frames.length?registry.resources[frames[0]].credit:item.credit,missingReason:frames.length?'':reasons.join(' '),replacedSourceReason:(authored||licensedMatch)?reasons.join(' '):null,phaseStatus:authored?.phaseStatus||(licensedMatch?.static?'static-single-frame':samePhase?'identical-source-frames':frames.length?'two-source-frames':'not-available'),expertVerified:false,authoredSpec:authored?{equipment:authored.equipment,support:authored.support,grip:authored.grip,description:authored.description}:null,metadataReview:'equipment and explicit posture conflicts checked; not an expert pose approval'};
+ if(alias)registry.exercises[norm(item.name)].verifiedAlias={sourceName:alias.sourceName,reason:alias.reason};
  review.push({...registry.exercises[norm(item.name)],originalFiles:item.files,equipment:row.equipment,requiredReplacement:frames.length?null:{type:'EXERCISE_TECHNIQUE_ART',style:'Thin white/light-gray anatomical contour, transparent SVG on #101912; no gradients, shaded models or coloured muscle fill',equipment:row.equipment,poses:'Source and final phase appropriate to the exact name; static holds must not invent movement',size:'512x512 viewBox, complete equipment visible',rights:'Original project vector or traceable CC BY-SA 4.0 source',doNotUse:'Unrelated exercise, 3D anatomy, photographs or CSS inversion'}});
 }
 fs.writeFileSync(path.join(root,'artwork/art-registry.json'),JSON.stringify(registry,null,2)+'\n');

@@ -71,5 +71,187 @@
     "credit": "Workout Guide / Bryl Lim · CC BY-SA 4.0",
     "static": false,
     "notes": "Both frames show an indoor bike on a fixed base with a seated rider. Pedal and leg positions differ. The original transparent white contours are retained byte for byte."
+  },
+  {
+    "name": "Изометрическое удержание на носках",
+    "files": [
+      "exercise-art/calf-raise-1.svg"
+    ],
+    "source": {
+      "name": "Calf Raise",
+      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/calf-raise/frame-1.svg",
+      "equipment": "Bodyweight"
+    },
+    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "static": true,
+    "notes": "One visually inspected held position is selected. No dynamic return phase is assigned to this isometric exercise."
+  },
+  {
+    "name": "Изометрическое удержание ягодичного моста",
+    "files": [
+      "exercise-art/glute-bridge-1.svg"
+    ],
+    "source": {
+      "name": "Glute Bridge",
+      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/glute-bridge/frame-1.svg",
+      "equipment": "Bodyweight"
+    },
+    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "static": true,
+    "notes": "One visually inspected held position is selected. No dynamic return phase is assigned to this isometric exercise."
+  },
+  {
+    "name": "Изометрическое удержание холлоу-боди",
+    "files": [
+      "exercise-art/hollow-body-hold-1.svg"
+    ],
+    "source": {
+      "name": "Hollow Body Hold",
+      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/hollow-body-hold/frame-1.svg",
+      "equipment": "Bodyweight"
+    },
+    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "static": true,
+    "notes": "One visually inspected held position is selected. No dynamic return phase is assigned to this isometric exercise."
+  },
+  {
+    "name": "Изометрическое удержание в полуприседе",
+    "files": [
+      "exercise-art/wall-sit-1.svg"
+    ],
+    "source": {
+      "name": "Wall Sit",
+      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/wall-sit/frame-1.svg",
+      "equipment": "Bodyweight"
+    },
+    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "static": true,
+    "notes": "One visually inspected held position is selected. No dynamic return phase is assigned to this isometric exercise."
+  },
+  {
+    "name": "Планка",
+    "files": [
+      "exercise-art/plank-1.svg"
+    ],
+    "source": {
+      "name": "Plank",
+      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/plank/frame-1.svg",
+      "equipment": "Bodyweight"
+    },
+    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "static": true,
+    "notes": "Single held position selected after visual review of the local source SVG. No movement is assigned to this hold."
+  },
+  {
+    "name": "Боковая планка",
+    "files": [
+      "exercise-art/side-plank-1.svg"
+    ],
+    "source": {
+      "name": "Side Plank",
+      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/side-plank/frame-1.svg",
+      "equipment": "Bodyweight"
+    },
+    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "static": true,
+    "notes": "Single held position selected after visual review of the local source SVG. No movement is assigned to this hold."
+  },
+  {
+    "name": "Планка на предплечьях",
+    "files": [
+      "exercise-art/plank-1.svg"
+    ],
+    "source": {
+      "name": "Plank",
+      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/plank/frame-1.svg",
+      "equipment": "Bodyweight"
+    },
+    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "static": true,
+    "notes": "Single held position selected after visual review of the local source SVG. No movement is assigned to this hold."
+  },
+  {
+    "name": "Уголок на брусьях",
+    "files": [
+      "exercise-art/l-sit-hold-1.svg"
+    ],
+    "source": {
+      "name": "L-Sit Hold",
+      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/l-sit-hold/frame-1.svg",
+      "equipment": "Bodyweight"
+    },
+    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "static": true,
+    "notes": "Single held position selected after visual review of the local source SVG. No movement is assigned to this hold."
+  },
+  {
+    "name": "Вис на турнике",
+    "files": [
+      "exercise-art/dead-hang-1.svg"
+    ],
+    "source": {
+      "name": "Dead Hang",
+      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/dead-hang/frame-1.svg",
+      "equipment": "Pull-up Bar"
+    },
+    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "static": true,
+    "notes": "Single held position selected after visual review of the local source SVG. No movement is assigned to this hold."
+  },
+  {
+    "name": "Растяжка задней поверхности бедра",
+    "files": [
+      "exercise-art/hamstring-stretch-1.svg"
+    ],
+    "source": {
+      "name": "Hamstring Stretch",
+      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/hamstring-stretch/frame-1.svg",
+      "equipment": "Bodyweight"
+    },
+    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "static": true,
+    "notes": "Single held position selected after visual review of the local source SVG. No movement is assigned to this hold."
+  },
+  {
+    "name": "Растяжка квадрицепса стоя",
+    "files": [
+      "exercise-art/standing-quad-stretch-1.svg"
+    ],
+    "source": {
+      "name": "Standing Quad Stretch",
+      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/standing-quad-stretch/frame-1.svg",
+      "equipment": "Bodyweight"
+    },
+    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "static": true,
+    "notes": "Single held position selected after visual review of the local source SVG. No movement is assigned to this hold."
+  },
+  {
+    "name": "Растяжка сгибателей бедра",
+    "files": [
+      "exercise-art/kneeling-hip-flexor-stretch-1.svg"
+    ],
+    "source": {
+      "name": "Kneeling Hip Flexor Stretch",
+      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/kneeling-hip-flexor-stretch/frame-1.svg",
+      "equipment": "Bodyweight"
+    },
+    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "static": true,
+    "notes": "Single held position selected after visual review of the local source SVG. No movement is assigned to this hold."
+  },
+  {
+    "name": "Растяжка икроножных у стены",
+    "files": [
+      "exercise-art/wall-calf-stretch-1.svg"
+    ],
+    "source": {
+      "name": "Wall Calf Stretch",
+      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/wall-calf-stretch/frame-1.svg",
+      "equipment": "Bodyweight"
+    },
+    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "static": true,
+    "notes": "Single held position selected after visual review of the local source SVG. No movement is assigned to this hold."
   }
 ]

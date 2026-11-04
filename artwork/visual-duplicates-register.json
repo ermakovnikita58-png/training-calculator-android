@@ -1,9 +1,9 @@
 {
-  "physicalImageCount": 1492,
-  "physicalImageBytes": 59344080,
-  "renderedExercisePhaseFiles": 907,
+  "physicalImageCount": 1536,
+  "physicalImageBytes": 63721400,
+  "renderedExercisePhaseFiles": 922,
   "renderedGroupMaps": 14,
-  "uniqueRenderedPairs": 467,
+  "uniqueRenderedPairs": 482,
   "expertVerified": false,
   "sameByteFiles": [
     {
@@ -373,13 +373,12 @@
     },
     {
       "files": [
-        "exercise-art/cable-fly-1.svg",
-        "exercise-art/cable-fly-2.svg"
+        "exercise-contours/original-v4/forge-ex-067-1.svg",
+        "exercise-contours/original-v4/forge-ex-067-2.svg"
       ],
       "names": [
         "Кроссовер",
-        "Сведение рук в кроссовере сверху",
-        "Сведение рук в кроссовере на уровне груди"
+        "Сведение рук в кроссовере сверху"
       ],
       "status": "variant-correspondence-requires-review"
     },
@@ -397,8 +396,8 @@
     },
     {
       "files": [
-        "exercise-art/chest-dip-1.svg",
-        "exercise-art/chest-dip-2.svg"
+        "exercise-contours/original-v4/forge-ex-078-1.svg",
+        "exercise-contours/original-v4/forge-ex-078-2.svg"
       ],
       "names": [
         "Отжимания на брусьях",
@@ -547,17 +546,6 @@
     },
     {
       "files": [
-        "exercise-contours/ek-0239-relaxation.svg",
-        "exercise-contours/ek-0239-tension.svg"
-      ],
-      "names": [
-        "Сгибание рук на скамье Скотта",
-        "Подъём EZ-штанги на скамье Скотта"
-      ],
-      "status": "variant-correspondence-requires-review"
-    },
-    {
-      "files": [
         "exercise-art/tricep-pushdown-1.svg",
         "exercise-art/tricep-pushdown-2.svg"
       ],
@@ -627,8 +615,8 @@
     },
     {
       "files": [
-        "exercise-art/walking-lunge-1.svg",
-        "exercise-art/walking-lunge-2.svg"
+        "exercise-contours/original-v4/forge-ex-213-1.svg",
+        "exercise-contours/original-v4/forge-ex-213-2.svg"
       ],
       "names": [
         "Выпады с гантелями",
@@ -677,8 +665,7 @@
       ],
       "names": [
         "Ягодичный мост",
-        "Ягодичный мост с собственным весом",
-        "Изометрическое удержание ягодичного моста"
+        "Ягодичный мост с собственным весом"
       ],
       "status": "variant-correspondence-requires-review"
     },
@@ -701,7 +688,6 @@
       "names": [
         "Подъём на носки стоя",
         "Подъём на носки на ступени",
-        "Изометрическое удержание на носках",
         "Подъём на носки стоя с паузой",
         "Подъём на носки с собственным весом на возвышении"
       ],
@@ -721,8 +707,7 @@
     },
     {
       "files": [
-        "exercise-art/plank-1.svg",
-        "exercise-art/plank-2.svg"
+        "exercise-art/plank-1.svg"
       ],
       "names": [
         "Планка",
@@ -738,17 +723,6 @@
       "names": [
         "Скручивания",
         "Скручивания лёжа"
-      ],
-      "status": "variant-correspondence-requires-review"
-    },
-    {
-      "files": [
-        "exercise-art/hanging-leg-raise-1.svg",
-        "exercise-art/hanging-leg-raise-2.svg"
-      ],
-      "names": [
-        "Подъём ног в висе",
-        "Подъём прямых ног в висе"
       ],
       "status": "variant-correspondence-requires-review"
     },
@@ -792,15 +766,14 @@
       ],
       "names": [
         "Прыжки на скакалке",
-        "Скакалка двойные прыжки",
-        "Скакалка бег на месте"
+        "Скакалка двойные прыжки"
       ],
       "status": "variant-correspondence-requires-review"
     },
     {
       "files": [
-        "exercise-art/machine-chest-press-1.svg",
-        "exercise-art/machine-chest-press-2.svg"
+        "exercise-contours/original-v4/forge-ex-072-1.svg",
+        "exercise-contours/original-v4/forge-ex-072-2.svg"
       ],
       "names": [
         "Жим в грудном тренажёре",
@@ -821,8 +794,8 @@
     },
     {
       "files": [
-        "exercise-art/machine-row-1.svg",
-        "exercise-art/machine-row-2.svg"
+        "exercise-contours/original-v4/forge-ex-107-1.svg",
+        "exercise-contours/original-v4/forge-ex-107-2.svg"
       ],
       "names": [
         "Тяга в хаммере горизонтально",
@@ -854,12 +827,11 @@
     },
     {
       "files": [
-        "exercise-art/superman-1.svg",
-        "exercise-art/superman-2.svg"
+        "exercise-contours/original-v4/forge-ex-113-1.svg",
+        "exercise-contours/original-v4/forge-ex-113-2.svg"
       ],
       "names": [
         "Подъём корпуса лёжа на животе",
-        "Супермен лёжа",
         "Разгибание спины лёжа с паузой"
       ],
       "status": "variant-correspondence-requires-review"
@@ -872,17 +844,6 @@
       "names": [
         "Фермерская прогулка",
         "Прогулка фермера с гантелями"
-      ],
-      "status": "variant-correspondence-requires-review"
-    },
-    {
-      "files": [
-        "exercise-contours/ek-0247-relaxation.svg",
-        "exercise-contours/ek-0247-tension.svg"
-      ],
-      "names": [
-        "Сгибание одной руки на блоке",
-        "Сгибание рук на блоке поочерёдно"
       ],
       "status": "variant-correspondence-requires-review"
     },
@@ -910,8 +871,8 @@
     },
     {
       "files": [
-        "exercise-art/overhead-tricep-extension-1.svg",
-        "exercise-art/overhead-tricep-extension-2.svg"
+        "exercise-contours/original-v4/forge-ex-437-1.svg",
+        "exercise-contours/original-v4/forge-ex-437-2.svg"
       ],
       "names": [
         "Разгибание рук из-за головы на блоке",
@@ -921,12 +882,11 @@
     },
     {
       "files": [
-        "exercise-art/diamond-push-up-1.svg",
-        "exercise-art/diamond-push-up-2.svg"
+        "exercise-contours/original-v4/forge-ex-187-1.svg",
+        "exercise-contours/original-v4/forge-ex-187-2.svg"
       ],
       "names": [
         "Отжимания узкой постановкой рук",
-        "Алмазные отжимания",
         "Отжимания с узкой постановкой ладоней"
       ],
       "status": "variant-correspondence-requires-review"
@@ -966,28 +926,6 @@
     },
     {
       "files": [
-        "exercise-art/wall-sit-1.svg",
-        "exercise-art/wall-sit-2.svg"
-      ],
-      "names": [
-        "Приседания у стены",
-        "Изометрическое удержание в полуприседе"
-      ],
-      "status": "variant-correspondence-requires-review"
-    },
-    {
-      "files": [
-        "exercise-art/nordic-hamstring-curl-1.svg",
-        "exercise-art/nordic-hamstring-curl-2.svg"
-      ],
-      "names": [
-        "Нордические сгибания ног",
-        "Нордические сгибания ног с поддержкой"
-      ],
-      "status": "variant-correspondence-requires-review"
-    },
-    {
-      "files": [
         "exercise-art/good-morning-1.svg",
         "exercise-art/good-morning-2.svg"
       ],
@@ -999,8 +937,8 @@
     },
     {
       "files": [
-        "exercise-art/hip-thrust-1.svg",
-        "exercise-art/hip-thrust-2.svg"
+        "exercise-contours/original-v4/forge-ex-250-1.svg",
+        "exercise-contours/original-v4/forge-ex-250-2.svg"
       ],
       "names": [
         "Хип-траст со штангой",
@@ -1043,35 +981,13 @@
     },
     {
       "files": [
-        "exercise-art/trap-bar-deadlift-1.svg",
-        "exercise-art/trap-bar-deadlift-2.svg"
+        "exercise-contours/original-v4/forge-ex-345-1.svg",
+        "exercise-contours/original-v4/forge-ex-345-2.svg"
       ],
       "names": [
-        "Становая тяга с трэп-грифом",
-        "Становая тяга с трэп-грифом с высокой ручкой"
-      ],
-      "status": "variant-correspondence-requires-review"
-    },
-    {
-      "files": [
-        "exercise-art/running-1.svg",
-        "exercise-art/running-2.svg"
-      ],
-      "names": [
+        "Бег на улице",
         "Интервальный бег",
-        "Спринты",
         "Лёгкий бег с ускорениями"
-      ],
-      "status": "variant-correspondence-requires-review"
-    },
-    {
-      "files": [
-        "exercise-art/stair-climber-1.svg",
-        "exercise-art/stair-climber-2.svg"
-      ],
-      "names": [
-        "Степпер",
-        "Лестничный тренажёр"
       ],
       "status": "variant-correspondence-requires-review"
     },
@@ -1088,34 +1004,12 @@
     },
     {
       "files": [
-        "exercise-art/kneeling-hip-flexor-stretch-1.svg",
-        "exercise-art/kneeling-hip-flexor-stretch-2.svg"
-      ],
-      "names": [
-        "Растяжка сгибателей бедра",
-        "Разгибание бедра в положении выпада"
-      ],
-      "status": "variant-correspondence-requires-review"
-    },
-    {
-      "files": [
         "exercise-art/band-pull-apart-1.svg",
         "exercise-art/band-pull-apart-2.svg"
       ],
       "names": [
         "Разведение резинки перед грудью",
         "Разведение рук на заднюю дельту с резинкой"
-      ],
-      "status": "variant-correspondence-requires-review"
-    },
-    {
-      "files": [
-        "exercise-art/wall-calf-stretch-1.svg",
-        "exercise-art/wall-calf-stretch-2.svg"
-      ],
-      "names": [
-        "Растяжка икроножных у стены",
-        "Динамическая растяжка икр"
       ],
       "status": "variant-correspondence-requires-review"
     }
@@ -6588,6 +6482,16 @@
       "sha256": "4cbdefc4bd1bcbd8f6150dc8fd4d74f0bc64fc800650534229b06fad6659856e"
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-067-1.svg",
+      "bytes": 121189,
+      "sha256": "367ef7069157db65eb747e797b4bca888831c3aec1b0c2612dc1128c211c1184"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-067-2.svg",
+      "bytes": 117540,
+      "sha256": "3c8af2f285bd61bfe31ef3cde95fee7b6d5b1d61d9b46f53eff12e358ca0b610"
+    },
+    {
       "file": "exercise-contours/original-v4/forge-ex-068-1.svg",
       "bytes": 115953,
       "sha256": "f69c0975ff92b78fdbdc59a5c74059a8b723254011c66a13bed5164e2e140c2b"
@@ -6596,6 +6500,36 @@
       "file": "exercise-contours/original-v4/forge-ex-068-2.svg",
       "bytes": 100055,
       "sha256": "5c041b4eedf2b4342ff34b0546eb7853965fcd1454165e2a1903cf9aed0e8606"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-069-1.svg",
+      "bytes": 95227,
+      "sha256": "81a4ccb237df5994f3c18ce381c4174eed03f61792e37dcd3f90e3c6611235a9"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-069-2.svg",
+      "bytes": 86724,
+      "sha256": "b493d26e71d1e66257f953a77b72a9b9a55121f1c7642d3d002923e9f1f987dd"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-072-1.svg",
+      "bytes": 155398,
+      "sha256": "3950485bc01145fe037c9aeb1eeba12222fd14e805d5b08baaf8103afa8d1100"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-072-2.svg",
+      "bytes": 159477,
+      "sha256": "1a2591989cfe361ffae63bb4b7cb2134898b2e051514de3e51d0e527ef0b661f"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-078-1.svg",
+      "bytes": 103099,
+      "sha256": "a235950eef877920ca8b24d27df6675d8366cd47ba06f6162cc1dc69368f3e9b"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-078-2.svg",
+      "bytes": 101057,
+      "sha256": "886c9f3f25e6bf7a39d70f1fb0edce817d12b5c5985247986b332d63b3ad012f"
     },
     {
       "file": "exercise-contours/original-v4/forge-ex-080-1.svg",
@@ -6693,6 +6627,16 @@
       "sha256": "6c33f408f799a4b058c743acdf4e58712b2a9f34ec3ff1aa315b91e31ff6e351"
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-107-1.svg",
+      "bytes": 161531,
+      "sha256": "540c2595e508cfd61fcdc74be94a9d9ee5b115187ae5a302badd0a4b08eb654a"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-107-2.svg",
+      "bytes": 163111,
+      "sha256": "a32f119aa43967f198c5fb08367d4b388c81ebfe82853ec36ed54708c4b041ea"
+    },
+    {
       "file": "exercise-contours/original-v4/forge-ex-110-1.svg",
       "bytes": 124435,
       "sha256": "ca00ec0036e1eb9141463bf0cb7a70d3b6ad86730c17865cb2af3cc39d95a049"
@@ -6701,6 +6645,16 @@
       "file": "exercise-contours/original-v4/forge-ex-110-2.svg",
       "bytes": 129295,
       "sha256": "52759ba2a3710036da36677320523873d337db589c38e6dad5577052314435ff"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-113-1.svg",
+      "bytes": 55623,
+      "sha256": "537026ba99deb540b2e169e359ab7df9837fffbd228f0710864b0001730c10de"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-113-2.svg",
+      "bytes": 55444,
+      "sha256": "aaeb275f4ef60e9583d6a81fc5bcb0e06a5b20d8d0e9ef242db99f289df37a40"
     },
     {
       "file": "exercise-contours/original-v4/forge-ex-120-1.svg",
@@ -6893,6 +6847,16 @@
       "sha256": "6f5a340b54f9fbb024ef4204921efdb5e3006392cec22ddc7205d21d2b1426c8"
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-160-1.svg",
+      "bytes": 128103,
+      "sha256": "e0709a46818db3290b32cf0ce1df9f339816233547a41d8215d2a85935e449b7"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-160-2.svg",
+      "bytes": 130790,
+      "sha256": "65245d4c66c9e5d4bb32e923d2c885ee73c9f77aaa719eaafbfb40d84d8db7f5"
+    },
+    {
       "file": "exercise-contours/original-v4/forge-ex-171-1.svg",
       "bytes": 92480,
       "sha256": "289f7e78e7905ccd5d03e615a6092c77900aaa3c54c43503a2396ee41ef54aa4"
@@ -6921,6 +6885,26 @@
       "file": "exercise-contours/original-v4/forge-ex-174-2.svg",
       "bytes": 128926,
       "sha256": "751059815271ab74bd35ce9b64c86188727b44a0b596d1f9d4933debbf109a0d"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-187-1.svg",
+      "bytes": 83963,
+      "sha256": "b4cd7ebf7c14aef6af7be485f94be874ec69ce0f0678fae36821c9b2bf7112a5"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-187-2.svg",
+      "bytes": 72472,
+      "sha256": "17427a8024d08ddc1a96b02250bde43d9265dc0df5233b8815f5d4c911309bb8"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-188-1.svg",
+      "bytes": 91375,
+      "sha256": "cde5fd01c0b4e35f6d2edca7616a455cad91a2a040082c6798327a06afb65f54"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-188-2.svg",
+      "bytes": 83821,
+      "sha256": "8bf3668c27afcfb2589b071bf441245c07ac5bc46067ffa956d43fa5d4fad75d"
     },
     {
       "file": "exercise-contours/original-v4/forge-ex-189-1.svg",
@@ -6991,6 +6975,16 @@
       "file": "exercise-contours/original-v4/forge-ex-212-2.svg",
       "bytes": 110340,
       "sha256": "e92d1a3cf3bdbb14875696c6dff6031ee68e113a65e5685d40c363b26ff32c81"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-213-1.svg",
+      "bytes": 79895,
+      "sha256": "f44645deb76df4f8e970926b0e589fffb9f9808696a4db8dabaf720f5994e9bb"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-213-2.svg",
+      "bytes": 87591,
+      "sha256": "834ab20bb2cff2d918c3089c5dd2dc5e71df2b8118fa877caa548d524db1bad8"
     },
     {
       "file": "exercise-contours/original-v4/forge-ex-231-1.svg",
@@ -7083,6 +7077,16 @@
       "sha256": "c5f418516f72aa79746eea1d779f15fc7382074d999d033a2a8fa1d506b896ad"
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-250-1.svg",
+      "bytes": 97373,
+      "sha256": "29ec9692f3f4f79437da986d154e0ebbe7bed499ef3304c62a47fb0526535829"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-250-2.svg",
+      "bytes": 80947,
+      "sha256": "0b97099aaaa85bb817776d20742a74d310fd9119b8b13ceec9c9cafa362198df"
+    },
+    {
       "file": "exercise-contours/original-v4/forge-ex-252-1.svg",
       "bytes": 113432,
       "sha256": "7a4d66851fc28d2fcd84258b53baa254a7492d7bea934f2f2a065215edcd36f6"
@@ -7158,6 +7162,16 @@
       "sha256": "6818f4cc7653250af62199dda6f2a829173f2e1862c95fcdf2daa0aa2bf6eb31"
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-292-1.svg",
+      "bytes": 78931,
+      "sha256": "c333a5de6861568ad82506bb1c5cc2a84b8b14f107101ecfb87568018e6c640e"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-292-2.svg",
+      "bytes": 80477,
+      "sha256": "3efc297a94feefc9eb3f3b7c6c3460a8de4bdcf7a712b737a0da9e7b22fbc7e5"
+    },
+    {
       "file": "exercise-contours/original-v4/forge-ex-294-1.svg",
       "bytes": 101809,
       "sha256": "09c330c9ff73066162eb936d77e756f5458cb1ceecaf0b712a55a87a2dae32d8"
@@ -7213,6 +7227,16 @@
       "sha256": "4b95d5c20cf6cf3187372425fd9533536375cca75fb699b2703e90cc2f01665a"
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-315-1.svg",
+      "bytes": 109785,
+      "sha256": "9c92b780fc256da08d08e8041f3f07c8b500a1f87dd114fb04679e728d65f139"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-315-2.svg",
+      "bytes": 108213,
+      "sha256": "aa72060dc85efe109a830946f7ee16abb050bd2105d15555de336283499ffe8b"
+    },
+    {
       "file": "exercise-contours/original-v4/forge-ex-317-1.svg",
       "bytes": 87999,
       "sha256": "f6d12f965f5f6706ee4e0d7908f357a174432c49bcbcefacf3e258a417b06043"
@@ -7261,6 +7285,16 @@
       "file": "exercise-contours/original-v4/forge-ex-323-2.svg",
       "bytes": 98090,
       "sha256": "574cc5f031fef263d1a278ae4e8e8b857b60a81c00b355fdf5826c7adcd3d3b0"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-325-1.svg",
+      "bytes": 58629,
+      "sha256": "6cb27b3be33834f82c13cc49f90a8271b7bacffb8ebcae5af49f86b2add279ff"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-325-2.svg",
+      "bytes": 59406,
+      "sha256": "aae4ea577d6308a476f994db81c88780fd9f660c542500e4c2788806c418584e"
     },
     {
       "file": "exercise-contours/original-v4/forge-ex-328-1.svg",
@@ -7398,6 +7432,16 @@
       "sha256": "7f81b6ad97b3dd8ab168c694227cd0780234e8f83aa552be039edfd3f3cb3e49"
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-347-1.svg",
+      "bytes": 114495,
+      "sha256": "7a31fd785da53f65b9cd95bcb1d354e54c58a51e7f5d60f1d43e6dc98bc9fe8e"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-347-2.svg",
+      "bytes": 96673,
+      "sha256": "41a8734045107ece8e6f79c78cc32f46009d34a51362d23ad18146b63c872af8"
+    },
+    {
       "file": "exercise-contours/original-v4/forge-ex-348-1.svg",
       "bytes": 203758,
       "sha256": "cf2cce90739d2a8b184d0c701ce71e6ba7220b70eeb1602d48a4d948872cfaff"
@@ -7406,6 +7450,16 @@
       "file": "exercise-contours/original-v4/forge-ex-348-2.svg",
       "bytes": 210542,
       "sha256": "6a3fc7bc6fd8fa7cc16cf30e1bccb2f1e89807c039da07122ae77fdb317b08ac"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-350-1.svg",
+      "bytes": 114776,
+      "sha256": "c58cf04a6c283dd637eb131bcaa57a00918d541da4e22b1e5e34f5181dbcce3f"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-350-2.svg",
+      "bytes": 108314,
+      "sha256": "49314e1f66d7063c87a52ca1621d72a2b7a641e059aecc10cd50b3afb23329d4"
     },
     {
       "file": "exercise-contours/original-v4/forge-ex-352-1.svg",
@@ -7883,6 +7937,16 @@
       "sha256": "aa93ae51cdfd2097ffdc9bbcb8cd64c52c2ede77cfc641a76f8b89bff3793845"
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-431-1.svg",
+      "bytes": 103140,
+      "sha256": "b48dbd2cb8ffd2ed88958167b4dabdeb17fc0d606db7e15e08c03631d129a086"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-431-2.svg",
+      "bytes": 102757,
+      "sha256": "65f94f402491e66b81d4ec26c0e3d19bf50d815988d556abd8705c1e3411ce50"
+    },
+    {
       "file": "exercise-contours/original-v4/forge-ex-432-1.svg",
       "bytes": 100242,
       "sha256": "6fd452e566e05633c170c5b84af48895d3a9017cd76ab3af33a4dfa24482c34f"
@@ -7906,6 +7970,16 @@
       "file": "exercise-contours/original-v4/forge-ex-435-1.svg",
       "bytes": 177131,
       "sha256": "bb74e9ed37299ea972123ea9d11ef560bd985bcefa99396d497c088cc7dff1fd"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-437-1.svg",
+      "bytes": 96397,
+      "sha256": "582ca804d702b8433eda716c959751d6e0952f1e3f08cfd047c7774dccddd266"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-437-2.svg",
+      "bytes": 114263,
+      "sha256": "e41309840f13d014a4f8862501789b1507f84ea003386d938cac68f0bba4af10"
     },
     {
       "file": "exercise-contours/original-v4/forge-ex-440-1.svg",
@@ -7981,6 +8055,16 @@
       "file": "exercise-contours/original-v4/forge-ex-460-2.svg",
       "bytes": 87673,
       "sha256": "986e94f37c674ff235a22dd0bd76761312a9a023cb3c1f739b7c1f8af012a881"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-463-1.svg",
+      "bytes": 92877,
+      "sha256": "f0df1e99ced7fea70323f97e0f14c23b0f18b680adaa8caf3c8da7ee9764da7d"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-463-2.svg",
+      "bytes": 104577,
+      "sha256": "1d48307ff290c6a07f243d8a65a64ab9a23b9d548a8cafda778e9ac7c22e6d8d"
     },
     {
       "file": "exercise-contours/original-v4/forge-ex-464-1.svg",
@@ -8458,6 +8542,16 @@
       "sha256": "5bb894398d5889bdabe3c31d9cfae7bf73ffc152d42faffd5ee1d729daef2e18"
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-538-1.svg",
+      "bytes": 85932,
+      "sha256": "ba4012dd0757baa6bbc734ea7b818252294b008912b4e485898990b7aed73c30"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-538-2.svg",
+      "bytes": 83794,
+      "sha256": "a5d93ecded48d85e96f049994d5f31d99deb0919173ea7be1cf56167bc4b4c2b"
+    },
+    {
       "file": "exercise-contours/original-v4/forge-ex-541-1.svg",
       "bytes": 100592,
       "sha256": "f7ac45b6865ea9762db4caa0a74d0329cbda0c3020c9bbd53da2372620b9d9c3"
@@ -8513,6 +8607,16 @@
       "sha256": "7130b32208014df48ead90182247cac7a11beec8282e4663f1a8c5831a232021"
     },
     {
+      "file": "exercise-contours/original-v4/forge-ex-547-1.svg",
+      "bytes": 77411,
+      "sha256": "80ecb4d4fdf159f17fa11b22a8cefb7e5b104cf86cf5802f1e7375da6985753f"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-547-2.svg",
+      "bytes": 87057,
+      "sha256": "7092b9233cd959712c1e50eb4d8620a285a11d655ed6c904b80591a9563b2009"
+    },
+    {
       "file": "exercise-contours/original-v4/forge-ex-548-1.svg",
       "bytes": 93275,
       "sha256": "8d1f872a71ea40467a5995e167e23eac5763505fdfe66b6511cb7918d8b62c81"
@@ -8521,6 +8625,16 @@
       "file": "exercise-contours/original-v4/forge-ex-548-2.svg",
       "bytes": 93047,
       "sha256": "af8a9a08d18c27b2710bb6061e7b0df2c96c8c27067decb9c6c6590792fc21ae"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-549-1.svg",
+      "bytes": 83246,
+      "sha256": "4d315e0df3bd5f63fd5e508658ec255bb91f9ebbc584b10e41253bd48c5a43e0"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-549-2.svg",
+      "bytes": 104420,
+      "sha256": "28f3f83d292be3bfc04a048b3f2278ed95003dc17bd4e027c191ac5cc6bf06c1"
     },
     {
       "file": "exercise-contours/original-v4/forge-ex-550-1.svg",

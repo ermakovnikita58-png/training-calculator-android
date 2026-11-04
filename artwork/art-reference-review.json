@@ -160,22 +160,31 @@
     "group": "Грудь",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/cable-fly-1.svg",
-      "exercise-art/cable-fly-2.svg"
+      "exercise-contours/original-v4/forge-ex-067-1.svg",
+      "exercise-contours/original-v4/forge-ex-067-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Cable Fly",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/cable-fly/frame-1.svg",
-      "equipment": "Cable"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "cable-high-dual-pulley"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "cable-high-dual-pulley",
+      "support": "standing split stance",
+      "grip": "as-drawn",
+      "description": "FORGE exercise technique illustration, matching the reference thin bright white anatomical linework on pure black. Hollow black interiors, no gray or white fill, no shading, no text, no arrows or frames. Two side-by-side equally scaled complete figures with generous BLACK VERTICAL GUTTER separating panels. Fully clothed fitted gym shirt and shorts. Two phases of standing HIGH pulley cable chest fly. Show two tall pulley towers, pulleys ABOVE HEAD in both panels, two separate cables each from its own pulley to its own handle. First hands out to sides near shoulder level with elbows softly bent. Second handles meet low in front of upper abdomen, arms still mostly straight, not rowing. Staggered feet and small forward lean fixed."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
+    "verifiedAlias": {
+      "sourceName": "Сведение рук в кроссовере сверху",
+      "reason": "Для общего названия выбран вариант с верхним креплением троса. Высота троса не задана названием."
+    },
     "originalFiles": [
       "exercise-art/cable-fly-1.svg",
       "exercise-art/cable-fly-2.svg"
@@ -218,22 +227,31 @@
     "group": "Грудь",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/chest-dip-1.svg",
-      "exercise-art/chest-dip-2.svg"
+      "exercise-contours/original-v4/forge-ex-078-1.svg",
+      "exercise-contours/original-v4/forge-ex-078-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Chest Dip",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/chest-dip/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "parallel dipping bars"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "parallel dipping bars",
+      "support": "unsupported feet, arms support body above fixed parallel bars",
+      "grip": "hands on two parallel bars, neutral grip",
+      "description": "Use case scientific-educational. Create a precise original FORGE exercise technical plate in the thin white hollow contour style of the reference. Black background and black interiors, continuous fine white anatomical and equipment outlines. Athlete fully clothed in fitted short-sleeved training shirt, shorts and trainers. Two equally scaled SIDE-BY-SIDE panels separated by a generous clean black vertical gutter top-to-bottom, no text, arrows or border. No fill or shading. Side three-quarter view of chest-emphasis parallel-bar dips. Same TWO independent parallel horizontal rails supported by vertical posts in both panels. LEFT phase arms fully extended with hands gripping rails beside hips, knees bent back and feet off floor, torso leaning slightly forward. RIGHT phase clearly LOWERED body between bars, elbows bent about90 degrees and pointing back, shoulders approximately at elbow height, chest leaning forward. Do not repeat the straight-arm pose in the right panel. Whole apparatus and figure visible."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
+    "verifiedAlias": {
+      "sourceName": "Отжимания на брусьях с акцентом на грудь",
+      "reason": "Для общего названия в группе груди выбран вариант с умеренным наклоном корпуса вперёд."
+    },
     "originalFiles": [
       "exercise-art/chest-dip-1.svg",
       "exercise-art/chest-dip-2.svg"
@@ -1030,22 +1048,31 @@
     "group": "Квадрицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/walking-lunge-1.svg",
-      "exercise-art/walking-lunge-2.svg"
+      "exercise-contours/original-v4/forge-ex-213-1.svg",
+      "exercise-contours/original-v4/forge-ex-213-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Walking Lunge",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/walking-lunge/frame-1.svg",
-      "equipment": "Dumbbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbells"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "dumbbells",
+      "support": "standing, level ground",
+      "grip": "as-drawn",
+      "description": "Technical exercise scientific-educational illustration in FORGE style. Input image is style reference only. Thin continuous light white anatomical and equipment contours on pure black, no white or grey filled regions, black hollow interiors, no text, arrows, borders, shading or gradients. Fully clothed gym shirt and shorts. Two equally scaled side-by-side panels separated by wide clean full-height black gutter. Show same clothed athlete in SIDE THREE-QUARTER VIEW. One dumbbell hangs in EACH straight arm at hips throughout. LEFT panel upright standing with feet beside each other. RIGHT panel a forward lunge: lead foot planted well ahead, lead knee bent about 90 degrees stacked over foot, back knee lowered close to floor, rear heel lifted. Torso remains erect. Two clearly different stance/height phases. No split squat static repetition."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
+    "verifiedAlias": {
+      "sourceName": "Выпады с гантелями вперёд",
+      "reason": "Для общего названия выбран прямой выпад с двумя гантелями."
+    },
     "originalFiles": [
       "exercise-art/walking-lunge-1.svg",
       "exercise-art/walking-lunge-2.svg"
@@ -1262,8 +1289,7 @@
     "group": "Пресс",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/plank-1.svg",
-      "exercise-art/plank-2.svg"
+      "exercise-art/plank-1.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
@@ -1273,8 +1299,8 @@
     },
     "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "static-single-frame",
     "expertVerified": false,
     "authoredSpec": null,
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
@@ -1407,8 +1433,7 @@
     "group": "Пресс",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/side-plank-1.svg",
-      "exercise-art/side-plank-2.svg"
+      "exercise-art/side-plank-1.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
@@ -1418,8 +1443,8 @@
     },
     "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "static-single-frame",
     "expertVerified": false,
     "authoredSpec": null,
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
@@ -1954,21 +1979,26 @@
     "group": "Грудь",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/cable-fly-1.svg",
-      "exercise-art/cable-fly-2.svg"
+      "exercise-contours/original-v4/forge-ex-067-1.svg",
+      "exercise-contours/original-v4/forge-ex-067-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Cable Fly",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/cable-fly/frame-1.svg",
-      "equipment": "Cable"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "cable-high-dual-pulley"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "cable-high-dual-pulley",
+      "support": "standing split stance",
+      "grip": "as-drawn",
+      "description": "FORGE exercise technique illustration, matching the reference thin bright white anatomical linework on pure black. Hollow black interiors, no gray or white fill, no shading, no text, no arrows or frames. Two side-by-side equally scaled complete figures with generous BLACK VERTICAL GUTTER separating panels. Fully clothed fitted gym shirt and shorts. Two phases of standing HIGH pulley cable chest fly. Show two tall pulley towers, pulleys ABOVE HEAD in both panels, two separate cables each from its own pulley to its own handle. First hands out to sides near shoulder level with elbows softly bent. Second handles meet low in front of upper abdomen, arms still mostly straight, not rowing. Staggered feet and small forward lean fixed."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/cable-fly-1.svg",
@@ -2017,21 +2047,26 @@
     "group": "Грудь",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/cable-fly-1.svg",
-      "exercise-art/cable-fly-2.svg"
+      "exercise-contours/original-v4/forge-ex-069-1.svg",
+      "exercise-contours/original-v4/forge-ex-069-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Cable Fly",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/cable-fly/frame-1.svg",
-      "equipment": "Cable"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "cable-chest-height-dual-pulley"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "cable-chest-height-dual-pulley",
+      "support": "standing split stance",
+      "grip": "as-drawn",
+      "description": "FORGE exercise technique illustration, matching the reference thin bright white anatomical linework on pure black. Hollow black interiors, no gray or white fill, no shading, no text, no arrows or frames. Two side-by-side equally scaled complete figures with generous BLACK VERTICAL GUTTER separating panels. Fully clothed fitted gym shirt and shorts. Two phases of standing CHEST HEIGHT pulley cable chest fly. Both fixed pulleys at chest height on two uprights. Two separate cables each runs HORIZONTALLY from pulley to corresponding hand at chest level. First arms open wide level with chest with softly bent elbows. Second palms and handles meet straight in front at chest height, same small elbow bend. Staggered stance and trunk fixed."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/cable-fly-1.svg",
@@ -2075,22 +2110,31 @@
     "group": "Грудь",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/machine-chest-press-1.svg",
-      "exercise-art/machine-chest-press-2.svg"
+      "exercise-contours/original-v4/forge-ex-072-1.svg",
+      "exercise-contours/original-v4/forge-ex-072-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Machine Chest Press",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/machine-chest-press/frame-1.svg",
-      "equipment": "Machine"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "plate-loaded chest press machine"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "plate-loaded chest press machine",
+      "support": "seated on vertical backrest, feet floor",
+      "grip": "pronated on horizontal handles",
+      "description": "FORGE technical exercise illustration. Exactly two side-by-side panels with equal figure scale and generous black gutter. Thin white continuous anatomical outlines on pure black, hollow black interior. No fills or shading, no text, no arrows. Fully clothed gym athlete. Two phases of a seated plate-loaded Hammer-style chest press, viewed from front three-quarter SIDE so the elbow angle is obvious. Same machine in both frames with a vertical backrest, seat, two separate independent converging levers pivoted high behind the seat and ONE round weight plate on each lever. Left panel start: upper back supported, both elbows bent about90degrees and handles beside chest, elbows behind wrists. Right panel finish: arms nearly STRAIGHT ahead at chest height, handles clearly farther from torso and closer together. Show clear difference in handle-to-chest distance, plates travel with levers. No cable or weight stack. Whole machine inside each panel."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
+    "verifiedAlias": {
+      "sourceName": "Жим в хаммере для груди",
+      "reason": "Общее название допускает выбранный рычажный тренажёр. Изображён жим сидя с опорой спины."
+    },
     "originalFiles": [
       "exercise-art/machine-chest-press-1.svg",
       "exercise-art/machine-chest-press-2.svg"
@@ -2104,21 +2148,26 @@
     "group": "Грудь",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/machine-chest-press-1.svg",
-      "exercise-art/machine-chest-press-2.svg"
+      "exercise-contours/original-v4/forge-ex-072-1.svg",
+      "exercise-contours/original-v4/forge-ex-072-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Machine Chest Press",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/machine-chest-press/frame-1.svg",
-      "equipment": "Machine"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "plate-loaded chest press machine"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "plate-loaded chest press machine",
+      "support": "seated on vertical backrest, feet floor",
+      "grip": "pronated on horizontal handles",
+      "description": "FORGE technical exercise illustration. Exactly two side-by-side panels with equal figure scale and generous black gutter. Thin white continuous anatomical outlines on pure black, hollow black interior. No fills or shading, no text, no arrows. Fully clothed gym athlete. Two phases of a seated plate-loaded Hammer-style chest press, viewed from front three-quarter SIDE so the elbow angle is obvious. Same machine in both frames with a vertical backrest, seat, two separate independent converging levers pivoted high behind the seat and ONE round weight plate on each lever. Left panel start: upper back supported, both elbows bent about90degrees and handles beside chest, elbows behind wrists. Right panel finish: arms nearly STRAIGHT ahead at chest height, handles clearly farther from torso and closer together. Show clear difference in handle-to-chest distance, plates travel with levers. No cable or weight stack. Whole machine inside each panel."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/machine-chest-press-1.svg",
@@ -2278,21 +2327,26 @@
     "group": "Грудь",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/chest-dip-1.svg",
-      "exercise-art/chest-dip-2.svg"
+      "exercise-contours/original-v4/forge-ex-078-1.svg",
+      "exercise-contours/original-v4/forge-ex-078-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Chest Dip",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/chest-dip/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "parallel dipping bars"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "parallel dipping bars",
+      "support": "unsupported feet, arms support body above fixed parallel bars",
+      "grip": "hands on two parallel bars, neutral grip",
+      "description": "Use case scientific-educational. Create a precise original FORGE exercise technical plate in the thin white hollow contour style of the reference. Black background and black interiors, continuous fine white anatomical and equipment outlines. Athlete fully clothed in fitted short-sleeved training shirt, shorts and trainers. Two equally scaled SIDE-BY-SIDE panels separated by a generous clean black vertical gutter top-to-bottom, no text, arrows or border. No fill or shading. Side three-quarter view of chest-emphasis parallel-bar dips. Same TWO independent parallel horizontal rails supported by vertical posts in both panels. LEFT phase arms fully extended with hands gripping rails beside hips, knees bent back and feet off floor, torso leaning slightly forward. RIGHT phase clearly LOWERED body between bars, elbows bent about90 degrees and pointing back, shoulders approximately at elbow height, chest leaning forward. Do not repeat the straight-arm pose in the right panel. Whole apparatus and figure visible."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/chest-dip-1.svg",
@@ -3168,21 +3222,26 @@
     "group": "Спина",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/machine-row-1.svg",
-      "exercise-art/machine-row-2.svg"
+      "exercise-contours/original-v4/forge-ex-107-1.svg",
+      "exercise-contours/original-v4/forge-ex-107-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Machine Row",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/machine-row/frame-1.svg",
-      "equipment": "Machine"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "plate-loaded-hammer-row-machine"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "plate-loaded-hammer-row-machine",
+      "support": "seated chest-supported machine",
+      "grip": "as-drawn",
+      "description": "Original FORGE exercise illustration matching reference fine continuous white outlines on black, hollow body and equipment, no fill, no shading, no letters or arrows. Two equal-size side-by-side panels with a generous pure black vertical gutter. Fully clothed gym shirt, shorts, sneakers. Two phases side three-quarter view seated CHEST-SUPPORTED PLATE-LOADED ISO-LATERAL ROW machine. Fixed vertical chest pad, seat, feet on lower foot rests, two INDEPENDENT LONG PIVOTING LEVER ARMS with visible round barbell weight plates mounted on plate horns. TWO HANDLES connected mechanically to levers. No cables, no pulleys, no selectorized weight stack. First chest stays against pad with BOTH arms straight reaching handles forward. Second chest stays against SAME pad and BOTH elbows bend and pull handles back to lower ribs. Weight plates and lever pivots shown clearly."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/machine-row-1.svg",
@@ -3347,21 +3406,26 @@
     "group": "Спина",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/superman-1.svg",
-      "exercise-art/superman-2.svg"
+      "exercise-contours/original-v4/forge-ex-113-1.svg",
+      "exercise-contours/original-v4/forge-ex-113-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Superman",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/superman/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight floor exercise"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "bodyweight floor exercise",
+      "support": "pelvis, thighs, shins and toes stay on floor throughout",
+      "grip": "hands lightly at sides of head with elbows outward",
+      "description": "Use case scientific-educational. Create a precise original FORGE exercise technical plate in the thin white hollow contour style of the reference. Black background and black interiors, continuous fine white anatomical and equipment outlines. Athlete fully clothed in fitted short-sleeved training shirt, shorts and trainers. Two equally scaled SIDE-BY-SIDE panels separated by a generous clean black vertical gutter top-to-bottom, no text, arrows or border. No fill or shading. True SIDE view of prone upper torso raise on an exercise mat. LEFT phase whole body prone and flat on floor, chest and forehead near mat, both legs straight resting fully on mat, hands lightly beside head, elbows outward. RIGHT phase chest and head gently lifted10-15cm above mat, upper torso slopes upward while pelvis, thighs, knees, shins and feet REMAIN ON MAT. Both legs never rise. No Superman arm reach. Neck follows trunk. Two clearly different chest heights. Entire body visible inside each panel.\n\nTargeted correction\nEdit only the arm and hand placement in BOTH frames. Same athlete, same mat, side view, same distinct low/high chest positions, feet/legs resting on mat. Place fingertips lightly beside the ears, elbows spread OUTWARD to the sides and off the mat. No hands touching the mat, no palms under shoulders, no support on arms, no pushup or cobra pose. Preserve all thin white hollow contours on black, two separated panels, no text or fill. The upper torso is raised by the back muscles alone."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/superman-1.svg",
@@ -3521,22 +3585,31 @@
     "group": "Спина",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/machine-row-1.svg",
-      "exercise-art/machine-row-2.svg"
+      "exercise-contours/original-v4/forge-ex-107-1.svg",
+      "exercise-contours/original-v4/forge-ex-107-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Machine Row",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/machine-row/frame-1.svg",
-      "equipment": "Machine"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "plate-loaded-hammer-row-machine"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "plate-loaded-hammer-row-machine",
+      "support": "seated chest-supported machine",
+      "grip": "as-drawn",
+      "description": "Original FORGE exercise illustration matching reference fine continuous white outlines on black, hollow body and equipment, no fill, no shading, no letters or arrows. Two equal-size side-by-side panels with a generous pure black vertical gutter. Fully clothed gym shirt, shorts, sneakers. Two phases side three-quarter view seated CHEST-SUPPORTED PLATE-LOADED ISO-LATERAL ROW machine. Fixed vertical chest pad, seat, feet on lower foot rests, two INDEPENDENT LONG PIVOTING LEVER ARMS with visible round barbell weight plates mounted on plate horns. TWO HANDLES connected mechanically to levers. No cables, no pulleys, no selectorized weight stack. First chest stays against pad with BOTH arms straight reaching handles forward. Second chest stays against SAME pad and BOTH elbows bend and pull handles back to lower ribs. Weight plates and lever pivots shown clearly."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
+    "verifiedAlias": {
+      "sourceName": "Тяга в хаммере горизонтально",
+      "reason": "Для общего названия выбран рычажный тренажёр с опорой грудью."
+    },
     "originalFiles": [
       "exercise-art/machine-row-1.svg",
       "exercise-art/machine-row-2.svg"
@@ -4805,21 +4878,26 @@
     "group": "Бицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-contours/ek-0239-relaxation.svg",
-      "exercise-contours/ek-0239-tension.svg"
+      "exercise-contours/original-v4/forge-ex-160-1.svg",
+      "exercise-contours/original-v4/forge-ex-160-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Preacher Curl: Barbell",
-      "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0239-relaxation.svg",
-      "equipment": "Barbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "barbell-ez"
     },
-    "credit": "Everkinetic / Greg Priday · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "barbell-ez",
+      "support": "seated preacher bench",
+      "grip": "as-drawn",
+      "description": "FORGE exercise technique illustration, matching the reference thin bright white anatomical linework on pure black. Hollow black interiors, no gray or white fill, no shading, no text, no arrows or frames. Two side-by-side equally scaled complete figures with generous BLACK VERTICAL GUTTER separating panels. Fully clothed fitted gym shirt and shorts. Two phases seated preacher curl using an obviously zigzag curved EZ BAR with weight plates on both ends. Same angled preacher pad in both panels, upper arms supported fully on pad and chest behind pad. First elbows extended downward along sloping pad, bar near bottom. Second elbows deeply flexed and bar near face. Curved angled shaft visible between hands and beyond hands in BOTH panels. No straight bar."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/preacher-curl-1.svg",
@@ -5458,22 +5536,31 @@
     "group": "Трицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/overhead-tricep-extension-1.svg",
-      "exercise-art/overhead-tricep-extension-2.svg"
+      "exercise-contours/original-v4/forge-ex-437-1.svg",
+      "exercise-contours/original-v4/forge-ex-437-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Overhead Tricep Extension",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/overhead-tricep-extension/frame-1.svg",
-      "equipment": "Cable"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "cable-low-rope"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "cable-low-rope",
+      "support": "standing split stance",
+      "grip": "as-drawn",
+      "description": "Original FORGE exercise illustration matching reference fine continuous white outlines on black, hollow body and equipment, no fill, no shading, no letters or arrows. Two equal-size side-by-side panels with a generous pure black vertical gutter. Fully clothed gym shirt, shorts, sneakers. Two phases side three-quarter view overhead rope triceps extension using low cable pulley behind the person. Stand facing AWAY from pulley in a split stance, same torso slight forward lean. BOTH upper arms raised beside ears and stationary. First elbows deeply bent with two-ended rope held BEHIND head. Second elbows FULLY STRAIGHTEN diagonally overhead forward with both hands extending beyond forehead and rope ends separated slightly. Cable must connect to CENTER of rope behind head/upper arms, same low anchor and stance. Distinct bent versus straight elbows. No dumbbells."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
+    "verifiedAlias": {
+      "sourceName": "Разгибание рук с канатом над головой",
+      "reason": "Для общего названия выбрана канатная рукоять. Положение тела и траектория совпадают."
+    },
     "originalFiles": [
       "exercise-art/overhead-tricep-extension-1.svg",
       "exercise-art/overhead-tricep-extension-2.svg"
@@ -5603,21 +5690,26 @@
     "group": "Трицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/diamond-push-up-1.svg",
-      "exercise-art/diamond-push-up-2.svg"
+      "exercise-contours/original-v4/forge-ex-187-1.svg",
+      "exercise-contours/original-v4/forge-ex-187-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Diamond Push-up",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/diamond-push-up/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "bodyweight",
+      "support": "floor palms and toes",
+      "grip": "as-drawn",
+      "description": "FORGE exercise technique illustration, matching the reference thin bright white anatomical linework on pure black. Hollow black interiors, no gray or white fill, no shading, no text, no arrows or frames. Two side-by-side equally scaled complete figures with generous BLACK VERTICAL GUTTER separating panels. Fully clothed fitted gym shirt and shorts. Two phases front three-quarter view of NARROW pushup on floor. Hands parallel forward beneath shoulders, palms distinctly separated by about one palm width, fingers are NOT joined into a triangle. First straight elbow high plank, second chest near floor with elbows tucked back alongside ribs. Long straight body and same foot positions. Full hands visible in both frames."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/diamond-push-up-1.svg",
@@ -5632,21 +5724,26 @@
     "group": "Трицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/diamond-push-up-1.svg",
-      "exercise-art/diamond-push-up-2.svg"
+      "exercise-contours/original-v4/forge-ex-188-1.svg",
+      "exercise-contours/original-v4/forge-ex-188-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Diamond Push-up",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/diamond-push-up/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "bodyweight",
+      "support": "floor diamond palms and toes",
+      "grip": "as-drawn",
+      "description": "FORGE exercise technique illustration, matching the reference thin bright white anatomical linework on pure black. Hollow black interiors, no gray or white fill, no shading, no text, no arrows or frames. Two side-by-side equally scaled complete figures with generous BLACK VERTICAL GUTTER separating panels. Fully clothed fitted gym shirt and shorts. Two phases front three-quarter view of DIAMOND pushup on floor. Hands close together under sternum, thumbs and index fingers clearly touch to form small diamond window. First elbows straight high plank, second elbows deeply flexed and chest near floor, elbows close to ribs. Long straight body. Same contact hand shape in both phases, visible diamond in both."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/diamond-push-up-1.svg",
@@ -6392,21 +6489,26 @@
     "group": "Квадрицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/walking-lunge-1.svg",
-      "exercise-art/walking-lunge-2.svg"
+      "exercise-contours/original-v4/forge-ex-213-1.svg",
+      "exercise-contours/original-v4/forge-ex-213-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Walking Lunge",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/walking-lunge/frame-1.svg",
-      "equipment": "Dumbbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbells"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "dumbbells",
+      "support": "standing, level ground",
+      "grip": "as-drawn",
+      "description": "Technical exercise scientific-educational illustration in FORGE style. Input image is style reference only. Thin continuous light white anatomical and equipment contours on pure black, no white or grey filled regions, black hollow interiors, no text, arrows, borders, shading or gradients. Fully clothed gym shirt and shorts. Two equally scaled side-by-side panels separated by wide clean full-height black gutter. Show same clothed athlete in SIDE THREE-QUARTER VIEW. One dumbbell hangs in EACH straight arm at hips throughout. LEFT panel upright standing with feet beside each other. RIGHT panel a forward lunge: lead foot planted well ahead, lead knee bent about 90 degrees stacked over foot, back knee lowered close to floor, rear heel lifted. Torso remains erect. Two clearly different stance/height phases. No split squat static repetition."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/walking-lunge-1.svg",
@@ -6508,22 +6610,31 @@
     "group": "Квадрицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/walking-lunge-1.svg",
-      "exercise-art/walking-lunge-2.svg"
+      "exercise-contours/original-v4/forge-ex-213-1.svg",
+      "exercise-contours/original-v4/forge-ex-213-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Walking Lunge",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/walking-lunge/frame-1.svg",
-      "equipment": "Dumbbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbells"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "dumbbells",
+      "support": "standing, level ground",
+      "grip": "as-drawn",
+      "description": "Technical exercise scientific-educational illustration in FORGE style. Input image is style reference only. Thin continuous light white anatomical and equipment contours on pure black, no white or grey filled regions, black hollow interiors, no text, arrows, borders, shading or gradients. Fully clothed gym shirt and shorts. Two equally scaled side-by-side panels separated by wide clean full-height black gutter. Show same clothed athlete in SIDE THREE-QUARTER VIEW. One dumbbell hangs in EACH straight arm at hips throughout. LEFT panel upright standing with feet beside each other. RIGHT panel a forward lunge: lead foot planted well ahead, lead knee bent about 90 degrees stacked over foot, back knee lowered close to floor, rear heel lifted. Torso remains erect. Two clearly different stance/height phases. No split squat static repetition."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
+    "verifiedAlias": {
+      "sourceName": "Выпады с гантелями вперёд",
+      "reason": "Показаны стойка и опускание в шаге с теми же гантелями. Продвижение и смена ноги описываются отдельно."
+    },
     "originalFiles": [
       "exercise-art/walking-lunge-1.svg",
       "exercise-art/walking-lunge-2.svg"
@@ -7510,21 +7621,26 @@
     "group": "Ягодицы",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/hip-thrust-1.svg",
-      "exercise-art/hip-thrust-2.svg"
+      "exercise-contours/original-v4/forge-ex-250-1.svg",
+      "exercise-contours/original-v4/forge-ex-250-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Hip Thrust",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/hip-thrust/frame-1.svg",
-      "equipment": "Barbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "barbell"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "barbell",
+      "support": "upper back on horizontal bench, feet on floor",
+      "grip": "as-drawn",
+      "description": "Technical exercise scientific-educational illustration in FORGE style. Input image is style reference only. Thin continuous light white anatomical and equipment contours on pure black, no white or grey filled regions, black hollow interiors, no text, arrows, borders, shading or gradients. Fully clothed gym shirt and shorts. Two equally scaled side-by-side panels separated by wide clean full-height black gutter. Strict SIDE VIEW two phases of a barbell hip thrust. Athlete's shoulder blades remain on edge of a flat bench behind him, both feet planted on floor in front; padded horizontal barbell rests over hip crease with two loaded plates visible, hands steady bar. LEFT phase hips low near floor, torso sloping down from bench, knees deeply bent. RIGHT phase hips extended so torso from shoulder to knee is horizontal, lower legs vertical. Same bench/feet/bar load. Head follows torso without hyperextension. Do not lie whole back on floor or on bench."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/hip-thrust-1.svg",
@@ -8018,22 +8134,31 @@
     "group": "Ягодицы",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/hip-thrust-1.svg",
-      "exercise-art/hip-thrust-2.svg"
+      "exercise-contours/original-v4/forge-ex-250-1.svg",
+      "exercise-contours/original-v4/forge-ex-250-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Hip Thrust",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/hip-thrust/frame-1.svg",
-      "equipment": "Barbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "barbell"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "barbell",
+      "support": "upper back on horizontal bench, feet on floor",
+      "grip": "as-drawn",
+      "description": "Technical exercise scientific-educational illustration in FORGE style. Input image is style reference only. Thin continuous light white anatomical and equipment contours on pure black, no white or grey filled regions, black hollow interiors, no text, arrows, borders, shading or gradients. Fully clothed gym shirt and shorts. Two equally scaled side-by-side panels separated by wide clean full-height black gutter. Strict SIDE VIEW two phases of a barbell hip thrust. Athlete's shoulder blades remain on edge of a flat bench behind him, both feet planted on floor in front; padded horizontal barbell rests over hip crease with two loaded plates visible, hands steady bar. LEFT phase hips low near floor, torso sloping down from bench, knees deeply bent. RIGHT phase hips extended so torso from shoulder to knee is horizontal, lower legs vertical. Same bench/feet/bar load. Head follows torso without hyperextension. Do not lie whole back on floor or on bench."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
+    "verifiedAlias": {
+      "sourceName": "Хип-траст со штангой",
+      "reason": "Совпадают опора спины, штанга и положения таза. Длительность паузы задаётся текстом."
+    },
     "originalFiles": [
       "exercise-art/hip-thrust-1.svg",
       "exercise-art/hip-thrust-2.svg"
@@ -8415,8 +8540,7 @@
     "group": "Икры",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/calf-raise-1.svg",
-      "exercise-art/calf-raise-2.svg"
+      "exercise-art/calf-raise-1.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
@@ -8426,8 +8550,8 @@
     },
     "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "static-single-frame",
     "expertVerified": false,
     "authoredSpec": null,
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
@@ -8444,8 +8568,7 @@
     "group": "Пресс",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/plank-1.svg",
-      "exercise-art/plank-2.svg"
+      "exercise-art/plank-1.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
@@ -8455,8 +8578,8 @@
     },
     "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "static-single-frame",
     "expertVerified": false,
     "authoredSpec": null,
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
@@ -8766,21 +8889,26 @@
     "group": "Пресс",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/hanging-leg-raise-1.svg",
-      "exercise-art/hanging-leg-raise-2.svg"
+      "exercise-contours/original-v4/forge-ex-292-1.svg",
+      "exercise-contours/original-v4/forge-ex-292-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Hanging Leg Raise",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/hanging-leg-raise/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "pull-up-bar"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "pull-up-bar",
+      "support": "hanging from bar",
+      "grip": "as-drawn",
+      "description": "FORGE exercise technique illustration, matching the reference thin bright white anatomical linework on pure black. Hollow black interiors, no gray or white fill, no shading, no text, no arrows or frames. Two side-by-side equally scaled complete figures with generous BLACK VERTICAL GUTTER separating panels. Fully clothed fitted gym shirt and shorts. Two phases side three-quarter view of hanging STRAIGHT leg raise. Same high pull-up bar and fully extended arms with overhand grip. First legs hang straight vertically together. Second BOTH legs together rise to horizontal straight forward from hip, knees stay FULLY STRAIGHT, ankles together. Body remains upright under bar. No bent-knee raise."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/hanging-leg-raise-1.svg",
@@ -9221,8 +9349,7 @@
     "group": "Пресс",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/l-sit-hold-1.svg",
-      "exercise-art/l-sit-hold-2.svg"
+      "exercise-art/l-sit-hold-1.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
@@ -9232,8 +9359,8 @@
     },
     "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "static-single-frame",
     "expertVerified": false,
     "authoredSpec": null,
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
@@ -9462,21 +9589,26 @@
     "group": "Нижняя спина",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/trap-bar-deadlift-1.svg",
-      "exercise-art/trap-bar-deadlift-2.svg"
+      "exercise-contours/original-v4/forge-ex-315-1.svg",
+      "exercise-contours/original-v4/forge-ex-315-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Trap Bar Deadlift",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/trap-bar-deadlift/frame-1.svg",
-      "equipment": "Barbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "trap-bar low handles"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "trap-bar low handles",
+      "support": "standing inside loaded hexagonal trap bar",
+      "grip": "as-drawn",
+      "description": "Edit both panels of this trap-bar deadlift illustration. Replace the elevated grab handles with LOW handles. REMOVE every short upright metal handle riser near each hand. Each hand grips directly a horizontal side tube of the hexagonal frame. The knuckles and thumb wrap around that tube AT FRAME LEVEL, no horizontal grip above frame. The outer hexagonal frame, plates, whole figure and squat/standing phases remain. Hands and bar must attach correctly at same height. Keep hollow thin white contours on black, two panels, wide black gutter and no captions."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/trap-bar-deadlift-1.svg",
@@ -9777,21 +9909,26 @@
     "group": "Нижняя спина",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/superman-1.svg",
-      "exercise-art/superman-2.svg"
+      "exercise-contours/original-v4/forge-ex-325-1.svg",
+      "exercise-contours/original-v4/forge-ex-325-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Superman",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/superman/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight floor exercise"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "bodyweight floor exercise",
+      "support": "pelvis and abdomen stay on mat",
+      "grip": "hands open, arms long overhead",
+      "description": "Use case scientific-educational. Create a precise original FORGE exercise technical plate in the thin white hollow contour style of the reference. Black background and black interiors, continuous fine white anatomical and equipment outlines. Athlete fully clothed in fitted short-sleeved training shirt, shorts and trainers. Two equally scaled SIDE-BY-SIDE panels separated by a generous clean black vertical gutter top-to-bottom, no text, arrows or border. No fill or shading. True SIDE view of dynamic Superman floor extension on a thin exercise mat. LEFT phase athlete lying prone FULLY FLAT with both arms reaching long overhead resting on floor and both straight legs resting on floor. RIGHT phase both long arms, chest and both straight legs raised modestly off the floor at the SAME TIME, pelvis and abdomen remaining supported on mat. The left phase must clearly have hands and feet resting on mat, right phase clear black air gaps beneath hands/chest/feet. Neutral neck, no exaggerated lumbar arch. Entire body visible."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/superman-1.svg",
@@ -10058,8 +10195,7 @@
     "group": "Предплечья",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/dead-hang-1.svg",
-      "exercise-art/dead-hang-2.svg"
+      "exercise-art/dead-hang-1.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
@@ -10069,8 +10205,8 @@
     },
     "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "static-single-frame",
     "expertVerified": false,
     "authoredSpec": null,
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
@@ -10458,22 +10594,31 @@
     "group": "Кардио",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/running-1.svg",
-      "exercise-art/running-2.svg"
+      "exercise-contours/original-v4/forge-ex-345-1.svg",
+      "exercise-contours/original-v4/forge-ex-345-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Running",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/running/frame-1.svg",
-      "equipment": "Cardio"
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "bodyweight",
+      "support": "outdoor-ground",
+      "grip": "as-drawn",
+      "description": "Outdoor running in side profile on a thin flat ground line. Left: right foot midstance under hip, left foot lifted behind, left arm forward. Right: distinct flight phase, both feet visibly airborne, lead knee forward. No treadmill or other equipment."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
+    "verifiedAlias": {
+      "sourceName": "Бег на улице",
+      "reason": "Положение бега совпадает. Чередование темпа и длительность интервалов задаются текстом."
+    },
     "originalFiles": [
       "exercise-art/running-1.svg",
       "exercise-art/running-2.svg"
@@ -10487,21 +10632,26 @@
     "group": "Кардио",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/running-1.svg",
-      "exercise-art/running-2.svg"
+      "exercise-contours/original-v4/forge-ex-347-1.svg",
+      "exercise-contours/original-v4/forge-ex-347-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Running",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/running/frame-1.svg",
-      "equipment": "Cardio"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "bodyweight",
+      "support": "outdoor level ground",
+      "grip": "as-drawn",
+      "description": "FORGE exercise technique scientific-educational contour illustration. Match input only for artistic style. Thin clean continuous light white anatomical outlines, hollow black interiors on pure black. Clothed athletic figure in fitted shirt and shorts, outlined equipment. No grey fill, shading, gradients, lettering, arrows or motion streaks. Two distinct equally scaled phases SIDE BY SIDE separated by wide pure black full-height gutter, no scenery crossing gutter. Two distinct SIDE VIEW phases of fast outdoor sprinting without any machines, no scenery. Left athlete in forward acceleration stride, torso pitched 25 degrees, one foot drives behind, opposite knee forward, elbows bent and powerful opposite arm swing. Right athlete more upright in mid-flight sprint stride with different leading leg and opposite arm forward. No high-knee marching or stationary jog. Whole shoes and hands included, no track marking."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/running-1.svg",
@@ -10579,21 +10729,26 @@
     "group": "Кардио",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/stair-climber-1.svg",
-      "exercise-art/stair-climber-2.svg"
+      "exercise-contours/original-v4/forge-ex-350-1.svg",
+      "exercise-contours/original-v4/forge-ex-350-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Stair Climber",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/stair-climber/frame-1.svg",
-      "equipment": "Cardio"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "independent-pedal stepper"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "independent-pedal stepper",
+      "support": "standing on two independent pedals",
+      "grip": "as-drawn",
+      "description": "FORGE exercise technique scientific-educational contour illustration. Match input only for artistic style. Thin clean continuous light white anatomical outlines, hollow black interiors on pure black. Clothed athletic figure in fitted shirt and shorts, outlined equipment. No grey fill, shading, gradients, lettering, arrows or motion streaks. Two distinct equally scaled phases SIDE BY SIDE separated by wide pure black full-height gutter, no scenery crossing gutter. Three-quarter front view compact pedal stepper cardio machine. Exactly TWO SEPARATE wide horizontal pedals connected to base by opposing hydraulic arms, no staircase, no revolving stairs. Simple upright handrail support. Left athlete pressing LEFT pedal down while RIGHT pedal raised, knee bent. Right athlete pressing RIGHT pedal down while LEFT pedal raised. Distinct alternating knees and pedal heights. Feet remain on their own pedals."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/stair-climber-1.svg",
@@ -11091,8 +11246,7 @@
     "group": "Мобильность",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/hamstring-stretch-1.svg",
-      "exercise-art/hamstring-stretch-2.svg"
+      "exercise-art/hamstring-stretch-1.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
@@ -11102,8 +11256,8 @@
     },
     "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "static-single-frame",
     "expertVerified": false,
     "authoredSpec": null,
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
@@ -11120,8 +11274,7 @@
     "group": "Мобильность",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/standing-quad-stretch-1.svg",
-      "exercise-art/standing-quad-stretch-2.svg"
+      "exercise-art/standing-quad-stretch-1.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
@@ -11131,8 +11284,8 @@
     },
     "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "static-single-frame",
     "expertVerified": false,
     "authoredSpec": null,
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
@@ -11182,8 +11335,7 @@
     "group": "Мобильность",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/kneeling-hip-flexor-stretch-1.svg",
-      "exercise-art/kneeling-hip-flexor-stretch-2.svg"
+      "exercise-art/kneeling-hip-flexor-stretch-1.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
@@ -11193,8 +11345,8 @@
     },
     "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "static-single-frame",
     "expertVerified": false,
     "authoredSpec": null,
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
@@ -11529,8 +11681,7 @@
     "group": "Мобильность",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/wall-calf-stretch-1.svg",
-      "exercise-art/wall-calf-stretch-2.svg"
+      "exercise-art/wall-calf-stretch-1.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
@@ -11540,8 +11691,8 @@
     },
     "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "static-single-frame",
     "expertVerified": false,
     "authoredSpec": null,
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
@@ -11951,22 +12102,31 @@
     "group": "Грудь",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/diamond-push-up-1.svg",
-      "exercise-art/diamond-push-up-2.svg"
+      "exercise-contours/original-v4/forge-ex-187-1.svg",
+      "exercise-contours/original-v4/forge-ex-187-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Diamond Push-up",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/diamond-push-up/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "bodyweight",
+      "support": "floor palms and toes",
+      "grip": "as-drawn",
+      "description": "FORGE exercise technique illustration, matching the reference thin bright white anatomical linework on pure black. Hollow black interiors, no gray or white fill, no shading, no text, no arrows or frames. Two side-by-side equally scaled complete figures with generous BLACK VERTICAL GUTTER separating panels. Fully clothed fitted gym shirt and shorts. Two phases front three-quarter view of NARROW pushup on floor. Hands parallel forward beneath shoulders, palms distinctly separated by about one palm width, fingers are NOT joined into a triangle. First straight elbow high plank, second chest near floor with elbows tucked back alongside ribs. Long straight body and same foot positions. Full hands visible in both frames."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
+    "verifiedAlias": {
+      "sourceName": "Отжимания узкой постановкой рук",
+      "reason": "Одинаковая узкая постановка раздельных ладоней и движение локтей."
+    },
     "originalFiles": [
       "exercise-art/diamond-push-up-1.svg",
       "exercise-art/diamond-push-up-2.svg"
@@ -13173,21 +13333,26 @@
     "group": "Бицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-contours/ek-0247-relaxation.svg",
-      "exercise-contours/ek-0247-tension.svg"
+      "exercise-contours/original-v4/forge-ex-431-1.svg",
+      "exercise-contours/original-v4/forge-ex-431-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Standing One Arm Bicep Curl with Cable",
-      "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0247-relaxation.svg",
-      "equipment": "cable"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "cable-dual-low-pulley"
     },
-    "credit": "Everkinetic · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "cable-dual-low-pulley",
+      "support": "standing",
+      "grip": "as-drawn",
+      "description": "FORGE exercise technique illustration, matching the reference thin bright white anatomical linework on pure black. Hollow black interiors, no gray or white fill, no shading, no text, no arrows or frames. Two side-by-side equally scaled complete figures with generous BLACK VERTICAL GUTTER separating panels. Fully clothed fitted gym shirt and shorts. Two phases of standing ALTERNATING dual low cable biceps curl. Two low pulleys at ankle height, TWO independent D-handles, both hands hold a handle in both frames. Left frame left elbow flexed to bring handle near shoulder and right elbow extended at side. Right frame right elbow flexed near shoulder and left elbow extended. Both upper arms stay beside ribs, forearms rotate palm up. No free hand on hip."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/ek-0247-relaxation.svg",
@@ -13361,21 +13526,26 @@
     "group": "Трицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/overhead-tricep-extension-1.svg",
-      "exercise-art/overhead-tricep-extension-2.svg"
+      "exercise-contours/original-v4/forge-ex-437-1.svg",
+      "exercise-contours/original-v4/forge-ex-437-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Overhead Tricep Extension",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/overhead-tricep-extension/frame-1.svg",
-      "equipment": "Cable"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "cable-low-rope"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "cable-low-rope",
+      "support": "standing split stance",
+      "grip": "as-drawn",
+      "description": "Original FORGE exercise illustration matching reference fine continuous white outlines on black, hollow body and equipment, no fill, no shading, no letters or arrows. Two equal-size side-by-side panels with a generous pure black vertical gutter. Fully clothed gym shirt, shorts, sneakers. Two phases side three-quarter view overhead rope triceps extension using low cable pulley behind the person. Stand facing AWAY from pulley in a split stance, same torso slight forward lean. BOTH upper arms raised beside ears and stationary. First elbows deeply bent with two-ended rope held BEHIND head. Second elbows FULLY STRAIGHTEN diagonally overhead forward with both hands extending beyond forehead and rope ends separated slightly. Cable must connect to CENTER of rope behind head/upper arms, same low anchor and stance. Distinct bent versus straight elbows. No dumbbells."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/overhead-tricep-extension-1.svg",
@@ -14033,8 +14203,7 @@
     "group": "Квадрицепс",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/wall-sit-1.svg",
-      "exercise-art/wall-sit-2.svg"
+      "exercise-art/wall-sit-1.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
@@ -14044,8 +14213,8 @@
     },
     "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "static-single-frame",
     "expertVerified": false,
     "authoredSpec": null,
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
@@ -14154,21 +14323,26 @@
     "group": "Бицепс бедра",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/nordic-hamstring-curl-1.svg",
-      "exercise-art/nordic-hamstring-curl-2.svg"
+      "exercise-contours/original-v4/forge-ex-463-1.svg",
+      "exercise-contours/original-v4/forge-ex-463-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Nordic Hamstring Curl",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/nordic-hamstring-curl/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "resistance-band and ankle anchor"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "resistance-band and ankle anchor",
+      "support": "kneeling padded mat with fixed ankle anchor",
+      "grip": "as-drawn",
+      "description": "FORGE exercise technique scientific-educational contour illustration. Match input only for artistic style. Thin clean continuous light white anatomical outlines, hollow black interiors on pure black. Clothed athletic figure in fitted shirt and shorts, outlined equipment. No grey fill, shading, gradients, lettering, arrows or motion streaks. Two distinct equally scaled phases SIDE BY SIDE separated by wide pure black full-height gutter, no scenery crossing gutter. Side view kneeling Nordic curl, ankles secured behind under padded low anchor, body straight knee-to-head. CLEAR ASSISTANCE: thick loop resistance band anchored HIGH to sturdy upright BEHIND athlete, loop around upper chest under armpits, taut in both phases. Left upright kneeling with band diagonal back/up. Right whole straight body leans forward around knees to 45 degrees, band stretches back/up visibly. Arms folded over chest. No bending hips, no lying flat."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/nordic-hamstring-curl-1.svg",
@@ -14773,8 +14947,7 @@
     "group": "Ягодицы",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/glute-bridge-1.svg",
-      "exercise-art/glute-bridge-2.svg"
+      "exercise-art/glute-bridge-1.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
@@ -14784,8 +14957,8 @@
     },
     "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "static-single-frame",
     "expertVerified": false,
     "authoredSpec": null,
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
@@ -15353,8 +15526,7 @@
     "group": "Пресс",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/hollow-body-hold-1.svg",
-      "exercise-art/hollow-body-hold-2.svg"
+      "exercise-art/hollow-body-hold-1.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
@@ -15364,8 +15536,8 @@
     },
     "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "static-single-frame",
     "expertVerified": false,
     "authoredSpec": null,
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
@@ -15778,22 +15950,31 @@
     "group": "Нижняя спина",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/superman-1.svg",
-      "exercise-art/superman-2.svg"
+      "exercise-contours/original-v4/forge-ex-113-1.svg",
+      "exercise-contours/original-v4/forge-ex-113-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Superman",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/superman/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight floor exercise"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "bodyweight floor exercise",
+      "support": "pelvis, thighs, shins and toes stay on floor throughout",
+      "grip": "hands lightly at sides of head with elbows outward",
+      "description": "Use case scientific-educational. Create a precise original FORGE exercise technical plate in the thin white hollow contour style of the reference. Black background and black interiors, continuous fine white anatomical and equipment outlines. Athlete fully clothed in fitted short-sleeved training shirt, shorts and trainers. Two equally scaled SIDE-BY-SIDE panels separated by a generous clean black vertical gutter top-to-bottom, no text, arrows or border. No fill or shading. True SIDE view of prone upper torso raise on an exercise mat. LEFT phase whole body prone and flat on floor, chest and forehead near mat, both legs straight resting fully on mat, hands lightly beside head, elbows outward. RIGHT phase chest and head gently lifted10-15cm above mat, upper torso slopes upward while pelvis, thighs, knees, shins and feet REMAIN ON MAT. Both legs never rise. No Superman arm reach. Neck follows trunk. Two clearly different chest heights. Entire body visible inside each panel.\n\nTargeted correction\nEdit only the arm and hand placement in BOTH frames. Same athlete, same mat, side view, same distinct low/high chest positions, feet/legs resting on mat. Place fingertips lightly beside the ears, elbows spread OUTWARD to the sides and off the mat. No hands touching the mat, no palms under shoulders, no support on arms, no pushup or cobra pose. Preserve all thin white hollow contours on black, two separated panels, no text or fill. The upper torso is raised by the back muscles alone."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
+    "verifiedAlias": {
+      "sourceName": "Подъём корпуса лёжа на животе",
+      "reason": "Совпадают подъём верхней части корпуса и опора ног на полу. Пауза указана в названии и инструкции."
+    },
     "originalFiles": [
       "exercise-art/superman-1.svg",
       "exercise-art/superman-2.svg"
@@ -16298,22 +16479,31 @@
     "group": "Кардио",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/running-1.svg",
-      "exercise-art/running-2.svg"
+      "exercise-contours/original-v4/forge-ex-345-1.svg",
+      "exercise-contours/original-v4/forge-ex-345-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Running",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/running/frame-1.svg",
-      "equipment": "Cardio"
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "bodyweight",
+      "support": "outdoor-ground",
+      "grip": "as-drawn",
+      "description": "Outdoor running in side profile on a thin flat ground line. Left: right foot midstance under hip, left foot lifted behind, left arm forward. Right: distinct flight phase, both feet visibly airborne, lead knee forward. No treadmill or other equipment."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
+    "verifiedAlias": {
+      "sourceName": "Бег на улице",
+      "reason": "Показан цикл бега на ровной поверхности. Изменения темпа во времени описываются текстом."
+    },
     "originalFiles": [
       "exercise-art/running-1.svg",
       "exercise-art/running-2.svg"
@@ -16579,21 +16769,26 @@
     "group": "Кардио",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/jump-rope-1.svg",
-      "exercise-art/jump-rope-2.svg"
+      "exercise-contours/original-v4/forge-ex-538-1.svg",
+      "exercise-contours/original-v4/forge-ex-538-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Jump Rope",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/jump-rope/frame-1.svg",
-      "equipment": "Cardio"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "jump-rope"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "jump-rope",
+      "support": "upright, level ground",
+      "grip": "as-drawn",
+      "description": "FORGE exercise technique scientific-educational contour illustration. Match input only for artistic style. Thin clean continuous light white anatomical outlines, hollow black interiors on pure black. Clothed athletic figure in fitted shirt and shorts, outlined equipment. No grey fill, shading, gradients, lettering, arrows or motion streaks. Two distinct equally scaled phases SIDE BY SIDE separated by wide pure black full-height gutter, no scenery crossing gutter. Two unmistakably different running-step rope-skipping phases. Front three-quarter view. Left phase one foot lightly touching ground, opposite knee lifted only a little and rope passing underneath planted foot. Right phase opposite foot lightly touches and the first heel lifts behind, as running in place with one foot at a time. Both hands each hold ONE rope handle at hip sides and one single continuous rope arcs from handles in front/around athlete. Feet never together. No equipment beyond single skipping rope."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/jump-rope-1.svg",
@@ -16869,21 +17064,26 @@
     "group": "Мобильность",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/kneeling-hip-flexor-stretch-1.svg",
-      "exercise-art/kneeling-hip-flexor-stretch-2.svg"
+      "exercise-contours/original-v4/forge-ex-547-1.svg",
+      "exercise-contours/original-v4/forge-ex-547-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Kneeling Hip Flexor Stretch",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/kneeling-hip-flexor-stretch/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "bodyweight",
+      "support": "half-kneeling lunge on mat, front foot and rear knee",
+      "grip": "hands resting on pelvis",
+      "description": "FORGE technical exercise illustration. Exactly two side-by-side panels with equal figure scale and generous black gutter. Thin white continuous anatomical outlines on pure black, hollow black interior. No fills or shading, no text, no arrows. Fully clothed gym athlete. Two phases of controlled half-kneeling hip extension mobility. Fully clothed athlete side view, right foot forward flat on ground and left knee down on mat behind pelvis, hands on hips. Left panel rear knee directly below pelvis, trunk upright and front shin vertical, front hip and knee90degrees. Right panel same rear knee stays in SAME position on mat, pelvis slides noticeably forward toward front foot, front knee now moves forward over ankle, REAR HIP EXTENDS as thigh angles backward under pelvis. Trunk stays UPRIGHT with long neutral back and level pelvis, no lumbar arch. Show clear forward shift rather than duplicated poses. Both entire legs visible."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/kneeling-hip-flexor-stretch-1.svg",
@@ -16932,21 +17132,26 @@
     "group": "Мобильность",
     "type": "EXERCISE_TECHNIQUE_ART",
     "frames": [
-      "exercise-art/wall-calf-stretch-1.svg",
-      "exercise-art/wall-calf-stretch-2.svg"
+      "exercise-contours/original-v4/forge-ex-549-1.svg",
+      "exercise-contours/original-v4/forge-ex-549-2.svg"
     ],
     "status": "ready-style-needs-biomechanics-review",
     "source": {
-      "name": "Wall Calf Stretch",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/wall-calf-stretch/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight, solid wall"
     },
-    "credit": "Everkinetic / Bryl Lim · CC BY-SA 4.0",
+    "credit": "FORGE · original ImageGen contour",
     "missingReason": "",
-    "replacedSourceReason": null,
-    "phaseStatus": "two-source-frames",
+    "replacedSourceReason": "",
+    "phaseStatus": "two-authored-phases",
     "expertVerified": false,
-    "authoredSpec": null,
+    "authoredSpec": {
+      "equipment": "bodyweight, solid wall",
+      "support": "standing split stance with hands against wall",
+      "grip": "palms on wall",
+      "description": "FORGE exercise technique plate. Two side-by-side equal panels separated by a broad pure black gutter. Thin continuous white human anatomical outlines on pure black background, hollow black interior, no shading, no fills, no text or arrows. Fully clothed adult athlete in fitted gym shirt shorts and shoes. Exact exercise is dynamic calf stretch against a solid wall, side view. Both hands press onto a short visible vertical wall at right shoulder height. Both feet point forward. The SAME back leg stays straight with heel on floor in BOTH panels. Left panel the athlete stands almost upright in a short split stance with front knee nearly straight and only a slight lean toward wall, back calf relaxed. Right panel athlete has visibly leaned toward wall and deeply bent front knee over front foot while the back leg remains STRAIGHT and back heel grounded, lengthening the back calf. Show clear changed ankle angle of the back foot and forward travel of pelvis and front knee, not a repeated pose. Entire figure and feet visible in each panel. No blocks, bands, weights or bench."
+    },
     "metadataReview": "equipment and explicit posture conflicts checked; not an expert pose approval",
     "originalFiles": [
       "exercise-art/wall-calf-stretch-1.svg",

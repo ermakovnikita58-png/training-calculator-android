@@ -133,11 +133,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Cable Fly",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/cable-fly/frame-1.svg",
-      "equipment": "Cable"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "cable-high-dual-pulley"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -145,12 +145,11 @@
       "exercise-art/cable-fly-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/cable-fly-1.svg",
-      "exercise-art/cable-fly-2.svg"
+      "exercise-contours/original-v4/forge-ex-067-1.svg",
+      "exercise-contours/original-v4/forge-ex-067-2.svg"
     ],
     "sharedWith": [
-      "Сведение рук в кроссовере сверху",
-      "Сведение рук в кроссовере на уровне груди"
+      "Сведение рук в кроссовере сверху"
     ],
     "correction": null
   },
@@ -189,11 +188,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Chest Dip",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/chest-dip/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "parallel dipping bars"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -201,8 +200,8 @@
       "exercise-art/chest-dip-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/chest-dip-1.svg",
-      "exercise-art/chest-dip-2.svg"
+      "exercise-contours/original-v4/forge-ex-078-1.svg",
+      "exercise-contours/original-v4/forge-ex-078-2.svg"
     ],
     "sharedWith": [
       "Отжимания на брусьях с акцентом на грудь"
@@ -712,9 +711,7 @@
       "exercise-contours/ek-0239-relaxation.svg",
       "exercise-contours/ek-0239-tension.svg"
     ],
-    "sharedWith": [
-      "Подъём EZ-штанги на скамье Скотта"
-    ],
+    "sharedWith": [],
     "correction": "Неоднозначный источник Machine заменён точной парой Preacher Curl: Barbell; настройки опоры требуют личной проверки."
   },
   {
@@ -939,11 +936,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Walking Lunge",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/walking-lunge/frame-1.svg",
-      "equipment": "Dumbbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbells"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -951,8 +948,8 @@
       "exercise-art/walking-lunge-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/walking-lunge-1.svg",
-      "exercise-art/walking-lunge-2.svg"
+      "exercise-contours/original-v4/forge-ex-213-1.svg",
+      "exercise-contours/original-v4/forge-ex-213-2.svg"
     ],
     "sharedWith": [
       "Выпады с гантелями вперёд",
@@ -1064,8 +1061,7 @@
       "exercise-art/glute-bridge-2.svg"
     ],
     "sharedWith": [
-      "Ягодичный мост с собственным весом",
-      "Изометрическое удержание ягодичного моста"
+      "Ягодичный мост с собственным весом"
     ],
     "correction": null
   },
@@ -1120,7 +1116,6 @@
     ],
     "sharedWith": [
       "Подъём на носки на ступени",
-      "Изометрическое удержание на носках",
       "Подъём на носки стоя с паузой",
       "Подъём на носки с собственным весом на возвышении"
     ],
@@ -1161,7 +1156,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Plank",
       "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/plank/frame-1.svg",
@@ -1173,8 +1168,7 @@
       "exercise-art/plank-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/plank-1.svg",
-      "exercise-art/plank-2.svg"
+      "exercise-art/plank-1.svg"
     ],
     "sharedWith": [
       "Планка на предплечьях"
@@ -1230,9 +1224,7 @@
       "exercise-art/hanging-leg-raise-1.svg",
       "exercise-art/hanging-leg-raise-2.svg"
     ],
-    "sharedWith": [
-      "Подъём прямых ног в висе"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -1294,7 +1286,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Side Plank",
       "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/side-plank/frame-1.svg",
@@ -1306,8 +1298,7 @@
       "exercise-art/side-plank-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/side-plank-1.svg",
-      "exercise-art/side-plank-2.svg"
+      "exercise-art/side-plank-1.svg"
     ],
     "sharedWith": [],
     "correction": null
@@ -1439,8 +1430,7 @@
       "exercise-art/jump-rope-2.svg"
     ],
     "sharedWith": [
-      "Скакалка двойные прыжки",
-      "Скакалка бег на месте"
+      "Скакалка двойные прыжки"
     ],
     "correction": null
   },
@@ -1754,11 +1744,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Cable Fly",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/cable-fly/frame-1.svg",
-      "equipment": "Cable"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "cable-high-dual-pulley"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -1766,12 +1756,11 @@
       "exercise-art/cable-fly-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/cable-fly-1.svg",
-      "exercise-art/cable-fly-2.svg"
+      "exercise-contours/original-v4/forge-ex-067-1.svg",
+      "exercise-contours/original-v4/forge-ex-067-2.svg"
     ],
     "sharedWith": [
-      "Кроссовер",
-      "Сведение рук в кроссовере на уровне груди"
+      "Кроссовер"
     ],
     "correction": null
   },
@@ -1807,11 +1796,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Cable Fly",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/cable-fly/frame-1.svg",
-      "equipment": "Cable"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "cable-chest-height-dual-pulley"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -1819,13 +1808,10 @@
       "exercise-art/cable-fly-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/cable-fly-1.svg",
-      "exercise-art/cable-fly-2.svg"
+      "exercise-contours/original-v4/forge-ex-069-1.svg",
+      "exercise-contours/original-v4/forge-ex-069-2.svg"
     ],
-    "sharedWith": [
-      "Кроссовер",
-      "Сведение рук в кроссовере сверху"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -1862,11 +1848,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Machine Chest Press",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/machine-chest-press/frame-1.svg",
-      "equipment": "Machine"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "plate-loaded chest press machine"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -1874,8 +1860,8 @@
       "exercise-art/machine-chest-press-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/machine-chest-press-1.svg",
-      "exercise-art/machine-chest-press-2.svg"
+      "exercise-contours/original-v4/forge-ex-072-1.svg",
+      "exercise-contours/original-v4/forge-ex-072-2.svg"
     ],
     "sharedWith": [
       "Жим в хаммере для груди"
@@ -1889,11 +1875,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Machine Chest Press",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/machine-chest-press/frame-1.svg",
-      "equipment": "Machine"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "plate-loaded chest press machine"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -1901,8 +1887,8 @@
       "exercise-art/machine-chest-press-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/machine-chest-press-1.svg",
-      "exercise-art/machine-chest-press-2.svg"
+      "exercise-contours/original-v4/forge-ex-072-1.svg",
+      "exercise-contours/original-v4/forge-ex-072-2.svg"
     ],
     "sharedWith": [
       "Жим в грудном тренажёре"
@@ -2044,11 +2030,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Chest Dip",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/chest-dip/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "parallel dipping bars"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -2056,8 +2042,8 @@
       "exercise-art/chest-dip-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/chest-dip-1.svg",
-      "exercise-art/chest-dip-2.svg"
+      "exercise-contours/original-v4/forge-ex-078-1.svg",
+      "exercise-contours/original-v4/forge-ex-078-2.svg"
     ],
     "sharedWith": [
       "Отжимания на брусьях"
@@ -2781,15 +2767,15 @@
   {
     "name": "Тяга в хаммере горизонтально",
     "group": "Спина",
-    "family": "row",
+    "family": "hammerrow",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Machine Row",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/machine-row/frame-1.svg",
-      "equipment": "Machine"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "plate-loaded-hammer-row-machine"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -2797,8 +2783,8 @@
       "exercise-art/machine-row-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/machine-row-1.svg",
-      "exercise-art/machine-row-2.svg"
+      "exercise-contours/original-v4/forge-ex-107-1.svg",
+      "exercise-contours/original-v4/forge-ex-107-2.svg"
     ],
     "sharedWith": [
       "Горизонтальная тяга в тренажёре"
@@ -2943,11 +2929,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Superman",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/superman/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight floor exercise"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -2955,11 +2941,10 @@
       "exercise-art/superman-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/superman-1.svg",
-      "exercise-art/superman-2.svg"
+      "exercise-contours/original-v4/forge-ex-113-1.svg",
+      "exercise-contours/original-v4/forge-ex-113-2.svg"
     ],
     "sharedWith": [
-      "Супермен лёжа",
       "Разгибание спины лёжа с паузой"
     ],
     "correction": null
@@ -3100,15 +3085,15 @@
   {
     "name": "Горизонтальная тяга в тренажёре",
     "group": "Спина",
-    "family": "row",
+    "family": "hammerrow",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Machine Row",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/machine-row/frame-1.svg",
-      "equipment": "Machine"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "plate-loaded-hammer-row-machine"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -3116,8 +3101,8 @@
       "exercise-art/machine-row-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/machine-row-1.svg",
-      "exercise-art/machine-row-2.svg"
+      "exercise-contours/original-v4/forge-ex-107-1.svg",
+      "exercise-contours/original-v4/forge-ex-107-2.svg"
     ],
     "sharedWith": [
       "Тяга в хаммере горизонтально"
@@ -4146,11 +4131,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Preacher Curl: Barbell",
-      "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0239-relaxation.svg",
-      "equipment": "Barbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "barbell-ez"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -4158,12 +4143,10 @@
       "exercise-art/preacher-curl-2.svg"
     ],
     "renderFrames": [
-      "exercise-contours/ek-0239-relaxation.svg",
-      "exercise-contours/ek-0239-tension.svg"
+      "exercise-contours/original-v4/forge-ex-160-1.svg",
+      "exercise-contours/original-v4/forge-ex-160-2.svg"
     ],
-    "sharedWith": [
-      "Сгибание рук на скамье Скотта"
-    ],
+    "sharedWith": [],
     "correction": "В исходном соответствии указан тренажёр. Подставлена лицензированная пара Preacher Curl: Barbell; форма EZ-грифа остаётся на проверке."
   },
   {
@@ -4288,9 +4271,7 @@
       "exercise-contours/ek-0247-relaxation.svg",
       "exercise-contours/ek-0247-tension.svg"
     ],
-    "sharedWith": [
-      "Сгибание рук на блоке поочерёдно"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -4711,11 +4692,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Overhead Tricep Extension",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/overhead-tricep-extension/frame-1.svg",
-      "equipment": "Cable"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "cable-low-rope"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -4723,8 +4704,8 @@
       "exercise-art/overhead-tricep-extension-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/overhead-tricep-extension-1.svg",
-      "exercise-art/overhead-tricep-extension-2.svg"
+      "exercise-contours/original-v4/forge-ex-437-1.svg",
+      "exercise-contours/original-v4/forge-ex-437-2.svg"
     ],
     "sharedWith": [
       "Разгибание рук с канатом над головой"
@@ -4842,11 +4823,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Diamond Push-up",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/diamond-push-up/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -4854,11 +4835,10 @@
       "exercise-art/diamond-push-up-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/diamond-push-up-1.svg",
-      "exercise-art/diamond-push-up-2.svg"
+      "exercise-contours/original-v4/forge-ex-187-1.svg",
+      "exercise-contours/original-v4/forge-ex-187-2.svg"
     ],
     "sharedWith": [
-      "Алмазные отжимания",
       "Отжимания с узкой постановкой ладоней"
     ],
     "correction": null
@@ -4870,11 +4850,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Diamond Push-up",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/diamond-push-up/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -4882,13 +4862,10 @@
       "exercise-art/diamond-push-up-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/diamond-push-up-1.svg",
-      "exercise-art/diamond-push-up-2.svg"
+      "exercise-contours/original-v4/forge-ex-188-1.svg",
+      "exercise-contours/original-v4/forge-ex-188-2.svg"
     ],
-    "sharedWith": [
-      "Отжимания узкой постановкой рук",
-      "Отжимания с узкой постановкой ладоней"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -5508,11 +5485,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Walking Lunge",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/walking-lunge/frame-1.svg",
-      "equipment": "Dumbbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbells"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -5520,8 +5497,8 @@
       "exercise-art/walking-lunge-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/walking-lunge-1.svg",
-      "exercise-art/walking-lunge-2.svg"
+      "exercise-contours/original-v4/forge-ex-213-1.svg",
+      "exercise-contours/original-v4/forge-ex-213-2.svg"
     ],
     "sharedWith": [
       "Выпады с гантелями",
@@ -5615,11 +5592,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Walking Lunge",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/walking-lunge/frame-1.svg",
-      "equipment": "Dumbbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbells"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -5627,8 +5604,8 @@
       "exercise-art/walking-lunge-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/walking-lunge-1.svg",
-      "exercise-art/walking-lunge-2.svg"
+      "exercise-contours/original-v4/forge-ex-213-1.svg",
+      "exercise-contours/original-v4/forge-ex-213-2.svg"
     ],
     "sharedWith": [
       "Выпады с гантелями",
@@ -5810,9 +5787,7 @@
       "exercise-art/wall-sit-1.svg",
       "exercise-art/wall-sit-2.svg"
     ],
-    "sharedWith": [
-      "Изометрическое удержание в полуприседе"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -6172,7 +6147,7 @@
   {
     "name": "Нордические сгибания ног",
     "group": "Бицепс бедра",
-    "family": "legcurl",
+    "family": "nordic",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
@@ -6191,9 +6166,7 @@
       "exercise-art/nordic-hamstring-curl-1.svg",
       "exercise-art/nordic-hamstring-curl-2.svg"
     ],
-    "sharedWith": [
-      "Нордические сгибания ног с поддержкой"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -6421,8 +6394,7 @@
       "exercise-art/glute-bridge-2.svg"
     ],
     "sharedWith": [
-      "Ягодичный мост",
-      "Изометрическое удержание ягодичного моста"
+      "Ягодичный мост"
     ],
     "correction": null
   },
@@ -6454,15 +6426,15 @@
   {
     "name": "Хип-траст со штангой",
     "group": "Ягодицы",
-    "family": "bridge",
+    "family": "hipthrust",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Hip Thrust",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/hip-thrust/frame-1.svg",
-      "equipment": "Barbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "barbell"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -6470,8 +6442,8 @@
       "exercise-art/hip-thrust-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/hip-thrust-1.svg",
-      "exercise-art/hip-thrust-2.svg"
+      "exercise-contours/original-v4/forge-ex-250-1.svg",
+      "exercise-contours/original-v4/forge-ex-250-2.svg"
     ],
     "sharedWith": [
       "Подъём таза на скамье с паузой"
@@ -6481,7 +6453,7 @@
   {
     "name": "Хип-траст в Смите",
     "group": "Ягодицы",
-    "family": "bridge",
+    "family": "hipthrust",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
@@ -6506,7 +6478,7 @@
   {
     "name": "Хип-траст в тренажёре",
     "group": "Ягодицы",
-    "family": "bridge",
+    "family": "hipthrust",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
@@ -6531,7 +6503,7 @@
   {
     "name": "Хип-траст с резинкой",
     "group": "Ягодицы",
-    "family": "bridge",
+    "family": "hipthrust",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
@@ -6887,15 +6859,15 @@
   {
     "name": "Подъём таза на скамье с паузой",
     "group": "Ягодицы",
-    "family": "legraise",
+    "family": "hipthrust",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Hip Thrust",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/hip-thrust/frame-1.svg",
-      "equipment": "Barbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "barbell"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -6903,8 +6875,8 @@
       "exercise-art/hip-thrust-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/hip-thrust-1.svg",
-      "exercise-art/hip-thrust-2.svg"
+      "exercise-contours/original-v4/forge-ex-250-1.svg",
+      "exercise-contours/original-v4/forge-ex-250-2.svg"
     ],
     "sharedWith": [
       "Хип-траст со штангой"
@@ -7088,7 +7060,6 @@
     ],
     "sharedWith": [
       "Подъём на носки стоя",
-      "Изометрическое удержание на носках",
       "Подъём на носки стоя с паузой",
       "Подъём на носки с собственным весом на возвышении"
     ],
@@ -7226,7 +7197,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Calf Raise",
       "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/calf-raise/frame-1.svg",
@@ -7238,15 +7209,9 @@
       "exercise-art/calf-raise-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/calf-raise-1.svg",
-      "exercise-art/calf-raise-2.svg"
+      "exercise-art/calf-raise-1.svg"
     ],
-    "sharedWith": [
-      "Подъём на носки стоя",
-      "Подъём на носки на ступени",
-      "Подъём на носки стоя с паузой",
-      "Подъём на носки с собственным весом на возвышении"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -7256,7 +7221,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Plank",
       "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/plank/frame-1.svg",
@@ -7268,8 +7233,7 @@
       "exercise-art/plank-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/plank-1.svg",
-      "exercise-art/plank-2.svg"
+      "exercise-art/plank-1.svg"
     ],
     "sharedWith": [
       "Планка"
@@ -7535,11 +7499,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Hanging Leg Raise",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/hanging-leg-raise/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "pull-up-bar"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -7547,12 +7511,10 @@
       "exercise-art/hanging-leg-raise-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/hanging-leg-raise-1.svg",
-      "exercise-art/hanging-leg-raise-2.svg"
+      "exercise-contours/original-v4/forge-ex-292-1.svg",
+      "exercise-contours/original-v4/forge-ex-292-2.svg"
     ],
-    "sharedWith": [
-      "Подъём ног в висе"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -7916,7 +7878,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "L-Sit Hold",
       "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/l-sit-hold/frame-1.svg",
@@ -7928,8 +7890,7 @@
       "exercise-art/l-sit-hold-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/l-sit-hold-1.svg",
-      "exercise-art/l-sit-hold-2.svg"
+      "exercise-art/l-sit-hold-1.svg"
     ],
     "sharedWith": [],
     "correction": null
@@ -8122,11 +8083,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Trap Bar Deadlift",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/trap-bar-deadlift/frame-1.svg",
-      "equipment": "Barbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "trap-bar low handles"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -8134,12 +8095,10 @@
       "exercise-art/trap-bar-deadlift-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/trap-bar-deadlift-1.svg",
-      "exercise-art/trap-bar-deadlift-2.svg"
+      "exercise-contours/original-v4/forge-ex-315-1.svg",
+      "exercise-contours/original-v4/forge-ex-315-2.svg"
     ],
-    "sharedWith": [
-      "Становая тяга с трэп-грифом с высокой ручкой"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -8383,11 +8342,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Superman",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/superman/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight floor exercise"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -8395,13 +8354,10 @@
       "exercise-art/superman-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/superman-1.svg",
-      "exercise-art/superman-2.svg"
+      "exercise-contours/original-v4/forge-ex-325-1.svg",
+      "exercise-contours/original-v4/forge-ex-325-2.svg"
     ],
-    "sharedWith": [
-      "Подъём корпуса лёжа на животе",
-      "Разгибание спины лёжа с паузой"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -8611,7 +8567,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Dead Hang",
       "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/dead-hang/frame-1.svg",
@@ -8623,8 +8579,7 @@
       "exercise-art/dead-hang-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/dead-hang-1.svg",
-      "exercise-art/dead-hang-2.svg"
+      "exercise-art/dead-hang-1.svg"
     ],
     "sharedWith": [],
     "correction": null
@@ -8898,7 +8853,10 @@
       "exercise-contours/original-v4/forge-ex-345-1.svg",
       "exercise-contours/original-v4/forge-ex-345-2.svg"
     ],
-    "sharedWith": [],
+    "sharedWith": [
+      "Интервальный бег",
+      "Лёгкий бег с ускорениями"
+    ],
     "correction": null
   },
   {
@@ -8908,11 +8866,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Running",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/running/frame-1.svg",
-      "equipment": "Cardio"
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -8920,11 +8878,11 @@
       "exercise-art/running-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/running-1.svg",
-      "exercise-art/running-2.svg"
+      "exercise-contours/original-v4/forge-ex-345-1.svg",
+      "exercise-contours/original-v4/forge-ex-345-2.svg"
     ],
     "sharedWith": [
-      "Спринты",
+      "Бег на улице",
       "Лёгкий бег с ускорениями"
     ],
     "correction": null
@@ -8936,11 +8894,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Running",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/running/frame-1.svg",
-      "equipment": "Cardio"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -8948,13 +8906,10 @@
       "exercise-art/running-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/running-1.svg",
-      "exercise-art/running-2.svg"
+      "exercise-contours/original-v4/forge-ex-347-1.svg",
+      "exercise-contours/original-v4/forge-ex-347-2.svg"
     ],
-    "sharedWith": [
-      "Интервальный бег",
-      "Лёгкий бег с ускорениями"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -9012,15 +8967,15 @@
   {
     "name": "Степпер",
     "group": "Кардио",
-    "family": "step",
+    "family": "pedalstepper",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Stair Climber",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/stair-climber/frame-1.svg",
-      "equipment": "Cardio"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "independent-pedal stepper"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -9028,12 +8983,10 @@
       "exercise-art/stair-climber-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/stair-climber-1.svg",
-      "exercise-art/stair-climber-2.svg"
+      "exercise-contours/original-v4/forge-ex-350-1.svg",
+      "exercise-contours/original-v4/forge-ex-350-2.svg"
     ],
-    "sharedWith": [
-      "Лестничный тренажёр"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -9058,9 +9011,7 @@
       "exercise-art/stair-climber-1.svg",
       "exercise-art/stair-climber-2.svg"
     ],
-    "sharedWith": [
-      "Степпер"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -9238,8 +9189,7 @@
       "exercise-art/jump-rope-2.svg"
     ],
     "sharedWith": [
-      "Прыжки на скакалке",
-      "Скакалка бег на месте"
+      "Прыжки на скакалке"
     ],
     "correction": null
   },
@@ -9425,7 +9375,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Hamstring Stretch",
       "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/hamstring-stretch/frame-1.svg",
@@ -9437,8 +9387,7 @@
       "exercise-art/hamstring-stretch-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/hamstring-stretch-1.svg",
-      "exercise-art/hamstring-stretch-2.svg"
+      "exercise-art/hamstring-stretch-1.svg"
     ],
     "sharedWith": [],
     "correction": null
@@ -9450,7 +9399,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Standing Quad Stretch",
       "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/standing-quad-stretch/frame-1.svg",
@@ -9462,8 +9411,7 @@
       "exercise-art/standing-quad-stretch-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/standing-quad-stretch-1.svg",
-      "exercise-art/standing-quad-stretch-2.svg"
+      "exercise-art/standing-quad-stretch-1.svg"
     ],
     "sharedWith": [],
     "correction": null
@@ -9499,7 +9447,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Kneeling Hip Flexor Stretch",
       "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/kneeling-hip-flexor-stretch/frame-1.svg",
@@ -9511,12 +9459,9 @@
       "exercise-art/kneeling-hip-flexor-stretch-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/kneeling-hip-flexor-stretch-1.svg",
-      "exercise-art/kneeling-hip-flexor-stretch-2.svg"
+      "exercise-art/kneeling-hip-flexor-stretch-1.svg"
     ],
-    "sharedWith": [
-      "Разгибание бедра в положении выпада"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -9776,7 +9721,7 @@
     "contentStatus": "specialist-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Wall Calf Stretch",
       "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/wall-calf-stretch/frame-1.svg",
@@ -9788,12 +9733,9 @@
       "exercise-art/wall-calf-stretch-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/wall-calf-stretch-1.svg",
-      "exercise-art/wall-calf-stretch-2.svg"
+      "exercise-art/wall-calf-stretch-1.svg"
     ],
-    "sharedWith": [
-      "Динамическая растяжка икр"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -10106,11 +10048,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Diamond Push-up",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/diamond-push-up/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -10118,12 +10060,11 @@
       "exercise-art/diamond-push-up-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/diamond-push-up-1.svg",
-      "exercise-art/diamond-push-up-2.svg"
+      "exercise-contours/original-v4/forge-ex-187-1.svg",
+      "exercise-contours/original-v4/forge-ex-187-2.svg"
     ],
     "sharedWith": [
-      "Отжимания узкой постановкой рук",
-      "Алмазные отжимания"
+      "Отжимания узкой постановкой рук"
     ],
     "correction": null
   },
@@ -11077,11 +11018,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Standing One Arm Bicep Curl with Cable",
-      "url": "https://github.com/everkinetic/data/blob/main/dist/svg/0247-relaxation.svg",
-      "equipment": "cable"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "cable-dual-low-pulley"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -11089,12 +11030,10 @@
       "exercise-art/ek-0247-tension.svg"
     ],
     "renderFrames": [
-      "exercise-contours/ek-0247-relaxation.svg",
-      "exercise-contours/ek-0247-tension.svg"
+      "exercise-contours/original-v4/forge-ex-431-1.svg",
+      "exercise-contours/original-v4/forge-ex-431-2.svg"
     ],
-    "sharedWith": [
-      "Сгибание одной руки на блоке"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -11228,11 +11167,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Overhead Tricep Extension",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/overhead-tricep-extension/frame-1.svg",
-      "equipment": "Cable"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "cable-low-rope"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -11240,8 +11179,8 @@
       "exercise-art/overhead-tricep-extension-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/overhead-tricep-extension-1.svg",
-      "exercise-art/overhead-tricep-extension-2.svg"
+      "exercise-contours/original-v4/forge-ex-437-1.svg",
+      "exercise-contours/original-v4/forge-ex-437-2.svg"
     ],
     "sharedWith": [
       "Разгибание рук из-за головы на блоке"
@@ -11789,7 +11728,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Wall Sit",
       "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/wall-sit/frame-1.svg",
@@ -11801,12 +11740,9 @@
       "exercise-art/wall-sit-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/wall-sit-1.svg",
-      "exercise-art/wall-sit-2.svg"
+      "exercise-art/wall-sit-1.svg"
     ],
-    "sharedWith": [
-      "Приседания у стены"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -11887,15 +11823,15 @@
   {
     "name": "Нордические сгибания ног с поддержкой",
     "group": "Бицепс бедра",
-    "family": "legcurl",
+    "family": "assistednordic",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Nordic Hamstring Curl",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/nordic-hamstring-curl/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "resistance-band and ankle anchor"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -11903,12 +11839,10 @@
       "exercise-art/nordic-hamstring-curl-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/nordic-hamstring-curl-1.svg",
-      "exercise-art/nordic-hamstring-curl-2.svg"
+      "exercise-contours/original-v4/forge-ex-463-1.svg",
+      "exercise-contours/original-v4/forge-ex-463-2.svg"
     ],
-    "sharedWith": [
-      "Нордические сгибания ног"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -12137,7 +12071,7 @@
   {
     "name": "Хип-траст одной ногой",
     "group": "Ягодицы",
-    "family": "bridge",
+    "family": "hipthrust",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
@@ -12162,7 +12096,7 @@
   {
     "name": "Хип-траст с гирей",
     "group": "Ягодицы",
-    "family": "bridge",
+    "family": "hipthrust",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
@@ -12187,7 +12121,7 @@
   {
     "name": "Хип-траст на полу с паузой",
     "group": "Ягодицы",
-    "family": "bridge",
+    "family": "hipthrust",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
@@ -12366,7 +12300,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Glute Bridge",
       "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/glute-bridge/frame-1.svg",
@@ -12378,13 +12312,9 @@
       "exercise-art/glute-bridge-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/glute-bridge-1.svg",
-      "exercise-art/glute-bridge-2.svg"
+      "exercise-art/glute-bridge-1.svg"
     ],
-    "sharedWith": [
-      "Ягодичный мост",
-      "Ягодичный мост с собственным весом"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -12412,7 +12342,6 @@
     "sharedWith": [
       "Подъём на носки стоя",
       "Подъём на носки на ступени",
-      "Изометрическое удержание на носках",
       "Подъём на носки с собственным весом на возвышении"
     ],
     "correction": null
@@ -12495,7 +12424,6 @@
     "sharedWith": [
       "Подъём на носки стоя",
       "Подъём на носки на ступени",
-      "Изометрическое удержание на носках",
       "Подъём на носки стоя с паузой"
     ],
     "correction": null
@@ -12830,7 +12758,7 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "static-single-frame",
     "source": {
       "name": "Hollow Body Hold",
       "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/hollow-body-hold/frame-1.svg",
@@ -12842,8 +12770,7 @@
       "exercise-art/hollow-body-hold-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/hollow-body-hold-1.svg",
-      "exercise-art/hollow-body-hold-2.svg"
+      "exercise-art/hollow-body-hold-1.svg"
     ],
     "sharedWith": [],
     "correction": null
@@ -13019,9 +12946,7 @@
       "exercise-art/trap-bar-deadlift-1.svg",
       "exercise-art/trap-bar-deadlift-2.svg"
     ],
-    "sharedWith": [
-      "Становая тяга с трэп-грифом"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -13155,11 +13080,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Superman",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/superman/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight floor exercise"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -13167,12 +13092,11 @@
       "exercise-art/superman-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/superman-1.svg",
-      "exercise-art/superman-2.svg"
+      "exercise-contours/original-v4/forge-ex-113-1.svg",
+      "exercise-contours/original-v4/forge-ex-113-2.svg"
     ],
     "sharedWith": [
-      "Подъём корпуса лёжа на животе",
-      "Супермен лёжа"
+      "Подъём корпуса лёжа на животе"
     ],
     "correction": null
   },
@@ -13556,11 +13480,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Running",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/running/frame-1.svg",
-      "equipment": "Cardio"
+      "name": "Original FORGE ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -13568,12 +13492,12 @@
       "exercise-art/running-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/running-1.svg",
-      "exercise-art/running-2.svg"
+      "exercise-contours/original-v4/forge-ex-345-1.svg",
+      "exercise-contours/original-v4/forge-ex-345-2.svg"
     ],
     "sharedWith": [
-      "Интервальный бег",
-      "Спринты"
+      "Бег на улице",
+      "Интервальный бег"
     ],
     "correction": null
   },
@@ -13784,11 +13708,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Jump Rope",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/jump-rope/frame-1.svg",
-      "equipment": "Cardio"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "jump-rope"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -13796,13 +13720,10 @@
       "exercise-art/jump-rope-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/jump-rope-1.svg",
-      "exercise-art/jump-rope-2.svg"
+      "exercise-contours/original-v4/forge-ex-538-1.svg",
+      "exercise-contours/original-v4/forge-ex-538-2.svg"
     ],
-    "sharedWith": [
-      "Прыжки на скакалке",
-      "Скакалка двойные прыжки"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -14011,15 +13932,15 @@
   {
     "name": "Разгибание бедра в положении выпада",
     "group": "Мобильность",
-    "family": "mobility",
-    "contentStatus": "specialist-draft",
+    "family": "lungemobility",
+    "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Kneeling Hip Flexor Stretch",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/kneeling-hip-flexor-stretch/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -14027,12 +13948,10 @@
       "exercise-art/kneeling-hip-flexor-stretch-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/kneeling-hip-flexor-stretch-1.svg",
-      "exercise-art/kneeling-hip-flexor-stretch-2.svg"
+      "exercise-contours/original-v4/forge-ex-547-1.svg",
+      "exercise-contours/original-v4/forge-ex-547-2.svg"
     ],
-    "sharedWith": [
-      "Растяжка сгибателей бедра"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
@@ -14063,15 +13982,15 @@
   {
     "name": "Динамическая растяжка икр",
     "group": "Мобильность",
-    "family": "stretch",
-    "contentStatus": "specialist-draft",
+    "family": "dynamiccalfstretch",
+    "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Wall Calf Stretch",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/wall-calf-stretch/frame-1.svg",
-      "equipment": "Bodyweight"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "bodyweight, solid wall"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -14079,12 +13998,10 @@
       "exercise-art/wall-calf-stretch-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/wall-calf-stretch-1.svg",
-      "exercise-art/wall-calf-stretch-2.svg"
+      "exercise-contours/original-v4/forge-ex-549-1.svg",
+      "exercise-contours/original-v4/forge-ex-549-2.svg"
     ],
-    "sharedWith": [
-      "Растяжка икроножных у стены"
-    ],
+    "sharedWith": [],
     "correction": null
   },
   {
