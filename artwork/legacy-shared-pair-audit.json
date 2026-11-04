@@ -1,0 +1,3098 @@
+{
+  "commit": "f55efb2",
+  "groups": 67,
+  "exerciseAssignments": 156,
+  "classificationCounts": {
+    "preliminary-compatible-mechanics-or-timing": 46,
+    "confirmed-mapping-mismatch": 5,
+    "confirmed-phase-repetition": 8,
+    "requires-full-size-variant-review": 7,
+    "confirmed-equipment-and-phase-mismatch": 1
+  },
+  "note": "Read-only preliminary visual/name audit. Technical coverage and expert biomechanics are separate. Classification applies to current sharedPairs order at f55efb2. Large renders revealed visually repeated poses despite differing vector files and stroke widths. The file-hash duplicate check does not validate distinct movement phases.",
+  "entries": [
+    {
+      "groupIndex": 1,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/pec-deck-1.svg",
+        "exercise-art/pec-deck-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-005",
+          "name": "Сведение рук в тренажёре"
+        },
+        {
+          "id": "forge-ex-070",
+          "name": "Сведение рук в тренажёре бабочка"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Сведение рук в тренажёре",
+          "files": [
+            "exercise-art/pec-deck-1.svg",
+            "exercise-art/pec-deck-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Сведение рук в тренажёре бабочка",
+          "files": [
+            "exercise-art/pec-deck-1.svg",
+            "exercise-art/pec-deck-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 2,
+      "status": "confirmed-mapping-mismatch",
+      "reason": "Same high-anchor cable fly is assigned to chest-height cable fly. Different anchor height requires different art.",
+      "files": [
+        "exercise-art/cable-fly-1.svg",
+        "exercise-art/cable-fly-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-006",
+          "name": "Кроссовер"
+        },
+        {
+          "id": "forge-ex-067",
+          "name": "Сведение рук в кроссовере сверху"
+        },
+        {
+          "id": "forge-ex-069",
+          "name": "Сведение рук в кроссовере на уровне груди"
+        }
+      ],
+      "initialStatus": "confirmed-mapping-mismatch",
+      "currentAssignments": [
+        {
+          "name": "Кроссовер",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-067-1.svg",
+            "exercise-contours/original-v4/forge-ex-067-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": {
+            "sourceName": "Сведение рук в кроссовере сверху",
+            "reason": "Для общего названия выбран вариант с верхним креплением троса. Высота троса не задана названием."
+          }
+        },
+        {
+          "name": "Сведение рук в кроссовере сверху",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-067-1.svg",
+            "exercise-contours/original-v4/forge-ex-067-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Сведение рук в кроссовере на уровне груди",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-069-1.svg",
+            "exercise-contours/original-v4/forge-ex-069-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 3,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/push-up-1.svg",
+        "exercise-art/push-up-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-007",
+          "name": "Отжимания"
+        },
+        {
+          "id": "forge-ex-073",
+          "name": "Отжимания от пола"
+        },
+        {
+          "id": "forge-ex-390",
+          "name": "Отжимания с паузой"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Отжимания",
+          "files": [
+            "exercise-art/push-up-1.svg",
+            "exercise-art/push-up-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Отжимания от пола",
+          "files": [
+            "exercise-art/push-up-1.svg",
+            "exercise-art/push-up-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Отжимания с паузой",
+          "files": [
+            "exercise-art/push-up-1.svg",
+            "exercise-art/push-up-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 4,
+      "status": "confirmed-phase-repetition",
+      "reason": "Full-size render shows essentially the same upright extended-arm dip position in both files. A lowered bent-elbow dip phase is absent.",
+      "files": [
+        "exercise-art/chest-dip-1.svg",
+        "exercise-art/chest-dip-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-008",
+          "name": "Отжимания на брусьях"
+        },
+        {
+          "id": "forge-ex-078",
+          "name": "Отжимания на брусьях с акцентом на грудь"
+        }
+      ],
+      "initialStatus": "requires-full-size-variant-review",
+      "largeRender": "legacy-audit-large-0.png",
+      "currentAssignments": [
+        {
+          "name": "Отжимания на брусьях",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-078-1.svg",
+            "exercise-contours/original-v4/forge-ex-078-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": {
+            "sourceName": "Отжимания на брусьях с акцентом на грудь",
+            "reason": "Для общего названия в группе груди выбран вариант с умеренным наклоном корпуса вперёд."
+          }
+        },
+        {
+          "name": "Отжимания на брусьях с акцентом на грудь",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-078-1.svg",
+            "exercise-contours/original-v4/forge-ex-078-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 5,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/pull-up-1.svg",
+        "exercise-art/pull-up-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-009",
+          "name": "Подтягивания"
+        },
+        {
+          "id": "forge-ex-083",
+          "name": "Подтягивания прямым хватом"
+        },
+        {
+          "id": "forge-ex-396",
+          "name": "Подтягивания с паузой наверху"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Подтягивания",
+          "files": [
+            "exercise-art/pull-up-1.svg",
+            "exercise-art/pull-up-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Подтягивания прямым хватом",
+          "files": [
+            "exercise-art/pull-up-1.svg",
+            "exercise-art/pull-up-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Подтягивания с паузой наверху",
+          "files": [
+            "exercise-art/pull-up-1.svg",
+            "exercise-art/pull-up-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 6,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/lat-pulldown-1.svg",
+        "exercise-art/lat-pulldown-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-010",
+          "name": "Тяга верхнего блока"
+        },
+        {
+          "id": "forge-ex-091",
+          "name": "Тяга верхнего блока к груди"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Тяга верхнего блока",
+          "files": [
+            "exercise-art/lat-pulldown-1.svg",
+            "exercise-art/lat-pulldown-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Тяга верхнего блока к груди",
+          "files": [
+            "exercise-art/lat-pulldown-1.svg",
+            "exercise-art/lat-pulldown-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 7,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/seated-row-1.svg",
+        "exercise-art/seated-row-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-011",
+          "name": "Тяга горизонтального блока"
+        },
+        {
+          "id": "forge-ex-096",
+          "name": "Тяга горизонтального блока узкой рукоятью"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Тяга горизонтального блока",
+          "files": [
+            "exercise-art/seated-row-1.svg",
+            "exercise-art/seated-row-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Тяга горизонтального блока узкой рукоятью",
+          "files": [
+            "exercise-art/seated-row-1.svg",
+            "exercise-art/seated-row-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 8,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/one-arm-dumbbell-row-1.svg",
+        "exercise-art/one-arm-dumbbell-row-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-013",
+          "name": "Тяга гантели в наклоне"
+        },
+        {
+          "id": "forge-ex-103",
+          "name": "Тяга гантели одной рукой в наклоне"
+        },
+        {
+          "id": "forge-ex-118",
+          "name": "Тяга гантели с упором коленом"
+        },
+        {
+          "id": "forge-ex-402",
+          "name": "Тяга гантели с паузой в верхней точке"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Тяга гантели в наклоне",
+          "files": [
+            "exercise-art/one-arm-dumbbell-row-1.svg",
+            "exercise-art/one-arm-dumbbell-row-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Тяга гантели одной рукой в наклоне",
+          "files": [
+            "exercise-art/one-arm-dumbbell-row-1.svg",
+            "exercise-art/one-arm-dumbbell-row-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Тяга гантели с упором коленом",
+          "files": [
+            "exercise-art/one-arm-dumbbell-row-1.svg",
+            "exercise-art/one-arm-dumbbell-row-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Тяга гантели с паузой в верхней точке",
+          "files": [
+            "exercise-art/one-arm-dumbbell-row-1.svg",
+            "exercise-art/one-arm-dumbbell-row-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 9,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/deadlift-1.svg",
+        "exercise-art/deadlift-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-014",
+          "name": "Становая тяга"
+        },
+        {
+          "id": "forge-ex-313",
+          "name": "Становая тяга классическая"
+        },
+        {
+          "id": "forge-ex-316",
+          "name": "Становая тяга с паузой"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Становая тяга",
+          "files": [
+            "exercise-art/deadlift-1.svg",
+            "exercise-art/deadlift-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Становая тяга классическая",
+          "files": [
+            "exercise-art/deadlift-1.svg",
+            "exercise-art/deadlift-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Становая тяга с паузой",
+          "files": [
+            "exercise-art/deadlift-1.svg",
+            "exercise-art/deadlift-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 10,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/back-extension-1.svg",
+        "exercise-art/back-extension-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-016",
+          "name": "Гиперэкстензия"
+        },
+        {
+          "id": "forge-ex-321",
+          "name": "Гиперэкстензия с собственным весом"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Гиперэкстензия",
+          "files": [
+            "exercise-art/back-extension-1.svg",
+            "exercise-art/back-extension-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Гиперэкстензия с собственным весом",
+          "files": [
+            "exercise-art/back-extension-1.svg",
+            "exercise-art/back-extension-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 11,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/shrug-1.svg",
+        "exercise-art/shrug-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-017",
+          "name": "Шраги"
+        },
+        {
+          "id": "forge-ex-114",
+          "name": "Шраги со штангой"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Шраги",
+          "files": [
+            "exercise-art/shrug-1.svg",
+            "exercise-art/shrug-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Шраги со штангой",
+          "files": [
+            "exercise-art/shrug-1.svg",
+            "exercise-art/shrug-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 12,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/overhead-press-1.svg",
+        "exercise-art/overhead-press-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-018",
+          "name": "Жим штанги стоя"
+        },
+        {
+          "id": "forge-ex-412",
+          "name": "Армейский жим с паузой"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Жим штанги стоя",
+          "files": [
+            "exercise-art/overhead-press-1.svg",
+            "exercise-art/overhead-press-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Армейский жим с паузой",
+          "files": [
+            "exercise-art/overhead-press-1.svg",
+            "exercise-art/overhead-press-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 13,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/lateral-raise-1.svg",
+        "exercise-art/lateral-raise-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-020",
+          "name": "Разведение гантелей в стороны"
+        },
+        {
+          "id": "forge-ex-130",
+          "name": "Разведение гантелей в стороны стоя"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Разведение гантелей в стороны",
+          "files": [
+            "exercise-art/lateral-raise-1.svg",
+            "exercise-art/lateral-raise-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Разведение гантелей в стороны стоя",
+          "files": [
+            "exercise-art/lateral-raise-1.svg",
+            "exercise-art/lateral-raise-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 14,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-contours/ek-0211-relaxation.svg",
+        "exercise-contours/ek-0211-tension.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-024",
+          "name": "Подъём штанги на бицепс"
+        },
+        {
+          "id": "forge-ex-149",
+          "name": "Подъём штанги на бицепс стоя"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Подъём штанги на бицепс",
+          "files": [
+            "exercise-contours/ek-0211-relaxation.svg",
+            "exercise-contours/ek-0211-tension.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Подъём штанги на бицепс стоя",
+          "files": [
+            "exercise-contours/ek-0211-relaxation.svg",
+            "exercise-contours/ek-0211-tension.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 15,
+      "status": "requires-full-size-variant-review",
+      "reason": "Supinating curl must show forearm rotation. Small thumbnail does not establish neutral-to-supinated change.",
+      "files": [
+        "exercise-art/bicep-curl-1.svg",
+        "exercise-art/bicep-curl-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-025",
+          "name": "Подъём гантелей на бицепс"
+        },
+        {
+          "id": "forge-ex-152",
+          "name": "Подъём гантелей на бицепс стоя"
+        },
+        {
+          "id": "forge-ex-154",
+          "name": "Подъём гантелей на бицепс с супинацией"
+        },
+        {
+          "id": "forge-ex-427",
+          "name": "Сгибание гантелей на бицепс с паузой"
+        }
+      ],
+      "initialStatus": "requires-full-size-variant-review",
+      "currentAssignments": [
+        {
+          "name": "Подъём гантелей на бицепс",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-154-1.svg",
+            "exercise-contours/original-v4/forge-ex-154-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": {
+            "sourceName": "Подъём гантелей на бицепс с супинацией",
+            "reason": "Выбран стоячий вариант с поворотом предплечья и двумя гантелями. Стойка и снаряд совпадают, пауза при её наличии описана текстом."
+          }
+        },
+        {
+          "name": "Подъём гантелей на бицепс стоя",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-154-1.svg",
+            "exercise-contours/original-v4/forge-ex-154-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": {
+            "sourceName": "Подъём гантелей на бицепс с супинацией",
+            "reason": "Выбран стоячий вариант с поворотом предплечья и двумя гантелями. Стойка и снаряд совпадают, пауза при её наличии описана текстом."
+          }
+        },
+        {
+          "name": "Подъём гантелей на бицепс с супинацией",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-154-1.svg",
+            "exercise-contours/original-v4/forge-ex-154-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Сгибание гантелей на бицепс с паузой",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-154-1.svg",
+            "exercise-contours/original-v4/forge-ex-154-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": {
+            "sourceName": "Подъём гантелей на бицепс с супинацией",
+            "reason": "Выбран стоячий вариант с поворотом предплечья и двумя гантелями. Стойка и снаряд совпадают, пауза при её наличии описана текстом."
+          }
+        }
+      ],
+      "integration": "updated-after-audit",
+      "followupStatus": "Original supinating curl added after a second full-size inspection confirmed incomplete start position"
+    },
+    {
+      "groupIndex": 16,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/hammer-curl-1.svg",
+        "exercise-art/hammer-curl-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-026",
+          "name": "Молотки с гантелями"
+        },
+        {
+          "id": "forge-ex-156",
+          "name": "Молотковые сгибания гантелей стоя"
+        },
+        {
+          "id": "forge-ex-426",
+          "name": "Подъём гантелей на бицепс нейтральным хватом"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Молотки с гантелями",
+          "files": [
+            "exercise-art/hammer-curl-1.svg",
+            "exercise-art/hammer-curl-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Молотковые сгибания гантелей стоя",
+          "files": [
+            "exercise-art/hammer-curl-1.svg",
+            "exercise-art/hammer-curl-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Подъём гантелей на бицепс нейтральным хватом",
+          "files": [
+            "exercise-art/hammer-curl-1.svg",
+            "exercise-art/hammer-curl-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 17,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-contours/ek-0239-relaxation.svg",
+        "exercise-contours/ek-0239-tension.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-027",
+          "name": "Сгибание рук на скамье Скотта"
+        },
+        {
+          "id": "forge-ex-160",
+          "name": "Подъём EZ-штанги на скамье Скотта"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Сгибание рук на скамье Скотта",
+          "files": [
+            "exercise-contours/ek-0239-relaxation.svg",
+            "exercise-contours/ek-0239-tension.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Подъём EZ-штанги на скамье Скотта",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-160-1.svg",
+            "exercise-contours/original-v4/forge-ex-160-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 18,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/tricep-pushdown-1.svg",
+        "exercise-art/tricep-pushdown-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-028",
+          "name": "Разгибание рук на блоке"
+        },
+        {
+          "id": "forge-ex-178",
+          "name": "Разгибание рук на блоке с прямой рукоятью"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Разгибание рук на блоке",
+          "files": [
+            "exercise-art/tricep-pushdown-1.svg",
+            "exercise-art/tricep-pushdown-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Разгибание рук на блоке с прямой рукоятью",
+          "files": [
+            "exercise-art/tricep-pushdown-1.svg",
+            "exercise-art/tricep-pushdown-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 19,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/single-arm-dumbbell-tricep-extension-1.svg",
+        "exercise-art/single-arm-dumbbell-tricep-extension-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-030",
+          "name": "Разгибание руки из-за головы"
+        },
+        {
+          "id": "forge-ex-177",
+          "name": "Французский жим одной рукой стоя"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Разгибание руки из-за головы",
+          "files": [
+            "exercise-art/single-arm-dumbbell-tricep-extension-1.svg",
+            "exercise-art/single-arm-dumbbell-tricep-extension-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Французский жим одной рукой стоя",
+          "files": [
+            "exercise-art/single-arm-dumbbell-tricep-extension-1.svg",
+            "exercise-art/single-arm-dumbbell-tricep-extension-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 20,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/close-grip-bench-press-1.svg",
+        "exercise-art/close-grip-bench-press-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-031",
+          "name": "Узкий жим лёжа"
+        },
+        {
+          "id": "forge-ex-056",
+          "name": "Жим штанги узким хватом лёжа"
+        },
+        {
+          "id": "forge-ex-172",
+          "name": "Жим штанги узким хватом"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Узкий жим лёжа",
+          "files": [
+            "exercise-art/close-grip-bench-press-1.svg",
+            "exercise-art/close-grip-bench-press-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Жим штанги узким хватом лёжа",
+          "files": [
+            "exercise-art/close-grip-bench-press-1.svg",
+            "exercise-art/close-grip-bench-press-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Жим штанги узким хватом",
+          "files": [
+            "exercise-art/close-grip-bench-press-1.svg",
+            "exercise-art/close-grip-bench-press-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 21,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/squat-1.svg",
+        "exercise-art/squat-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-032",
+          "name": "Приседания со штангой"
+        },
+        {
+          "id": "forge-ex-194",
+          "name": "Приседания со штангой с паузой"
+        },
+        {
+          "id": "forge-ex-447",
+          "name": "Приседания с темпом три секунды вниз"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Приседания со штангой",
+          "files": [
+            "exercise-art/squat-1.svg",
+            "exercise-art/squat-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Приседания со штангой с паузой",
+          "files": [
+            "exercise-art/squat-1.svg",
+            "exercise-art/squat-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Приседания с темпом три секунды вниз",
+          "files": [
+            "exercise-art/squat-1.svg",
+            "exercise-art/squat-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 22,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/front-squat-1.svg",
+        "exercise-art/front-squat-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-033",
+          "name": "Фронтальные приседания"
+        },
+        {
+          "id": "forge-ex-195",
+          "name": "Фронтальные приседания со штангой"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Фронтальные приседания",
+          "files": [
+            "exercise-art/front-squat-1.svg",
+            "exercise-art/front-squat-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Фронтальные приседания со штангой",
+          "files": [
+            "exercise-art/front-squat-1.svg",
+            "exercise-art/front-squat-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 23,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/leg-extension-1.svg",
+        "exercise-art/leg-extension-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-035",
+          "name": "Разгибание ног"
+        },
+        {
+          "id": "forge-ex-211",
+          "name": "Разгибание ног в тренажёре"
+        },
+        {
+          "id": "forge-ex-458",
+          "name": "Разгибания ног с паузой наверху"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Разгибание ног",
+          "files": [
+            "exercise-art/leg-extension-1.svg",
+            "exercise-art/leg-extension-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Разгибание ног в тренажёре",
+          "files": [
+            "exercise-art/leg-extension-1.svg",
+            "exercise-art/leg-extension-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Разгибания ног с паузой наверху",
+          "files": [
+            "exercise-art/leg-extension-1.svg",
+            "exercise-art/leg-extension-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 24,
+      "status": "confirmed-phase-repetition",
+      "reason": "Full-size render shows the same lowered dumbbell lunge twice with changed line thickness. Walking progression or an upright phase is absent.",
+      "files": [
+        "exercise-art/walking-lunge-1.svg",
+        "exercise-art/walking-lunge-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-036",
+          "name": "Выпады с гантелями"
+        },
+        {
+          "id": "forge-ex-213",
+          "name": "Выпады с гантелями вперёд"
+        },
+        {
+          "id": "forge-ex-217",
+          "name": "Выпады при ходьбе"
+        }
+      ],
+      "initialStatus": "requires-full-size-variant-review",
+      "largeRender": "legacy-audit-large-0.png",
+      "currentAssignments": [
+        {
+          "name": "Выпады с гантелями",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-213-1.svg",
+            "exercise-contours/original-v4/forge-ex-213-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": {
+            "sourceName": "Выпады с гантелями вперёд",
+            "reason": "Для общего названия выбран прямой выпад с двумя гантелями."
+          }
+        },
+        {
+          "name": "Выпады с гантелями вперёд",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-213-1.svg",
+            "exercise-contours/original-v4/forge-ex-213-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Выпады при ходьбе",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-213-1.svg",
+            "exercise-contours/original-v4/forge-ex-213-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": {
+            "sourceName": "Выпады с гантелями вперёд",
+            "reason": "Показаны стойка и опускание в шаге с теми же гантелями. Продвижение и смена ноги описываются отдельно."
+          }
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 25,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/bulgarian-split-squat-1.svg",
+        "exercise-art/bulgarian-split-squat-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-037",
+          "name": "Болгарские выпады"
+        },
+        {
+          "id": "forge-ex-218",
+          "name": "Болгарские сплит-приседания"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Болгарские выпады",
+          "files": [
+            "exercise-art/bulgarian-split-squat-1.svg",
+            "exercise-art/bulgarian-split-squat-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Болгарские сплит-приседания",
+          "files": [
+            "exercise-art/bulgarian-split-squat-1.svg",
+            "exercise-art/bulgarian-split-squat-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 26,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/romanian-deadlift-1.svg",
+        "exercise-art/romanian-deadlift-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-038",
+          "name": "Румынская тяга"
+        },
+        {
+          "id": "forge-ex-228",
+          "name": "Румынская тяга со штангой"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Румынская тяга",
+          "files": [
+            "exercise-art/romanian-deadlift-1.svg",
+            "exercise-art/romanian-deadlift-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Румынская тяга со штангой",
+          "files": [
+            "exercise-art/romanian-deadlift-1.svg",
+            "exercise-art/romanian-deadlift-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 27,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/lying-leg-curl-1.svg",
+        "exercise-art/lying-leg-curl-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-039",
+          "name": "Сгибание ног лёжа"
+        },
+        {
+          "id": "forge-ex-233",
+          "name": "Сгибание ног лёжа в тренажёре"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Сгибание ног лёжа",
+          "files": [
+            "exercise-art/lying-leg-curl-1.svg",
+            "exercise-art/lying-leg-curl-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Сгибание ног лёжа в тренажёре",
+          "files": [
+            "exercise-art/lying-leg-curl-1.svg",
+            "exercise-art/lying-leg-curl-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 28,
+      "status": "confirmed-mapping-mismatch",
+      "reason": "Isometric glute bridge is assigned both lowered and raised dynamic positions. Use one correct held position.",
+      "files": [
+        "exercise-art/glute-bridge-1.svg",
+        "exercise-art/glute-bridge-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-040",
+          "name": "Ягодичный мост"
+        },
+        {
+          "id": "forge-ex-248",
+          "name": "Ягодичный мост с собственным весом"
+        },
+        {
+          "id": "forge-ex-482",
+          "name": "Изометрическое удержание ягодичного моста"
+        }
+      ],
+      "initialStatus": "confirmed-mapping-mismatch",
+      "currentAssignments": [
+        {
+          "name": "Ягодичный мост",
+          "files": [
+            "exercise-art/glute-bridge-1.svg",
+            "exercise-art/glute-bridge-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Ягодичный мост с собственным весом",
+          "files": [
+            "exercise-art/glute-bridge-1.svg",
+            "exercise-art/glute-bridge-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Изометрическое удержание ягодичного моста",
+          "files": [
+            "exercise-art/glute-bridge-1.svg"
+          ],
+          "phaseStatus": "static-single-frame",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 29,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/cable-kickback-1.svg",
+        "exercise-art/cable-kickback-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-041",
+          "name": "Отведение ноги в кроссовере"
+        },
+        {
+          "id": "forge-ex-254",
+          "name": "Отведение ноги назад в кроссовере"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Отведение ноги в кроссовере",
+          "files": [
+            "exercise-art/cable-kickback-1.svg",
+            "exercise-art/cable-kickback-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Отведение ноги назад в кроссовере",
+          "files": [
+            "exercise-art/cable-kickback-1.svg",
+            "exercise-art/cable-kickback-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 30,
+      "status": "confirmed-mapping-mismatch",
+      "reason": "Isometric calf hold is assigned lowered and raised dynamic phases. Use one correct held position.",
+      "files": [
+        "exercise-art/calf-raise-1.svg",
+        "exercise-art/calf-raise-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-042",
+          "name": "Подъём на носки стоя"
+        },
+        {
+          "id": "forge-ex-274",
+          "name": "Подъём на носки на ступени"
+        },
+        {
+          "id": "forge-ex-280",
+          "name": "Изометрическое удержание на носках"
+        },
+        {
+          "id": "forge-ex-483",
+          "name": "Подъём на носки стоя с паузой"
+        },
+        {
+          "id": "forge-ex-486",
+          "name": "Подъём на носки с собственным весом на возвышении"
+        }
+      ],
+      "initialStatus": "confirmed-mapping-mismatch",
+      "currentAssignments": [
+        {
+          "name": "Подъём на носки стоя",
+          "files": [
+            "exercise-art/calf-raise-1.svg",
+            "exercise-art/calf-raise-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Подъём на носки на ступени",
+          "files": [
+            "exercise-art/calf-raise-1.svg",
+            "exercise-art/calf-raise-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Изометрическое удержание на носках",
+          "files": [
+            "exercise-art/calf-raise-1.svg"
+          ],
+          "phaseStatus": "static-single-frame",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Подъём на носки стоя с паузой",
+          "files": [
+            "exercise-art/calf-raise-1.svg",
+            "exercise-art/calf-raise-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Подъём на носки с собственным весом на возвышении",
+          "files": [
+            "exercise-art/calf-raise-1.svg",
+            "exercise-art/calf-raise-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 31,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/seated-calf-raise-1.svg",
+        "exercise-art/seated-calf-raise-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-043",
+          "name": "Подъём на носки сидя"
+        },
+        {
+          "id": "forge-ex-269",
+          "name": "Подъём на носки сидя в тренажёре"
+        },
+        {
+          "id": "forge-ex-484",
+          "name": "Подъём на носки сидя с паузой"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Подъём на носки сидя",
+          "files": [
+            "exercise-art/seated-calf-raise-1.svg",
+            "exercise-art/seated-calf-raise-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Подъём на носки сидя в тренажёре",
+          "files": [
+            "exercise-art/seated-calf-raise-1.svg",
+            "exercise-art/seated-calf-raise-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Подъём на носки сидя с паузой",
+          "files": [
+            "exercise-art/seated-calf-raise-1.svg",
+            "exercise-art/seated-calf-raise-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 32,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/plank-1.svg",
+        "exercise-art/plank-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-044",
+          "name": "Планка"
+        },
+        {
+          "id": "forge-ex-281",
+          "name": "Планка на предплечьях"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Планка",
+          "files": [
+            "exercise-art/plank-1.svg"
+          ],
+          "phaseStatus": "static-single-frame",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Планка на предплечьях",
+          "files": [
+            "exercise-art/plank-1.svg"
+          ],
+          "phaseStatus": "static-single-frame",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 33,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/crunch-1.svg",
+        "exercise-art/crunch-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-045",
+          "name": "Скручивания"
+        },
+        {
+          "id": "forge-ex-286",
+          "name": "Скручивания лёжа"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Скручивания",
+          "files": [
+            "exercise-art/crunch-1.svg",
+            "exercise-art/crunch-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Скручивания лёжа",
+          "files": [
+            "exercise-art/crunch-1.svg",
+            "exercise-art/crunch-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 34,
+      "status": "confirmed-mapping-mismatch",
+      "reason": "Named straight hanging leg raise depicts clearly bent knees in both source phases.",
+      "files": [
+        "exercise-art/hanging-leg-raise-1.svg",
+        "exercise-art/hanging-leg-raise-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-046",
+          "name": "Подъём ног в висе"
+        },
+        {
+          "id": "forge-ex-292",
+          "name": "Подъём прямых ног в висе"
+        }
+      ],
+      "initialStatus": "confirmed-mapping-mismatch",
+      "currentAssignments": [
+        {
+          "name": "Подъём ног в висе",
+          "files": [
+            "exercise-art/hanging-leg-raise-1.svg",
+            "exercise-art/hanging-leg-raise-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Подъём прямых ног в висе",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-292-1.svg",
+            "exercise-contours/original-v4/forge-ex-292-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 35,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/ab-wheel-1.svg",
+        "exercise-art/ab-wheel-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-048",
+          "name": "Колесо для пресса"
+        },
+        {
+          "id": "forge-ex-295",
+          "name": "Колесо для пресса с колен"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Колесо для пресса",
+          "files": [
+            "exercise-art/ab-wheel-1.svg",
+            "exercise-art/ab-wheel-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Колесо для пресса с колен",
+          "files": [
+            "exercise-art/ab-wheel-1.svg",
+            "exercise-art/ab-wheel-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 36,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/elliptical-1.svg",
+        "exercise-art/elliptical-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-052",
+          "name": "Эллипсоид"
+        },
+        {
+          "id": "forge-ex-349",
+          "name": "Эллиптический тренажёр"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Эллипсоид",
+          "files": [
+            "exercise-art/elliptical-1.svg",
+            "exercise-art/elliptical-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Эллиптический тренажёр",
+          "files": [
+            "exercise-art/elliptical-1.svg",
+            "exercise-art/elliptical-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 37,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/rowing-1.svg",
+        "exercise-art/rowing-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-053",
+          "name": "Гребной тренажёр"
+        },
+        {
+          "id": "forge-ex-539",
+          "name": "Гребной тренажёр интервалы"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Гребной тренажёр",
+          "files": [
+            "exercise-art/rowing-1.svg",
+            "exercise-art/rowing-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Гребной тренажёр интервалы",
+          "files": [
+            "exercise-art/rowing-1.svg",
+            "exercise-art/rowing-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 38,
+      "status": "confirmed-mapping-mismatch",
+      "reason": "Rope running-in-place depicts simultaneous two-foot takeoff rather than alternating support.",
+      "files": [
+        "exercise-art/jump-rope-1.svg",
+        "exercise-art/jump-rope-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-054",
+          "name": "Прыжки на скакалке"
+        },
+        {
+          "id": "forge-ex-358",
+          "name": "Скакалка двойные прыжки"
+        },
+        {
+          "id": "forge-ex-538",
+          "name": "Скакалка бег на месте"
+        }
+      ],
+      "initialStatus": "confirmed-mapping-mismatch",
+      "currentAssignments": [
+        {
+          "name": "Прыжки на скакалке",
+          "files": [
+            "exercise-art/jump-rope-1.svg",
+            "exercise-art/jump-rope-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Скакалка двойные прыжки",
+          "files": [
+            "exercise-art/jump-rope-1.svg",
+            "exercise-art/jump-rope-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Скакалка бег на месте",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-538-1.svg",
+            "exercise-contours/original-v4/forge-ex-538-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 39,
+      "status": "confirmed-phase-repetition",
+      "reason": "Both full-size machine chest press SVGs show extended elbows in the same seated position. Bent-elbow starting phase is absent. Hammer lever details are also unclear.",
+      "files": [
+        "exercise-art/machine-chest-press-1.svg",
+        "exercise-art/machine-chest-press-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-071",
+          "name": "Жим в грудном тренажёре"
+        },
+        {
+          "id": "forge-ex-072",
+          "name": "Жим в хаммере для груди"
+        }
+      ],
+      "initialStatus": "requires-full-size-variant-review",
+      "largeRender": "legacy-audit-large-0.png",
+      "currentAssignments": [
+        {
+          "name": "Жим в грудном тренажёре",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-072-1.svg",
+            "exercise-contours/original-v4/forge-ex-072-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": {
+            "sourceName": "Жим в хаммере для груди",
+            "reason": "Общее название допускает выбранный рычажный тренажёр. Изображён жим сидя с опорой спины."
+          }
+        },
+        {
+          "name": "Жим в хаммере для груди",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-072-1.svg",
+            "exercise-contours/original-v4/forge-ex-072-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 40,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/close-grip-lat-pulldown-1.svg",
+        "exercise-art/close-grip-lat-pulldown-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-093",
+          "name": "Тяга верхнего блока нейтральным хватом"
+        },
+        {
+          "id": "forge-ex-094",
+          "name": "Тяга верхнего блока узким хватом"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Тяга верхнего блока нейтральным хватом",
+          "files": [
+            "exercise-art/close-grip-lat-pulldown-1.svg",
+            "exercise-art/close-grip-lat-pulldown-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Тяга верхнего блока узким хватом",
+          "files": [
+            "exercise-art/close-grip-lat-pulldown-1.svg",
+            "exercise-art/close-grip-lat-pulldown-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 41,
+      "status": "confirmed-equipment-and-phase-mismatch",
+      "reason": "Full-size render shows a selectorized stack/cable row, rather than a visibly plate-loaded Hammer row. Both phases show similar bent-elbow end position.",
+      "files": [
+        "exercise-art/machine-row-1.svg",
+        "exercise-art/machine-row-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-107",
+          "name": "Тяга в хаммере горизонтально"
+        },
+        {
+          "id": "forge-ex-119",
+          "name": "Горизонтальная тяга в тренажёре"
+        }
+      ],
+      "initialStatus": "requires-full-size-variant-review",
+      "largeRender": "legacy-audit-large-0.png",
+      "currentAssignments": [
+        {
+          "name": "Тяга в хаммере горизонтально",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-107-1.svg",
+            "exercise-contours/original-v4/forge-ex-107-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Горизонтальная тяга в тренажёре",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-107-1.svg",
+            "exercise-contours/original-v4/forge-ex-107-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": {
+            "sourceName": "Тяга в хаммере горизонтально",
+            "reason": "Для общего названия выбран рычажный тренажёр с опорой грудью."
+          }
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 42,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/straight-arm-pulldown-1.svg",
+        "exercise-art/straight-arm-pulldown-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-108",
+          "name": "Тяга прямыми руками на блоке"
+        },
+        {
+          "id": "forge-ex-109",
+          "name": "Пуловер на блоке"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Тяга прямыми руками на блоке",
+          "files": [
+            "exercise-art/straight-arm-pulldown-1.svg",
+            "exercise-art/straight-arm-pulldown-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Пуловер на блоке",
+          "files": [
+            "exercise-art/straight-arm-pulldown-1.svg",
+            "exercise-art/straight-arm-pulldown-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 43,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/reverse-hyperextension-1.svg",
+        "exercise-art/reverse-hyperextension-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-112",
+          "name": "Обратная гиперэкстензия"
+        },
+        {
+          "id": "forge-ex-322",
+          "name": "Обратная гиперэкстензия в тренажёре"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Обратная гиперэкстензия",
+          "files": [
+            "exercise-art/reverse-hyperextension-1.svg",
+            "exercise-art/reverse-hyperextension-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Обратная гиперэкстензия в тренажёре",
+          "files": [
+            "exercise-art/reverse-hyperextension-1.svg",
+            "exercise-art/reverse-hyperextension-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 44,
+      "status": "confirmed-phase-repetition",
+      "reason": "Both Superman SVGs show arms, legs and chest raised. A resting/lowered phase is absent for the dynamic names.",
+      "files": [
+        "exercise-art/superman-1.svg",
+        "exercise-art/superman-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-113",
+          "name": "Подъём корпуса лёжа на животе"
+        },
+        {
+          "id": "forge-ex-325",
+          "name": "Супермен лёжа"
+        },
+        {
+          "id": "forge-ex-513",
+          "name": "Разгибание спины лёжа с паузой"
+        }
+      ],
+      "initialStatus": "requires-full-size-variant-review",
+      "largeRender": "legacy-audit-large-4.png",
+      "currentAssignments": [
+        {
+          "name": "Подъём корпуса лёжа на животе",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-113-1.svg",
+            "exercise-contours/original-v4/forge-ex-113-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Супермен лёжа",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-325-1.svg",
+            "exercise-contours/original-v4/forge-ex-325-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Разгибание спины лёжа с паузой",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-113-1.svg",
+            "exercise-contours/original-v4/forge-ex-113-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": {
+            "sourceName": "Подъём корпуса лёжа на животе",
+            "reason": "Совпадают подъём верхней части корпуса и опора ног на полу. Пауза указана в названии и инструкции."
+          }
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 45,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/farmer-carry-1.svg",
+        "exercise-art/farmer-carry-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-117",
+          "name": "Фермерская прогулка"
+        },
+        {
+          "id": "forge-ex-517",
+          "name": "Прогулка фермера с гантелями"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Фермерская прогулка",
+          "files": [
+            "exercise-art/farmer-carry-1.svg",
+            "exercise-art/farmer-carry-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Прогулка фермера с гантелями",
+          "files": [
+            "exercise-art/farmer-carry-1.svg",
+            "exercise-art/farmer-carry-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 46,
+      "status": "requires-full-size-variant-review",
+      "reason": "Single-arm low cable curl and alternating curl share art showing only one handle. Need to define equipment and alternation.",
+      "files": [
+        "exercise-contours/ek-0247-relaxation.svg",
+        "exercise-contours/ek-0247-tension.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-165",
+          "name": "Сгибание одной руки на блоке"
+        },
+        {
+          "id": "forge-ex-431",
+          "name": "Сгибание рук на блоке поочерёдно"
+        }
+      ],
+      "initialStatus": "requires-full-size-variant-review",
+      "currentAssignments": [
+        {
+          "name": "Сгибание одной руки на блоке",
+          "files": [
+            "exercise-contours/ek-0247-relaxation.svg",
+            "exercise-contours/ek-0247-tension.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Сгибание рук на блоке поочерёдно",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-431-1.svg",
+            "exercise-contours/original-v4/forge-ex-431-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 47,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/dumbbell-skull-crusher-1.svg",
+        "exercise-art/dumbbell-skull-crusher-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-175",
+          "name": "Французский жим гантелями лёжа"
+        },
+        {
+          "id": "forge-ex-185",
+          "name": "Разгибание рук лёжа с гантелями"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Французский жим гантелями лёжа",
+          "files": [
+            "exercise-art/dumbbell-skull-crusher-1.svg",
+            "exercise-art/dumbbell-skull-crusher-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Разгибание рук лёжа с гантелями",
+          "files": [
+            "exercise-art/dumbbell-skull-crusher-1.svg",
+            "exercise-art/dumbbell-skull-crusher-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 48,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/dumbbell-overhead-tricep-extension-1.svg",
+        "exercise-art/dumbbell-overhead-tricep-extension-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-176",
+          "name": "Французский жим сидя с гантелью"
+        },
+        {
+          "id": "forge-ex-183",
+          "name": "Разгибание рук из-за головы с гантелью"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Французский жим сидя с гантелью",
+          "files": [
+            "exercise-art/dumbbell-overhead-tricep-extension-1.svg",
+            "exercise-art/dumbbell-overhead-tricep-extension-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Разгибание рук из-за головы с гантелью",
+          "files": [
+            "exercise-art/dumbbell-overhead-tricep-extension-1.svg",
+            "exercise-art/dumbbell-overhead-tricep-extension-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 49,
+      "status": "confirmed-phase-repetition",
+      "reason": "Both overhead cable extension files show hands above/behind head with bent elbows. Extended-elbow phase is absent. The split rope attachment is not clearly drawn.",
+      "files": [
+        "exercise-art/overhead-tricep-extension-1.svg",
+        "exercise-art/overhead-tricep-extension-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-182",
+          "name": "Разгибание рук из-за головы на блоке"
+        },
+        {
+          "id": "forge-ex-437",
+          "name": "Разгибание рук с канатом над головой"
+        }
+      ],
+      "initialStatus": "requires-full-size-variant-review",
+      "largeRender": "legacy-audit-large-4.png",
+      "currentAssignments": [
+        {
+          "name": "Разгибание рук из-за головы на блоке",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-437-1.svg",
+            "exercise-contours/original-v4/forge-ex-437-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": {
+            "sourceName": "Разгибание рук с канатом над головой",
+            "reason": "Для общего названия выбрана канатная рукоять. Положение тела и траектория совпадают."
+          }
+        },
+        {
+          "name": "Разгибание рук с канатом над головой",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-437-1.svg",
+            "exercise-contours/original-v4/forge-ex-437-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 50,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/diamond-push-up-1.svg",
+        "exercise-art/diamond-push-up-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-187",
+          "name": "Отжимания узкой постановкой рук"
+        },
+        {
+          "id": "forge-ex-188",
+          "name": "Алмазные отжимания"
+        },
+        {
+          "id": "forge-ex-393",
+          "name": "Отжимания с узкой постановкой ладоней"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Отжимания узкой постановкой рук",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-187-1.svg",
+            "exercise-contours/original-v4/forge-ex-187-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Алмазные отжимания",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-188-1.svg",
+            "exercise-contours/original-v4/forge-ex-188-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Отжимания с узкой постановкой ладоней",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-187-1.svg",
+            "exercise-contours/original-v4/forge-ex-187-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": {
+            "sourceName": "Отжимания узкой постановкой рук",
+            "reason": "Одинаковая узкая постановка раздельных ладоней и движение локтей."
+          }
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 51,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/single-dumbbell-skullcrusher-1.svg",
+        "exercise-art/single-dumbbell-skullcrusher-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-193",
+          "name": "Разгибание локтя с гантелью лёжа"
+        },
+        {
+          "id": "forge-ex-438",
+          "name": "Разгибание одной руки с гантелью лёжа"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Разгибание локтя с гантелью лёжа",
+          "files": [
+            "exercise-art/single-dumbbell-skullcrusher-1.svg",
+            "exercise-art/single-dumbbell-skullcrusher-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Разгибание одной руки с гантелью лёжа",
+          "files": [
+            "exercise-art/single-dumbbell-skullcrusher-1.svg",
+            "exercise-art/single-dumbbell-skullcrusher-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 52,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/reverse-lunge-1.svg",
+        "exercise-art/reverse-lunge-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-214",
+          "name": "Выпады с гантелями назад"
+        },
+        {
+          "id": "forge-ex-263",
+          "name": "Выпады назад с гантелями"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Выпады с гантелями назад",
+          "files": [
+            "exercise-art/reverse-lunge-1.svg",
+            "exercise-art/reverse-lunge-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Выпады назад с гантелями",
+          "files": [
+            "exercise-art/reverse-lunge-1.svg",
+            "exercise-art/reverse-lunge-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 53,
+      "status": "requires-full-size-variant-review",
+      "reason": "Standing barbell lunge and walking barbell lunge share phase pair. Need to establish forward progression.",
+      "files": [
+        "exercise-contours/ek-0114-relaxation.svg",
+        "exercise-contours/ek-0114-tension.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-215",
+          "name": "Выпады со штангой"
+        },
+        {
+          "id": "forge-ex-453",
+          "name": "Ходьба выпадами со штангой"
+        }
+      ],
+      "initialStatus": "requires-full-size-variant-review",
+      "currentAssignments": [
+        {
+          "name": "Выпады со штангой",
+          "files": [
+            "exercise-contours/ek-0114-relaxation.svg",
+            "exercise-contours/ek-0114-tension.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Ходьба выпадами со штангой",
+          "files": [
+            "exercise-contours/ek-0114-relaxation.svg",
+            "exercise-contours/ek-0114-tension.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review",
+      "followupStatus": "Full-size inspection found standing start and forward lunge. They represent the first walking step; text now explains advance of the rear leg."
+    },
+    {
+      "groupIndex": 54,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/wall-sit-1.svg",
+        "exercise-art/wall-sit-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-224",
+          "name": "Приседания у стены"
+        },
+        {
+          "id": "forge-ex-459",
+          "name": "Изометрическое удержание в полуприседе"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Приседания у стены",
+          "files": [
+            "exercise-art/wall-sit-1.svg",
+            "exercise-art/wall-sit-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Изометрическое удержание в полуприседе",
+          "files": [
+            "exercise-art/wall-sit-1.svg"
+          ],
+          "phaseStatus": "static-single-frame",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 55,
+      "status": "requires-full-size-variant-review",
+      "reason": "Assisted Nordic curl shares unassisted art. Named assistance is unspecified, so exact assistance method needs a recorded choice.",
+      "files": [
+        "exercise-art/nordic-hamstring-curl-1.svg",
+        "exercise-art/nordic-hamstring-curl-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-239",
+          "name": "Нордические сгибания ног"
+        },
+        {
+          "id": "forge-ex-463",
+          "name": "Нордические сгибания ног с поддержкой"
+        }
+      ],
+      "initialStatus": "requires-full-size-variant-review",
+      "currentAssignments": [
+        {
+          "name": "Нордические сгибания ног",
+          "files": [
+            "exercise-art/nordic-hamstring-curl-1.svg",
+            "exercise-art/nordic-hamstring-curl-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Нордические сгибания ног с поддержкой",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-463-1.svg",
+            "exercise-contours/original-v4/forge-ex-463-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 56,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/good-morning-1.svg",
+        "exercise-art/good-morning-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-243",
+          "name": "Доброе утро со штангой"
+        },
+        {
+          "id": "forge-ex-324",
+          "name": "Наклоны со штангой стоя"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Доброе утро со штангой",
+          "files": [
+            "exercise-art/good-morning-1.svg",
+            "exercise-art/good-morning-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Наклоны со штангой стоя",
+          "files": [
+            "exercise-art/good-morning-1.svg",
+            "exercise-art/good-morning-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 57,
+      "status": "confirmed-phase-repetition",
+      "reason": "Both full-size hip thrust SVGs show the pelvis at essentially the same raised level. Lowered starting phase is absent.",
+      "files": [
+        "exercise-art/hip-thrust-1.svg",
+        "exercise-art/hip-thrust-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-250",
+          "name": "Хип-траст со штангой"
+        },
+        {
+          "id": "forge-ex-267",
+          "name": "Подъём таза на скамье с паузой"
+        }
+      ],
+      "initialStatus": "requires-full-size-variant-review",
+      "largeRender": "legacy-audit-large-4.png",
+      "currentAssignments": [
+        {
+          "name": "Хип-траст со штангой",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-250-1.svg",
+            "exercise-contours/original-v4/forge-ex-250-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Подъём таза на скамье с паузой",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-250-1.svg",
+            "exercise-contours/original-v4/forge-ex-250-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": {
+            "sourceName": "Хип-траст со штангой",
+            "reason": "Совпадают опора спины, штанга и положения таза. Длительность паузы задаётся текстом."
+          }
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 58,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/sumo-deadlift-1.svg",
+        "exercise-art/sumo-deadlift-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-261",
+          "name": "Сумо-тяга"
+        },
+        {
+          "id": "forge-ex-314",
+          "name": "Становая тяга сумо"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Сумо-тяга",
+          "files": [
+            "exercise-art/sumo-deadlift-1.svg",
+            "exercise-art/sumo-deadlift-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Становая тяга сумо",
+          "files": [
+            "exercise-art/sumo-deadlift-1.svg",
+            "exercise-art/sumo-deadlift-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 59,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/cable-crunch-1.svg",
+        "exercise-art/cable-crunch-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-288",
+          "name": "Скручивания на блоке"
+        },
+        {
+          "id": "forge-ex-302",
+          "name": "Скручивание корпуса с канатом"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Скручивания на блоке",
+          "files": [
+            "exercise-art/cable-crunch-1.svg",
+            "exercise-art/cable-crunch-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Скручивание корпуса с канатом",
+          "files": [
+            "exercise-art/cable-crunch-1.svg",
+            "exercise-art/cable-crunch-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 60,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/burpee-1.svg",
+        "exercise-art/burpee-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-309",
+          "name": "Берпи"
+        },
+        {
+          "id": "forge-ex-359",
+          "name": "Берпи интервальные"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Берпи",
+          "files": [
+            "exercise-art/burpee-1.svg",
+            "exercise-art/burpee-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Берпи интервальные",
+          "files": [
+            "exercise-art/burpee-1.svg",
+            "exercise-art/burpee-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 61,
+      "status": "requires-full-size-variant-review",
+      "reason": "High-handle trap-bar deadlift and generic trap-bar deadlift share art. Need to distinguish high vs low handle grip geometry.",
+      "files": [
+        "exercise-art/trap-bar-deadlift-1.svg",
+        "exercise-art/trap-bar-deadlift-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-315",
+          "name": "Становая тяга с трэп-грифом"
+        },
+        {
+          "id": "forge-ex-507",
+          "name": "Становая тяга с трэп-грифом с высокой ручкой"
+        }
+      ],
+      "initialStatus": "requires-full-size-variant-review",
+      "currentAssignments": [
+        {
+          "name": "Становая тяга с трэп-грифом",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-315-1.svg",
+            "exercise-contours/original-v4/forge-ex-315-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Становая тяга с трэп-грифом с высокой ручкой",
+          "files": [
+            "exercise-art/trap-bar-deadlift-1.svg",
+            "exercise-art/trap-bar-deadlift-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 62,
+      "status": "requires-full-size-variant-review",
+      "reason": "Unqualified interval running, sprints and accelerations depict treadmill. Record deliberate indoor choice or supply overground art.",
+      "files": [
+        "exercise-art/running-1.svg",
+        "exercise-art/running-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-346",
+          "name": "Интервальный бег"
+        },
+        {
+          "id": "forge-ex-347",
+          "name": "Спринты"
+        },
+        {
+          "id": "forge-ex-529",
+          "name": "Лёгкий бег с ускорениями"
+        }
+      ],
+      "initialStatus": "requires-full-size-variant-review",
+      "currentAssignments": [
+        {
+          "name": "Интервальный бег",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-345-1.svg",
+            "exercise-contours/original-v4/forge-ex-345-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": {
+            "sourceName": "Бег на улице",
+            "reason": "Положение бега совпадает. Чередование темпа и длительность интервалов задаются текстом."
+          }
+        },
+        {
+          "name": "Спринты",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-347-1.svg",
+            "exercise-contours/original-v4/forge-ex-347-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Лёгкий бег с ускорениями",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-345-1.svg",
+            "exercise-contours/original-v4/forge-ex-345-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": {
+            "sourceName": "Бег на улице",
+            "reason": "Показан цикл бега на ровной поверхности. Изменения темпа во времени описываются текстом."
+          }
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 63,
+      "status": "requires-full-size-variant-review",
+      "reason": "Stepper and revolving stair climber share stair machine. Need to define whether stepper is independent pedals.",
+      "files": [
+        "exercise-art/stair-climber-1.svg",
+        "exercise-art/stair-climber-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-350",
+          "name": "Степпер"
+        },
+        {
+          "id": "forge-ex-351",
+          "name": "Лестничный тренажёр"
+        }
+      ],
+      "initialStatus": "requires-full-size-variant-review",
+      "currentAssignments": [
+        {
+          "name": "Степпер",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-350-1.svg",
+            "exercise-contours/original-v4/forge-ex-350-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Лестничный тренажёр",
+          "files": [
+            "exercise-art/stair-climber-1.svg",
+            "exercise-art/stair-climber-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 64,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/walking-1.svg",
+        "exercise-art/walking-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-357",
+          "name": "Ходьба быстрым шагом"
+        },
+        {
+          "id": "forge-ex-540",
+          "name": "Восстановительная ходьба"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Ходьба быстрым шагом",
+          "files": [
+            "exercise-art/walking-1.svg",
+            "exercise-art/walking-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Восстановительная ходьба",
+          "files": [
+            "exercise-art/walking-1.svg",
+            "exercise-art/walking-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 65,
+      "status": "confirmed-phase-repetition",
+      "reason": "Both source files show essentially the same held kneeling hip-flexor stretch. The dynamic hip-extension name lacks a visible different phase.",
+      "files": [
+        "exercise-art/kneeling-hip-flexor-stretch-1.svg",
+        "exercise-art/kneeling-hip-flexor-stretch-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-369",
+          "name": "Растяжка сгибателей бедра"
+        },
+        {
+          "id": "forge-ex-547",
+          "name": "Разгибание бедра в положении выпада"
+        }
+      ],
+      "initialStatus": "requires-full-size-variant-review",
+      "largeRender": "legacy-audit-large-8.png",
+      "currentAssignments": [
+        {
+          "name": "Растяжка сгибателей бедра",
+          "files": [
+            "exercise-art/kneeling-hip-flexor-stretch-1.svg"
+          ],
+          "phaseStatus": "static-single-frame",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Разгибание бедра в положении выпада",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-547-1.svg",
+            "exercise-contours/original-v4/forge-ex-547-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "updated-after-audit"
+    },
+    {
+      "groupIndex": 66,
+      "status": "preliminary-compatible-mechanics-or-timing",
+      "reason": "Names describe the same visible equipment and major mechanics, a compatible unspecified variant, or timing-only change. Expert biomechanics approval remains pending.",
+      "files": [
+        "exercise-art/band-pull-apart-1.svg",
+        "exercise-art/band-pull-apart-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-377",
+          "name": "Разведение резинки перед грудью"
+        },
+        {
+          "id": "forge-ex-422",
+          "name": "Разведение рук на заднюю дельту с резинкой"
+        }
+      ],
+      "initialStatus": "preliminary-compatible-mechanics-or-timing",
+      "currentAssignments": [
+        {
+          "name": "Разведение резинки перед грудью",
+          "files": [
+            "exercise-art/band-pull-apart-1.svg",
+            "exercise-art/band-pull-apart-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Разведение рук на заднюю дельту с резинкой",
+          "files": [
+            "exercise-art/band-pull-apart-1.svg",
+            "exercise-art/band-pull-apart-2.svg"
+          ],
+          "phaseStatus": "two-source-frames",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "retained-for-compatible-variant-or-review"
+    },
+    {
+      "groupIndex": 67,
+      "status": "confirmed-phase-repetition",
+      "reason": "Both source files show essentially the same held wall calf stretch. The dynamic calf stretch name lacks clearly visible ankle/hip excursion.",
+      "files": [
+        "exercise-art/wall-calf-stretch-1.svg",
+        "exercise-art/wall-calf-stretch-2.svg"
+      ],
+      "exercises": [
+        {
+          "id": "forge-ex-380",
+          "name": "Растяжка икроножных у стены"
+        },
+        {
+          "id": "forge-ex-549",
+          "name": "Динамическая растяжка икр"
+        }
+      ],
+      "initialStatus": "requires-full-size-variant-review",
+      "largeRender": "legacy-audit-large-8.png",
+      "currentAssignments": [
+        {
+          "name": "Растяжка икроножных у стены",
+          "files": [
+            "exercise-art/wall-calf-stretch-1.svg"
+          ],
+          "phaseStatus": "static-single-frame",
+          "verifiedAlias": null
+        },
+        {
+          "name": "Динамическая растяжка икр",
+          "files": [
+            "exercise-contours/original-v4/forge-ex-549-1.svg",
+            "exercise-contours/original-v4/forge-ex-549-2.svg"
+          ],
+          "phaseStatus": "two-authored-phases",
+          "verifiedAlias": null
+        }
+      ],
+      "integration": "updated-after-audit"
+    }
+  ],
+  "followup": "Batch 09 added original replacements, single-frame holds and explicitly justified aliases. Updated paths document integration only; expert biomechanics remains pending."
+}

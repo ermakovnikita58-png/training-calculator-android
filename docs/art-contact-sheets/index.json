@@ -3,98 +3,98 @@
     "group": "Грудь",
     "file": "exercises-0.png",
     "entries": 48,
-    "contour": 32,
-    "notReady": 16
+    "contour": 48,
+    "notReady": 0
   },
   {
     "group": "Спина",
     "file": "exercises-1.png",
     "entries": 63,
-    "contour": 43,
-    "notReady": 20
+    "contour": 63,
+    "notReady": 0
   },
   {
     "group": "Плечи",
     "file": "shoulders.png",
     "entries": 48,
-    "contour": 28,
-    "notReady": 20
+    "contour": 48,
+    "notReady": 0
   },
   {
     "group": "Бицепс",
     "file": "exercises-3.png",
     "entries": 37,
-    "contour": 29,
-    "notReady": 8
+    "contour": 37,
+    "notReady": 0
   },
   {
     "group": "Трицепс",
     "file": "exercises-4.png",
     "entries": 36,
-    "contour": 33,
-    "notReady": 3
+    "contour": 36,
+    "notReady": 0
   },
   {
     "group": "Квадрицепс",
     "file": "exercises-5.png",
     "entries": 54,
-    "contour": 45,
-    "notReady": 9
+    "contour": 54,
+    "notReady": 0
   },
   {
     "group": "Бицепс бедра",
     "file": "exercises-6.png",
     "entries": 30,
-    "contour": 14,
-    "notReady": 16
+    "contour": 30,
+    "notReady": 0
   },
   {
     "group": "Ягодицы",
     "file": "exercises-7.png",
     "entries": 37,
-    "contour": 26,
-    "notReady": 11
+    "contour": 37,
+    "notReady": 0
   },
   {
     "group": "Икры",
     "file": "exercises-8.png",
     "entries": 25,
-    "contour": 14,
-    "notReady": 11
+    "contour": 25,
+    "notReady": 0
   },
   {
     "group": "Пресс",
     "file": "exercises-9.png",
     "entries": 52,
-    "contour": 34,
-    "notReady": 18
+    "contour": 52,
+    "notReady": 0
   },
   {
     "group": "Кардио",
     "file": "exercises-10.png",
     "entries": 41,
-    "contour": 21,
-    "notReady": 20
+    "contour": 41,
+    "notReady": 0
   },
   {
     "group": "Нижняя спина",
     "file": "exercises-11.png",
     "entries": 26,
-    "contour": 12,
-    "notReady": 14
+    "contour": 26,
+    "notReady": 0
   },
   {
     "group": "Предплечья",
     "file": "exercises-12.png",
     "entries": 24,
-    "contour": 4,
-    "notReady": 20
+    "contour": 24,
+    "notReady": 0
   },
   {
     "group": "Мобильность",
     "file": "exercises-13.png",
     "entries": 35,
-    "contour": 13,
-    "notReady": 22
+    "contour": 35,
+    "notReady": 0
   }
 ]
