@@ -5790,6 +5790,18 @@
       "status": "style-approved",
       "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
       "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-154-1.svg": {
+      "sha256": "cb7c699d32a6e5d3edc1b912130ca97884ee1d630565f400451834c03790862a",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
+    },
+    "exercise-contours/original-v4/forge-ex-154-2.svg": {
+      "sha256": "91982ffbbba6e5d0d04b65cce9603e701614236f0b453aeff8ddee289016d94a",
+      "status": "style-approved",
+      "reviewer": "Codex visual inspection of the approved source and rendered contact sheets",
+      "date": "2026-11-03"
     }
   }
 }

@@ -9945,5 +9945,47 @@
         "loops": 131
       }
     ]
+  },
+  {
+    "id": "forge-ex-154",
+    "name": "Подъём гантелей на бицепс с супинацией",
+    "group": "Бицепс",
+    "type": "EXERCISE_TECHNIQUE_ART",
+    "frames": [
+      "exercise-contours/original-v4/forge-ex-154-1.svg",
+      "exercise-contours/original-v4/forge-ex-154-2.svg"
+    ],
+    "phaseStatus": "two-authored-phases",
+    "equipment": "dumbbells",
+    "support": "standing, both feet on floor",
+    "grip": "neutral at lowered start, supinated at raised finish",
+    "description": "Use case scientific-educational. Create precise two-phase technical exercise illustration in FORGE thin white hollow anatomical contours on pure black, matching the reference LINE STYLE ONLY. Athlete fully clothed fitted short sleeved training shirt, shorts and trainers. No shading, white fills, text, arrows or border. Two equally scaled side-by-side front three-quarter view panels, wide clear pure black vertical gutter. LEFT panel depicts the START of a simultaneous bilateral dumbbell curl with supination. Both arms fully STRAIGHT DOWN beside hips. Palms face INWARD toward the thighs, thumbs point FORWARD, dumbbell handles point front-to-back, two distinct weight heads beside each hand. RIGHT panel depicts TOP of the same curl, elbows fully flexed while upper arms stay beside torso. Both forearms have ROTATED so palms face UPWARD toward shoulders, both thumbs now point OUTWARD, dumbbell handles lie left-to-right. Clearly change dumbbell orientation about90 degrees. Upper arms stay vertical, elbows near waist. Both dumbbells and both hands entirely visible in each frame. Full figure, same stance, no leaning.\n\nTargeted correction\nEdit LEFT panel only, leave right raised-curl panel untouched. Change BOTH lowered hands to a clear NEUTRAL hammer grip. Athlete's left and right palms face their adjacent THIGHS, thumbs point straight FORWARD along the toes, little fingers point back. Turn both dumbbells 90 degrees so the HANDLES run FRONT-TO-BACK in the sagittal plane beside each thigh. The FRONT endcap of each dumbbell faces the viewer obliquely, the REAR weight head is partly behind each lowered hand, not extending across the thigh. Visually unmistakable neutral hammer-like starting grip. Do not alter lowered straight elbows, figure, clothing, stance, thin white hollow contours, black background or center gap.",
+    "prompt": "Use case scientific-educational. Create precise two-phase technical exercise illustration in FORGE thin white hollow anatomical contours on pure black, matching the reference LINE STYLE ONLY. Athlete fully clothed fitted short sleeved training shirt, shorts and trainers. No shading, white fills, text, arrows or border. Two equally scaled side-by-side front three-quarter view panels, wide clear pure black vertical gutter. LEFT panel depicts the START of a simultaneous bilateral dumbbell curl with supination. Both arms fully STRAIGHT DOWN beside hips. Palms face INWARD toward the thighs, thumbs point FORWARD, dumbbell handles point front-to-back, two distinct weight heads beside each hand. RIGHT panel depicts TOP of the same curl, elbows fully flexed while upper arms stay beside torso. Both forearms have ROTATED so palms face UPWARD toward shoulders, both thumbs now point OUTWARD, dumbbell handles lie left-to-right. Clearly change dumbbell orientation about90 degrees. Upper arms stay vertical, elbows near waist. Both dumbbells and both hands entirely visible in each frame. Full figure, same stance, no leaning.\n\nTargeted correction\nEdit LEFT panel only, leave right raised-curl panel untouched. Change BOTH lowered hands to a clear NEUTRAL hammer grip. Athlete's left and right palms face their adjacent THIGHS, thumbs point straight FORWARD along the toes, little fingers point back. Turn both dumbbells 90 degrees so the HANDLES run FRONT-TO-BACK in the sagittal plane beside each thigh. The FRONT endcap of each dumbbell faces the viewer obliquely, the REAR weight head is partly behind each lowered hand, not extending across the thigh. Visually unmistakable neutral hammer-like starting grip. Do not alter lowered straight elbows, figure, clothing, stance, thin white hollow contours, black background or center gap.",
+    "sourcePNG": "forge-ex-154.png",
+    "sourcePNG_SHA256": "7efd4fa14ff13cd99101ec9056bfeaec92126600a039e9e459ce6da48d5270c7",
+    "method": "Original ImageGen hollow white contour; white-ink boundary traced to SVG without embedded raster or colour filters",
+    "source": {
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbells"
+    },
+    "license": "Original project artwork; no third-party illustration copied",
+    "credit": "FORGE · original ImageGen contour",
+    "expertVerified": false,
+    "styleReview": "approved-style-pose-preliminary",
+    "files": [
+      {
+        "file": "exercise-contours/original-v4/forge-ex-154-1.svg",
+        "sha256": "cb7c699d32a6e5d3edc1b912130ca97884ee1d630565f400451834c03790862a",
+        "inkRatio": 0.025338490804036457,
+        "loops": 228
+      },
+      {
+        "file": "exercise-contours/original-v4/forge-ex-154-2.svg",
+        "sha256": "91982ffbbba6e5d0d04b65cce9603e701614236f0b453aeff8ddee289016d94a",
+        "inkRatio": 0.025052388509114582,
+        "loops": 183
+      }
+    ]
   }
 ]

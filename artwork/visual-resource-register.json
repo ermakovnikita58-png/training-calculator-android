@@ -384,18 +384,18 @@
     "expertVerified": false
   },
   {
-    "file": "exercise-art/bicep-curl-1.svg",
+    "file": "exercise-contours/original-v4/forge-ex-154-1.svg",
     "role": "exercise-phase",
-    "bytes": 13078,
-    "sha256": "d1af040a7d87a0778dbdb18417a877f7bfe0b8c5f3d1333c36739f5e8e4a83d9",
+    "bytes": 91270,
+    "sha256": "cb7c699d32a6e5d3edc1b912130ca97884ee1d630565f400451834c03790862a",
     "pathChecked": true,
     "expertVerified": false
   },
   {
-    "file": "exercise-art/bicep-curl-2.svg",
+    "file": "exercise-contours/original-v4/forge-ex-154-2.svg",
     "role": "exercise-phase",
-    "bytes": 14438,
-    "sha256": "28d48b887e25fdf20f958044f1fc7e7d3510612b690b6506052145fa66d83b36",
+    "bytes": 90928,
+    "sha256": "91982ffbbba6e5d0d04b65cce9603e701614236f0b453aeff8ddee289016d94a",
     "pathChecked": true,
     "expertVerified": false
   },

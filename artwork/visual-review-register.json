@@ -639,11 +639,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Bicep Curl",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/bicep-curl/frame-1.svg",
-      "equipment": "Dumbbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbells"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -651,8 +651,8 @@
       "exercise-art/bicep-curl-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/bicep-curl-1.svg",
-      "exercise-art/bicep-curl-2.svg"
+      "exercise-contours/original-v4/forge-ex-154-1.svg",
+      "exercise-contours/original-v4/forge-ex-154-2.svg"
     ],
     "sharedWith": [
       "Подъём гантелей на бицепс стоя",
@@ -3920,11 +3920,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Bicep Curl",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/bicep-curl/frame-1.svg",
-      "equipment": "Dumbbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbells"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -3932,8 +3932,8 @@
       "exercise-art/bicep-curl-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/bicep-curl-1.svg",
-      "exercise-art/bicep-curl-2.svg"
+      "exercise-contours/original-v4/forge-ex-154-1.svg",
+      "exercise-contours/original-v4/forge-ex-154-2.svg"
     ],
     "sharedWith": [
       "Подъём гантелей на бицепс",
@@ -3974,11 +3974,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Bicep Curl",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/bicep-curl/frame-1.svg",
-      "equipment": "Dumbbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbells"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -3986,8 +3986,8 @@
       "exercise-art/bicep-curl-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/bicep-curl-1.svg",
-      "exercise-art/bicep-curl-2.svg"
+      "exercise-contours/original-v4/forge-ex-154-1.svg",
+      "exercise-contours/original-v4/forge-ex-154-2.svg"
     ],
     "sharedWith": [
       "Подъём гантелей на бицепс",
@@ -5588,7 +5588,7 @@
   {
     "name": "Выпады при ходьбе",
     "group": "Квадрицепс",
-    "family": "lunge",
+    "family": "walkinglunge",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
@@ -10914,11 +10914,11 @@
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",
-    "phaseStatus": "two-source-frames",
+    "phaseStatus": "two-authored-phases",
     "source": {
-      "name": "Bicep Curl",
-      "url": "https://github.com/bryllim/workout-guide/tree/main/packages/workout-guide/assets/bicep-curl/frame-1.svg",
-      "equipment": "Dumbbell"
+      "name": "FORGE · original ImageGen contour, vector traced",
+      "url": "https://github.com/ermakovnikita58-png/training-calculator-android/blob/forge-11.2.3-complete-contours/artwork/original-contour-register.json",
+      "equipment": "dumbbells"
     },
     "artType": "EXERCISE_TECHNIQUE_ART",
     "originalFrames": [
@@ -10926,8 +10926,8 @@
       "exercise-art/bicep-curl-2.svg"
     ],
     "renderFrames": [
-      "exercise-art/bicep-curl-1.svg",
-      "exercise-art/bicep-curl-2.svg"
+      "exercise-contours/original-v4/forge-ex-154-1.svg",
+      "exercise-contours/original-v4/forge-ex-154-2.svg"
     ],
     "sharedWith": [
       "Подъём гантелей на бицепс",
@@ -11569,7 +11569,7 @@
   {
     "name": "Ходьба выпадами со штангой",
     "group": "Квадрицепс",
-    "family": "lunge",
+    "family": "walkinglunge",
     "contentStatus": "editorial-draft",
     "expertVerified": false,
     "imageStatus": "contour-reference",

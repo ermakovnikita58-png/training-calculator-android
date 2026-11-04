@@ -165,6 +165,9 @@ derive('lungemobility','mobility',{
  movement:'Сместите таз вперёд, разгибая заднее бедро, затем плавно верните таз назад.',
  alignment:'Сохраняйте корпус вертикальным и контролируйте положение таза без усиления прогиба поясницы.'
 });
+derive('walkinglunge','lunge',{
+ movement:'Шагните вперёд и опуститесь в выпад. Поднимитесь через переднюю ногу, перенесите заднюю ногу вперёд и выполните следующий шаг.'
+});
 function classify(name,group){const n=name.toLowerCase().replaceAll('ё','е');
  if(n==='тяга нижнего блока широким хватом')return 'wideSeatedRow';
  if(n==='тяга широким хватом в смите')return 'wideSmithRow';
@@ -181,6 +184,7 @@ function classify(name,group){const n=name.toLowerCase().replaceAll('ё','е');
  if(n==='тяга в хаммере горизонтально'||n==='горизонтальная тяга в тренажере')return 'hammerrow';
  if(n==='динамическая растяжка икр')return 'dynamiccalfstretch';
  if(n==='разгибание бедра в положении выпада')return 'lungemobility';
+ if(n==='ходьба выпадами со штангой'||n==='выпады при ходьбе')return 'walkinglunge';
  if(/сведение ладон/.test(n))return 'isometricChest';if(/вращение плеча|ротация плеча/.test(n))return 'rotator';if(/пистолет/.test(n))return 'squat';if(/махи гир/.test(n))return 'swing';if(/ракушка/.test(n))return 'clamshell';if(/боковые шаги/.test(n))return 'lateralwalk';if(/прыжки/.test(n)&&group!=='Кардио')return 'jump';if(/вис на|удержание штанги/.test(n))return 'grip';if(/удержание спины/.test(n))return 'backextension';if(/велосипед для пресса/.test(n))return 'rotation';if(/подъем корпуса на наклонной/.test(n))return 'crunch';if(group==='Бицепс'&&/подъем|сгибани/.test(n))return 'curl';
  if(/берпи/.test(n))return 'burpee';if(/альпинист/.test(n))return 'climber';if(/мертвый жук/.test(n))return 'deadbug';if(/холлоу/.test(n))return 'hollow';if(/обратные скручив/.test(n))return 'reverseCrunch';if(/вакуум/.test(n))return null;
  if(group==='Кардио'){if(/греб/.test(n))return 'rowing';if(/плаван/.test(n))return 'swim';if(/эллип/.test(n))return 'elliptical';if(/лыж/.test(n))return 'ski';if(/бокс/.test(n))return 'boxing';if(/канат/.test(n))return 'ropes';if(/велосип|велотренаж/.test(n))return 'cycle';if(/скакал/.test(n))return 'ropejump';if(/ходьб|прогулк/.test(n))return 'walk';if(/степ|лестни|платформ/.test(n))return 'step';if(/прыж/.test(n))return 'jump';if(/бег|спринт/.test(n))return 'run';return null;}

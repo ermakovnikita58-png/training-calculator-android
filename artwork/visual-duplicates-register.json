@@ -1,6 +1,6 @@
 {
-  "physicalImageCount": 1536,
-  "physicalImageBytes": 63721400,
+  "physicalImageCount": 1538,
+  "physicalImageBytes": 63903598,
   "renderedExercisePhaseFiles": 922,
   "renderedGroupMaps": 14,
   "uniqueRenderedPairs": 482,
@@ -521,8 +521,8 @@
     },
     {
       "files": [
-        "exercise-art/bicep-curl-1.svg",
-        "exercise-art/bicep-curl-2.svg"
+        "exercise-contours/original-v4/forge-ex-154-1.svg",
+        "exercise-contours/original-v4/forge-ex-154-2.svg"
       ],
       "names": [
         "Подъём гантелей на бицепс",
@@ -6835,6 +6835,16 @@
       "file": "exercise-contours/original-v4/forge-ex-148-2.svg",
       "bytes": 101210,
       "sha256": "e8adcfbf90295c4db07a365801a68202194c58862b0fede7d845ecfd3bc329f4"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-154-1.svg",
+      "bytes": 91270,
+      "sha256": "cb7c699d32a6e5d3edc1b912130ca97884ee1d630565f400451834c03790862a"
+    },
+    {
+      "file": "exercise-contours/original-v4/forge-ex-154-2.svg",
+      "bytes": 90928,
+      "sha256": "91982ffbbba6e5d0d04b65cce9603e701614236f0b453aeff8ddee289016d94a"
     },
     {
       "file": "exercise-contours/original-v4/forge-ex-157-1.svg",
