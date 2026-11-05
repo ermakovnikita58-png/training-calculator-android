@@ -7,6 +7,7 @@ import androidx.test.core.app.ActivityScenario
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.uiautomator.UiDevice
+import org.json.JSONObject
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -38,6 +39,24 @@ class NavigationBackTest {
             Thread.sleep(100)
         }
         assertEquals("Condition: $condition", "true", js(scenario, condition))
+    }
+
+    private fun click(scenario: ActivityScenario<MainActivity>, selector: String) {
+        val element = "document.querySelector(${JSONObject.quote(selector)})"
+        waitFor(scenario, "$element?.getClientRects().length > 0 && !$element.closest('[inert]')")
+        js(scenario, "$element.click()")
+    }
+
+    private fun pressBack(scenario: ActivityScenario<MainActivity>, condition: String) {
+        val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
+        assertTrue("Android Back event was not sent", device.pressBack())
+        waitFor(scenario, condition)
+    }
+
+    private fun openPage(scenario: ActivityScenario<MainActivity>, page: String) {
+        waitFor(scenario, "!!window.ForgeNavigation && !!window.ForgePerformance")
+        js(scenario, "showPage('home');showPage(${JSONObject.quote(page)})")
+        waitFor(scenario, "ForgeNavigation.inspect().current === ${JSONObject.quote(page)}")
     }
     @Test fun systemBackClosesCardThenReturnsThroughPages() {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
@@ -88,6 +107,92 @@ class NavigationBackTest {
             waitFor(scenario, "ForgeNavigation.inspect().current==='plan'")
             device.pressBack()
             waitFor(scenario, "ForgeNavigation.inspect().current==='home'")
+        }
+    }
+
+    @Test fun foodCategorySheetAndPortionReturnToCatalogWithAndroidBack() {
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            openPage(scenario, "nutrition")
+            click(scenario, """#nutrition [data-fp-action="go"][data-fp-params='["foodcatalog"]']""")
+            waitFor(scenario, "ForgeNavigation.inspect().current === 'foodcatalog'")
+            for (source in listOf("favorites", "recent", "my", "catalog")) {
+                val tab = "#foodcatalog [data-food-tab='$source']"
+                click(scenario, tab)
+                waitFor(scenario, "document.querySelector(${JSONObject.quote(tab)}).classList.contains('active')")
+            }
+
+            click(scenario, "#forgeFoodCategoryButton")
+            waitFor(scenario, "ForgeNavigation.inspect().overlay === 'modalback' && !!document.getElementById('forgeFoodCategorySheet')")
+            val categoryOption = "#forgeFoodCategorySheet [data-food-category]:nth-child(2)"
+            val activeChip = "document.querySelector(${JSONObject.quote("#forgeFoodCats [data-food-category][aria-pressed='true']")})"
+            val category = js(scenario, "document.querySelector(${JSONObject.quote(categoryOption)}).dataset.foodCategory")
+            click(scenario, categoryOption)
+            waitFor(scenario, "!ForgeNavigation.inspect().overlay && !!document.querySelector('#foodSearchResults .forge-plus')")
+            assertEquals(category, js(scenario, "$activeChip.dataset.foodCategory"))
+            click(scenario, "#forgeFoodCategoryButton")
+            waitFor(scenario, "ForgeNavigation.inspect().overlay === 'modalback'")
+            pressBack(scenario, "!ForgeNavigation.inspect().overlay && ForgeNavigation.inspect().current === 'foodcatalog'")
+            assertEquals(category, js(scenario, "$activeChip.dataset.foodCategory"))
+
+            click(scenario, "#foodSearchResults .forge-plus")
+            waitFor(scenario, "ForgeNavigation.inspect().overlay === 'modalback' && +document.getElementById('forgeFoodGrams')?.value > 0")
+            waitFor(scenario, "document.getElementById('forgeFoodPreview').textContent.includes('ккал')")
+            pressBack(scenario, "!ForgeNavigation.inspect().overlay && ForgeNavigation.inspect().current === 'foodcatalog'")
+            pressBack(scenario, "ForgeNavigation.inspect().current === 'nutrition'")
+        }
+    }
+
+    @Test fun programPickerUsesLocalArtAndPreservesTheDraftAcrossAndroidBack() {
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            openPage(scenario, "plan")
+            click(scenario, "#plan [data-fp-action='newProgram']")
+            click(scenario, "#n8-program [onclick='n8EditProgramDay(-1)']")
+            val dayName = "Проверка Android Back"
+            val dayInput = """#n8-day input[onchange="n8DayField('name',this.value)"]"""
+            js(scenario, """
+                const field = document.querySelector(${JSONObject.quote(dayInput)});
+                field.value = ${JSONObject.quote(dayName)};
+                field.dispatchEvent(new Event('change', {bubbles: true}));
+            """.trimIndent())
+            click(scenario, "#n8-day [onclick='n8OpenPicker()']")
+            waitFor(scenario, """
+                (() => {
+                    const images = Array.from(document.querySelectorAll('#n8-picker [data-picker-group] img[data-art-type="MUSCLE_GROUP_ART"]'));
+                    for (const image of images) image.loading = 'eager';
+                    return images.length === 14 && new Set(images.map(image => image.src)).size === 14 &&
+                        images.every(image => image.complete && image.naturalWidth > 0 &&
+                            new URL(image.src).origin === location.origin && image.src.endsWith('.webp'));
+                })()
+            """.trimIndent())
+
+            val groups = "#n8-picker [data-picker-group]"
+            val detail = "#n8-picker [data-picker-detail]"
+            click(scenario, groups)
+            click(scenario, detail)
+            waitFor(scenario, """
+                ForgeNavigation.inspect().overlay === 'x7DetailBack' &&
+                    [...document.querySelectorAll('#x7DetailBack .forge-art-frames img')].some(image =>
+                        image.complete && image.naturalWidth > 0 && image.src.endsWith('.svg') &&
+                        new URL(image.src).origin === location.origin)
+            """.trimIndent())
+            pressBack(scenario, "ForgeNavigation.inspect().overlay === 'n8-picker' && !!document.querySelector('$detail')")
+            pressBack(scenario, "ForgeNavigation.inspect().overlay === 'n8-picker' && !!document.querySelector('$groups')")
+            pressBack(scenario, "ForgeNavigation.inspect().overlay === 'n8-day'")
+            assertEquals(JSONObject.quote(dayName), js(scenario, "document.querySelector(${JSONObject.quote(dayInput)}).value"))
+
+            click(scenario, "#n8-day [onclick='n8OpenPicker()']")
+            click(scenario, groups)
+            click(scenario, detail)
+            val selectedName = js(scenario, "document.querySelector('#x7DetailBack h1').textContent.trim()")
+            click(scenario, "#x7DetailBack [data-vs-action='add']")
+            waitFor(scenario, "ForgeNavigation.inspect().overlay === 'n8-day'")
+            val draft = "ForgeEditorNavigation.snapshot().day.exercises"
+            assertEquals("1", js(scenario, "$draft.length"))
+            assertEquals(selectedName, js(scenario, "$draft[0]"))
+            assertEquals(JSONObject.quote(dayName), js(scenario, "ForgeEditorNavigation.snapshot().day.name"))
+
+            // Leave the fixture in memory only. A test run must not write a program into the diary.
+            js(scenario, "ForgeNavigation.markSaved('n8-day');showPage('home')")
         }
     }
 }
