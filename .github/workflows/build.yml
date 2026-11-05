@@ -38,6 +38,8 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Test offline diary, persistence, nutrition and backup
         run: npm test
+      - name: Test the product catalog and shared exercise picker
+        run: npm run test:catalog-picker
       - name: Require all 556 exercise illustrations
         run: node scripts/check-art-coverage.cjs
       - name: Upload Performance UI screenshots

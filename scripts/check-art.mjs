@@ -4,6 +4,7 @@ import {runInNewContext} from 'node:vm';
 const assets=new URL('../app/src/main/assets/',import.meta.url);
 const manifest=JSON.parse(readFileSync(new URL('../artwork/exercise-manifest.json',import.meta.url)));
 const context={window:{},state:{n9UserPhotos:{}}};
+runInNewContext(readFileSync(new URL('art-registry.js',assets),'utf8'),context);
 runInNewContext(readFileSync(new URL('exercise-art.js',assets),'utf8'),context);
 const art=context.window.ForgeArt;
 assert.equal(manifest.length,556);
@@ -18,7 +19,16 @@ for(const item of manifest){
     assert.ok(existsSync(new URL(file,assets)),file);
   }
 }
-for(const file of Object.values(art.registry.muscles))assert.ok(existsSync(new URL(file,assets)),file);
+const standards=context.window.ForgeArtStandards;
+const muscles=Object.values(standards.registry.muscleGroups);
+assert.equal(muscles.length,14);
+assert.equal(new Set(muscles.map(group=>group.id)).size,14);
+for(const {id,group,file} of muscles){
+  assert.ok(file.endsWith('.webp')&&existsSync(new URL(file,assets)),file);
+  assert.equal(standards.muscleSource(id),file);
+  assert.equal(standards.muscleSource(group),file);
+  assert.ok(art.muscle(group).includes('src="'+file+'"'));
+}
 const shoulders=['Жим штанги стоя','Жим гантелей сидя','Разведение гантелей в стороны','Разведение гантелей в наклоне','Тяга штанги к подбородку','Подъём диска перед собой'];
 assert.equal(new Set(shoulders.map(n=>art.source(n))).size,shoulders.length);
 assert.equal(art.source('Неизвестное упражнение'),null);

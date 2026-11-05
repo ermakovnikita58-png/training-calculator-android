@@ -72,7 +72,7 @@
     try {
       if(el.id==='n8-picker'||el.id==='n8-day')originalEditorBack();
       else if(el.id==='n8-program')n8CloseOverlay();
-      else {const close={modalback:closeModal,f5DetailBack:f5CloseCard,f5EditBack:f5CloseEditor,x7BrowserBack:x7CloseBrowser,x7DetailBack:x7CloseDetail,y8DetailBack:y8CloseDetail,n9Modal:n9Close}[el.id];close?.();}
+      else {const close={modalback:closeModal,f5DetailBack:f5CloseCard,f5EditBack:f5CloseEditor,x7BrowserBack:x7BackFromTop,x7DetailBack:x7CloseDetail,y8DetailBack:y8CloseDetail,n9Modal:n9Close}[el.id];close?.();}
       dirty.delete(el.id);
     } finally {editorApproved=false;}
     announce();

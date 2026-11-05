@@ -6,6 +6,7 @@
   ],
   "resources": {
     "anatomy/muscle-0.webp": {
+      "id": "chest",
       "group": "Грудь",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/muscle-0.webp",
@@ -20,6 +21,7 @@
       "highlight": "orange"
     },
     "anatomy/muscle-1.webp": {
+      "id": "back",
       "group": "Спина",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/muscle-1.webp",
@@ -34,6 +36,7 @@
       "highlight": "orange"
     },
     "anatomy/muscle-2.webp": {
+      "id": "shoulders",
       "group": "Плечи",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/muscle-2.webp",
@@ -48,6 +51,7 @@
       "highlight": "orange"
     },
     "anatomy/muscle-3.webp": {
+      "id": "biceps",
       "group": "Бицепс",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/muscle-3.webp",
@@ -62,6 +66,7 @@
       "highlight": "orange"
     },
     "anatomy/muscle-4.webp": {
+      "id": "triceps",
       "group": "Трицепс",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/muscle-4.webp",
@@ -76,6 +81,7 @@
       "highlight": "orange"
     },
     "anatomy/reference-v3/forearms.webp": {
+      "id": "forearms",
       "group": "Предплечья",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/reference-v3/forearms.webp",
@@ -101,6 +107,7 @@
       "highlight": "orange"
     },
     "anatomy/reference-v3/abs.webp": {
+      "id": "abs",
       "group": "Пресс",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/reference-v3/abs.webp",
@@ -126,6 +133,7 @@
       "highlight": "orange"
     },
     "anatomy/reference-v3/glutes.webp": {
+      "id": "glutes",
       "group": "Ягодицы",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/reference-v3/glutes.webp",
@@ -151,6 +159,7 @@
       "highlight": "orange"
     },
     "anatomy/reference-v3/quads.webp": {
+      "id": "quads",
       "group": "Квадрицепс",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/reference-v3/quads.webp",
@@ -177,6 +186,7 @@
       "highlight": "orange"
     },
     "anatomy/reference-v3/hamstrings.webp": {
+      "id": "hamstrings",
       "group": "Бицепс бедра",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/reference-v3/hamstrings.webp",
@@ -202,6 +212,7 @@
       "highlight": "orange"
     },
     "anatomy/reference-v3/calves.webp": {
+      "id": "calves",
       "group": "Икры",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/reference-v3/calves.webp",
@@ -227,6 +238,7 @@
       "highlight": "orange"
     },
     "anatomy/reference-v3/lower-back.webp": {
+      "id": "lower-back",
       "group": "Нижняя спина",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/reference-v3/lower-back.webp",
@@ -252,6 +264,7 @@
       "highlight": "orange"
     },
     "anatomy/reference-v3/cardio.webp": {
+      "id": "cardio",
       "group": "Кардио",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/reference-v3/cardio.webp",
@@ -278,6 +291,7 @@
       "highlight": "none-non-muscle-category"
     },
     "anatomy/reference-v3/mobility.webp": {
+      "id": "mobility",
       "group": "Мобильность",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/reference-v3/mobility.webp",
@@ -18745,84 +18759,112 @@
   },
   "muscleGroups": {
     "Грудь": {
+      "id": "chest",
+      "group": "Грудь",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/muscle-0.webp",
       "status": "ready-style",
       "highlight": "orange"
     },
     "Спина": {
+      "id": "back",
+      "group": "Спина",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/muscle-1.webp",
       "status": "ready-style",
       "highlight": "orange"
     },
     "Плечи": {
+      "id": "shoulders",
+      "group": "Плечи",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/muscle-2.webp",
       "status": "ready-style",
       "highlight": "orange"
     },
     "Бицепс": {
+      "id": "biceps",
+      "group": "Бицепс",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/muscle-3.webp",
       "status": "ready-style",
       "highlight": "orange"
     },
     "Трицепс": {
+      "id": "triceps",
+      "group": "Трицепс",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/muscle-4.webp",
       "status": "ready-style",
       "highlight": "orange"
     },
     "Предплечья": {
+      "id": "forearms",
+      "group": "Предплечья",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/reference-v3/forearms.webp",
       "status": "ready-style",
       "highlight": "orange"
     },
     "Пресс": {
+      "id": "abs",
+      "group": "Пресс",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/reference-v3/abs.webp",
       "status": "ready-style",
       "highlight": "orange"
     },
     "Ягодицы": {
+      "id": "glutes",
+      "group": "Ягодицы",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/reference-v3/glutes.webp",
       "status": "ready-style",
       "highlight": "orange"
     },
     "Квадрицепс": {
+      "id": "quads",
+      "group": "Квадрицепс",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/reference-v3/quads.webp",
       "status": "ready-style",
       "highlight": "orange"
     },
     "Бицепс бедра": {
+      "id": "hamstrings",
+      "group": "Бицепс бедра",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/reference-v3/hamstrings.webp",
       "status": "ready-style",
       "highlight": "orange"
     },
     "Икры": {
+      "id": "calves",
+      "group": "Икры",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/reference-v3/calves.webp",
       "status": "ready-style",
       "highlight": "orange"
     },
     "Нижняя спина": {
+      "id": "lower-back",
+      "group": "Нижняя спина",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/reference-v3/lower-back.webp",
       "status": "ready-style",
       "highlight": "orange"
     },
     "Кардио": {
+      "id": "cardio",
+      "group": "Кардио",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/reference-v3/cardio.webp",
       "status": "ready-style",
       "highlight": "none-non-muscle-category"
     },
     "Мобильность": {
+      "id": "mobility",
+      "group": "Мобильность",
       "type": "MUSCLE_GROUP_ART",
       "file": "anatomy/reference-v3/mobility.webp",
       "status": "ready-style",

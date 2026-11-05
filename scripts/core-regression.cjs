@@ -12,7 +12,10 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=r
  await page.goto('https://appassets.androidplatform.net/assets/index.html');
  await test('Offline startup and 556 catalog entries',async()=>assert.equal(await page.evaluate(()=>forgeRefreshCatalog().length),556));
  await test('Create, edit and activate program',async()=>{
- await page.evaluate(()=>{n8NewProgram();document.getElementById('n8ProgName').value='Audit program';n8EditProgramDay(-1);n8DayField('name','Audit day');n8PickExercise(encodeURIComponent('Жим штанги лёжа'));n8UpdateEx(0,'sets',2);n8UpdateEx(0,'weight',60);n8UpdateEx(0,'reps',5);n8DaySave();n8SaveProgram();activateProgram(state.programs.at(-1).id)});
+ await page.evaluate(()=>{n8NewProgram();document.getElementById('n8ProgName').value='Audit program';n8EditProgramDay(-1);n8DayField('name','Audit day');n8OpenPicker()});
+ await page.locator('#n8-picker [data-picker-query]').fill('Жим штанги лёжа');
+ await page.locator('#n8-picker [data-picker-add="Жим штанги лёжа"]').click();
+ await page.evaluate(()=>{n8UpdateEx(0,'sets',2);n8UpdateEx(0,'weight',60);n8UpdateEx(0,'reps',5);n8DaySave();n8SaveProgram();activateProgram(state.programs.at(-1).id)});
  const s=await snap();assert.equal(s.programs.at(-1).name,'Audit program');assert.equal(s.plans[0].exerciseConfig['Жим штанги лёжа'].weight,60);
  });
  await test('Start workout using program configuration; log set and RPE',async()=>{await page.evaluate(()=>{startWorkout(0);n8EditSet(0,0,'weight',65);n8EditSet(0,0,'reps',6);state.active.exercises[0].sets[0].rpe=8;n8LogSet(0,0)});const s=await snap();assert.equal(s.active.exercises[0].sets.length,2);assert.equal(s.active.exercises[0].sets[0].done,true);assert.equal(s.active.exercises[0].sets[0].weight,65)});
