@@ -1,0 +1,65 @@
+name: Firebase Test Lab
+on:
+  workflow_dispatch:
+    inputs:
+      model:
+        description: Test Lab model ID
+        required: true
+      version:
+        description: Test Lab Android version ID
+        required: true
+      confirm_budget:
+        description: Authorize one test matrix within the project budget
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  test-lab:
+    if: inputs.confirm_budget && github.ref == 'refs/heads/main'
+    environment: firebase-test-lab
+    permissions:
+      contents: read
+      id-token: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v4
+      - run: sdkmanager "platforms;android-36" "build-tools;35.0.0"
+      - uses: gradle/actions/setup-gradle@v4
+      - run: bash ./gradlew :app:assembleDebug :app:assembleDebugAndroidTest --no-daemon
+      - uses: google-github-actions/auth@v3
+        with:
+          workload_identity_provider: ${{ vars.FORGE_TEST_LAB_WIF_PROVIDER }}
+          service_account: ${{ vars.FORGE_TEST_LAB_SERVICE_ACCOUNT }}
+          project_id: ${{ vars.FORGE_TEST_LAB_PROJECT }}
+      - uses: google-github-actions/setup-gcloud@v3
+      - name: Run one instrumentation matrix
+        shell: bash
+        env:
+          MODEL: ${{ inputs.model }}
+          VERSION: ${{ inputs.version }}
+          BUCKET: ${{ vars.FORGE_TEST_LAB_RESULTS_BUCKET }}
+          PROJECT: ${{ vars.FORGE_TEST_LAB_PROJECT }}
+        run: |
+          set -euo pipefail
+          [[ "$MODEL" =~ ^[a-zA-Z0-9_]+$ && "$VERSION" =~ ^[a-zA-Z0-9._-]+$ ]]
+          : "${BUCKET:?Configure a private Test Lab bucket}" "${PROJECT:?Configure the Test Lab project}"
+          RESULT="forge/${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          printf 'Test Lab results: gs://%s/%s\n' "$BUCKET" "$RESULT" >> "$GITHUB_STEP_SUMMARY"
+          gcloud firebase test android run --project "$PROJECT" --type instrumentation \
+            --app app/build/outputs/apk/debug/app-debug.apk \
+            --test app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk \
+            --device "model=$MODEL,version=$VERSION,locale=ru,orientation=portrait" \
+            --results-bucket "$BUCKET" --results-dir "$RESULT" --timeout 12m 2>&1 | tee firebase-test-lab.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: forge-test-lab-log
+          path: firebase-test-lab.log
+          if-no-files-found: ignore

@@ -5,7 +5,11 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.util.Base64
-import android.webkit.JavascriptInterface
+import androidx.webkit.WebViewCompat
+import androidx.webkit.WebViewFeature
+import androidx.webkit.JavaScriptReplyProxy
+import org.json.JSONObject
+import java.util.concurrent.Executors
 import android.webkit.ValueCallback
 import android.webkit.WebChromeClient
 import android.webkit.WebResourceRequest
@@ -41,6 +45,7 @@ class MainActivity : ComponentActivity() {
     private lateinit var webView: WebView
     private val assetHost = "https://appassets.androidplatform.net"
     private lateinit var assetLoader: WebViewAssetLoader
+    private val storageWorker = Executors.newSingleThreadExecutor()
     private var chooserCallback: ValueCallback<Array<Uri>>? = null
     private var pendingBytes: ByteArray? = null
     private var pendingBackupRequest: Int? = null
@@ -155,7 +160,13 @@ class MainActivity : ComponentActivity() {
         webView.settings.allowFileAccessFromFileURLs = false
         webView.settings.allowUniversalAccessFromFileURLs = false
         webView.settings.mixedContentMode = android.webkit.WebSettings.MIXED_CONTENT_NEVER_ALLOW
-        webView.addJavascriptInterface(Bridge(), "AndroidBridge")
+        if (WebViewFeature.isFeatureSupported(WebViewFeature.WEB_MESSAGE_LISTENER)) {
+            WebViewCompat.addWebMessageListener(webView, "ForgeNative", setOf(assetHost)) { _, message, origin, mainFrame, reply ->
+                if (mainFrame && origin.toString() == assetHost && isLocalAsset(webView.url?.let(Uri::parse))) {
+                    handleMessage(message.data, reply)
+                }
+            }
+        }
         webView.webViewClient = object : WebViewClient() {
             override fun onPageStarted(view: WebView?, url: String?, favicon: android.graphics.Bitmap?) {
                 navigationReady = false
@@ -164,16 +175,26 @@ class MainActivity : ComponentActivity() {
                 updateBackCallback()
             }
             override fun shouldInterceptRequest(view: WebView?, request: WebResourceRequest?): WebResourceResponse? {
-                return request?.url?.let { assetLoader.shouldInterceptRequest(it) }
+                val uri = request?.url ?: return null
+                if (request.isForMainFrame && !isLocalAsset(uri)) return WebResourceResponse("text/plain", "utf-8", null)
+                val response = assetLoader.shouldInterceptRequest(uri)
+                if (response != null && uri.path?.endsWith(".html") == true) {
+                    response.responseHeaders = response.responseHeaders.orEmpty() + mapOf(
+                        "Content-Security-Policy" to "script-src 'self' 'unsafe-inline'; frame-src 'none'; object-src 'none'; base-uri 'none'",
+                        "Referrer-Policy" to "no-referrer"
+                    )
+                }
+                return response
             }
             override fun shouldOverrideUrlLoading(view: WebView?, request: WebResourceRequest?): Boolean {
                 val uri = request?.url ?: return false
-                if (uri.toString().startsWith(assetHost + "/assets/")) return false
+                if (!request.isForMainFrame) return true
+                if (isLocalAsset(uri)) return false
                 if (uri.scheme == "https" || uri.scheme == "http") {
                     try { startActivity(Intent(Intent.ACTION_VIEW, uri)) } catch (_: Exception) {}
                     return true
                 }
-                return uri.scheme != "file" && uri.scheme != "about" && uri.scheme != "data" && uri.scheme != "blob"
+                return true
             }
         }
         webView.webChromeClient = object : WebChromeClient() {
@@ -182,8 +203,12 @@ class MainActivity : ComponentActivity() {
                     val allowed = request?.resources?.filter { it == PermissionRequest.RESOURCE_VIDEO_CAPTURE }?.toTypedArray() ?: emptyArray()
                     if (allowed.isEmpty() || request?.origin?.toString() != assetHost) { request?.deny(); return@runOnUiThread }
                     if (checkSelfPermission(android.Manifest.permission.CAMERA) == android.content.pm.PackageManager.PERMISSION_GRANTED) request?.grant(allowed)
+                    else if (pendingWebPermission != null) request?.deny()
                     else { pendingWebPermission = request; cameraPermissionLauncher.launch(android.Manifest.permission.CAMERA) }
                 }
+            }
+            override fun onPermissionRequestCanceled(request: PermissionRequest?) {
+                if (pendingWebPermission === request) pendingWebPermission = null
             }
             override fun onShowFileChooser(view: WebView?, callback: ValueCallback<Array<Uri>>?, params: WebChromeClient.FileChooserParams?): Boolean {
                 if (pendingBytes != null) { callback?.onReceiveValue(null); return true }
@@ -211,22 +236,63 @@ class MainActivity : ComponentActivity() {
         super.onPause()
     }
 
-    inner class Bridge {
-        @JavascriptInterface fun navigationState(ready: Boolean, canGoBack: Boolean) {
-            runOnUiThread {
-                if (!isDestroyed && webView.url?.startsWith(assetHost + "/assets/") == true) {
-                    navigationReady = ready
-                    internalBack = canGoBack
-                    updateBackCallback()
-                }
+    private fun isLocalAsset(uri: Uri?): Boolean =
+        uri?.scheme == "https" && uri.authority == "appassets.androidplatform.net" && uri.path?.startsWith("/assets/") == true
+
+    private fun handleMessage(data: String?, reply: JavaScriptReplyProxy) {
+        if (data == null || data.length > 30_010_000) return
+        val message = runCatching { JSONObject(data) }.getOrNull() ?: return
+        when (message.optString("action")) {
+            "navigation" -> {
+                navigationReady = message.optBoolean("ready")
+                internalBack = message.optBoolean("canGoBack")
+                updateBackCallback()
             }
-        }
-        @JavascriptInterface fun saveBlob(filename: String, base64: String, mimeType: String) {
-            exportDocument(filename, base64, mimeType)
-        }
-        @JavascriptInterface fun saveTrainingImportBackup(filename: String, base64: String, requestId: Int) {
-            exportDocument(filename, base64, "application/json", requestId)
+            "export" -> {
+                val mime = message.optString("mime")
+                val request = message.optInt("request", -1).takeIf { it >= 0 }
+                if (mime !in setOf("application/json", "text/csv")) {
+                    reportBackup(request, false)
+                    return
+                }
+                exportDocument(message.optString("filename").take(200), message.optString("base64"), mime, request)
+            }
+            "checkpoint", "readCheckpoint", "deleteCheckpoint", "diagnostics" -> checkpointMessage(message, reply)
         }
     }
-    override fun onDestroy() { if (::webView.isInitialized) { webView.removeJavascriptInterface("AndroidBridge"); webView.destroy() }; super.onDestroy() }
+
+    private fun checkpointMessage(message: JSONObject, reply: JavaScriptReplyProxy) {
+        val action = message.optString("action")
+        val webVersion = WebViewCompat.getCurrentWebViewPackage(this)?.versionName ?: "не определена"
+        storageWorker.execute {
+            val dao = runCatching { ForgeDatabase.get(applicationContext).checkpoints() }
+            val result = JSONObject()
+            when (action) {
+                "checkpoint" -> result.put("kind", "saved").put("ok", dao.mapCatching { it.save(message.getString("payload")) }.isSuccess)
+                "deleteCheckpoint" -> result.put("kind", "deleted").put("ok", dao.mapCatching { it.delete() }.isSuccess)
+                "readCheckpoint" -> result.put("kind", "checkpoint").put("payload", dao.mapCatching { it.read() }.getOrNull()?.payload)
+                "diagnostics" -> {
+                    val checkpoint = dao.mapCatching { it.read() }
+                    val status = when {
+                        checkpoint.isFailure -> "недоступна"
+                        checkpoint.getOrNull() != null -> "целостность проверена"
+                        else -> "нет проверенной копии"
+                    }
+                    result.put("kind", "diagnostics").put("details", JSONObject()
+                        .put("FORGE", "${BuildConfig.VERSION_NAME} (${BuildConfig.VERSION_CODE})")
+                        .put("Android API", android.os.Build.VERSION.SDK_INT)
+                        .put("WebView", webVersion)
+                        .put("Хранилище", "локальный дневник WebView")
+                        .put("Резервная копия Room", status))
+                }
+            }
+            runOnUiThread { if (!isDestroyed) runCatching { reply.postMessage(result.toString()) } }
+        }
+    }
+
+    override fun onDestroy() {
+        storageWorker.shutdown()
+        if (::webView.isInitialized) webView.destroy()
+        super.onDestroy()
+    }
 }

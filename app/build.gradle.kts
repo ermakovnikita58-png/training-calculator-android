@@ -1,18 +1,20 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.devtools.ksp") version "2.3.10"
 }
 
 val uploadStorePath = System.getenv("FORGE_KEYSTORE_FILE") ?: ""
 android {
     namespace = "ru.trainingcalculator.app"
     compileSdk = 36
+    buildFeatures { buildConfig = true }
     defaultConfig {
-        applicationId = "ru.trainingcalculator.app" // KEEP for updates; choose a unique ID before first Google Play release.
+        applicationId = "ru.trainingcalculator.app" // Keep this ID for all updates.
         minSdk = 24
         targetSdk = 36
-        versionCode = 23
-        versionName = "11.2.5"
+        versionCode = 24
+        versionName = "11.3.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     signingConfigs {
@@ -41,7 +43,10 @@ kotlin {
         jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
     }
 }
+ksp { arg("room.schemaLocation", "$projectDir/schemas") }
 dependencies {
+    implementation("androidx.room:room-runtime:2.8.5")
+    ksp("androidx.room:room-compiler:2.8.5")
     androidTestImplementation("androidx.test:core:1.6.1")
     androidTestImplementation("androidx.test:runner:1.6.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
