@@ -11,6 +11,11 @@
     <button class="btn secondary small" type="button" data-device="copy">Скопировать технический отчёт</button>
     <h2 class="cardtitle">Конфиденциальность и данные</h2>
     <p class="muted">Дневник хранится на устройстве. Облачная копия настраивается отдельно в разделе «Аккаунт». JSON можно сохранить для переноса на другой телефон.</p>
+    <div class="grid2">
+      <button class="btn secondary small" type="button" data-device="export">Экспорт JSON</button>
+      <button class="btn secondary small" type="button" data-device="cloud">Аккаунт и синхронизация</button>
+      <button class="btn ghost small" type="button" data-device="reset">Удалить локальный дневник</button>
+    </div>
     <div id="forge-privacy-options" hidden>
       <p class="muted" id="forge-device-permissions"></p>
       <label class="setting"><span>Уведомлять о завершении отдыха</span><input type="checkbox" data-pref="notifications"></label>
@@ -27,10 +32,13 @@
       <button class="btn secondary small" type="button" data-device="health-disconnect">Отключить</button>
       <button class="btn secondary small" type="button" data-device="health-weight" hidden>Добавить измерение массы</button>
     </div>
-    <div class="grid2" id="forge-checkpoint-actions" hidden>
+    <div id="forge-checkpoint-actions" hidden>
+      <p class="muted">Резервная копия на устройстве удаляется отдельной кнопкой.</p>
+      <div class="grid2">
       <button class="btn secondary small" type="button" data-device="save">Сделать копию на устройстве</button>
       <button class="btn secondary small" type="button" data-device="restore">Восстановить копию</button>
       <button class="btn secondary small" type="button" data-device="delete">Удалить копию</button>
+      </div>
     </div>`;
   settings.append(card);
 
@@ -109,9 +117,13 @@
         break;
       }
       case 'test-report': bridge.diagnosticEvent('test_non_fatal'); break;
+      case 'export': exportData(); break;
+      case 'cloud': showPage('account'); break;
+      case 'reset': openModal('reset'); break;
       case 'copy':
         try {
-          await navigator.clipboard.writeText(technicalReport);
+          const sync = Object.entries(window.ForgeCloudStatus?.() || {}).map(([key, value]) => key + ': ' + value);
+          await navigator.clipboard.writeText([technicalReport, ...sync].join('\n'));
           toast('Технический отчёт скопирован');
         } catch { toast('Браузер не разрешил копирование') }
         break;

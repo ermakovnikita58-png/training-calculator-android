@@ -16,6 +16,7 @@ require(posthogKey.isEmpty() || posthogHost in setOf("https://us.i.posthog.com",
     "Configure a supported HTTPS PostHog ingest host"
 }
 
+val storeBuild = providers.gradleProperty("forge.storeBuild").orNull == "true"
 val uploadStorePath = System.getenv("FORGE_KEYSTORE_FILE") ?: ""
 android {
     namespace = "ru.trainingcalculator.app"
@@ -25,12 +26,20 @@ android {
         applicationId = "ru.trainingcalculator.app" // Keep this ID for all updates.
         minSdk = 24
         targetSdk = 36
+        buildConfigField("boolean", "FORGE_ENABLE_PAYMENTS", "false")
         buildConfigField("boolean", "FORGE_CRASH_CONFIGURED", crashConfigured.toString())
         buildConfigField("String", "FORGE_POSTHOG_KEY", "\"$posthogKey\"")
         buildConfigField("String", "FORGE_POSTHOG_HOST", "\"${if (posthogKey.isEmpty()) "" else posthogHost}\"")
         versionCode = 24
         versionName = "11.3.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+    if (storeBuild) {
+        flavorDimensions += "store"
+        productFlavors {
+            create("play") { dimension = "store" }
+            create("rustore") { dimension = "store" }
+        }
     }
     signingConfigs {
         if (uploadStorePath.isNotBlank()) {
@@ -60,6 +69,11 @@ kotlin {
 }
 ksp { arg("room.schemaLocation", "$projectDir/schemas") }
 dependencies {
+    if (storeBuild) {
+        add("playImplementation", "com.android.billingclient:billing:9.1.0")
+        add("rustoreImplementation", platform("ru.rustore.sdk:bom:2026.10.01"))
+        add("rustoreImplementation", "ru.rustore.sdk:pay")
+    }
     implementation(platform("com.google.firebase:firebase-bom:35.1.0"))
     implementation("com.google.firebase:firebase-crashlytics")
     implementation("androidx.work:work-runtime:2.11.0")

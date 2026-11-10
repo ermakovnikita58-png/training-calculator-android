@@ -10,3 +10,4 @@ node_modules/
 test-results/
 /app/google-services.json
 /app/src/*/google-services.json
+gha-creds-*.json

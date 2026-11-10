@@ -17,7 +17,6 @@ import androidx.annotation.RequiresApi
 import org.json.JSONObject
 import java.time.Duration
 import java.time.Instant
-import java.time.ZoneId
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
@@ -48,7 +47,7 @@ internal object ForgeHealth {
                 .setTimeRangeFilter(range(now.minus(Duration.ofDays(30)), now)).setAscending(false).setPageSize(1).build()
             val response = awaitHealth { client.readRecords(request, context.mainExecutor, it) }
             response.records.firstOrNull()?.let { record ->
-                val localDate = record.time.atZone(record.zoneOffset ?: ZoneId.systemDefault()).toLocalDate()
+                val localDate = record.time.atZone(record.zoneOffset).toLocalDate()
                 result.put("weight", JSONObject().put("kg", record.weight.inGrams / 1000)
                     .put("date", localDate.toString()).put("id", record.metadata.id))
             }

@@ -37,6 +37,8 @@ jobs:
       - name: Prepare emulator SDK with download retries
         shell: bash
         run: |
+          sudo apt-get update -q
+          sudo apt-get install -y libpulse0
           for delay in 0 5 15; do
             sleep "$delay"
             if sdkmanager "emulator" "system-images;android-35;google_apis;x86_64" && "$ANDROID_HOME/emulator/emulator" -version; then exit 0; fi

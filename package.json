@@ -9,7 +9,7 @@
     "test:training-import": "node --test scripts/training-import.test.cjs && node scripts/training-import-browser.cjs",
     "test:device-settings": "node scripts/device-settings-browser.cjs",
     "test:barcode": "node --test scripts/barcode-food.test.cjs && node scripts/barcode-browser.cjs",
-    "test:cloud-snapshot": "node --test scripts/cloud-snapshot.test.cjs"
+    "test:cloud-snapshot": "node --test scripts/cloud-snapshot.test.cjs && node scripts/cloud-snapshot-browser.cjs"
   },
   "devDependencies": {
     "@electric-sql/pglite": "0.5.16",
