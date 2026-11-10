@@ -43,8 +43,7 @@ class MainActivity : ComponentActivity() {
     private lateinit var assetLoader: WebViewAssetLoader
     private var chooserCallback: ValueCallback<Array<Uri>>? = null
     private var pendingBytes: ByteArray? = null
-    private var pendingMime = "application/octet-stream"
-    private var pendingName = "forge-backup.json"
+    private var pendingBackupRequest: Int? = null
     private var pendingWebPermission: PermissionRequest? = null
     private val cameraPermissionLauncher = registerForActivityResult(androidx.activity.result.contract.ActivityResultContracts.RequestPermission()) { granted ->
         val req = pendingWebPermission; pendingWebPermission = null
@@ -53,21 +52,62 @@ class MainActivity : ComponentActivity() {
 
     private val picker = registerForActivityResult(androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult()) { result ->
         val callback = chooserCallback
-        if (callback != null) {
-            val uri = if (result.resultCode == Activity.RESULT_OK) result.data?.data else null
-            callback.onReceiveValue(if (uri != null) arrayOf(uri) else null)
-            chooserCallback = null
-            return@registerForActivityResult
+        chooserCallback = null
+        val data = result.data
+        val uris = if (result.resultCode == Activity.RESULT_OK) {
+            data?.clipData?.let { items ->
+                Array(items.itemCount) { items.getItemAt(it).uri }
+            } ?: data?.data?.let { arrayOf(it) }
+        } else null
+        callback?.onReceiveValue(uris)
+    }
+
+    private val saveDocument = registerForActivityResult(androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult()) { result ->
+        val bytes = pendingBytes
+        val request = pendingBackupRequest
+        pendingBytes = null
+        pendingBackupRequest = null
+        val uri = result.data?.data
+        val saved = if (result.resultCode == Activity.RESULT_OK && uri != null && bytes != null) {
+            val written = runCatching {
+                requireNotNull(contentResolver.openOutputStream(uri, "wt")).use { it.write(bytes) }
+            }.isSuccess
+            Toast.makeText(this, if (written) "Резервная копия сохранена" else "Не удалось сохранить файл", Toast.LENGTH_SHORT).show()
+            written
+        } else false
+        reportBackup(request, saved)
+    }
+
+    private fun reportBackup(request: Int?, saved: Boolean) {
+        if (request != null && !isDestroyed && ::webView.isInitialized) {
+            webView.evaluateJavascript("window.ForgeTrainingImport?.onBackupResult($request,$saved)", null)
         }
-        if (result.resultCode == Activity.RESULT_OK) {
-            val uri = result.data?.data
-            val bytes = pendingBytes
-            if (uri != null && bytes != null) {
-                try { contentResolver.openOutputStream(uri)?.use { it.write(bytes) }; Toast.makeText(this, "Резервная копия сохранена", Toast.LENGTH_SHORT).show() }
-                catch (_: Exception) { Toast.makeText(this, "Не удалось сохранить файл", Toast.LENGTH_LONG).show() }
+    }
+
+    private fun exportDocument(filename: String, base64: String, mime: String, request: Int? = null) {
+        runOnUiThread {
+            if (pendingBytes != null || chooserCallback != null) {
+                reportBackup(request, false)
+                return@runOnUiThread
+            }
+            try {
+                require(base64.length <= 30_000_000)
+                pendingBytes = Base64.decode(base64, Base64.DEFAULT)
+                pendingBackupRequest = request
+                val name = filename.substringAfterLast('/').substringAfterLast('\\').ifBlank { "forge-backup.json" }
+                val intent = Intent(Intent.ACTION_CREATE_DOCUMENT).apply {
+                    addCategory(Intent.CATEGORY_OPENABLE)
+                    type = mime.ifBlank { "application/octet-stream" }
+                    putExtra(Intent.EXTRA_TITLE, name)
+                }
+                saveDocument.launch(intent)
+            } catch (_: Exception) {
+                pendingBytes = null
+                pendingBackupRequest = null
+                reportBackup(request, false)
+                Toast.makeText(this, "Не удалось подготовить экспорт", Toast.LENGTH_LONG).show()
             }
         }
-        pendingBytes = null
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -146,10 +186,20 @@ class MainActivity : ComponentActivity() {
                 }
             }
             override fun onShowFileChooser(view: WebView?, callback: ValueCallback<Array<Uri>>?, params: WebChromeClient.FileChooserParams?): Boolean {
+                if (pendingBytes != null) { callback?.onReceiveValue(null); return true }
                 chooserCallback?.onReceiveValue(null); chooserCallback = callback
                 val accepts = params?.acceptTypes?.joinToString(",") ?: ""
-                val mime = if (accepts.contains("image/")) "image/*" else "application/json"
-                val intent = Intent(Intent.ACTION_OPEN_DOCUMENT).apply { addCategory(Intent.CATEGORY_OPENABLE); type = mime }
+                val textImport = accepts.contains("text/plain") || accepts.contains(".txt")
+                val intent = Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
+                    addCategory(Intent.CATEGORY_OPENABLE)
+                    type = when {
+                        accepts.contains("image/") -> "image/*"
+                        textImport -> "*/*"
+                        else -> "application/json"
+                    }
+                    if (textImport) putExtra(Intent.EXTRA_MIME_TYPES, arrayOf("text/plain", "application/json", "text/json", "application/octet-stream"))
+                    if (params?.mode == WebChromeClient.FileChooserParams.MODE_OPEN_MULTIPLE) putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true)
+                }
                 return try { picker.launch(intent); true } catch (_: Exception) { chooserCallback = null; callback?.onReceiveValue(null); false }
             }
         }
@@ -172,16 +222,10 @@ class MainActivity : ComponentActivity() {
             }
         }
         @JavascriptInterface fun saveBlob(filename: String, base64: String, mimeType: String) {
-            runOnUiThread {
-                try {
-                    if (base64.length > 30_000_000) throw IllegalArgumentException("Export too large")
-                    pendingBytes = Base64.decode(base64, Base64.DEFAULT)
-                    pendingMime = mimeType.ifBlank { "application/octet-stream" }
-                    pendingName = filename.substringAfterLast('/').substringAfterLast('\\').ifBlank { "forge-backup.json" }
-                    val intent = Intent(Intent.ACTION_CREATE_DOCUMENT).apply { addCategory(Intent.CATEGORY_OPENABLE); type = pendingMime; putExtra(Intent.EXTRA_TITLE, pendingName) }
-                    picker.launch(intent)
-                } catch (_: Exception) { pendingBytes = null; Toast.makeText(this@MainActivity, "Не удалось подготовить экспорт", Toast.LENGTH_LONG).show() }
-            }
+            exportDocument(filename, base64, mimeType)
+        }
+        @JavascriptInterface fun saveTrainingImportBackup(filename: String, base64: String, requestId: Int) {
+            exportDocument(filename, base64, "application/json", requestId)
         }
     }
     override fun onDestroy() { if (::webView.isInitialized) { webView.removeJavascriptInterface("AndroidBridge"); webView.destroy() }; super.onDestroy() }

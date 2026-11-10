@@ -40,6 +40,8 @@ jobs:
         run: npm test
       - name: Test the product catalog and shared exercise picker
         run: npm run test:catalog-picker
+      - name: Test training import preview and atomic merge
+        run: npm run test:training-import
       - name: Require all 556 exercise illustrations
         run: node scripts/check-art-coverage.cjs
       - name: Upload Performance UI screenshots
