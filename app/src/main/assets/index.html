@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru"><head><meta charset="utf-8"/><script src="native-bridge.js"></script><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="#101411" name="theme-color"/><title>FORGE Training 10.0 — Studio</title><style>
+<html lang="ru"><head><meta charset="utf-8"/><script src="native-bridge.js"></script><script src="cloud-snapshot.js"></script><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="#101411" name="theme-color"/><title>FORGE Training 10.0 — Studio</title><style>
 :root{--bg:#101411;--panel:#1a201c;--panel2:#222a24;--line:#303a32;--text:#f4f7f2;--muted:#9ca89e;--lime:#c7f36b;--lime2:#a8d84d;--orange:#ff9c64;--red:#ff7777;--blue:#83c9ff;--radius:22px}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;font-size:14px;line-height:1.4;padding-bottom:94px}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0}button:focus-visible,input:focus-visible{outline:2px solid var(--lime);outline-offset:2px}.app{max-width:600px;margin:auto;min-height:100vh}.top{display:flex;align-items:center;justify-content:space-between;padding:22px 20px 12px;position:sticky;top:0;background:rgba(16,20,17,.94);backdrop-filter:blur(16px);z-index:4}.brand{display:flex;align-items:center;gap:9px;font-weight:900;letter-spacing:2px;font-size:15px}.brandmark{width:28px;height:28px;border-radius:9px;background:var(--lime);display:grid;place-items:center;color:#111;font-weight:1000;font-size:17px}.topright{display:flex;gap:9px;align-items:center}.iconbtn{width:40px;height:40px;border-radius:14px;background:var(--panel2);color:var(--text);display:grid;place-items:center;font-size:18px}.avatar{width:39px;height:39px;border-radius:50%;background:linear-gradient(140deg,#c7f36b,#7eaa42);color:#17200f;display:grid;place-items:center;font-weight:900}.page{display:none;padding:8px 16px 20px;animation:fade .2s ease}.page.active{display:block}@keyframes fade{from{opacity:.3;transform:translateY(4px)}to{opacity:1;transform:none}}.eyebrow{color:var(--lime);font-size:11px;letter-spacing:1.7px;font-weight:800;text-transform:uppercase}.title{font-size:29px;line-height:1.08;letter-spacing:-.8px;margin:7px 0 8px;font-weight:850}.subtitle{color:var(--muted);margin:0 0 18px;font-size:13px}.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:17px;margin-bottom:13px}.cardhead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:13px}.cardtitle{font-size:15px;font-weight:800}.linkbtn{color:var(--lime);background:none;padding:6px;font-size:12px;font-weight:800}.hero{background:linear-gradient(135deg,#c7f36b,#a5d64b);color:#17200f;border:0;position:relative;overflow:hidden;min-height:222px;padding:22px}.hero .eyebrow{color:#34491d}.hero h2{font-size:27px;line-height:1.05;margin:10px 0;max-width:260px;letter-spacing:-.6px}.hero p{color:#34491d;max-width:220px;font-size:12px}.heroart{position:absolute;right:-10px;bottom:0;width:170px;height:170px;opacity:.95}.btn{border-radius:14px;padding:13px 16px;font-weight:850;display:inline-flex;align-items:center;justify-content:center;gap:8px}.btn.primary{background:var(--lime);color:#17200f}.btn.dark{background:#17200f;color:var(--lime)}.btn.secondary{background:var(--panel2);color:var(--text);border:1px solid var(--line)}.btn.ghost{background:transparent;color:var(--muted);border:1px solid var(--line)}.btn.danger{background:#472522;color:#ffaaa1}.btn.full{width:100%}.btn.small{padding:9px 12px;border-radius:11px;font-size:12px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:11px}.metric{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:15px}.metric .num{font-size:25px;font-weight:900;letter-spacing:-.8px}.metric .label{color:var(--muted);font-size:11px;margin-top:5px}.metric .delta{font-size:11px;color:var(--lime);margin-top:7px}.sectionlabel{font-size:18px;font-weight:850;margin:23px 2px 12px}.row{display:flex;align-items:center;gap:12px}.grow{flex:1;min-width:0}.exerciseicon{width:47px;height:47px;border-radius:15px;background:#2a3528;display:grid;place-items:center;color:var(--lime);font-size:22px;flex-shrink:0}.muted{color:var(--muted)}.tiny{font-size:11px}.strong{font-weight:800}.pill{display:inline-flex;align-items:center;gap:5px;padding:6px 9px;border-radius:9px;background:var(--panel2);font-size:10px;font-weight:800;color:var(--muted)}.pill.lime{background:#2c3b1e;color:var(--lime)}.progressbar{height:7px;background:#303a32;border-radius:20px;overflow:hidden}.progressbar span{display:block;height:100%;background:var(--lime);border-radius:20px}.planrow{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.planrow:last-child{border-bottom:0}.daybadge{width:42px;height:48px;background:var(--panel2);border-radius:13px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0}.daybadge b{font-size:16px}.daybadge span{font-size:9px;color:var(--muted)}.tabbar{position:fixed;z-index:10;bottom:0;left:0;right:0;padding:10px 10px calc(10px + env(safe-area-inset-bottom));background:rgba(21,27,23,.96);backdrop-filter:blur(20px);border-top:1px solid #303a32;display:flex;justify-content:center}.tabs{display:flex;max-width:600px;width:100%;justify-content:space-around}.tab{background:none;color:#859087;display:flex;flex-direction:column;align-items:center;gap:4px;min-width:53px;padding:5px 7px;font-size:10px;font-weight:700}.tab .ico{font-size:19px;line-height:1.1}.tab.active{color:var(--lime)}.tab.active .ico{filter:drop-shadow(0 0 6px #c7f36650)}.chart{width:100%;height:155px;display:block}.chartlabel{display:flex;justify-content:space-between;color:var(--muted);font-size:10px;margin-top:8px}.exercise{padding:14px 0;border-bottom:1px solid var(--line)}.exercise:last-child{border-bottom:0}.settable{display:grid;grid-template-columns:30px 1fr 1fr 38px;gap:7px;align-items:center;margin-top:9px}.settable label{font-size:10px;color:var(--muted)}.settable input{width:100%;min-width:0;background:#121713;color:var(--text);border:1px solid var(--line);border-radius:9px;padding:9px 6px;text-align:center}.setcheck{width:32px;height:32px;border-radius:10px;background:var(--panel2);color:var(--muted)}.setcheck.done{background:var(--lime);color:#17200f}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}.field label{font-size:11px;color:var(--muted);font-weight:700}.field input,.field select,.field textarea{width:100%;padding:13px 12px;border-radius:12px;background:#111612;color:var(--text);border:1px solid var(--line);min-width:0}.field textarea{resize:vertical;min-height:75px}.modalback{position:fixed;inset:0;background:#000b;z-index:30;display:none;align-items:flex-end;justify-content:center}.modalback.show{display:flex}.modal{background:#1a201c;border:1px solid var(--line);border-radius:25px 25px 0 0;padding:22px 18px calc(22px + env(safe-area-inset-bottom));width:100%;max-width:600px;max-height:88vh;overflow:auto;animation:up .22s ease}.modalhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.modalhead h3{font-size:20px;margin:0}.close{width:33px;height:33px;border-radius:10px;background:var(--panel2);color:var(--text);font-size:20px}.navhead{display:flex;align-items:center;gap:10px;margin-bottom:20px}.back{background:var(--panel2);color:var(--text);border-radius:12px;width:38px;height:38px;font-size:18px}.loginwrap{min-height:75vh;display:flex;flex-direction:column;justify-content:center;padding:18px}.loginlogo{width:66px;height:66px;border-radius:22px;background:var(--lime);color:#17200f;display:grid;place-items:center;font-size:34px;font-weight:1000;margin-bottom:25px}.loginwrap h1{font-size:34px;line-height:1.03;letter-spacing:-1px;margin:10px 0 12px}.socialbtn{width:100%;border:1px solid var(--line);background:#202721;color:var(--text);padding:14px;border-radius:14px;margin:6px 0;font-weight:800;display:flex;align-items:center;justify-content:center;gap:10px}.notice{border-radius:13px;background:#2b3226;color:#c5d4b4;padding:12px;font-size:11px;margin:12px 0}.toast{position:fixed;z-index:60;bottom:100px;left:50%;transform:translateX(-50%);background:#f3f7ed;color:#182016;padding:12px 17px;border-radius:13px;font-weight:800;box-shadow:0 8px 30px #0005;display:none;max-width:90%;text-align:center}.toast.show{display:block}.foodrow{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.foodrow:last-child{border-bottom:0}.macro{height:5px;border-radius:8px;background:#303a32;margin-top:6px;overflow:hidden}.macro span{height:100%;display:block;background:var(--orange)}.empty{text-align:center;padding:25px 15px;color:var(--muted)}.empty .emoji{font-size:35px;margin-bottom:8px}.badge{width:42px;height:42px;border-radius:14px;background:#293522;color:var(--lime);display:grid;place-items:center;font-size:21px}.setting{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--line)}.setting:last-child{border-bottom:0}@media(min-width:560px){.modalback{align-items:center;padding:20px}.modal{border-radius:25px}.page{padding-left:20px;padding-right:20px}}
 .chip{white-space:nowrap;border:1px solid var(--line);background:var(--panel2);color:var(--muted);padding:8px 11px;border-radius:20px;font-size:11px;font-weight:800}.chip.active{background:var(--lime);color:#17200f;border-color:var(--lime)}.foodresult{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}.scanbox{background:#101612;border:1px solid var(--line);border-radius:16px;overflow:hidden}.scanbox video{width:100%;max-height:260px;object-fit:cover}.programcard{border:1px solid var(--line);border-radius:15px;padding:13px;margin:8px 0}.programcard.selected{border-color:var(--lime)}@media(min-width:560px){.scanbox video{max-height:320px}}
 /* FORGE 3.0 — powerlifting periodization */
@@ -1343,9 +1343,45 @@ const clean10=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>
 const fmt10=(n)=>Number.isFinite(Number(n))?Math.round(Number(n)*10)/10:0;
 const keys10={config:'forge10_public_cloud_config',session:'forge10_auth_session',sync:'forge10_sync_meta'};
 function json10(key,fallback){try{return JSON.parse(localStorage.getItem(key)||'null')||fallback}catch{return fallback}}
-let cfg10=json10(keys10.config,{url:'',key:''}), session10=json10(keys10.session,null), sync10=json10(keys10.sync,{auto:false,lastRemoteAt:null,lastLocalAt:null}), syncTimer10=null, cloudBusy10=false, cloudError10='', cloudMessage10='', applyingRemote10=false;
+let cfg10=json10(keys10.config,{url:'',key:''}), session10=null, sync10=json10(keys10.sync,{auto:false,lastRemoteAt:null,lastLocalAt:null}), syncTimer10=null, cloudBusy10=false, cloudError10='', cloudMessage10='', applyingRemote10=false;
 const originalSave10=save;
 function store10(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch{return false}}
+let cloudSessionStarted10 = false;
+function cloudScope10(){return session10?.user?.id ? cfg10.url+'|'+session10.user.id : ''}
+function saveSession10(){
+ try{localStorage.removeItem(keys10.session)}catch{}
+ window.AndroidBridge?.storeCloudSession?.(session10 ? {url:cfg10.url,session:session10} : null);
+}
+function acceptCloudSession10(session) {
+ session10=session;
+ if (sync10.scope!==cloudScope10()) {
+   sync10={auto:false,lastRemoteAt:null,lastRemoteRevision:null,lastLocalAt:sync10.lastLocalAt,scope:cloudScope10()};
+   store10(keys10.sync,sync10);
+ }
+ n10UiRefresh();
+}
+function loadSession10() {
+ if(window.AndroidBridge?.readCloudSession) {
+   window.ForgeCloudSession=message=>{
+     if(message.kind==='cloudStored'&&!message.ok){notify10('Безопасное хранилище аккаунта недоступно. Может потребоваться повторный вход.',true);return;}
+     if(message.kind!=='cloudSession'||cloudSessionStarted10)return;
+     cloudSessionStarted10=true;
+     const vault=message.session;
+     if(n10Configured()&&vault?.url===cfg10.url&&vault.session?.access_token&&vault.session?.user?.id){
+       acceptCloudSession10(vault.session);
+       try{localStorage.removeItem(keys10.session)}catch{}
+     } else {
+       const legacy=json10(keys10.session,null);
+       if(n10Configured()&&legacy?.access_token&&legacy?.user?.id){
+         acceptCloudSession10(legacy);
+         saveSession10();
+       } else try{localStorage.removeItem(keys10.session)}catch{}
+     }
+     if(sync10.auto&&sync10.lastLocalAt)n10QueueAutoUpload();
+   };
+   window.AndroidBridge.readCloudSession();
+ } else try{localStorage.removeItem(keys10.session)}catch{}
+}
 function changed10(){return !!((state.workouts||[]).length||(state.foods||[]).length||(state.weights||[]).length||(state.programs||[]).length||(state.customExercises||[]).length||(state.n10Recipes||[]).length)}
 function notify10(message,isError=false){cloudMessage10=message;cloudError10=isError?'error':'ok';const el=$10('n10CloudStatus');if(el){el.textContent=message;el.className='n10-cloud-status '+cloudError10}if(isError)toast(message.slice(0,110))}
 function n10ValidateRestore(data){if(!data||typeof data!=='object'||Array.isArray(data))throw Error('Неверный формат архива');if(!data.profile||typeof data.profile!=='object'||!Array.isArray(data.workouts)||!Array.isArray(data.foods))throw Error('Не найден дневник тренировок/питания');if(data.workouts.length>100000||data.foods.length>300000||!Array.isArray(data.plans))throw Error('Слишком большой или повреждённый файл');
@@ -1370,49 +1406,110 @@ importData=function(ev){const file=ev?.target?.files?.[0];if(!file)return; if(fi
 save=function(){try{originalSave10();if(!applyingRemote10){sync10.lastLocalAt=new Date().toISOString();store10(keys10.sync,sync10);if(sync10.auto&&session10)n10QueueAutoUpload();}}
  catch(err){if(err?.name==='QuotaExceededError'||/quota|storage/i.test(String(err)))toast('Память переполнена. Экспортируй JSON и удали старые фотографии упражнений.');else toast('Ошибка сохранения: '+String(err.message||err));}}
 function n10ValidUrl(value){try{const u=new URL(String(value||''));return u.protocol==='https:'&&/^https:\/\/[a-z0-9-]+\.supabase\.co$/i.test(u.origin)?u.origin:null}catch{return null}}
-function n10Configured(){return !!(n10ValidUrl(cfg10.url)&&/^[A-Za-z0-9_.\-]{20,}$/.test(String(cfg10.key||'')))}
+function n10Configured(){return !!(n10ValidUrl(cfg10.url)&&ForgeCloudSnapshot.publicKey(cfg10.key))}
 function n10Headers(bearer=false){const h={'apikey':cfg10.key,'Content-Type':'application/json'};if(bearer&&session10?.access_token)h.Authorization='Bearer '+session10.access_token;else if(String(cfg10.key||'').startsWith('eyJ'))h.Authorization='Bearer '+cfg10.key;return h}
 async function n10Api(path,method='GET',body=null,authenticate=true,extraHeaders={}){
  if(!n10Configured())throw Error('Сначала укажи адрес Supabase и publishable/anon key');
- const url=n10ValidUrl(cfg10.url)+path;
- const h={...n10Headers(authenticate),...extraHeaders}; const r=await fetch(url,{method,headers:h,body:body==null?undefined:JSON.stringify(body),cache:'no-store'});
- let data;const raw=await r.text();try{data=raw?JSON.parse(raw):null}catch{data={message:raw.slice(0,200)}};
- if(!r.ok){let msg=data?.error_description||data?.msg||data?.message||data?.error||('HTTP '+r.status); throw Error(String(msg));}
+ const project=cfg10,url=n10ValidUrl(project.url)+path;
+ const h={...n10Headers(authenticate),...extraHeaders};
+ const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),12000);
+ try{
+ const r=await fetch(url,{method,headers:h,body:body==null?undefined:JSON.stringify(body),cache:'no-store',redirect:'error',signal:controller.signal});
+ let data;const raw=await r.text();if(cfg10!==project)throw Error('Сервер облака изменился. Повтори действие.');try{data=raw?JSON.parse(raw):null}catch{data={message:raw.slice(0,200)}};
+ if(!r.ok){let msg=data?.error_description||data?.msg||data?.message||data?.error||('HTTP '+r.status); throw Object.assign(Error(String(msg)),{httpStatus:r.status});}
  return data;
+ }finally{clearTimeout(timeout)}
 }
-async function n10EnsureSession(){if(!session10?.access_token)return false;
- if(session10.expires_at && Date.now()<session10.expires_at-90000)return true;
- if(!session10.refresh_token){session10=null;store10(keys10.session,session10);return false;}
- try{const s=await n10Api('/auth/v1/token?grant_type=refresh_token','POST',{refresh_token:session10.refresh_token},false);n10SetSession(s);return true}catch(e){session10=null;store10(keys10.session,session10);throw Error('Срок входа истёк: войди снова')}
+let refreshing10=null;
+async function n10EnsureSession(){
+ if(!session10?.access_token)return false;
+ if(session10.expires_at&&Date.now()<session10.expires_at-90000)return true;
+ if(!session10.refresh_token){session10=null;saveSession10();return false;}
+ if(refreshing10)return refreshing10;
+ const previous=session10;
+ refreshing10=(async()=>{
+  try{
+   const s=await n10Api('/auth/v1/token?grant_type=refresh_token','POST',{refresh_token:previous.refresh_token},false);
+   if(session10!==previous)return false;
+   n10SetSession(s);return true;
+  }catch(e){
+   if(session10===previous&&[400,401,403].includes(e.httpStatus)){session10=null;saveSession10();throw Error('Срок входа истёк: войди снова');}
+   throw e;
+  }finally{refreshing10=null}
+ })();
+ return refreshing10;
 }
-function n10SetSession(s){if(!s?.access_token||!s?.user?.id)throw Error('Не получена сессия аккаунта');session10={access_token:s.access_token,refresh_token:s.refresh_token,user:s.user,expires_at:Date.now()+(Number(s.expires_in||3600)*1000)};store10(keys10.session,session10);n10UiRefresh();}
+function n10SetSession(s){
+ if(!s?.access_token||!s?.user?.id)throw Error('Не получена сессия аккаунта');
+ cloudSessionStarted10=true;
+ acceptCloudSession10({access_token:s.access_token,refresh_token:s.refresh_token,
+   user:{id:s.user.id,email:s.user.email||''},expires_at:Date.now()+Number(s.expires_in||3600)*1000});
+ saveSession10();
+}
 function n10ApiErr(e){let msg=String(e?.message||e||'Ошибка сети'); if(/Failed to fetch|NetworkError|fetch failed/i.test(msg))msg='Нет связи с сервером. Записи сохраняются локально.';notify10(msg,true)}
 function n10SavingState(){return JSON.parse(JSON.stringify(state));}
-async function n10SaveCloud(silent=false){if(cloudBusy10)return false;cloudBusy10=true;try{
- if(!await n10EnsureSession())throw Error('Войди в аккаунт');
- const sentLocalAt=sync10.lastLocalAt; const payload=n10SavingState();const size=JSON.stringify(payload).length;
- if(size>6*1024*1024)throw Error('Данные больше 6 МБ: уменьши локальные фотографии или сохрани JSON отдельно');
- const rows=await n10Api('/rest/v1/forge_snapshots?on_conflict=user_id','POST',{user_id:session10.user.id,payload,updated_at:new Date().toISOString()},true,{'Prefer':'resolution=merge-duplicates,return=representation'});
- const at=rows?.[0]?.updated_at||new Date().toISOString();sync10.lastRemoteAt=at;if(sync10.lastLocalAt===sentLocalAt)sync10.lastLocalAt=null;store10(keys10.sync,sync10);if(sync10.lastLocalAt&&sync10.auto)n10QueueAutoUpload();
- window.ForgeAnalytics?.('sync_completed');notify10('Данные отправлены в облако: '+new Date(at).toLocaleString('ru-RU'));return true;
- }catch(e){n10ApiErr(e);return false}finally{cloudBusy10=false;n10UiRefresh()}}
-async function n10FetchCloud(){if(!await n10EnsureSession())throw Error('Войди в аккаунт');const result=await n10Api('/rest/v1/forge_snapshots?select=payload,updated_at&user_id=eq.'+encodeURIComponent(session10.user.id)+'&limit=1');return result?.[0]||null;}
-async function n10CloudUploadClicked(){try{if(!session10){notify10('Сначала войди в аккаунт',true);return;}const cloud=await n10FetchCloud();if(cloud?.updated_at&&sync10.lastRemoteAt&&cloud.updated_at!==sync10.lastRemoteAt){if(!confirm('В облаке есть более новая версия с другого устройства. Заменить её локальными данными? Это удалит облачные изменения.'))return;}
- else if(cloud&&!sync10.lastRemoteAt&&!confirm('В облаке уже есть данные. Заменить облачную копию текущими записями?'))return;
- await n10SaveCloud();}catch(e){n10ApiErr(e)}}
+function n10PauseConflict(){
+ sync10.auto=false;store10(keys10.sync,sync10);
+ notify10('Облачная копия изменилась. Автообмен остановлен. Проверь версии и выбери, какую сохранить.',true);
+ n10UiRefresh();
+}
+async function n10SaveCloud(observed,scope){
+ if(cloudBusy10)return false;
+ cloudBusy10=true;
+ try{
+  if(!scope||scope!==cloudScope10())throw Error('Облачный аккаунт изменился. Повтори действие.');
+  const sentLocalAt=sync10.lastLocalAt,payload=n10SavingState();
+  if(JSON.stringify(payload).length>6*1024*1024)throw Error('Данные больше 6 МБ: уменьши локальные фотографии или сохрани JSON отдельно');
+  const change=ForgeCloudSnapshot.mutation(session10.user.id,observed,payload);
+  const rows=await n10Api(change.path,change.method,change.body,true,{Prefer:change.prefer});
+  if(scope!==cloudScope10())return false;
+  const written=rows?.[0];
+  if(!written){n10PauseConflict();return false;}
+  const rev=ForgeCloudSnapshot.revision(written);
+  sync10.lastRemoteRevision=rev;sync10.lastRemoteAt=written.updated_at;
+  if(sync10.lastLocalAt===sentLocalAt)sync10.lastLocalAt=null;
+  store10(keys10.sync,sync10);
+  if(sync10.lastLocalAt&&sync10.auto)n10QueueAutoUpload();
+  window.ForgeAnalytics?.('sync_completed');
+  notify10('Данные отправлены в облако: '+new Date(written.updated_at).toLocaleString('ru-RU'));return true;
+ }catch(e){n10ApiErr(e);return false}finally{cloudBusy10=false;n10UiRefresh()}
+}
+async function n10FetchCloud(metadataOnly=false){
+ const scope=cloudScope10();
+ if(!await n10EnsureSession()||!scope||scope!==cloudScope10())throw Error('Войди в аккаунт');
+ const select=metadataOnly?'revision,updated_at':'payload,revision,updated_at';
+ const result=await n10Api('/rest/v1/forge_snapshots?select='+select+'&user_id=eq.'+encodeURIComponent(session10.user.id)+'&limit=1');
+ if(scope!==cloudScope10())throw Error('Облачный аккаунт изменился. Повтори действие.');
+ const snapshot=result?.[0]||null;
+ ForgeCloudSnapshot.revision(snapshot);
+ return snapshot;
+}
+async function n10CloudUploadClicked(){
+ try{
+  const scope=cloudScope10();
+  const remote=await n10FetchCloud(true);
+  if(!confirm(remote
+    ? 'Заменить облачную копию текущим дневником? Облачные изменения будут заменены.'
+    : 'Создать облачную копию дневника в этом аккаунте?'))return;
+  await n10SaveCloud(remote,scope);
+ }catch(e){n10ApiErr(e)}
+}
 async function n10CloudDownloadClicked(){if(!session10){notify10('Сначала войди в аккаунт',true);return;}try{const cloud=await n10FetchCloud();if(!cloud){notify10('В облаке ещё нет сохранённого дневника');return;}
  const result=n10AdoptData(cloud.payload);if(changed10()&&!confirm('Заменить локальный дневник облачной копией? Перед восстановлением сохрани JSON.'))return;
  const previous=state;applyingRemote10=true;state=result;try{localStorage.setItem('forge_v2',JSON.stringify(state));renderAll()}catch(e){state=previous;throw Error('Не хватило места для восстановления')}
  finally{applyingRemote10=false}
- sync10.lastRemoteAt=cloud.updated_at;sync10.lastLocalAt=null;store10(keys10.sync,sync10);window.ForgeAnalytics?.('sync_completed');notify10('Облачная копия восстановлена: '+new Date(cloud.updated_at).toLocaleString('ru-RU'));
+ sync10.lastRemoteAt=cloud.updated_at;sync10.lastRemoteRevision=ForgeCloudSnapshot.revision(cloud);sync10.lastLocalAt=null;store10(keys10.sync,sync10);window.ForgeAnalytics?.('sync_completed');notify10('Облачная копия восстановлена: '+new Date(cloud.updated_at).toLocaleString('ru-RU'));
  }catch(e){n10ApiErr(e)}finally{n10UiRefresh()}}
-async function n10AutoUpload(){if(!sync10.auto||!session10||cloudBusy10||!navigator.onLine)return;
- try{const remote=await n10FetchCloud(); if(remote&&sync10.lastRemoteAt&&remote.updated_at!==sync10.lastRemoteAt){sync10.auto=false;store10(keys10.sync,sync10);notify10('Обнаружено изменение с другого устройства. Автосинхронизация остановлена: сначала выбери облачную или локальную версию.',true);n10UiRefresh();return;}
- if(remote&&!sync10.lastRemoteAt){sync10.auto=false;store10(keys10.sync,sync10);notify10('В облаке уже есть данные. Выбери, какую версию сохранить.',true);n10UiRefresh();return;}
- await n10SaveCloud(true);
- }catch(e){n10ApiErr(e)}}
+async function n10AutoUpload(){
+ if(!sync10.auto||!session10||!sync10.lastLocalAt||cloudBusy10||!navigator.onLine)return;
+ try{
+  const scope=cloudScope10(),remote=await n10FetchCloud(true);
+  if(!remote||ForgeCloudSnapshot.revision(remote)!==sync10.lastRemoteRevision){n10PauseConflict();return;}
+  await n10SaveCloud(remote,scope);
+ }catch(e){n10ApiErr(e)}
+}
 function n10QueueAutoUpload(){clearTimeout(syncTimer10);syncTimer10=setTimeout(n10AutoUpload,4500)}
-function n10ToggleAuto(checked){if(checked&&!session10){notify10('Нужен вход в облачный аккаунт',true);n10UiRefresh();return;}if(checked&&!sync10.lastRemoteAt){notify10('Сначала вручную загрузи или восстанови облачную копию',true);n10UiRefresh();return;}sync10.auto=checked;store10(keys10.sync,sync10);notify10(checked?'Автосохранение в облако включено':'Автосохранение выключено');n10UiRefresh();}
+function n10ToggleAuto(checked){if(checked&&!session10){notify10('Нужен вход в облачный аккаунт',true);n10UiRefresh();return;}if(checked&&!sync10.lastRemoteRevision){notify10('Сначала вручную загрузи или восстанови облачную копию',true);n10UiRefresh();return;}sync10.auto=checked;store10(keys10.sync,sync10);notify10(checked?'Автосохранение в облако включено':'Автосохранение выключено');n10UiRefresh();}
 function n10UiRefresh(){const el=$10('n10CloudContent');if(el)el.innerHTML=n10CloudHtml();const status=$10('n10CloudStatus');if(status&&cloudMessage10){status.textContent=cloudMessage10;status.className='n10-cloud-status '+cloudError10}}
 function n10CloudHtml(){let logged=!!session10?.user?.id;let address=logged?clean10(session10.user.email||'Пользователь'):'';
  const configured=n10Configured();return `<div class="n10-cloud-shell"><h3>Аккаунт и сохранение</h3><div class="n10-cloud-badge">${logged?'● Аккаунт подключён':'○ Данные хранятся локально'}</div>
@@ -1430,12 +1527,12 @@ function n10CloudHtml(){let logged=!!session10?.user?.id;let address=logged?clea
  <div class="n10-source-notice">Данные синхронизируются только с настроенным тобой облаком. В приложение не встроены чужие секреты или демонстрационные аккаунты. Пароль не хранится в дневнике.</div>
  </div>`}
 function n10StoreConfig(){const url=$10('n10SupaUrl')?.value.trim(),key=$10('n10SupaKey')?.value.trim();if(!n10ValidUrl(url)||!key||/service_role|sb_secret_/i.test(key)){notify10('Неверные настройки. Нужен адрес *.supabase.co и публичный publishable/anon key, не secret/service_role.',true);return;}
- if(!/^[A-Za-z0-9_.\-]{20,}$/.test(key)) {notify10('Неверный публичный API-ключ Supabase',true);return;}if(session10&&!confirm('Смена сервера завершит текущий облачный сеанс. Продолжить?'))return;
- cfg10={url:n10ValidUrl(url),key};store10(keys10.config,cfg10);session10=null;store10(keys10.session,null);sync10={auto:false,lastRemoteAt:null,lastLocalAt:null};store10(keys10.sync,sync10);notify10('Адрес облака сохранён. Теперь можно войти по почте.');n10UiRefresh()}
+ if(!ForgeCloudSnapshot.publicKey(key)) {notify10('Неверный публичный API-ключ Supabase',true);return;}if(session10&&!confirm('Смена сервера завершит текущий облачный сеанс. Продолжить?'))return;
+ cfg10={url:n10ValidUrl(url),key};store10(keys10.config,cfg10);session10=null;cloudSessionStarted10=true;saveSession10();sync10={auto:false,lastRemoteAt:null,lastLocalAt:null};store10(keys10.sync,sync10);notify10('Адрес облака сохранён. Теперь можно войти по почте.');n10UiRefresh()}
 async function n10SignIn(){const email=$10('n10Email')?.value.trim(),password=$10('n10Password')?.value||'';if(!email||password.length<8){notify10('Укажи почту и пароль не короче 8 символов',true);return;}try{const data=await n10Api('/auth/v1/token?grant_type=password','POST',{email,password},false);n10SetSession(data);notify10('Успешный вход. Для первой синхронизации выбери отправку или восстановление данных.');}catch(e){n10ApiErr(e)}finally{n10UiRefresh()}}
 async function n10SignUp(){const email=$10('n10Email')?.value.trim(),password=$10('n10Password')?.value||'';if(!email||password.length<8){notify10('Укажи почту и пароль минимум из 8 символов',true);return;}try{const data=await n10Api('/auth/v1/signup','POST',{email,password},false);if(data?.access_token&&data?.user)n10SetSession(data);else notify10('Запрос регистрации принят. Проверь почту и подтверди адрес, затем войди.');}catch(e){n10ApiErr(e)}finally{n10UiRefresh()}}
 async function n10Recover(){const email=$10('n10Email')?.value.trim();if(!email){notify10('Сначала введи почту',true);return;}try{await n10Api('/auth/v1/recover','POST',{email},false);notify10('Если адрес существует, придёт письмо со ссылкой восстановления.')}catch(e){n10ApiErr(e)}}
-function n10SignOut(){if(!confirm('Выйти из облачного аккаунта? Локальные данные останутся на устройстве.'))return;session10=null;store10(keys10.session,null);sync10.auto=false;sync10.lastRemoteAt=null;store10(keys10.sync,sync10);notify10('Выход выполнен. Локальный дневник не удалён.');n10UiRefresh()}
+function n10SignOut(){if(!confirm('Выйти из облачного аккаунта? Локальные данные останутся на устройстве.'))return;session10=null;cloudSessionStarted10=true;saveSession10();sync10.auto=false;sync10.lastRemoteAt=null;sync10.lastRemoteRevision=null;store10(keys10.sync,sync10);notify10('Выход выполнен. Локальный дневник не удалён.');n10UiRefresh()}
 function n10GoogleAvailable(){return n10Configured()&&location.protocol==='https:'&&!/appassets\.androidplatform\.net/i.test(location.host)&&location.hostname!=='localhost'&&location.hostname!=='127.0.0.1'}
 function n10GoogleSignIn(){if(!n10GoogleAvailable()){notify10('Google OAuth доступен только после размещения PWA на HTTPS-домене и настройки Google в Supabase',true);return;}
  const redirect=location.origin+location.pathname;try{sessionStorage.setItem('forge10_oauth_pending','1')}catch{};location.href=n10ValidUrl(cfg10.url)+'/auth/v1/authorize?provider=google&redirect_to='+encodeURIComponent(redirect)}
@@ -1469,14 +1566,14 @@ function n10AddRecipe(i){let recipe=n10Recipes()[i];if(!recipe)return;let m=n10R
 function n10DeleteRecipe(i){if(!confirm('Удалить сохранённый рецепт? Записи питания останутся.'))return;n10Recipes().splice(i,1);save();n10OpenRecipes()}
 // Clearing only the local device must never erase an older cloud backup by automatic upload.
 const n10OldReset=resetData;
-resetData=function(){sync10.auto=false;sync10.lastRemoteAt=null;sync10.lastLocalAt=null;store10(keys10.sync,sync10);n10OldReset();notify10('Локальный дневник очищен. Автообмен выключен; данные в облаке не удалены.');};
+resetData=function(){sync10.auto=false;sync10.lastRemoteAt=null;sync10.lastRemoteRevision=null;sync10.lastLocalAt=null;store10(keys10.sync,sync10);n10OldReset();notify10('Локальный дневник очищен. Автообмен выключен; данные в облаке не удалены.');};
 // Account deletion requires the separately deployed Supabase Edge Function.
 async function n10DeleteCloudData(){if(!session10){notify10('Сначала войди в аккаунт',true);return;}if(!confirm('Безвозвратно удалить облачную копию дневника? На телефоне данные останутся.'))return;
- try{if(!await n10EnsureSession())throw Error('Войди в аккаунт');await n10Api('/rest/v1/forge_snapshots?user_id=eq.'+encodeURIComponent(session10.user.id),'DELETE');sync10.auto=false;sync10.lastRemoteAt=null;store10(keys10.sync,sync10);notify10('Облачная копия удалена. Локальные данные остались.')}
+ try{if(!await n10EnsureSession())throw Error('Войди в аккаунт');await n10Api('/rest/v1/forge_snapshots?user_id=eq.'+encodeURIComponent(session10.user.id),'DELETE');sync10.auto=false;sync10.lastRemoteAt=null;sync10.lastRemoteRevision=null;store10(keys10.sync,sync10);notify10('Облачная копия удалена. Локальные данные остались.')}
  catch(e){n10ApiErr(e)}finally{n10UiRefresh()}}
 async function n10DeleteAccount(){if(!session10){notify10('Сначала войди в аккаунт',true);return;}
  if(!confirm('Удалить учётную запись Supabase и весь облачный дневник без возможности восстановления? Локальная копия на этом устройстве останется.'))return;
- try{if(!await n10EnsureSession())throw Error('Войди в аккаунт');await n10Api('/functions/v1/delete-account','POST',{},true);session10=null;store10(keys10.session,null);sync10.auto=false;sync10.lastRemoteAt=null;store10(keys10.sync,sync10);notify10('Аккаунт и облачный дневник удалены. Локальные записи остались.')}
+ try{if(!await n10EnsureSession())throw Error('Войди в аккаунт');await n10Api('/functions/v1/delete-account','POST',{},true);session10=null;cloudSessionStarted10=true;saveSession10();sync10.auto=false;sync10.lastRemoteAt=null;sync10.lastRemoteRevision=null;store10(keys10.sync,sync10);notify10('Аккаунт и облачный дневник удалены. Локальные записи остались.')}
  catch(e){n10ApiErr(e)}finally{n10UiRefresh()}}
 window.addEventListener('online',()=>{if(sync10.auto&&sync10.lastLocalAt)n10QueueAutoUpload()});
 const oldRenderProfile10=renderProfile;
@@ -1485,7 +1582,7 @@ renderProfile=function(){oldRenderProfile10();const message=$10('n9ProfileExtras
 // Script globals used by click handlers.
 Object.assign(window,{n10StoreConfig,n10SignIn,n10SignUp,n10Recover,n10GoogleSignIn,n10SignOut,n10CloudUploadClicked,n10CloudDownloadClicked,n10DeleteCloudData,n10DeleteAccount,n10ToggleAuto,n10OpenRecipes,n10EditRecipe,n10AppendIngredient,n10RemoveIngredient,n10SaveRecipe,n10AddRecipe,n10DeleteRecipe});
 // Make sure UI is present even when reloaded into the active account page.
-n10InstallCloud();n10NutritionTile();n10CompleteOAuth();
+n10InstallCloud();n10NutritionTile();loadSession10();n10CompleteOAuth();
 })();
 </script><link rel="stylesheet" href="exercise-art.css"><div style="text-align:center;padding:12px 12px 90px;font-size:11px;color:#829a9d"><a href="artwork-credits.html" target="_blank" rel="noopener" style="color:inherit">Авторы иллюстраций</a></div><link rel="stylesheet" href="nutrition-coach.css"><script src="nutrition-coach-core.js"></script><script src="nutrition-coach.js"></script><link rel="stylesheet" href="navigation.css"><link rel="stylesheet" href="exercise-picker.css"><script src="exercise-picker.js"></script><script src="navigation.js"></script><link rel="stylesheet" href="performance-tokens.css"><link rel="stylesheet" href="performance-ui.css"><link rel="stylesheet" href="food-catalog.css"><script src="performance-ui.js"></script><link rel="stylesheet" href="exercise-library.css"><script src="exercise-visual-data.js"></script><script src="anatomy-model.js"></script><script src="exercise-library.js"></script><link rel="stylesheet" href="training-import.css"><script src="training-import-core.js"></script><script src="training-import.js"></script><script src="device-settings.js"></script><script src="barcode-food.js"></script>
 </body>

@@ -17,12 +17,20 @@
     notificationConsent: enabled => send('notificationConsent', { enabled }),
     analyticsEvent: event => send('analyticsEvent', { event }),
     diagnosticEvent: category => send('diagnosticEvent', { category }),
-    restDeadline: deadline => send('restDeadline', { deadline })
+    restDeadline: deadline => send('restDeadline', { deadline }),
+    storeCloudSession: session => send('storeCloudSession', { session }),
+    readCloudSession: () => send('readCloudSession'),
+    healthRead: () => send('healthRead'),
+    healthDisconnect: () => send('healthDisconnect')
   });
   window.ForgeAnalytics = event => window.AndroidBridge.analyticsEvent(event);
   window.addEventListener('error', () => AndroidBridge.diagnosticEvent('web_error'));
   window.addEventListener('unhandledrejection', () => AndroidBridge.diagnosticEvent('web_rejection'));
   channel.onmessage = ({ data }) => {
-    try { window.ForgeDevice?.receive(JSON.parse(data)); } catch {}
+    try {
+      const result = JSON.parse(data);
+      if (result.kind.startsWith('cloud')) window.ForgeCloudSession?.(result);
+      else window.ForgeDevice?.receive(result);
+    } catch {}
   };
 })();

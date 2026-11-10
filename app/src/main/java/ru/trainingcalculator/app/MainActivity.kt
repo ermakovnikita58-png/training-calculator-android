@@ -9,6 +9,8 @@ import androidx.webkit.WebViewCompat
 import androidx.webkit.WebViewFeature
 import androidx.webkit.JavaScriptReplyProxy
 import org.json.JSONObject
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.launch
 import java.util.concurrent.Executors
 import android.webkit.ValueCallback
 import android.webkit.WebChromeClient
@@ -55,6 +57,16 @@ class MainActivity : ComponentActivity() {
         RestReminder.toggle(this, granted)
         notificationReply?.let(::reportPreferences)
         notificationReply = null
+    }
+    private val vault by lazy { CloudSessionVault(applicationContext) }
+    private var healthReply: JavaScriptReplyProxy? = null
+    private var healthGeneration = 0
+    private val healthPreferences by lazy { getSharedPreferences("forge_health", MODE_PRIVATE) }
+    private val healthPermission = registerForActivityResult(androidx.activity.result.contract.ActivityResultContracts.RequestMultiplePermissions()) { granted ->
+        val reply = healthReply
+        healthReply = null
+        if (reply != null && android.os.Build.VERSION.SDK_INT >= 34 && granted.values.any { it }) readHealth(reply)
+        else if (reply != null) post(reply, JSONObject().put("kind", "health").put("ok", false))
     }
     private var scannerOpen = false
     private val scanner = registerForActivityResult(androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult()) { result ->
@@ -264,6 +276,9 @@ class MainActivity : ComponentActivity() {
                 updateBackCallback()
             }
             "preferences" -> reportPreferences(reply)
+            "storeCloudSession", "readCloudSession" -> sessionMessage(message, reply)
+            "healthRead" -> requestHealth(reply)
+            "healthDisconnect" -> disconnectHealth(reply)
             "analyticsConsent" -> {
                 val enabled = message.optBoolean("enabled")
                 val previous = AnalyticsService.enabled(this)
@@ -311,6 +326,55 @@ class MainActivity : ComponentActivity() {
         }
     }
 
+    private fun post(reply: JavaScriptReplyProxy, data: JSONObject) {
+        if (!isDestroyed) runCatching { reply.postMessage(data.toString()) }
+    }
+
+    private fun sessionMessage(message: JSONObject, reply: JavaScriptReplyProxy) {
+        val save = message.optString("action") == "storeCloudSession"
+        storageWorker.execute {
+            val response = JSONObject()
+            if (save) {
+                val ok = runCatching { vault.save(message.optJSONObject("session")) }.isSuccess
+                response.put("kind", "cloudStored").put("ok", ok)
+            } else {
+                response.put("kind", "cloudSession").put("session", runCatching { vault.load() }.getOrNull())
+            }
+            runOnUiThread { post(reply, response) }
+        }
+    }
+
+    private fun requestHealth(reply: JavaScriptReplyProxy) {
+        if (android.os.Build.VERSION.SDK_INT < 34 || !ForgeHealth.available(this) || healthReply != null) return
+        healthPreferences.edit().putBoolean("enabled", true).apply()
+        val missing = ForgeHealth.permissions().filter { checkSelfPermission(it) != android.content.pm.PackageManager.PERMISSION_GRANTED }
+        if (missing.isEmpty()) readHealth(reply) else {
+            healthReply = reply
+            healthPermission.launch(missing.toTypedArray())
+        }
+    }
+
+    @androidx.annotation.RequiresApi(34)
+    private fun readHealth(reply: JavaScriptReplyProxy) {
+        val generation = ++healthGeneration
+        lifecycleScope.launch {
+            val result = runCatching { ForgeHealth.read(this@MainActivity) }
+                .getOrElse { JSONObject().put("kind", "health").put("ok", false) }
+            if (generation == healthGeneration && healthPreferences.getBoolean("enabled", false)) post(reply, result)
+        }
+    }
+
+    private fun disconnectHealth(reply: JavaScriptReplyProxy) {
+        healthGeneration++
+        healthReply = null
+        healthPreferences.edit().remove("enabled").apply()
+        post(reply, JSONObject().put("kind", "healthDisconnected"))
+        if (android.os.Build.VERSION.SDK_INT >= 34) {
+            val granted = ForgeHealth.permissions().filter { checkSelfPermission(it) == android.content.pm.PackageManager.PERMISSION_GRANTED }
+            if (granted.isNotEmpty()) revokeSelfPermissionsOnKill(granted)
+        }
+    }
+
     private fun reportPreferences(reply: JavaScriptReplyProxy) {
         val report = JSONObject().put("kind", "preferences")
             .put("analyticsAvailable", AnalyticsService.configured)
@@ -318,6 +382,7 @@ class MainActivity : ComponentActivity() {
             .put("crashAvailable", diagnostics.configured())
             .put("crash", diagnostics.enabled())
             .put("testReport", BuildConfig.DEBUG)
+            .put("healthAvailable", ForgeHealth.available(this))
             .put("notifications", RestReminder.enabled(this) && androidx.core.app.NotificationManagerCompat.from(this).areNotificationsEnabled())
             .put("camera", checkSelfPermission(android.Manifest.permission.CAMERA) == android.content.pm.PackageManager.PERMISSION_GRANTED)
         runCatching { reply.postMessage(report.toString()) }
@@ -354,6 +419,7 @@ class MainActivity : ComponentActivity() {
                         .put("Open Food Facts", "по запросу пользователя")
                         .put("Crashlytics", if (diagnostics.configured()) "проект задан" else "нет проекта")
                         .put("PostHog", if (AnalyticsService.configured) "проект задан" else "нет проекта")
+                        .put("Health Connect", if (ForgeHealth.available(this)) "доступен по запросу" else "нужен Android 14 или новее")
                         .put("Платежи", "отключены"))
                 }
             }

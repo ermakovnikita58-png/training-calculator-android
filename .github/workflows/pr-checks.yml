@@ -15,13 +15,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: npm install --ignore-scripts --no-audit --no-fund
+      - run: npm ci --ignore-scripts --no-audit --no-fund
       - run: npx playwright install --with-deps chromium
       - run: npm test
       - run: npm run test:catalog-picker
       - run: npm run test:training-import
       - run: npm run test:device-settings
       - run: npm run test:barcode
+      - run: npm run test:cloud-snapshot
       - run: node scripts/check-art-coverage.cjs
       - uses: actions/upload-artifact@v4
         if: always()

@@ -19,6 +19,14 @@
       <p class="muted">Дополнительные отчёты выключены по умолчанию. Аналитика считает только действия и не получает содержимое дневника. Для синхронизации используется отдельное согласие в разделе «Аккаунт».</p>
       <button class="btn secondary small" type="button" data-device="test-report" hidden>Отправить тест ошибки</button>
     </div>
+    <div id="forge-health-options" hidden>
+      <h2 class="cardtitle">Health Connect</h2>
+      <p class="muted">Просмотр массы тела, шагов и активности за 7 дней. Тренировки и калории в FORGE остаются прежними. Массу можно отдельно добавить в дневник.</p>
+      <p class="muted" id="forge-health-report" aria-live="polite"></p>
+      <button class="btn secondary small" type="button" data-device="health-read">Разрешить и прочитать</button>
+      <button class="btn secondary small" type="button" data-device="health-disconnect">Отключить</button>
+      <button class="btn secondary small" type="button" data-device="health-weight" hidden>Добавить измерение массы</button>
+    </div>
     <div class="grid2" id="forge-checkpoint-actions" hidden>
       <button class="btn secondary small" type="button" data-device="save">Сделать копию на устройстве</button>
       <button class="btn secondary small" type="button" data-device="restore">Восстановить копию</button>
@@ -26,6 +34,9 @@
     </div>`;
   settings.append(card);
 
+  let healthWeight = null;
+  const healthReport = card.querySelector('#forge-health-report');
+  const healthWeightButton = card.querySelector('[data-device="health-weight"]');
   let technicalReport = 'FORGE Training\nСреда: браузер\nДневник: локальное хранилище браузера';
   const report = card.querySelector('#forge-device-report');
   function showReport() { report.textContent = technicalReport.replaceAll('\n', ' · '); }
@@ -39,8 +50,20 @@
           field.checked = result[field.dataset.pref];
           field.disabled = result[field.dataset.pref + 'Available'] === false;
         }
+        card.querySelector('#forge-health-options').hidden = !result.healthAvailable;
         card.querySelector('[data-device="test-report"]').hidden = !(result.testReport && result.crash);
         if (result.notifications) window.ForgePerformance?.persist();
+      } else if (result.kind === 'health' || result.kind === 'healthDisconnected') {
+        healthWeight = result.ok ? result.weight ?? null : null;
+        healthWeightButton.hidden = !healthWeight;
+        const lines = [];
+        if (healthWeight) lines.push(healthWeight.date + ' · ' + healthWeight.kg.toFixed(1) + ' кг');
+        if (Number.isFinite(result.steps)) lines.push('Шаги за 7 дней: ' + result.steps);
+        if (Number.isFinite(result.sessions)) lines.push('Периоды тренировок: ' + result.sessions + ' · ' + result.minutes + ' мин');
+        if (result.truncated) lines.push('Показаны данные первой страницы');
+        healthReport.textContent = lines.join(' · ') || (result.kind === 'healthDisconnected'
+          ? 'Чтение отключено. Android отзовёт разрешения после выхода из приложения.'
+          : 'Нет доступных данных. Проверь разрешения Health Connect и наличие записей.');
       } else if (result.kind === 'diagnostics') {
         technicalReport = Object.entries(result.details).map(([key, value]) => key + ': ' + value).join('\n');
         showReport();
@@ -66,6 +89,25 @@
   card.querySelector('#forge-checkpoint-actions').hidden = !bridge?.checkpoint;
   card.addEventListener('click', async event => {
     switch (event.target.dataset.device) {
+      case 'health-read': bridge.healthRead(); break;
+      case 'health-disconnect': bridge.healthDisconnect(); break;
+      case 'health-weight': {
+        const item = healthWeight;
+        if (!item || !/^\d{4}-\d{2}-\d{2}$/.test(item.date) || item.date > today() ||
+            !Number.isFinite(item.kg) || item.kg <= 0 || item.kg > 700 || !item.id) break;
+        if (state.weights.some(weight => weight.healthConnectId === item.id || weight.date === item.date)) {
+          toast('На эту дату уже есть запись массы');
+          break;
+        }
+        if (!confirm('Добавить в дневник ' + item.kg.toFixed(1) + ' кг за ' + item.date + '?')) break;
+        const next = { ...state, weights: [...state.weights, { date: item.date, weight: item.kg, healthConnectId: item.id }] };
+        try { localStorage.setItem('forge_v2', JSON.stringify(next)); }
+        catch { toast('Не удалось сохранить массу'); break; }
+        state = next;
+        renderAll();
+        toast('Измерение массы добавлено');
+        break;
+      }
       case 'test-report': bridge.diagnosticEvent('test_non_fatal'); break;
       case 'copy':
         try {

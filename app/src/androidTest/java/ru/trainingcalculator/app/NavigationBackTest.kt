@@ -6,7 +6,10 @@ import android.webkit.WebView
 import androidx.test.core.app.ActivityScenario
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
+import androidx.test.uiautomator.By
+import androidx.test.uiautomator.Until
 import androidx.test.uiautomator.UiDevice
+import java.util.regex.Pattern
 import org.json.JSONObject
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
@@ -193,6 +196,35 @@ class NavigationBackTest {
 
             // Leave the fixture in memory only. A test run must not write a program into the diary.
             js(scenario, "ForgeNavigation.markSaved('n8-day');showPage('home')")
+        }
+    }
+
+    @Test fun scannerKeepsManualEntryWhenCameraCloses() {
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            openPage(scenario, "nutrition")
+            js(scenario, "openFoodScanner()")
+            click(scenario, "#forge-scan-camera")
+            val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
+            val prompt = device.wait(Until.findObject(By.res(Pattern.compile(".+:id/permission_deny_button"))), 5_000)
+            if (prompt != null) {
+                prompt.click()
+            } else {
+                device.findObject(By.text("Ввести вручную"))?.click()
+            }
+            waitFor(scenario, "!!document.getElementById('manualBarcode') && ForgeNavigation.inspect().overlay==='modalback'")
+            pressBack(scenario, "!ForgeNavigation.inspect().overlay && ForgeNavigation.inspect().current==='nutrition'")
+        }
+    }
+
+    @Test fun documentPickerCancelReturnsToProfileWithoutChangingDiary() {
+        val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            openPage(scenario, "profile")
+            js(scenario, "exportData()")
+            assertTrue("System document provider did not open", device.wait(
+                Until.hasObject(By.pkg(Pattern.compile("com\\.(google\\.)?android\\.documentsui"))), 10_000
+            ))
+            pressBack(scenario, "ForgeNavigation.inspect().current==='profile'")
         }
     }
 }
