@@ -9,8 +9,19 @@
     checkpoint: (payload) => send('checkpoint', { payload }),
     readCheckpoint: () => send('readCheckpoint'),
     deleteCheckpoint: () => send('deleteCheckpoint'),
-    diagnostics: () => send('diagnostics')
+    diagnostics: () => send('diagnostics'),
+    scanBarcode: () => send('scanBarcode'),
+    preferences: () => send('preferences'),
+    analyticsConsent: enabled => send('analyticsConsent', { enabled }),
+    crashConsent: enabled => send('crashConsent', { enabled }),
+    notificationConsent: enabled => send('notificationConsent', { enabled }),
+    analyticsEvent: event => send('analyticsEvent', { event }),
+    diagnosticEvent: category => send('diagnosticEvent', { category }),
+    restDeadline: deadline => send('restDeadline', { deadline })
   });
+  window.ForgeAnalytics = event => window.AndroidBridge.analyticsEvent(event);
+  window.addEventListener('error', () => AndroidBridge.diagnosticEvent('web_error'));
+  window.addEventListener('unhandledrejection', () => AndroidBridge.diagnosticEvent('web_rejection'));
   channel.onmessage = ({ data }) => {
     try { window.ForgeDevice?.receive(JSON.parse(data)); } catch {}
   };

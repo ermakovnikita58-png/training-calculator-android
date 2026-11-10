@@ -7,7 +7,8 @@
     "test:art-coverage": "node scripts/art-contact-sheets.cjs && node scripts/check-art-coverage.cjs",
     "test:catalog-picker": "node scripts/catalog-picker-browser.cjs",
     "test:training-import": "node --test scripts/training-import.test.cjs && node scripts/training-import-browser.cjs",
-    "test:device-settings": "node scripts/device-settings-browser.cjs"
+    "test:device-settings": "node scripts/device-settings-browser.cjs",
+    "test:barcode": "node --test scripts/barcode-food.test.cjs && node scripts/barcode-browser.cjs"
   },
   "devDependencies": {
     "playwright": "1.62.1"

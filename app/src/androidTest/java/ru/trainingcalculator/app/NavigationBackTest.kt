@@ -49,7 +49,7 @@ class NavigationBackTest {
 
     private fun pressBack(scenario: ActivityScenario<MainActivity>, condition: String) {
         val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
-        assertTrue("Android Back event was not sent", device.pressBack())
+        device.executeShellCommand("input keyevent KEYCODE_BACK")
         waitFor(scenario, condition)
     }
 
@@ -64,11 +64,11 @@ class NavigationBackTest {
             js(scenario, "showPage('home');showPage('plan');showPage('library');ForgeExerciseLibrary.showGroups();y8OpenCard(encodeURIComponent('Жим штанги стоя'),'library')")
             val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
             waitFor(scenario, "ForgeNavigation.inspect().overlay==='y8DetailBack'")
-            device.pressBack()
+            device.executeShellCommand("input keyevent KEYCODE_BACK")
             waitFor(scenario, "!ForgeNavigation.inspect().overlay && ForgeNavigation.inspect().current==='library'")
-            device.pressBack()
+            device.executeShellCommand("input keyevent KEYCODE_BACK")
             waitFor(scenario, "ForgeNavigation.inspect().current==='plan'")
-            device.pressBack()
+            device.executeShellCommand("input keyevent KEYCODE_BACK")
             waitFor(scenario, "ForgeNavigation.inspect().current==='home'")
         }
     }
@@ -76,7 +76,7 @@ class NavigationBackTest {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             waitFor(scenario, "!!window.ForgeNavigation")
             js(scenario, "showPage('plan');window.savedBack=ForgeNavigation.back;ForgeNavigation.back=()=>{throw Error('test failure')}")
-            UiDevice.getInstance(InstrumentationRegistry.getInstrumentation()).pressBack()
+            UiDevice.getInstance(InstrumentationRegistry.getInstrumentation()).executeShellCommand("input keyevent KEYCODE_BACK")
             Thread.sleep(300)
             assertEquals("\"plan\"", js(scenario, "ForgeNavigation.inspect().current"))
             js(scenario, "ForgeNavigation.back=window.savedBack")
@@ -97,15 +97,15 @@ class NavigationBackTest {
             js(scenario, "showPage('home');showPage('plan');showPage('library');ForgeExerciseLibrary.openGroup('Плечи','гантел');scrollTo(0,200);y8OpenCard(encodeURIComponent('Жим гантелей сидя'),'library')")
             val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
             waitFor(scenario, "ForgeNavigation.inspect().overlay==='y8DetailBack'")
-            device.pressBack()
+            device.executeShellCommand("input keyevent KEYCODE_BACK")
             waitFor(scenario, "!ForgeNavigation.inspect().overlay && ForgeExerciseLibrary.snapshot().group==='Плечи'")
             assertEquals("\"гантел\"", js(scenario, "document.getElementById('vs-query').value"))
             waitFor(scenario, "Math.abs(scrollY-200)<5")
-            device.pressBack()
+            device.executeShellCommand("input keyevent KEYCODE_BACK")
             waitFor(scenario, "ForgeExerciseLibrary.snapshot().group==='' && document.querySelectorAll('.vs-group').length===14")
-            device.pressBack()
+            device.executeShellCommand("input keyevent KEYCODE_BACK")
             waitFor(scenario, "ForgeNavigation.inspect().current==='plan'")
-            device.pressBack()
+            device.executeShellCommand("input keyevent KEYCODE_BACK")
             waitFor(scenario, "ForgeNavigation.inspect().current==='home'")
         }
     }

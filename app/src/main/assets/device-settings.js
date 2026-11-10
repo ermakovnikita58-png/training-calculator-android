@@ -11,6 +11,14 @@
     <button class="btn secondary small" type="button" data-device="copy">Скопировать технический отчёт</button>
     <h2 class="cardtitle">Конфиденциальность и данные</h2>
     <p class="muted">Дневник хранится на устройстве. Облачная копия настраивается отдельно в разделе «Аккаунт». JSON можно сохранить для переноса на другой телефон.</p>
+    <div id="forge-privacy-options" hidden>
+      <p class="muted" id="forge-device-permissions"></p>
+      <label class="setting"><span>Уведомлять о завершении отдыха</span><input type="checkbox" data-pref="notifications"></label>
+      <label class="setting"><span>Отправлять события использования</span><input type="checkbox" data-pref="analytics"></label>
+      <label class="setting"><span>Отправлять отчёты об ошибках</span><input type="checkbox" data-pref="crash"></label>
+      <p class="muted">Дополнительные отчёты выключены по умолчанию. Аналитика считает только действия и не получает содержимое дневника. Для синхронизации используется отдельное согласие в разделе «Аккаунт».</p>
+      <button class="btn secondary small" type="button" data-device="test-report" hidden>Отправить тест ошибки</button>
+    </div>
     <div class="grid2" id="forge-checkpoint-actions" hidden>
       <button class="btn secondary small" type="button" data-device="save">Сделать копию на устройстве</button>
       <button class="btn secondary small" type="button" data-device="restore">Восстановить копию</button>
@@ -25,7 +33,15 @@
 
   window.ForgeDevice = {
     receive(result) {
-      if (result.kind === 'diagnostics') {
+      if (result.kind === 'preferences') {
+        card.querySelector('#forge-device-permissions').textContent = 'Камера: ' + (result.camera ? 'разрешена' : 'разрешение не выдано');
+        for (const field of card.querySelectorAll('[data-pref]')) {
+          field.checked = result[field.dataset.pref];
+          field.disabled = result[field.dataset.pref + 'Available'] === false;
+        }
+        card.querySelector('[data-device="test-report"]').hidden = !(result.testReport && result.crash);
+        if (result.notifications) window.ForgePerformance?.persist();
+      } else if (result.kind === 'diagnostics') {
         technicalReport = Object.entries(result.details).map(([key, value]) => key + ': ' + value).join('\n');
         showReport();
       } else if (result.kind === 'saved') {
@@ -41,9 +57,16 @@
     }
   };
 
+  card.querySelector('#forge-privacy-options').hidden = !bridge?.preferences;
+  const consent = { notifications: 'notificationConsent', analytics: 'analyticsConsent', crash: 'crashConsent' };
+  card.addEventListener('change', event => {
+    const key = consent[event.target.dataset.pref];
+    if (key) bridge[key](event.target.checked);
+  });
   card.querySelector('#forge-checkpoint-actions').hidden = !bridge?.checkpoint;
   card.addEventListener('click', async event => {
     switch (event.target.dataset.device) {
+      case 'test-report': bridge.diagnosticEvent('test_non_fatal'); break;
       case 'copy':
         try {
           await navigator.clipboard.writeText(technicalReport);
@@ -63,4 +86,5 @@
     }
   });
   bridge?.diagnostics?.();
+  bridge?.preferences?.();
 })();

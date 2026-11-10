@@ -15,7 +15,6 @@ import android.webkit.WebChromeClient
 import android.webkit.WebResourceRequest
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import android.webkit.PermissionRequest
 import android.webkit.WebResourceResponse
 import androidx.webkit.WebViewAssetLoader
 import android.widget.Toast
@@ -49,10 +48,25 @@ class MainActivity : ComponentActivity() {
     private var chooserCallback: ValueCallback<Array<Uri>>? = null
     private var pendingBytes: ByteArray? = null
     private var pendingBackupRequest: Int? = null
-    private var pendingWebPermission: PermissionRequest? = null
-    private val cameraPermissionLauncher = registerForActivityResult(androidx.activity.result.contract.ActivityResultContracts.RequestPermission()) { granted ->
-        val req = pendingWebPermission; pendingWebPermission = null
-        if (granted) req?.grant(arrayOf(PermissionRequest.RESOURCE_VIDEO_CAPTURE)) else req?.deny()
+    private var pendingMime: String? = null
+    private val diagnostics by lazy { ForgeDiagnostics(applicationContext) }
+    private var notificationReply: JavaScriptReplyProxy? = null
+    private val notifications = registerForActivityResult(androidx.activity.result.contract.ActivityResultContracts.RequestPermission()) { granted ->
+        RestReminder.toggle(this, granted)
+        notificationReply?.let(::reportPreferences)
+        notificationReply = null
+    }
+    private var scannerOpen = false
+    private val scanner = registerForActivityResult(androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult()) { result ->
+        scannerOpen = false
+        if (result.resultCode == Activity.RESULT_OK && ::webView.isInitialized && !isDestroyed) {
+            val code = result.data?.getStringExtra(BarcodeScannerActivity.EXTRA_CODE).orEmpty()
+            val compressed = result.data?.getBooleanExtra(BarcodeScannerActivity.EXTRA_COMPRESSED, false) == true
+            if (RetailBarcode.valid(code, compressed)) {
+                val format = if (compressed) JSONObject.quote("upc_e") else "undefined"
+                webView.evaluateJavascript("window.ForgeBarcode?.scanned(${JSONObject.quote(code)},$format)", null)
+            }
+        }
     }
 
     private val picker = registerForActivityResult(androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult()) { result ->
@@ -70,6 +84,8 @@ class MainActivity : ComponentActivity() {
     private val saveDocument = registerForActivityResult(androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult()) { result ->
         val bytes = pendingBytes
         val request = pendingBackupRequest
+        val mime = pendingMime
+        pendingMime = null
         pendingBytes = null
         pendingBackupRequest = null
         val uri = result.data?.data
@@ -77,6 +93,7 @@ class MainActivity : ComponentActivity() {
             val written = runCatching {
                 requireNotNull(contentResolver.openOutputStream(uri, "wt")).use { it.write(bytes) }
             }.isSuccess
+            if (written && mime == "application/json") AnalyticsService.event(this, "backup_created")
             Toast.makeText(this, if (written) "Резервная копия сохранена" else "Не удалось сохранить файл", Toast.LENGTH_SHORT).show()
             written
         } else false
@@ -99,6 +116,7 @@ class MainActivity : ComponentActivity() {
                 require(base64.length <= 30_000_000)
                 pendingBytes = Base64.decode(base64, Base64.DEFAULT)
                 pendingBackupRequest = request
+                pendingMime = mime
                 val name = filename.substringAfterLast('/').substringAfterLast('\\').ifBlank { "forge-backup.json" }
                 val intent = Intent(Intent.ACTION_CREATE_DOCUMENT).apply {
                     addCategory(Intent.CATEGORY_OPENABLE)
@@ -109,6 +127,7 @@ class MainActivity : ComponentActivity() {
             } catch (_: Exception) {
                 pendingBytes = null
                 pendingBackupRequest = null
+                pendingMime = null
                 reportBackup(request, false)
                 Toast.makeText(this, "Не удалось подготовить экспорт", Toast.LENGTH_LONG).show()
             }
@@ -154,6 +173,7 @@ class MainActivity : ComponentActivity() {
         webView.settings.textZoom = (resources.configuration.fontScale * 100).toInt()
         webView.settings.javaScriptEnabled = true
         webView.settings.domStorageEnabled = true
+        webView.settings.userAgentString += " FORGE-Training/${BuildConfig.VERSION_NAME}"
         webView.settings.allowFileAccess = false
         webView.settings.allowContentAccess = true
         webView.settings.setSupportMultipleWindows(false)
@@ -198,18 +218,6 @@ class MainActivity : ComponentActivity() {
             }
         }
         webView.webChromeClient = object : WebChromeClient() {
-            override fun onPermissionRequest(request: PermissionRequest?) {
-                runOnUiThread {
-                    val allowed = request?.resources?.filter { it == PermissionRequest.RESOURCE_VIDEO_CAPTURE }?.toTypedArray() ?: emptyArray()
-                    if (allowed.isEmpty() || request?.origin?.toString() != assetHost) { request?.deny(); return@runOnUiThread }
-                    if (checkSelfPermission(android.Manifest.permission.CAMERA) == android.content.pm.PackageManager.PERMISSION_GRANTED) request?.grant(allowed)
-                    else if (pendingWebPermission != null) request?.deny()
-                    else { pendingWebPermission = request; cameraPermissionLauncher.launch(android.Manifest.permission.CAMERA) }
-                }
-            }
-            override fun onPermissionRequestCanceled(request: PermissionRequest?) {
-                if (pendingWebPermission === request) pendingWebPermission = null
-            }
             override fun onShowFileChooser(view: WebView?, callback: ValueCallback<Array<Uri>>?, params: WebChromeClient.FileChooserParams?): Boolean {
                 if (pendingBytes != null) { callback?.onReceiveValue(null); return true }
                 chooserCallback?.onReceiveValue(null); chooserCallback = callback
@@ -229,9 +237,16 @@ class MainActivity : ComponentActivity() {
             }
         }
         webView.loadUrl(assetHost + "/assets/index.html")
+        if (savedInstanceState == null) AnalyticsService.event(this, "app_opened")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        RestReminder.activityVisible = true
     }
 
     override fun onPause() {
+        RestReminder.activityVisible = false
         if (::webView.isInitialized) webView.evaluateJavascript("window.ForgeNavigation && window.ForgeNavigation.persist(); window.ForgePerformance && window.ForgePerformance.persist()", null)
         super.onPause()
     }
@@ -248,6 +263,41 @@ class MainActivity : ComponentActivity() {
                 internalBack = message.optBoolean("canGoBack")
                 updateBackCallback()
             }
+            "preferences" -> reportPreferences(reply)
+            "analyticsConsent" -> {
+                val enabled = message.optBoolean("enabled")
+                val previous = AnalyticsService.enabled(this)
+                AnalyticsService.consent(this, enabled)
+                if (enabled && !previous) AnalyticsService.event(this, "app_opened")
+                reportPreferences(reply)
+            }
+            "crashConsent" -> {
+                diagnostics.consent(message.optBoolean("enabled"))
+                reportPreferences(reply)
+            }
+            "analyticsEvent" -> AnalyticsService.event(this, message.optString("event"))
+            "diagnosticEvent" -> diagnostics.record(message.optString("category"))
+            "restDeadline" -> RestReminder.sync(this, message.optLong("deadline"))
+            "notificationConsent" -> {
+                val enabled = message.optBoolean("enabled")
+                if (enabled && android.os.Build.VERSION.SDK_INT >= 33 &&
+                    checkSelfPermission(android.Manifest.permission.POST_NOTIFICATIONS) != android.content.pm.PackageManager.PERMISSION_GRANTED) {
+                    if (notificationReply == null) {
+                        notificationReply = reply
+                        notifications.launch(android.Manifest.permission.POST_NOTIFICATIONS)
+                    }
+                } else {
+                    RestReminder.toggle(this, enabled)
+                    reportPreferences(reply)
+                }
+            }
+            "scanBarcode" -> {
+                if (!scannerOpen) {
+                    scannerOpen = true
+                    runCatching { scanner.launch(Intent(this, BarcodeScannerActivity::class.java)) }
+                        .onFailure { scannerOpen = false }
+                }
+            }
             "export" -> {
                 val mime = message.optString("mime")
                 val request = message.optInt("request", -1).takeIf { it >= 0 }
@@ -261,6 +311,18 @@ class MainActivity : ComponentActivity() {
         }
     }
 
+    private fun reportPreferences(reply: JavaScriptReplyProxy) {
+        val report = JSONObject().put("kind", "preferences")
+            .put("analyticsAvailable", AnalyticsService.configured)
+            .put("analytics", AnalyticsService.enabled(this))
+            .put("crashAvailable", diagnostics.configured())
+            .put("crash", diagnostics.enabled())
+            .put("testReport", BuildConfig.DEBUG)
+            .put("notifications", RestReminder.enabled(this) && androidx.core.app.NotificationManagerCompat.from(this).areNotificationsEnabled())
+            .put("camera", checkSelfPermission(android.Manifest.permission.CAMERA) == android.content.pm.PackageManager.PERMISSION_GRANTED)
+        runCatching { reply.postMessage(report.toString()) }
+    }
+
     private fun checkpointMessage(message: JSONObject, reply: JavaScriptReplyProxy) {
         val action = message.optString("action")
         val webVersion = WebViewCompat.getCurrentWebViewPackage(this)?.versionName ?: "не определена"
@@ -268,7 +330,11 @@ class MainActivity : ComponentActivity() {
             val dao = runCatching { ForgeDatabase.get(applicationContext).checkpoints() }
             val result = JSONObject()
             when (action) {
-                "checkpoint" -> result.put("kind", "saved").put("ok", dao.mapCatching { it.save(message.getString("payload")) }.isSuccess)
+                "checkpoint" -> {
+                    val saved = dao.mapCatching { it.save(message.getString("payload")) }.isSuccess
+                    if (saved) AnalyticsService.event(applicationContext, "backup_created")
+                    result.put("kind", "saved").put("ok", saved)
+                }
                 "deleteCheckpoint" -> result.put("kind", "deleted").put("ok", dao.mapCatching { it.delete() }.isSuccess)
                 "readCheckpoint" -> result.put("kind", "checkpoint").put("payload", dao.mapCatching { it.read() }.getOrNull()?.payload)
                 "diagnostics" -> {
@@ -283,7 +349,12 @@ class MainActivity : ComponentActivity() {
                         .put("Android API", android.os.Build.VERSION.SDK_INT)
                         .put("WebView", webVersion)
                         .put("Хранилище", "локальный дневник WebView")
-                        .put("Резервная копия Room", status))
+                        .put("Резервная копия Room", status)
+                        .put("Сканер", "CameraX, встроенная модель ML Kit")
+                        .put("Open Food Facts", "по запросу пользователя")
+                        .put("Crashlytics", if (diagnostics.configured()) "проект задан" else "нет проекта")
+                        .put("PostHog", if (AnalyticsService.configured) "проект задан" else "нет проекта")
+                        .put("Платежи", "отключены"))
                 }
             }
             runOnUiThread { if (!isDestroyed) runCatching { reply.postMessage(result.toString()) } }
