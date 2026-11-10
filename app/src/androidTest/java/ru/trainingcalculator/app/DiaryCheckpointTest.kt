@@ -16,7 +16,8 @@ import org.junit.runner.RunWith
 class DiaryCheckpointTest {
     @Test fun roundTripOfLargeDiaryAndFailureKeepsLastValidCopy() {
         val context = InstrumentationRegistry.getInstrumentation().targetContext
-        Room.inMemoryDatabaseBuilder(context, ForgeDatabase::class.java).build().use { db ->
+        val db = Room.inMemoryDatabaseBuilder(context, ForgeDatabase::class.java).build()
+        try {
             val dao = db.checkpoints()
             assertNull(dao.read())
             val payload = JSONObject()
@@ -32,6 +33,8 @@ class DiaryCheckpointTest {
             assertFalse(stored.copy(schema = 2).isIntact())
             dao.delete()
             assertNull(dao.read())
+        } finally {
+            db.close()
         }
     }
 }
