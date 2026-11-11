@@ -48,7 +48,7 @@ internal class PlayCommerce(context: Context, private val updated: (Result<List<
         }
     }
 
-    fun begin(activity: Activity, productId: String, offerToken: String, obfuscatedAccount: String): Result<Unit> {
+    fun begin(activity: Activity, productId: String, offerToken: String, accountId: String): Result<Unit> {
         if (!BuildConfig.FORGE_ENABLE_PAYMENTS) return disabled()
         val product = products[productId] ?: return Result.failure(IllegalArgumentException("Unknown product"))
         if (product.subscriptionOfferDetails.orEmpty().none { it.offerToken == offerToken }) {
@@ -56,9 +56,10 @@ internal class PlayCommerce(context: Context, private val updated: (Result<List<
         }
         val item = BillingFlowParams.ProductDetailsParams.newBuilder()
             .setProductDetails(product).setOfferToken(offerToken).build()
-        val params = BillingFlowParams.newBuilder().setProductDetailsParamsList(listOf(item))
-            .setObfuscatedAccountId(obfuscatedAccount).build()
-        return client.launchBillingFlow(activity, params).map { Unit }
+        return runCatching {
+            BillingFlowParams.newBuilder().setProductDetailsParamsList(listOf(item))
+                .setObfuscatedAccountId(commerceAccountId(accountId)).build()
+        }.fold({ params -> client.launchBillingFlow(activity, params).map { Unit } }, { Result.failure(it) })
     }
 
     fun restore(result: (Result<List<StoreReceipt>>) -> Unit) {

@@ -61,7 +61,7 @@ Firestore оставлен резервным вариантом. [Квоты Fi
 ## Магазины и подпись
 
 - Для компиляции без платежей используйте `./gradlew -Pforge.storeBuild=true :app:assemblePlayDebug :app:assembleRustoreDebug`. Обычный APK не включает магазинные SDK. В обеих магазинных конфигурациях входы оплаты отключены, платёжный провайдер RuStore не активируется.
-- После отдельного согласования владельцу нужно подготовить закрытые тестовые товары и тестовые аккаунты в Play Console и RuStore Console. Сервер проверяет пакет, SKU, токен, статус, срок действия и связь с авторизованным аккаунтом через API магазина, исключает повторное присвоение токена и подтверждает Play покупку только после проверки. Клиентский контракт `EntitlementBackend` ожидает подтверждённый ответ сервера. Сам сервер проверки, уведомления о продлении и тестовая монетизация остаются отдельными задачами. Храните платёжные API-ключи только на сервере.
+- Проверка покупок реализована для sandbox. Настройка, проверка двух магазинов и ограничения описаны ниже.
 - Создайте GitHub environment `release-signing`, защитите ветку и установите secrets `FORGE_KEYSTORE_BASE64`, `FORGE_KEYSTORE_PASSWORD`, `FORGE_KEY_ALIAS`, `FORGE_KEY_PASSWORD`. Ручной workflow `Signed Android build` создаёт APK/AAB как artifacts после выбора `confirm_signing` на main. Подпись обновления должна соответствовать установленной сборке. Не переносите ключ в Git или чат.
 - Перед публикацией заполните Data Safety, декларации здоровья и раздел удаления аккаунта. Включите использование Crashlytics, PostHog, Supabase и Health Connect в декларации в соответствии с фактической конфигурацией и передачей данных. Настройте политику приватности, контакты и процесс удаления на стороне владельца.
 
@@ -70,3 +70,14 @@ Firestore оставлен резервным вариантом. [Квоты Fi
 ## Зависимости и эксплуатация
 
 Room 2.8.5 + KSP 2.3.10, CameraX 1.6.2, ML Kit Barcode 17.3.0, WorkManager 2.11.0, Firebase BoM 35.1.0, Google Services 4.5.0, Crashlytics Gradle 3.0.8, JUnit 4.13.2 и PGlite 0.5.16 для тестов. Health Connect использует системный API Android 34. По отдельному Gradle-флагу подключаются Play Billing 9.1.0 и RuStore Pay 11.2.0 (BoM 2026.10.01). Dependabot еженедельно проверяет Gradle, npm и Actions после добавления конфигурации в default branch. Для обновлений проверяйте минимальный API, подпись, манифест, лицензии, Gradle, браузер и эмулятор. Крупные обновления требуют ревью.
+
+### Серверная проверка тестовых подписок
+
+Функция [verify-entitlement](../supabase/functions/verify-entitlement/index.ts) сверяет покупку с API магазина и с аккаунтом Supabase. Google Play должен вернуть признак тестовой покупки. RuStore используется через sandbox API v5. Запросы для обычных покупок отклоняются, checkout в FORGE выключен.
+
+1. Подготовьте тестовые товары и аккаунты в Play Console и RuStore Console. В тестовом Supabase сохраните серверные параметры в Edge Function Secrets. Для Google Play нужен `FORGE_PLAY_SERVICE_ACCOUNT_JSON` с правом проверки подписок для `ru.trainingcalculator.app`. Для RuStore нужны `FORGE_RUSTORE_SANDBOX_KEY_ID` и `FORGE_RUSTORE_SANDBOX_PRIVATE_KEY` в формате PKCS#8 с доступом к методам sandbox.
+2. Укажите тестовые SKU и уровни доступа в `FORGE_COMMERCE_PRODUCTS_JSON`, например `{"GOOGLE_PLAY":{"test_pro_month":"PRO"},"RUSTORE":{"test_pro_month":"PRO"}}`. В тестовом проекте установите `FORGE_COMMERCE_SANDBOX=true` и разверните `verify-entitlement`. Функция использует стандартные серверные переменные `SUPABASE_URL` и `SUPABASE_ANON_KEY` для проверки сессии.
+3. Вызовите `POST /functions/v1/verify-entitlement` с JWT авторизованного пользователя в заголовке `Authorization: Bearer …`, публичным ключом проекта в `apikey` и JSON с полями `store`, `product`, `token`. Значения `store` — `GOOGLE_PLAY` и `RUSTORE`. Для Google передайте токен покупки, для RuStore — UUID `purchaseId`. Магазин должен вернуть хеш аккаунта, переданный при покупке. Проверьте действующую подписку, другой аккаунт, истечение и отмену. Ответы о доступе содержат `sandbox: true`.
+4. Локальная проверка выполняется через `npm run test:commerce-sandbox` с тестовыми ответами API. Проверка на подключённых проектах и вызов функции из пользовательского интерфейса остаются впереди. Для выпуска нужны обработка событий магазинов и повторная проверка действительности подписок.
+
+[Google Play subscriptions v2](https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.subscriptionsv2), [RuStore Pay API v5](https://www.rustore.ru/help/work-with-rustore-api/api-subscription-payment/api-subscription-validation-v5), [Supabase Edge Function Secrets](https://supabase.com/docs/guides/functions/secrets).

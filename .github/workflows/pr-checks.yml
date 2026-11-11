@@ -23,6 +23,7 @@ jobs:
       - run: npm run test:device-settings
       - run: npm run test:barcode
       - run: npm run test:cloud-snapshot
+      - run: npm run test:commerce-sandbox
       - run: node scripts/check-art-coverage.cjs
       - uses: actions/upload-artifact@v4
         if: always()

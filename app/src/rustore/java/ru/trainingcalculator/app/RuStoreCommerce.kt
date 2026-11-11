@@ -2,6 +2,7 @@ package ru.trainingcalculator.app
 
 import android.content.Intent
 import ru.rustore.sdk.pay.RuStorePayClient
+import ru.rustore.sdk.pay.model.AppUserId
 import ru.rustore.sdk.pay.model.BillingSubscription
 import ru.rustore.sdk.pay.model.OrderId
 import ru.rustore.sdk.pay.model.ProductId
@@ -20,10 +21,14 @@ internal class RuStoreCommerce {
             }.addOnFailureListener { result(Result.failure(it)) }
     }
 
-    fun begin(productId: String, backendOrderId: String, result: (Result<StoreReceipt>) -> Unit) {
+    fun begin(productId: String, backendOrderId: String, accountId: String, result: (Result<StoreReceipt>) -> Unit) {
         if (!BuildConfig.FORGE_ENABLE_PAYMENTS) return result(disabled())
+        val userId = runCatching { AppUserId(commerceAccountId(accountId)) }
+            .getOrElse { return result(Result.failure(it)) }
         val purchases = client.getPurchaseInteractor()
-        purchases.purchase(ProductPurchaseParams(productId = ProductId(productId), orderId = OrderId(backendOrderId)))
+        purchases.purchase(ProductPurchaseParams(
+            productId = ProductId(productId), orderId = OrderId(backendOrderId), appUserId = userId
+        ))
             .addOnSuccessListener { purchase ->
                 purchases.getPurchase(purchase.purchaseId)
                     .addOnSuccessListener { result(runCatching { receipt(it as BillingSubscription) }) }
@@ -43,7 +48,7 @@ internal class RuStoreCommerce {
     }
 
     private fun receipt(purchase: BillingSubscription) =
-        StoreReceipt(Store.RUSTORE, purchase.productId.value, requireNotNull(purchase.subscriptionToken).value)
+        StoreReceipt(Store.RUSTORE, purchase.productId.value, purchase.purchaseId.value)
 
     private fun <T> disabled(): Result<T> = Result.failure(IllegalStateException("FORGE payments disabled"))
 }

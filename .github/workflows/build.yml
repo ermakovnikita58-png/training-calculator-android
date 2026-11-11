@@ -21,6 +21,8 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
       - name: Build APKs, run JVM tests and lint
         run: bash ./gradlew :app:assembleDebug :app:testDebugUnitTest :app:lintDebug :app:assembleDebugAndroidTest --no-daemon --stacktrace
+      - name: Compile store variants and verify that checkout stays disabled
+        run: bash ./gradlew -Pforge.storeBuild=true :app:assemblePlayDebug :app:assembleRustoreDebug :app:testPlayDebugUnitTest :app:testRustoreDebugUnitTest --no-daemon --stacktrace
       - uses: actions/upload-artifact@v4
         with:
           name: forge-training-debug-apk

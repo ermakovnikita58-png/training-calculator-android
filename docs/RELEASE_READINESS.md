@@ -29,8 +29,8 @@
 | Supabase PostgreSQL | HTTPS + SQL | Ожидает проекта | `WAITING_FOR_OWNER`, [локальный тест PostgreSQL RLS и конфликтов](../scripts/cloud-snapshot.test.cjs) | Миграция проекта владельца, проверка двух аккаунтов и двух устройств |
 | Firebase Auth + Firestore | Резерв | Нет | `NOT_STARTED`, [сравнение в инструкции](INTEGRATIONS_SETUP.md#supabase) | Дополнительный backend потребуется при отдельном выборе |
 | Health Connect | Системный Android API 34 | Опционально | `CODE_READY`, [тест согласия и дедупликации](../scripts/device-settings-browser.cjs) с тестовым мостом | Системные разрешения, реальный источник и отзыв на Android |
-| Play Billing | 9.1.0 в отдельной сборке | Выключен | `CODE_READY`, [flavor с PlayCommerce](../app/src/play/java/ru/trainingcalculator/app/PlayCommerce.kt) собран | Сервер, тестовые товары, лицензированные тестовые аккаунты, тест покупки |
-| RuStore Pay | 11.2.0 в отдельной сборке | Выключен | `CODE_READY`, [flavor с RuStoreCommerce](../app/src/rustore/java/ru/trainingcalculator/app/RuStoreCommerce.kt) собран | Сервер, RuStore Console, тестовый каталог и тестовые операции |
+| Play Billing | 9.1.0 в отдельной сборке | Выключен | `CODE_READY`, [flavor с PlayCommerce](../app/src/play/java/ru/trainingcalculator/app/PlayCommerce.kt) собран | Развернуть sandbox-сервер, настроить тестовые товары и аккаунты, проверить покупку |
+| RuStore Pay | 11.2.0 в отдельной сборке | Выключен | `CODE_READY`, [flavor с RuStoreCommerce](../app/src/rustore/java/ru/trainingcalculator/app/RuStoreCommerce.kt) собран | Развернуть sandbox-сервер, настроить RuStore Console и проверить тестовую покупку |
 | GitHub Actions | YAML | Да | `TESTED`, браузерные проверки, Android build и [проверка обновления](https://github.com/ermakovnikita58-png/training-calculator-android/actions/runs/43021369476) | Закрытые environments для Test Lab и подписи |
 | Playwright | Да | Локально и CI | `TESTED`, [прогон CI](https://github.com/ermakovnikita58-png/training-calculator-android/actions/runs/43021369916), 320/360/390/412, офлайн, резервная копия, импорт и конфликты | Физические проверки отдельно |
 | Dependabot | [Конфигурация](../.github/dependabot.yml) | После default branch | `CODE_READY` | Дождаться проверок GitHub после принятия конфигурации |
@@ -47,7 +47,7 @@
 - WebView должен поддерживать WebMessageListener. При отсутствии поддержки автономный дневник остаётся доступен, но нативное резервирование, камера, уведомления и интеграции требуют актуального Android System WebView.
 - В манифесте камеры есть необязательный аппаратный feature. Камера, уведомления и чтение трёх типов Health Connect запрашиваются при соответствующем действии. Таймер использует неточный AlarmManager без exact alarm и foreground service. Фоновые уведомления могут задерживаться системой и не гарантируются после перезагрузки или принудительной остановки.
 - Ключ PostHog публичный и ограничен приёмом событий, ключи Firebase используются только для привязки к проекту, секретные права Supabase и магазинов остаются вне клиента. Подписанная сборка защищена environment и ручным флагом.
-- Управление доступом по подписке отделено от дневника. Сервер проверки подписки, доставка уведомлений магазинов, опубликованная политика приватности и декларации магазинов нужны до релиза. Публичная публикация и платные операции не выполнялись.
+- Управление доступом по подписке отделено от дневника. Серверная проверка тестовых подписок готова локально. Подключение к проектам магазинов, производственная проверка подписок, доставка уведомлений магазинов, опубликованная политика приватности и декларации магазинов нужны до релиза. Публичная публикация и платные операции не выполнялись.
 
 ## Безопасное обновление на телефоне
 
