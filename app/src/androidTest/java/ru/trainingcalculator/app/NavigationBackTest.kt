@@ -74,9 +74,8 @@ class NavigationBackTest {
             if (gesture) {
                 val width = device.displayWidth
                 val midpoint = device.displayHeight / 2
-                val start = if (fromRight) width - 2 else 1
-                val end = if (fromRight) width / 5 else width * 4 / 5
-                device.executeShellCommand("input touchscreen swipe $start $midpoint $end $midpoint 200")
+                val start = if (fromRight) width - 1 else 0
+                device.swipe(start, midpoint, width / 2, midpoint, 100)
             } else {
                 device.executeShellCommand("input keyevent KEYCODE_BACK")
             }

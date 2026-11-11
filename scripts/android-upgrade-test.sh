@@ -28,4 +28,7 @@ for attempt in {1..20}; do
   fi
   sleep 1
 done
-instrument gesture-back -e forgeBackInput gesture -e class "$app.NavigationBackTest#systemBackClosesCardThenReturnsThroughPages"
+if ! instrument gesture-back -e forgeBackInput gesture -e class "$app.NavigationBackTest#systemBackClosesCardThenReturnsThroughPages"; then
+  adb shell dumpsys activity service com.android.systemui/.SystemUIService > test-results/gesture-systemui.txt
+  exit 1
+fi
