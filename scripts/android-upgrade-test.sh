@@ -20,3 +20,12 @@ adb shell svc wifi disable
 adb shell svc data disable
 instrument upgrade-verify -e forgeUpgrade verify -e class "$app.UpgradePersistenceTest#verifyCandidateVersion"
 instrument offline-device -e notClass "$app.UpgradePersistenceTest"
+
+adb shell cmd overlay enable-exclusive --category --user current com.android.internal.systemui.navbar.gestural
+for attempt in {1..20}; do
+  if [[ "$(adb shell settings get secure navigation_mode | tr -d '\r')" == 2 ]]; then
+    break
+  fi
+  sleep 1
+done
+instrument gesture-back -e forgeBackInput gesture -e class "$app.NavigationBackTest#systemBackClosesCardThenReturnsThroughPages"

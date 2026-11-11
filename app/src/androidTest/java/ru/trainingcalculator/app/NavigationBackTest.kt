@@ -1,5 +1,6 @@
 package ru.trainingcalculator.app
 
+import android.provider.Settings
 import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebView
@@ -18,7 +19,7 @@ import org.junit.runner.RunWith
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
 
-/** Run on a test emulator. These are system-button tests, not edge-gesture proof. */
+/** The emulator workflow also runs the exercise card scenario with an edge swipe. */
 @RunWith(AndroidJUnit4::class)
 class NavigationBackTest {
     private fun findWeb(view: View): WebView? {
@@ -62,16 +63,30 @@ class NavigationBackTest {
         waitFor(scenario, "ForgeNavigation.inspect().current === ${JSONObject.quote(page)}")
     }
     @Test fun systemBackClosesCardThenReturnsThroughPages() {
+        val instrumentation = InstrumentationRegistry.getInstrumentation()
+        val gesture = InstrumentationRegistry.getArguments().getString("forgeBackInput") == "gesture"
+        val device = UiDevice.getInstance(instrumentation)
+        if (gesture) {
+            val navigationMode = Settings.Secure.getInt(instrumentation.targetContext.contentResolver, "navigation_mode", -1)
+            assertEquals("The emulator must use gesture navigation", 2, navigationMode)
+        }
+        fun goBack() {
+            if (gesture) {
+                val midpoint = device.displayHeight / 2
+                device.executeShellCommand("input swipe 1 $midpoint ${device.displayWidth / 3} $midpoint 300")
+            } else {
+                device.executeShellCommand("input keyevent KEYCODE_BACK")
+            }
+        }
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             waitFor(scenario, "!!window.ForgeExerciseLibrary")
             js(scenario, "showPage('home');showPage('plan');showPage('library');ForgeExerciseLibrary.showGroups();y8OpenCard(encodeURIComponent('Жим штанги стоя'),'library')")
-            val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
             waitFor(scenario, "ForgeNavigation.inspect().overlay==='y8DetailBack'")
-            device.executeShellCommand("input keyevent KEYCODE_BACK")
+            goBack()
             waitFor(scenario, "!ForgeNavigation.inspect().overlay && ForgeNavigation.inspect().current==='library'")
-            device.executeShellCommand("input keyevent KEYCODE_BACK")
+            goBack()
             waitFor(scenario, "ForgeNavigation.inspect().current==='plan'")
-            device.executeShellCommand("input keyevent KEYCODE_BACK")
+            goBack()
             waitFor(scenario, "ForgeNavigation.inspect().current==='home'")
         }
     }
