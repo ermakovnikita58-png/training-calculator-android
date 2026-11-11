@@ -31,10 +31,10 @@
 | Health Connect | Системный Android API 34 | Опционально | `CODE_READY`, [тест согласия и дедупликации](../scripts/device-settings-browser.cjs) с тестовым мостом | Системные разрешения, реальный источник и отзыв на Android |
 | Play Billing | 9.1.0 в отдельной сборке | Выключен | `CODE_READY`, [flavor с PlayCommerce](../app/src/play/java/ru/trainingcalculator/app/PlayCommerce.kt) собран | Сервер, тестовые товары, лицензированные тестовые аккаунты, тест покупки |
 | RuStore Pay | 11.2.0 в отдельной сборке | Выключен | `CODE_READY`, [flavor с RuStoreCommerce](../app/src/rustore/java/ru/trainingcalculator/app/RuStoreCommerce.kt) собран | Сервер, RuStore Console, тестовый каталог и тестовые операции |
-| GitHub Actions | YAML | Да | `TESTED`, браузерные проверки, Android build и [проверка обновления](https://github.com/ermakovnikita58-png/training-calculator-android/actions/runs/42865440645) | Закрытые environments для Test Lab и подписи |
-| Playwright | Да | Локально и CI | `TESTED`, [прогон CI](https://github.com/ermakovnikita58-png/training-calculator-android/actions/runs/42865440577), 320/360/390/412, офлайн, резервная копия, импорт и конфликты | Физические проверки отдельно |
+| GitHub Actions | YAML | Да | `TESTED`, браузерные проверки, Android build и [проверка обновления](https://github.com/ermakovnikita58-png/training-calculator-android/actions/runs/43021369476) | Закрытые environments для Test Lab и подписи |
+| Playwright | Да | Локально и CI | `TESTED`, [прогон CI](https://github.com/ermakovnikita58-png/training-calculator-android/actions/runs/43021369916), 320/360/390/412, офлайн, резервная копия, импорт и конфликты | Физические проверки отдельно |
 | Dependabot | [Конфигурация](../.github/dependabot.yml) | После default branch | `CODE_READY` | Дождаться проверок GitHub после принятия конфигурации |
-| UI Automator | Да | Эмулятор CI | `TESTED`, 11 инструментальных тестов в [отчёте Android](ANDROID_TEST_REPORT.md) | Жесты, камера и системная клавиатура на физическом устройстве |
+| UI Automator | Да | Эмулятор CI | `TESTED`, 12 инструментальных тестов, включая системный свайп, в [отчёте Android](ANDROID_TEST_REPORT.md) | Жесты, камера и системная клавиатура на физическом устройстве |
 | Флаги | Локальные настройки и Gradle | Да | `TESTED` для [запрета платежей](../app/src/test/java/ru/trainingcalculator/app/CommercePolicyTest.kt) и подтверждений импорта, `CODE_READY` для внешних настроек | Пройти QA согласий на подключённых проектах |
 | Таймер и уведомления | Android AlarmManager | Локально | `CODE_READY`, действующий таймер и фоновый сигнал по согласию в [RestReminder](../app/src/main/java/ru/trainingcalculator/app/RestReminder.kt) | Проверить разрешение, звук, вибрацию и задержку в режиме сна |
 
