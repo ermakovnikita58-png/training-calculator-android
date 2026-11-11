@@ -21,6 +21,7 @@ adb shell svc data disable
 instrument upgrade-verify -e forgeUpgrade verify -e class "$app.UpgradePersistenceTest#verifyCandidateVersion"
 instrument offline-device -e notClass "$app.UpgradePersistenceTest"
 
+adb shell getprop qemu.hw.mainkeys
 adb shell cmd overlay enable-exclusive --category --user current com.android.internal.systemui.navbar.gestural
 for attempt in {1..20}; do
   if [[ "$(adb shell settings get secure navigation_mode | tr -d '\r')" == 2 ]]; then
