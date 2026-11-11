@@ -229,6 +229,16 @@ class NavigationBackTest {
             } else {
                 device.findObject(By.text("Ввести вручную"))?.click()
             }
+            val appPackage = InstrumentationRegistry.getInstrumentation().targetContext.packageName
+            assertTrue("FORGE did not regain the foreground after the camera closed",
+                device.wait(Until.hasObject(By.pkg(appPackage).depth(0)), 10_000))
+            val deadline = android.os.SystemClock.elapsedRealtime() + 10_000
+            var focused = false
+            while (!focused && android.os.SystemClock.elapsedRealtime() < deadline) {
+                scenario.onActivity { focused = it.hasWindowFocus() }
+                if (!focused) android.os.SystemClock.sleep(50)
+            }
+            assertTrue("FORGE did not regain window focus after the camera closed", focused)
             waitFor(scenario, "!!document.getElementById('manualBarcode') && ForgeNavigation.inspect().overlay==='modalback'")
             pressBack(scenario, "!ForgeNavigation.inspect().overlay && ForgeNavigation.inspect().current==='nutrition'")
         }
