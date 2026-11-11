@@ -70,10 +70,13 @@ class NavigationBackTest {
             val navigationMode = Settings.Secure.getInt(instrumentation.targetContext.contentResolver, "navigation_mode", -1)
             assertEquals("The emulator must use gesture navigation", 2, navigationMode)
         }
-        fun goBack() {
+        fun goBack(fromRight: Boolean = false) {
             if (gesture) {
+                val width = device.displayWidth
                 val midpoint = device.displayHeight / 2
-                device.executeShellCommand("input swipe 1 $midpoint ${device.displayWidth / 3} $midpoint 300")
+                val start = if (fromRight) width - 2 else 1
+                val end = if (fromRight) width / 5 else width * 4 / 5
+                device.executeShellCommand("input touchscreen swipe $start $midpoint $end $midpoint 200")
             } else {
                 device.executeShellCommand("input keyevent KEYCODE_BACK")
             }
@@ -84,7 +87,7 @@ class NavigationBackTest {
             waitFor(scenario, "ForgeNavigation.inspect().overlay==='y8DetailBack'")
             goBack()
             waitFor(scenario, "!ForgeNavigation.inspect().overlay && ForgeNavigation.inspect().current==='library'")
-            goBack()
+            goBack(fromRight = true)
             waitFor(scenario, "ForgeNavigation.inspect().current==='plan'")
             goBack()
             waitFor(scenario, "ForgeNavigation.inspect().current==='home'")
