@@ -75,7 +75,8 @@ class NavigationBackTest {
                 val width = device.displayWidth
                 val midpoint = device.displayHeight / 2
                 val start = if (fromRight) width - 1 else 0
-                device.swipe(start, midpoint, width / 2, midpoint, 100)
+                val end = if (fromRight) width / 10 else width * 9 / 10
+                device.swipe(start, midpoint, end, midpoint, 40)
             } else {
                 device.executeShellCommand("input keyevent KEYCODE_BACK")
             }
