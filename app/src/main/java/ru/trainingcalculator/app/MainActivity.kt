@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.os.Build
 import android.util.Base64
 import android.webkit.JavascriptInterface
 import android.webkit.ValueCallback
@@ -30,6 +31,7 @@ class MainActivity : ComponentActivity() {
     private var pendingMime = "application/octet-stream"
     private var pendingName = "forge-backup.json"
     private var pendingWebPermission: PermissionRequest? = null
+    private var awaitingBackResult = false
     private val cameraPermissionLauncher = registerForActivityResult(androidx.activity.result.contract.ActivityResultContracts.RequestPermission()) { granted ->
         val req = pendingWebPermission; pendingWebPermission = null
         if (granted) req?.grant(arrayOf(PermissionRequest.RESOURCE_VIDEO_CAPTURE)) else req?.deny()
@@ -58,8 +60,12 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
-                if (::webView.isInitialized) webView.evaluateJavascript("(window.f6HandleAndroidBack ? window.f6HandleAndroidBack() : 'exit')") { result -> if (result == "\"exit\"") finish() }
-                else finish()
+                if (!::webView.isInitialized || awaitingBackResult) return
+                awaitingBackResult = true
+                webView.evaluateJavascript("window.f6HandleAndroidBack?.() ?? 'pending'") { result ->
+                    awaitingBackResult = false
+                    if (result == "\"exit\"" && !isFinishing) finish()
+                }
             }
         })
         assetLoader = WebViewAssetLoader.Builder().addPathHandler("/assets/", WebViewAssetLoader.AssetsPathHandler(this)).build()
@@ -67,8 +73,10 @@ class MainActivity : ComponentActivity() {
         setContentView(webView)
         webView.setBackgroundColor(Color.rgb(11, 16, 22))
         ViewCompat.setOnApplyWindowInsetsListener(webView) { view, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            view.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            var safeArea = WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout()
+            if (Build.VERSION.SDK_INT >= 35) safeArea = safeArea or WindowInsetsCompat.Type.ime()
+            val padding = insets.getInsets(safeArea)
+            view.setPadding(padding.left, padding.top, padding.right, padding.bottom)
             insets
         }
         webView.settings.javaScriptEnabled = true

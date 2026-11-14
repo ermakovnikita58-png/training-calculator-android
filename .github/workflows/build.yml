@@ -32,6 +32,12 @@ jobs:
         run: node scripts/check-web.mjs
       - name: Check exercise illustrations
         run: node scripts/check-art.mjs
+      - name: Check training cycle calculations and browser flows
+        run: |
+          node --test scripts/training-cycles.test.cjs
+          npm install --no-save --ignore-scripts playwright@1.62.1
+          npx playwright install --with-deps chromium
+          node scripts/browser-regression.cjs
       - name: Build APK, run unit tests and Android lint
         run: bash ./gradlew :app:assembleDebug :app:testDebugUnitTest :app:lintDebug --no-daemon --stacktrace
       - name: Upload installable debug APK
@@ -45,7 +51,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: forge-training-10-check-reports
-          path: app/build/reports/
+          path: |
+            app/build/reports/
+            test-results/training-cycles/
           if-no-files-found: ignore
       - name: Build signed release APK and AAB
         if: github.event_name == 'workflow_dispatch' && inputs.signed_release && github.ref == 'refs/heads/main'

@@ -11,8 +11,9 @@ android {
         applicationId = "ru.trainingcalculator.app" // KEEP for updates; choose a unique ID before first Google Play release.
         minSdk = 24
         targetSdk = 36
-        versionCode = 11
-        versionName = "10.0.1"
+        versionCode = 12
+        versionName = "10.1.0"
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     signingConfigs {
         if (uploadStorePath.isNotBlank()) {
@@ -44,4 +45,8 @@ dependencies {
     implementation("androidx.activity:activity-ktx:1.10.1")
     implementation("androidx.webkit:webkit:1.12.1")
     implementation("androidx.core:core-ktx:1.16.0")
+    androidTestImplementation("androidx.test:core:1.6.1")
+    androidTestImplementation("androidx.test:runner:1.6.2")
+    androidTestImplementation("androidx.test.ext:junit:1.2.1")
+    androidTestImplementation("androidx.test.uiautomator:uiautomator:2.3.0")
 }
