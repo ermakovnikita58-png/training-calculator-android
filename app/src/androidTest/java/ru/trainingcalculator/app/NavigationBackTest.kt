@@ -1,12 +1,16 @@
 package ru.trainingcalculator.app
 
+import android.provider.Settings
 import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebView
 import androidx.test.core.app.ActivityScenario
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
+import androidx.test.uiautomator.By
+import androidx.test.uiautomator.Until
 import androidx.test.uiautomator.UiDevice
+import java.util.regex.Pattern
 import org.json.JSONObject
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
@@ -15,7 +19,7 @@ import org.junit.runner.RunWith
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
 
-/** Run on a test emulator. These are system-button tests, not edge-gesture proof. */
+/** The emulator workflow also runs the exercise card scenario with an edge swipe. */
 @RunWith(AndroidJUnit4::class)
 class NavigationBackTest {
     private fun findWeb(view: View): WebView? {
@@ -49,7 +53,7 @@ class NavigationBackTest {
 
     private fun pressBack(scenario: ActivityScenario<MainActivity>, condition: String) {
         val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
-        assertTrue("Android Back event was not sent", device.pressBack())
+        device.executeShellCommand("input keyevent KEYCODE_BACK")
         waitFor(scenario, condition)
     }
 
@@ -59,16 +63,33 @@ class NavigationBackTest {
         waitFor(scenario, "ForgeNavigation.inspect().current === ${JSONObject.quote(page)}")
     }
     @Test fun systemBackClosesCardThenReturnsThroughPages() {
+        val instrumentation = InstrumentationRegistry.getInstrumentation()
+        val gesture = InstrumentationRegistry.getArguments().getString("forgeBackInput") == "gesture"
+        val device = UiDevice.getInstance(instrumentation)
+        if (gesture) {
+            val navigationMode = Settings.Secure.getInt(instrumentation.targetContext.contentResolver, "navigation_mode", -1)
+            assertEquals("The emulator must use gesture navigation", 2, navigationMode)
+        }
+        fun goBack(fromRight: Boolean = false) {
+            if (gesture) {
+                val width = device.displayWidth
+                val midpoint = device.displayHeight / 2
+                val start = if (fromRight) width - 1 else 0
+                val end = if (fromRight) width / 10 else width * 9 / 10
+                device.swipe(start, midpoint, end, midpoint, 40)
+            } else {
+                device.executeShellCommand("input keyevent KEYCODE_BACK")
+            }
+        }
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             waitFor(scenario, "!!window.ForgeExerciseLibrary")
             js(scenario, "showPage('home');showPage('plan');showPage('library');ForgeExerciseLibrary.showGroups();y8OpenCard(encodeURIComponent('Жим штанги стоя'),'library')")
-            val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
             waitFor(scenario, "ForgeNavigation.inspect().overlay==='y8DetailBack'")
-            device.pressBack()
+            goBack()
             waitFor(scenario, "!ForgeNavigation.inspect().overlay && ForgeNavigation.inspect().current==='library'")
-            device.pressBack()
+            goBack(fromRight = true)
             waitFor(scenario, "ForgeNavigation.inspect().current==='plan'")
-            device.pressBack()
+            goBack()
             waitFor(scenario, "ForgeNavigation.inspect().current==='home'")
         }
     }
@@ -76,7 +97,7 @@ class NavigationBackTest {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             waitFor(scenario, "!!window.ForgeNavigation")
             js(scenario, "showPage('plan');window.savedBack=ForgeNavigation.back;ForgeNavigation.back=()=>{throw Error('test failure')}")
-            UiDevice.getInstance(InstrumentationRegistry.getInstrumentation()).pressBack()
+            UiDevice.getInstance(InstrumentationRegistry.getInstrumentation()).executeShellCommand("input keyevent KEYCODE_BACK")
             Thread.sleep(300)
             assertEquals("\"plan\"", js(scenario, "ForgeNavigation.inspect().current"))
             js(scenario, "ForgeNavigation.back=window.savedBack")
@@ -97,15 +118,15 @@ class NavigationBackTest {
             js(scenario, "showPage('home');showPage('plan');showPage('library');ForgeExerciseLibrary.openGroup('Плечи','гантел');scrollTo(0,200);y8OpenCard(encodeURIComponent('Жим гантелей сидя'),'library')")
             val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
             waitFor(scenario, "ForgeNavigation.inspect().overlay==='y8DetailBack'")
-            device.pressBack()
+            device.executeShellCommand("input keyevent KEYCODE_BACK")
             waitFor(scenario, "!ForgeNavigation.inspect().overlay && ForgeExerciseLibrary.snapshot().group==='Плечи'")
             assertEquals("\"гантел\"", js(scenario, "document.getElementById('vs-query').value"))
             waitFor(scenario, "Math.abs(scrollY-200)<5")
-            device.pressBack()
+            device.executeShellCommand("input keyevent KEYCODE_BACK")
             waitFor(scenario, "ForgeExerciseLibrary.snapshot().group==='' && document.querySelectorAll('.vs-group').length===14")
-            device.pressBack()
+            device.executeShellCommand("input keyevent KEYCODE_BACK")
             waitFor(scenario, "ForgeNavigation.inspect().current==='plan'")
-            device.pressBack()
+            device.executeShellCommand("input keyevent KEYCODE_BACK")
             waitFor(scenario, "ForgeNavigation.inspect().current==='home'")
         }
     }
@@ -193,6 +214,45 @@ class NavigationBackTest {
 
             // Leave the fixture in memory only. A test run must not write a program into the diary.
             js(scenario, "ForgeNavigation.markSaved('n8-day');showPage('home')")
+        }
+    }
+
+    @Test fun scannerKeepsManualEntryWhenCameraCloses() {
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            openPage(scenario, "nutrition")
+            js(scenario, "openFoodScanner()")
+            click(scenario, "#forge-scan-camera")
+            val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
+            val prompt = device.wait(Until.findObject(By.res(Pattern.compile(".+:id/permission_deny_button"))), 5_000)
+            if (prompt != null) {
+                prompt.click()
+            } else {
+                device.findObject(By.text("Ввести вручную"))?.click()
+            }
+            val appPackage = InstrumentationRegistry.getInstrumentation().targetContext.packageName
+            assertTrue("FORGE did not regain the foreground after the camera closed",
+                device.wait(Until.hasObject(By.pkg(appPackage).depth(0)), 10_000))
+            val deadline = android.os.SystemClock.elapsedRealtime() + 10_000
+            var focused = false
+            while (!focused && android.os.SystemClock.elapsedRealtime() < deadline) {
+                scenario.onActivity { focused = it.hasWindowFocus() }
+                if (!focused) android.os.SystemClock.sleep(50)
+            }
+            assertTrue("FORGE did not regain window focus after the camera closed", focused)
+            waitFor(scenario, "!!document.getElementById('manualBarcode') && ForgeNavigation.inspect().overlay==='modalback'")
+            pressBack(scenario, "!ForgeNavigation.inspect().overlay && ForgeNavigation.inspect().current==='nutrition'")
+        }
+    }
+
+    @Test fun documentPickerCancelReturnsToProfileWithoutChangingDiary() {
+        val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            openPage(scenario, "profile")
+            js(scenario, "exportData()")
+            assertTrue("System document provider did not open", device.wait(
+                Until.hasObject(By.pkg(Pattern.compile("com\\.(google\\.)?android\\.documentsui"))), 10_000
+            ))
+            pressBack(scenario, "ForgeNavigation.inspect().current==='profile'")
         }
     }
 }

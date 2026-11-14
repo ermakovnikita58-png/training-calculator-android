@@ -11,7 +11,11 @@
   let prefs={date:today(),exercise:'',historyLimit:20}, pendingMeal=null, replacement=null;
   try{const saved=JSON.parse(localStorage.getItem(KEY)||'null');if(saved?.version===1){prefs={...prefs,...saved.prefs};if(state.active&&saved.workoutId===state.active.id)V.rest.restore(saved.rest);}}catch{}
   if(!validDate(prefs.date)||prefs.date>today())prefs.date=today();
-  function persist(){try{localStorage.setItem(KEY,JSON.stringify({version:1,prefs,workoutId:state.active?.id,rest:V.rest.snapshot()}));}catch{}}
+  function persist() {
+    const rest = V.rest.snapshot();
+    try { localStorage.setItem(KEY, JSON.stringify({version:1,prefs,workoutId:state.active?.id,rest})); } catch {}
+    window.AndroidBridge?.restDeadline?.(state.active && rest.running ? rest.until : 0);
+  }
   const paths={home:'M3 10 12 3l9 7M5 9v12h5v-7h4v7h5V9',workout:'M3 8v8M6 5v14M18 5v14M21 8v8M6 12h12',nutrition:'M5 3v6c0 2 4 2 4 0V3M7 11v10M17 3c-4 4-4 9 0 9h2M19 3v18',plan:'M8 3h8v4H8zM8 5H5v16h14V5h-3M8 12h8M8 17h6',progress:'M4 20V4M4 20h17M7 15l4-5 4 2 5-7',user:'M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0M4 21v-2a8 8 0 0 1 16 0v2',settings:'m10 3-1 3-3 1-3 3 2 3-1 3 3 3 3-1 3 2 3-2 3 1 3-3-1-3 2-3-3-3-3-1-1-3zM15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0',arrow:'M5 12h14M13 6l6 6-6 6',plus:'M12 4v16M4 12h16',weight:'M4 7h16l-2 14H6zM9 7a3 3 0 0 1 6 0M12 12v4',search:'M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0M15 15l6 6',book:'M4 3h12a4 4 0 0 1 4 4v14H7a3 3 0 0 1 0-6h13M4 3v15M8 7h8',check:'m4 12 5 5L20 6',clock:'M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0M12 6v6l4 2',back:'m15 5-7 7 7 7',close:'m6 6 12 12M18 6 6 18'};
   const icon=name=>`<svg class="fp-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="${paths[name]||paths.arrow}"/></svg>`;
   const button=(action,text,params=[],kind='',ico='')=>`<button type="button" class="fp-btn ${kind}" data-fp-action="${action}" data-fp-params="${esc(JSON.stringify(params))}">${ico?icon(ico):''}${esc(text)}</button>`;
@@ -84,7 +88,7 @@
     for(const [id,key] of [['protein','protein'],['fat','fat'],['carb','carbs']]){$(id+'Val').textContent=`${fmt(t[key],1)} / ${fmt(state.goals[key],1)} г`;$(id+'Bar').style.width=Math.min(100,t[key]/Math.max(1,state.goals[key])*100)+'%';}
     $('fp-water').hidden=prefs.date!==today();
     const meals=['Завтрак','Обед','Ужин','Перекус'],classify=f=>meals.includes(f.meal)?f.meal:'Перекус';
-    $('foodList').innerHTML=meals.map(meal=>{const rows=t.rows.filter(f=>classify(f)===meal);return `<section class="fp-meal"><div class="fp-section"><h2>${meal}</h2><span class="fp-label">${rows.length?fmt(sum(rows,'cal'))+' ккал':'Нет записей'}</span></div>${rows.map(f=>`<div class="fp-list-row"><div><b>${esc(f.name)}</b><p>${f.grams?fmt(f.grams,1)+' г · ':''}Б ${fmt(f.protein,1)} · Ж ${fmt(f.fat,1)} · У ${fmt(f.carbs,1)}</p></div><strong class="fp-number">${fmt(f.cal)}</strong>${button('removeFood','',[f.id],'quiet','close').replace('type="button"','type="button" aria-label="Удалить '+esc(f.name)+'"')}</div>`).join('')}${prefs.date===today()?button('food','Добавить',[meal],'quiet','plus'):''}</section>`;}).join('');
+    $('foodList').innerHTML=meals.map(meal=>{const rows=t.rows.filter(f=>classify(f)===meal);return `<section class="fp-meal"><div class="fp-section"><h2>${meal}</h2><span class="fp-label">${rows.length?fmt(sum(rows,'cal'))+' ккал':'Нет записей'}</span></div>${rows.map(f=>`<div class="fp-list-row"><div><b>${esc(f.name)}</b><p>${f.milliliters?fmt(f.milliliters,1)+' мл · ':f.grams?fmt(f.grams,1)+' г · ':''}Б ${fmt(f.protein,1)} · Ж ${fmt(f.fat,1)} · У ${fmt(f.carbs,1)}</p></div><strong class="fp-number">${fmt(f.cal)}</strong>${button('removeFood','',[f.id],'quiet','close').replace('type="button"','type="button" aria-label="Удалить '+esc(f.name)+'"')}</div>`).join('')}${prefs.date===today()?button('food','Добавить',[meal],'quiet','plus'):''}</section>`;}).join('');
   };
   let chartCounter=0;
   function chart(points,unit,title){

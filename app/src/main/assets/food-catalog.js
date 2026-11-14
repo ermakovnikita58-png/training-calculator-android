@@ -152,7 +152,12 @@ function forgeMoreFood() {
   searchFoodDB();
 }
 
+let forgeFoodSearchEventTimer;
 function forgeFoodChange() {
+  clearTimeout(forgeFoodSearchEventTimer);
+  if ($('foodSearch').value.trim().length >= 3) {
+    forgeFoodSearchEventTimer = setTimeout(() => window.ForgeAnalytics?.('food_searched'), 950);
+  }
   forgeFoodLimit = forgeFoodBatchSize;
   if (forgeFoodTab === 'online') {
     clearTimeout(forgeOnlineTimer);
@@ -179,22 +184,7 @@ function forgeOpenOnlineFoods() {
 }
 
 function forgeFoodObjectFromOpen(product) {
-  const nutrients = product.nutriments || {};
-  const name = product.product_name_ru || product.product_name || product.generic_name_ru || product.generic_name;
-  const energy = nutrients['energy-kcal_100g'];
-  const vals = [
-    energy === undefined || energy === null || energy === '' ? Number(nutrients.energy_100g) / 4.184 || 0 : Number(energy),
-    Number(nutrients.proteins_100g || 0),
-    Number(nutrients.carbohydrates_100g || 0),
-    Number(nutrients.fat_100g || 0)
-  ];
-  if (!name || vals.some(value => !Number.isFinite(value) || value < 0 || value > 9000) ||
-      vals.every(value => value === 0)) return null;
-  return {
-    name: String(name).slice(0, 150), cal: Math.round(vals[0] * 10) / 10, p: vals[1], c: vals[2], f: vals[3],
-    cat: 'Товары с упаковкой', brand: String(product.brands || '').slice(0, 90),
-    code: String(product.code || ''), source: 'Open Food Facts'
-  };
+  return window.ForgeBarcode.productFromOpen(product);
 }
 
 async function forgeSearchOnline() {
@@ -214,7 +204,7 @@ async function forgeSearchOnline() {
   try {
     const params = new URLSearchParams({
       search_terms: query, search_simple: '1', action: 'process', json: '1', page_size: '45',
-      fields: 'code,product_name,product_name_ru,brands,nutriments,generic_name_ru,generic_name'
+      fields: 'code,product_name,product_name_ru,brands,nutriments,generic_name_ru,generic_name,quantity,product_quantity,product_quantity_unit,serving_size'
     });
     const response = await fetch('https://world.openfoodfacts.org/cgi/search.pl?' + params, {
       headers: {Accept: 'application/json'}
