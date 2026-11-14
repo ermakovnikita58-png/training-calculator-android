@@ -20,6 +20,7 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 adb shell cmd connectivity airplane-mode enable
 adb shell svc wifi disable
 adb shell svc data disable
+adb shell dumpsys connectivity > test-results/emulator-connectivity.txt
 adb shell settings put secure show_ime_with_hard_keyboard 1
 adb shell cmd overlay enable-exclusive --category --user current com.android.internal.systemui.navbar.gestural
 for attempt in {1..20}; do

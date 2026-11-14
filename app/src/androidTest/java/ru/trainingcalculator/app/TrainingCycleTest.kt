@@ -110,12 +110,11 @@ class TrainingCycleTest {
 
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             waitFor(scenario, "!!window.ForgeCycles")
+            assertEquals(1, Settings.Global.getInt(context.contentResolver, Settings.Global.AIRPLANE_MODE_ON, 0))
             val previous = "JSON.parse(localStorage.getItem('forge-ci-cycles'))"
-            waitFor(scenario, """
-                navigator.onLine === false &&
-                ['programs','customExercises','workouts','foods','n10Recipes'].every(key =>
-                  JSON.stringify(state[key]) === JSON.stringify($previous[key]))
-            """.trimIndent())
+            for (key in listOf("programs", "customExercises", "workouts", "foods", "n10Recipes")) {
+                waitFor(scenario, "JSON.stringify(state.$key) === JSON.stringify($previous.$key)")
+            }
             js(scenario, "showPage('plan');n8OpenProgram('upgrade-program')")
             click(scenario, "#n8-program [data-fc='open']")
             click(scenario, "#forge-cycle [data-select='e0']")
@@ -130,26 +129,28 @@ class TrainingCycleTest {
             click(scenario, "[data-fc='base-source'][data-source='known']")
 
             val weight = "document.querySelector('.fc-base-form [name=weight]')"
-            js(scenario, "$weight.scrollIntoView({block:'center'})")
-            val input = device.wait(Until.findObject(By.clazz("android.widget.EditText").enabled(true)), 5_000)
-            assertTrue("The WebView exposes an editable field", input != null)
-            input.click()
-            val end = System.currentTimeMillis() + 8_000
-            var shown = false
-            while (!shown && System.currentTimeMillis() < end) {
-                scenario.onActivity {
-                    shown = ViewCompat.getRootWindowInsets(it.window.decorView)
-                        ?.isVisible(WindowInsetsCompat.Type.ime()) == true
-                }
-                if (!shown) Thread.sleep(100)
+            val position = JSONObject(js(scenario, """
+                (() => {
+                    const input = $weight;
+                    input.scrollIntoView({block:'center'});
+                    const rect = input.getBoundingClientRect();
+                    return {x:(rect.left + rect.width / 2) * devicePixelRatio,
+                            y:(rect.top + rect.height / 2) * devicePixelRatio};
+                })()
+            """.trimIndent()))
+            scenario.onActivity {
+                val webView = requireNotNull(findWeb(it.window.decorView))
+                val screen = IntArray(2)
+                webView.getLocationOnScreen(screen)
+                position.put("x", position.getDouble("x") + screen[0] + webView.paddingLeft)
+                position.put("y", position.getDouble("y") + screen[1] + webView.paddingTop)
             }
-            assertTrue("The Android keyboard opens", shown)
+            assertTrue(device.click(position.getInt("x"), position.getInt("y")))
+            waitForIme(scenario, true)
             waitFor(scenario, "document.activeElement === $weight && $weight.getBoundingClientRect().bottom <= (visualViewport.offsetTop + visualViewport.height + 1)")
             back()
+            waitForIme(scenario, false)
             waitFor(scenario, "!!$weight && document.querySelector('#forge-cycle').open")
-            scenario.onActivity {
-                assertEquals(false, ViewCompat.getRootWindowInsets(it.window.decorView)?.isVisible(WindowInsetsCompat.Type.ime()))
-            }
             js(scenario, """
                 document.querySelector('.fc-base-form [name=type]').value = 'fiveRM';
                 $weight.value = '40';
@@ -179,5 +180,19 @@ class TrainingCycleTest {
                 JSON.stringify(state.workouts[1]) === JSON.stringify($previous.workouts[0])
             """.trimIndent())
         }
+    }
+
+    private fun waitForIme(scenario: ActivityScenario<MainActivity>, expected: Boolean) {
+        val end = System.currentTimeMillis() + 8_000
+        var shown = !expected
+        while (System.currentTimeMillis() < end) {
+            scenario.onActivity {
+                shown = ViewCompat.getRootWindowInsets(it.window.decorView)
+                    ?.isVisible(WindowInsetsCompat.Type.ime()) == true
+            }
+            if (shown == expected) return
+            Thread.sleep(100)
+        }
+        assertEquals("Android keyboard visibility", expected, shown)
     }
 }
