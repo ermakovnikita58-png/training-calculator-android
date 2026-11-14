@@ -1,5 +1,6 @@
 package ru.trainingcalculator.app
 
+import android.os.SystemClock
 import android.provider.Settings
 import android.view.View
 import android.view.ViewGroup
@@ -14,7 +15,6 @@ import androidx.test.uiautomator.UiDevice
 import androidx.test.uiautomator.Until
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
-import android.os.SystemClock
 import org.json.JSONObject
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
@@ -68,6 +68,30 @@ class TrainingCycleTest {
     @Suppress("DEPRECATION")
     private fun versionCode() = context.packageManager.getPackageInfo(context.packageName, 0).versionCode
 
+    private fun tap(scenario: ActivityScenario<MainActivity>, node: String) {
+        val position = JSONObject(js(scenario, """
+            (() => {
+                const element = $node;
+                element.scrollIntoView({block:'center'});
+                const rect = element.getBoundingClientRect();
+                return {x:(rect.left + rect.width / 2) * devicePixelRatio,
+                        y:(rect.top + rect.height / 2) * devicePixelRatio};
+            })()
+        """.trimIndent()))
+        scenario.onActivity {
+            val webView = requireNotNull(findWeb(it.window.decorView))
+            val screen = IntArray(2)
+            webView.getLocationOnScreen(screen)
+            position.put("x", position.getDouble("x") + screen[0] + webView.paddingLeft)
+            position.put("y", position.getDouble("y") + screen[1] + webView.paddingTop)
+        }
+        assertTrue(device.click(position.getInt("x"), position.getInt("y")))
+    }
+
+    private fun pressBack() {
+        device.executeShellCommand("input keyevent KEYCODE_BACK")
+    }
+
     @Test fun seedVersion10() {
         assertEquals(11, versionCode())
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
@@ -96,21 +120,6 @@ class TrainingCycleTest {
 
     @Test fun verifyUpgradeAndOfflineCycle() {
         assertEquals(12, versionCode())
-        val arguments = InstrumentationRegistry.getArguments()
-        val gesture = arguments.getString("forgeGesture") == "true"
-        if (gesture) assertEquals(2, Settings.Secure.getInt(context.contentResolver, "navigation_mode", -1))
-        fun back(fromRight: Boolean = false) {
-            if (!gesture) {
-                assertTrue(device.pressBack())
-                return
-            }
-            val width = device.displayWidth
-            val midpoint = device.displayHeight / 2
-            val start = if (fromRight) width - 1 else 0
-            val end = if (fromRight) width / 10 else width * 9 / 10
-            assertTrue(device.swipe(start, midpoint, end, midpoint, 26))
-        }
-
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             waitFor(scenario, "!!window.ForgeCycles")
             assertEquals(1, Settings.Global.getInt(context.contentResolver, Settings.Global.AIRPLANE_MODE_ON, 0))
@@ -123,34 +132,17 @@ class TrainingCycleTest {
             click(scenario, "#forge-cycle [data-select='e0']")
             click(scenario, "#forge-cycle [data-fc='next']")
             waitFor(scenario, "document.querySelector('#fc-heading').textContent === 'Стартовые замеры'")
-            if (gesture) {
-                awaitBack(scenario, "document.querySelector('#fc-heading').textContent === 'Выбрать упражнения'", ::back)
-                click(scenario, "#forge-cycle [data-fc='next']")
-            }
+            pressBack()
+            waitFor(scenario, "document.querySelector('#fc-heading').textContent === 'Выбрать упражнения'")
+            click(scenario, "#forge-cycle [data-fc='next']")
             click(scenario, "[data-fc='base-open']")
             click(scenario, "[data-fc='base-source'][data-source='known']")
 
             val weight = "document.querySelector('.fc-base-form [name=weight]')"
-            val position = JSONObject(js(scenario, """
-                (() => {
-                    const input = $weight;
-                    input.scrollIntoView({block:'center'});
-                    const rect = input.getBoundingClientRect();
-                    return {x:(rect.left + rect.width / 2) * devicePixelRatio,
-                            y:(rect.top + rect.height / 2) * devicePixelRatio};
-                })()
-            """.trimIndent()))
-            scenario.onActivity {
-                val webView = requireNotNull(findWeb(it.window.decorView))
-                val screen = IntArray(2)
-                webView.getLocationOnScreen(screen)
-                position.put("x", position.getDouble("x") + screen[0] + webView.paddingLeft)
-                position.put("y", position.getDouble("y") + screen[1] + webView.paddingTop)
-            }
-            assertTrue(device.click(position.getInt("x"), position.getInt("y")))
+            tap(scenario, weight)
             waitForIme(scenario, true)
             waitFor(scenario, "document.activeElement === $weight && $weight.getBoundingClientRect().bottom <= (visualViewport.offsetTop + visualViewport.height + 1)")
-            back(true)
+            pressBack()
             waitForIme(scenario, false)
             waitFor(scenario, "!!$weight && document.querySelector('#forge-cycle').open")
             js(scenario, """
@@ -185,21 +177,30 @@ class TrainingCycleTest {
         }
     }
 
-    private fun awaitBack(
-        scenario: ActivityScenario<MainActivity>,
-        condition: String,
-        swipe: (Boolean) -> Unit,
-    ) {
-        waitFor(scenario, "document.hasFocus()")
-        for (rightEdge in listOf(false, true)) {
-            swipe(rightEdge)
-            val deadline = SystemClock.uptimeMillis() + 2_000
-            do {
-                if (js(scenario, condition) == "true") return
-                Thread.sleep(100)
-            } while (SystemClock.uptimeMillis() < deadline)
+    @Test fun verifyEdgeSwipe() {
+        assertEquals(2, Settings.Secure.getInt(context.contentResolver, "navigation_mode", -1))
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            waitFor(scenario, "!!window.ForgeCycles")
+            js(scenario, "showPage('plan');n8OpenProgram('upgrade-program')")
+            click(scenario, "#n8-program [data-fc='open']")
+            val week = "document.querySelector('#forge-cycle [name=week]')"
+            waitFor(scenario, "!!$week")
+            tap(scenario, "document.querySelector('#fc-heading')")
+            val condition = "document.querySelector('#forge-cycle').open && document.querySelector('#fc-heading').textContent === 'Стартовые замеры'"
+            val width = device.displayWidth
+            val midpoint = device.displayHeight / 2
+            for (rightEdge in listOf(false, true)) {
+                val start = if (rightEdge) width - 1 else 0
+                val end = if (rightEdge) width / 10 else width * 9 / 10
+                assertTrue(device.swipe(start, midpoint, end, midpoint, 40))
+                val deadline = SystemClock.uptimeMillis() + 2_000
+                do {
+                    if (js(scenario, condition) == "true") return
+                    Thread.sleep(100)
+                } while (SystemClock.uptimeMillis() < deadline)
+            }
+            assertEquals(condition, "true", js(scenario, condition))
         }
-        assertEquals(condition, "true", js(scenario, condition))
     }
 
     private fun waitForIme(scenario: ActivityScenario<MainActivity>, expected: Boolean) {
