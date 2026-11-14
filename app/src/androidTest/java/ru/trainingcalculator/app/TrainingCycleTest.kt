@@ -14,6 +14,7 @@ import androidx.test.uiautomator.UiDevice
 import androidx.test.uiautomator.Until
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
+import android.os.SystemClock
 import org.json.JSONObject
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
@@ -98,14 +99,16 @@ class TrainingCycleTest {
         val arguments = InstrumentationRegistry.getArguments()
         val gesture = arguments.getString("forgeGesture") == "true"
         if (gesture) assertEquals(2, Settings.Secure.getInt(context.contentResolver, "navigation_mode", -1))
-        fun back() {
+        fun back(fromRight: Boolean = false) {
             if (!gesture) {
                 assertTrue(device.pressBack())
                 return
             }
             val width = device.displayWidth
             val midpoint = device.displayHeight / 2
-            assertTrue(device.swipe(0, midpoint, width * 3 / 4, midpoint, 35))
+            val start = if (fromRight) width - 1 else 0
+            val end = if (fromRight) width / 10 else width * 9 / 10
+            assertTrue(device.swipe(start, midpoint, end, midpoint, 26))
         }
 
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
@@ -121,8 +124,7 @@ class TrainingCycleTest {
             click(scenario, "#forge-cycle [data-fc='next']")
             waitFor(scenario, "document.querySelector('#fc-heading').textContent === 'Стартовые замеры'")
             if (gesture) {
-                back()
-                waitFor(scenario, "document.querySelector('#fc-heading').textContent === 'Выбрать упражнения'")
+                awaitBack(scenario, "document.querySelector('#fc-heading').textContent === 'Выбрать упражнения'", ::back)
                 click(scenario, "#forge-cycle [data-fc='next']")
             }
             click(scenario, "[data-fc='base-open']")
@@ -148,7 +150,7 @@ class TrainingCycleTest {
             assertTrue(device.click(position.getInt("x"), position.getInt("y")))
             waitForIme(scenario, true)
             waitFor(scenario, "document.activeElement === $weight && $weight.getBoundingClientRect().bottom <= (visualViewport.offsetTop + visualViewport.height + 1)")
-            back()
+            back(true)
             waitForIme(scenario, false)
             waitFor(scenario, "!!$weight && document.querySelector('#forge-cycle').open")
             js(scenario, """
@@ -167,7 +169,7 @@ class TrainingCycleTest {
             scenario.recreate()
             waitFor(scenario, "state.active?.exercises[0].sets[0].done && state.active?.cycleRestUntil > Date.now()")
             // Return from evaluateJavascript before the native confirm pauses the page.
-            js(scenario, "setTimeout(() => document.querySelector('#workout [onclick=\"n8FinishWorkout()\"]').click(), 0); true")
+            js(scenario, "setTimeout(() => document.querySelector('#workout [onclick=\"n8FinishWorkout()\"]').click(), 100); true")
             val finish = device.wait(Until.findObject(By.res("android:id/button1")), 5_000)
             assertTrue("Native WebView finish confirmation opens", finish != null)
             finish.click()
@@ -181,6 +183,23 @@ class TrainingCycleTest {
                 JSON.stringify(state.workouts[1]) === JSON.stringify($previous.workouts[0])
             """.trimIndent())
         }
+    }
+
+    private fun awaitBack(
+        scenario: ActivityScenario<MainActivity>,
+        condition: String,
+        swipe: (Boolean) -> Unit,
+    ) {
+        waitFor(scenario, "document.hasFocus()")
+        for (rightEdge in listOf(false, true)) {
+            swipe(rightEdge)
+            val deadline = SystemClock.uptimeMillis() + 2_000
+            do {
+                if (js(scenario, condition) == "true") return
+                Thread.sleep(100)
+            } while (SystemClock.uptimeMillis() < deadline)
+        }
+        assertEquals(condition, "true", js(scenario, condition))
     }
 
     private fun waitForIme(scenario: ActivityScenario<MainActivity>, expected: Boolean) {

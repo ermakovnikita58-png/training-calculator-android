@@ -27,4 +27,8 @@ for attempt in {1..20}; do
   if [[ "$(adb shell settings get secure navigation_mode | tr -d '\r')" == 2 ]]; then break; fi
   sleep 1
 done
-instrument upgrade-and-offline -e forgeGesture true -e class "$test_class#verifyUpgradeAndOfflineCycle"
+adb shell cmd package resolve-activity --brief -a android.intent.action.MAIN -c android.intent.category.HOME > test-results/emulator-launcher.txt
+if ! instrument upgrade-and-offline -e forgeGesture true -e class "$test_class#verifyUpgradeAndOfflineCycle"; then
+  adb shell dumpsys activity service com.android.systemui/.SystemUIService > test-results/emulator-systemui.txt
+  exit 1
+fi
