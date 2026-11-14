@@ -5,9 +5,15 @@
   "scripts": {
     "test": "node scripts/check-web.mjs && node scripts/check-art.mjs && node scripts/check-exercise-visuals.cjs && node scripts/art-contact-sheets.cjs && node scripts/browser-regression.cjs && node scripts/core-regression.cjs && node --test scripts/nutrition-coach.test.cjs && node scripts/nutrition-coach-browser.cjs && node scripts/navigation-browser.cjs && node scripts/performance-browser.cjs && node scripts/exercise-visual-browser.cjs",
     "test:art-coverage": "node scripts/art-contact-sheets.cjs && node scripts/check-art-coverage.cjs",
-    "test:catalog-picker": "node scripts/catalog-picker-browser.cjs"
+    "test:catalog-picker": "node scripts/catalog-picker-browser.cjs",
+    "test:training-import": "node --test scripts/training-import.test.cjs && node scripts/training-import-browser.cjs",
+    "test:device-settings": "node scripts/device-settings-browser.cjs",
+    "test:barcode": "node --test scripts/barcode-food.test.cjs && node scripts/barcode-browser.cjs",
+    "test:cloud-snapshot": "node --test scripts/cloud-snapshot.test.cjs && node scripts/cloud-snapshot-browser.cjs",
+    "test:commerce-sandbox": "node --test scripts/commerce-sandbox.test.mjs"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "0.5.16",
     "playwright": "1.62.1"
   }
 }
