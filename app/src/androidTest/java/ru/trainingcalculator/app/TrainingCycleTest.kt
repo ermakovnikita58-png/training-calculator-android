@@ -92,6 +92,13 @@ class TrainingCycleTest {
         device.executeShellCommand("input keyevent KEYCODE_BACK")
     }
 
+    private fun openWizard(scenario: ActivityScenario<MainActivity>) {
+        js(scenario, "showPage('plan');n8OpenProgram('upgrade-program')")
+        tap(scenario, "document.querySelector('#n8-program [data-fc=open]')")
+        waitFor(scenario, "document.querySelector('#forge-cycle').open")
+        waitFor(scenario, "document.hasFocus()")
+    }
+
     @Test fun seedVersion10() {
         assertEquals(11, versionCode())
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
@@ -127,13 +134,12 @@ class TrainingCycleTest {
             for (key in listOf("programs", "customExercises", "workouts", "foods", "n10Recipes")) {
                 waitFor(scenario, "JSON.stringify(state.$key) === JSON.stringify($previous.$key)")
             }
-            js(scenario, "showPage('plan');n8OpenProgram('upgrade-program')")
-            click(scenario, "#n8-program [data-fc='open']")
+            openWizard(scenario)
             click(scenario, "#forge-cycle [data-select='e0']")
             click(scenario, "#forge-cycle [data-fc='next']")
             waitFor(scenario, "document.querySelector('#fc-heading').textContent === 'Стартовые замеры'")
             pressBack()
-            waitFor(scenario, "document.querySelector('#fc-heading').textContent === 'Выбрать упражнения'")
+            waitFor(scenario, "document.querySelector('#forge-cycle').open && document.querySelector('#fc-heading').textContent === 'Выбрать упражнения'")
             click(scenario, "#forge-cycle [data-fc='next']")
             click(scenario, "[data-fc='base-open']")
             click(scenario, "[data-fc='base-source'][data-source='known']")
@@ -181,8 +187,7 @@ class TrainingCycleTest {
         assertEquals(2, Settings.Secure.getInt(context.contentResolver, "navigation_mode", -1))
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             waitFor(scenario, "!!window.ForgeCycles")
-            js(scenario, "showPage('plan');n8OpenProgram('upgrade-program')")
-            click(scenario, "#n8-program [data-fc='open']")
+            openWizard(scenario)
             val week = "document.querySelector('#forge-cycle [name=week]')"
             waitFor(scenario, "!!$week")
             tap(scenario, "document.querySelector('#fc-heading')")
