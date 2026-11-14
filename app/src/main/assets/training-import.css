@@ -1,0 +1,63 @@
+.training-import {
+  display: grid;
+  gap: var(--fp-s2);
+}
+.training-import-preview {
+  display: grid;
+  gap: var(--fp-s2);
+}
+.training-import-summary dl {
+  margin: 0;
+}
+.training-import-summary dl div,
+.training-import-match-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+.training-import-summary dl div {
+  border-bottom: 1px solid var(--fp-line);
+  padding: 6px 0;
+}
+.training-import-summary dd {
+  margin: 0;
+  color: var(--fp-primary);
+  font-variant-numeric: tabular-nums;
+}
+.training-import-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+.training-import-match {
+  padding-block: 8px;
+  border-bottom: 1px solid var(--fp-line);
+  overflow-wrap: anywhere;
+}
+.training-import-actions {
+  display: grid;
+  gap: 8px;
+}
+.training-import-file input {
+  width: 100%;
+}
+.training-import-status:empty {
+  display: none;
+}
+.training-import-error {
+  color: #ffc2a8;
+}
+.training-import-history {
+  padding: 12px 0;
+  border-top: 1px solid var(--fp-line);
+}
+.training-import-history summary {
+  cursor: pointer;
+}
+.training-import-history li {
+  margin-block: 5px;
+}
+.training-import-history p {
+  overflow-wrap: anywhere;
+}

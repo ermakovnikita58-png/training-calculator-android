@@ -1,5 +1,6 @@
 [
   {
+    "id": "chest",
     "group": "Грудь",
     "type": "MUSCLE_GROUP_ART",
     "file": "anatomy/muscle-0.webp",
@@ -14,6 +15,7 @@
     "highlight": "orange"
   },
   {
+    "id": "back",
     "group": "Спина",
     "type": "MUSCLE_GROUP_ART",
     "file": "anatomy/muscle-1.webp",
@@ -28,6 +30,7 @@
     "highlight": "orange"
   },
   {
+    "id": "shoulders",
     "group": "Плечи",
     "type": "MUSCLE_GROUP_ART",
     "file": "anatomy/muscle-2.webp",
@@ -42,6 +45,7 @@
     "highlight": "orange"
   },
   {
+    "id": "biceps",
     "group": "Бицепс",
     "type": "MUSCLE_GROUP_ART",
     "file": "anatomy/muscle-3.webp",
@@ -56,6 +60,7 @@
     "highlight": "orange"
   },
   {
+    "id": "triceps",
     "group": "Трицепс",
     "type": "MUSCLE_GROUP_ART",
     "file": "anatomy/muscle-4.webp",
@@ -70,6 +75,7 @@
     "highlight": "orange"
   },
   {
+    "id": "forearms",
     "group": "Предплечья",
     "type": "MUSCLE_GROUP_ART",
     "file": "anatomy/reference-v3/forearms.webp",
@@ -95,6 +101,7 @@
     "highlight": "orange"
   },
   {
+    "id": "abs",
     "group": "Пресс",
     "type": "MUSCLE_GROUP_ART",
     "file": "anatomy/reference-v3/abs.webp",
@@ -120,6 +127,7 @@
     "highlight": "orange"
   },
   {
+    "id": "glutes",
     "group": "Ягодицы",
     "type": "MUSCLE_GROUP_ART",
     "file": "anatomy/reference-v3/glutes.webp",
@@ -145,6 +153,7 @@
     "highlight": "orange"
   },
   {
+    "id": "quads",
     "group": "Квадрицепс",
     "type": "MUSCLE_GROUP_ART",
     "file": "anatomy/reference-v3/quads.webp",
@@ -171,6 +180,7 @@
     "highlight": "orange"
   },
   {
+    "id": "hamstrings",
     "group": "Бицепс бедра",
     "type": "MUSCLE_GROUP_ART",
     "file": "anatomy/reference-v3/hamstrings.webp",
@@ -196,6 +206,7 @@
     "highlight": "orange"
   },
   {
+    "id": "calves",
     "group": "Икры",
     "type": "MUSCLE_GROUP_ART",
     "file": "anatomy/reference-v3/calves.webp",
@@ -221,6 +232,7 @@
     "highlight": "orange"
   },
   {
+    "id": "lower-back",
     "group": "Нижняя спина",
     "type": "MUSCLE_GROUP_ART",
     "file": "anatomy/reference-v3/lower-back.webp",
@@ -246,6 +258,7 @@
     "highlight": "orange"
   },
   {
+    "id": "cardio",
     "group": "Кардио",
     "type": "MUSCLE_GROUP_ART",
     "file": "anatomy/reference-v3/cardio.webp",
@@ -272,6 +285,7 @@
     "highlight": "none-non-muscle-category"
   },
   {
+    "id": "mobility",
     "group": "Мобильность",
     "type": "MUSCLE_GROUP_ART",
     "file": "anatomy/reference-v3/mobility.webp",
