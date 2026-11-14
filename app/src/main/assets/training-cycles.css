@@ -1,4 +1,5 @@
 /* Program cycles share FORGE's dark surfaces and lime actions. */
+.fc-dialog, .fc-card { --fc-accent: #c7f36b; }
 .fc-dialog {
   width: min(620px, calc(100% - 20px));
   max-width: none;
@@ -54,8 +55,8 @@ body:has(.fc-dialog[open]) { overflow: hidden; }
 .fc-actions:empty { display: none; }
 .fc-actions .btn { white-space: normal; text-align: center; }
 .fc-actions .btn:disabled { opacity: .5; cursor: default; }
-.fc-actions .btn.primary { color: #101711; background: var(--lime, #c8f458); }
-.fc-dialog :focus-visible { outline: 2px solid var(--lime, #c8f458); outline-offset: 2px; }
+.fc-actions .btn.primary, .fc-card > .btn.primary { color: #101711; background: var(--fc-accent); }
+.fc-dialog :focus-visible { outline: 2px solid var(--fc-accent); outline-offset: 2px; }
 .fc-field { display: grid; gap: 3px; min-width: 0; font-size: .8rem; color: #cdd9d0; }
 .fc-field :is(input,select), .fc-rir-row input {
   width: 100%;
@@ -72,7 +73,7 @@ body:has(.fc-dialog[open]) { overflow: hidden; }
 .fc-field:has(input[type=date]) { min-width: min(132px, 100%); }
 .fc-choice, .fc-load { padding: 9px 0 0; border-top: 1px solid #34453a; }
 .fc-choice label { display: flex; align-items: center; gap: 9px; }
-.fc-choice label input { width: 19px; height: 19px; flex: none; accent-color: var(--lime, #c8f458); }
+.fc-choice label input { width: 19px; height: 19px; flex: none; accent-color: var(--fc-accent); }
 .fc-choice small { display: block; margin-top: 4px; color: #b6c5b7; }
 .fc-choice .fc-separate { padding-left: 20px; color: #d3e3d1; font-size: .82rem; }
 .fc-base-form, .fc-load { display: grid; gap: 7px; }

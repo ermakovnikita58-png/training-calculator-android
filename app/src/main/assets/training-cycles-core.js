@@ -32,7 +32,7 @@
   }
 
   function dateOK(date) {
-    return range(dayNumber(date), dayNumber('1900-01-01'), dayNumber('9999-01-01'));
+    return range(dayNumber(date), dayNumber('1900-01-01'), dayNumber('9999-12-31'));
   }
 
   function addDays(date, count) {

@@ -116,6 +116,12 @@ async function exerciseCycle(browser) {
   await input('weight').fill('40');
   await action('base-save').click();
   await action('base-open','[data-key="b1"]').click();
+  await action('base-source','[data-source="measurement"]').click();
+  await input('weight').fill('20.5');
+  await input('reps').fill('6');
+  assert.match(await dialog.locator('[data-base-preview]').innerText(),/расчётный 1ПМ · 24,6 кг · стартовый замер/);
+  await action('base-save').click();
+  await action('base-open','[data-key="b1"]').click();
   await action('base-source','[data-source="journal"]').click();
   await choose('entry',0);
   assert.match(await dialog.locator('[data-base-preview]').innerText(),/расчётный 1ПМ · 40 кг · журнал.*30 кг × 10/);

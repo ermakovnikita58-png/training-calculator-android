@@ -166,7 +166,8 @@ class TrainingCycleTest {
             click(scenario, "#workout .n8-setgrid .n8-check")
             scenario.recreate()
             waitFor(scenario, "state.active?.exercises[0].sets[0].done && state.active?.cycleRestUntil > Date.now()")
-            click(scenario, "#workout [onclick='n8FinishWorkout()']")
+            // Return from evaluateJavascript before the native confirm pauses the page.
+            js(scenario, "setTimeout(() => document.querySelector('#workout [onclick=\"n8FinishWorkout()\"]').click(), 0); true")
             val finish = device.wait(Until.findObject(By.res("android:id/button1")), 5_000)
             assertTrue("Native WebView finish confirmation opens", finish != null)
             finish.click()

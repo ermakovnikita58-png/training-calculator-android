@@ -27,6 +27,7 @@
   let view = null;
   let origin = null;
   let editor = null;
+  let settingsDraft = null;
 
   const button = (label, action, props = '', primary = false) =>
     '<button type="button" data-fc="' + action + '" ' + props + ' class="btn ' + (primary ? 'primary' : 'secondary') + '">' + label + '</button>';
@@ -54,6 +55,7 @@
     }
     view = page;
     editor = null;
+    settingsDraft = null;
     render();
     dialog.scrollTop = scroll;
     heading.focus({ preventScroll: true });
@@ -64,6 +66,7 @@
     const wasOpen = dialog.open;
     view = null;
     editor = null;
+    settingsDraft = null;
     if (wasOpen) dialog.close();
     if (origin?.isConnected) origin.focus({ preventScroll: true });
     if (wasOpen && $('n8-program')?.classList.contains('show')) window.ForgeCycleWorkout.repaintProgram();
@@ -253,21 +256,23 @@
   }
 
   function settings(cycle) {
+    const draft = settingsDraft || { ...cycle, length: cycle.weeks.length };
     return '<details class="fc-card fc-settings"><summary>Настройки цикла</summary>' +
       '<div class="fc-grid fc-settings-grid">' +
-      field('Начало цикла', 'start', 'date', cycle.start) +
-      field('Дата соревнований', 'competition', 'date', cycle.competition) +
-      number('Количество недель', 'length', cycle.weeks.length, true) +
-      number('Шаг веса, кг', 'step', cycle.step, false, 'min="0.01" max="100"') +
+      field('Начало цикла', 'start', 'date', draft.start) +
+      field('Дата соревнований', 'competition', 'date', draft.competition) +
+      number('Количество недель', 'length', draft.length, true) +
+      number('Шаг веса, кг', 'step', draft.step, false, 'min="0.01" max="100"') +
       '<label class="fc-field"><span>Режим прогрессии</span><select name="mode">' +
-      option('fixed', cycle.mode === 'fixed', 'Фиксированный') +
-      option('flexible', cycle.mode === 'flexible', 'Гибкий') + '</select></label></div>' +
-      '<div class="fc-flex-options"' + (cycle.mode === 'fixed' ? ' hidden' : '') + '>' +
+      option('fixed', draft.mode === 'fixed', 'Фиксированный') +
+      option('flexible', draft.mode === 'flexible', 'Гибкий') + '</select></label></div>' +
+      '<p class="fc-muted">Чтобы оставить время до соревнований, выбери «Тяжёлая» для более ранней недели и «Подводка» для последней.</p>' +
+      '<div class="fc-flex-options"' + (draft.mode === 'fixed' ? ' hidden' : '') + '>' +
       '<p class="fc-muted">Если все рабочие подходы выполнены, FORGE может предложить увеличить будущие веса. Для упражнения в каждом подходе нужен запас выше указанной цели или достаточно дополнительных повторов.</p>' +
       '<div class="fc-grid fc-settings-grid">' +
-      number('Целевой запас (RIR)', 'targetRir', cycle.targetRir, true) +
-      number('Доп. повторы в подходе', 'extraReps', cycle.extraReps, true) +
-      number('Увеличение базы, %', 'increase', cycle.increase, false) + '</div></div>' +
+      number('Целевой запас (RIR)', 'targetRir', draft.targetRir, true) +
+      number('Доп. повторы в подходе', 'extraReps', draft.extraReps, true) +
+      number('Увеличение базы, %', 'increase', draft.increase, false) + '</div></div>' +
       '<p class="fc-warning" data-settings-error hidden role="status"></p>' +
       panel(button('Сохранить настройки', 'save-settings', '', true)) + '</details>';
   }
@@ -388,6 +393,7 @@
         else if (entry.date && entry.date < start) delete entry.date;
       }
     })) return;
+    settingsDraft = null;
     renderAt();
     body.querySelector('.fc-settings').open = false;
     toast('Настройки цикла сохранены');
@@ -438,9 +444,9 @@
     const plan = workout.trainingCycle;
     const cycle = cycleById(plan.cycleId);
     heading.textContent = 'План и факт';
-    const facts = (sets, noSets = 'Подходы не отмечены') => sets.length ?
+    const facts = sets => sets.length ?
       '<ul class="fc-facts">' + sets.map(set => '<li>' + format(set.weight) + ' кг × ' + set.reps +
-        (set.rir === undefined ? '' : ' · запас ' + set.rir) + '</li>').join('') + '</ul>' : '<p>' + noSets + '</p>';
+        (set.rir === undefined ? '' : ' · запас ' + set.rir) + '</li>').join('') + '</ul>' : '<p>Подходы не отмечены</p>';
     const extra = workout.sets.filter(set => !plan.rows.some(row => row.rowId === set.cycleRowId));
     const proposals = adjustments(cycle, workout);
     const result = workout.cycleAdjustment === 'accepted' ? 'Изменение применено к будущим занятиям.' :
@@ -647,7 +653,11 @@
     if (target.name === 'mode') body.querySelector('.fc-flex-options').hidden = target.value !== 'flexible';
     if (target.closest('.fc-base-form')) previewBasis();
   });
-  body.addEventListener('input', ({ target }) => { if (target.closest('.fc-base-form')) previewBasis(); });
+  body.addEventListener('input', ({ target }) => {
+    if (target.closest('.fc-base-form')) previewBasis();
+    const settings = target.closest('.fc-settings');
+    if (settings && target.name) settingsDraft = Object.fromEntries([...settings.querySelectorAll('[name]')].map(control => [control.name, control.value]));
+  });
   window.addEventListener('keydown', event => {
     if (!dialog.open || event.key !== 'Escape') return;
     event.preventDefault();
