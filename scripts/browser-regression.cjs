@@ -267,6 +267,8 @@ async function exerciseCycle(browser) {
   const damaged=structuredClone(data);
   damaged.trainingCycles[0].weeks.at(-1).loads.e0={percent:125};
   await importFile(JSON.stringify(damaged),/Некорректный план/);
+  const invalidProfile={...data,profile:{...data.profile,name:123}};
+  await importFile(JSON.stringify(invalidProfile),/Некорректный профиль/);
   await value(()=>{
     window.testSetItem=Storage.prototype.setItem;
     Storage.prototype.setItem=function(key,...args){

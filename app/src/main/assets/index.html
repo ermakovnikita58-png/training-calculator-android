@@ -1265,7 +1265,7 @@ function n10ValidateRestore(data){
  const array=(value,test)=>Array.isArray(value)&&value.every(test);
  const numeric=value=>(typeof value==='number'||typeof value==='string'&&value.trim()!=='')&&Number.isFinite(Number(value));
  const named=value=>object(value)&&typeof value.name==='string';
- const dated=value=>typeof value.date==='string'&&ForgeCycleModel.dateOK(value.date.slice(0,10));
+ const dated=value=>typeof value.date==='string'&&ForgeCycleModel.dateOK(value.date.slice(0,10))&&Number.isFinite(Date.parse(value.date));
  const exercise=value=>typeof value==='string'||named(value);
  const config=value=>object(value)&&['sets','reps','weight','rest'].every(key=>value[key]==null||numeric(value[key]));
  const day=value=>named(value)&&(value.day==null||typeof value.day==='string')&&array(value.exercises,exercise)&&(value.exerciseConfig==null||object(value.exerciseConfig)&&Object.values(value.exerciseConfig).every(config));
@@ -1274,7 +1274,7 @@ function n10ValidateRestore(data){
  const food=value=>named(value)&&['cal','protein','carbs','fat','grams'].every(key=>value[key]==null||numeric(value[key]));
  const meal=value=>named(value)&&array(value.items,food);
  if(!object(data)||!object(data.profile)||!Array.isArray(data.workouts)||data.workouts.length>100000||!Array.isArray(data.foods)||data.foods.length>300000||!array(data.plans,day)||!data.plans.length) throw Error('Неверный формат дневника');
- if(!data.workouts.every(w=>named(w)&&dated(w)&&array(w.sets,s=>set(s)&&typeof s.exercise==='string')&&(w.exercises==null||array(w.exercises,exerciseWithSets)))) throw Error('Некорректные тренировки');
+ if(!data.workouts.every(w=>named(w)&&dated(w)&&(w.duration==null||numeric(w.duration))&&array(w.sets,s=>set(s)&&typeof s.exercise==='string')&&(w.exercises==null||array(w.exercises,exerciseWithSets)))) throw Error('Некорректные тренировки');
  if(data.active!=null&&(!named(data.active)||!dated(data.active)||!numeric(data.active.start)||!array(data.active.exercises,exerciseWithSets))) throw Error('Некорректная незавершённая тренировка');
  if(!data.foods.every(f=>food(f)&&dated(f))) throw Error('Некорректное питание');
  for(const [key,test] of Object.entries({programs:p=>named(p)&&typeof p.id==='string'&&array(p.days,day),weights:w=>object(w)&&dated(w)&&numeric(w.weight),customExercises:exercise,mealTemplates:meal,n10Recipes:meal,forgeCustomFoods:named,forgeFavorites:named,forgeRecent:named})){
@@ -1284,6 +1284,7 @@ function n10ValidateRestore(data){
  const numericFields=(objectValue,fields)=>objectValue==null||fields.every(key=>objectValue[key]==null||numeric(objectValue[key]));
  if(!numericFields(data.profile,['weightGoal','weeklyGoal'])||!numericFields(data.goals,['calories','protein','carbs','fat','water'])||
     !numericFields(data.n8Prefs,['rest','progressPct'])||!numericFields(data,['water'])) throw Error('Некорректные числовые настройки');
+ if(data.profile.name!=null&&typeof data.profile.name!=='string'||data.profile.email!=null&&typeof data.profile.email!=='string') throw Error('Некорректный профиль');
  if(data.n8Favorites!==undefined&&!array(data.n8Favorites,item=>typeof item==='string')) throw Error('Некорректные избранные упражнения');
  if(data.strength){
    const strength=data.strength;
@@ -1293,11 +1294,23 @@ function n10ValidateRestore(data){
  }
  ForgeCycleModel.validateArchive(data);
 }
+function n10ReplaceDiary(next){
+ const previous=state;
+ try{
+   state=next;
+   renderAll();
+   forgeCommitDiary(next);
+ }catch(err){
+   state=previous;
+   renderAll();
+   throw err;
+ }
+}
 function n10AdoptData(data){n10ValidateRestore(data); const accepted={...structuredClone(defaults),...data}; accepted.profile={...defaults.profile,...data.profile};accepted.goals={...defaults.goals,...data.goals}; return accepted;}
 // Explicit replacement: no silent loss of old data and no malformed imports.
 importData=function(ev){const file=ev?.target?.files?.[0];if(!file)return; if(file.size>20*1024*1024){toast('Резервная копия больше 20 МБ. Разбей историю на меньшие файлы.');ev.target.value='';return;}
  const reader=new FileReader();reader.onerror=()=>toast('Не удалось прочитать файл');reader.onload=()=>{try{const loaded=n10AdoptData(JSON.parse(String(reader.result)));if(changed10()&&!confirm('Заменить текущие записи содержимым резервной копии? Сначала сохрани нынешние данные в JSON.'))return;
- try{forgeCommitDiary(loaded)}catch(err){if(err?.name!=='QuotaExceededError')throw err;throw Error('Недостаточно памяти для импорта')};window.ForgeCycles?.close();window.ForgeCycleWorkout.reset();window.ForgeCycleWorkout.restoreRest();renderAll();if(state.active)showPage('workout');toast('Резервная копия восстановлена');n10UiRefresh();}
+ try{n10ReplaceDiary(loaded)}catch(err){if(err?.name!=='QuotaExceededError')throw err;throw Error('Недостаточно памяти для импорта')};window.ForgeCycles?.close();window.ForgeCycleWorkout.reset();window.ForgeCycleWorkout.restoreRest();renderAll();if(state.active)showPage('workout');toast('Резервная копия восстановлена');n10UiRefresh();}
  catch(err){toast('Импорт не выполнен: '+String(err.message||err))}finally{ev.target.value=''}};reader.readAsText(file)};
 // Keep all pre-existing save semantics and protect against invisible quota failures.
 save=function(){try{originalSave10();n10MarkLocalChange();}
@@ -1335,7 +1348,7 @@ async function n10CloudUploadClicked(){try{if(!session10){notify10('Сначал
  await n10SaveCloud();}catch(e){n10ApiErr(e)}}
 async function n10CloudDownloadClicked(){if(!session10){notify10('Сначала войди в аккаунт',true);return;}try{const cloud=await n10FetchCloud();if(!cloud){notify10('В облаке ещё нет сохранённого дневника');return;}
  const result=n10AdoptData(cloud.payload);if(changed10()&&!confirm('Заменить локальный дневник облачной копией? Перед восстановлением сохрани JSON.'))return;
- const previous=state;applyingRemote10=true;state=result;try{localStorage.setItem('forge_v2',JSON.stringify(state));renderAll()}catch(e){state=previous;throw Error('Не хватило места для восстановления')}
+ applyingRemote10=true;try{n10ReplaceDiary(result)}catch(e){if(e?.name!=='QuotaExceededError')throw e;throw Error('Не хватило места для восстановления')}
  finally{applyingRemote10=false}
  sync10.lastRemoteAt=cloud.updated_at;sync10.lastLocalAt=null;store10(keys10.sync,sync10);notify10('Облачная копия восстановлена: '+new Date(cloud.updated_at).toLocaleString('ru-RU'));
  }catch(e){n10ApiErr(e)}finally{n10UiRefresh()}}
