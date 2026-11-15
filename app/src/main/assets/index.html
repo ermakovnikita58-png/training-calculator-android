@@ -119,7 +119,7 @@ body{background:#091117;color:var(--text);font-family:system-ui,-apple-system,'S
 <section class="page" id="nutrition"><div class="eyebrow">ВОССТАНОВЛЕНИЕ</div><h1 class="title">Топливо<br/>для роста.</h1><p class="subtitle">Ешь осознанно, восстанавливайся лучше.</p><div class="card hero" style="min-height:180px;background:linear-gradient(130deg,#ffbd88,#ff9363);color:#321a0d"><div class="eyebrow" style="color:#6e321b">СЕГОДНЯ</div><h2 style="font-size:25px">Баланс энергии</h2><p style="color:#6e321b">Питание — часть тренировочного плана.</p><svg class="heroart" viewbox="0 0 180 180"><circle cx="100" cy="94" fill="#e97c4b" r="64"></circle><circle cx="100" cy="94" fill="#ffe1b7" r="48"></circle><circle cx="100" cy="94" fill="#ff9c64" r="34"></circle><path d="M80 65q25-18 40 7q-18 4-20 27q-25-9-20-34" fill="#548442"></path><circle cx="123" cy="113" fill="#a7c65a" r="7"></circle><circle cx="78" cy="110" fill="#a7c65a" r="6"></circle></svg></div><div class="card"><div class="cardhead"><div><div class="cardtitle">Калории за день</div><div class="tiny muted"><span id="caloriesEaten">0</span> из <span id="calorieGoal">2400</span> ккал</div></div><button class="linkbtn" onclick="openModal('goals')">Изменить цель</button></div><div class="progressbar" style="height:10px"><span id="calorieBar" style="width:0%;background:var(--orange)"></span></div><div class="grid2" style="margin-top:15px"><div><div class="row" style="justify-content:space-between"><span class="tiny muted">Белки</span><b id="proteinVal">0 / 160 г</b></div><div class="macro"><span id="proteinBar" style="width:0%"></span></div></div><div><div class="row" style="justify-content:space-between"><span class="tiny muted">Углеводы</span><b id="carbVal">0 / 250 г</b></div><div class="macro"><span id="carbBar" style="width:0%;background:var(--blue)"></span></div></div><div><div class="row" style="justify-content:space-between"><span class="tiny muted">Жиры</span><b id="fatVal">0 / 75 г</b></div><div class="macro"><span id="fatBar" style="width:0%;background:var(--lime)"></span></div></div><div><div class="row" style="justify-content:space-between"><span class="tiny muted">Вода</span><b id="waterVal">0 / 2.5 л</b></div><div class="macro"><span id="waterBar" style="width:0%;background:var(--blue)"></span></div></div></div></div><div class="sectionlabel"><span>Дневник за сегодня</span><button class="linkbtn" onclick="f6Go('foodcatalog')" style="float:right">＋ Продукты</button></div><div class="f6-feature-grid">
 <button class="f6-feature" onclick="f6Go('foodcatalog')"><span class="f6-feature-icon">⌕</span><span class="f6-feature-copy"><b>Каталог продуктов</b><small>Поиск, штрихкод, калории и БЖУ</small></span><span class="f6-feature-chevron">›</span></button>
 <button class="f6-feature" onclick="f6Go('meals')"><span class="f6-feature-icon">▤</span><span class="f6-feature-copy"><b>Сохранённые рационы</b><small>Повторить завтрак или целый день</small></span><span class="f6-feature-chevron">›</span></button></div><div class="card" id="foodList"></div><div class="card"><div class="cardhead"><div class="cardtitle">Вода</div><span class="pill" id="waterCupCount">0 стаканов</span></div><div class="row" style="flex-wrap:wrap"><button class="btn secondary" onclick="addWater(250)">＋ 250 мл</button><button class="btn secondary" onclick="addWater(500)">＋ 500 мл</button><button class="btn ghost" onclick="addWater(-250)">− 250 мл</button></div></div></section>
-<section class="page" id="profile"><div class="eyebrow">ТВОЯ ЗОНА</div><h1 class="title">Профиль.</h1><p class="subtitle">Данные, настройки и синхронизация.</p><div class="card"><div class="row"><div class="avatar" id="profileAvatar" style="width:62px;height:62px;font-size:23px">A</div><div class="grow"><div class="cardtitle" id="profileName">Атлет</div><div class="tiny muted" id="profileEmail">Локальный профиль на устройстве</div><div class="pill lime" style="margin-top:7px">● ЛОКАЛЬНЫЙ РЕЖИМ</div></div><button class="iconbtn" onclick="openModal('editProfile')">✎</button></div><div class="notice">Тренировки сейчас сохраняются на этом устройстве. Чтобы синхронизировать их между телефонами и включить вход через Google/Apple, нужно подключить облачный сервис и ключи проекта.</div><button class="btn primary full" onclick="showPage('account')">Войти или создать аккаунт ↗</button></div><div class="sectionlabel">Мои цели</div><div class="card"><div class="setting"><div class="row"><div class="badge">🏋</div><div><div class="strong">Тренировки в неделю</div><div class="tiny muted">Плановая частота</div></div></div><b id="goalWorkouts">4 раза</b></div><div class="setting"><div class="row"><div class="badge">⚖</div><div><div class="strong">Целевой вес</div><div class="tiny muted">Ориентир прогресса</div></div></div><b id="goalWeight">— кг</b></div><div class="setting"><div class="row"><div class="badge">◉</div><div><div class="strong">Калории</div><div class="tiny muted">Дневная цель</div></div></div><b id="profileCalories">2400 ккал</b></div><button class="btn secondary full" onclick="openModal('goals')" style="margin-top:12px">Настроить цели</button></div><div class="sectionlabel">Данные и приложение</div><div class="card"><div class="setting"><span>Экспорт резервной копии</span><button class="linkbtn" onclick="exportData()">Скачать JSON ↗</button></div><div class="setting"><span>Импорт резервной копии</span><button class="linkbtn" onclick="document.getElementById('importFile').click()">Выбрать файл ↗</button><input accept="application/json,.json" hidden="" id="importFile" onchange="importData(event)" type="file"/></div><div class="setting"><span>Сбросить тренировочные данные</span><button class="linkbtn" onclick="openModal('reset')" style="color:var(--red)">Сбросить</button></div></div></section>
+<section class="page" id="profile"><div class="eyebrow">ТВОЯ ЗОНА</div><h1 class="title">Профиль.</h1><p class="subtitle">Данные, настройки и синхронизация.</p><div class="card"><div class="row"><div class="avatar" id="profileAvatar" style="width:62px;height:62px;font-size:23px">A</div><div class="grow"><div class="cardtitle" id="profileName">Атлет</div><div class="tiny muted" id="profileEmail">Локальный профиль на устройстве</div><div class="pill lime" id="profileCloudBadge" style="margin-top:7px">● ЛОКАЛЬНЫЙ РЕЖИМ</div></div><button class="iconbtn" onclick="openModal('editProfile')">✎</button></div><div class="notice">Тренировки сейчас сохраняются на этом устройстве. Чтобы синхронизировать их между телефонами и включить вход через Google/Apple, нужно подключить облачный сервис и ключи проекта.</div><button type="button" class="n10-google-btn" id="profileGoogleSignIn" onclick="showPage('account');n10GoogleSignIn()" hidden><img src="google-sign-in.png" alt="" width="20" height="20">Войти через Google</button><button class="btn primary full" id="profileCloudEntry" onclick="showPage('account')">Войти или создать аккаунт ↗</button></div><div class="sectionlabel">Мои цели</div><div class="card"><div class="setting"><div class="row"><div class="badge">🏋</div><div><div class="strong">Тренировки в неделю</div><div class="tiny muted">Плановая частота</div></div></div><b id="goalWorkouts">4 раза</b></div><div class="setting"><div class="row"><div class="badge">⚖</div><div><div class="strong">Целевой вес</div><div class="tiny muted">Ориентир прогресса</div></div></div><b id="goalWeight">— кг</b></div><div class="setting"><div class="row"><div class="badge">◉</div><div><div class="strong">Калории</div><div class="tiny muted">Дневная цель</div></div></div><b id="profileCalories">2400 ккал</b></div><button class="btn secondary full" onclick="openModal('goals')" style="margin-top:12px">Настроить цели</button></div><div class="sectionlabel">Данные и приложение</div><div class="card"><div class="setting"><span>Экспорт резервной копии</span><button class="linkbtn" onclick="exportData()">Скачать JSON ↗</button></div><div class="setting"><span>Импорт резервной копии</span><button class="linkbtn" onclick="document.getElementById('importFile').click()">Выбрать файл ↗</button><input accept="application/json,.json" hidden="" id="importFile" onchange="importData(event)" type="file"/></div><div class="setting"><span>Сбросить тренировочные данные</span><button class="linkbtn" onclick="openModal('reset')" style="color:var(--red)">Сбросить</button></div></div></section>
 <section class="page" id="account"><div class="navhead"><button class="back" onclick="showPage('profile')">←</button><div><div class="eyebrow">FORGE ID</div><div class="cardtitle">Аккаунт и синхронизация</div></div></div><div class="loginwrap" style="min-height:auto;padding:0"><div class="loginlogo">F</div><div class="eyebrow">ОДИН АККАУНТ — ВСЯ ИСТОРИЯ</div><h1>Тренируйся.<br/>Мы сохраним.</h1><p class="subtitle">Войди, чтобы хранить прогресс в облаке и переносить его между устройствами.</p><button class="socialbtn" onclick="authInfo('Google')"><b style="font-size:17px">G</b> Продолжить с Google</button><button class="socialbtn" onclick="authInfo('Apple')"><b style="font-size:18px">●</b> Продолжить с Apple</button><button class="socialbtn" onclick="authInfo('email')">✉ Продолжить с электронной почтой</button><div class="notice">Вход через социальные сети не активируется сам по себе: для безопасной авторизации требуется настроить Firebase Authentication и OAuth-параметры. Сейчас кнопки показывают, что необходимо подключить, а не имитируют успешный вход.</div><button class="btn secondary full" onclick="showPage('profile')">Продолжить без аккаунта</button></div></section>
 </main></div>
 <section class="page f6-secondary-page" id="foodcatalog">
@@ -1400,6 +1400,10 @@ n9Install();n9Wrap();renderAll();
 .n10-cloud-actions button,.n10-cloud-btn{border:1px solid #386269;background:#1b3338;color:#edf8f5;padding:13px 12px;border-radius:14px;font-size:12px;font-weight:800;min-height:46px}
 .n10-cloud-actions button.strong,.n10-cloud-btn.strong{background:#73e0c9;color:#082527;border-color:#73e0c9}
 .n10-cloud-actions button[disabled]{opacity:.38}
+.n10-google-btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:46px;margin:10px 0;padding:10px 12px;border:1px solid #747775;border-radius:24px;background:#fff;color:#1f1f1f;font:500 14px/20px "Google Sans",Roboto,sans-serif}
+.n10-google-btn[hidden]{display:none}
+.n10-google-btn:disabled{opacity:.55}
+.n10-google-btn img{width:20px;height:20px;flex:none}
 .n10-cloud-status{padding:12px;border-radius:13px;background:#192b30;border:1px solid #2d4749;color:#c3dedb;font-size:12px;line-height:1.45;margin:12px 0}
 .n10-cloud-status.error{background:#362224;border-color:#814848;color:#ffb7b2}
 .n10-cloud-status.ok{background:#1a3431;border-color:#32776c;color:#a5f3d8}
@@ -1426,9 +1430,12 @@ n9Install();n9Wrap();renderAll();
 const $10=id=>document.getElementById(id);
 const clean10=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt10=(n)=>Number.isFinite(Number(n))?Math.round(Number(n)*10)/10:0;
-const keys10={config:'forge10_public_cloud_config',session:'forge10_auth_session',sync:'forge10_sync_meta'};
+const keys10={config:'forge10_public_cloud_config',session:'forge10_auth_session',sync:'forge10_sync_meta',googleClientId:'forge_google_web_client_id'};
+const forgeCloud10={url:'https://evwvbozhfsprcabrfefe.supabase.co',key:'sb_publishable_baZN5BJspcpFLCBwcUNzVQ_VjNh2rGK'};
+const nativeGoogle10=typeof window.AndroidBridge?.googleSignIn==='function';
 function json10(key,fallback){try{return JSON.parse(localStorage.getItem(key)||'null')||fallback}catch{return fallback}}
-let cfg10=json10(keys10.config,{url:'',key:''}), session10=null, sync10=json10(keys10.sync,{auto:false,lastRemoteAt:null,lastLocalAt:null}), syncTimer10=null, cloudBusy10=false, cloudError10='', cloudMessage10='', applyingRemote10=false;
+let cfg10=json10(keys10.config,nativeGoogle10?forgeCloud10:{url:'',key:''}), session10=null, sync10=json10(keys10.sync,{auto:false,lastRemoteAt:null,lastLocalAt:null}), syncTimer10=null, cloudBusy10=false, cloudError10='', cloudMessage10='', applyingRemote10=false;
+let googleClientId10=json10(keys10.googleClientId,''), googleAttempt10=null, googleSequence10=0, passwordPending10=false;
 const originalSave10=save;
 function store10(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch{return false}}
 let cloudSessionStarted10 = false;
@@ -1437,9 +1444,10 @@ function saveSession10(){
  try{localStorage.removeItem(keys10.session)}catch{}
  window.AndroidBridge?.storeCloudSession?.(session10 ? {url:cfg10.url,session:session10} : null);
 }
-function acceptCloudSession10(session) {
+function acceptCloudSession10(session,newLogin=false) {
  session10=session;
- if (sync10.scope!==cloudScope10()) {
+ if (newLogin || sync10.scope!==cloudScope10()) {
+   clearTimeout(syncTimer10);
    sync10={auto:false,lastRemoteAt:null,lastRemoteRevision:null,lastLocalAt:sync10.lastLocalAt,scope:cloudScope10()};
    store10(keys10.sync,sync10);
  }
@@ -1448,16 +1456,19 @@ function acceptCloudSession10(session) {
 function loadSession10() {
  if(window.AndroidBridge?.readCloudSession) {
    window.ForgeCloudSession=message=>{
+     if(message.kind==='cloudGoogle'){n10GoogleResult(message);return;}
      if(message.kind==='cloudStored'&&!message.ok){notify10('Безопасное хранилище аккаунта недоступно. Может потребоваться повторный вход.',true);return;}
      if(message.kind!=='cloudSession'||cloudSessionStarted10)return;
      cloudSessionStarted10=true;
      const vault=message.session;
      if(n10Configured()&&vault?.url===cfg10.url&&vault.session?.access_token&&vault.session?.user?.id){
+       n10CancelGoogle();
        acceptCloudSession10(vault.session);
        try{localStorage.removeItem(keys10.session)}catch{}
      } else {
        const legacy=json10(keys10.session,null);
        if(n10Configured()&&legacy?.access_token&&legacy?.user?.id){
+         n10CancelGoogle();
          acceptCloudSession10(legacy);
          saveSession10();
        } else try{localStorage.removeItem(keys10.session)}catch{}
@@ -1519,26 +1530,27 @@ let refreshing10=null;
 async function n10EnsureSession(){
  if(!session10?.access_token)return false;
  if(session10.expires_at&&Date.now()<session10.expires_at-90000)return true;
- if(!session10.refresh_token){session10=null;saveSession10();return false;}
- if(refreshing10)return refreshing10;
+ if(!session10.refresh_token){n10EndSession();return false;}
+ if(refreshing10?.session===session10)return refreshing10.promise;
  const previous=session10;
- refreshing10=(async()=>{
+ const promise=(async()=>{
   try{
    const s=await n10Api('/auth/v1/token?grant_type=refresh_token','POST',{refresh_token:previous.refresh_token},false);
    if(session10!==previous)return false;
    n10SetSession(s);return true;
   }catch(e){
-   if(session10===previous&&[400,401,403].includes(e.httpStatus)){session10=null;saveSession10();throw Error('Срок входа истёк: войди снова');}
+   if(session10===previous&&[400,401,403].includes(e.httpStatus)){n10EndSession();throw Error('Срок входа истёк: войди снова');}
    throw e;
-  }finally{refreshing10=null}
+  }finally{if(refreshing10?.session===previous)refreshing10=null}
  })();
- return refreshing10;
+ refreshing10={session:previous,promise};
+ return promise;
 }
-function n10SetSession(s){
+function n10SetSession(s,newLogin=false){
  if(!s?.access_token||!s?.user?.id)throw Error('Не получена сессия аккаунта');
  cloudSessionStarted10=true;
  acceptCloudSession10({access_token:s.access_token,refresh_token:s.refresh_token,
-   user:{id:s.user.id,email:s.user.email||''},expires_at:Date.now()+Number(s.expires_in||3600)*1000});
+   user:{id:s.user.id,email:s.user.email||''},expires_at:Date.now()+Number(s.expires_in||3600)*1000},newLogin);
  saveSession10();
 }
 function n10ApiErr(e){let msg=String(e?.message||e||'Ошибка сети'); if(/Failed to fetch|NetworkError|fetch failed/i.test(msg))msg='Нет связи с сервером. Записи сохраняются локально.';notify10(msg,true)}
@@ -1598,7 +1610,8 @@ async function n10CloudDownloadClicked(){if(!session10){notify10('Сначала
 async function n10AutoUpload(){
  if(!sync10.auto||!session10||!sync10.lastLocalAt||cloudBusy10||!navigator.onLine)return;
  try{
-  const scope=cloudScope10(),remote=await n10FetchCloud(true);
+  const consent=sync10,scope=cloudScope10(),remote=await n10FetchCloud(true);
+  if(sync10!==consent||!sync10.auto)return;
   if(!remote||ForgeCloudSnapshot.revision(remote)!==sync10.lastRemoteRevision){n10PauseConflict();return;}
   await n10SaveCloud(remote,scope);
  }catch(e){n10ApiErr(e)}
@@ -1610,38 +1623,128 @@ window.ForgeCloudStatus=()=>({
  'Облачный аккаунт':session10?'сеанс открыт':'нет сеанса',
  'Автообмен':sync10.auto?'включён':'выключен'
 });
-function n10UiRefresh(){const el=$10('n10CloudContent');if(el)el.innerHTML=n10CloudHtml();const status=$10('n10CloudStatus');if(status&&cloudMessage10){status.textContent=cloudMessage10;status.className='n10-cloud-status '+cloudError10}}
+function n10UiRefresh(){const el=$10('n10CloudContent');if(el)el.innerHTML=n10CloudHtml();n10RenderProfileCloud();n10RenderAuthControls()}
+function n10GoogleProject(){return nativeGoogle10&&n10ValidUrl(cfg10.url)===forgeCloud10.url}
+function n10ValidGoogleId(value){return /^[A-Za-z0-9_-]{1,128}\.apps\.googleusercontent\.com$/.test(value)}
+function n10AuthPending(){return passwordPending10||!!googleAttempt10}
+function n10RenderAuthControls(){
+ for(const id of ['profileGoogleSignIn','n10GoogleButton','n10EmailButton','n10SignupButton']){
+  const button=$10(id);if(button)button.disabled=n10AuthPending()||(id==='n10GoogleButton'&&!nativeGoogle10&&!n10GoogleAvailable());
+ }
+}
 function n10CloudHtml(){let logged=!!session10?.user?.id;let address=logged?clean10(session10.user.email||'Пользователь'):'';
  const configured=n10Configured();return `<div class="n10-cloud-shell"><h3>Аккаунт и сохранение</h3><div class="n10-cloud-badge">${logged?'● Аккаунт подключён':'○ Данные хранятся локально'}</div>
- <p class="n10-cloud-muted">${logged?'Вход выполнен: '+address+'. Тренировки доступны офлайн; синхронизация работает через ваш Supabase-проект.':'Все основные функции приложения доступны без регистрации. Чтобы хранить прогресс на разных устройствах, можно подключить собственный облачный проект.'}</p>
- <div id="n10CloudStatus" class="n10-cloud-status ${cloudError10}">${clean10(cloudMessage10||'Облако ещё не настроено. Локальные записи продолжают сохраняться.')}</div>
- <details ${configured?'':'open'}><summary style="font-weight:800;color:#a4f2da;cursor:pointer;padding:8px 0">Настроить облако (Supabase)</summary>
+ <p class="n10-cloud-muted">${logged?'Вход выполнен: '+address+'. Тренировки доступны офлайн.':'Без аккаунта дневник хранится на этом устройстве.'}</p>
+ <div id="n10CloudStatus" role="status" class="n10-cloud-status ${cloudError10}">${clean10(cloudMessage10||(configured?'Выбери отправку или восстановление дневника после входа.':'Облако ещё не настроено. Локальные записи продолжают сохраняться.'))}</div>
+ <details id="n10CloudSettings" ${configured?'':'open'}><summary style="font-weight:800;color:#a4f2da;cursor:pointer;padding:8px 0">Настроить облако (Supabase)</summary>
  <label class="n10-cloud-field"><span>HTTPS-адрес проекта Supabase</span><input type="url" id="n10SupaUrl" autocomplete="url" placeholder="https://project-id.supabase.co" value="${clean10(cfg10.url)}"></label>
  <label class="n10-cloud-field"><span>Публичный publishable / anon key (не service_role)</span><input type="text" id="n10SupaKey" autocomplete="off" spellcheck="false" placeholder="sb_publishable_…" value="${clean10(cfg10.key)}"></label>
  <button class="n10-cloud-btn" onclick="n10StoreConfig()">Сохранить настройки сервера</button>
- <p class="n10-cloud-muted">Нужно один раз создать проект Supabase и выполнить SQL из инструкции. Никогда не вводи секретный service_role key в приложение. Эта настройка не требует платного тарифа по умолчанию, но зависит от лимитов сервиса.</p></details>
+ ${n10GoogleProject()?`<label class="n10-cloud-field"><span>Google Web Client ID</span><input type="text" id="n10GoogleClientId" autocomplete="off" spellcheck="false" placeholder="….apps.googleusercontent.com" value="${clean10(googleClientId10)}"></label>
+ <button class="n10-cloud-btn" onclick="n10StoreGoogleClientId()">Сохранить Google Web Client ID</button><p class="n10-cloud-muted">Публичный идентификатор веб-клиента из Google Auth Platform для проекта FORGE.</p>`:''}</details>
  ${logged?`<div class="n10-cloud-divider"></div><h4>Синхронизация дневника</h4><div class="n10-cloud-actions"><button class="strong" onclick="n10CloudUploadClicked()">↑ Отправить в облако</button><button onclick="n10CloudDownloadClicked()">↓ Скачать из облака</button></div><label class="n10-cloud-checkbox"><input type="checkbox" ${sync10.auto?'checked':''} onchange="n10ToggleAuto(this.checked)">Автосохранение после изменений (если есть интернет)</label><p class="n10-cloud-muted">Перед сменой версии рекомендуется экспортировать JSON. При изменении облачных записей на другом устройстве автоматическая отправка останавливается до выбора версии, чтобы не потерять данные.</p><button class="n10-cloud-btn" onclick="n10SignOut()">Выйти из аккаунта</button><div class="n10-cloud-actions"><button onclick="n10DeleteCloudData()">Удалить облачный дневник</button><button onclick="n10DeleteAccount()" style="border-color:#774b4b;color:#ffbdb6">Удалить аккаунт</button></div>`:
  `<div class="n10-cloud-divider"></div><h4>Почта и пароль</h4><label class="n10-cloud-field"><span>Электронная почта</span><input type="email" id="n10Email" autocomplete="email" placeholder="you@example.com"></label><label class="n10-cloud-field"><span>Пароль (минимум 8 символов)</span><input type="password" id="n10Password" autocomplete="current-password" placeholder="••••••••"></label>
- <div class="n10-cloud-actions"><button class="strong" onclick="n10SignIn()">Войти</button><button onclick="n10SignUp()">Создать аккаунт</button></div><button class="n10-cloud-btn" onclick="n10Recover()">Восстановить пароль</button>
- <div class="n10-cloud-divider"></div><button class="n10-cloud-btn" onclick="n10GoogleSignIn()" ${!n10GoogleAvailable()?'disabled':''}>Продолжить с Google (веб-версия)</button><p class="n10-cloud-muted">Google вход возможен только на опубликованном HTTPS-сайте после настройки провайдера OAuth и адресов перенаправления в Supabase. В Android WebView такой вход намеренно отключён.</p>`}
- <div class="n10-source-notice">Данные синхронизируются только с настроенным тобой облаком. В приложение не встроены чужие секреты или демонстрационные аккаунты. Пароль не хранится в дневнике.</div>
+ <div class="n10-cloud-actions"><button class="strong" id="n10EmailButton" onclick="n10SignIn()">Войти</button><button id="n10SignupButton" onclick="n10SignUp()">Создать аккаунт</button></div><button class="n10-cloud-btn" onclick="n10Recover()">Восстановить пароль</button>
+ <div class="n10-cloud-divider"></div><button type="button" class="n10-google-btn" id="n10GoogleButton" onclick="n10GoogleSignIn()"><img src="google-sign-in.png" alt="" width="20" height="20">Войти через Google</button>
+ ${nativeGoogle10?'':'<p class="n10-cloud-muted">Для входа на сайте нужен HTTPS-домен с настроенным адресом перенаправления в Supabase.</p>'}`}
+ <div class="n10-source-notice">Отправку или восстановление дневника можно выбрать в аккаунте после входа.</div>
  </div>`}
-function n10StoreConfig(){const url=$10('n10SupaUrl')?.value.trim(),key=$10('n10SupaKey')?.value.trim();if(!n10ValidUrl(url)||!key||/service_role|sb_secret_/i.test(key)){notify10('Неверные настройки. Нужен адрес *.supabase.co и публичный publishable/anon key, не secret/service_role.',true);return;}
- if(!ForgeCloudSnapshot.publicKey(key)) {notify10('Неверный публичный API-ключ Supabase',true);return;}if(session10&&!confirm('Смена сервера завершит текущий облачный сеанс. Продолжить?'))return;
- cfg10={url:n10ValidUrl(url),key};store10(keys10.config,cfg10);session10=null;cloudSessionStarted10=true;saveSession10();sync10={auto:false,lastRemoteAt:null,lastLocalAt:null};store10(keys10.sync,sync10);notify10('Адрес облака сохранён. Теперь можно войти по почте.');n10UiRefresh()}
-async function n10SignIn(){const email=$10('n10Email')?.value.trim(),password=$10('n10Password')?.value||'';if(!email||password.length<8){notify10('Укажи почту и пароль не короче 8 символов',true);return;}try{const data=await n10Api('/auth/v1/token?grant_type=password','POST',{email,password},false);n10SetSession(data);notify10('Успешный вход. Для первой синхронизации выбери отправку или восстановление данных.');}catch(e){n10ApiErr(e)}finally{n10UiRefresh()}}
-async function n10SignUp(){const email=$10('n10Email')?.value.trim(),password=$10('n10Password')?.value||'';if(!email||password.length<8){notify10('Укажи почту и пароль минимум из 8 символов',true);return;}try{const data=await n10Api('/auth/v1/signup','POST',{email,password},false);if(data?.access_token&&data?.user)n10SetSession(data);else notify10('Запрос регистрации принят. Проверь почту и подтверди адрес, затем войди.');}catch(e){n10ApiErr(e)}finally{n10UiRefresh()}}
+function n10StoreConfig(){
+ const url=n10ValidUrl($10('n10SupaUrl')?.value.trim()),key=$10('n10SupaKey')?.value.trim();
+ if(!url||!ForgeCloudSnapshot.publicKey(key)){notify10('Укажи адрес *.supabase.co и публичный publishable или anon key.',true);return;}
+ if(url===cfg10.url&&key===cfg10.key)return;
+ if(session10&&!confirm('Смена сервера завершит текущий облачный сеанс. Продолжить?'))return;
+ const next={url,key};
+ if(!store10(keys10.config,next)){notify10('Не удалось сохранить настройки сервера.',true);return;}
+ cfg10=next;n10EndSession();notify10('Настройки сервера сохранены.');
+}
+function n10StoreGoogleClientId(){
+ if(!n10GoogleProject())return;
+ const id=$10('n10GoogleClientId').value.trim();
+ if(id&&!n10ValidGoogleId(id)){notify10('Укажи публичный Web Client ID с окончанием .apps.googleusercontent.com.',true);return;}
+ if(!store10(keys10.googleClientId,id)){notify10('Не удалось сохранить Google Web Client ID.',true);return;}
+ n10CancelGoogle();googleClientId10=id;n10RenderAuthControls();
+ notify10(id?'Google Web Client ID сохранён.':'Google Web Client ID удалён.');
+}
+async function n10PasswordAuth(signup){
+ if(n10AuthPending()||session10)return;
+ const email=$10('n10Email')?.value.trim(),password=$10('n10Password')?.value||'';
+ if(!email||password.length<8){notify10('Укажи почту и пароль не короче 8 символов',true);return;}
+ passwordPending10=true;n10RenderAuthControls();
+ try{
+  const data=await n10Api(signup?'/auth/v1/signup':'/auth/v1/token?grant_type=password','POST',{email,password},false);
+  if(session10)return;
+  if(signup&&!data?.access_token){notify10('Запрос регистрации принят. Проверь почту и подтверди адрес, затем войди.');return;}
+  n10SetSession(data,true);notify10('Вход выполнен. Для синхронизации выбери отправку или восстановление данных.');
+ }catch(e){n10ApiErr(e)}finally{passwordPending10=false;n10RenderAuthControls()}
+}
+function n10SignIn(){return n10PasswordAuth(false)}
+function n10SignUp(){return n10PasswordAuth(true)}
 async function n10Recover(){const email=$10('n10Email')?.value.trim();if(!email){notify10('Сначала введи почту',true);return;}try{await n10Api('/auth/v1/recover','POST',{email},false);notify10('Если адрес существует, придёт письмо со ссылкой восстановления.')}catch(e){n10ApiErr(e)}}
-function n10SignOut(){if(!confirm('Выйти из облачного аккаунта? Локальные данные останутся на устройстве.'))return;session10=null;cloudSessionStarted10=true;saveSession10();sync10.auto=false;sync10.lastRemoteAt=null;sync10.lastRemoteRevision=null;store10(keys10.sync,sync10);notify10('Выход выполнен. Локальный дневник не удалён.');n10UiRefresh()}
+function n10EndSession(){
+ n10CancelGoogle();cloudSessionStarted10=true;acceptCloudSession10(null,true);saveSession10();
+ window.AndroidBridge?.clearGoogleCredential?.();
+}
+function n10SignOut(){
+ if(!confirm('Выйти из облачного аккаунта? Локальные данные останутся на устройстве.'))return;
+ if(session10&&navigator.onLine)n10Api('/auth/v1/logout?scope=local','POST').catch(()=>{});
+ n10EndSession();notify10('Выход выполнен. Локальный дневник доступен.');
+}
 function n10GoogleAvailable(){return n10Configured()&&location.protocol==='https:'&&!/appassets\.androidplatform\.net/i.test(location.host)&&location.hostname!=='localhost'&&location.hostname!=='127.0.0.1'}
-function n10GoogleSignIn(){if(!n10GoogleAvailable()){notify10('Google OAuth доступен только после размещения PWA на HTTPS-домене и настройки Google в Supabase',true);return;}
- const redirect=location.origin+location.pathname;try{sessionStorage.setItem('forge10_oauth_pending','1')}catch{};location.href=n10ValidUrl(cfg10.url)+'/auth/v1/authorize?provider=google&redirect_to='+encodeURIComponent(redirect)}
+function n10CancelGoogle(){
+ if(!googleAttempt10)return;
+ googleAttempt10=null;window.AndroidBridge.cancelGoogleSignIn();
+}
+function n10GoogleSignIn(){
+ if(n10AuthPending()||session10)return;
+ if(!navigator.onLine){notify10('Для входа через Google подключись к интернету.',true);return;}
+ if(nativeGoogle10){
+  if(!n10GoogleProject()||!n10Configured()){
+   notify10('Вход Google на Android доступен для проекта Supabase FORGE.',true);return;
+  }
+  if(!n10ValidGoogleId(googleClientId10)){
+   $10('n10CloudSettings').open=true;
+   $10('n10GoogleClientId').focus();
+   notify10('Укажи Google Web Client ID в настройках облака.',true);return;
+  }
+  const requestId=++googleSequence10;
+  googleAttempt10={requestId,project:cfg10};
+  n10RenderAuthControls();notify10('Подключаем вход Google…');
+  try{window.AndroidBridge.googleSignIn({requestId,url:cfg10.url,key:cfg10.key,clientId:googleClientId10})}
+  catch{googleAttempt10=null;n10RenderAuthControls();notify10('Системный вход Google недоступен. Можно войти по почте.',true)}
+  return;
+ }
+ if(!n10GoogleAvailable()){notify10('Настрой Google OAuth для HTTPS-версии сайта в Supabase.',true);return;}
+ const redirect=location.origin+location.pathname;
+ try{sessionStorage.setItem('forge10_oauth_pending','1')}catch{}
+ location.href=n10ValidUrl(cfg10.url)+'/auth/v1/authorize?provider=google&redirect_to='+encodeURIComponent(redirect);
+}
+function n10GoogleResult(message){
+ if(!googleAttempt10||message.requestId!==googleAttempt10.requestId||googleAttempt10.project!==cfg10)return;
+ googleAttempt10=null;n10RenderAuthControls();
+ if(message.status==='ok'){
+  try{n10SetSession(message.session,true);notify10('Вход через Google выполнен. Выбери направление синхронизации дневника.');return;}
+  catch{notify10('Сервер не вернул корректную сессию FORGE.',true);return;}
+ }
+ const messages={
+  cancelled:'Вход через Google отменён.',
+  no_account:'Выбери или добавь аккаунт Google на устройстве и повтори вход.',
+  provider_disabled:'В проекте Supabase FORGE нужно включить провайдер Google.',
+  configuration:'Проверь настройки проекта Supabase и Google Web Client ID.',
+  unavailable:'Вход недоступен. Проверь обновления сервисов Google Play или войди по почте.',
+  network:'Нет связи с сервером входа. Попробуй ещё раз.',
+  rate_limited:'Слишком много попыток. Попробуй позже.',
+  busy:'Подожди завершения предыдущего входа или выхода.'
+ };
+ notify10(messages[message.status]||'Не удалось войти. Проверь настройки Google OAuth или войди по почте.',message.status!=='cancelled');
+}
 function n10CompleteOAuth(){let pending=false;try{pending=!!sessionStorage.getItem('forge10_oauth_pending')}catch{};if(!pending)return;
  const p=new URLSearchParams(location.hash.slice(1));if(p.has('access_token')&&p.has('refresh_token')){try{sessionStorage.removeItem('forge10_oauth_pending')}catch{};const at=p.get('access_token'),rt=p.get('refresh_token');history.replaceState(null,'',location.pathname+location.search); // fetch identity without trusting a local user-id claim
- fetch(n10ValidUrl(cfg10.url)+'/auth/v1/user',{headers:{'apikey':cfg10.key,'Authorization':'Bearer '+at}}).then(r=>r.ok?r.json():Promise.reject(Error('Не удалось проверить пользователя'))).then(user=>{n10SetSession({access_token:at,refresh_token:rt,user,expires_in:Number(p.get('expires_in')||3600)});notify10('Google-аккаунт подключён. Выбери версию дневника для синхронизации.')}).catch(n10ApiErr);}}
+ const project=cfg10;
+ fetch(n10ValidUrl(project.url)+'/auth/v1/user',{headers:{'apikey':project.key,'Authorization':'Bearer '+at},redirect:'error'}).then(r=>r.ok?r.json():Promise.reject(Error('Не удалось проверить пользователя'))).then(user=>{if(cfg10!==project||session10)return;n10SetSession({access_token:at,refresh_token:rt,user,expires_in:Number(p.get('expires_in')||3600)},true);notify10('Google-аккаунт подключён. Выбери версию дневника для синхронизации.')}).catch(n10ApiErr);}}
 // account UI replaces the previous demonstrational social login block.
 function n10InstallCloud(){const section=$10('account');if(!section)return;const old=section.querySelector('.loginwrap');if(old)old.style.display='none';let ui=section.querySelector('#n10CloudContent');if(!ui){ui=document.createElement('div');ui.id='n10CloudContent';section.appendChild(ui)}n10UiRefresh();
- const profile=$10('profile');if(profile){profile.querySelectorAll('.notice').forEach(n=>{if(n.textContent.includes('Тренировки сейчас'))n.textContent='Основной дневник сохраняется локально. Для переноса на другое устройство используй JSON или подключи собственный облачный аккаунт.'});}
+ const profile=$10('profile');if(profile){profile.querySelectorAll('.notice').forEach(n=>{if(n.textContent.includes('Тренировки сейчас'))n.textContent='Дневник сохраняется на устройстве. Для переноса можно экспортировать JSON или отправить копию в облачный аккаунт.'});}
 }
 // Restore compatibility with old data; visually demonstrate real cloud status after login.
 const previousShowPage10=showPage;
@@ -1673,14 +1776,21 @@ async function n10DeleteCloudData(){if(!session10){notify10('Сначала во
  catch(e){n10ApiErr(e)}finally{n10UiRefresh()}}
 async function n10DeleteAccount(){if(!session10){notify10('Сначала войди в аккаунт',true);return;}
  if(!confirm('Удалить учётную запись Supabase и весь облачный дневник без возможности восстановления? Локальная копия на этом устройстве останется.'))return;
- try{if(!await n10EnsureSession())throw Error('Войди в аккаунт');await n10Api('/functions/v1/delete-account','POST',{},true);session10=null;cloudSessionStarted10=true;saveSession10();sync10.auto=false;sync10.lastRemoteAt=null;sync10.lastRemoteRevision=null;store10(keys10.sync,sync10);notify10('Аккаунт и облачный дневник удалены. Локальные записи остались.')}
+ try{if(!await n10EnsureSession())throw Error('Войди в аккаунт');await n10Api('/functions/v1/delete-account','POST',{},true);n10EndSession();notify10('Аккаунт и облачный дневник удалены. Локальные записи остались.')}
  catch(e){n10ApiErr(e)}finally{n10UiRefresh()}}
 window.addEventListener('online',()=>{if(sync10.auto&&sync10.lastLocalAt)n10QueueAutoUpload()});
 const oldRenderProfile10=renderProfile;
-renderProfile=function(){oldRenderProfile10();const message=$10('n9ProfileExtras')?.querySelector('.n9-caption');if(message)message.textContent=session10?'Аккаунт подключён: '+String(session10.user?.email||'')+'. Резервная копия доступна по кнопке аккаунта. Выбирай отправку или восстановление данных в разделе «Аккаунт».':'Данные сохраняются на этом устройстве. JSON-экспорт поможет перенести их; при подключении Supabase доступна облачная копия и вход по почте.';
- const txt=$10('profileEmail');if(txt&&session10)txt.textContent=String(session10.user.email||'Облачный пользователь');};
+function n10RenderProfileCloud(){
+ const message=$10('n9ProfileExtras')?.querySelector('.n9-caption');
+ if(message)message.textContent='Дневник сохраняется на устройстве. Для переноса используй JSON или резервную копию в аккаунте.';
+ $10('profileGoogleSignIn').hidden=!nativeGoogle10||!!session10;
+ $10('profileCloudEntry').textContent=session10?'Аккаунт и синхронизация ↗':nativeGoogle10?'Войти по почте ↗':'Войти или создать аккаунт ↗';
+ $10('profileEmail').textContent=session10?(session10.user.email||'Облачный пользователь'):(state.profile.email||'Локальный профиль на устройстве');
+ $10('profileCloudBadge').textContent=session10?'● АККАУНТ ПОДКЛЮЧЁН':'● ЛОКАЛЬНЫЙ РЕЖИМ';
+}
+renderProfile=function(){oldRenderProfile10();n10RenderProfileCloud()};
 // Script globals used by click handlers.
-Object.assign(window,{n10StoreConfig,n10SignIn,n10SignUp,n10Recover,n10GoogleSignIn,n10SignOut,n10CloudUploadClicked,n10CloudDownloadClicked,n10DeleteCloudData,n10DeleteAccount,n10ToggleAuto,n10OpenRecipes,n10EditRecipe,n10AppendIngredient,n10RemoveIngredient,n10SaveRecipe,n10AddRecipe,n10DeleteRecipe});
+Object.assign(window,{n10StoreConfig,n10StoreGoogleClientId,n10SignIn,n10SignUp,n10Recover,n10GoogleSignIn,n10SignOut,n10CloudUploadClicked,n10CloudDownloadClicked,n10DeleteCloudData,n10DeleteAccount,n10ToggleAuto,n10OpenRecipes,n10EditRecipe,n10AppendIngredient,n10RemoveIngredient,n10SaveRecipe,n10AddRecipe,n10DeleteRecipe});
 // Make sure UI is present even when reloaded into the active account page.
 n10InstallCloud();n10NutritionTile();loadSession10();n10CompleteOAuth();
 })();

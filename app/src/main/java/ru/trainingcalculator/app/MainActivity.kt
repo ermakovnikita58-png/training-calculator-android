@@ -10,6 +10,7 @@ import androidx.webkit.WebViewFeature
 import androidx.webkit.JavaScriptReplyProxy
 import org.json.JSONObject
 import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import java.util.concurrent.Executors
 import android.webkit.ValueCallback
@@ -59,6 +60,9 @@ class MainActivity : ComponentActivity() {
         notificationReply = null
     }
     private val vault by lazy { CloudSessionVault(applicationContext) }
+    private val googleAuth by lazy { ForgeGoogleAuth(this) }
+    private var googleSignInJob: Job? = null
+    private var clearGoogleJob: Job? = null
     private var healthReply: JavaScriptReplyProxy? = null
     private var healthGeneration = 0
     private val healthPreferences by lazy { getSharedPreferences("forge_health", MODE_PRIVATE) }
@@ -201,6 +205,7 @@ class MainActivity : ComponentActivity() {
         }
         webView.webViewClient = object : WebViewClient() {
             override fun onPageStarted(view: WebView?, url: String?, favicon: android.graphics.Bitmap?) {
+                googleSignInJob?.cancel()
                 navigationReady = false
                 internalBack = true
                 backPending = false
@@ -277,6 +282,14 @@ class MainActivity : ComponentActivity() {
             }
             "preferences" -> reportPreferences(reply)
             "storeCloudSession", "readCloudSession" -> sessionMessage(message, reply)
+            "googleSignIn" -> signInWithGoogle(message, reply)
+            "cancelGoogleSignIn" -> googleSignInJob?.cancel()
+            "clearGoogleCredential" -> {
+                googleSignInJob?.cancel()
+                if (clearGoogleJob?.isActive != true) {
+                    clearGoogleJob = lifecycleScope.launch { googleAuth.clearCredentialState() }
+                }
+            }
             "healthRead" -> requestHealth(reply)
             "healthDisconnect" -> disconnectHealth(reply)
             "analyticsConsent" -> {
@@ -328,6 +341,24 @@ class MainActivity : ComponentActivity() {
 
     private fun post(reply: JavaScriptReplyProxy, data: JSONObject) {
         if (!isDestroyed) runCatching { reply.postMessage(data.toString()) }
+    }
+
+    private fun signInWithGoogle(message: JSONObject, reply: JavaScriptReplyProxy) {
+        val requestId = message.optInt("requestId")
+        if (requestId <= 0) return
+        val response = JSONObject().put("kind", "cloudGoogle").put("requestId", requestId)
+        if (message.optString("url") != ForgeGoogleAuth.PROJECT_URL) {
+            post(reply, response.put("status", "configuration"))
+            return
+        }
+        if (googleSignInJob?.isActive == true || clearGoogleJob?.isActive == true) {
+            post(reply, response.put("status", "busy"))
+            return
+        }
+        googleSignInJob = lifecycleScope.launch {
+            val result = googleAuth.signIn(message.optString("clientId"), message.optString("key"))
+            post(reply, response.put("status", result.status).put("session", result.session))
+        }
     }
 
     private fun sessionMessage(message: JSONObject, reply: JavaScriptReplyProxy) {

@@ -20,6 +20,9 @@
     restDeadline: deadline => send('restDeadline', { deadline }),
     storeCloudSession: session => send('storeCloudSession', { session }),
     readCloudSession: () => send('readCloudSession'),
+    googleSignIn: ({ requestId, url, key, clientId }) => send('googleSignIn', { requestId, url, key, clientId }),
+    cancelGoogleSignIn: () => send('cancelGoogleSignIn'),
+    clearGoogleCredential: () => send('clearGoogleCredential'),
     healthRead: () => send('healthRead'),
     healthDisconnect: () => send('healthDisconnect')
   });

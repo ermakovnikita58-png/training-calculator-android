@@ -110,7 +110,7 @@ class UpgradePersistenceTest {
 
     @Test fun verifyCandidateVersion() {
         assumeTrue(args.getString("forgeUpgrade") == "verify")
-        assertEquals(25, versionCode())
+        assertEquals(BuildConfig.VERSION_CODE, versionCode())
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             waitForApp(scenario)
             assertEquals("true", js(scenario, """
@@ -137,7 +137,7 @@ class UpgradePersistenceTest {
 
     @Test fun verifyCycleAfterUpgrade() {
         assumeTrue(args.getString("forgeUpgrade") == "cycles")
-        assertEquals(25, versionCode())
+        assertEquals(BuildConfig.VERSION_CODE, versionCode())
         assertEquals(1, Settings.Global.getInt(context.contentResolver, Settings.Global.AIRPLANE_MODE_ON, 0))
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             waitFor(scenario, "!!window.ForgeCycles")

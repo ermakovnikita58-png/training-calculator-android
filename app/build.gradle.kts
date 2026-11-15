@@ -30,8 +30,8 @@ android {
         buildConfigField("boolean", "FORGE_CRASH_CONFIGURED", crashConfigured.toString())
         buildConfigField("String", "FORGE_POSTHOG_KEY", "\"$posthogKey\"")
         buildConfigField("String", "FORGE_POSTHOG_HOST", "\"${if (posthogKey.isEmpty()) "" else posthogHost}\"")
-        versionCode = 25
-        versionName = "11.4.0"
+        versionCode = 26
+        versionName = "11.4.1"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     if (storeBuild) {
@@ -89,6 +89,9 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.uiautomator:uiautomator:2.3.0")
     implementation("androidx.activity:activity-ktx:1.10.1")
+    implementation("androidx.credentials:credentials:1.6.0")
+    implementation("androidx.credentials:credentials-play-services-auth:1.6.0")
+    implementation("com.google.android.libraries.identity.googleid:googleid:1.2.1")
     implementation("androidx.webkit:webkit:1.12.1")
     implementation("androidx.core:core-ktx:1.16.0")
 }

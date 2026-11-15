@@ -255,4 +255,41 @@ class NavigationBackTest {
             pressBack(scenario, "ForgeNavigation.inspect().current==='profile'")
         }
     }
+
+    @Test fun googleEntryKeepsTheOfflineDiaryAndTheNativeBridgeRejectsAnotherProject() {
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            openPage(scenario, "profile")
+            val diary = js(scenario, "localStorage.getItem('forge_v2')")
+            click(scenario, "#profileGoogleSignIn")
+            waitFor(scenario, "ForgeNavigation.inspect().current==='account'")
+            waitFor(scenario, "document.getElementById('n10CloudStatus').textContent.includes('подключись к интернету')")
+            js(scenario, """
+                const cloudHandler = window.ForgeCloudSession;
+                window.ForgeCloudSession = message => {
+                    if (message.kind === 'cloudGoogle') window.testGoogleReply = message;
+                    cloudHandler(message);
+                };
+                window.AndroidBridge.googleSignIn({
+                    requestId: 25, url: 'https://another-project.supabase.co',
+                    key: 'sb_publishable_another_project_test', clientId: 'fixture.apps.googleusercontent.com'
+                });
+            """.trimIndent())
+            waitFor(scenario, "window.testGoogleReply?.requestId===25 && window.testGoogleReply.status==='configuration'")
+            assertEquals(diary, js(scenario, "localStorage.getItem('forge_v2')"))
+        }
+    }
+
+    @Test fun nativeGoogleBridgeKeepsOnlyTheSupabaseSession() {
+        val response = JSONObject()
+            .put("access_token", "supabase-access")
+            .put("refresh_token", "supabase-refresh")
+            .put("expires_in", 3600)
+            .put("provider_token", "google-token")
+            .put("id_token", "id-token")
+            .put("user", JSONObject().put("id", "user-id").put("email", "fixture@example.test").put("metadata", "private"))
+        val session = ForgeGoogleAuth.publicSession(response)
+        assertEquals(setOf("access_token", "refresh_token", "expires_in", "user"), session.keys().asSequence().toSet())
+        assertEquals(setOf("id", "email"), session.getJSONObject("user").keys().asSequence().toSet())
+        assertEquals("supabase-access", session.getString("access_token"))
+    }
 }
