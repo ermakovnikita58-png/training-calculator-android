@@ -170,6 +170,20 @@ test('an imported program keeps its catalog ID and unknown loads while making a 
     row,M.basisKey(row),cycle.id).map(set=>set.weight),[40]);
 });
 
+test('existing undated 10.1 cycles retain their original weekly weights after upgrade', () => {
+  const cycle = plan(), row = cycle.days[0].rows[0];
+  delete cycle.end;
+  delete cycle.programs;
+  for (const day of cycle.days) delete day.programId;
+  cycle.weeks = cycle.weeks.slice(0, 4);
+  row.selected = true;
+  cycle.bases[row.group] = basis(40);
+  assert.equal(M.plannedLoad(cycle, 1, row).percent, 67);
+  assert.equal(M.plannedLoad(cycle, 2, row).percent, 74);
+  assert.equal(M.plannedLoad(cycle, 3, row).percent, 100);
+  assert(M.validCycle(cycle));
+});
+
 test('multiple programs fit in the requested dates and the load advances across the whole period', () => {
   const make = (id, day) => ({ id, name: id, days: [{ day, name: id, exercises: ['Тяга'] }] });
   const cycle = M.createCycle([make('first', 'ПН'), make('second', 'ПТ')],

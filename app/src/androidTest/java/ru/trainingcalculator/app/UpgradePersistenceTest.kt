@@ -45,7 +45,7 @@ class UpgradePersistenceTest {
 
     private fun waitForApp(scenario: ActivityScenario<MainActivity>) {
         repeat(100) {
-            if (js(scenario, "!!window.ForgePerformance && typeof state === 'object'") == "true") return
+            if (js(scenario, "(!!window.ForgePerformance || !!window.ForgeCycles) && typeof state === 'object'") == "true") return
             Thread.sleep(150)
         }
         error("FORGE did not initialize")
@@ -97,6 +97,7 @@ class UpgradePersistenceTest {
                       const first = ForgeCycleModel.sessions(cycle)[0];
                       diary.trainingCycles = [cycle];
                       diary.workouts[0].trainingCycle = ForgeCycleModel.snapshot(cycle,first);
+                      diary.workouts[0].sets[0].cycleRowId = row.id;
                     }
                     const snapshot = JSON.stringify(diary);
                     localStorage.setItem('forge_v2', snapshot);
