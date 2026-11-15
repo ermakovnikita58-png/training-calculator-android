@@ -16,10 +16,18 @@ adb install "$RUNNER_TEMP/forge-previous/app/build/outputs/apk/debug/app-debug.a
 adb install app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
 instrument upgrade-seed -e forgeUpgrade seed -e class "$app.UpgradePersistenceTest#seedPreviousVersion"
 adb install -r app/build/outputs/apk/debug/app-debug.apk
+adb shell cmd connectivity airplane-mode enable
 adb shell svc wifi disable
 adb shell svc data disable
+for attempt in {1..20}; do
+  adb shell dumpsys connectivity > test-results/emulator-connectivity.txt
+  if grep -q '^Active default network: none' test-results/emulator-connectivity.txt; then break; fi
+  sleep 1
+done
+grep -q '^Active default network: none' test-results/emulator-connectivity.txt
 instrument upgrade-verify -e forgeUpgrade verify -e class "$app.UpgradePersistenceTest#verifyCandidateVersion"
 instrument offline-device -e notClass "$app.UpgradePersistenceTest"
+instrument upgrade-cycles -e forgeUpgrade cycles -e class "$app.UpgradePersistenceTest#verifyCycleAfterUpgrade"
 
 adb shell getprop qemu.hw.mainkeys
 adb shell cmd overlay enable-exclusive --category --user current com.android.internal.systemui.navbar.gestural

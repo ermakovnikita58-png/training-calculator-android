@@ -59,7 +59,7 @@
     document.querySelector('.top').inert=!!top();document.querySelector('.tabbar').inert=!!top();
     notify();
   }
-  function canBack() {return !!top()||frames.length>0||active()!=='home';}
+  function canBack() {return !!window.ForgeCycles?.isOpen()||!!top()||frames.length>0||active()!=='home';}
   function allowCloseEditor() {
     if(editorApproved||restoring)return true;
     const id=top()?.id;
@@ -124,6 +124,7 @@
     if(busy)return 'handled';busy=true;
     try {
       commitFocusedField();
+      if(window.ForgeCycles?.back())return 'handled';
       if(closeTop())return 'handled';
       if(active()==='library'&&window.ForgeExerciseLibrary?.back()){persist();return 'handled';}
       if(active()==='nutritionCoach'&&ForgeCoach.backStep()){persist();return 'handled';}
@@ -171,7 +172,7 @@
     persist();
   });
   observer.observe(document.body,{subtree:true,attributes:true,attributeFilter:['class'],childList:true});
-  window.ForgeNavigation={go,back,canBack,persist,allowCloseEditor,surfaceOpened(id,name,args){const el=byId(id);if(el&&reopen.includes(name)){surfaceRoutes.set(id,{route:{name,args:clone(args)},node:surfaceContent(el)});announce();persist();}},beforeOverlay:persist,markSaved:id=>dirty.delete(id),markDirty:id=>dirty.add(id),inspect:()=>({current:active(),depth:frames.length,overlay:top()?.id||null})};
+  window.ForgeNavigation={go,back,canBack,persist,allowCloseEditor,notify,surfaceOpened(id,name,args){const el=byId(id);if(el&&reopen.includes(name)){surfaceRoutes.set(id,{route:{name,args:clone(args)},node:surfaceContent(el)});announce();persist();}},beforeOverlay:persist,markSaved:id=>dirty.delete(id),markDirty:id=>dirty.add(id),inspect:()=>({current:active(),depth:frames.length,overlay:window.ForgeCycles?.isOpen()?'forge-cycle':top()?.id||null})};
   for(const name of reopen){
     const original=window[name];if(typeof original!=='function')continue;
     window[name]=function(...args){const result=original.apply(this,args),el=top();if(el){if(!restoring)dirty.delete(el.id);surfaceRoutes.set(el.id,{route:{name,args:clone(args)},node:surfaceContent(el)});persist();}return result;};

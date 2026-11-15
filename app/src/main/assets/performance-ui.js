@@ -46,21 +46,22 @@
   }
   function programCard(p,templateIndex=null){
     const days=p.days||[],groups=[...new Set(days.map(d=>d.focus).filter(Boolean))].join(' · '),count=days.filter(training).length;
-    return `<article class="fp-card fp-program ${state.currentProgram===p.id?'active':''}"><div class="fp-program-meta"><span class="fp-chip ${state.currentProgram===p.id?'active':''}">${templateIndex!==null?'Готовая программа':state.currentProgram===p.id?'Активная':'Моя программа'}</span><span class="fp-chip">${count||days.length} дн./нед.</span></div><h2>${esc(p.name)}</h2><p>${esc(groups||p.desc||'Собственная программа тренировок')}</p><div class="fp-caption">Продолжительность зависит от упражнений и отдыха.</div><div class="fp-actions">${templateIndex!==null?button('template','Добавить программу',[templateIndex],'','plus'):button('editProgram','Открыть',[p.id],'','plan')}${templateIndex===null&&state.currentProgram!==p.id?button('activate','Выбрать',[p.id],'quiet'):''}</div></article>`;
+    return `<article class="fp-card fp-program ${state.currentProgram===p.id?'active':''}"><div class="fp-program-meta"><span class="fp-chip ${state.currentProgram===p.id?'active':''}">${templateIndex!==null?'Готовая программа':state.currentProgram===p.id?'Активная':'Моя программа'}</span><span class="fp-chip">${count||days.length} дн./нед.</span></div><h2>${esc(p.name)}</h2><p>${esc(groups||p.desc||'Собственная программа тренировок')}</p>${templateIndex===null?window.ForgeCycles?.programBlock(p,true)||'':''}<div class="fp-actions">${templateIndex!==null?button('template','Добавить программу',[templateIndex],'','plus'):button('editProgram','Открыть',[p.id],'','plan')}${templateIndex===null&&state.currentProgram!==p.id?button('activate','Выбрать',[p.id],'quiet'):''}</div></article>`;
   }
   function renderPlan(){
     root('plan',`${heading('План / подготовка','Программы.','Готовая структура или собственный план — с твоими рабочими весами.')}
       <div class="fp-actions">${button('newProgram','Создать программу',[],'primary','plus')}${button('go','Каталог',['library'],'','book')}</div>
       ${section('Мои программы')}<div class="fp-stack">${state.programs?.length?state.programs.map(p=>programCard(p)).join(''):empty('Твой план начинается здесь','Выбери готовую программу ниже или создай свою.',button('newProgram','Создать',[],'','plus'),'plan')}</div>
       ${section('Неделя')}<div class="fp-card">${(state.plans||[]).map((d,i)=>`<div class="fp-day-row"><strong>${esc(d.day)}</strong><div><b>${esc(d.name)}</b><p>${esc(d.focus||'Восстановление')} · ${d.exercises?.length||0} упражнений</p></div><div class="fp-actions">${button('editDay','',[i],'', 'plan').replace('type="button"','type="button" aria-label="Редактировать '+esc(d.day)+'"')}${training(d)?button('chooseDay','',[i],'quiet','workout').replace('type="button"','type="button" aria-label="Начать '+esc(d.name)+'"'):''}</div></div>`).join('')}</div>
-      ${section('Готовые программы')}<div class="fp-stack">${V.templates.map((p,i)=>programCard(p,i)).join('')}</div>
+      ${window.ForgeCycles?.calendarBlock()||''}
+      ${section('Готовые программы')}<div class="fp-stack">${V.templates.map((p,i)=>programCard(p,i)).join('')}${window.ForgeCycles?.templateCards()||''}</div>
       ${section('Инструменты')}<div class="fp-actions">${button('go','Силовые циклы',['cycles'],'','progress')}${button('go','556 упражнений',['library'],'','book')}</div>`);
   }
   function enhanceWorkout(){
     V.workout();const a=state.active,container=$('workout').querySelector('.n8-root');if(!a)return;
     const chosen=a.exercises?.[V.index()];if(!chosen)return;
     const target=container.querySelector('.n8-surface'),prev=history().flatMap(w=>(w.sets||[]).filter(s=>s.exercise===chosen.name).map(s=>({...s,date:day(w.date)}))).slice(0,3);
-    if(target){target.insertAdjacentHTML('afterbegin',`<div class="fp-caption" id="fp-previous-result">${prev.length?'Ранее: '+prev.map(s=>`${fmt(s.weight,1)} кг × ${fmt(s.reps)} (${label(s.date)})`).map(esc).join(' · '):'Первое выполнение в этом дневнике — предыдущих результатов пока нет.'}</div>`);target.insertAdjacentHTML('beforeend',`<div class="fp-actions" style="margin-top:16px">${button('replaceExercise','Заменить',[],'quiet')}${button('removeSet','Удалить последний подход',[],'quiet')}</div>`);}
+    if(target){target.insertAdjacentHTML('afterbegin',`<div class="fp-caption" id="fp-previous-result">${prev.length?'Ранее: '+prev.map(s=>`${fmt(s.weight,1)} кг × ${(s.unit==='seconds'?fmt(s.seconds)+' с':fmt(s.reps))} (${label(s.date)})`).map(esc).join(' · '):'Первое выполнение в этом дневнике — предыдущих результатов пока нет.'}</div>`);target.insertAdjacentHTML('beforeend',`<div class="fp-actions" style="margin-top:16px">${button('replaceExercise','Заменить',[],'quiet')}${button('removeSet','Удалить последний подход',[],'quiet')}</div>`);}
     const titleRow=target?.querySelector('.n8-row');if(titleRow){titleRow.className='fp-current-heading';titleRow.innerHTML=`<img src="${esc(ForgeArt.source(chosen.name)||ForgeArt.missingData(chosen.name))}" alt="${esc(chosen.name)}"><div><div class="fp-eyebrow">${V.index()+1} / ${a.exercises.length}</div><h2>${esc(chosen.name)}</h2></div>${button('exerciseCard','',[chosen.name],'quiet','book').replace('type="button"','type="button" aria-label="Техника упражнения"')}`;}
     const strip=container.querySelector('.n8-exstrip'),section=container.querySelector('.n8-section');
     if(strip&&target){const details=document.createElement('details');details.className='fp-card';details.innerHTML=`<summary>Упражнения · ${a.exercises.length}</summary>`;a.exercises.forEach((ex,i)=>{const pic=strip.children[i]?.querySelector('.pic');if(pic)pic.innerHTML=`<img src="${esc(ForgeArt.source(ex.name)||ForgeArt.missingData(ex.name))}" alt="${esc(ex.name)}"><small>${ex.sets.filter(s=>s.done).length}/${ex.sets.length}</small>`;});details.append(strip);if(section)details.append(section);target.after(details);}
@@ -100,7 +101,7 @@
     const imported = workout.importSource;
     const start = imported?.startedAtLocal?.slice(11, 16);
     const summary = `<div class="fp-list-row"><div><b>${esc(workout.name)}</b><p>${esc(label(day(workout.date)))}${start?' · '+esc(start):''} · ${V.sets(workout)} подходов</p></div><strong>${fmt(V.volume(workout), imported ? 2 : 0)} кг</strong></div>`;
-    if (!imported) return summary;
+    if (!imported) return summary+(window.ForgeCycles?.journalButton(workout)||'');
     return `${summary}<details class="training-import-history"><summary>Детали импорта</summary>
       <p class="fp-caption">Исходная сводка · ${esc(imported.sourceSummary)}${imported.timeZone==='not_provided'?' · Часовой пояс не указан':''}</p>
       <ol>${(workout.exercises||[]).map(exercise => `<li><b>${esc(exercise.sourceName||exercise.name)}</b>
@@ -142,12 +143,12 @@
     dateShift:n=>{const d=shift(prefs.date,n);if(d<=today()){prefs.date=d;persist();renderNutrition();}},
     removeFood:id=>{if(confirm('Удалить запись питания?'))removeFood(id);},moreHistory:()=>{prefs.historyLimit+=20;persist();renderProgress();},
     removeSet:()=>{const ex=state.active?.exercises?.[V.index()];if(!ex||ex.sets.length<2)return toast('Оставьте хотя бы один подход.');if(confirm('Удалить последний подход этого упражнения?')){ex.sets.pop();save();}},
-    replaceExercise:()=>{const a=state.active,ex=a?.exercises?.[V.index()];if(!ex)return;if(ex.sets.some(s=>s.done))return toast('В упражнении есть результаты. Добавь замену отдельно, чтобы сохранить их.');if(!confirm('Заменить упражнение? Настройки подходов останутся.'))return;replacement={index:V.index(),workoutId:a.id};forgeOpenExercisePicker('workout');},
+    replaceExercise:()=>{const a=state.active,ex=a?.exercises?.[V.index()];if(!ex)return;if(ex.cycleRowId)return toast('Добавь замену отдельно, чтобы сохранить исходный план.');if(ex.sets.some(s=>s.done))return toast('В упражнении есть результаты. Добавь замену отдельно, чтобы сохранить их.');if(!confirm('Заменить упражнение? Настройки подходов останутся.'))return;replacement={index:V.index(),workoutId:a.id};forgeOpenExercisePicker('workout');},
     settings:()=>{showPage('profile');const el=$('profile').querySelector('.setting');el?.scrollIntoView({block:'center'});}
   };
   document.addEventListener('click',e=>{const b=e.target.closest('[data-fp-action]');if(!b)return;let params=[];try{params=JSON.parse(b.dataset.fpParams||'[]');}catch{}const fn=actions[b.dataset.fpAction];if(fn){e.preventDefault();fn(...params);}});
   document.addEventListener('input',e=>{
-    if(e.target.matches('#workout .n8-setgrid input')){const inputs=[...$('workout').querySelectorAll('.n8-setgrid input')],i=inputs.indexOf(e.target);if(i>=0)n8EditSet(V.index(),Math.floor(i/2),i%2?'reps':'weight',e.target.value);return;}
+    if(e.target.matches('#workout .n8-setgrid input')){if(state.active?.trainingCycle||state.active?.exercises[V.index()]?.unit==='seconds')return;const inputs=[...$('workout').querySelectorAll('.n8-setgrid input')],i=inputs.indexOf(e.target);if(i>=0)n8EditSet(V.index(),Math.floor(i/2),i%2?'reps':'weight',e.target.value);return;}
     if(!e.target.matches('[data-fp-chart-range]'))return;const widget=e.target.closest('.fp-chart-widget'),points=JSON.parse(widget.dataset.fpPoints),p=points[Number(e.target.value)],text=label(p.date)+' · '+fmt(p.v,1)+' '+widget.dataset.fpUnit;widget.querySelector('output').textContent=text;e.target.setAttribute('aria-valuetext',text);
   });
   function installChrome(){
@@ -178,8 +179,9 @@
   function updateSetView(){
     if(!$('workout').classList.contains('active')||!state.active?.exercises?.[V.index()])return false;
     const ex=state.active.exercises[V.index()],s=ex.sets.find(s=>!s.done)||ex.sets.at(-1);
-    $('workout').querySelectorAll('.n8-setgrid input').forEach((el,i)=>{if(document.activeElement!==el)el.value=ex.sets[Math.floor(i/2)]?.[i%2?'reps':'weight']??'';});
-    const numbers=$('workout').querySelectorAll('.n8-step b');if(s&&numbers.length===2){numbers[0].textContent=fmt(s.weight,1);numbers[1].textContent=fmt(s.reps);}updateChrome();return true;
+    $('workout').querySelectorAll('.n8-setgrid input').forEach((el,i)=>{if(document.activeElement!==el)el.value=ex.sets[Math.floor(i/2)]?.[i%2?(ex.unit==='seconds'?'seconds':'reps'):'weight']??'';});
+    const numbers=$('workout').querySelectorAll('.n8-step b');
+    if(s&&numbers.length===2){numbers[0].textContent=s.weight??'—';numbers[1].textContent=s[ex.unit==='seconds'?'seconds':'reps']??'—';}updateChrome();return true;
   }
   window.ForgePerformance={persist,updateSetView,snapshot:()=>({...prefs}),render:()=>renderAll()};
   installChrome();renderAll();updateChrome();

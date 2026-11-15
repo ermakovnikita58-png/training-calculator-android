@@ -18,6 +18,7 @@ jobs:
       - run: npm ci --ignore-scripts --no-audit --no-fund
       - run: npx playwright install --with-deps chromium
       - run: npm test
+      - run: node --test scripts/training-cycles.test.cjs
       - run: npm run test:catalog-picker
       - run: npm run test:training-import
       - run: npm run test:device-settings

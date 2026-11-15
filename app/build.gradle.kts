@@ -30,8 +30,8 @@ android {
         buildConfigField("boolean", "FORGE_CRASH_CONFIGURED", crashConfigured.toString())
         buildConfigField("String", "FORGE_POSTHOG_KEY", "\"$posthogKey\"")
         buildConfigField("String", "FORGE_POSTHOG_HOST", "\"${if (posthogKey.isEmpty()) "" else posthogHost}\"")
-        versionCode = 24
-        versionName = "11.3.0"
+        versionCode = 25
+        versionName = "11.4.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     if (storeBuild) {

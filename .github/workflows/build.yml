@@ -12,6 +12,8 @@ jobs:
     timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -23,10 +25,18 @@ jobs:
         run: bash ./gradlew :app:assembleDebug :app:testDebugUnitTest :app:lintDebug :app:assembleDebugAndroidTest --no-daemon --stacktrace
       - name: Compile store variants and verify that checkout stays disabled
         run: bash ./gradlew -Pforge.storeBuild=true :app:assemblePlayDebug :app:assembleRustoreDebug :app:testPlayDebugUnitTest :app:testRustoreDebugUnitTest --no-daemon --stacktrace
+      - name: Record APK provenance
+        run: |
+          git rev-parse HEAD > app/build/outputs/apk/debug/commit.txt
+          cd app/build/outputs/apk/debug
+          sha256sum app-debug.apk > SHA256SUMS
       - uses: actions/upload-artifact@v4
         with:
           name: forge-training-debug-apk
-          path: app/build/outputs/apk/debug/*.apk
+          path: |
+            app/build/outputs/apk/debug/app-debug.apk
+            app/build/outputs/apk/debug/commit.txt
+            app/build/outputs/apk/debug/SHA256SUMS
           if-no-files-found: error
       - uses: actions/upload-artifact@v4
         with:
