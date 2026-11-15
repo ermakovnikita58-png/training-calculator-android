@@ -7,7 +7,6 @@ const android = 'https://appassets.androidplatform.net';
 const web = 'https://forge.example.test';
 const cloud = 'https://evwvbozhfsprcabrfefe.supabase.co';
 const fixtureProject = 'https://forge-ci-fixture.supabase.co';
-const clientId = '12345-forge_fixture.apps.googleusercontent.com';
 const accountA = { id: 'fixture-a', email: 'a@example.test' };
 const accountB = { id: 'fixture-b', email: 'b@example.test' };
 
@@ -88,21 +87,17 @@ function serveAsset(route, url) {
     await page.goto(android + '/assets/index.html');
     await page.evaluate(() => showPage('profile'));
     await page.locator('#profileGoogleSignIn').click();
-    await expectStatus('Укажи Google Web Client ID');
+    await expectStatus('Подключаем вход Google');
     assert.equal(await page.locator('#n10SupaUrl').inputValue(), cloud);
-    assert.equal(signInMessages().length, 0);
-
-    await page.locator('#n10GoogleClientId').fill('GOCSPX-example-secret');
-    await page.getByRole('button', { name: 'Сохранить Google Web Client ID' }).click();
-    await expectStatus('публичный Web Client ID');
-    assert.equal(await page.evaluate(() => localStorage.getItem('forge_google_web_client_id')), null);
-    await page.locator('#n10GoogleClientId').fill(clientId);
-    await page.getByRole('button', { name: 'Сохранить Google Web Client ID' }).click();
+    assert.equal(await page.locator('#n10GoogleClientId').count(), 0);
+    assert.equal(signInMessages().length, 1);
+    await reply('client_not_configured');
+    await expectStatus('Вход через Google ещё настраивается');
 
     await page.context().setOffline(true);
     await googleButton();
     await expectStatus('подключись к интернету');
-    assert.equal(signInMessages().length, 0);
+    assert.equal(signInMessages().length, 1);
     await page.context().setOffline(false);
 
     await googleButton();
@@ -110,9 +105,9 @@ function serveAsset(route, url) {
     assert.equal(await page.locator('#n10GoogleButton').isDisabled(), true);
     assert.equal(await page.locator('#n10EmailButton').isDisabled(), true);
     await page.evaluate(() => n10GoogleSignIn());
-    assert.equal(signInMessages().length, 1);
-    assert.deepEqual(Object.keys(signInMessages()[0]).sort(), ['action', 'clientId', 'key', 'requestId', 'url']);
-    assert.equal(signInMessages()[0].clientId, clientId);
+    assert.equal(signInMessages().length, 2);
+    assert.deepEqual(Object.keys(signInMessages()[1]).sort(), ['action', 'clientId', 'key', 'requestId', 'url']);
+    assert.equal(signInMessages()[1].clientId, '');
     await reply('cancelled');
     await expectStatus('отменён');
 
@@ -132,9 +127,8 @@ function serveAsset(route, url) {
     await googleButton();
     await expectStatus('Подключаем вход Google');
     const cancelledRequest = signInMessages().at(-1);
-    await page.getByRole('button', { name: 'Сохранить Google Web Client ID' }).click();
-    await expectStatus('Google Web Client ID сохранён');
-    assert.ok(messages.some(message => message.action === 'cancelGoogleSignIn'));
+    await reply('cancelled', cancelledRequest);
+    await expectStatus('отменён');
     await googleButton();
     await expectStatus('Подключаем вход Google');
     await reply('ok', cancelledRequest, session(accountB));

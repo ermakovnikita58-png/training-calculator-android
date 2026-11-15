@@ -17,6 +17,10 @@ require(posthogKey.isEmpty() || posthogHost in setOf("https://us.i.posthog.com",
 }
 
 val storeBuild = providers.gradleProperty("forge.storeBuild").orNull == "true"
+val googleWebClientId = providers.environmentVariable("FORGE_GOOGLE_WEB_CLIENT_ID").orNull.orEmpty().trim()
+require(googleWebClientId.isEmpty() || googleWebClientId.matches(Regex("[A-Za-z0-9_-]{1,128}\\.apps\\.googleusercontent\\.com"))) {
+    "FORGE_GOOGLE_WEB_CLIENT_ID must be the public Google Web Client ID"
+}
 val uploadStorePath = System.getenv("FORGE_KEYSTORE_FILE") ?: ""
 android {
     namespace = "ru.trainingcalculator.app"
@@ -30,8 +34,9 @@ android {
         buildConfigField("boolean", "FORGE_CRASH_CONFIGURED", crashConfigured.toString())
         buildConfigField("String", "FORGE_POSTHOG_KEY", "\"$posthogKey\"")
         buildConfigField("String", "FORGE_POSTHOG_HOST", "\"${if (posthogKey.isEmpty()) "" else posthogHost}\"")
-        versionCode = 26
-        versionName = "11.4.1"
+        buildConfigField("String", "FORGE_GOOGLE_WEB_CLIENT_ID", "\"$googleWebClientId\"")
+        versionCode = 27
+        versionName = "11.4.2"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     if (storeBuild) {

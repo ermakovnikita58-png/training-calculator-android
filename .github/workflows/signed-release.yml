@@ -8,6 +8,8 @@ on:
         default: false
 permissions:
   contents: read
+env:
+  FORGE_GOOGLE_WEB_CLIENT_ID: ${{ vars.FORGE_GOOGLE_WEB_CLIENT_ID }}
 jobs:
   sign:
     if: inputs.confirm_signing && github.ref == 'refs/heads/main'

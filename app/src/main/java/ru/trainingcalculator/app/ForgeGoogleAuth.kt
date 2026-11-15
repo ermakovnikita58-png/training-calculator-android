@@ -30,8 +30,10 @@ internal class ForgeGoogleAuth(private val activity: Activity) {
 
     data class Result(val status: String, val session: JSONObject? = null)
 
-    suspend fun signIn(clientId: String, apiKey: String): Result {
-        if (!validClientId(clientId) || !isPublicKey(apiKey)) return Result("configuration")
+    suspend fun signIn(savedClientId: String, apiKey: String): Result {
+        val clientId = selectClientId(BuildConfig.FORGE_GOOGLE_WEB_CLIENT_ID, savedClientId)
+        if (clientId.isEmpty()) return Result("client_not_configured")
+        if (!isPublicKey(apiKey)) return Result("configuration")
         return try {
             val settings = withContext(Dispatchers.IO) { request(apiKey, "/auth/v1/settings") }
             if (settings.optJSONObject("external")?.optBoolean("google") != true) {
@@ -127,6 +129,8 @@ internal class ForgeGoogleAuth(private val activity: Activity) {
         private val legacyKey = Regex("eyJ[A-Za-z0-9_-]+\\.([A-Za-z0-9_-]+)\\.[A-Za-z0-9_-]+")
 
         internal fun validClientId(value: String) = webClientId.matches(value)
+        internal fun selectClientId(builtIn: String, saved: String): String =
+            builtIn.ifEmpty { saved.takeIf(::validClientId).orEmpty() }
         internal fun newNonce() = ByteArray(32).also(random::nextBytes).toHex()
         internal fun hashNonce(nonce: String) =
             MessageDigest.getInstance("SHA-256").digest(nonce.toByteArray(Charsets.UTF_8)).toHex()

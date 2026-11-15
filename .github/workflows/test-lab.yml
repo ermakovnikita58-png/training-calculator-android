@@ -14,6 +14,8 @@ on:
         default: false
 permissions:
   contents: read
+env:
+  FORGE_GOOGLE_WEB_CLIENT_ID: ${{ vars.FORGE_GOOGLE_WEB_CLIENT_ID }}
 jobs:
   test-lab:
     if: inputs.confirm_budget && github.ref == 'refs/heads/main'

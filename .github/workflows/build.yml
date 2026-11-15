@@ -6,6 +6,8 @@ on:
     branches: [main, master]
 permissions:
   contents: read
+env:
+  FORGE_GOOGLE_WEB_CLIENT_ID: ${{ vars.FORGE_GOOGLE_WEB_CLIENT_ID }}
 jobs:
   android:
     runs-on: ubuntu-latest

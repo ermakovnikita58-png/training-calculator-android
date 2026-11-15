@@ -1625,7 +1625,6 @@ window.ForgeCloudStatus=()=>({
 });
 function n10UiRefresh(){const el=$10('n10CloudContent');if(el)el.innerHTML=n10CloudHtml();n10RenderProfileCloud();n10RenderAuthControls()}
 function n10GoogleProject(){return nativeGoogle10&&n10ValidUrl(cfg10.url)===forgeCloud10.url}
-function n10ValidGoogleId(value){return /^[A-Za-z0-9_-]{1,128}\.apps\.googleusercontent\.com$/.test(value)}
 function n10AuthPending(){return passwordPending10||!!googleAttempt10}
 function n10RenderAuthControls(){
  for(const id of ['profileGoogleSignIn','n10GoogleButton','n10EmailButton','n10SignupButton']){
@@ -1640,8 +1639,7 @@ function n10CloudHtml(){let logged=!!session10?.user?.id;let address=logged?clea
  <label class="n10-cloud-field"><span>HTTPS-адрес проекта Supabase</span><input type="url" id="n10SupaUrl" autocomplete="url" placeholder="https://project-id.supabase.co" value="${clean10(cfg10.url)}"></label>
  <label class="n10-cloud-field"><span>Публичный publishable / anon key (не service_role)</span><input type="text" id="n10SupaKey" autocomplete="off" spellcheck="false" placeholder="sb_publishable_…" value="${clean10(cfg10.key)}"></label>
  <button class="n10-cloud-btn" onclick="n10StoreConfig()">Сохранить настройки сервера</button>
- ${n10GoogleProject()?`<label class="n10-cloud-field"><span>Google Web Client ID</span><input type="text" id="n10GoogleClientId" autocomplete="off" spellcheck="false" placeholder="….apps.googleusercontent.com" value="${clean10(googleClientId10)}"></label>
- <button class="n10-cloud-btn" onclick="n10StoreGoogleClientId()">Сохранить Google Web Client ID</button><p class="n10-cloud-muted">Публичный идентификатор веб-клиента из Google Auth Platform для проекта FORGE.</p>`:''}</details>
+ </details>
  ${logged?`<div class="n10-cloud-divider"></div><h4>Синхронизация дневника</h4><div class="n10-cloud-actions"><button class="strong" onclick="n10CloudUploadClicked()">↑ Отправить в облако</button><button onclick="n10CloudDownloadClicked()">↓ Скачать из облака</button></div><label class="n10-cloud-checkbox"><input type="checkbox" ${sync10.auto?'checked':''} onchange="n10ToggleAuto(this.checked)">Автосохранение после изменений (если есть интернет)</label><p class="n10-cloud-muted">Перед сменой версии рекомендуется экспортировать JSON. При изменении облачных записей на другом устройстве автоматическая отправка останавливается до выбора версии, чтобы не потерять данные.</p><button class="n10-cloud-btn" onclick="n10SignOut()">Выйти из аккаунта</button><div class="n10-cloud-actions"><button onclick="n10DeleteCloudData()">Удалить облачный дневник</button><button onclick="n10DeleteAccount()" style="border-color:#774b4b;color:#ffbdb6">Удалить аккаунт</button></div>`:
  `<div class="n10-cloud-divider"></div><h4>Почта и пароль</h4><label class="n10-cloud-field"><span>Электронная почта</span><input type="email" id="n10Email" autocomplete="email" placeholder="you@example.com"></label><label class="n10-cloud-field"><span>Пароль (минимум 8 символов)</span><input type="password" id="n10Password" autocomplete="current-password" placeholder="••••••••"></label>
  <div class="n10-cloud-actions"><button class="strong" id="n10EmailButton" onclick="n10SignIn()">Войти</button><button id="n10SignupButton" onclick="n10SignUp()">Создать аккаунт</button></div><button class="n10-cloud-btn" onclick="n10Recover()">Восстановить пароль</button>
@@ -1657,14 +1655,6 @@ function n10StoreConfig(){
  const next={url,key};
  if(!store10(keys10.config,next)){notify10('Не удалось сохранить настройки сервера.',true);return;}
  cfg10=next;n10EndSession();notify10('Настройки сервера сохранены.');
-}
-function n10StoreGoogleClientId(){
- if(!n10GoogleProject())return;
- const id=$10('n10GoogleClientId').value.trim();
- if(id&&!n10ValidGoogleId(id)){notify10('Укажи публичный Web Client ID с окончанием .apps.googleusercontent.com.',true);return;}
- if(!store10(keys10.googleClientId,id)){notify10('Не удалось сохранить Google Web Client ID.',true);return;}
- n10CancelGoogle();googleClientId10=id;n10RenderAuthControls();
- notify10(id?'Google Web Client ID сохранён.':'Google Web Client ID удалён.');
 }
 async function n10PasswordAuth(signup){
  if(n10AuthPending()||session10)return;
@@ -1702,11 +1692,6 @@ function n10GoogleSignIn(){
   if(!n10GoogleProject()||!n10Configured()){
    notify10('Вход Google на Android доступен для проекта Supabase FORGE.',true);return;
   }
-  if(!n10ValidGoogleId(googleClientId10)){
-   $10('n10CloudSettings').open=true;
-   $10('n10GoogleClientId').focus();
-   notify10('Укажи Google Web Client ID в настройках облака.',true);return;
-  }
   const requestId=++googleSequence10;
   googleAttempt10={requestId,project:cfg10};
   n10RenderAuthControls();notify10('Подключаем вход Google…');
@@ -1730,7 +1715,8 @@ function n10GoogleResult(message){
   cancelled:'Вход через Google отменён.',
   no_account:'Выбери или добавь аккаунт Google на устройстве и повтори вход.',
   provider_disabled:'В проекте Supabase FORGE нужно включить провайдер Google.',
-  configuration:'Проверь настройки проекта Supabase и Google Web Client ID.',
+  configuration:'Проверь подключение к облаку FORGE или войди по почте.',
+  client_not_configured:'Вход через Google ещё настраивается. Можно войти по почте.',
   unavailable:'Вход недоступен. Проверь обновления сервисов Google Play или войди по почте.',
   network:'Нет связи с сервером входа. Попробуй ещё раз.',
   rate_limited:'Слишком много попыток. Попробуй позже.',
@@ -1790,7 +1776,7 @@ function n10RenderProfileCloud(){
 }
 renderProfile=function(){oldRenderProfile10();n10RenderProfileCloud()};
 // Script globals used by click handlers.
-Object.assign(window,{n10StoreConfig,n10StoreGoogleClientId,n10SignIn,n10SignUp,n10Recover,n10GoogleSignIn,n10SignOut,n10CloudUploadClicked,n10CloudDownloadClicked,n10DeleteCloudData,n10DeleteAccount,n10ToggleAuto,n10OpenRecipes,n10EditRecipe,n10AppendIngredient,n10RemoveIngredient,n10SaveRecipe,n10AddRecipe,n10DeleteRecipe});
+Object.assign(window,{n10StoreConfig,n10SignIn,n10SignUp,n10Recover,n10GoogleSignIn,n10SignOut,n10CloudUploadClicked,n10CloudDownloadClicked,n10DeleteCloudData,n10DeleteAccount,n10ToggleAuto,n10OpenRecipes,n10EditRecipe,n10AppendIngredient,n10RemoveIngredient,n10SaveRecipe,n10AddRecipe,n10DeleteRecipe});
 // Make sure UI is present even when reloaded into the active account page.
 n10InstallCloud();n10NutritionTile();loadSession10();n10CompleteOAuth();
 })();

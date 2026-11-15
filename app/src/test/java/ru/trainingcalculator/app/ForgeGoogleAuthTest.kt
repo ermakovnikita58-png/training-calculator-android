@@ -23,4 +23,13 @@ class ForgeGoogleAuthTest {
         assertFalse(ForgeGoogleAuth.validClientId("123.apps.googleusercontent.com.example.test"))
         assertFalse(ForgeGoogleAuth.validClientId(""))
     }
+
+    @Test fun builtInClientIdTakesPrecedenceOverAnEarlierTestSetting() {
+        val configured = "12345-forge.apps.googleusercontent.com"
+        val earlier = "12345-previous.apps.googleusercontent.com"
+        assertEquals(configured, ForgeGoogleAuth.selectClientId(configured, ""))
+        assertEquals(configured, ForgeGoogleAuth.selectClientId(configured, earlier))
+        assertEquals(earlier, ForgeGoogleAuth.selectClientId("", earlier))
+        assertEquals("", ForgeGoogleAuth.selectClientId("", "invalid"))
+    }
 }
