@@ -131,6 +131,7 @@
 
   function weekKind(cycle, index) {
     const count = cycle.weeks.length;
+    if (cycle.end === undefined) return cycle.weeks[index].kind || (index > 0 && index === count - 1 ? 'heavy' : index === 3 ? 'deload' : 'work');
     return cycle.weeks[index].kind || (index === count - 1 && count > 1 ? 'heavy' :
       index === automaticDeload(count) ? 'deload' : 'work');
   }
@@ -138,6 +139,12 @@
   function defaultVolume(cycle, index, type) {
     const kind = weekKind(cycle, index);
     const percentages = templates[type === 'estimatedOneRM' ? 'oneRM' : type || 'trainingMax'];
+    if (cycle.end === undefined) {
+      if (kind === 'taper') return { sets: 2, reps: 3, percent: type === 'oneRM' || type === 'estimatedOneRM' ? 55 : 65 };
+      const original = kind === 'heavy' ? 7 : kind === 'deload' ? 3 : Math.min(6, index === 3 ? 4 : index);
+      const [sets, reps] = volume[original];
+      return { sets, reps, percent: percentages[original] };
+    }
     if (kind === 'taper') return { sets: 2, reps: 3, percent: percentages[0] };
     if (kind === 'heavy') return { sets: 5, reps: 2, percent: percentages.at(-1) };
     const count = cycle.weeks.length;

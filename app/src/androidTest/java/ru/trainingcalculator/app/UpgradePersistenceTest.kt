@@ -70,7 +70,7 @@ class UpgradePersistenceTest {
 
     @Test fun seedPreviousVersion() {
         assumeTrue(args.getString("forgeUpgrade") == "seed")
-        assertEquals(24, versionCode())
+        assertEquals(args.getString("forgeBaseCode")?.toInt(), versionCode())
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             waitForApp(scenario)
             assertEquals("true", js(scenario, """
@@ -86,6 +86,18 @@ class UpgradePersistenceTest {
                         weights: [{date:'2026-01-01',weight:74,note:'Проверка обновления'}],
                         n10Recipes: [{id:'upgrade-recipe', name:'Upgrade recipe', items:[]}]
                     };
+                    if (window.ForgeCycleModel) {
+                      const cycle = ForgeCycleModel.createCycle(diary.programs[0],'2026-01-05','old-cycle');
+                      const row = cycle.days[0].rows[0];
+                      row.selected = true;
+                      cycle.status = 'active';
+                      cycle.stage = 2;
+                      cycle.bases[row.group] = {type:'fiveRM',source:'known',date:'2026-01-04',value:40};
+                      cycle.weeks[0].loads[row.id] = {percent:95};
+                      const first = ForgeCycleModel.sessions(cycle)[0];
+                      diary.trainingCycles = [cycle];
+                      diary.workouts[0].trainingCycle = ForgeCycleModel.snapshot(cycle,first);
+                    }
                     const snapshot = JSON.stringify(diary);
                     localStorage.setItem('forge_v2', snapshot);
                     localStorage.setItem('forge-ci-upgrade', snapshot);
@@ -105,13 +117,20 @@ class UpgradePersistenceTest {
                     const previous = JSON.parse(localStorage.getItem('forge-ci-upgrade'));
                     const current = JSON.parse(localStorage.getItem('forge_v2'));
                     return !!previous && !!current && current.profile.name === ${JSONObject.quote(marker)} &&
-                        ['profile','programs','workouts','foods','weights','n10Recipes'].every(
+                        ['profile','programs','workouts','foods','weights','n10Recipes','trainingCycles'].every(
                             key => JSON.stringify(current[key]) === JSON.stringify(previous[key]));
                 })()
             """.trimIndent()))
             scenario.recreate()
             waitForApp(scenario)
             assertEquals(JSONObject.quote(marker), js(scenario, "state.profile.name"))
+            if (js(scenario,"state.trainingCycles.length > 0") == "true") {
+                assertEquals("37.5", js(scenario, "state.workouts[0].trainingCycle.rows[0].weight"))
+                assertEquals("true", js(scenario, "ForgeCycleModel.validCycle(state.trainingCycles[0])"))
+                js(scenario, "showPage('progress')")
+                click(scenario, "#progress [data-fc=journal]")
+                waitFor(scenario, "document.querySelector('#fc-heading').textContent==='План и факт'")
+            }
         }
     }
 
