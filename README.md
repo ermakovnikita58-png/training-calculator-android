@@ -1,4 +1,4 @@
-# FORGE Training 10 — Android
+# FORGE Training 11.2 — Android
 
 Проект из предоставленного комплекта версии 10.0.0. Все тренировки, питание,
 рецепты, статистика, импорт/экспорт и облачные функции сохранены в исходном
@@ -72,3 +72,13 @@ applicationId, адрес WebView и ключи localStorage в этой дор�
 ПУБЛИКАЦИЯ_GOOGLE_PLAY.md. Итоги этой доработки: REVIEW.md.
 
 Дополнительный smoke-тест: установите Playwright в отдельное тестовое окружение и Chromium (`npx playwright install chromium`), затем `node scripts/browser-regression.cjs`. Для имеющегося Chromium можно задать FORGE_CHROMIUM. Проверка использует отдельный временный профиль браузера.
+
+Текущий аудит 10.0.2: [таблица функций и доказательства](docs/VERIFICATION-2026-11-01.md). Автотесты: npm install, npx playwright install chromium, npm test. Для Android нужны отдельные проверки на устройстве.
+
+FORGE 11: [Nutrition Coach — функции, формулы, ограничения и тесты](docs/NUTRITION-COACH.md). Открыть: Питание → Nutrition Coach. Применение новой цели только после подтверждения.
+
+FORGE 11.1: существующий Nutrition Coach переработан в мастер, добавлены подробная активность, подтверждённое поддержание, настраиваемые БЖУ и анализ 14/21 дней с отдельным подтверждением. Подробности и ограничения: [NUTRITION-COACH.md](docs/NUTRITION-COACH.md).
+
+Навигация и Android Back версии 11.1.1: [проверка, скриншоты и инструкция установки](docs/NAVIGATION-11.1.1.md).
+
+FORGE Performance UI v1: [дизайн-система](docs/DESIGN_SYSTEM.md), [карта экранов](docs/NAVIGATION_MAP.md), [UX-аудит](docs/UX_AUDIT.md), [результаты и скриншоты](docs/PERFORMANCE-UI-VERIFICATION.md), [проверка на Android](docs/ANDROID_QA_CHECKLIST.md). Ветка forge-design-system-v1 основана на Nutrition Coach11.1 и включает исправленную навигацию.

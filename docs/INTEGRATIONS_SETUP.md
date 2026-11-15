@@ -1,0 +1,83 @@
+# Настройка интеграций FORGE 11.3
+
+Обычная сборка запускается без облачных аккаунтов. Приложение использует локальный дневник WebView `forge_v2`, JSON-экспорт и отдельную копию Room в личном каталоге приложения. Room хранит проверяемый снимок и пока не является основной базой. Восстановление использует существующую проверку JSON и подтверждение владельца. Локальная копия помогает при повреждении дневника, а внешний JSON нужен при потере или смене устройства.
+
+## Firebase Test Lab
+
+Google объявила закрытие Test Lab 30 сентября 2027 года. Основная Android CI работает на отдельном эмуляторе. Перед этой датой перенесите ручную облачную матрицу на Developer Device Platform. [Уведомление Google](https://firebase.google.com/docs/test-lab/migrate).
+
+1. Выберите проект владельца. Зарегистрируйте Android-приложение с пакетом `ru.trainingcalculator.app` в Firebase и проверьте доступ к Test Lab в консоли.
+2. Включите Cloud Testing API и Cloud Tool Results API. Создайте закрытый bucket для результатов с ограниченным сроком хранения.
+3. Создайте service account для CI. Назначьте роли `roles/cloudtestservice.testAdmin` и `roles/firebase.analyticsViewer`. Выдайте этому аккаунту доступ к объектам закрытого bucket и проверьте его метаданные и политику хранения. Используйте официальную таблицу IAM для выбранного способа хранения.
+4. Настройте GitHub OIDC Workload Identity Federation. Условие провайдера должно ограничивать конкретный репозиторий по идентификатору владельца и репозитория и ref `refs/heads/main`. Разрешите этому principal impersonate service account через `roles/iam.workloadIdentityUser`.
+5. В GitHub создайте environment `firebase-test-lab`, ограничьте разрешённую ветку и назначьте проверяющего, если тариф GitHub поддерживает required reviewers. Добавьте variables `FORGE_TEST_LAB_WIF_PROVIDER` (полный resource name), `FORGE_TEST_LAB_SERVICE_ACCOUNT` (email), `FORGE_TEST_LAB_PROJECT` (project ID) и `FORGE_TEST_LAB_RESULTS_BUCKET` (имя без `gs://`).
+6. После отдельного согласования бюджета и попадания workflow в default branch выберите доступные model и version через `gcloud firebase test android models list --project PROJECT_ID`. Вручную запустите Firebase Test Lab с `confirm_budget`. Результат матрицы и логи смотрите в консоли Test Lab, путь к закрытым скриншотам и логам доступен в сводке запуска.
+7. Для сообщений о сбоях включите уведомления Actions в GitHub и подпишитесь на репозиторий. Workflow завершает задание ошибкой при неуспешной матрице.
+
+Blaze включает 30 минут физических и 60 минут виртуальных тестов в день. Сверх лимита действуют ставки $5 и $1 в час соответственно. Одна матрица с одним устройством и лимитом 12 минут соответствует максимуму $1 за физический или $0,20 за виртуальный тест сверх лимита при одном запуске теста, отдельно от возможных расходов Cloud Storage. Проверьте тариф и ограничения на дату запуска. [Квоты и цены Test Lab](https://firebase.google.com/docs/test-lab/usage-quotas-pricing), [IAM Test Lab](https://firebase.google.com/docs/test-lab/android/iam-permissions-reference), [GitHub OIDC для Google Cloud](https://github.com/google-github-actions/auth).
+
+## Crashlytics
+
+1. Войдите под аккаунтом владельца через `npx -y firebase-tools@latest login`. Для проверки используйте отдельный Firebase-проект с Android-пакетом `ru.trainingcalculator.app`.
+2. Из корня проекта выполните `npx -y firebase-tools@latest apps:sdkconfig ANDROID APP_ID --project PROJECT_ID` и сохраните корректный JSON в `app/google-services.json`. Этот путь исключён из Git. Gradle подключит Google Services и Crashlytics при наличии файла. Используйте отдельную сборку и отдельный проект для релиза.
+3. На тестовом устройстве включите «Отправлять отчёты об ошибках» и нажмите «Отправить тест ошибки» в Debug. Проверьте некритическое событие `test_non_fatal` в Crashlytics. Для проверки доставки ANR нужен отдельный тестовый сценарий и отчёт сервиса.
+4. Для отзыва согласия снимите флажок. Приложение прекращает отправку своих диагностических событий и запрашивает удаление неотправленных отчётов. Параметры JavaScript ошибок сводятся к фиксированной категории с ограничением частоты. Отчёты самого SDK могут включать технические сведения об устройстве и стеки Android.
+
+Mobile Crashlytics указан как бесплатный в Firebase. [Тарифы Firebase](https://firebase.google.com/pricing), [Настройка Crashlytics](https://firebase.google.com/docs/crashlytics/android/get-started), [Добровольный сбор](https://firebase.google.com/docs/crashlytics/android/customize-crash-reports).
+
+## PostHog
+
+1. Создайте отдельный тестовый проект. Выберите регион US или EU. Для сборки установите `FORGE_POSTHOG_HOST` в `https://us.i.posthog.com` или `https://eu.i.posthog.com`, а `FORGE_POSTHOG_PROJECT_KEY` в публичный project token `phc_…`. Административный API-ключ оставьте вне клиента.
+2. Соберите Debug, включите согласие, выполните одно действие и проверьте Live Events. Затем отключите сеть, повторите действие, восстановите сеть и убедитесь в отправке очереди. Повторите с отзывом согласия до возвращения сети и проверьте, что новое событие отсутствует.
+3. Отправляются только имя из фиксированного списка, время и случайный идентификатор установки, созданный после согласия. Есть лимит 200 событий и сетевое ограничение WorkManager. Записи дневника, поисковый текст, штрихкоды, session replay и идентификация аккаунта исключены. Отзыв очищает очередь и идентификатор установки. Запрос, начавшийся до отзыва, мог уже уйти. Событие onboarding зарезервировано, у текущего интерфейса нет отдельного завершения онбординга.
+
+В бесплатный месячный лимит продуктовой аналитики входит 1 млн событий. Перед платным использованием согласуйте лимит проекта. [API PostHog](https://posthog.com/docs/api/post-only-endpoints), [Тарифы PostHog](https://posthog.com/pricing).
+
+## Open Food Facts и камера
+
+Упакованная модель ML Kit распознаёт EAN-8, EAN-13, UPC-A и UPC-E. Проверьте разрешение камеры, отказ, выход, фонарь на поддерживаемом устройстве и чтение настоящих этикеток в авиарежиме. Сеть нужна для поиска неизвестного кода. Сервис получает код продукта или явно введённый онлайн-поиск. FORGE сохраняет отдельные подтверждённые записи и небольшой список недавних продуктов. Сверяйте результат с этикеткой. Сведения о массе и объёме сохраняются отдельно, при неоднозначной единице доступен ручной ввод. Используется атрибуция Open Food Facts и выборочный поиск, без массовой копии базы. В релизных декларациях учтите обработку технических данных самим ML Kit. [SDK и данные](https://developers.google.com/ml-kit/terms#data-privacy), [API и лицензия OFF](https://openfoodfacts.github.io/openfoodfacts-server/api/).
+
+## Supabase
+
+1. Создайте отдельный проект. Примените в SQL Editor `supabase-schema.sql` при первичной установке и затем `supabase/migrations/20261110000000_snapshot_revision.sql`. Для существующей схемы сначала сохраните резервную копию проекта, затем примените миграцию ревизии.
+2. Настройте email Auth, подтверждение адреса, redirect allowlist и отправку писем. Для удаления аккаунта разверните функцию `supabase/functions/delete-account/index.ts` в своём проекте. Сервисный ключ доступен только функции на сервере.
+3. В FORGE откройте «Аккаунт», укажите HTTPS-адрес `*.supabase.co` и `sb_publishable_…` или старый JWT с ролью `anon`. Войдите двумя отдельными тестовыми аккаунтами, загрузите фиктивный дневник только после явного подтверждения, проверьте, что второй аккаунт не видит первый. Проверьте восстановление, конфликт двух устройств, отказ сети, удаление копии и аккаунта.
+4. Перед использованием обновите все устройства. Новый клиент отправляет сравнение ревизий вместе с изменением, старый клиент ещё способен записать снимок без такой проверки. При конфликте автообмен отключается, а пользователь выбирает копию. Очередь представляет один последний локальный снимок целого дневника. Для совместной правки отдельных записей понадобятся отдельные таблицы, очередь операций и tombstones.
+5. В Android сессия шифруется AES-GCM ключом Android Keystore, а в браузере живёт до перезагрузки страницы. Токен нужен JavaScript для запроса Supabase, поэтому CSP и граница WebView остаются частью модели защиты.
+
+У Supabase есть Free $0/мес с квотами и приостановкой неактивных проектов. Платный тариф требует отдельного решения. [Тарифы Supabase](https://supabase.com/pricing), [RLS](https://supabase.com/docs/guides/database/postgres/row-level-security).
+
+| Вариант | Хранение и стоимость | Офлайн, пользователи и конфликты |
+|---|---|---|
+| Supabase | PostgreSQL, JSONB, RLS, квоты на БД и трафик | Уже используется API аккаунта и копии. Локальный FORGE работает независимо. CAS-ревизии разрешают конфликты снимка вручную. |
+| Firebase Auth + Firestore | Документная БД, правила доступа, квоты и оплата операций | Потребуются перенос модели и отдельные правила. Кэш SDK помогает чтению офлайн, а конфликт всего дневника всё равно требует правил FORGE. |
+
+Firestore оставлен резервным вариантом. [Квоты Firestore](https://firebase.google.com/docs/firestore/pricing), [Офлайн-режим Firestore](https://firebase.google.com/docs/firestore/manage-data/enable-offline).
+
+## Health Connect
+
+На Android 14+ откройте настройки FORGE и явно разрешите чтение нужных типов данных. Шаги агрегирует Health Connect. Перекрывающиеся интервалы активности не складываются повторно. Последнюю массу можно добавить с подтверждением, для уже занятой даты показывается отказ. Шаги и тренировки используются для просмотра, их калории не добавляются в дневник. При отключении FORGE прекращает чтение, Android отзывает разрешения после завершения процесса. Сохранённое измерение остаётся обычной записью дневника. На Android 24–33 весь обычный функционал доступен, раздел Health Connect скрыт. [Руководство Android](https://developer.android.com/health-and-fitness/health-connect/get-started).
+
+## Магазины и подпись
+
+- Для компиляции без платежей используйте `./gradlew -Pforge.storeBuild=true :app:assemblePlayDebug :app:assembleRustoreDebug`. Обычный APK не включает магазинные SDK. В обеих магазинных конфигурациях входы оплаты отключены, платёжный провайдер RuStore не активируется.
+- Проверка покупок реализована для sandbox. Настройка, проверка двух магазинов и ограничения описаны ниже.
+- Создайте GitHub environment `release-signing`, защитите ветку и установите secrets `FORGE_KEYSTORE_BASE64`, `FORGE_KEYSTORE_PASSWORD`, `FORGE_KEY_ALIAS`, `FORGE_KEY_PASSWORD`. Ручной workflow `Signed Android build` создаёт APK/AAB как artifacts после выбора `confirm_signing` на main. Подпись обновления должна соответствовать установленной сборке. Не переносите ключ в Git или чат.
+- Перед публикацией заполните Data Safety, декларации здоровья и раздел удаления аккаунта. Включите использование Crashlytics, PostHog, Supabase и Health Connect в декларации в соответствии с фактической конфигурацией и передачей данных. Настройте политику приватности, контакты и процесс удаления на стороне владельца.
+
+Проверяйте условия, регистрационную плату и комиссии перед любыми платными операциями. [Google Play Billing](https://developer.android.com/google/play/billing/integrate), [Защита покупок Play](https://developer.android.com/google/play/billing/security), [RuStore Pay 11.2.0](https://www.rustore.ru/help/sdk/pay/kotlin-java/11-2-0), [Google Play Data Safety](https://support.google.com/googleplay/android-developer/answer/10787469).
+
+## Зависимости и эксплуатация
+
+Room 2.8.5 + KSP 2.3.10, CameraX 1.6.2, ML Kit Barcode 17.3.0, WorkManager 2.11.0, Firebase BoM 35.1.0, Google Services 4.5.0, Crashlytics Gradle 3.0.8, JUnit 4.13.2 и PGlite 0.5.16 для тестов. Health Connect использует системный API Android 34. По отдельному Gradle-флагу подключаются Play Billing 9.1.0 и RuStore Pay 11.2.0 (BoM 2026.10.01). Dependabot еженедельно проверяет Gradle, npm и Actions после добавления конфигурации в default branch. Для обновлений проверяйте минимальный API, подпись, манифест, лицензии, Gradle, браузер и эмулятор. Крупные обновления требуют ревью.
+
+### Серверная проверка тестовых подписок
+
+Функция [verify-entitlement](../supabase/functions/verify-entitlement/index.ts) сверяет покупку с API магазина и с аккаунтом Supabase. Google Play должен вернуть признак тестовой покупки. RuStore используется через sandbox API v5. Запросы для обычных покупок отклоняются, checkout в FORGE выключен.
+
+1. Подготовьте тестовые товары и аккаунты в Play Console и RuStore Console. В тестовом Supabase сохраните серверные параметры в Edge Function Secrets. Для Google Play нужен `FORGE_PLAY_SERVICE_ACCOUNT_JSON` с правом проверки подписок для `ru.trainingcalculator.app`. Для RuStore нужны `FORGE_RUSTORE_SANDBOX_KEY_ID` и `FORGE_RUSTORE_SANDBOX_PRIVATE_KEY` в формате PKCS#8 с доступом к методам sandbox.
+2. Укажите тестовые SKU и уровни доступа в `FORGE_COMMERCE_PRODUCTS_JSON`, например `{"GOOGLE_PLAY":{"test_pro_month":"PRO"},"RUSTORE":{"test_pro_month":"PRO"}}`. В тестовом проекте установите `FORGE_COMMERCE_SANDBOX=true` и разверните `verify-entitlement`. Функция использует стандартные серверные переменные `SUPABASE_URL` и `SUPABASE_ANON_KEY` для проверки сессии.
+3. Вызовите `POST /functions/v1/verify-entitlement` с JWT авторизованного пользователя в заголовке `Authorization: Bearer …`, публичным ключом проекта в `apikey` и JSON с полями `store`, `product`, `token`. Значения `store` — `GOOGLE_PLAY` и `RUSTORE`. Для Google передайте токен покупки, для RuStore — UUID `purchaseId`. Магазин должен вернуть хеш аккаунта, переданный при покупке. Проверьте действующую подписку, другой аккаунт, истечение и отмену. Ответы о доступе содержат `sandbox: true`.
+4. Локальная проверка выполняется через `npm run test:commerce-sandbox` с тестовыми ответами API. Проверка на подключённых проектах и вызов функции из пользовательского интерфейса остаются впереди. Для выпуска нужны обработка событий магазинов и повторная проверка действительности подписок.
+
+[Google Play subscriptions v2](https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.subscriptionsv2), [RuStore Pay API v5](https://www.rustore.ru/help/work-with-rustore-api/api-subscription-payment/api-subscription-validation-v5), [Supabase Edge Function Secrets](https://supabase.com/docs/guides/functions/secrets).

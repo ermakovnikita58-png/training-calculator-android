@@ -109,6 +109,7 @@ test('rescheduling leaves competition and session snapshots intact', () => {
   const snapshot = M.snapshot(cycle, original[0]);
   const workout = { id: 'record', trainingCycle: snapshot, sets: [] };
   cycle.start = '2026-11-14';
+  cycle.end = M.addDays(cycle.start, 55);
   cycle.bases[row.group] = basis(55);
   cycle.schedule['0:d1'] = { date: '2026-11-22', skipped: true };
   const future = M.sessions(cycle, [workout]);
@@ -156,4 +157,76 @@ test('archive rejects duplicate sessions and invalid rows anywhere in the cycle'
   assert.throws(() => M.validateArchive({ trainingCycles: [cycle], workouts: [], active }), /снимок/);
   cycle.weeks.at(-1).loads.e0 = { percent: 101 };
   assert.throws(() => M.validateArchive({ trainingCycles: [cycle], workouts: [] }), /план/);
+});
+
+test('an imported program keeps its catalog ID and unknown loads while making a plan', () => {
+  const p = {id:'imported',name:'Imported',days:[{name:'Recorded day',day:null,importSource:{},exercises:['Imported bench'],
+    exerciseRefs:[{exerciseId:'bench-press',sourceName:'Bench'}]}]};
+  const cycle = M.createCycle(p, '2026-11-16', 'calendar');
+  const row = cycle.days[0].rows[0];
+  assert.equal(row.exerciseId,'bench-press');
+  assert.deepEqual(row.original,{sets:null,reps:null,weight:null});
+  assert.deepEqual(M.journalSets([{date:'2026-11-15',sets:[{exercise:'Bench',exerciseId:'bench-press',weight:40,reps:5}]}],
+    row,M.basisKey(row),cycle.id).map(set=>set.weight),[40]);
+});
+
+test('existing undated 10.1 cycles retain their original weekly weights after upgrade', () => {
+  const cycle = plan(), row = cycle.days[0].rows[0];
+  delete cycle.end;
+  delete cycle.programs;
+  for (const day of cycle.days) delete day.programId;
+  cycle.weeks = cycle.weeks.slice(0, 4);
+  row.selected = true;
+  cycle.bases[row.group] = basis(40);
+  assert.equal(M.plannedLoad(cycle, 1, row).percent, 67);
+  assert.equal(M.plannedLoad(cycle, 2, row).percent, 74);
+  assert.equal(M.plannedLoad(cycle, 3, row).percent, 100);
+  assert(M.validCycle(cycle));
+});
+
+test('multiple programs fit in the requested dates and the load advances across the whole period', () => {
+  const make = (id, day) => ({ id, name: id, days: [{ day, name: id, exercises: ['Тяга'] }] });
+  const cycle = M.createCycle([make('first', 'ПН'), make('second', 'ПТ')],
+    '2027-02-01', 'multi', '2027-04-20');
+  assert.equal(cycle.weeks.length, 12);
+  const row = cycle.days[0].rows[0];
+  assert.equal(row.group, cycle.days[1].rows[0].group);
+  row.selected = true;
+  cycle.bases[row.group] = basis();
+  const plan = M.sessions(cycle);
+  assert(plan.every(item => item.date >= cycle.start && item.date <= cycle.end));
+  assert.deepEqual(plan.filter(item => item.week === 11).map(item => [item.day.programId, item.date]),
+    [['first', '2027-04-19'], ['second', '2027-04-20']]);
+  const loads = cycle.weeks.map((_, week) => M.plannedLoad(cycle, week, row));
+  assert.equal(loads[0].percent, 60);
+  assert.equal(loads.at(-1).percent, 100);
+  assert(loads[7].percent < loads[10].percent);
+  const single = M.createCycle([make('first', 'ПН'), make('second', 'ПТ')],
+    '2028-02-29', 'single', '2028-02-29');
+  assert.deepEqual(M.sessions(single).map(item => item.date), ['2028-02-29', '2028-02-29']);
+  assert.equal(M.weekKind(single, 0), 'work');
+  assert.equal(M.weekCount('2027-02-01', '2027-01-31'), 0);
+});
+
+test('holds use seconds, share only compatible bases and preserve unassigned fields', () => {
+  const cycle = M.createCycle({ id: 'hold', name: 'Статика', days: [{ day: 'ПН', name: 'Статика', exercises: [
+    { name: 'На луч', unit: 'seconds', weight: null, sets: null, seconds: null }, 'На луч',
+  ] }] }, '2027-02-01', 'hold-cycle');
+  const [hold, dynamic] = cycle.days[0].rows;
+  assert.notEqual(hold.group, dynamic.group);
+  assert.equal(M.plannedLoad(cycle, 0, hold).seconds, null);
+  assert.equal(M.plannedLoad(cycle, 0, hold).weight, null);
+  hold.selected = true;
+  cycle.bases[hold.group] = M.holdBasis('measurement', '2026-11-14', 40, 20);
+  const load = M.plannedLoad(cycle, 0, hold);
+  assert.equal(load.seconds, 20);
+  assert.equal(load.raw, 22);
+  assert.equal(load.reps, undefined);
+  const snapshot = M.snapshot(cycle, M.sessions(cycle)[0]);
+  assert.doesNotThrow(() => M.validateArchive({ trainingCycles: [cycle], workouts: [{ id: 'x', trainingCycle: snapshot }] }));
+  const pool = M.journalSets([{ date: '2026-11-14', sets: [
+    { exercise: 'На луч', weight: 40, reps: 10 },
+    { exercise: 'На луч', weight: 40, seconds: 20, unit: 'seconds' },
+  ] }], hold, hold.group, cycle.id);
+  assert.deepEqual(pool.map(item => item.seconds), [20]);
 });

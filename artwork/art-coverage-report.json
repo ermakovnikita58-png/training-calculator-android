@@ -1,0 +1,16 @@
+{
+  "metrics": {
+    "TOTAL_EXERCISES": 556,
+    "EXERCISES_WITH_ASSIGNED_ART": 556,
+    "EXERCISES_WITH_VERIFIED_FILE": 556,
+    "EXERCISES_WITH_STYLE_APPROVED": 556,
+    "EXERCISES_REQUIRING_EXPERT_REVIEW": 556,
+    "MISSING_ART": 0,
+    "WRONG_EQUIPMENT": 0,
+    "WRONG_POSE": 0,
+    "BROKEN_IMAGES": 0
+  },
+  "missing": [],
+  "failures": [],
+  "note": "Assigned/file/style checks are separate from expert biomechanics. Wrong equipment/pose counts refer to confirmed metadata conflicts, not automatic expert approval."
+}

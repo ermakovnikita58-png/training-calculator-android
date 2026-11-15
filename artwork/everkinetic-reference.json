@@ -1,0 +1,3835 @@
+{
+  "source": "https://github.com/everkinetic/data",
+  "license": "CC BY-SA 4.0",
+  "entries": [
+    {
+      "id": "0001",
+      "title": "Static Neck Flexion and Extension",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "trapezius"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0002",
+      "title": "Static Neck Side Flexion",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "trapezius"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0003",
+      "title": "Seated Shoulder Press Machine",
+      "equipment": [
+        "machine"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "triceps brachii"
+      ]
+    },
+    {
+      "id": "0004",
+      "title": "Seated Military Press",
+      "equipment": [
+        "barbell",
+        "bench"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "triceps brachii"
+      ]
+    },
+    {
+      "id": "0005",
+      "title": "Shoulder Shrugs: Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "trapezius"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0006",
+      "title": "Arnold Press",
+      "equipment": [
+        "dumbbells"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "triceps brachii"
+      ]
+    },
+    {
+      "id": "0007",
+      "title": "Front Barbell Raises",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "pectoralis major",
+        "forerm"
+      ]
+    },
+    {
+      "id": "0008",
+      "title": "Front Cable Raises",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "pectoralis major",
+        "forearm"
+      ]
+    },
+    {
+      "id": "0009",
+      "title": "Shoulder Shrugs: Cable",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "trapezius"
+      ],
+      "secondary": [
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0010",
+      "title": "Front Raises",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "forearm",
+        "pectoralis major"
+      ]
+    },
+    {
+      "id": "0011",
+      "title": "Seated Barbell Shoulder Press",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "pectoralis major"
+      ]
+    },
+    {
+      "id": "0012",
+      "title": "Dumbbell Shoulder Press",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "pectoralis major"
+      ]
+    },
+    {
+      "id": "0013",
+      "title": "Upright Row: Smith Machine",
+      "equipment": [
+        "smith machine"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "biceps brachii",
+        "upper back"
+      ]
+    },
+    {
+      "id": "0014",
+      "title": "Upright Barbell Rows",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "biceps brachii",
+        "upper back"
+      ]
+    },
+    {
+      "id": "0015",
+      "title": "Upright Cable Row",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "upper back",
+        "biceps brachii"
+      ]
+    },
+    {
+      "id": "0016",
+      "title": "Upright Row: Dumbbell",
+      "equipment": [
+        "dumbbells"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "biceps brachii",
+        "upper back"
+      ]
+    },
+    {
+      "id": "0017",
+      "title": "Bent-over Lateral Cable Raises",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "trapezius",
+        "latissimus dorsi"
+      ]
+    },
+    {
+      "id": "0018",
+      "title": "Lateral Dumbbell Raises",
+      "equipment": [
+        "dumbbells"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0019",
+      "title": "Ball Wall Circles",
+      "equipment": [
+        "swiss ball"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "biceps brachii",
+        "triceps brachii"
+      ]
+    },
+    {
+      "id": "0020",
+      "title": "Back Fly's with Exercise Band",
+      "equipment": [
+        "exercise band"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "latissimus dorsi"
+      ]
+    },
+    {
+      "id": "0021",
+      "title": "Flat Bench Leg Raises",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "abdominals"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0022",
+      "title": "Smith Machine Rear Deltoid Row",
+      "equipment": [
+        "smith machine"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "back",
+        "biceps brachii"
+      ]
+    },
+    {
+      "id": "0023",
+      "title": "Lying Rear Lateral Raise",
+      "equipment": [
+        "flat bench",
+        "dumbbells"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0024",
+      "title": "Rear Deltoid Row Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "biceps brachii",
+        "trapezius"
+      ]
+    },
+    {
+      "id": "0025",
+      "title": "Seated Cable Rows",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "latissimus dorsi"
+      ],
+      "secondary": [
+        "biceps brachii",
+        "erector spinae"
+      ]
+    },
+    {
+      "id": "0026",
+      "title": "Reverse Grips Bent Over Barbell Rows",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "latissimus dorsi"
+      ],
+      "secondary": [
+        "biceps brachii"
+      ]
+    },
+    {
+      "id": "0027",
+      "title": "Stationary Abdominal Draw In",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "abdominals"
+      ],
+      "secondary": [
+        "core"
+      ]
+    },
+    {
+      "id": "0028",
+      "title": "Rear Deltoid Row Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "biceps brachii"
+      ]
+    },
+    {
+      "id": "0029",
+      "title": "T-Bar Rows",
+      "equipment": [
+        "t-bar machine"
+      ],
+      "primary": [
+        "latissimus dorsi"
+      ],
+      "secondary": [
+        "biceps brachii",
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0030",
+      "title": "Barbell Shrugs",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "trapezius"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0031",
+      "title": "Incline Shoulder Press Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0032",
+      "title": "Bent Over Rear Deltoid Raise With Head On Bench",
+      "equipment": [
+        "dumbbells"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0033",
+      "title": "Front Dumbbell Raise",
+      "equipment": [
+        "dumbbells"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0034",
+      "title": "Internal Cable Rotation",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "biceps brachii"
+      ]
+    },
+    {
+      "id": "0035",
+      "title": "Seated Rear Lateral Cable Raise",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0037",
+      "title": "Lying One Arm Rear Lateral Raise",
+      "equipment": [
+        "dumbbell",
+        "flat bench"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0038",
+      "title": "One Arm Dumbbell Shoulder Press",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "biceps brachii"
+      ]
+    },
+    {
+      "id": "0039",
+      "title": "Upright Row: Dumbbell (One Arm)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "trapezius"
+      ]
+    },
+    {
+      "id": "0040",
+      "title": "Dumbbell Raise",
+      "equipment": [
+        "dumbbells"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "biceps brachii"
+      ]
+    },
+    {
+      "id": "0041",
+      "title": "Shoulder Shrugs: Smith Machine",
+      "equipment": [
+        "smith machine"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0042",
+      "title": "Bench Press: Barbell",
+      "equipment": [
+        "bench",
+        "barbell"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "deltoideus (clavicula)"
+      ]
+    },
+    {
+      "id": "0043",
+      "title": "Bench Press: Barbell (Incline)",
+      "equipment": [
+        "bench: incline",
+        "barbell"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "triceps brachii"
+      ]
+    },
+    {
+      "id": "0044",
+      "title": "Bench Press: Bands (Incline)",
+      "equipment": [
+        "exercise band",
+        "bench: incline"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "biceps brachii"
+      ]
+    },
+    {
+      "id": "0045",
+      "title": "Bent Arm Pullover",
+      "equipment": [
+        "barbell",
+        "flat bench"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "latissimus dorsi",
+        "deltoid",
+        "triceps brachii"
+      ]
+    },
+    {
+      "id": "0046",
+      "title": "Dumbbell Bent Arm Pullover",
+      "equipment": [
+        "flat bench",
+        "dumbbell"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "deltoid",
+        "triceps brachii",
+        "latissimus dorsi"
+      ]
+    },
+    {
+      "id": "0047",
+      "title": "Butterfly Machine",
+      "equipment": [
+        "machine: butterfly"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0048",
+      "title": "Cable Crossover",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0049",
+      "title": "Bench Press: Barbell (Close Grip)",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0050",
+      "title": "Crossover with Bands",
+      "equipment": [
+        "exercise band"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "deltoid",
+        "biceps brachii"
+      ]
+    },
+    {
+      "id": "0051",
+      "title": "Bench Press: Barbell (Decline)",
+      "equipment": [
+        "bench: decline",
+        "barbell"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0052",
+      "title": "Bench Press: Dumbbell (Decline)",
+      "equipment": [
+        "dumbbells",
+        "bench: decline"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0053",
+      "title": "Decline Dumbbell Fly's",
+      "equipment": [
+        "dumbbells",
+        "bench: decline"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0054",
+      "title": "Chest Dips",
+      "equipment": [
+        "body",
+        "parallel bars"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0055",
+      "title": "Bench Press: Dumbbell",
+      "equipment": [
+        "dumbbells",
+        "flat bench"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "deltoid",
+        "triceps brachii"
+      ]
+    },
+    {
+      "id": "0056",
+      "title": "Dumbbell Flys",
+      "equipment": [
+        "flat bench",
+        "dumbbells"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "deltoid",
+        "triceps brachii"
+      ]
+    },
+    {
+      "id": "0057",
+      "title": "Flat Bench Cable Flys",
+      "equipment": [
+        "flat bench",
+        "cable"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0058",
+      "title": "Barbell Front Raise and Pullover",
+      "equipment": [
+        "barbell",
+        "flat bench"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0059",
+      "title": "Bench Press: Dumbbell (Incline, Hammer Grip)",
+      "equipment": [
+        "dumbbells",
+        "bench: incline"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "deltoid",
+        "triceps brachii"
+      ]
+    },
+    {
+      "id": "0060",
+      "title": "Incline Cable Fly's",
+      "equipment": [
+        "bench: incline",
+        "cable"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "biceps brachii",
+        "triceps brachii",
+        "forearm"
+      ]
+    },
+    {
+      "id": "0061",
+      "title": "Bench Press: Dumbbell (Incline)",
+      "equipment": [
+        "dumbbells",
+        "bench: incline"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0062",
+      "title": "Incline Dumbbell Fly's",
+      "equipment": [
+        "bench: incline",
+        "dumbbells"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0063",
+      "title": "Incline Fly's with a Twist",
+      "equipment": [
+        "bench: incline",
+        "dumbbells"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0064",
+      "title": "Wide Grip Decline Barbell Pullover",
+      "equipment": [
+        "bench: decline",
+        "barbell"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0066",
+      "title": "Bench Press: Machine",
+      "equipment": [
+        "machine: bench press"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0067",
+      "title": "Barbell Neck Press",
+      "equipment": [
+        "barbell",
+        "flat bench"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "biceps brachii"
+      ]
+    },
+    {
+      "id": "0068",
+      "title": "Bench Press: Dumbbell (One Arm)",
+      "equipment": [
+        "flat bench",
+        "dumbbell"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0069",
+      "title": "Push Up: Bosu Ball",
+      "equipment": [
+        "bosu ball"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "deltoid",
+        "core",
+        "triceps brachii"
+      ]
+    },
+    {
+      "id": "0070",
+      "title": "One Arm Barbell Floor Press",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "triceps brachii"
+      ]
+    },
+    {
+      "id": "0071",
+      "title": "One Arm Flat Bench Fly’s",
+      "equipment": [
+        "flat bench",
+        "dumbbell"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0072",
+      "title": "One Armed Biased Push Up",
+      "equipment": [
+        "bosu ball"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "bicpes",
+        "deltoid",
+        "core"
+      ]
+    },
+    {
+      "id": "0073",
+      "title": "Push Up: Close and Wide Hand",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "deltoid",
+        "core"
+      ]
+    },
+    {
+      "id": "0075",
+      "title": "Push Up: Bench (Feet Elevated)",
+      "equipment": [
+        "body",
+        "bench"
+      ],
+      "primary": [
+        "pectoralis major",
+        "deltoid"
+      ],
+      "secondary": [
+        "triceps brachii"
+      ]
+    },
+    {
+      "id": "0076",
+      "title": "Push Up: Exercise ball",
+      "equipment": [
+        "body",
+        "exercise ball"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0077",
+      "title": "Push Up: Body Weight",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0078",
+      "title": "Bench Press: Smith Machine",
+      "equipment": [
+        "flat bench",
+        "smith machine"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "deltoid",
+        "triceps brachii"
+      ]
+    },
+    {
+      "id": "0079",
+      "title": "Straight Arm Dumbbell Pullover",
+      "equipment": [
+        "flat bench",
+        "dumbbell"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "latissimus dorsi",
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0080",
+      "title": "Incline Dumbbell Press",
+      "equipment": [
+        "dumbbells",
+        "bench: incline"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0081",
+      "title": "Bench Press: Smith Machine (Incline)",
+      "equipment": [
+        "smith machine",
+        "bench: incline"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "deltoid",
+        "triceps brachii"
+      ]
+    },
+    {
+      "id": "0082",
+      "title": "Bench Press: Barbell (Wide Grip)",
+      "equipment": [
+        "flat bench",
+        "barbell"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0083",
+      "title": "Bench Press: Barbell (Decline, Wide Grip)",
+      "equipment": [
+        "barbell",
+        "bench: decline"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0084",
+      "title": "Incline Chest Press",
+      "equipment": [
+        "chest machine"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0085",
+      "title": "Decline Chest Press",
+      "equipment": [
+        "machine: chest"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "deltoid",
+        "triceps brachii"
+      ]
+    },
+    {
+      "id": "0086",
+      "title": "Body Row",
+      "equipment": [
+        "bar"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "core",
+        "trapezius",
+        "back"
+      ]
+    },
+    {
+      "id": "0087",
+      "title": "Pull Ups",
+      "equipment": [
+        "bar"
+      ],
+      "primary": [
+        "latissimus dorsi"
+      ],
+      "secondary": [
+        "biceps brachii"
+      ]
+    },
+    {
+      "id": "0088",
+      "title": "Gironda Sternum Chins",
+      "equipment": [
+        "body",
+        "bar"
+      ],
+      "primary": [
+        "latissimus dorsi"
+      ],
+      "secondary": [
+        "biceps brachii"
+      ]
+    },
+    {
+      "id": "0089",
+      "title": "Chin Ups",
+      "equipment": [
+        "body",
+        "bar"
+      ],
+      "primary": [
+        "latissimus dorsi"
+      ],
+      "secondary": [
+        "biceps brachii"
+      ]
+    },
+    {
+      "id": "0090",
+      "title": "Narrow Parallel Grip Chin-ups",
+      "equipment": [
+        "bar",
+        "body"
+      ],
+      "primary": [
+        "deltoid",
+        "latissimus dorsi"
+      ],
+      "secondary": [
+        "back",
+        "core"
+      ]
+    },
+    {
+      "id": "0091",
+      "title": "Wide Grip Chin Up",
+      "equipment": [
+        "body",
+        "pull-up bar"
+      ],
+      "primary": [
+        "trapezius"
+      ],
+      "secondary": [
+        "trapezius",
+        "biceps brachii"
+      ]
+    },
+    {
+      "id": "0092",
+      "title": "Straight Arm Push Down",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "latissimus dorsi"
+      ],
+      "secondary": [
+        "triceps brachii"
+      ]
+    },
+    {
+      "id": "0093",
+      "title": "Pull Down: Underhand",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "latissimus dorsi"
+      ],
+      "secondary": [
+        "biceps brachii"
+      ]
+    },
+    {
+      "id": "0094",
+      "title": "Upright Band Rows",
+      "equipment": [
+        "body",
+        "exercise band"
+      ],
+      "primary": [
+        "latissimus dorsi"
+      ],
+      "secondary": [
+        "triceps brachii",
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0095",
+      "title": "Pull Down: Underhand",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "latissimus dorsi"
+      ],
+      "secondary": [
+        "biceps brachii"
+      ]
+    },
+    {
+      "id": "0096",
+      "title": "Pull Down: V Bar ",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "latissimus dorsi"
+      ],
+      "secondary": [
+        "biceps brachii"
+      ]
+    },
+    {
+      "id": "0097",
+      "title": "Pull Down: Wide Bar (Wide Grip)",
+      "equipment": [
+        "cable",
+        "wide bar"
+      ],
+      "primary": [
+        "latissimus dorsi"
+      ],
+      "secondary": [
+        "biceps brachii",
+        "latissimus dorsi"
+      ]
+    },
+    {
+      "id": "0098",
+      "title": "Pullover On Stability Ball With Weight",
+      "equipment": [
+        "exercise ball",
+        "dumbbell"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "back",
+        "trapezius"
+      ]
+    },
+    {
+      "id": "0099",
+      "title": "Dead Lifts: Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "erector spinae"
+      ],
+      "secondary": [
+        "ischiocrural muscles",
+        "gastrocnemius",
+        "soleus"
+      ]
+    },
+    {
+      "id": "0100",
+      "title": "Dead Lifts: Smith Machine",
+      "equipment": [
+        "smith machine"
+      ],
+      "primary": [
+        "erector spinae"
+      ],
+      "secondary": [
+        "ischiocrural muscles",
+        "gastrocnemius",
+        "soleus"
+      ]
+    },
+    {
+      "id": "0101",
+      "title": "Good Mornings: Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "erector spinae"
+      ],
+      "secondary": [
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0102",
+      "title": "Good Mornings: Smith Machine",
+      "equipment": [
+        "smith machine"
+      ],
+      "primary": [
+        "erector spinae"
+      ],
+      "secondary": [
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0103",
+      "title": "Hyperextensions",
+      "equipment": [
+        "bench: hyperextension"
+      ],
+      "primary": [
+        "erector spinae"
+      ],
+      "secondary": [
+        "ischiocrural muscles",
+        "core"
+      ]
+    },
+    {
+      "id": "0104",
+      "title": "Back Extension on Stability Ball",
+      "equipment": [
+        "exercise ball"
+      ],
+      "primary": [
+        "erector spinae"
+      ],
+      "secondary": [
+        "core",
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0105",
+      "title": "Supermans",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "erector spinae"
+      ],
+      "secondary": [
+        "core"
+      ]
+    },
+    {
+      "id": "0107",
+      "title": "Dead Lifts: Dumbbell",
+      "equipment": [
+        "dumbbells"
+      ],
+      "primary": [
+        "erector spinae"
+      ],
+      "secondary": [
+        "gastrocnemius",
+        "soleus",
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0109",
+      "title": "Bridging",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "glutaeus maximus"
+      ],
+      "secondary": [
+        "core"
+      ]
+    },
+    {
+      "id": "0111",
+      "title": "Body Leg Lifts",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "glutaeus maximus"
+      ],
+      "secondary": [
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0112",
+      "title": "One Legged Cable Kickback",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "glutaeus maximus"
+      ],
+      "secondary": [
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0113",
+      "title": "Side Plank",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "obliques"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0114",
+      "title": "Lunges: Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "ischiocrural muscles"
+      ],
+      "secondary": [
+        "glutaeus maximus",
+        "quadriceps",
+        "gastrocnemius",
+        "soleus"
+      ]
+    },
+    {
+      "id": "0115",
+      "title": "Lunges: Dumbbell",
+      "equipment": [
+        "dumbbells"
+      ],
+      "primary": [
+        "ischiocrural muscles"
+      ],
+      "secondary": [
+        "glutaeus maximus",
+        "quadriceps",
+        "gastrocnemius",
+        "soleus"
+      ]
+    },
+    {
+      "id": "0116",
+      "title": "Flutter Kicks",
+      "equipment": [
+        "flat bench"
+      ],
+      "primary": [
+        "ischiocrural muscles"
+      ],
+      "secondary": [
+        "quadriceps"
+      ]
+    },
+    {
+      "id": "0117",
+      "title": "Lying Leg Curl Machine",
+      "equipment": [
+        "machine"
+      ],
+      "primary": [
+        "ischiocrural muscles"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0118",
+      "title": "Romanian Dead Lift",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "ischiocrural muscles"
+      ],
+      "secondary": [
+        "gastrocnemius",
+        "soleus",
+        "quadriceps",
+        "glutaeus maximus"
+      ]
+    },
+    {
+      "id": "0119",
+      "title": "Seated Leg Curl",
+      "equipment": [
+        "machine"
+      ],
+      "primary": [
+        "ischiocrural muscles"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0120",
+      "title": "Standing Leg Curls",
+      "equipment": [
+        "machine"
+      ],
+      "primary": [
+        "ischiocrural muscles"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0121",
+      "title": "Lunges: Dumbbell (Walking)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "ischiocrural muscles"
+      ],
+      "secondary": [
+        "quadriceps",
+        "glutaeus maximus",
+        "gastrocnemius",
+        "soleus"
+      ]
+    },
+    {
+      "id": "0122",
+      "title": "Barbell Squat",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0123",
+      "title": "Hack Squat: Machine",
+      "equipment": [
+        "machine"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "ischiocrural muscles",
+        "gastrocnemius",
+        "soleus"
+      ]
+    },
+    {
+      "id": "0124",
+      "title": "Squats: Smith Machine",
+      "equipment": [
+        "smith machine"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "gastrocnemius",
+        "soleus",
+        "glutaeus maximus",
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0125",
+      "title": "Hack Squat: Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0126",
+      "title": "Smith Machine Hack Squat",
+      "equipment": [
+        "smith machine"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "ischiocrural muscles",
+        "glutaeus maximus"
+      ]
+    },
+    {
+      "id": "0127",
+      "title": "Leg Press",
+      "equipment": [
+        "machine"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "gastrocnemius",
+        "soleus",
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0128",
+      "title": "Lunges: Barbell (Rear)",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "hip abductors",
+        "gastrocnemius",
+        "soleus",
+        "glutaeus maximus",
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0129",
+      "title": "Lunges: Dumbbell (Rear)",
+      "equipment": [
+        "dumbbells"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "gastrocnemius",
+        "soleus",
+        "ischiocrural muscles",
+        "glutaeus maximus",
+        "hip abductors"
+      ]
+    },
+    {
+      "id": "0130",
+      "title": "Squats: Dumbbells",
+      "equipment": [
+        "dumbbells"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "ischiocrural muscles",
+        "gastrocnemius",
+        "soleus"
+      ]
+    },
+    {
+      "id": "0131",
+      "title": "Side Squats: Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "hip abductors",
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0132",
+      "title": "Single Leg Squat with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "gastrocnemius",
+        "soleus",
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0133",
+      "title": "Squats: Barbell (to Bench)",
+      "equipment": [
+        "barbell",
+        "bench"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "glutaeus maximus",
+        "gastrocnemius",
+        "soleus",
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0134",
+      "title": "Step Ups: Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "ischiocrural muscles",
+        "gastrocnemius",
+        "soleus"
+      ]
+    },
+    {
+      "id": "0135",
+      "title": "Hip Adduction",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "hip abductors"
+      ]
+    },
+    {
+      "id": "0136",
+      "title": "Squats: Dumbbells (to Bench)",
+      "equipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "gastrocnemius",
+        "soleus",
+        "ischiocrural muscles",
+        "glutaeus maximus"
+      ]
+    },
+    {
+      "id": "0137",
+      "title": "Step Ups: Dumbbell",
+      "equipment": [
+        "dumbbells"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "gastrocnemius",
+        "soleus",
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0138",
+      "title": "Front Squat with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "ischiocrural muscles",
+        "gastrocnemius",
+        "soleus"
+      ]
+    },
+    {
+      "id": "0139",
+      "title": "Front Squat to Bench with Barbells",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "ischiocrural muscles",
+        "gastrocnemius",
+        "soleus"
+      ]
+    },
+    {
+      "id": "0140",
+      "title": "Iron Cross: Dumbbell",
+      "equipment": [
+        "dumbbells"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "trapezius",
+        "glutaeus maximus",
+        "deltoid",
+        "erector spinae",
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0141",
+      "title": "Jefferson Squats: Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "ischiocrural muscles"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0142",
+      "title": "Leg Extensions",
+      "equipment": [
+        "machine"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0143",
+      "title": "Narrow Stance Leg Press",
+      "equipment": [
+        "machine"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "gastrocnemius",
+        "soleus",
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0144",
+      "title": "Lying Squat",
+      "equipment": [
+        "machine"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "gastrocnemius",
+        "soleus",
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0145",
+      "title": "Narrow Stance Hack Squats",
+      "equipment": [
+        "machine"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "ischiocrural muscles",
+        "gastrocnemius",
+        "soleus"
+      ]
+    },
+    {
+      "id": "0146",
+      "title": "Narrow Stance Squat with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "glutaeus maximus",
+        "gastrocnemius",
+        "soleus",
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0147",
+      "title": "One Leg Squat with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "gastrocnemius",
+        "soleus",
+        "ischiocrural muscles",
+        "glutaeus maximus"
+      ]
+    },
+    {
+      "id": "0148",
+      "title": "One Arm Snatch with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "deltoid",
+        "ischiocrural muscles",
+        "erector spinae",
+        "abdominals",
+        "trapezius",
+        "gastrocnemius",
+        "soleus"
+      ]
+    },
+    {
+      "id": "0150",
+      "title": "Dead Lift: Barbell (One Arm Side)",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "abdominals",
+        "glutaeus maximus",
+        "gastrocnemius",
+        "soleus",
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0151",
+      "title": "Overhead Squat with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "glutaeus maximus",
+        "gastrocnemius",
+        "soleus",
+        "ischiocrural muscles",
+        "deltoid",
+        "erector spinae"
+      ]
+    },
+    {
+      "id": "0152",
+      "title": "Pile Squat with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "ischiocrural muscles",
+        "gastrocnemius",
+        "soleus"
+      ]
+    },
+    {
+      "id": "0154",
+      "title": "Speed Squats: Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "gastrocnemius",
+        "soleus",
+        "glutaeus maximus",
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0155",
+      "title": "Squats: Exercise Bands",
+      "equipment": [
+        "exercise band"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "gastrocnemius",
+        "soleus",
+        "glutaeus maximus",
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0156",
+      "title": "Thigh Abductor",
+      "equipment": [
+        "machine"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0157",
+      "title": "Thigh Adductor",
+      "equipment": [
+        "machine"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0158",
+      "title": "Weighted Sissy Squat with Weight Plate",
+      "equipment": [
+        "weight plate"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0160",
+      "title": "Wide Stance Squat with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "gastrocnemius",
+        "soleus",
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0161",
+      "title": "Zecher Squats",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "quadriceps"
+      ],
+      "secondary": [
+        "glutaeus maximus",
+        "ischiocrural muscles",
+        "gastrocnemius",
+        "soleus"
+      ]
+    },
+    {
+      "id": "0162",
+      "title": "Bench Dips",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": [
+        "pectoralis major"
+      ]
+    },
+    {
+      "id": "0163",
+      "title": "Incline Pushdown with Cable",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0164",
+      "title": "Triceps Extension: Cable (Incline)",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0165",
+      "title": "Lying Tricep Extension with Cable",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0166",
+      "title": "One Arm Tricep Extension with Cable",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0168",
+      "title": "Decline Close Grip Bench to Skull Crusher",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": [
+        "pectoralis major"
+      ]
+    },
+    {
+      "id": "0169",
+      "title": "Triceps Extension: Dumbbell (Decline)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0170",
+      "title": "Triceps Extension: EZ Bar Barbell (Decline)",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0171",
+      "title": "Triceps Dips: Machine",
+      "equipment": [
+        "machine"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": [
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0172",
+      "title": "Triceps Dips: Body Weight",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": [
+        "deltoid",
+        "pectoralis major"
+      ]
+    },
+    {
+      "id": "0173",
+      "title": "Triceps Extension: Dumbbell (One Arm)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0174",
+      "title": "Triceps Extension: Barbell (Incline)",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0175",
+      "title": "JM Press",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": [
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0176",
+      "title": "Kneeling Triceps Concentration Extension with Cable",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0177",
+      "title": "Triceps Extension: Cable (Kneeling)",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0178",
+      "title": "Triceps Extension: Cable (Low)",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0179",
+      "title": "Triceps Extension: Barbell (Lying, Close Grip, Behind the Head)",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0180",
+      "title": "Lying Close Grip Triceps Press to Chin with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0181",
+      "title": "Triceps Extension: Dumbbell (Lying)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0182",
+      "title": "Triceps Extension: Dumbbell (Lying, Across Face)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0183",
+      "title": "Lying Triceps Press with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": [
+        "pectoralis major"
+      ]
+    },
+    {
+      "id": "0184",
+      "title": "Triceps Extension: Dumbbell (Lying Two Arm)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0185",
+      "title": "Old School Reverse Extensions",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0186",
+      "title": "Triceps Extension: Dumbbell (Single Arm, Pronated)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0187",
+      "title": "Triceps Extension: Dumbbell (Single Arm, Supinated)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0188",
+      "title": "Close Triceps Pushup",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": [
+        "pectoralis major"
+      ]
+    },
+    {
+      "id": "0189",
+      "title": "Reverse Grip Triceps Pushdown",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0190",
+      "title": "Bench Press: Barbell (Reverse Triceps)",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": [
+        "pectoralis major"
+      ]
+    },
+    {
+      "id": "0191",
+      "title": "Triceps Extension: Dumbbell (Seated, One Arm)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0192",
+      "title": "Triceps Extension: Dumbbell (Seated, Two Arm)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0193",
+      "title": "Triceps Extension: Barbell (Seated, Overhead)",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0194",
+      "title": "Seated Triceps Press with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0195",
+      "title": "Bench Press: Smith Machine (Close Grip)",
+      "equipment": [
+        "smith machine"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": [
+        "pectoralis major"
+      ]
+    },
+    {
+      "id": "0196",
+      "title": "Triceps Extension: Dumbbell (Bent-Over, One Arm)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0197",
+      "title": "Triceps Extension: Dumbbell (Bent-Over, Two Arm)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0198",
+      "title": "Triceps Extension: Dumbbell (Standing)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0199",
+      "title": "Triceps Extension: Cable (One Arm, Low-Pulley)",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0200",
+      "title": "Triceps Extension: Dumbbell (Standing, One Arm)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0201",
+      "title": "Triceps Extension: Barbell (Standing, Overhead)",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0202",
+      "title": "Triceps Extension: Towel (Standing)",
+      "equipment": [
+        "body",
+        "towel"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0203",
+      "title": "Tate Press with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0204",
+      "title": "Triceps Kickback with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0205",
+      "title": "Triceps Pushdown: Cable",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0206",
+      "title": "Triceps Pushdown: Cable (Rope)",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0207",
+      "title": "Triceps Pushdown: Cable (V-Bar)",
+      "equipment": [
+        "cable",
+        "v-bar"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0208",
+      "title": "Weighted Ball Side Bend",
+      "equipment": [
+        "weight",
+        "exercise ball"
+      ],
+      "primary": [
+        "obliques"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0209",
+      "title": "Triceps Extension: Dumbbell (Incline)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": [
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0210",
+      "title": "Triceps Extension: Machine",
+      "equipment": [
+        "machine"
+      ],
+      "primary": [
+        "triceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0211",
+      "title": "Biceps Curl: Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "deltoid",
+        "forearm"
+      ]
+    },
+    {
+      "id": "0212",
+      "title": "Standing Biceps Curl with Cable",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm",
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0213",
+      "title": "Alternating Hammer Curl with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0214",
+      "title": "Alternating Incline Curl with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0215",
+      "title": "Lying Incline Curl with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0216",
+      "title": "Hammer Curls with Rope and Cable",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0217",
+      "title": "Preacher Curl: Cable",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0218",
+      "title": "Close Grip EZ Bar Curl with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0219",
+      "title": "Close Grip Standing Biceps Curls with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0220",
+      "title": "Concentration Curls with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0221",
+      "title": "Cross Body Hammer Curl with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0222",
+      "title": "Drag Curl with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0223",
+      "title": "Alternating Bicep Curl with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0224",
+      "title": "Biceps Curl: Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0225",
+      "title": "Prone Incline Biceps Curl with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0226",
+      "title": "EZ Bar Curl with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0227",
+      "title": "Biceps Curl: Dumbbell (Hammer)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0228",
+      "title": "Flexor Incline Curls with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0229",
+      "title": "High Cable Curls",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "triceps brachii"
+      ]
+    },
+    {
+      "id": "0230",
+      "title": "Incline Biceps Curl with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0231",
+      "title": "Incline Inner Biceps Curl with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0232",
+      "title": "Lying Bicep Cable Curl",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0233",
+      "title": "Lying Close Grip Biceps Curls with Cable",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0234",
+      "title": "Lying High Bench Biceps Curl with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0235",
+      "title": "Lying Supine Biceps Curl with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0236",
+      "title": "Preacher Curl: Machine",
+      "equipment": [
+        "machine"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0237",
+      "title": "Preacher Curl: Dumbbell (One Arm)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0238",
+      "title": "Overhead Curl with Cable",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0239",
+      "title": "Preacher Curl: Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0240",
+      "title": "Preacher Curl: Dumbbell (Hammer)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0241",
+      "title": "Reverse Plate Curls with Weight",
+      "equipment": [
+        "weight plate"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0242",
+      "title": "Seated Close Grip Concentration Curls with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0243",
+      "title": "Seated Bicep Curl with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0244",
+      "title": "Seated Inner Biceps Curl with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0245",
+      "title": "Spider Curl with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0246",
+      "title": "Standing Inner Biceps Curl with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0247",
+      "title": "Standing One Arm Bicep Curl with Cable",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0248",
+      "title": "Standing One Arm Curl Over Incline Bench with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0249",
+      "title": "Preacher Curl: Dumbbell (Two Arm)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0250",
+      "title": "Wide Grip Standing Biceps Curl with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0251",
+      "title": "Zottman Curl with Dumbbells",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0252",
+      "title": "Preacher Curl: Dumbbell (Zottman)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0253",
+      "title": "Biceps Curl: Machine",
+      "equipment": [
+        "machine"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0254",
+      "title": "One Arm Bicep Curl with Olympic Bar or Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0255",
+      "title": "Biceps Curl: Stability Ball with Dumbbell (seated)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0256",
+      "title": "Biceps Curl: Squat with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "ischiocrural muscles",
+        "glutaeus maximus"
+      ]
+    },
+    {
+      "id": "0257",
+      "title": "Biceps Curl: Dumbbell (Reverse)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0258",
+      "title": "One Arm Bicep Concentration on Stability Ball with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm"
+      ]
+    },
+    {
+      "id": "0259",
+      "title": "Dead Lift: Barbell (Biceps Curl)",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "gastrocnemius",
+        "soleus",
+        "erector spinae",
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0260",
+      "title": "Biceps Curl: Stability Ball with Dumbbell (Overhead Extension)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "triceps brachii",
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm",
+        "should"
+      ]
+    },
+    {
+      "id": "0261",
+      "title": "Quick Alternating Biceps Curls with Band",
+      "equipment": [
+        "exercise band"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "triceps brachii"
+      ]
+    },
+    {
+      "id": "0262",
+      "title": "Biceps Curl: Medicine Balll (Lunge, Bowling Motion)",
+      "equipment": [
+        "medicine ball"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "gastrocnemius",
+        "soleus",
+        "triceps brachii",
+        "ischiocrural muscles",
+        "glutaeus maximus",
+        "quadriceps"
+      ]
+    },
+    {
+      "id": "0263",
+      "title": "Biceps Curl: Stability Ball with Dumbbell (leg raised)",
+      "equipment": [
+        "dumbbell",
+        "stability Ball"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "ischiocrural muscles",
+        "forearm",
+        "quadriceps",
+        "gastrocnemius",
+        "soleus"
+      ]
+    },
+    {
+      "id": "0264",
+      "title": "Lateral Lunge with Bicep Curl with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "quadriceps",
+        "biceps brachii"
+      ],
+      "secondary": [
+        "forearm",
+        "ischiocrural muscles",
+        "glutaeus maximus",
+        "gastrocnemius",
+        "soleus",
+        "hip abductors"
+      ]
+    },
+    {
+      "id": "0265",
+      "title": "Forward Lunge with Bicep Curl using Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "gastrocnemius",
+        "soleus",
+        "hip abductors",
+        "forearm",
+        "ischiocrural muscles",
+        "glutaeus maximus"
+      ]
+    },
+    {
+      "id": "0266",
+      "title": "Step Up: Dumbbell (Bicep Curl, Single Leg Balance)",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "core",
+        "quadriceps",
+        "forearm",
+        "ischiocrural muscles",
+        "glutaeus maximus",
+        "gastrocnemius",
+        "soleus"
+      ]
+    },
+    {
+      "id": "0267",
+      "title": "Medicine Ball Biceps Curl on Stability Ball",
+      "equipment": [
+        "medicine ball"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "core",
+        "forearm"
+      ]
+    },
+    {
+      "id": "0268",
+      "title": "Stork Stance Bicep Curl with Dumbbells",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "quadriceps",
+        "ischiocrural muscles",
+        "glutaeus maximus",
+        "gastrocnemius",
+        "soleus",
+        "triceps brachii"
+      ]
+    },
+    {
+      "id": "0269",
+      "title": "Biceps Curl: V-Sit on Dome with Dumbbells",
+      "equipment": [
+        "dumbbell",
+        "bosu ball"
+      ],
+      "primary": [
+        "biceps brachii"
+      ],
+      "secondary": [
+        "abdominals",
+        "core"
+      ]
+    },
+    {
+      "id": "0270",
+      "title": "Ankle Circles",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "gastrocnemius",
+        "soleus"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0271",
+      "title": "Balance Board",
+      "equipment": [
+        "balance board"
+      ],
+      "primary": [
+        "gastrocnemius",
+        "soleus"
+      ],
+      "secondary": [
+        "quadriceps",
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0272",
+      "title": "Seated Calf Raise with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "gastrocnemius",
+        "soleus"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0273",
+      "title": "Calves Press on Leg Machine",
+      "equipment": [
+        "machine"
+      ],
+      "primary": [
+        "gastrocnemius",
+        "soleus"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0274",
+      "title": "Calf Raises with Band",
+      "equipment": [
+        "exercise band"
+      ],
+      "primary": [
+        "gastrocnemius",
+        "soleus"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0275",
+      "title": "Donkey Calf Raises",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "gastrocnemius",
+        "soleus"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0276",
+      "title": "Seated One Leg Calf Raise with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "gastrocnemius",
+        "soleus"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0277",
+      "title": "Knee Circles",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "gastrocnemius",
+        "soleus"
+      ],
+      "secondary": [
+        "ischiocrural muscles"
+      ]
+    },
+    {
+      "id": "0278",
+      "title": "Rocking Standing Calf Raise with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "gastrocnemius",
+        "soleus"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0279",
+      "title": "Seated Calf Raise using Machine",
+      "equipment": [
+        "machine"
+      ],
+      "primary": [
+        "gastrocnemius",
+        "soleus"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0280",
+      "title": "Smith Machine Reverse Calf Raises",
+      "equipment": [
+        "smith machine"
+      ],
+      "primary": [
+        "gastrocnemius",
+        "soleus"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0281",
+      "title": "Standing Barbell Calf Raise",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "gastrocnemius",
+        "soleus"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0282",
+      "title": "Standing Calf Raises using Machine",
+      "equipment": [
+        "machine"
+      ],
+      "primary": [
+        "gastrocnemius",
+        "soleus"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0283",
+      "title": "Standing Calf Raise with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "gastrocnemius",
+        "soleus"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0284",
+      "title": "Air Bike",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "abdominals"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0285",
+      "title": "Ab Rollout with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "abdominals"
+      ],
+      "secondary": [
+        "erector spinae",
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0286",
+      "title": "Ab Rollout on Knees with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "abdominals"
+      ],
+      "secondary": [
+        "erector spinae",
+        "deltoid"
+      ]
+    },
+    {
+      "id": "0287",
+      "title": "Bent Knee Hip Raise",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "abdominals"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0288",
+      "title": "Seated Ab Crunch with Cable",
+      "equipment": [
+        "cable"
+      ],
+      "primary": [
+        "abdominals"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0289",
+      "title": "Cross Body Crunch",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "abdominals"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0290",
+      "title": "Crunches with Legs on Stability Ball",
+      "equipment": [
+        "stability ball"
+      ],
+      "primary": [
+        "abdominals"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0291",
+      "title": "Crunches",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "abdominals"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0292",
+      "title": "Decline Crunch",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "abdominals"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0293",
+      "title": "Decline Oblique Crunch",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "abdominals"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0294",
+      "title": "Side Bend with Dumbbell",
+      "equipment": [
+        "dumbbell"
+      ],
+      "primary": [
+        "abdominals"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0295",
+      "title": "Stability Ball Abdominal Crunch",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "abdominals"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0296",
+      "title": "Exercise Ball Pull In",
+      "equipment": [
+        "body"
+      ],
+      "primary": [
+        "abdominals"
+      ],
+      "secondary": []
+    },
+    {
+      "id": "0298",
+      "title": "Bent Over Row with Barbell",
+      "equipment": [
+        "barbell"
+      ],
+      "primary": [
+        "latissimus dorsi"
+      ],
+      "secondary": [
+        "biceps brachii"
+      ]
+    },
+    {
+      "id": "0300",
+      "title": "Cuban Dumbbell Press",
+      "equipment": [
+        "dumbbells"
+      ],
+      "primary": [
+        "deltoid"
+      ],
+      "secondary": [
+        "latissimus dorsi"
+      ]
+    },
+    {
+      "id": "0302",
+      "title": "Bench Press: Smith Machine (Incline)",
+      "equipment": [
+        "smith machine"
+      ],
+      "primary": [
+        "pectoralis major"
+      ],
+      "secondary": [
+        "triceps brachii"
+      ]
+    }
+  ]
+}

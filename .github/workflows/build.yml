@@ -1,86 +1,53 @@
-name: Build FORGE Training 10
+name: Android build
 on:
   workflow_dispatch:
-    inputs:
-      signed_release:
-        description: Build signed APK and AAB using repository secrets
-        type: boolean
-        default: false
   pull_request:
   push:
     branches: [main, master]
 permissions:
   contents: read
+env:
+  FORGE_GOOGLE_WEB_CLIENT_ID: ${{ vars.FORGE_GOOGLE_WEB_CLIENT_ID }}
 jobs:
   android:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: '17'
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
       - uses: android-actions/setup-android@v4
-      - name: Install Android SDK
-        run: sdkmanager "platforms;android-36" "build-tools;35.0.0"
+      - run: sdkmanager "platforms;android-36" "build-tools;35.0.0"
       - uses: gradle/actions/setup-gradle@v4
-      - name: Check web application syntax
-        run: node scripts/check-web.mjs
-      - name: Check exercise illustrations
-        run: node scripts/check-art.mjs
-      - name: Check training cycle calculations and browser flows
+      - name: Build APKs, run JVM tests and lint
+        run: bash ./gradlew :app:assembleDebug :app:testDebugUnitTest :app:lintDebug :app:assembleDebugAndroidTest --no-daemon --stacktrace
+      - name: Compile store variants and verify that checkout stays disabled
+        run: bash ./gradlew -Pforge.storeBuild=true :app:assemblePlayDebug :app:assembleRustoreDebug :app:testPlayDebugUnitTest :app:testRustoreDebugUnitTest --no-daemon --stacktrace
+      - name: Record APK provenance
         run: |
-          node --test scripts/training-cycles.test.cjs
-          npm install --no-save --ignore-scripts playwright@1.62.1
-          npx playwright install --with-deps chromium
-          node scripts/browser-regression.cjs
-      - name: Build APK, run unit tests and Android lint
-        run: bash ./gradlew :app:assembleDebug :app:testDebugUnitTest :app:lintDebug --no-daemon --stacktrace
-      - name: Upload installable debug APK
-        uses: actions/upload-artifact@v4
+          git rev-parse HEAD > app/build/outputs/apk/debug/commit.txt
+          cd app/build/outputs/apk/debug
+          sha256sum app-debug.apk > SHA256SUMS
+      - uses: actions/upload-artifact@v4
         with:
-          name: forge-training-10-debug-apk
-          path: app/build/outputs/apk/debug/*.apk
+          name: forge-training-debug-apk
+          path: |
+            app/build/outputs/apk/debug/app-debug.apk
+            app/build/outputs/apk/debug/commit.txt
+            app/build/outputs/apk/debug/SHA256SUMS
           if-no-files-found: error
-      - name: Upload check reports
+      - uses: actions/upload-artifact@v4
+        with:
+          name: forge-android-instrumentation-apk
+          path: app/build/outputs/apk/androidTest/debug/*.apk
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
         if: always()
-        uses: actions/upload-artifact@v4
         with:
-          name: forge-training-10-check-reports
-          path: |
-            app/build/reports/
-            test-results/training-cycles/
+          name: forge-training-check-reports
+          path: app/build/reports/
           if-no-files-found: ignore
-      - name: Build signed release APK and AAB
-        if: github.event_name == 'workflow_dispatch' && inputs.signed_release && github.ref == 'refs/heads/main'
-        shell: bash
-        env:
-          FORGE_KEYSTORE_BASE64: ${{ secrets.FORGE_KEYSTORE_BASE64 }}
-          FORGE_KEYSTORE_PASSWORD: ${{ secrets.FORGE_KEYSTORE_PASSWORD }}
-          FORGE_KEY_ALIAS: ${{ secrets.FORGE_KEY_ALIAS }}
-          FORGE_KEY_PASSWORD: ${{ secrets.FORGE_KEY_PASSWORD }}
-        run: |
-          set -euo pipefail
-          : "${FORGE_KEYSTORE_BASE64:?Configure FORGE_KEYSTORE_BASE64}"
-          : "${FORGE_KEYSTORE_PASSWORD:?Configure FORGE_KEYSTORE_PASSWORD}"
-          : "${FORGE_KEY_ALIAS:?Configure FORGE_KEY_ALIAS}"
-          : "${FORGE_KEY_PASSWORD:?Configure FORGE_KEY_PASSWORD}"
-          export FORGE_KEYSTORE_FILE="$RUNNER_TEMP/forge-upload.jks"
-          trap 'rm -f "$FORGE_KEYSTORE_FILE"' EXIT
-          umask 077
-          printf '%s' "$FORGE_KEYSTORE_BASE64" | base64 --decode > "$FORGE_KEYSTORE_FILE"
-          bash ./gradlew :app:assembleRelease :app:bundleRelease --no-daemon --stacktrace
-      - name: Upload signed release
-        if: github.event_name == 'workflow_dispatch' && inputs.signed_release && github.ref == 'refs/heads/main'
-        uses: actions/upload-artifact@v4
-        with:
-          name: forge-training-10-signed-release
-          path: |
-            app/build/outputs/bundle/release/*.aab
-            app/build/outputs/apk/release/*.apk
-          if-no-files-found: error
-

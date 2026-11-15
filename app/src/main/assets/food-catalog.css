@@ -1,0 +1,205 @@
+#foodcatalog .food-catalog {
+  display: grid;
+  gap: var(--fp-s3);
+}
+
+.food-catalog [hidden] {
+  display: none !important;
+}
+
+.food-catalog-search {
+  position: relative;
+}
+
+.food-catalog-search input {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 52px 10px 12px;
+  background: var(--fp-sunken);
+  color: var(--fp-text);
+  border: 1px solid var(--fp-line);
+  border-radius: var(--fp-r1);
+  font-size: 1rem;
+}
+
+.food-catalog-search input::placeholder {
+  color: var(--fp-secondary);
+}
+
+.food-catalog-search-clear {
+  position: absolute;
+  inset: 0 0 0 auto;
+  min-width: 44px;
+  background: none;
+  color: var(--fp-secondary);
+  border: 0;
+  border-radius: var(--fp-r1);
+  font-size: 1.25rem;
+}
+
+.food-catalog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--fp-s2);
+  row-gap: var(--fp-s1);
+}
+
+.food-catalog-quick-actions {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+}
+
+.food-catalog-actions .fp-btn,
+.food-catalog-categories .fp-btn {
+  min-height: 44px;
+  padding: 6px 8px;
+  border-radius: var(--fp-r1);
+  font-size: .8125rem;
+}
+
+.food-catalog-sources {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  background: var(--fp-surface);
+  border: 1px solid var(--fp-line);
+  border-radius: var(--fp-r1);
+}
+
+.food-catalog-sources button {
+  min-width: 0;
+  min-height: 46px;
+  padding: 6px 3px;
+  background: transparent;
+  color: var(--fp-text);
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 8px;
+  font-size: .8125rem;
+  font-weight: 700;
+  line-height: 1.2;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.food-catalog-sources button[aria-pressed="true"] {
+  background: var(--fp-raised);
+  color: var(--fp-primary);
+  border-bottom-color: var(--fp-primary);
+}
+
+.food-catalog-categories {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--fp-s2);
+  align-items: start;
+}
+
+.food-catalog-category-scroll {
+  display: flex;
+  gap: var(--fp-s2);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: thin;
+  padding: 2px 2px 5px;
+}
+
+.food-catalog-category-scroll button,
+#forgeFoodCategorySheet button {
+  min-height: 44px;
+  padding: 8px 12px;
+  background: var(--fp-surface);
+  color: var(--fp-text);
+  border: 1px solid var(--fp-line);
+  border-radius: var(--fp-r1);
+  font-size: .875rem;
+}
+
+.food-catalog-category-scroll button {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.food-catalog-category-scroll button[aria-pressed="true"],
+#forgeFoodCategorySheet button[aria-pressed="true"] {
+  color: var(--fp-primary);
+  border-color: var(--fp-primary);
+}
+
+#forgeFoodCategorySheet {
+  display: grid;
+  gap: var(--fp-s2);
+}
+
+#forgeFoodCategorySheet button {
+  background: var(--fp-sunken);
+  text-align: left;
+}
+
+.food-catalog-results {
+  display: grid;
+  gap: var(--fp-s2);
+}
+
+.food-catalog-result-count {
+  color: var(--fp-secondary);
+  font-size: .8125rem;
+}
+
+.food-catalog .food-catalog-result {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: var(--fp-s2);
+  padding: 10px;
+  border: 1px solid var(--fp-line);
+  border-radius: var(--fp-r1);
+  background: var(--fp-surface);
+}
+
+.food-catalog-result h2 {
+  margin: 0 0 4px;
+  font-size: .9375rem;
+  overflow-wrap: anywhere;
+}
+
+.food-catalog-result p,
+.food-catalog-attribution {
+  margin: 0;
+  color: var(--fp-secondary);
+  font-size: .8125rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.food-catalog-result .forge-star,
+.food-catalog-result .forge-plus {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--fp-line);
+  border-radius: var(--fp-r1);
+  font-size: 1.125rem;
+}
+
+@media (max-width: 360px) {
+  #foodcatalog .food-catalog { gap: 10px; }
+  .food-catalog-sources button { font-size: .75rem; }
+  .food-catalog-actions .fp-btn { padding-inline: 6px; font-size: .75rem; }
+}
+
+.food-catalog-result .forge-star {
+  background: var(--fp-sunken);
+  color: var(--fp-secondary);
+}
+
+.food-catalog-result .forge-star[aria-pressed="true"],
+.food-catalog-attribution a {
+  color: var(--fp-primary);
+}
+
+.food-catalog-result .forge-plus {
+  background: var(--fp-raised);
+  color: var(--fp-primary);
+}
