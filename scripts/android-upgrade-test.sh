@@ -12,7 +12,7 @@ instrument() {
   grep -Eq '^OK \([1-9][0-9]* tests?\)' "test-results/$name.txt"
 }
 
-baseline="$RUNNER_TEMP/forge-previous/app/build/outputs/apk/debug/app-debug.apk"
+baseline="$RUNNER_TEMP/forge-baseline.apk"
 candidate=app/build/outputs/apk/debug/app-debug.apk
 signer="$ANDROID_HOME/build-tools/35.0.0/apksigner"
 "$signer" verify --print-certs "$baseline" | tee test-results/baseline-signer.txt

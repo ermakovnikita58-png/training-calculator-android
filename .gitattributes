@@ -3,3 +3,5 @@ gradlew text eol=lf
 *.bat text eol=crlf
 *.yml text eol=lf
 *.jar binary
+app/src/main/assets/exercise-art/**/*.svg text eol=lf
+app/src/main/assets/exercise-contours/**/*.svg text eol=lf

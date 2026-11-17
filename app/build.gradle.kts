@@ -77,6 +77,10 @@ kotlin {
     }
 }
 ksp { arg("room.schemaLocation", "$projectDir/schemas") }
+if (storeBuild) {
+    configurations.maybeCreate("playDebugImplementation")
+    configurations.maybeCreate("rustoreDebugImplementation")
+}
 dependencies {
     if (storeBuild) {
         add("playDebugImplementation", "com.android.billingclient:billing:9.1.0")

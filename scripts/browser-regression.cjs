@@ -49,6 +49,7 @@ async function checkCycle(page) {
  const context=page.context();
  await context.setOffline(true);
  page.setDefaultTimeout(8000);
+ page.setDefaultNavigationTimeout(30000);
  page.on('dialog',dialog=>dialog.accept());
  await page.evaluate(()=>{
   closeModal();
@@ -80,7 +81,10 @@ async function checkCycle(page) {
  const fc=page.locator('#forge-cycle');
  const action=(name,root=fc)=>root.locator('[data-fc="'+name+'"]');
  await action('new',page.locator('#plan')).click();
- const [start,end]=await page.evaluate(()=>[today(),ForgeCycleModel.addDays(today(),50)]);
+ const [start,end]=await page.evaluate(()=>{
+  const monday=ForgeCycleModel.addDays(today(),(8-new Date().getDay())%7);
+  return [monday,ForgeCycleModel.addDays(monday,50)];
+ });
  await fc.locator('[name="start"]').fill(start);
  await fc.locator('[name="end"]').fill(dayBefore(start));
  await fc.locator('[name="program"]').nth(0).check();
@@ -90,7 +94,9 @@ async function checkCycle(page) {
  await action('create').click();
  assert.equal(await fc.locator('[data-select]').count(),20);
  const chosen=fc.locator('.fc-choice').filter({hasText:'Статическое удержание на луч'});
- await fc.locator('[data-select]').first().check();
+ const firstExercise=fc.locator('[data-select]').first();
+ const selectedRow=await firstExercise.getAttribute('data-select');
+ await firstExercise.check();
  await chosen.locator('[data-select]').check();
  await shot('exercise-selection');
  await action('next').click();
@@ -111,7 +117,7 @@ async function checkCycle(page) {
  await action('next').click();
  assert.equal(await fc.locator('[name="week"] option').count(),8);
  await fc.locator('[name="week"]').selectOption('6');
- assert.match(await fc.locator('[data-load-summary]').first().textContent(),/95%.*38 кг до округления/);
+ assert.match(await fc.locator('[data-load="'+selectedRow+'"] [data-load-summary]').textContent(),/95%.*38 кг до округления/);
  for(const [width,height] of [[360,800],[390,844],[412,915],[844,390]]){
   await page.setViewportSize({width,height});
   assert.equal(await fc.evaluate(dialog=>dialog.scrollWidth<=dialog.clientWidth+1 && dialog.getBoundingClientRect().bottom<=innerHeight),true);
