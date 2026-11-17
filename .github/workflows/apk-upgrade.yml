@@ -37,6 +37,7 @@ jobs:
             commit: 3f330432fe5d7bcdaeabbcc038e0aabceb2a49ed
             api: 35
             ci_artifact: '13860350353'
+            ci_run: '43027626844'
             digest: 'b2d65d9e531f7e116775e19479bb743d0656e05e708701cdca8ec54c9e5c04a0'
           - version: '11.4.1'
             version_code: '26'
@@ -68,6 +69,7 @@ jobs:
           BASE_CODE: ${{ matrix.version_code }}
           BASE_ASSET: ${{ matrix.release_asset }}
           BASE_ARTIFACT: ${{ matrix.ci_artifact }}
+          BASE_RUN: ${{ matrix.ci_run }}
           BASE_DIGEST: ${{ matrix.digest }}
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -88,23 +90,29 @@ jobs:
             fi
           elif [[ -n "$BASE_ARTIFACT" ]]; then
             archive="$RUNNER_TEMP/forge-history.zip"
+            [[ "$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$BASE_RUN" --jq '.head_sha')" == "$BASE_SHA" ]]
             gh api "repos/$GITHUB_REPOSITORY/actions/artifacts/$BASE_ARTIFACT/zip" > "$archive"
             printf '%s  %s\n' "$BASE_DIGEST" "$archive" | sha256sum -c -
-            [[ "$(unzip -p "$archive" commit.txt | tr -d '\r\n')" == "$BASE_SHA" ]]
             unzip -p "$archive" app-debug.apk > "$original"
             printf 'Historical CI artifact %s, copied with a runner test signature\n' "$BASE_ARTIFACT" > test-results/baseline-origin.txt
           fi
-          if [[ -f test-results/baseline-origin.txt ]]; then
-            "$signer" verify --print-certs "$original" > test-results/original-signer.txt
-            sha256sum "$original" > test-results/original-SHA256SUMS
-            "$signer" sign --ks "$HOME/.android/debug.keystore" --ks-pass pass:android --key-pass pass:android --ks-key-alias androiddebugkey --out "$baseline" "$original"
-          else
+          if [[ ! -f test-results/baseline-origin.txt ]]; then
             git fetch origin "$BASE_SHA"
             git worktree add --detach "$RUNNER_TEMP/forge-previous" FETCH_HEAD
             (cd "$RUNNER_TEMP/forge-previous" && bash ./gradlew :app:assembleDebug --no-daemon)
-            cp "$RUNNER_TEMP/forge-previous/app/build/outputs/apk/debug/app-debug.apk" "$baseline"
+            cp "$RUNNER_TEMP/forge-previous/app/build/outputs/apk/debug/app-debug.apk" "$original"
             printf 'Source rebuilt at %s; original distribution APK unavailable to the runner\n' "$BASE_SHA" > test-results/baseline-origin.txt
           fi
+          "$signer" verify --print-certs "$original" > test-results/original-signer.txt
+          sha256sum "$original" > test-results/original-SHA256SUMS
+          keystore="$RUNNER_TEMP/forge-emulator.jks"
+          keytool -genkeypair -keystore "$keystore" -storepass android -keypass android -alias emulator -dname 'CN=FORGE emulator QA' -keyalg RSA -keysize 2048 -validity 30
+          sign_for_emulator() {
+            "$signer" sign --ks "$keystore" --ks-pass pass:android --key-pass pass:android --ks-key-alias emulator --out "$2" "$1"
+          }
+          sign_for_emulator "$original" "$baseline"
+          sign_for_emulator app/build/outputs/apk/debug/app-debug.apk "$RUNNER_TEMP/forge-candidate.apk"
+          sign_for_emulator app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk "$RUNNER_TEMP/forge-instrumentation.apk"
           cat test-results/baseline-origin.txt
       - name: Enable emulator hardware acceleration
         run: |

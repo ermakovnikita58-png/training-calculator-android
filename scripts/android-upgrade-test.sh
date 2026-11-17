@@ -13,7 +13,7 @@ instrument() {
 }
 
 baseline="$RUNNER_TEMP/forge-baseline.apk"
-candidate=app/build/outputs/apk/debug/app-debug.apk
+candidate="$RUNNER_TEMP/forge-candidate.apk"
 signer="$ANDROID_HOME/build-tools/35.0.0/apksigner"
 "$signer" verify --print-certs "$baseline" | tee test-results/baseline-signer.txt
 "$signer" verify --print-certs "$candidate" | tee test-results/candidate-signer.txt
@@ -21,7 +21,7 @@ diff <(grep 'Signer #1 certificate SHA-256 digest:' test-results/baseline-signer
 sha256sum "$baseline" "$candidate" > test-results/apk-SHA256SUMS
 adb shell getprop ro.build.version.sdk | tee test-results/android-api.txt
 adb install "$baseline"
-adb install app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+adb install "$RUNNER_TEMP/forge-instrumentation.apk"
 instrument upgrade-seed -e forgeUpgrade seed -e forgeBaseCode "$BASE_VERSION_CODE" -e class "$app.UpgradePersistenceTest#seedPreviousVersion"
 adb shell am force-stop "$app"
 adb install -r "$candidate"

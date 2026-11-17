@@ -32,7 +32,8 @@ async function uploadJson(page, text) {
       const name = "Подъём O'Брайена <контур> & штанга";
       const draft = { id: 'fixture-active', name, date: today(), start: Date.now(),
         exercises: [{ name, sets: [{ weight: 30, reps: 5, done: false }] }] };
-      const next = { ...state, customExercises: [name], active: draft, foods: [
+      const next = { ...state, customExercises: [name], active: draft,
+        weights: [{ date: today(), weight: 74, note: 'Замер <утром> & после отдыха' }], foods: [
         { id: "еда' & 1", date: today(), name: 'Тестовый продукт', cal: 70, protein: 2, carbs: 10, fat: 2 }
       ], n9UserPhotos: { [name]: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/s9sAAAAASUVORK5CYII=' } };
       forgeCommitDiary(next);
@@ -40,6 +41,7 @@ async function uploadJson(page, text) {
     });
     await page.reload();
     assert.equal(await page.evaluate(() => state.active.exercises[0].sets[0].weight), 30);
+    assert.equal(await page.locator('#weightHistory .pill').textContent(), 'Замер <утром> & после отдыха');
 
     const failed = await page.evaluate(() => {
       const previous = localStorage.getItem('forge_v2');

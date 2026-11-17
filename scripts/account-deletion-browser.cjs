@@ -31,7 +31,8 @@ async function run() {
         assert.equal(url.searchParams.get('provider'), 'google');
         assert.equal(url.searchParams.get('code_challenge_method'), 's256');
         challenge = url.searchParams.get('code_challenge');
-        return route.fulfill({ status: 302, headers: { location: address + '?code=synthetic-code' } });
+        return route.fulfill({ contentType: 'text/html; charset=utf-8', body:
+          '<!doctype html><a href="' + address + '?code=synthetic-code">Тестовый аккаунт Google</a>' });
       }
       if (url.pathname === '/auth/v1/token') {
         const grant = url.searchParams.get('grant_type');
@@ -69,6 +70,7 @@ async function run() {
     assert.deepEqual(deletes, [{ confirm: true }, { confirm: true }]);
 
     await page.getByRole('button', { name: 'Войти через Google' }).click();
+    await page.getByRole('link', { name: 'Тестовый аккаунт Google' }).click();
     await page.getByText(session.user.email, { exact: false }).waitFor();
     assert.equal(page.url(), address);
     assert.equal(pkceExchanged, true);
