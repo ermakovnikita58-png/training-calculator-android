@@ -27,11 +27,37 @@ jobs:
         run: bash ./gradlew :app:assembleDebug :app:testDebugUnitTest :app:lintDebug :app:assembleDebugAndroidTest --no-daemon --stacktrace
       - name: Compile store variants and verify that checkout stays disabled
         run: bash ./gradlew -Pforge.storeBuild=true :app:assemblePlayDebug :app:assembleRustoreDebug :app:testPlayDebugUnitTest :app:testRustoreDebugUnitTest --no-daemon --stacktrace
-      - name: Record APK provenance
+      - name: Build unsigned free store variants
+        run: bash ./gradlew -Pforge.storeBuild=true :app:assemblePlayRelease :app:bundlePlayRelease :app:assembleRustoreRelease :app:lintPlayRelease :app:lintRustoreRelease --no-daemon --stacktrace
+      - name: Check store dependencies, permissions and 16 KB alignment
+        shell: bash
         run: |
-          git rev-parse HEAD > app/build/outputs/apk/debug/commit.txt
+          set -euo pipefail
+          tools="$ANDROID_HOME/build-tools/35.0.0"
+          mkdir -p store-preflight
+          play_apk=app/build/outputs/apk/play/release/app-play-release-unsigned.apk
+          rustore_apk=app/build/outputs/apk/rustore/release/app-rustore-release-unsigned.apk
+          play_aab=app/build/outputs/bundle/playRelease/app-play-release.aab
+          for store in play rustore; do
+            apk=app/build/outputs/apk/$store/release/app-$store-release-unsigned.apk
+            "$tools/aapt" dump permissions "$apk" > "store-preflight/$store-permissions.txt"
+            if grep -E 'com\.android\.vending\.BILLING|android\.permission\.health\.' "store-preflight/$store-permissions.txt"; then exit 1; fi
+            bash ./gradlew -Pforge.storeBuild=true :app:dependencies --configuration "${store}ReleaseRuntimeClasspath" --no-daemon > "store-preflight/$store-dependencies.txt"
+            if grep -E 'com\.android\.billingclient|ru\.rustore\.sdk:pay' "store-preflight/$store-dependencies.txt"; then exit 1; fi
+            "$tools/zipalign" -c -P 16 -v 4 "$apk" > "store-preflight/$store-zipalign.txt"
+          done
+          python3 scripts/android-release-check.py "$play_aab" "$play_apk" "$rustore_apk" | tee store-preflight/elf.txt
+          git rev-parse HEAD > store-preflight/commit.txt
+          sha256sum "$play_aab" "$play_apk" "$rustore_apk" > store-preflight/SHA256SUMS
+      - name: Record APK provenance and signing certificate
+        run: |
+          set -euo pipefail
+          tools="$ANDROID_HOME/build-tools/35.0.0"
           cd app/build/outputs/apk/debug
+          git rev-parse HEAD > commit.txt
           sha256sum app-debug.apk > SHA256SUMS
+          "$tools/apksigner" verify --verbose --print-certs app-debug.apk > signer.txt
+          "$tools/aapt" dump badging app-debug.apk > package.txt
       - uses: actions/upload-artifact@v4
         with:
           name: forge-training-debug-apk
@@ -39,6 +65,16 @@ jobs:
             app/build/outputs/apk/debug/app-debug.apk
             app/build/outputs/apk/debug/commit.txt
             app/build/outputs/apk/debug/SHA256SUMS
+            app/build/outputs/apk/debug/signer.txt
+            app/build/outputs/apk/debug/package.txt
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        with:
+          name: forge-unsigned-store-preflight
+          path: |
+            app/build/outputs/bundle/playRelease/*.aab
+            app/build/outputs/apk/rustore/release/*-unsigned.apk
+            store-preflight/
           if-no-files-found: error
       - uses: actions/upload-artifact@v4
         with:
@@ -49,5 +85,8 @@ jobs:
         if: always()
         with:
           name: forge-training-check-reports
-          path: app/build/reports/
+          path: |
+            app/build/reports/
+            app/build/test-results/
+            store-preflight/*.txt
           if-no-files-found: ignore

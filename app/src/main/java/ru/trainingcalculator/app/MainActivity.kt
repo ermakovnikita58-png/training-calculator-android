@@ -450,7 +450,11 @@ class MainActivity : ComponentActivity() {
                         .put("Open Food Facts", "по запросу пользователя")
                         .put("Crashlytics", if (diagnostics.configured()) "проект задан" else "нет проекта")
                         .put("PostHog", if (AnalyticsService.configured) "проект задан" else "нет проекта")
-                        .put("Health Connect", if (ForgeHealth.available(this)) "доступен по запросу" else "нужен Android 14 или новее")
+                        .put("Health Connect", when {
+                            !BuildConfig.FORGE_ENABLE_HEALTH_CONNECT -> "выключен в этой сборке"
+                            ForgeHealth.available(this) -> "доступен по запросу"
+                            else -> "нужен Android 14 или новее"
+                        })
                         .put("Платежи", "отключены"))
                 }
             }

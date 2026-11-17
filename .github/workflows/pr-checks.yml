@@ -12,6 +12,8 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -26,6 +28,10 @@ jobs:
       - run: npm run test:cloud-snapshot
       - run: npm run test:commerce-sandbox
       - run: node scripts/check-art-coverage.cjs
+      - run: node --test scripts/delete-account.test.mjs
+      - run: node scripts/release-data-browser.cjs
+      - run: node scripts/account-deletion-browser.cjs
+      - run: npm audit --audit-level=high
       - uses: actions/upload-artifact@v4
         if: always()
         with:

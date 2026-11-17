@@ -22,7 +22,8 @@ import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
 
 internal object ForgeHealth {
-    fun available(context: Context) = Build.VERSION.SDK_INT >= 34 && service(context) != null
+    fun available(context: Context) =
+        BuildConfig.FORGE_ENABLE_HEALTH_CONNECT && Build.VERSION.SDK_INT >= 34 && service(context) != null
 
     @RequiresApi(34)
     private fun service(context: Context) = context.getSystemService(HealthConnectManager::class.java)

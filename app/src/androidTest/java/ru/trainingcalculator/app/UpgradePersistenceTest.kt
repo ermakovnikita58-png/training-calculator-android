@@ -84,7 +84,12 @@ class UpgradePersistenceTest {
                                     sets:[{exercise:'Жим штанги лёжа',weight:40,reps:8,done:true}]}],
                         foods: [{id:'upgrade-food', date:'2026-01-01', name:'Upgrade food', grams:100, cal:100, protein:3, carbs:13, fat:4}],
                         weights: [{date:'2026-01-01',weight:74,note:'Проверка обновления'}],
-                        n10Recipes: [{id:'upgrade-recipe', name:'Upgrade recipe', items:[]}]
+                        n10Recipes: [{id:'upgrade-recipe', name:'Upgrade recipe', items:[]}],
+                        customExercises: ['Upgrade custom exercise'],
+                        n9UserPhotos: {'Upgrade custom exercise':
+                          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/s9sAAAAASUVORK5CYII='},
+                        active: {id:'upgrade-draft', name:'Upgrade draft', date:'2026-01-02', start:Date.now(),
+                          exercises:[{name:'Upgrade custom exercise', sets:[{weight:22,reps:5,done:true,note:'Draft set'}]}]}
                     };
                     if (window.ForgeCycleModel) {
                       const cycle = ForgeCycleModel.createCycle(diary.programs[0],'2026-01-05','old-cycle');
@@ -105,6 +110,10 @@ class UpgradePersistenceTest {
                     return localStorage.getItem('forge_v2') === snapshot;
                 })()
             """.trimIndent()))
+            if (js(scenario, "!!window.AndroidBridge?.checkpoint") == "true") {
+                js(scenario, "AndroidBridge.checkpoint(localStorage.getItem('forge_v2'));true")
+                waitFor(scenario, "document.querySelector('#toast')?.textContent === 'Копия сохранена на устройстве'")
+            }
         }
     }
 
@@ -118,13 +127,14 @@ class UpgradePersistenceTest {
                     const previous = JSON.parse(localStorage.getItem('forge-ci-upgrade'));
                     const current = JSON.parse(localStorage.getItem('forge_v2'));
                     return !!previous && !!current && current.profile.name === ${JSONObject.quote(marker)} &&
-                        ['profile','programs','workouts','foods','weights','n10Recipes','trainingCycles'].every(
+                        ['profile','programs','workouts','foods','weights','n10Recipes','trainingCycles','customExercises','n9UserPhotos','active'].every(
                             key => JSON.stringify(current[key]) === JSON.stringify(previous[key]));
                 })()
             """.trimIndent()))
             scenario.recreate()
             waitForApp(scenario)
             assertEquals(JSONObject.quote(marker), js(scenario, "state.profile.name"))
+            assertEquals("22", js(scenario, "state.active.exercises[0].sets[0].weight"))
             if (js(scenario,"state.trainingCycles.length > 0") == "true") {
                 assertEquals("37.5", js(scenario, "state.workouts[0].trainingCycle.rows[0].weight"))
                 assertEquals("true", js(scenario, "ForgeCycleModel.validCycle(state.trainingCycles[0])"))
@@ -141,6 +151,7 @@ class UpgradePersistenceTest {
         assertEquals(1, Settings.Global.getInt(context.contentResolver, Settings.Global.AIRPLANE_MODE_ON, 0))
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             waitFor(scenario, "!!window.ForgeCycles")
+            js(scenario, "forgeCommitDiary({...state,active:null});true")
             js(scenario, "showPage('plan')")
             click(scenario, "#plan [data-fc=template][data-index='0']")
             click(scenario, "#forge-cycle [data-fc=template-save]")

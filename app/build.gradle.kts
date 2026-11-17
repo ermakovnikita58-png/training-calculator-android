@@ -31,12 +31,13 @@ android {
         minSdk = 24
         targetSdk = 36
         buildConfigField("boolean", "FORGE_ENABLE_PAYMENTS", "false")
+        buildConfigField("boolean", "FORGE_ENABLE_HEALTH_CONNECT", "false")
         buildConfigField("boolean", "FORGE_CRASH_CONFIGURED", crashConfigured.toString())
         buildConfigField("String", "FORGE_POSTHOG_KEY", "\"$posthogKey\"")
         buildConfigField("String", "FORGE_POSTHOG_HOST", "\"${if (posthogKey.isEmpty()) "" else posthogHost}\"")
         buildConfigField("String", "FORGE_GOOGLE_WEB_CLIENT_ID", "\"$googleWebClientId\"")
-        versionCode = 27
-        versionName = "11.4.2"
+        versionCode = 28
+        versionName = "11.4.3"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     if (storeBuild) {
@@ -57,6 +58,9 @@ android {
         }
     }
     buildTypes {
+        getByName("debug") {
+            buildConfigField("boolean", "FORGE_ENABLE_HEALTH_CONNECT", "true")
+        }
         getByName("release") {
             isMinifyEnabled = false
             if (uploadStorePath.isNotBlank()) signingConfig = signingConfigs.getByName("release")
@@ -75,9 +79,9 @@ kotlin {
 ksp { arg("room.schemaLocation", "$projectDir/schemas") }
 dependencies {
     if (storeBuild) {
-        add("playImplementation", "com.android.billingclient:billing:9.1.0")
-        add("rustoreImplementation", platform("ru.rustore.sdk:bom:2026.10.01"))
-        add("rustoreImplementation", "ru.rustore.sdk:pay")
+        add("playDebugImplementation", "com.android.billingclient:billing:9.1.0")
+        add("rustoreDebugImplementation", platform("ru.rustore.sdk:bom:2026.10.01"))
+        add("rustoreDebugImplementation", "ru.rustore.sdk:pay")
     }
     implementation(platform("com.google.firebase:firebase-bom:35.1.0"))
     implementation("com.google.firebase:firebase-crashlytics")

@@ -11,6 +11,7 @@
     <button class="btn secondary small" type="button" data-device="copy">Скопировать технический отчёт</button>
     <h2 class="cardtitle">Конфиденциальность и данные</h2>
     <p class="muted">Дневник хранится на устройстве. Облачная копия настраивается отдельно в разделе «Аккаунт». JSON можно сохранить для переноса на другой телефон.</p>
+    <p class="notice" id="forge-diary-recovery" role="status" hidden>Исходный дневник требует восстановления. «Экспорт JSON» сохранит его в исходном виде. Затем можно загрузить проверенную резервную копию.</p>
     <div class="grid2">
       <button class="btn secondary small" type="button" data-device="export">Экспорт JSON</button>
       <button class="btn secondary small" type="button" data-device="cloud">Аккаунт и синхронизация</button>
@@ -24,6 +25,7 @@
       <p class="muted">Дополнительные отчёты выключены по умолчанию. Аналитика считает только действия и не получает содержимое дневника. Для синхронизации используется отдельное согласие в разделе «Аккаунт».</p>
       <button class="btn secondary small" type="button" data-device="test-report" hidden>Отправить тест ошибки</button>
     </div>
+    <p class="muted"><a href="https://ermakovnikita58-png.github.io/training-calculator-android/privacy.html">Конфиденциальность</a> · <a href="https://ermakovnikita58-png.github.io/training-calculator-android/account-deletion.html">Удаление аккаунта</a></p>
     <div id="forge-health-options" hidden>
       <h2 class="cardtitle">Health Connect</h2>
       <p class="muted">Просмотр массы тела, шагов и активности за 7 дней. Тренировки и калории в FORGE остаются прежними. Массу можно отдельно добавить в дневник.</p>
@@ -41,6 +43,9 @@
       </div>
     </div>`;
   settings.append(card);
+  const recoveryNotice = card.querySelector('#forge-diary-recovery');
+  recoveryNotice.hidden = !window.ForgeDiaryStorage.needsRecovery();
+  window.addEventListener('forge:diary-recovered', () => { recoveryNotice.hidden = true; });
 
   let healthWeight = null;
   const healthReport = card.querySelector('#forge-health-report');
@@ -109,9 +114,8 @@
         }
         if (!confirm('Добавить в дневник ' + item.kg.toFixed(1) + ' кг за ' + item.date + '?')) break;
         const next = { ...state, weights: [...state.weights, { date: item.date, weight: item.kg, healthConnectId: item.id }] };
-        try { localStorage.setItem('forge_v2', JSON.stringify(next)); }
+        try { forgeCommitDiary(next); }
         catch { toast('Не удалось сохранить массу'); break; }
-        state = next;
         renderAll();
         toast('Измерение массы добавлено');
         break;
