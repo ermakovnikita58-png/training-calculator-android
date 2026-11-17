@@ -5,7 +5,10 @@ const FORGE_ART_DATA = {"exercises":{"жим штанги лежа":{"name":"Ж�
   const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const normalize = name => String(name || '').toLocaleLowerCase('ru').replaceAll('ё','е').trim();
   function entry(name) { return data.exercises[normalize(name)] || null; }
-  function personal(name) { return typeof state !== 'undefined' ? state.n9UserPhotos?.[name] : null; }
+  function personal(name) {
+    const photo = typeof state !== 'undefined' ? state.n9UserPhotos?.[name] : null;
+    return typeof photo === 'string' && /^data:image\/(?:png|jpeg|webp);base64,[A-Za-z0-9+/]+={0,2}$/.test(photo) ? photo : null;
+  }
   function source(name) { return personal(name) || entry(name)?.frames[0] || null; }
   function missingData(name) { return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180"><rect width="200" height="180" rx="20" fill="#17272b"/><text x="100" y="88" text-anchor="middle" fill="#b6c8c8" font-family="sans-serif" font-size="14">Своё упражнение</text><text x="100" y="112" text-anchor="middle" fill="#86a2a4" font-family="sans-serif" font-size="12">Добавьте рисунок</text></svg>'); }
   function thumb(name) { return `<img class="forge-exercise-art" loading="lazy" decoding="async" src="${escape(source(name) || missingData(name))}" alt="${escape(name)}">`; }

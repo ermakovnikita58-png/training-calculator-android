@@ -7,25 +7,50 @@ on:
       - '**/*.gradle.kts'
       - 'gradle/**'
       - '.github/workflows/apk-upgrade.yml'
+      - 'scripts/android-upgrade-test.sh'
 permissions:
   contents: read
+  actions: read
 env:
   FORGE_GOOGLE_WEB_CLIENT_ID: ${{ vars.FORGE_GOOGLE_WEB_CLIENT_ID }}
 jobs:
   upgrade:
-    name: Android upgrade from ${{ matrix.version }}
+    name: Android upgrade from ${{ matrix.version }} (API ${{ matrix.api }})
     runs-on: ubuntu-24.04
     timeout-minutes: 40
     strategy:
       fail-fast: false
       matrix:
         include:
-          - version: '11.3.0'
-            version_code: '24'
-            commit: 3f330432fe5d7bcdaeabbcc038e0aabceb2a49ed
           - version: '10.1.0'
             version_code: '12'
             commit: ce7d407d251ce5891b8f29bb15423f6afe2cde5f
+            api: 33
+          - version: '11.2.5'
+            version_code: '23'
+            commit: 234520966cfe51176e924979cd91480fac0eaba4
+            api: 34
+            release_asset: '732180966'
+            digest: '46640d63188791dcbfba33a38641e7c31ba0e4c849814beaadd5c8451170ae20'
+          - version: '11.3.0'
+            version_code: '24'
+            commit: 3f330432fe5d7bcdaeabbcc038e0aabceb2a49ed
+            api: 35
+            ci_artifact: '13860350353'
+            ci_run: '43027626844'
+            digest: 'b2d65d9e531f7e116775e19479bb743d0656e05e708701cdca8ec54c9e5c04a0'
+          - version: '11.4.1'
+            version_code: '26'
+            commit: e776f466fc86b04cf9d03db726f2ddecde28376a
+            api: 36
+            release_asset: '751005388'
+            digest: '290bed500d310fd5c6c2297dbb294ae6d768d37506b3e5be3544ae0acc2adbc4'
+          - version: '11.4.2'
+            version_code: '27'
+            commit: 28930a461fd2ffeb95c5fbe480c3be855e02c8f6
+            api: 36
+            release_asset: '751709344'
+            digest: 'ab1c67f2d2dfd65a22eace9c6c2b015f46bf9c7c6a463160741877ed0489e5e3'
     steps:
       - uses: actions/checkout@v4
         with:
@@ -37,15 +62,58 @@ jobs:
       - uses: android-actions/setup-android@v4
       - run: sdkmanager "platforms;android-36" "build-tools;35.0.0"
       - uses: gradle/actions/setup-gradle@v4
-      - name: Build baseline and candidate APKs with the same runner key
+      - name: Prepare and sign the baseline and candidate with the same runner key
         shell: bash
         env:
           BASE_SHA: ${{ matrix.commit }}
+          BASE_CODE: ${{ matrix.version_code }}
+          BASE_ASSET: ${{ matrix.release_asset }}
+          BASE_ARTIFACT: ${{ matrix.ci_artifact }}
+          BASE_RUN: ${{ matrix.ci_run }}
+          BASE_DIGEST: ${{ matrix.digest }}
+          GH_TOKEN: ${{ github.token }}
         run: |
-          git fetch origin "$BASE_SHA"
-          git worktree add --detach "$RUNNER_TEMP/forge-previous" FETCH_HEAD
-          (cd "$RUNNER_TEMP/forge-previous" && bash ./gradlew :app:assembleDebug --no-daemon)
+          set -euo pipefail
           bash ./gradlew :app:assembleDebug :app:assembleDebugAndroidTest --no-daemon
+          mkdir -p test-results
+          printf '%s\n' "$BASE_SHA" > test-results/baseline-commit.txt
+          git rev-parse HEAD > test-results/candidate-commit.txt
+          original="$RUNNER_TEMP/forge-original.apk"
+          baseline="$RUNNER_TEMP/forge-baseline.apk"
+          signer="$ANDROID_HOME/build-tools/35.0.0/apksigner"
+          if [[ -n "$BASE_ASSET" ]]; then
+            if gh api "repos/$GITHUB_REPOSITORY/releases/assets/$BASE_ASSET" -H 'Accept: application/octet-stream' > "$original"; then
+              printf '%s  %s\n' "$BASE_DIGEST" "$original" | sha256sum -c -
+              printf 'Release asset %s, copied with a runner test signature\n' "$BASE_ASSET" > test-results/baseline-origin.txt
+            elif [[ "$BASE_CODE" == 23 ]]; then
+              exit 1
+            fi
+          elif [[ -n "$BASE_ARTIFACT" ]]; then
+            archive="$RUNNER_TEMP/forge-history.zip"
+            [[ "$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$BASE_RUN" --jq '.head_sha')" == "$BASE_SHA" ]]
+            gh api "repos/$GITHUB_REPOSITORY/actions/artifacts/$BASE_ARTIFACT/zip" > "$archive"
+            printf '%s  %s\n' "$BASE_DIGEST" "$archive" | sha256sum -c -
+            unzip -p "$archive" app-debug.apk > "$original"
+            printf 'Historical CI artifact %s, copied with a runner test signature\n' "$BASE_ARTIFACT" > test-results/baseline-origin.txt
+          fi
+          if [[ ! -f test-results/baseline-origin.txt ]]; then
+            git fetch origin "$BASE_SHA"
+            git worktree add --detach "$RUNNER_TEMP/forge-previous" FETCH_HEAD
+            (cd "$RUNNER_TEMP/forge-previous" && bash ./gradlew :app:assembleDebug --no-daemon)
+            cp "$RUNNER_TEMP/forge-previous/app/build/outputs/apk/debug/app-debug.apk" "$original"
+            printf 'Source rebuilt at %s; original distribution APK unavailable to the runner\n' "$BASE_SHA" > test-results/baseline-origin.txt
+          fi
+          "$signer" verify --print-certs "$original" > test-results/original-signer.txt
+          sha256sum "$original" > test-results/original-SHA256SUMS
+          keystore="$RUNNER_TEMP/forge-emulator.jks"
+          keytool -genkeypair -keystore "$keystore" -storepass android -keypass android -alias emulator -dname 'CN=FORGE emulator QA' -keyalg RSA -keysize 2048 -validity 30
+          sign_for_emulator() {
+            "$signer" sign --ks "$keystore" --ks-pass pass:android --key-pass pass:android --ks-key-alias emulator --out "$2" "$1"
+          }
+          sign_for_emulator "$original" "$baseline"
+          sign_for_emulator app/build/outputs/apk/debug/app-debug.apk "$RUNNER_TEMP/forge-candidate.apk"
+          sign_for_emulator app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk "$RUNNER_TEMP/forge-instrumentation.apk"
+          cat test-results/baseline-origin.txt
       - name: Enable emulator hardware acceleration
         run: |
           echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
@@ -58,14 +126,14 @@ jobs:
           sudo apt-get install -y libpulse0
           for delay in 0 5 15; do
             sleep "$delay"
-            if sdkmanager "emulator" "system-images;android-35;google_apis;x86_64" && "$ANDROID_HOME/emulator/emulator" -version; then exit 0; fi
+            if sdkmanager "emulator" "system-images;android-${{ matrix.api }};google_apis;x86_64" && "$ANDROID_HOME/emulator/emulator" -version; then exit 0; fi
           done
           exit 1
       - uses: reactivecircus/android-emulator-runner@v2
         env:
           BASE_VERSION_CODE: ${{ matrix.version_code }}
         with:
-          api-level: 35
+          api-level: ${{ matrix.api }}
           arch: x86_64
           target: google_apis
           disable-animations: true

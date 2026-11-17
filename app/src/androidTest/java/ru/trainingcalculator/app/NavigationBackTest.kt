@@ -123,7 +123,10 @@ class NavigationBackTest {
             assertEquals("\"гантел\"", js(scenario, "document.getElementById('vs-query').value"))
             waitFor(scenario, "Math.abs(scrollY-200)<5")
             device.executeShellCommand("input keyevent KEYCODE_BACK")
-            waitFor(scenario, "ForgeExerciseLibrary.snapshot().group==='' && document.querySelectorAll('.vs-group').length===14")
+            waitFor(scenario, """
+                ForgeExerciseLibrary.snapshot().group === '' &&
+                document.querySelectorAll('.vs-group img[data-art-type="MUSCLE_GROUP_ART"]').length === 14
+            """.trimIndent())
             device.executeShellCommand("input keyevent KEYCODE_BACK")
             waitFor(scenario, "ForgeNavigation.inspect().current==='plan'")
             device.executeShellCommand("input keyevent KEYCODE_BACK")

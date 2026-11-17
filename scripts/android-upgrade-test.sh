@@ -12,10 +12,19 @@ instrument() {
   grep -Eq '^OK \([1-9][0-9]* tests?\)' "test-results/$name.txt"
 }
 
-adb install "$RUNNER_TEMP/forge-previous/app/build/outputs/apk/debug/app-debug.apk"
-adb install app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+baseline="$RUNNER_TEMP/forge-baseline.apk"
+candidate="$RUNNER_TEMP/forge-candidate.apk"
+signer="$ANDROID_HOME/build-tools/35.0.0/apksigner"
+"$signer" verify --print-certs "$baseline" | tee test-results/baseline-signer.txt
+"$signer" verify --print-certs "$candidate" | tee test-results/candidate-signer.txt
+diff <(grep 'Signer #1 certificate SHA-256 digest:' test-results/baseline-signer.txt) <(grep 'Signer #1 certificate SHA-256 digest:' test-results/candidate-signer.txt)
+sha256sum "$baseline" "$candidate" > test-results/apk-SHA256SUMS
+adb shell getprop ro.build.version.sdk | tee test-results/android-api.txt
+adb install "$baseline"
+adb install "$RUNNER_TEMP/forge-instrumentation.apk"
 instrument upgrade-seed -e forgeUpgrade seed -e forgeBaseCode "$BASE_VERSION_CODE" -e class "$app.UpgradePersistenceTest#seedPreviousVersion"
-adb install -r app/build/outputs/apk/debug/app-debug.apk
+adb shell am force-stop "$app"
+adb install -r "$candidate"
 adb shell cmd connectivity airplane-mode enable
 adb shell svc wifi disable
 adb shell svc data disable
@@ -26,7 +35,9 @@ for attempt in {1..20}; do
 done
 grep -q '^Active default network: none' test-results/emulator-connectivity.txt
 instrument upgrade-verify -e forgeUpgrade verify -e class "$app.UpgradePersistenceTest#verifyCandidateVersion"
-if [[ "$BASE_VERSION_CODE" == 12 ]]; then exit 0; fi
+adb shell am force-stop "$app"
+instrument offline-relaunch -e forgeUpgrade verify -e class "$app.UpgradePersistenceTest#verifyCandidateVersion"
+if [[ "$BASE_VERSION_CODE" != 24 ]]; then exit 0; fi
 instrument offline-device -e notClass "$app.UpgradePersistenceTest"
 instrument upgrade-cycles -e forgeUpgrade cycles -e class "$app.UpgradePersistenceTest#verifyCycleAfterUpgrade"
 
