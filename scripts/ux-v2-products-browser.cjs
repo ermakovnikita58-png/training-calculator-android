@@ -72,6 +72,46 @@ async function readableAndReachable(locator) {
       await page.getByRole('button', { name: 'Локальный каталог', exact: true }).click();
       assert.deepEqual((await inspect(page)).issues, []);
 
+      await scene(page, 'meals');
+      const templatesBefore = await page.evaluate(() => structuredClone(state.mealTemplates));
+      const mealsBefore = await page.evaluate(() => state.foods.length);
+      await page.locator('#meals [onclick="applyMealTemplate(0)"]').click();
+      assert.equal(await page.evaluate(() => state.foods.length), mealsBefore + 1);
+      assert.deepEqual(await page.evaluate(() => state.mealTemplates), templatesBefore);
+      await page.evaluate(() => forgeCommitDiary({ ...state, foods: [...state.foods, {
+        id: 'ux-yesterday', date: '2026-11-15', name: 'Вчерашний приём пищи',
+        grams: 150, cal: 180, protein: 15, fat: 4, carbs: 21
+      }] }));
+      await page.getByRole('button', { name: 'Вчерашний рацион', exact: false }).click();
+      const repeated = await page.evaluate(() => state.foods.filter(food => food.name === 'Вчерашний приём пищи'));
+      assert.equal(repeated.length, 2);
+      assert.notEqual(repeated[0].id, repeated[1].id);
+      assert.equal(repeated[1].date, '2026-11-16');
+      await page.getByRole('button', { name: 'Сохранить рацион', exact: false }).click();
+      await page.locator('#forgeMealName').fill('Рацион UX');
+      await page.getByRole('button', { name: 'Сохранить шаблон', exact: true }).click();
+      assert.equal(await page.evaluate(() => state.mealTemplates.length), templatesBefore.length + 1);
+      await page.reload();
+      assert.equal(await page.evaluate(() => state.mealTemplates.at(-1).name), 'Рацион UX');
+
+      await scene(page, 'recipes');
+      await page.getByRole('button', { name: 'Редактировать', exact: true }).click();
+      await page.locator('#n10RecipeName').fill('Омлет после проверки');
+      await page.getByRole('button', { name: 'Сохранить рецепт', exact: false }).click();
+      assert.equal(await page.evaluate(() => state.n10Recipes[0].name), 'Омлет после проверки');
+      const dialogs = [];
+      const recordDialog = dialog => dialogs.push(dialog.message());
+      page.on('dialog', recordDialog);
+      await page.evaluate(() => f6HandleAndroidBack());
+      page.off('dialog', recordDialog);
+      assert.deepEqual(dialogs, [], 'A saved recipe must not trigger an unsaved-changes warning');
+      await scene(page, 'recipes');
+      await page.getByRole('button', { name: 'В дневник', exact: false }).click();
+      assert.equal(await page.evaluate(() => state.foods.at(-1).name), 'Омлет после проверки');
+      assert.equal(await page.evaluate(() => state.foods.at(-1).cal), 168);
+      await page.reload();
+      assert.equal(await page.evaluate(() => state.foods.at(-1).name), 'Омлет после проверки');
+
       await scene(page, 'workout');
       await page.locator('#workout .n8-setgrid input').first().fill('63.5');
       await page.evaluate(() => ForgeViewport.keyboard(true));

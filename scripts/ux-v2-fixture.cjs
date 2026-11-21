@@ -12,7 +12,7 @@ async function openPage(browser, viewport, assets) {
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
   await page.clock.setFixedTime(date);
-  page.on('dialog', dialog => dialog.accept());
+  page.on('dialog', dialog => dialog.accept(dialog.type() === 'prompt' ? dialog.defaultValue() : undefined));
   await page.route('**/*', route => {
     const url = new URL(route.request().url());
     const file = path.resolve(assets, decodeURIComponent(url.pathname.replace(/^\/assets\//, '')));

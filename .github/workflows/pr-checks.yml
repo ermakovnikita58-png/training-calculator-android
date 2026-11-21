@@ -37,11 +37,8 @@ jobs:
       - run: node scripts/release-performance.cjs
       - run: node scripts/ux-v2-geometry.cjs
       - run: node scripts/ux-v2-products-browser.cjs
-      - name: Capture UX screenshot references for review
-        if: always()
+      - name: Compare rendered UX screenshots with reviewed references
         run: node scripts/ux-v2-visual.cjs
-        env:
-          FORGE_UX_REFERENCE_UPDATE: '1'
       - run: npm audit --audit-level=high
       - uses: actions/upload-artifact@v4
         if: always()

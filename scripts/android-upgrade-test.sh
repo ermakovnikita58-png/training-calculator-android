@@ -9,9 +9,12 @@ cleanup() {
   local status=$?
   set +e
   kill "$logcat_pid" "$memory_pid" 2>/dev/null
-  adb shell settings put system font_scale 1.0
-  adb logcat -d -t 2500 > test-results/emulator-logcat.txt
-  adb exec-out screencap -p > test-results/emulator-screen.png
+  timeout 10 adb shell settings put system font_scale 1.0
+  timeout 15 adb logcat -d -t 2500 > test-results/emulator-logcat.txt
+  timeout 15 adb exec-out screencap -p > test-results/emulator-screen.png
+  ps -eo pid,ppid,%cpu,%mem,rss,args > test-results/runner-processes.txt
+  df -h > test-results/runner-disk.txt
+  sudo dmesg -T | tail -80 > test-results/runner-kernel.txt
   exit "$status"
 }
 trap cleanup EXIT
@@ -21,7 +24,8 @@ runner="$app.test/androidx.test.runner.AndroidJUnitRunner"
 instrument() {
   local name=$1
   shift
-  adb shell am instrument -w -r "$@" "$runner" | tee "test-results/$name.txt"
+  printf 'Instrumentation stage %s at %s\n' "$name" "$(date -Iseconds)"
+  timeout 360 adb shell am instrument -w -r "$@" "$runner" | tee "test-results/$name.txt"
   grep -Eq '^OK \([1-9][0-9]* tests?\)' "test-results/$name.txt"
 }
 
@@ -33,11 +37,11 @@ signer="$ANDROID_HOME/build-tools/35.0.0/apksigner"
 diff <(grep 'Signer #1 certificate SHA-256 digest:' test-results/baseline-signer.txt) <(grep 'Signer #1 certificate SHA-256 digest:' test-results/candidate-signer.txt)
 sha256sum "$baseline" "$candidate" > test-results/apk-SHA256SUMS
 adb shell getprop ro.build.version.sdk | tee test-results/android-api.txt
-adb install --no-incremental "$baseline"
-adb install --no-incremental "$RUNNER_TEMP/forge-instrumentation.apk"
+timeout 120 adb install --no-incremental "$baseline"
+timeout 120 adb install --no-incremental "$RUNNER_TEMP/forge-instrumentation.apk"
 instrument upgrade-seed -e forgeUpgrade seed -e forgeBaseCode "$BASE_VERSION_CODE" -e class "$app.UpgradePersistenceTest#seedPreviousVersion"
 adb shell am force-stop "$app"
-adb install --no-incremental -r "$candidate"
+timeout 120 adb install --no-incremental -r "$candidate"
 adb shell cmd connectivity airplane-mode enable
 adb shell svc wifi disable
 adb shell svc data disable

@@ -136,6 +136,7 @@ jobs:
           done
           exit 1
       - uses: reactivecircus/android-emulator-runner@v2
+        timeout-minutes: 14
         env:
           BASE_VERSION_CODE: ${{ matrix.version_code }}
         with:
@@ -143,7 +144,8 @@ jobs:
           arch: x86_64
           target: google_apis
           disable-animations: true
-          emulator-options: -no-snapshot -no-window -gpu swiftshader -feature -Vulkan -noaudio -no-boot-anim -camera-back none -camera-front none -memory 2048 -cores 2
+          emulator-boot-timeout: 180
+          emulator-options: -no-snapshot -no-window -gpu software -feature -Vulkan -noaudio -no-boot-anim -camera-back none -camera-front none -memory 2048 -cores 2
           pre-emulator-launch-script: |
             sed -i '/^hw\.mainKeys[[:space:]]*=/d' "$ANDROID_AVD_HOME/test.avd/config.ini"
             printf '\nhw.mainKeys=no\n' >> "$ANDROID_AVD_HOME/test.avd/config.ini"
