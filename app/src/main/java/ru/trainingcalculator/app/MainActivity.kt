@@ -443,7 +443,8 @@ class MainActivity : ComponentActivity() {
                         checkpoint.getOrNull() != null -> "целостность проверена"
                         else -> "нет проверенной копии"
                     }
-                    result.put("kind", "diagnostics").put("details", JSONObject()
+                    result.put("kind", "diagnostics").put("checkpointAt", checkpoint.getOrNull()?.createdAt)
+                        .put("checkpointStatus", status).put("details", JSONObject()
                         .put("FORGE", "${BuildConfig.VERSION_NAME} (${BuildConfig.VERSION_CODE})")
                         .put("Android API", android.os.Build.VERSION.SDK_INT)
                         .put("WebView", webVersion)

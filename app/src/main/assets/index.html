@@ -188,7 +188,8 @@ function updateSet(ei,si,k,v){state.active.exercises[ei].sets[si][k]=+v;save()}f
  const sets=active.exercises.flatMap(entry=>entry.sets.filter(set=>set.done).map(set=>({...set,exercise:entry.name,
   ...(entry.exerciseId?{exerciseId:entry.exerciseId}:{}),...(entry.cycleRowId?{cycleRowId:entry.cycleRowId}:{})
  })));
- return {...active,sets,duration:Math.max(1,Math.round((Date.now()-(active.start||Date.now()))/60000)),note:state.activeNote};
+ const {quickLogUndo: discardedUndo, ...workout}=active;
+ return {...workout,sets,duration:Math.max(1,Math.round((Date.now()-(active.start||Date.now()))/60000)),note:state.activeNote};
 }
 function finishWorkout(){if(!state.active)return;state.workouts.unshift(forgeWorkoutRecord(state.active));state.active=null;state.activeNote='';if(!save())return;window.ForgeAnalytics?.('workout_completed');showPage('progress');toast('Тренировка сохранена! Отличная работа.')}function renderPlan(){let html=state.plans.map((d,i)=>`<div class="planrow"><div class="daybadge"><b>${esc(d.day)}</b><span>${i+1} ДЕНЬ</span></div><div class="grow" onclick="openModal('editPlan',${i})"><div class="strong">${esc(d.name)}</div><div class="tiny muted">${esc(d.focus)} · ${d.exercises.length} упр.</div></div><button class="iconbtn" style="width:34px;height:34px" onclick="startWorkout(${i})">▶</button><button class="linkbtn" onclick="openModal('editPlan',${i})">✎</button></div>`).join('');$('fullPlan').innerHTML=html;$('programs').innerHTML=`<div class="row"><div class="exerciseicon">⚡</div><div class="grow"><div class="strong">Базовая сила</div><div class="tiny muted">3 силовых дня · прогрессия нагрузки</div></div><span class="pill lime">АКТИВНА</span></div><p class="tiny muted">Используй текущий сплит как основу, меняй упражнения и дни под свой график.</p>`}function renderExerciseLibrary(){if(!$('exerciseLibrary'))return;let q=($('exerciseSearch')?.value||'').toLowerCase(),cat=window.exerciseCategory||'Все';$('exerciseLibrary').innerHTML=getExercises().filter(e=>(cat==='Все'||e[1]===cat)&&(e[0].toLowerCase().includes(q)||e[1].toLowerCase().includes(q))).map(e=>`<div class="planrow"><div class="exerciseicon">${e[2]}</div><div class="grow"><div class="strong">${esc(e[0])}</div><div class="tiny muted">${esc(e[1])}</div></div><button class="btn secondary small" onclick="addExerciseToActive(${inlineArgument(e[0])})">＋</button></div>`).join('')||'<div class="empty">Ничего не найдено</div>'}function addExerciseToActive(n){if(!state.active){state.active={id:uid(),date:today(),name:'Своя тренировка',exercises:[],sets:[],start:Date.now()}}state.active.exercises.push({name:n,sets:[{weight:20,reps:10,done:false},{weight:20,reps:10,done:false},{weight:20,reps:10,done:false}]});if(!save())return;showPage('workout');toast('Упражнение добавлено')}
 function renderProgress(){if(!$('volumeChart'))return;$('totalWorkouts').textContent=state.workouts.length;let bench=[];state.workouts.forEach(w=>(w.sets||[]).forEach(s=>{if((s.exercise||'').toLowerCase().includes('жим'))bench.push(+s.weight||0)}));$('bestBench').textContent=bench.length?Math.max(...bench)+'':'—';$('currentWeight').textContent=state.weights.length?state.weights.at(-1).weight+' кг':'—';$('streak').textContent=state.workouts.filter(w=>w.date>=new Date(Date.now()-7*86400000).toISOString().slice(0,10)).length+' 🔥';let range=+$('chartRange').value;let arr=[];for(let i=range-1;i>=0;i--){let d=new Date();d.setDate(d.getDate()-i);let ds=d.toISOString().slice(0,10);let v=state.workouts.filter(w=>w.date===ds).reduce((sum,w)=>sum+(w.sets||[]).reduce((a,s)=>a+(+s.weight||0)*(+s.reps||0),0),0);arr.push(v)}let max=Math.max(1,...arr);let points=arr.map((v,i)=>`${i/(arr.length-1)*300+10},${132-v/max*110}`).join(' ');$('volumeChart').innerHTML=`<defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c7f36b" stop-opacity=".3"/><stop offset="1" stop-color="#c7f36b" stop-opacity="0"/></linearGradient></defs><path d="M ${points} L310 145 L10 145 Z" fill="url(#area)"/><polyline points="${points}" fill="none" stroke="#c7f36b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>${arr.map((v,i)=>`<circle cx="${i/(arr.length-1)*300+10}" cy="${132-v/max*110}" r="2.5" fill="#c7f36b"/>`).join('')}`;$('history').innerHTML=state.workouts.length?state.workouts.slice(0,12).map(w=>`<div class="planrow"><div class="exerciseicon">✓</div><div class="grow"><div class="strong">${esc(w.name)}</div><div class="tiny muted">${esc(w.date)} · ${esc(w.duration||'—')} мин · ${(w.sets||[]).length} подходов</div></div><b>${Math.round((w.sets||[]).reduce((a,s)=>a+(+s.weight||0)*(+s.reps||0),0)).toLocaleString('ru-RU')} кг</b></div>`).join(''):'<div class="empty"><div class="emoji">📈</div>Заверши первую тренировку, чтобы увидеть историю.</div>';$('weightHistory').innerHTML=state.weights.length?state.weights.slice(-5).reverse().map(w=>`<div class="planrow"><div class="grow"><div class="strong">${esc(w.weight)} кг</div><div class="tiny muted">${esc(w.date)}</div></div><span class="pill">${esc(w.note||'Вес тела')}</span></div>`).join(''):'<div class="empty">Пока нет измерений</div>'}
@@ -201,7 +202,7 @@ const foodDB=[
 function searchFoodDB(){let q=($('foodSearch')?.value||'').trim().toLowerCase(),el=$('foodSearchResults');if(!el)return;let arr=foodDB.filter(f=>f[0].toLowerCase().includes(q)||f[5].toLowerCase().includes(q)).slice(0,20);el.innerHTML=arr.map((f,i)=>`<div class="foodresult"><div class="grow"><b>${esc(f[0])}</b><div class="tiny muted">${esc(f[5])} · ${esc(f[1])} ккал / 100 г · Б ${esc(f[2])} · У ${esc(f[3])} · Ж ${esc(f[4])}</div></div><button class="btn secondary small" onclick="addFoodDB(${foodDB.indexOf(f)})">＋</button></div>`).join('')||'<div class="empty">Ничего не найдено. Попробуй сканировать штрихкод или добавить вручную.</div>'}
 function addFoodDB(i){let f=foodDB[i];if(!f)return;let grams=prompt('Сколько граммов '+f[0]+'?', '100');if(grams===null)return;let g=Math.max(0,+grams||0)/100;state.foods.push({id:uid(),date:today(),name:f[0],grams:+grams||100,cal:Math.round(f[1]*g),protein:+(f[2]*g).toFixed(1),carbs:+(f[3]*g).toFixed(1),fat:+(f[4]*g).toFixed(1)});if(!save())return;toast('Продукт добавлен в дневник')}
 function saveMealTemplate(){let todays=state.foods.filter(f=>f.date===today());if(!todays.length)return toast('Сначала добавь продукты в дневник');let name=prompt('Название рациона','Мой приём пищи');if(!name)return;state.mealTemplates=state.mealTemplates||[];state.mealTemplates.unshift({id:uid(),name,items:todays.map(({name,cal,protein,carbs,fat,grams,milliliters})=>({name,cal,protein,carbs,fat,grams,milliliters}))});if(!save())return;toast('Рацион сохранён для повторного использования')}
-function applyMealTemplate(i){let m=(state.mealTemplates||[])[i];if(!m)return;m.items.forEach(f=>state.foods.push({...f,id:uid(),date:today()}));if(!save())return;toast('Рацион добавлен в сегодняшний дневник')}
+function applyMealTemplate(i){let m=(state.mealTemplates||[])[i];if(!m)return;const rows=m.items.map(f=>({...f,id:uid(),date:today()}));if(ForgeQuickFood.commit(rows))ForgeQuickFood.afterAdd('Рацион добавлен в сегодняшний дневник',false)}
 function renderMealTemplates(){let el=$('mealTemplates');if(!el) return;let a=state.mealTemplates||[];el.innerHTML=a.length?a.map((m,i)=>`<div class="foodrow"><div class="grow"><b>${esc(m.name)}</b><div class="tiny muted">${m.items.length} продуктов · ${Math.round(m.items.reduce((s,x)=>s+x.cal,0))} ккал</div></div><button class="btn secondary small" onclick="applyMealTemplate(${i})">Добавить</button></div>`).join(''):'<div class="empty">Сохраняй привычные завтраки, обеды и целые рационы — их можно будет добавить одним нажатием.</div>'}
 window.exerciseCategory='Все';function renderExerciseCategories(){let el=$('exerciseCategories');if(!el)return;let cats=['Все',...new Set(getExercises().map(e=>e[1]))];el.innerHTML=cats.map(c=>`<button class="chip ${window.exerciseCategory===c?'active':''}" onclick="window.exerciseCategory=${inlineArgument(c)};renderExerciseCategories();renderExerciseLibrary()">${esc(c)}</button>`).join('')}
 function renderExerciseLibrary(){if(!$('exerciseLibrary'))return;let q=($('exerciseSearch')?.value||'').toLowerCase(),cat=window.exerciseCategory||'Все';$('exerciseLibrary').innerHTML=getExercises().filter(e=>(cat==='Все'||e[1]===cat)&&(e[0].toLowerCase().includes(q)||e[1].toLowerCase().includes(q))).map(e=>`<div class="planrow"><div class="exerciseicon">${e[2]}</div><div class="grow"><div class="strong">${esc(e[0])}</div><div class="tiny muted">${esc(e[1])}</div></div><button class="btn secondary small" onclick="addExerciseToActive(${inlineArgument(e[0])})">＋</button></div>`).join('')||'<div class="empty">Ничего не найдено</div>'}
@@ -371,9 +372,40 @@ let forgeDraft=null,forgeExerciseGroup='Все',forgeExerciseEquip='Все',forg
 let forgeSelectedFood=null;
 function forgeOpenFoodModal(f){forgeSelectedFood=f;const unit=f.unit==='ml'?'мл':'г',portion=Number.isFinite(f.serving)&&f.serving>0&&f.serving<=100000?f.serving:100;$('modalTitle').textContent='Добавить продукт';$('modalBody').innerHTML=`<div class="forge-food-detail"><div class="eyebrow">${esc(f.brand||f.cat||'Продукт')}</div><div class="strong" style="font-size:22px;margin:8px 0">${esc(f.name)}</div><div class="grid2"><div class="metric"><div class="label">ККАЛ / 100 ${unit}</div><div class="num">${Math.round(f.cal)}</div></div><div class="metric"><div class="label">Б / Ж / У</div><div class="num" style="font-size:17px">${+Number(f.p).toFixed(1)} / ${+Number(f.f).toFixed(1)} / ${+Number(f.c).toFixed(1)}</div></div></div></div><div class="field"><label for="forgeFoodGrams">Размер порции, ${unit}</label><input type="number" id="forgeFoodGrams" inputmode="decimal" min="1" max="100000" step="any" value="${portion}" oninput="forgeUpdateFoodPreview()"></div><div class="field"><label for="forgeFoodMeal">Приём пищи</label><select id="forgeFoodMeal"><option>Завтрак</option><option>Обед</option><option>Ужин</option><option>Перекус</option></select></div><div class="notice" id="forgeFoodPreview">${portion} ${unit} · ${Math.round(f.cal*portion/100)} ккал</div><button class="btn primary full" onclick="forgeAddFood()">＋ Добавить в дневник</button><p class="tiny muted">Источник: ${esc(f.source||'Пользовательский')}. ${f.packageSize?`Упаковка ${Number(f.packageSize)} ${unit}. `:''}Для фабричного товара сверяй БЖУ с этикеткой; справочные значения приблизительные.</p>`;$('modalback').classList.add('show')}
 function forgeUpdateFoodPreview(){let g=Number($('forgeFoodGrams')?.value||0);if(!forgeSelectedFood||!$('forgeFoodPreview'))return;$('forgeFoodPreview').textContent=`${g} ${forgeSelectedFood.unit==='ml'?'мл':'г'} · ${Math.round(forgeSelectedFood.cal*g/100)} ккал · Б ${(forgeSelectedFood.p*g/100).toFixed(1)} · Ж ${(forgeSelectedFood.f*g/100).toFixed(1)} · У ${(forgeSelectedFood.c*g/100).toFixed(1)}`}
-function forgeAddFood(){const f=forgeSelectedFood,g=Number($('forgeFoodGrams')?.value||0);if(!f||!Number.isFinite(g)||g<=0||g>100000)return toast('Укажи размер порции');const unit=f.unit==='ml'?'мл':'г';const meal=$('forgeFoodMeal').value;state.foods.push({id:uid(),date:today(),name:f.name,...(f.unit==='ml'?{milliliters:g}:{grams:g}),meal,cal:Math.round(f.cal*g/100),protein:+(f.p*g/100).toFixed(1),carbs:+(f.c*g/100).toFixed(1),fat:+(f.f*g/100).toFixed(1),foodSource:f.source||'',barcode:f.code||''});state.forgeRecent=[f,...state.forgeRecent.filter(x=>forgeFoodKey(x)!==forgeFoodKey(f))].slice(0,50);if(!save())return;window.ForgeAnalytics?.('food_added');closeModal();toast(`${f.name} · ${g} ${unit} добавлено`)}
-function forgeNewCustomFood(){forgeSelectedFood=null;$('modalTitle').textContent='Свой продукт';$('modalBody').innerHTML=`<p class="tiny muted">Создай продукт один раз, затем находи его в разделе «Мои продукты».</p><div class="field"><label for="forgeCustomName">Название продукта</label><input id="forgeCustomName" placeholder="Например, Домашние сырники"></div><div class="formgrid"><div class="field"><label for="forgeCustomCal">Ккал / 100 г</label><input id="forgeCustomCal" type="number" min="0" step="0.1" value="0"></div><div class="field"><label for="forgeCustomP">Белки / 100 г</label><input id="forgeCustomP" type="number" min="0" step="0.1" value="0"></div><div class="field"><label for="forgeCustomF">Жиры / 100 г</label><input id="forgeCustomF" type="number" min="0" step="0.1" value="0"></div><div class="field"><label for="forgeCustomC">Углеводы / 100 г</label><input id="forgeCustomC" type="number" min="0" step="0.1" value="0"></div></div><button class="btn primary full" onclick="forgeSaveCustomFood()">Сохранить продукт</button>`;$('modalback').classList.add('show')}
-function forgeSaveCustomFood(){let name=$('forgeCustomName').value.trim();if(name.length<2)return toast('Введи название');let nums=['Cal','P','F','C'].map(k=>Number($('forgeCustom'+k).value));if(nums.some(n=>!Number.isFinite(n)||n<0||n>9000))return toast('Проверь БЖУ');let f={name,cal:nums[0],p:nums[1],f:nums[2],c:nums[3],cat:'Мои',source:'Добавлено мной'};state.forgeCustomFoods=state.forgeCustomFoods.filter(x=>forgeClean(x.name)!==forgeClean(name));state.forgeCustomFoods.unshift(f);if(!save())return;closeModal();forgeSetFoodTab('my');toast('Продукт сохранён')}
+function forgeAddFood(){if(!$('modalback').classList.contains('show'))return;return ForgeQuickFood.addProduct(forgeSelectedFood,$('forgeFoodGrams')?.value,$('forgeFoodMeal')?.value)}
+let forgeCustomContext=null;
+function forgeNewCustomFood(previous=null){
+ forgeCustomContext=previous;forgeSelectedFood=null;
+ const editing=!!previous?.name&&Number.isFinite(previous.cal), unit=previous?.unit==='ml'?'ml':'g';
+ const row=(id,label,field)=>`<div class="field"><label for="forgeCustom${id}">${label} / 100 <span data-custom-unit>${unit==='ml'?'мл':'г'}</span></label><input id="forgeCustom${id}" type="number" inputmode="decimal" min="0" max="${id==='Cal'?950:100}" step="any" value="${esc(editing?previous[field]:previous?'':0)}"></div>`;
+ $('modalTitle').textContent=editing?'Исправить продукт':'Свой продукт';
+ $('modalBody').innerHTML=`<div class="fp-product-panel">
+  <p>${editing?'Исправление сохранится в «Мои продукты». Прежние записи дневника сохранят исходные значения.':'Укажи значения на 100 г или 100 мл с этикетки.'}</p>
+  ${previous?.code?`<p class="fp-caption">Штрихкод ${esc(previous.code)}</p>`:''}
+  <div class="field"><label for="forgeCustomName">Название продукта</label><input id="forgeCustomName" maxlength="150" value="${esc(previous?.name||'')}" placeholder="Например, Домашние сырники"></div>
+  <div class="field"><label for="forgeCustomUnit">Единица объёма или массы</label><select id="forgeCustomUnit"><option value="g" ${unit==='g'?'selected':''}>Граммы</option><option value="ml" ${unit==='ml'?'selected':''}>Миллилитры</option></select></div>
+  <div class="formgrid">${row('Cal','Ккал','cal')}${row('P','Белки','p')}${row('F','Жиры','f')}${row('C','Углеводы','c')}</div>
+  <button class="btn primary full" onclick="forgeSaveCustomFood(true)">Сохранить и выбрать порцию</button>
+  <button class="btn secondary full" onclick="forgeSaveCustomFood()">Сохранить продукт</button></div>`;
+ $('forgeCustomUnit').onchange=()=>{$('modalBody').querySelectorAll('[data-custom-unit]').forEach(el=>el.textContent=$('forgeCustomUnit').value==='ml'?'мл':'г');};
+ $('modalback').classList.add('show');
+}
+function forgeSaveCustomFood(add=false){
+ const name=$('forgeCustomName')?.value.trim();if(!name||name.length<2||name.length>150)return toast('Введи название');
+ const nums=['Cal','P','F','C'].map(k=>{const value=$('forgeCustom'+k).value.trim();return value?Number(value):NaN;});
+ if(nums.some((n,i)=>!Number.isFinite(n)||n<0||n>(i===0?950:100))||nums.slice(1).reduce((a,b)=>a+b,0)>105)return toast('Проверь КБЖУ на 100 г или 100 мл. Заполни все четыре поля.');
+ const old=forgeCustomContext,unit=$('forgeCustomUnit').value;
+ const code=window.ForgeBarcode?.normalizeCode(old?.code)||'', [cal,p,f,c]=nums;
+ const food={name,cal,p,f,c,unit,cat:'Мои',source:'Добавлено мной',...(code?{code}:{})};
+ if(old?.unit===unit){if(old.serving>0)food.serving=old.serving;if(old.packageSize>0)food.packageSize=old.packageSize;}
+ const matches=x=>code?window.ForgeBarcode.normalizeCode(x.code)?.padStart(13,'0')===code.padStart(13,'0'):
+  !x.code&&(x.unit||'g')===unit&&(forgeClean(x.name)===forgeClean(name)||(old?.source==='Добавлено мной'&&forgeClean(x.name)===forgeClean(old.name)));
+ try{forgeCommitDiary({...state,forgeCustomFoods:[food,...state.forgeCustomFoods.filter(x=>!matches(x))]});}
+ catch{return toast('Не удалось сохранить продукт');}
+ forgeCustomContext=null;window.ForgeNavigation?.markSaved('modalback');
+ if(add){forgeOpenFoodModal(food);return true;}
+ ForgeQuickFood.clearDestination();closeModal();forgeSetFoodTab('my');renderAll();toast('Продукт сохранён');return true;
+}
 // When saving a template the user can choose a particular meal or the whole day.
 saveMealTemplate=function(){const all=state.foods.filter(f=>f.date===today());if(!all.length)return toast('Сначала добавь продукты в дневник');$('modalTitle').textContent='Сохранить рацион';$('modalBody').innerHTML=`<div class="field"><label for="forgeMealName">Название шаблона</label><input id="forgeMealName" value="Мой завтрак"></div><div class="field"><label for="forgeMealType">Что сохранить?</label><select id="forgeMealType"><option value="all">Весь день</option><option>Завтрак</option><option>Обед</option><option>Ужин</option><option>Перекус</option></select></div><button class="btn primary full" onclick="forgeSaveMealTemplate()">Сохранить шаблон</button>`;$('modalback').classList.add('show')};
 function forgeSaveMealTemplate(){let name=$('forgeMealName').value.trim();if(!name)return toast('Укажи название');let type=$('forgeMealType').value,items=state.foods.filter(f=>f.date===today()&&(type==='all'||(f.meal||'Перекус')===type));if(!items.length)return toast('В выбранном приёме пока нет продуктов');state.mealTemplates=state.mealTemplates||[];state.mealTemplates.push({name,items:items.map(x=>({...x}))});if(!save())return;closeModal();toast('Шаблон рациона сохранён')}
@@ -434,8 +466,12 @@ startWorkout=function(idx){
   const exerciseId=plan.exerciseRefs?.[index]?.exerciseId||forgeExerciseId(name);
   return {name,...(exerciseId?{exerciseId}:{}),...(timed?{unit:'seconds'}:{}),sets:Array.from({length:count},()=>({weight,...countFields,done:false}))};
  });
- state.active={id:uid(),date:today(),name:plan.name,exercises:ex,sets:[],start:Date.now()};
- state.activeNote='';startedAt=Date.now();if(!save())return;showPage('workout');toast('Тренировка началась');
+ const workout={id:uid(),date:today(),name:plan.name,exercises:ex,sets:[],start:Date.now(),
+  ...(state.currentProgram?{programId:state.currentProgram,programDay:plan.day}:{})};
+ const active=window.ForgeQuickLog?.prefill(workout)||workout;
+ try{forgeCommitDiary({...state,active,activeNote:''})}
+ catch{return toast('Не удалось начать тренировку. Дневник сохранён.')}
+ startedAt=Date.now();showPage('workout');toast('Тренировка началась');
 };
 const forgeRenderPlanBefore4=renderPlan;
 renderPlan=function(){forgeRenderPlanBefore4();let el=$('fullPlan');if(!el)return;el.innerHTML=state.plans.map((d,i)=>`<div class="forge-day-row"><div class="daybadge"><b>${esc(d.day)}</b><span>${d.exercises.length?'ЗАЛ':'ОТДЫХ'}</span></div><div class="grow" onclick="forgeOpenDayEditor('week',${i})"><div class="strong">${esc(d.name)}</div><div class="tiny muted">${esc(d.focus||'')} · ${d.exercises.length} упражнений</div>${d.exercises.length?`<div class="tiny muted" style="margin-top:5px">${esc(d.exercises.slice(0,3).join(' · '))}${d.exercises.length>3?'…':''}</div>`:''}</div><button class="forge-iconmini" onclick="forgeOpenDayEditor('week',${i})" title="Редактировать">✎</button><button class="forge-plus" onclick="startWorkout(${i})" title="Начать">▶</button></div>`).join('');let n=$('forgeExerciseCount');if(n)n.textContent=forgeRefreshCatalog().length};
@@ -992,7 +1028,7 @@ function n8RenderProgramEditor(){let p=n8Editor;if(!p)return;let area=document.g
  let main='';
  if(n8EditorTab==='structure')main=`<div class="n8-section"><b>Тренировочные дни</b><small style="color:#9eb1b8">${p.days.length} дней</small></div><div class="n8-surface">${p.days.map(row).join('')||'<div class="n8-blank">Добавь день и упражнения — ПН, СР, ПТ или любой график.</div>'}</div><button class="n8-log" onclick="n8EditProgramDay(-1)">＋ Добавить тренировочный день</button><div class="n8-sub">Порядок дней можно менять кнопками в редакторе дня. Один день можно продублировать в программе.</div>`;
  if(n8EditorTab==='exercises')main=`<div class="n8-section"><b>Упражнения по дням</b></div>${p.days.map((d,i)=>`<div class="n8-surface"><div class="n8-row"><div class="n8-grow"><b>${n8E(N8_DAY_FULL[d.day]||d.day||'Не назначен')} · ${n8E(d.name)}</b><div class="n8-sub" style="margin:4px 0">${(d.exercises||[]).length} упражнений</div></div>${n8Btn('Править',`n8EditProgramDay(${i})`)}</div><div style="font-size:12px;color:#b2c5ce">${(d.exercises||[]).map(n8E).join(' • ')||'Упражнения ещё не выбраны'}</div></div>`).join('')||'<div class="n8-blank">Сначала добавь тренировочный день.</div>'}`;
- if(n8EditorTab==='progression'){const pr=p.progression||{enabled:false,step:2.5};main=`<div class="n8-surface"><div class="n8-overline">УМНАЯ ПРОГРЕССИЯ</div><div class="n8-field"><label for="n8ProgEnabled">Правило повышения нагрузки</label><select id="n8ProgEnabled" onchange="n8SetProgramProgression('enabled',this.value==='yes')"><option value="no" ${!pr.enabled?'selected':''}>Не применять автоматически</option><option value="yes" ${pr.enabled?'selected':''}>Предлагать после завершения всех подходов</option></select></div><div class="n8-field"><span>Прибавка, %</span><select onchange="n8SetProgramProgression('step',+this.value)">${[2.5,5,7.5].map(x=>`<option value="${x}" ${n8Num(pr.step,2.5)===x?'selected':''}>${x}%</option>`).join('')}</select></div><div class="n8-confirm">Приложение предлагает изменить будущие рабочие веса только после выполненной тренировки. Расчётный 1ПМ и 5ПМ используется как ориентир; историю не перезаписываем.</div></div><button class="n8-mini" onclick="n8CloseOverlay();f6Go('cycles')">Открыть силовые циклы и расчёт 1ПМ/5ПМ ↗</button>`;}
+ if(n8EditorTab==='progression'){const pr=p.progression||{enabled:false,step:2.5};main=`<div class="n8-surface"><div class="n8-overline">УМНАЯ ПРОГРЕССИЯ</div><div class="n8-field"><label for="n8ProgEnabled">Правило повышения нагрузки</label><select id="n8ProgEnabled" onchange="n8SetProgramProgression('enabled',this.value==='yes')"><option value="no" ${!pr.enabled?'selected':''}>Не применять автоматически</option><option value="yes" ${pr.enabled?'selected':''}>Предлагать по истории и запасу повторений</option></select></div><div class="n8-field"><label for="n8ProgPercent">Прибавка без заданного шага, %</label><select id="n8ProgPercent" onchange="n8SetProgramProgression('step',+this.value)">${[2.5,5,...(pr.step>5?[pr.step]:[])].map(x=>`<option value="${x}" ${n8Num(pr.step,2.5)===x?'selected':''}>${x}%</option>`).join('')}</select></div><div class="n8-field"><label for="n8ProgStepKg">Шаг снаряда, кг (необязательно)</label><input id="n8ProgStepKg" type="number" min="0.25" max="20" step="0.25" value="${n8E(pr.stepKg??'')}" onchange="n8SetProgramProgression('stepKg',this.valueAsNumber||null)"></div><div class="n8-confirm">Предложение появится после сопоставимых тренировок, если рабочие подходы выполнены сверх плана с запасом. Прибавка больше 5% за раз не предлагается.</div></div><button class="n8-mini" onclick="n8CloseOverlay();f6Go('cycles')">Открыть силовые циклы и расчёт 1ПМ/5ПМ ↗</button>`;}
  area.innerHTML=`<div class="n8-overline">КОНСТРУКТОР ПОДГОТОВКИ</div><div class="n8-field"><label for="n8ProgName">Название программы</label><input id="n8ProgName" maxlength="90" value="${n8E(p.name)}" onchange="n8ProgramName(this.value)"></div>${window.ForgeCycles?.programBlock(p)||''}${p.importSource?.notes?.length?`<p class="n8-sub">${n8E(Array.isArray(p.importSource.notes)?p.importSource.notes.join(' · '):p.importSource.notes)}</p>`:''}${tabs}${main}<button class="n8-log" onclick="n8SaveProgram()">✓ Сохранить программу</button>${p._new?'':`<button class="n8-mini" style="width:100%;margin:7px 0 14px" onclick="n8ActivateCurrentEditor()">Назначить на неделю</button>`}`;
 }
 function n8SetProgramProgression(key,v){n8Editor.progression=n8Editor.progression||{};n8Editor.progression[key]=v}
@@ -1088,9 +1124,9 @@ function n8SetRows(workout, exercise, countKey) {
   return `<div class="n8-setgrid"><b>${index+1}</b>
    <input aria-label="Вес подхода ${index+1}" type="number" min="0" max="${workout.trainingCycle?1500:1000}" step="any" placeholder="—" value="${set.weight??''}" onchange="${edit('weight')}">
    <input aria-label="${timed?'Секунды':'Повторения'} подхода ${index+1}" type="number" min="1" max="${timed?1800:100}" placeholder="—" value="${set[countKey]??''}" onchange="${edit(countKey)}">
-   <button class="n8-check ${set.done?'done':''}" aria-label="${set.done?'Снять отметку':'Записать подход'} ${index+1}" onclick="n8LogSet(${n8WorkoutIndex},${index})">${set.done?'✓':'○'}</button>
+   <button class="n8-check ${set.done?'done':''}" aria-label="${set.done?'Снять отметку':'Записать подход'} ${index+1}" onclick="n8LogSet(${n8WorkoutIndex},${index},{expected:${!!set.done}})">${set.done?'✓':'○'}</button>
    <button class="n8-check" onclick="n8Rpe(${n8WorkoutIndex},${index})" title="Усилие RPE">${set.rpe||'R'}</button></div>
-   ${workout.trainingCycle&&!timed?`<label class="fc-rir-row">Запас повторений (подход ${index+1})<input type="number" inputmode="numeric" min="0" max="10" step="1" placeholder="—" value="${set.rir??''}" onchange="${edit('rir')}"></label>`:''}`;
+   ${(workout.trainingCycle||state.programs.find(p=>p.id===workout.programId)?.progression?.enabled)&&!timed?`<label class="fc-rir-row">Запас повторений (подход ${index+1})<input type="number" inputmode="numeric" min="0" max="10" step="1" placeholder="—" value="${set.rir??''}" onchange="${edit('rir')}"></label>`:''}`;
  }).join('');
 }
 function n8RenderWorkout(){let a=state.active;if(!a){n8SetRoot('workout',`<div class="n8-overline">ТВОЯ СЕССИЯ</div><h1 class="n8-heading">Время тренироваться.</h1><div class="n8-surface" style="text-align:center;padding:32px 15px"><div style="font-size:46px;color:#4fe8d5">◎</div><h2 style="margin:8px 0">Тренировка не начата</h2><p class="n8-sub">Выбери день из плана или начни ближайшую тренировку.</p><button class="n8-log" onclick="n8QuickStart()">▶ Начать тренировку</button><button class="n8-mini" onclick="showPage('plan')">Выбрать из плана</button></div>`);return}
@@ -1111,7 +1147,7 @@ function n8ChooseExercise(i){n8WorkoutIndex=i;n8RenderWorkout()}
 function n8EditSet(ei,si,k,v,input){
  const exercise=state.active?.exercises?.[ei];
  if(!exercise?.sets?.[si])return;
- if(state.active.trainingCycle||exercise.unit==='seconds'||v===''||exercise.sets[si][k]===null){
+ if(state.active.trainingCycle||exercise.unit==='seconds'||k==='rir'||v===''||exercise.sets[si][k]===null){
   const result=window.ForgeCycles.editSet(ei,si,k,String(v));
   if(!result&&input)input.value=state.active.exercises[ei].sets[si][k]??'';
   if(result&&!input&&!window.ForgePerformance?.updateSetView())n8RenderWorkout();
@@ -1132,26 +1168,37 @@ function n8EditSet(ei,si,k,v,input){
  if(!window.ForgePerformance?.updateSetView())n8RenderWorkout();
 }
 function n8Step(k,step){let a=state.active,ex=a.exercises[n8WorkoutIndex],si=ex.sets.findIndex(s=>!s.done);if(si<0)si=ex.sets.length-1;let set=ex.sets[si];n8EditSet(n8WorkoutIndex,si,k,state.active.trainingCycle||ex.unit ? ForgeCycleModel.tidy(Math.max(0,n8Num(set[k])+step)) : n8R(n8Num(set[k])+step))}
-function n8LogSet(ei,si){
+function n8LogSet(ei,si,options={}){
  const exercise=state.active?.exercises?.[ei];
  const set=exercise?.sets?.[si];
- if(!set)return;
+ if(!set||(options.expected!==undefined&&!!set.done!==options.expected))return false;
  const countKey=exercise.unit==='seconds'?'seconds':'reps';
- const wasDone=set.done;
- if(!wasDone&&(state.active.trainingCycle||exercise.unit||set.weight===null||set[countKey]===null)){
-  if(set.weight===null||!(set[countKey]>0))return toast('Укажи вес и '+(countKey==='seconds'?'время удержания.':'повторы.'));
+ const wasDone=!!set.done;
+ const values=options.values||set;
+ if(!wasDone&&(!Number.isFinite(values.weight)||values.weight<0||values.weight>1500||
+  !Number.isInteger(values[countKey])||values[countKey]<1||values[countKey]>(countKey==='seconds'?1800:100))){
+  toast('Укажи вес и '+(countKey==='seconds'?'время удержания.':'повторы.'));
+  return false;
  }
  const active=structuredClone(state.active);
- active.exercises[ei].sets[si].done=!wasDone;
- try{forgeCommitDiary({...state,active})}catch{return toast('Не удалось сохранить подход. Проверь свободное место.')}
+ const recorded=active.exercises[ei].sets[si];
  if(!wasDone){
-  const est=exercise.unit==='seconds'?0:n8Est1RM(n8Num(set.weight),n8Num(set.reps));
-  if(est>n8BestOneRM(exercise.name)+0.5){n8LastPR={name:exercise.name,weight:set.weight,reps:set.reps};toast('Новый расчётный рекорд! '+n8R(est)+' кг')}
+  recorded.weight=values.weight;
+  recorded[countKey]=values[countKey];
+ }
+ recorded.done=!wasDone;
+ if(!wasDone)window.ForgeQuickLog?.capture(active,ei,si,set);
+ else if(active.quickLogUndo?.exerciseIndex===ei&&active.quickLogUndo?.setIndex===si)delete active.quickLogUndo;
+ try{forgeCommitDiary({...state,active})}catch{toast('Не удалось сохранить подход. Проверь свободное место.');return false;}
+ if(!wasDone){
+  const est=exercise.unit==='seconds'?0:n8Est1RM(recorded.weight,recorded.reps);
+  if(est>n8BestOneRM(exercise.name)+0.5){n8LastPR={name:exercise.name,weight:recorded.weight,reps:recorded.reps};toast('Новый расчётный рекорд! '+n8R(est)+' кг')}
   else toast('Подход записан');
   n8StartRest(ei);
  }else toast('Подход снят');
  if(!wasDone)window.ForgeAnalytics?.('set_logged');
  n8RenderWorkout();
+ return true;
 }
 function n8LogNext(){if(!state.active)return;let ex=state.active.exercises[n8WorkoutIndex],i=ex.sets.findIndex(s=>!s.done);if(i<0)return toast('Все подходы этого упражнения выполнены');n8LogSet(n8WorkoutIndex,i)}
 function n8AddSet(){
@@ -1162,7 +1209,7 @@ function n8AddSet(){
  ex.sets.push({weight:prev.weight,[key]:prev[key],...(ex.unit?{unit:ex.unit,reps:0}:{}),done:false});
  if(!save())return;
 }
-function n8Rpe(ei,si){let s=state.active?.exercises?.[ei]?.sets?.[si];if(!s)return;let opts=[6,7,8,9,10],i=opts.indexOf(s.rpe);s.rpe=opts[(i+1)%opts.length];if(!save())return;toast('RPE '+s.rpe)}
+function n8Rpe(ei,si){let s=state.active?.exercises?.[ei]?.sets?.[si];if(!s)return;const active=structuredClone(state.active),opts=[6,7,8,9,10],i=opts.indexOf(s.rpe),rpe=opts[(i+1)%opts.length];active.exercises[ei].sets[si].rpe=rpe;try{forgeCommitDiary({...state,active})}catch{return toast('Не удалось сохранить усилие')}renderAll();toast('RPE '+rpe)}
 function n8Note(){let a=state.active;if(!a)return;let val=prompt('Заметка к тренировке',state.activeNote||'');if(val===null)return;state.activeNote=val;if(!save())return;toast('Заметка сохранена')}
 function n8Plates(){let ex=state.active?.exercises?.[n8WorkoutIndex];if(!ex)return;let si=ex.sets.findIndex(s=>!s.done);if(si<0)si=0;let goal=n8Num(ex.sets[si].weight),per=Math.max(0,(goal-20)/2),discs=[25,20,15,10,5,2.5,1.25],out=[];discs.forEach(d=>{let count=Math.floor((per+0.0001)/d);if(count){out.push(`${d} кг × ${count}`);per=n8R(per-count*d)}});alert(`Штанга 20 кг · рабочий вес ${goal} кг\nНа каждую сторону:\n${out.join('\n')||'Без дисков'}${per>0?`\nОстаток: ${per} кг`:''}`)}
 function n8Time(seconds){seconds=Math.max(0,Math.round(seconds));return String(Math.floor(seconds/60)).padStart(2,'0')+':'+String(seconds%60).padStart(2,'0')}
@@ -1175,10 +1222,19 @@ function n8StopRest(){n8RestRunning=false;n8RestUntil=0;n8SaveCycleRest();n8Time
 function n8PlusRest(seconds){if(!n8RestRunning)n8StartRest();n8RestUntil+=seconds*1000;n8SaveCycleRest();n8TimerTick();window.ForgePerformance?.persist()}
 function n8TimerTick(){let el=document.getElementById('n8TimerDisplay');if(n8RestRunning && Date.now()>=n8RestUntil){n8RestRunning=false;toast('Отдых завершён');try{navigator.vibrate?.(100)}catch{}}if(el)el.textContent=n8Time(n8RestRunning?Math.ceil((n8RestUntil-Date.now())/1000):0);const time=$('workoutTime');if(time&&state.active){let s=Math.floor((Date.now()-state.active.start)/1000);time.textContent=n8Time(s)}}
 function n8RestSettings(){let ex=state.active?.exercises?.[n8WorkoutIndex];let def=n8Num(state.n8Prefs?.rest,120);let a=prompt('Общий таймер отдыха (секунды)',def);if(a===null)return;let sec=Math.max(10,Math.min(1800,n8Num(a,def)));state.n8Prefs.rest=sec;let custom=prompt('Таймер текущего упражнения (сек). Пусто — общий',ex?.rest||'');if(custom===null)return; if(ex){if(custom.trim())ex.rest=Math.max(10,Math.min(1800,n8Num(custom,sec)));else delete ex.rest}if(!save())return;toast('Настройки отдыха сохранены')}
-function n8FinishWorkout(){if(!state.active)return;let completed=state.active.exercises.reduce((a,e)=>a+e.sets.filter(s=>s.done).length,0);if(!completed){if(!confirm('Нет отмеченных подходов. Завершить без результатов?'))return;}if(!confirm(`Завершить тренировку? Отмечено ${completed} подходов.`))return;
- if(state.active.trainingCycle){window.ForgeCycles.finish(state.active);return;}
- n8StopRest();finishWorkout();if(n8LastPR){toast('Тренировка сохранена · новый рекорд!');n8LastPR=null}
- if(state.currentProgram){let p=n8ActiveProgram();let pr=p?.progression||{};if(pr.enabled&&completed){let good=(state.workouts[0]?.exercises||[]).every(x=>x.sets.every(s=>s.done));if(good){let pct=n8Num(pr.step,2.5);if(confirm(`Все подходы выполнены. Предложить повысить рабочие веса на ${pct}% в будущих тренировках?`)){p.days.forEach(d=>{d.exerciseConfig=d.exerciseConfig||{};Object.values(d.exerciseConfig).forEach(c=>{if(n8Num(c.weight)>0)c.weight=n8R(c.weight*(1+pct/100))})});activateProgram(p.id);toast('Будущие рабочие веса обновлены')}}}}
+function n8FinishWorkout(){
+ const active=state.active;if(!active)return;
+ const completed=active.exercises.reduce((count,ex)=>count+ex.sets.filter(set=>set.done).length,0);
+ if(!completed&&!confirm('Нет отмеченных подходов. Завершить без результатов?'))return;
+ if(!confirm('Завершить тренировку? Отмечено '+completed+' подходов.'))return;
+ if(active.trainingCycle){window.ForgeCycles.finish(active);return;}
+ if(active.cycleMeta){n8StopRest();finishWorkout();return;}
+ const record=forgeWorkoutRecord(active);
+ try{forgeCommitDiary({...state,active:null,activeNote:'',workouts:[record,...state.workouts]})}
+ catch{return toast('Не удалось сохранить тренировку. Черновик остаётся доступным.')}
+ n8StopRest();renderAll();showPage('progress');window.ForgeAnalytics?.('workout_completed');
+ toast(n8LastPR?'Тренировка сохранена · новый рекорд!':'Тренировка сохранена');n8LastPR=null;
+ window.forgeOpenProgressionAdvice?.(record.id);
 }
 function n8Est1RM(weight,reps){return reps>0?weight*(1+Math.min(15,reps)/30):0}
 window.ForgeCycleWorkout={estimate:n8Est1RM,repaintProgram:n8RenderProgramEditor,restoreRest:n8RestoreCycleRest,reset(){n8WorkoutIndex=0;n8LastPR=null;n8RestUntil=0;n8RestRunning=false;n8RestDuration=0;window.ForgePerformance?.persist()}};
@@ -1385,7 +1441,7 @@ function n9Wrap(){
  const oldNutrition=renderNutrition;renderNutrition=function(){oldNutrition();if($9('nutrition')?.classList.contains('active'))n9NutritionTop()};
  const oldProgress=renderProgress;renderProgress=function(){oldProgress();if($9('progress')?.classList.contains('active'))n9ProgressExtras()};
  const oldProfile=renderProfile;renderProfile=function(){oldProfile();n9ProfileExtras()};
- const oldLog=window.n8LogSet;if(oldLog)window.n8LogSet=function(...args){oldLog(...args);n9WorkoutExtra()};
+ const oldLog=window.n8LogSet;if(oldLog)window.n8LogSet=function(...args){const saved=oldLog(...args);n9WorkoutExtra();return saved};
  const oldEx=window.n8ChooseExercise;if(oldEx)window.n8ChooseExercise=function(...args){oldEx(...args);n9WorkoutExtra()};
  const oldCard=window.y8OpenCard;if(oldCard)window.y8OpenCard=function(encoded,...args){let n=decodeURIComponent(encoded);oldCard(encoded,...args);n9ImageDetailPatch(n)};
  const oldGroup=window.y8OpenGroup;if(oldGroup)window.y8OpenGroup=function(...args){oldGroup(...args);n9LibraryPatch()};
@@ -1492,7 +1548,7 @@ function loadSession10() {
    window.AndroidBridge.readCloudSession();
  } else try{localStorage.removeItem(keys10.session)}catch{}
 }
-function n10MarkLocalChange(){if(applyingRemote10)return;sync10.lastLocalAt=new Date().toISOString();store10(keys10.sync,sync10);if(sync10.auto&&session10)n10QueueAutoUpload()}
+function n10MarkLocalChange(){if(applyingRemote10)return;sync10.lastLocalAt=new Date().toISOString();store10(keys10.sync,sync10);window.dispatchEvent(new Event('forge:data-status'));if(sync10.auto&&session10)n10QueueAutoUpload()}
 window.forgeCommitDiary=function(next,replaceUnreadable=false){ForgeDiaryStorage.write(next,replaceUnreadable);state=next;n10MarkLocalChange()};
 function changed10(){return ForgeDiaryStorage.needsRecovery()||(ForgeDiaryStorage.hasSavedDiary()&&
  Object.keys(state).some(key=>JSON.stringify(state[key])!==JSON.stringify(defaults[key])))}
@@ -1646,9 +1702,11 @@ function n10ToggleAuto(checked){if(checked&&!session10){notify10('Нужен в�
 window.ForgeCloudStatus=()=>({
  Supabase:n10Configured()?'проект задан':'не настроен',
  'Облачный аккаунт':session10?'сеанс открыт':'нет сеанса',
- 'Автообмен':sync10.auto?'включён':'выключен'
+ 'Автообмен':sync10.auto?'включён':'выключен',
+ 'Последняя облачная копия':session10&&sync10.scope===cloudScope10()&&sync10.lastRemoteRevision?sync10.lastRemoteAt:null,
+ 'Локальные изменения ждут отправки':Boolean(session10&&sync10.scope===cloudScope10()&&sync10.lastRemoteRevision&&sync10.lastLocalAt)
 });
-function n10UiRefresh(){const el=$10('n10CloudContent');if(el)el.innerHTML=n10CloudHtml();n10RenderProfileCloud();n10RenderAuthControls()}
+function n10UiRefresh(){window.dispatchEvent(new Event('forge:data-status'));const el=$10('n10CloudContent');if(el)el.innerHTML=n10CloudHtml();n10RenderProfileCloud();n10RenderAuthControls()}
 function n10GoogleProject(){return nativeGoogle10&&n10ValidUrl(cfg10.url)===forgeCloud10.url}
 function n10AuthPending(){return passwordPending10||!!googleAttempt10}
 function n10RenderAuthControls(){
@@ -1827,5 +1885,5 @@ Object.assign(window,{n10StoreConfig,n10SignIn,n10SignUp,n10Recover,n10GoogleSig
 // Make sure UI is present even when reloaded into the active account page.
 n10InstallCloud();n10NutritionTile();loadSession10();n10CompleteOAuth();
 })();
-</script><link rel="stylesheet" href="exercise-art.css"><div style="text-align:center;padding:12px 12px 90px;font-size:11px;color:#829a9d"><a href="artwork-credits.html" target="_blank" rel="noopener" style="color:inherit">Авторы иллюстраций</a></div><link rel="stylesheet" href="nutrition-coach.css"><script src="nutrition-coach-core.js"></script><script src="nutrition-coach.js"></script><link rel="stylesheet" href="navigation.css"><link rel="stylesheet" href="exercise-picker.css"><script src="exercise-picker.js"></script><link rel="stylesheet" href="performance-tokens.css"><link rel="stylesheet" href="performance-ui.css"><link rel="stylesheet" href="food-catalog.css"><script src="performance-ui.js"></script><link rel="stylesheet" href="exercise-library.css"><script src="exercise-visual-data.js"></script><script src="anatomy-model.js"></script><script src="exercise-library.js"></script><link rel="stylesheet" href="training-import.css"><script src="training-import-core.js"></script><script src="training-import.js"></script><script src="device-settings.js"></script><script src="barcode-food.js"></script><link rel="stylesheet" href="training-cycles.css"><script src="training-cycles.js"></script>
+</script><link rel="stylesheet" href="exercise-art.css"><div style="text-align:center;padding:12px 12px 90px;font-size:11px;color:#829a9d"><a href="artwork-credits.html" target="_blank" rel="noopener" style="color:inherit">Авторы иллюстраций</a></div><link rel="stylesheet" href="nutrition-coach.css"><script src="nutrition-coach-core.js"></script><script src="nutrition-coach.js"></script><link rel="stylesheet" href="navigation.css"><link rel="stylesheet" href="exercise-picker.css"><script src="exercise-picker.js"></script><link rel="stylesheet" href="performance-tokens.css"><link rel="stylesheet" href="performance-ui.css"><link rel="stylesheet" href="food-catalog.css"><link rel="stylesheet" href="product-10x.css"><script src="quick-diary-core.js"></script><script src="quick-log.js"></script><script src="quick-food.js"></script><script src="progression-core.js"></script><script src="progression.js"></script><script src="program-wizard.js"></script><script src="weekly-checkin-core.js"></script><script src="weekly-checkin.js"></script><script src="performance-ui.js"></script><link rel="stylesheet" href="exercise-library.css"><script src="exercise-visual-data.js"></script><script src="anatomy-model.js"></script><script src="exercise-library.js"></script><link rel="stylesheet" href="training-import.css"><script src="training-import-core.js"></script><script src="training-import.js"></script><script src="device-settings.js"></script><script src="barcode-food.js"></script><link rel="stylesheet" href="training-cycles.css"><script src="training-cycles.js"></script>
 <!-- Restore routes only after the final screen renderers and styles have loaded. --><script src="navigation.js"></script></body>

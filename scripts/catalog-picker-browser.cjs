@@ -105,6 +105,7 @@ async function checkPicker(page, width) {
   await checkImages(page.locator('.vs-group-list'));
   await page.evaluate(() => showPage('plan'));
   await page.locator('#plan').getByRole('button', {name:'Создать программу', exact:true}).click();
+  await page.locator('#forgeProgramWizard').getByRole('button', {name:'Пустая программа', exact:true}).click();
   await page.locator('#n8ProgName').fill('Проверка редактора');
   await page.locator('#n8-program [onclick="n8EditProgramDay(-1)"]').click();
   const day = page.locator('#n8-day');
