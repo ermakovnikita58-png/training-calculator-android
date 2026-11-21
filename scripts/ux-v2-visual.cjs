@@ -33,11 +33,12 @@ const { chromium, openPage, scene } = require('./ux-v2-fixture.cjs');
         }
         const fraction = changed / (after.width * after.height);
         result.push({ filename, fraction });
-        assert.ok(fraction <= .012, filename + ' exceeded the 1.2% changed-pixel threshold: ' + fraction);
       }
       await context.close();
     }
     await fs.writeFile(path.join(output, 'comparison.json'), JSON.stringify({ browser: browser.version(), platform: process.platform, update, result }, null, 2) + '\n');
+    const mismatches = result.filter(item => item.fraction > .012);
+    assert.deepEqual(mismatches, [], 'Rendered images exceeded the 1.2% changed-pixel threshold');
     console.log('PASS 11 rendered screenshots matched their ' + process.platform + ' reference images');
   } finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });

@@ -60,7 +60,7 @@ const origin = 'https://appassets.androidplatform.net';
     await page.evaluate(() => { closeModal(); openFoodScanner(); });
     await code.fill('036000291452');
     await lookup.click();
-    await page.getByText('Нет проверенных данных по коду. Можно добавить продукт вручную').waitFor();
+    await page.locator('#forge-scan-status[data-result="offline"]').waitFor();
     await page.locator('#forge-scan-manual').click();
     await page.getByText('Свой продукт', { exact: true }).waitFor();
     assert.equal(await page.evaluate(() => state.foods.length), start + 1);

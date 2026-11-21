@@ -57,6 +57,13 @@ jobs:
             api: 36
             release_asset: '759472905'
             digest: '866c347d31678e2965c53eec2f4e5d99ffaf06d32dc11a948238210a46102968'
+          - version: '11.4.4'
+            version_code: '29'
+            commit: e75ca623e3ddffcbf4a214a4f782b0127fc1cfeb
+            api: 36
+            ci_artifact: '14705496783'
+            ci_run: '44899030076'
+            digest: '85f7610f1751fead050af4757113a35e19bfc070c9251ac1c934fc40be1781f3'
     steps:
       - uses: actions/checkout@v4
         with:

@@ -353,6 +353,26 @@ class NavigationBackTest {
         }
     }
 
+    @Test fun quickActionsKeepTheDiaryAcrossSystemBack() {
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            openPage(scenario, "nutrition")
+            val initial = js(scenario, "JSON.stringify(state.foods)")
+            click(scenario, "#nutrition [data-quick-food='open']")
+            waitFor(scenario, "ForgeNavigation.inspect().overlay === 'modalback' && !!document.getElementById('forgeQuickFood')")
+            pressBack(scenario, "ForgeNavigation.inspect().overlay === null && ForgeNavigation.inspect().current === 'nutrition'")
+            assertEquals(initial, js(scenario, "JSON.stringify(state.foods)"))
+            openPage(scenario, "plan")
+            val programs = js(scenario, "state.programs.length")
+            click(scenario, "#plan [data-program-wizard='open']")
+            click(scenario, "#forgeProgramWizard [data-program-wizard='goal']")
+            click(scenario, "#forgeProgramWizard [data-program-wizard='days']")
+            pressBack(scenario, "document.querySelector('#forgeProgramWizard [name=forgeWizardGoal]') !== null")
+            pressBack(scenario, "document.querySelector('#forgeProgramWizard [data-program-wizard=goal]') !== null")
+            pressBack(scenario, "ForgeNavigation.inspect().overlay === null && ForgeNavigation.inspect().current === 'plan'")
+            assertEquals(programs, js(scenario, "state.programs.length"))
+        }
+    }
+
     @Test fun scannerKeepsManualEntryWhenCameraCloses() {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             openPage(scenario, "nutrition")
