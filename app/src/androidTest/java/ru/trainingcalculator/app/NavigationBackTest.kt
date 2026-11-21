@@ -148,15 +148,15 @@ class NavigationBackTest {
             click(scenario, "#forgeFoodCategoryButton")
             waitFor(scenario, "ForgeNavigation.inspect().overlay === 'modalback' && !!document.getElementById('forgeFoodCategorySheet')")
             val categoryOption = "#forgeFoodCategorySheet [data-food-category]:nth-child(2)"
-            val activeChip = "document.querySelector(${JSONObject.quote("#forgeFoodCats [data-food-category][aria-pressed='true']")})"
+            val categoryValue = "document.getElementById('forgeFoodCategoryValue').textContent"
             val category = js(scenario, "document.querySelector(${JSONObject.quote(categoryOption)}).dataset.foodCategory")
             click(scenario, categoryOption)
             waitFor(scenario, "!ForgeNavigation.inspect().overlay && !!document.querySelector('#foodSearchResults .forge-plus')")
-            assertEquals(category, js(scenario, "$activeChip.dataset.foodCategory"))
+            assertEquals(category, js(scenario, categoryValue))
             click(scenario, "#forgeFoodCategoryButton")
             waitFor(scenario, "ForgeNavigation.inspect().overlay === 'modalback'")
             pressBack(scenario, "!ForgeNavigation.inspect().overlay && ForgeNavigation.inspect().current === 'foodcatalog'")
-            assertEquals(category, js(scenario, "$activeChip.dataset.foodCategory"))
+            assertEquals(category, js(scenario, categoryValue))
 
             click(scenario, "#foodSearchResults .forge-plus")
             waitFor(scenario, "ForgeNavigation.inspect().overlay === 'modalback' && +document.getElementById('forgeFoodGrams')?.value > 0")

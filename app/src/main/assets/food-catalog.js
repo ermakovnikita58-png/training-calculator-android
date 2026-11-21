@@ -44,7 +44,8 @@ function forgeFoodCategoryButtons(fromSheet) {
 function forgeSetFoodCategory(index) {
   forgeFoodCategory = forgeFoodCategoryList[index] || 'Все';
   forgeFoodLimit = forgeFoodBatchSize;
-  for (const button of $('forgeFoodCats').querySelectorAll('[data-food-category]')) {
+  $('forgeFoodCategoryValue').textContent = forgeFoodCategory;
+  for (const button of document.querySelectorAll('[data-food-category]')) {
     button.setAttribute('aria-pressed', button.dataset.foodCategory === forgeFoodCategory);
   }
   searchFoodDB();
@@ -59,12 +60,6 @@ function forgeOpenFoodCategories() {
 function forgeChooseFoodCategory(index) {
   forgeSetFoodCategory(index);
   closeModal();
-  const strip = $('forgeFoodCats');
-  const selected = strip.querySelector('[aria-pressed="true"]');
-  if (selected) {
-    const left = selected.getBoundingClientRect().left - strip.getBoundingClientRect().left;
-    strip.scrollLeft += left - 2;
-  }
   $('forgeFoodCategoryButton').focus({preventScroll: true});
 }
 
@@ -76,15 +71,15 @@ function forgeSetFoodTab(tab) {
   }
   forgeFoodTab = tab;
   forgeFoodLimit = forgeFoodBatchSize;
-  const source = tab === 'online' ? 'catalog' : tab;
   for (const button of document.querySelectorAll('[data-food-tab]')) {
-    const active = button.dataset.foodTab === source;
+    const active = button.dataset.foodTab === tab;
     button.classList.toggle('active', active);
     button.setAttribute('aria-pressed', active);
   }
   $('forgeFoodCategoryControls').hidden = tab !== 'catalog';
   $('forgeFoodOnlineEntry').hidden = tab !== 'catalog';
   $('forgeFoodOnlineControls').hidden = tab !== 'online';
+  $('forgeFoodMore').open = false;
   searchFoodDB();
 }
 
@@ -98,7 +93,7 @@ function forgeFavoriteFood(index) {
   const favorite = state.forgeFavorites.findIndex(item => forgeFoodKey(item) === forgeFoodKey(food));
   if (favorite >= 0) state.forgeFavorites.splice(favorite, 1);
   else state.forgeFavorites.unshift(food);
-  save();
+  if (!save()) return;
   toast(favorite >= 0 ? 'Удалено из избранного' : 'Добавлено в избранное');
 }
 
@@ -108,7 +103,7 @@ function forgeFoodRow(food, index) {
   return `<article class="food-catalog-result">
     <div>
       <h2>${esc(food.name)}</h2>
-      <p>Порция 100 г · ${Math.round(food.cal)} ккал</p>
+      <p>На 100 ${food.unit === 'ml' ? 'мл' : 'г'} · ${Math.round(food.cal)} ккал</p>
       <p>${macros}</p>
       <p>${[food.brand || forgeFoodCategoryLabel(food), food.source].filter(Boolean).map(esc).join(' · ')}</p>
     </div>
@@ -231,5 +226,21 @@ function forgePickFood(index) {
   if (food) forgeOpenFoodModal(food);
 }
 
-$('forgeFoodCats').innerHTML = forgeFoodCategoryButtons(false);
+document.querySelector('#forgeFoodMore .food-catalog-actions').addEventListener('click', event => {
+  if (event.target.closest('button')) $('forgeFoodMore').open = false;
+});
+window.ForgeFoodNavigation = {
+  snapshot() {
+    return { tab: forgeFoodTab, category: forgeFoodCategory, query: $('foodSearch').value, limit: forgeFoodLimit };
+  },
+  restore(saved) {
+    if (!saved || typeof saved !== 'object') return;
+    $('foodSearch').value = typeof saved.query === 'string' ? saved.query : '';
+    forgeSetFoodCategory(forgeFoodCategoryList.indexOf(saved.category));
+    forgeSetFoodTab(forgeFoodTabs.includes(saved.tab) ? saved.tab : 'catalog');
+    forgeFoodLimit = Number.isInteger(saved.limit) && saved.limit >= forgeFoodBatchSize && saved.limit <= 5000
+      ? saved.limit : forgeFoodBatchSize;
+    searchFoodDB();
+  }
+};
 searchFoodDB();

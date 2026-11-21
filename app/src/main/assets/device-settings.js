@@ -58,6 +58,7 @@
   window.ForgeDevice = {
     receive(result) {
       if (result.kind === 'preferences') {
+        if (typeof result.keyboardVisible === 'boolean') window.ForgeViewport?.keyboard(result.keyboardVisible);
         card.querySelector('#forge-device-permissions').textContent = 'Камера: ' + (result.camera ? 'разрешена' : 'разрешение не выдано');
         for (const field of card.querySelectorAll('[data-pref]')) {
           field.checked = result[field.dataset.pref];

@@ -2,7 +2,8 @@
 .app{min-height:100dvh;min-width:0}
 .page:not(.active){display:none!important}
 body{padding-bottom:calc(var(--forge-nav-height,84px) + env(safe-area-inset-bottom) + 16px)}
-.page{min-width:0;overflow-wrap:anywhere;scroll-margin-top:80px}
+.page{min-width:0;overflow-wrap:anywhere;scroll-margin-top:calc(var(--forge-header-height,56px) + 12px)}
+html{scroll-padding-top:calc(var(--forge-header-height,56px) + 12px);scroll-padding-bottom:calc(var(--forge-nav-height,84px) + 16px)}
 .page input,.page select,.page textarea{max-width:100%;min-width:0}
 .page .grid2,.page .formgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
 .forge-overlay-open{overflow:hidden}

@@ -7,6 +7,7 @@
   --fp-r1:12px;--fp-r2:16px;--fp-r3:24px;
   --fp-font:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
   --fp-shadow:0 12px 32px #0003;--fp-motion:160ms;
+  --fp-touch:48px;--fp-icon-size:22px;--fp-control-text:.875rem;--fp-control-height:48px;
   --bg:var(--fp-bg);--panel:var(--fp-surface);--panel2:var(--fp-raised);--line:var(--fp-line);
   --text:var(--fp-text);--muted:var(--fp-secondary);--lime:var(--fp-primary);--lime2:var(--fp-primary);
   --orange:var(--fp-warning);--red:var(--fp-error);--blue:var(--fp-info);--radius:var(--fp-r3);
