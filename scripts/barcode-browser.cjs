@@ -17,6 +17,11 @@ const origin = 'https://appassets.androidplatform.net';
     if (url.origin === origin) return route.fulfill({ path: path.join(assets, url.pathname.replace(/^\/assets\//, '')) });
     if (url.hostname !== 'world.openfoodfacts.org') return route.abort();
     requests++;
+    if (url.pathname.includes('5901234123457')) return route.fulfill({ status: 404, json: { status: 0 } });
+    if (url.pathname.includes('9780201379624')) return route.fulfill({ json: { status: 1, product: {
+      code: '9780201379624', product_name: 'Неполный напиток', quantity: '330 ml',
+      nutriments: { 'energy-kcal_100g': 42 }
+    } } });
     if (!url.pathname.includes('4006381333931')) return route.abort();
     return route.fulfill({ json: { product: {
       code: '4006381333931', product_name: 'Проверочный напиток', quantity: '1 l', serving_size: '250 ml',
@@ -64,6 +69,32 @@ const origin = 'https://appassets.androidplatform.net';
     await page.locator('#forge-scan-manual').click();
     await page.getByText('Свой продукт', { exact: true }).waitFor();
     assert.equal(await page.evaluate(() => state.foods.length), start + 1);
+    await page.evaluate(() => { closeModal(); openFoodScanner(); });
+    await code.fill('5901234123457');
+    await lookup.click();
+    await page.locator('#forge-scan-status[data-result="missing"]').waitFor();
+    await code.fill('9780201379624');
+    await lookup.click();
+    await page.locator('#forge-scan-status[data-result="incomplete"]').waitFor();
+    await page.locator('#forge-scan-manual').click();
+    assert.equal(await page.locator('#forgeCustomName').inputValue(), 'Неполный напиток');
+    assert.equal(await page.locator('#forgeCustomUnit').inputValue(), 'ml');
+    assert.equal(await page.locator('#forgeCustomP').inputValue(), '');
+    await page.locator('#forgeCustomCal').fill('42');
+    await page.locator('#forgeCustomP').fill('0');
+    await page.locator('#forgeCustomF').fill('0');
+    await page.locator('#forgeCustomC').fill('10.5');
+    await page.getByRole('button', { name: 'Сохранить и выбрать порцию' }).click();
+    await page.getByText('Неполный напиток').waitFor();
+    assert.match(await page.locator('#forgeFoodPreview').innerText(), /100 мл · 42 ккал/);
+    await page.getByRole('button', { name: 'Исправить КБЖУ по этикетке' }).click();
+    await page.locator('#forgeCustomCal').fill('36');
+    await page.locator('#forgeCustomC').fill('9');
+    await page.getByRole('button', { name: 'Сохранить и выбрать порцию' }).click();
+    assert.match(await page.locator('#forgeFoodPreview').innerText(), /100 мл · 36 ккал/);
+    await page.getByRole('button', { name: /Добавить в дневник/ }).click();
+    assert.deepEqual(await page.evaluate(() => state.foods.slice(-2).map(item => [item.barcode, item.cal])),
+      [['4006381333931', 100], ['9780201379624', 36]]);
     assert.deepEqual(errors, []);
     console.log('PASS barcode checksum, offline catalog, mock OFF, milliliters, confirmation, cache and network fallback');
   } catch (err) {

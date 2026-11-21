@@ -36,7 +36,7 @@
         .filter(value => value !== null);
       if (ratings.length) effort.push(mean(ratings));
       for (const set of recorded) {
-        if (!set.exercise || M.unitOf(set) !== 'reps' || Number(set.weight) <= 0 || Number(set.reps) > 30) continue;
+        if (typeof set.exercise !== 'string' || !set.exercise.trim() || M.unitOf(set) !== 'reps' || Number(set.weight) <= 0 || Number(set.reps) > 30) continue;
         const identity = set.exerciseId || set.exercise.normalize('NFC').trim().toLocaleLowerCase('ru');
         const key = identity + '/' + set.reps;
         const selected = strength.get(key);

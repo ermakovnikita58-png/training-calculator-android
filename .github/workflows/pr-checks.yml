@@ -19,6 +19,16 @@ jobs:
           node-version: '22'
       - run: npm ci --ignore-scripts --no-audit --no-fund
       - run: npx playwright install --with-deps chromium
+      - name: Compare rendered UX screenshots with reviewed references
+        id: visuals
+        continue-on-error: true
+        run: node scripts/ux-v2-visual.cjs
+      - uses: actions/upload-artifact@v4
+        if: steps.visuals.outcome == 'failure'
+        with:
+          name: forge-visual-comparison
+          path: test-results/ux-v2/visual/
+          if-no-files-found: ignore
       - run: npm test
         env:
           FORGE_CYCLE_SCREENSHOTS: test-results/cycles
@@ -39,9 +49,10 @@ jobs:
       - run: node scripts/release-performance.cjs
       - run: node scripts/ux-v2-geometry.cjs
       - run: node scripts/ux-v2-products-browser.cjs
-      - name: Compare rendered UX screenshots with reviewed references
-        run: node scripts/ux-v2-visual.cjs
       - run: npm audit --audit-level=high
+      - name: Require matching reviewed screenshots
+        if: always() && steps.visuals.outcome == 'failure'
+        run: exit 1
       - uses: actions/upload-artifact@v4
         if: always()
         with:

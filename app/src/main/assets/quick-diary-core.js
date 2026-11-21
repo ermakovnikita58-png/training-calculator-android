@@ -33,28 +33,40 @@
     return { weight, [unit]: repeats };
   }
 
-  function comparableSet(history, workout, exercise, index) {
-    if (!exercise?.name) return null;
+  function earlierSet(workout, exercise, index) {
     const unit = unitOf(exercise);
-    // Search earlier sets in this exercise before looking through the diary.
     for (let i = index - 1; i >= 0; i--) {
       const set = exercise.sets[i];
-      const values = set?.done && setValues(set, unit);
+      const values = set?.done && set.type !== 'warmup' && setValues(set, unit);
       if (values) return { values, date: date(workout.date), current: true };
     }
-    const matchesIn = entry => (entry.sets || [])
-      .filter(set => set && set.done !== false && set.type !== 'warmup' && exerciseMatches(exercise, set))
-      .map(set => setValues(set, unit)).filter(Boolean);
-    const past = (history || []).filter(entry => entry && date(entry.date) <= date(workout.date))
-      .slice().sort((left, right) => {
-        const samePlan = entry => Number(!!workout.programId && entry.programId === workout.programId);
-        return samePlan(right) - samePlan(left) || date(right.date).localeCompare(date(left.date));
-      });
-    for (const entry of past) {
-      const sets = matchesIn(entry);
-      if (sets.length) return { values: sets[Math.min(index, sets.length - 1)], date: date(entry.date), current: false };
-    }
     return null;
+  }
+
+  function pastSets(history, workout, exercise) {
+    const unit = unitOf(exercise);
+    const when = date(workout.date);
+    let previous = null;
+    for (const entry of history || []) {
+      if (!entry || entry.id === workout.id && entry.id) continue;
+      const performed = date(entry.date);
+      if (!performed || performed > when) continue;
+      const samePlan = Number(!!workout.programId && entry.programId === workout.programId);
+      if (previous && (samePlan < previous.samePlan || samePlan === previous.samePlan && performed <= previous.date)) continue;
+      const sets = (entry.sets || [])
+        .filter(set => set && set.done !== false && set.type !== 'warmup' && exerciseMatches(exercise, set))
+        .map(set => setValues(set, unit)).filter(Boolean);
+      if (sets.length) previous = { sets, date: performed, samePlan };
+    }
+    return previous;
+  }
+
+  function comparableSet(history, workout, exercise, index) {
+    if (!exercise?.name) return null;
+    const current = earlierSet(workout, exercise, index);
+    if (current) return current;
+    const previous = pastSets(history, workout, exercise);
+    return previous && { values: previous.sets[Math.min(index, previous.sets.length - 1)], date: previous.date, current: false };
   }
 
   function prefillWorkout(workout, history) {
@@ -62,10 +74,12 @@
     const exercises = workout.exercises.map(exercise => {
       const unit = unitOf(exercise);
       const first = setValues(exercise.sets[0], unit);
+      const previous = pastSets(history, workout, exercise);
       const sets = exercise.sets.map((set, index) => {
         if (set.done) return set;
-        const prior = comparableSet(history, workout, exercise, index);
-        return prior ? { ...set, ...prior.values } : set;
+        const values = earlierSet(workout, exercise, index)?.values ??
+          previous?.sets[Math.min(index, previous.sets.length - 1)];
+        return values ? { ...set, ...values } : set;
       });
       return { ...exercise, sets, ...(first ? { planned: { ...first, sets: sets.length } } : {}) };
     });

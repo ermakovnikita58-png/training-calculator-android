@@ -151,6 +151,52 @@ async function weekly(page, width) {
   await page.locator('#home.active').waitFor();
 }
 
+async function adaptive(page) {
+  async function prepare() {
+    await scene(page, 'plan');
+    await page.evaluate(() => {
+      const name = state.plans[0].exercises[0];
+      const programs = state.programs.map(item => item.id === state.currentProgram
+        ? { ...item, progression: { enabled: true, stepKg: 2.5 } } : item);
+      const previous = { id: 'adaptive-before', date: '2026-11-14', programId: state.currentProgram,
+        sets: [{ exercise: name, weight: 62.5, reps: 8, done: true }] };
+      const workout = { id: uid(), name: state.plans[0].name, date: today(), start: Date.now(),
+        programId: state.currentProgram, programDay: 'ПН', exercises: [{
+          name, planned: { weight: 62.5, reps: 8, sets: 3 },
+          sets: Array.from({ length: 3 }, () => ({ weight: 62.5, reps: 10, rir: 2, done: true }))
+        }] };
+      forgeCommitDiary({ ...state, active: workout, programs, workouts: [...state.workouts, previous] });
+      showPage('workout');
+    });
+    await page.locator('#workout [onclick="n8FinishWorkout()"]').click();
+    await page.locator('#forgeProgressionAdvice').waitFor();
+  }
+  const weight = 'diary.programs.find(item=>item.id===diary.currentProgram).days[0].exerciseConfig["Жим штанги лёжа"].weight';
+  await prepare();
+  await page.locator('#forgeDeclineProgression').click();
+  assert.equal(await stored(page, weight), 62.5);
+  await prepare();
+  assert.equal(await stored(page, weight), 62.5);
+  await page.locator('#forgeProgressionAdvice input[type="checkbox"]').check();
+  await page.locator('#forgeAcceptProgression').click();
+  assert.equal(await stored(page, weight), 65);
+  assert.deepEqual(await stored(page, 'diary.workouts[0].sets.map(set=>[set.weight,set.reps])'),
+    [[62.5, 10], [62.5, 10], [62.5, 10]]);
+}
+
+async function zoomAndLandscape(page) {
+  await scene(page, 'nutrition');
+  await page.setViewportSize({ width: 320, height: 844 });
+  await page.addStyleTag({ content: 'html { font-size: 32px !important }' });
+  await page.locator('#nutrition [data-quick-food="open"]').click();
+  await layout(page, '#forgeQuickFood');
+  await page.setViewportSize({ width: 844, height: 390 });
+  await layout(page, '#forgeQuickFood');
+  await page.getByRole('button', { name: 'Добавить выбранные продукты' }).scrollIntoViewIfNeeded();
+  assert(await page.getByRole('button', { name: 'Добавить выбранные продукты' }).isVisible());
+  await back(page);
+}
+
 (async () => {
   await fs.mkdir(screenshots, { recursive: true });
   const browser = await chromium.launch({ executablePath: process.env.FORGE_CHROMIUM });
@@ -163,6 +209,10 @@ async function weekly(page, width) {
         await wizard(page, width);
         await cycle(page, width);
         await weekly(page, width);
+        if (width === 390) {
+          await adaptive(page);
+          await zoomAndLandscape(page);
+        }
         assert.deepEqual(errors, []);
         console.log('PASS ' + width + 'px: one-tap log, duplicate guard, restart/undo, meals, wizard, cycle TM, weekly/Coach and Back');
       } catch (error) {

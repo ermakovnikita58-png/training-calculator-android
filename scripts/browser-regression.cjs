@@ -216,8 +216,15 @@ async function checkFlexibleCycle(page) {
  await fc.getByText('Пропущено',{exact:true}).waitFor();
  await action('session-unskip').click();
  await action('activate').click();
- for(const answer of ['adjust-no','adjust-yes']){
-  await action('session-start').last().click();
+ // The first completed session supplies the comparable history. The next two
+ // use the same initial load and reps to exercise decline and acceptance.
+ for(const [week, answer] of [null,'adjust-no','adjust-yes'].entries()){
+  await fc.locator('[name="week"]').selectOption(String(week));
+  await fc.locator('[data-load-field][name="reps"]').fill('8');
+  await fc.locator('[data-load-field][name="reps"]').dispatchEvent('change');
+  await fc.locator('[data-load-field][name="percent"]').fill('65');
+  await fc.locator('[data-load-field][name="percent"]').dispatchEvent('change');
+  await action('session-start').first().click();
   assert.equal(await page.evaluate(()=>document.querySelector('.page.active')?.id),'workout',
    await page.locator('#toast').textContent());
   const fields=page.locator('#workout .fc-rir-row input');
@@ -226,8 +233,14 @@ async function checkFlexibleCycle(page) {
    await page.getByRole('button',{name:'Записать подход '+(index+1),exact:true}).click();
   }
   await page.getByRole('button',{name:'Завершить ↗',exact:true}).click();
-  await action(answer).click();
-  assert.equal(await page.evaluate(()=>state.workouts[0].cycleAdjustment),answer==='adjust-yes'?'accepted':'declined');
+  if(answer){
+   await action(answer).click();
+   assert.equal(await page.evaluate(()=>state.workouts[0].cycleAdjustment),answer==='adjust-yes'?'accepted':'declined');
+  }else{
+   assert.equal(await action('adjust-yes').count(),0);
+   const yesterday=dayBefore(await page.evaluate(()=>today()));
+   await page.evaluate(date=>forgeCommitDiary({...state,workouts:[{...state.workouts[0],date},...state.workouts.slice(1)]}),yesterday);
+  }
   assert.equal(await page.evaluate(()=>Object.values(state.trainingCycles[0].bases)[0].adjustedValue),answer==='adjust-yes'?41:undefined);
   assert.equal(await page.evaluate(()=>state.workouts[0].trainingCycle.rows[0].basis.value),40);
   await action('close').first().click();

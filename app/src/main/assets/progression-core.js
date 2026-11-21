@@ -6,7 +6,7 @@
 })(globalThis, function (M) {
   'use strict';
   const number = value => typeof value === 'number' && Number.isFinite(value);
-  const work = set => set?.done !== false && set?.type !== 'warmup';
+  const work = set => !!set && set.done !== false && set.type !== 'warmup';
   const reserve = set => {
     if (number(set.rir) && set.rir >= 0 && set.rir <= 10) return set.rir;
     return number(set.rpe) && set.rpe >= 1 && set.rpe <= 10 ? 10 - set.rpe : null;
