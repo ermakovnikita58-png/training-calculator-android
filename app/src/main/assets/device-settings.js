@@ -10,10 +10,16 @@
     <p class="muted" id="forge-device-report"></p>
     <button class="btn secondary small" type="button" data-device="copy">Скопировать технический отчёт</button>
     <h2 class="cardtitle">Конфиденциальность и данные</h2>
-    <p class="muted">Дневник хранится на устройстве. Облачная копия настраивается отдельно в разделе «Аккаунт». JSON можно сохранить для переноса на другой телефон.</p>
+    <ul id="forge-data-status" class="fp-data-status" aria-label="Состояние дневника и резервных копий">
+      <li id="forge-local-state"></li>
+      <li id="forge-backup-state"></li>
+      <li id="forge-remote-state"></li>
+      <li id="forge-sync-state" hidden></li>
+    </ul>
     <p class="notice" id="forge-diary-recovery" role="status" hidden>Исходный дневник требует восстановления. «Экспорт JSON» сохранит его в исходном виде. Затем можно загрузить проверенную резервную копию.</p>
     <div class="grid2">
       <button class="btn secondary small" type="button" data-device="export">Экспорт JSON</button>
+      <button class="btn secondary small" type="button" data-device="transfer">Перенос дневника на другой телефон</button>
       <button class="btn secondary small" type="button" data-device="cloud">Аккаунт и синхронизация</button>
       <button class="btn ghost small" type="button" data-device="reset">Удалить локальный дневник</button>
     </div>
@@ -52,8 +58,44 @@
   const healthWeightButton = card.querySelector('[data-device="health-weight"]');
   let technicalReport = 'FORGE Training\nСреда: браузер\nДневник: локальное хранилище браузера';
   const report = card.querySelector('#forge-device-report');
+  const formatDate = value => Number.isFinite(new Date(value).getTime()) ? new Date(value).toLocaleString('ru-RU') : '';
+  let checkpointAt = null;
+  let checkpointStatus = bridge?.checkpoint ? 'Проверяем копию на устройстве' : 'Для переноса доступен экспорт JSON';
+  function refreshDataStatus() {
+    const storage = window.ForgeDiaryStorage;
+    card.querySelector('#forge-local-state').textContent = storage.needsRecovery() ? 'Локальный дневник требует восстановления' :
+      storage.hasSavedDiary() ? 'Локальный дневник сохранён' : 'На устройстве ещё нет сохранённых записей';
+    card.querySelector('#forge-backup-state').textContent = checkpointAt
+      ? 'Копия на устройстве: ' + formatDate(checkpointAt) : checkpointStatus;
+    const sync = window.ForgeCloudStatus?.() || {};
+    const account = sync['Облачный аккаунт'] === 'сеанс открыт';
+    const cloudAt = account && sync['Последняя облачная копия'];
+    card.querySelector('#forge-remote-state').textContent = cloudAt
+      ? 'Последняя подтверждённая облачная копия: ' + formatDate(cloudAt)
+      : account ? 'Supabase подключён. Подтверждённая облачная копия пока неизвестна.' :
+        'Supabase: ' + (sync.Supabase === 'проект задан' ? 'доступен вход в аккаунт' : 'проект не настроен');
+    const pending = card.querySelector('#forge-sync-state');
+    pending.hidden = !sync['Локальные изменения ждут отправки'];
+    pending.textContent = pending.hidden ? '' : 'Есть ещё не отправленные в облако изменения';
+  }
+
+  function transfer() {
+    $('modalTitle').textContent = 'Перенос дневника';
+    $('modalBody').innerHTML = '<div class="fp-product-panel"><ol><li>Экспортируй JSON и перенеси файл на новый телефон.</li>' +
+      '<li>На новом телефоне открой «Профиль → Перенос дневника» и выбери этот файл.</li>' +
+      '<li>Сверь тренировки и питание. Если на новом телефоне уже есть записи, сначала сделай их копию.</li></ol>' +
+      '<button id="forge-transfer-export" class="btn primary full" type="button">Экспортировать JSON</button>' +
+      '<button id="forge-transfer-import" class="btn secondary full" type="button">Выбрать JSON для восстановления</button></div>';
+    $('forge-transfer-export').onclick = () => exportData();
+    $('forge-transfer-import').onclick = () => { closeModal(); $('importFile').click(); };
+    $('modalback').classList.add('show');
+  }
+  window.forgeOpenTransfer = transfer;
   function showReport() { report.textContent = technicalReport.replaceAll('\n', ' · '); }
   showReport();
+  refreshDataStatus();
+  window.addEventListener('forge:diary-recovered', refreshDataStatus);
+  window.addEventListener('forge:data-status', refreshDataStatus);
 
   window.ForgeDevice = {
     receive(result) {
@@ -83,11 +125,16 @@
           : 'Нет доступных данных. Проверь разрешения Health Connect и наличие записей.');
       } else if (result.kind === 'diagnostics') {
         technicalReport = Object.entries(result.details).map(([key, value]) => key + ': ' + value).join('\n');
+        checkpointAt = Number.isFinite(result.checkpointAt) && result.checkpointAt > 0 ? result.checkpointAt : null;
+        if (result.checkpointStatus) checkpointStatus = 'Копия на устройстве: ' + result.checkpointStatus;
+        refreshDataStatus();
         showReport();
       } else if (result.kind === 'saved') {
         toast(result.ok ? 'Копия сохранена на устройстве' : 'Не удалось сохранить копию');
+        if (result.ok) bridge?.diagnostics?.();
       } else if (result.kind === 'deleted') {
         toast(result.ok ? 'Локальная копия удалена' : 'Не удалось удалить копию');
+        if (result.ok) bridge?.diagnostics?.();
       } else if (result.kind === 'checkpoint') {
         if (!result.payload) return toast('Нет доступной проверенной копии');
         if (!confirm('Заменить текущий дневник локальной копией? Сначала экспортируй текущие данные в JSON.')) return;
@@ -126,6 +173,7 @@
       }
       case 'test-report': bridge.diagnosticEvent('test_non_fatal'); break;
       case 'export': exportData(); break;
+      case 'transfer': window.forgeOpenTransfer(); break;
       case 'cloud': showPage('account'); break;
       case 'reset': openModal('reset'); break;
       case 'copy':

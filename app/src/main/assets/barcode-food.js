@@ -57,6 +57,11 @@
   let stream = null, interval = null, generation = 0, lookup = null;
   const modal = document.getElementById('modalback');
   const input = () => document.getElementById('manualBarcode');
+  const status = (kind, text) => {
+    const label = $('forge-scan-status');
+    if (label) { label.dataset.result = kind; label.textContent = text; }
+  };
+  let draft = null;
 
   function stopCamera() {
     generation++;
@@ -101,6 +106,7 @@
   function open() {
     stopCamera();
     lookup?.abort();
+    draft = null;
     $('modalTitle').textContent = 'Сканирование штрихкода';
     $('modalBody').innerHTML = `
       <p class="muted">Поиск начинается в локальном каталоге. Для неизвестного кода FORGE запрашивает Open Food Facts.</p>
@@ -109,10 +115,16 @@
       <div class="field"><label for="manualBarcode">Штрихкод EAN или UPC</label>
         <input id="manualBarcode" inputmode="numeric" maxlength="13" placeholder="4006381333931"></div>
       <button class="btn primary full" type="button" id="forge-scan-find">Найти продукт</button>
-      <button class="btn ghost full" type="button" id="forge-scan-manual">Создать свой продукт</button>`;
+      <p id="forge-scan-status" class="muted" role="status" aria-live="polite"></p>
+      <button class="btn ghost full" type="button" id="forge-scan-manual">Создать продукт по этикетке</button>`;
     $('forge-scan-camera').onclick = () => root.AndroidBridge?.scanBarcode ? AndroidBridge.scanBarcode() : scanWeb();
     $('forge-scan-find').onclick = () => find(input()?.value);
-    $('forge-scan-manual').onclick = () => { stopCamera(); lookup?.abort(); forgeNewCustomFood(); };
+    $('forge-scan-manual').onclick = () => {
+      stopCamera();
+      lookup?.abort();
+      const code = normalizeCode(input()?.value);
+      forgeNewCustomFood({ ...(draft?.code === code ? draft : {}), code });
+    };
     modal.classList.add('show');
   }
 
@@ -126,35 +138,62 @@
 
   async function find(raw, format) {
     const code = normalizeCode(raw, format);
-    if (!code) return toast('Проверь цифры и контрольную цифру штрихкода');
+    if (!code) return status('invalid', 'Проверь цифры и контрольную цифру штрихкода.');
     const anchor = input();
     if (!anchor) return;
     lookup?.abort();
+    stopCamera();
+    draft = { code };
     const controller = new AbortController();
     lookup = controller;
+    const findButton = $('forge-scan-find');
+    findButton.disabled = true;
+    const isCurrent = () => lookup === controller && input() === anchor && modal.classList.contains('show');
     const matches = (value) => {
       const normalized = normalizeCode(value);
       return normalized != null && normalized.padStart(13, '0') === code.padStart(13, '0');
     };
     const local = [state.forgeCustomFoods, state.forgeFavorites, state.forgeRecent, forgeOfflineFoods]
       .flatMap(rows => Array.isArray(rows) ? rows : []).find(food => matches(food.code || food.barcode));
-    if (local) { forgeOpenFoodModal(local); return; }
-    toast('Ищем продукт по штрихкоду…');
+    if (local) {
+      forgeOpenFoodModal(local);
+      lookup = null;
+      return;
+    }
+    if (navigator.onLine === false) {
+      status('offline', 'Интернет недоступен. Введи КБЖУ с этикетки и сохрани продукт для следующего сканирования.');
+      lookup = null;
+      findButton.disabled = false;
+      return;
+    }
+    status('loading', 'Ищем продукт в Open Food Facts…');
     const timer = setTimeout(() => controller.abort(), 8000);
     try {
       const url = new URL('https://world.openfoodfacts.org/api/v2/product/' + code + '.json');
       url.searchParams.set('fields', 'code,product_name_ru,product_name,generic_name_ru,generic_name,brands,nutriments,quantity,product_quantity,product_quantity_unit,serving_size');
       const response = await fetch(url, { signal: controller.signal, credentials: 'omit' });
+      if (!isCurrent()) return;
+      if (response.status === 404) return status('missing', 'Штрихкод отсутствует в каталоге. Добавь продукт по этикетке.');
       if (!response.ok) throw Error('product');
-      const { product } = await response.json();
+      const { product, status: found } = await response.json();
+      if (!isCurrent()) return;
+      if (found === 0 || !product) return status('missing', 'Штрихкод отсутствует в каталоге. Добавь продукт по этикетке.');
       const food = productFromOpen(product);
-      if (!food || !matches(food.code)) throw Error('incomplete');
-      if (lookup === controller && input() === anchor && modal.classList.contains('show')) forgeOpenFoodModal(food);
-    } catch {
-      if (lookup === controller && input() === anchor && modal.classList.contains('show')) {
-        toast('Нет проверенных данных по коду. Можно добавить продукт вручную');
+      if (!food || !matches(food.code)) {
+        const size = amount(product.quantity) || amount(product.serving_size);
+        draft = { code, name: String(product.product_name_ru || product.product_name || '').slice(0, 150), unit: size?.unit };
+        return status('incomplete', 'Товар найден, но КБЖУ или единицы неполные. Сверь значения с этикеткой.');
       }
-    } finally { clearTimeout(timer); if (lookup === controller) lookup = null; }
+      forgeOpenFoodModal(food);
+    } catch {
+      if (isCurrent()) {
+        status('offline', 'Не удалось связаться с каталогом. Введи КБЖУ с этикетки или повтори поиск.');
+      }
+    } finally {
+      clearTimeout(timer);
+      if (isCurrent()) findButton.disabled = false;
+      if (lookup === controller) lookup = null;
+    }
   }
 
   new MutationObserver(() => {

@@ -36,8 +36,8 @@ android {
         buildConfigField("String", "FORGE_POSTHOG_KEY", "\"$posthogKey\"")
         buildConfigField("String", "FORGE_POSTHOG_HOST", "\"${if (posthogKey.isEmpty()) "" else posthogHost}\"")
         buildConfigField("String", "FORGE_GOOGLE_WEB_CLIENT_ID", "\"$googleWebClientId\"")
-        versionCode = 29
-        versionName = "11.4.4"
+        versionCode = 30
+        versionName = "11.5.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     if (storeBuild) {
