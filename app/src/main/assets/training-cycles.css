@@ -29,7 +29,7 @@ body:has(.fc-dialog[open]) { overflow: hidden; }
   border-bottom: 1px solid #34453a;
   z-index: 1;
 }
-.fc-header h2 { margin: 0; font-size: 1.1rem; text-align: center; }
+.fc-header h2 { margin: 0; min-width: 0; font-size: 1.1rem; text-align: center; overflow-wrap: anywhere; }
 .fc-header button { min-width: var(--fp-touch); min-height: var(--fp-touch); padding: 0; font-size: 1.25rem; }
 #fc-body { display: grid; gap: 12px; padding: 12px; }
 #fc-body :is(h3,p) { margin: 0; line-height: 1.4; overflow-wrap: anywhere; }

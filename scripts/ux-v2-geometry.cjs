@@ -100,14 +100,17 @@ async function run() {
       [...[320, 360, 375, 390, 412, 430, 480, 768].map(width => [width, 844, 1]),
         [844, 390, 1], ...[1.2, 1.5, 2].flatMap(scale => [[320, 844, scale], [390, 844, scale]])];
     for (const [width, height, scale] of sizes) {
-      const { page, context } = await openPage(browser, { width, height }, source);
-      const errors = [];
-      page.on('pageerror', error => errors.push(error.message));
+      const { page, context, errors } = await openPage(browser, { width, height }, source);
       if (scale !== 1) await page.addStyleTag({ content: 'html{font-size:' + 16 * scale + 'px!important}' });
       for (const name of screens) {
         await scene(page, name);
         const result = await inspect(page);
         if (!await lastActionIsReachable(page, result.page)) result.issues.push({ type: 'last-action-covered' });
+        if (result.issues.length) {
+          const output = path.resolve('test-results/ux-v2');
+          await fs.mkdir(output, { recursive: true });
+          await page.screenshot({ path: path.join(output, name + '-' + width + '-' + scale + '-failure.png') });
+        }
         report.push({ width, height, scale, screen: name, ...result });
       }
       report.push({ width, height, scale, screen: 'javascript', issues: errors });

@@ -1,7 +1,20 @@
 #!/usr/bin/env bash
 set -euo pipefail
 mkdir -p test-results
-trap 'adb shell settings put system font_scale 1.0; adb logcat -d -t 2500 > test-results/emulator-logcat.txt; adb exec-out screencap -p > test-results/emulator-screen.png' EXIT
+adb logcat -v threadtime > test-results/emulator-live-logcat.txt 2>&1 &
+logcat_pid=$!
+vmstat 5 > test-results/runner-memory.txt &
+memory_pid=$!
+cleanup() {
+  local status=$?
+  set +e
+  kill "$logcat_pid" "$memory_pid" 2>/dev/null
+  adb shell settings put system font_scale 1.0
+  adb logcat -d -t 2500 > test-results/emulator-logcat.txt
+  adb exec-out screencap -p > test-results/emulator-screen.png
+  exit "$status"
+}
+trap cleanup EXIT
 app=ru.trainingcalculator.app
 runner="$app.test/androidx.test.runner.AndroidJUnitRunner"
 
@@ -20,11 +33,11 @@ signer="$ANDROID_HOME/build-tools/35.0.0/apksigner"
 diff <(grep 'Signer #1 certificate SHA-256 digest:' test-results/baseline-signer.txt) <(grep 'Signer #1 certificate SHA-256 digest:' test-results/candidate-signer.txt)
 sha256sum "$baseline" "$candidate" > test-results/apk-SHA256SUMS
 adb shell getprop ro.build.version.sdk | tee test-results/android-api.txt
-adb install "$baseline"
-adb install "$RUNNER_TEMP/forge-instrumentation.apk"
+adb install --no-incremental "$baseline"
+adb install --no-incremental "$RUNNER_TEMP/forge-instrumentation.apk"
 instrument upgrade-seed -e forgeUpgrade seed -e forgeBaseCode "$BASE_VERSION_CODE" -e class "$app.UpgradePersistenceTest#seedPreviousVersion"
 adb shell am force-stop "$app"
-adb install -r "$candidate"
+adb install --no-incremental -r "$candidate"
 adb shell cmd connectivity airplane-mode enable
 adb shell svc wifi disable
 adb shell svc data disable

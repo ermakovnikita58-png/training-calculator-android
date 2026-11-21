@@ -9,6 +9,8 @@ const date = new Date('2026-11-16T12:00:00Z');
 async function openPage(browser, viewport, assets) {
   const context = await browser.newContext({ viewport, locale: 'ru-RU', timezoneId: 'Asia/Yekaterinburg', reducedMotion: 'reduce' });
   const page = await context.newPage();
+  const errors = [];
+  page.on('pageerror', error => errors.push(error.message));
   await page.clock.setFixedTime(date);
   page.on('dialog', dialog => dialog.accept());
   await page.route('**/*', route => {
@@ -19,6 +21,7 @@ async function openPage(browser, viewport, assets) {
       : route.abort();
   });
   await page.goto(address);
+  if (errors.length) throw new Error('Application initialization: ' + errors.join('; '));
   await page.evaluate(() => {
     const exercise = 'Жим штанги лёжа';
     const day = { day: 'ПН', name: 'Верх тела', focus: 'Грудь · Спина · Плечи',
@@ -42,7 +45,7 @@ async function openPage(browser, viewport, assets) {
     renderAll();
     showPage('home');
   });
-  return { context, page };
+  return { context, page, errors };
 }
 
 async function resetSurfaces(page) {
@@ -90,7 +93,7 @@ async function scene(page, name) {
       case 'group': showPage('library'); return ForgeExerciseLibrary.openGroup('Плечи');
       case 'meals': return showPage('meals');
       case 'recipes': showPage('nutrition'); return n10OpenRecipes();
-      case 'recipe': showPage('nutrition'); return n10EditRecipe('ux-recipe');
+      case 'recipe': showPage('nutrition'); return n10EditRecipe(0);
       case 'coach': showPage('nutrition'); return ForgeCoach.open();
       case 'profile': return showPage('profile');
       case 'account': return showPage('account');
