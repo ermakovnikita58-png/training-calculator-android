@@ -12,7 +12,7 @@ const { chromium, openPage, scene } = require('./ux-v2-fixture.cjs');
   try {
     for (const width of [320, 360, 390, 412]) {
       const { context, page } = await openPage(browser, { width, height: 844 }, assets);
-      const scenes = width === 390 ? ['home', 'products', 'categories', 'workout', 'program', 'cycle', 'exercise', 'statistics'] : ['products'];
+      const scenes = width === 390 ? ['home', 'products', 'categories', 'workout', 'new-program', 'program', 'cycle', 'exercise', 'statistics'] : ['products'];
       for (const name of scenes) {
         await scene(page, name);
         await page.screenshot({ path: path.join(output, name + '-' + width + '.png'), animations: 'disabled' });

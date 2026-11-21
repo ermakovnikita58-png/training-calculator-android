@@ -69,6 +69,7 @@ async function scene(page, name) {
             sets: [{ weight: 62.5, reps: 8, done: false }, { weight: 62.5, reps: 8, done: false }] }] } });
         showPage('workout'); return;
       case 'program': showPage('plan'); return n8OpenProgram('ux-program');
+      case 'new-program': showPage('plan'); return n8NewProgram();
       case 'cycle': {
         const cycle = ForgeCycleModel.createCycle(state.programs[0], '2026-11-16', 'ux-cycle', '2027-01-10');
         for (const row of cycle.days.flatMap(day => day.rows)) {

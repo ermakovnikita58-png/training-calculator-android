@@ -205,6 +205,40 @@
   },
   {
     "width": 390,
+    "name": "new-program",
+    "header": {
+      "height": 57,
+      "top": 0
+    },
+    "firstResult": {
+      "height": 0,
+      "top": 0
+    },
+    "sourceButtons": [
+      {
+        "text": "Каталог",
+        "width": 0,
+        "content": 0
+      },
+      {
+        "text": "Избранное",
+        "width": 0,
+        "content": 0
+      },
+      {
+        "text": "Недавние",
+        "width": 0,
+        "content": 0
+      },
+      {
+        "text": "Мои продукты",
+        "width": 0,
+        "content": 0
+      }
+    ]
+  },
+  {
+    "width": 390,
     "name": "program",
     "header": {
       "height": 57,

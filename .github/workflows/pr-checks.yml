@@ -38,6 +38,7 @@ jobs:
       - run: node scripts/ux-v2-geometry.cjs
       - run: node scripts/ux-v2-products-browser.cjs
       - name: Capture UX screenshot references for review
+        if: always()
         run: node scripts/ux-v2-visual.cjs
         env:
           FORGE_UX_REFERENCE_UPDATE: '1'

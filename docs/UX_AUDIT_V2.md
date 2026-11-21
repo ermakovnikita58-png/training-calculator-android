@@ -24,6 +24,8 @@
 | FIXED | Удержание в активной тренировке | Нижняя кнопка показывала reps даже для упражнения в секундах | Подпись «Записать подход» с весом и правильной единицей, доступное имя действия | Существующие проверки удержаний и E2E цикла |
 | FIXED | Статистика силы только со статическими удержаниями | Форматирование отсутствующего последнего результата превращало undefined в 0 | Отсутствующее значение отображается как «—» | Тест сохранения удержаний, проверка пустых результатов |
 | FIXED | Вырез и жестовая навигация в Android | Insets учитывали системные панели, отдельный displayCutout пропускался | Объединены systemBars и displayCutout, IME задаёт нижний отступ | Проверка Kotlin и instrumentation. Отдельная проверка Xiaomi обязательна |
+| FIXED | Текст 200%, широкие системные шрифты Linux | `white-space:nowrap` у назначения программы, непереносимые слова в узких заголовках и фиксированная колонка стрелки 20 px в библиотеке | Перенос в кнопках назначения и заголовках упражнения/цикла; колонка стрелки `max-content` по ширине символа | Геометрия крупных шрифтов в Windows и Linux CI |
+| FIXED | Озвучивание форм и кнопок без текста | Часть видимых подписей не была связана с существующим ID поля | Связаны подписи порции, программы, рецептов и пользовательских упражнений; добавлены имена кнопок закрытия и возврата | Проверка HTML и браузерные регрессии. Озвучивание TalkBack на телефоне — NOT_TESTED |
 
 ## Аудит экранов
 
@@ -66,6 +68,17 @@
 - [Android-тесты](../app/src/androidTest/java/ru/trainingcalculator/app/NavigationBackTest.kt) включают реальную IME, Back, четыре уровня textZoom, системный font_scale 1.5, поворот и восстановление фильтра. [CI](https://github.com/ermakovnikita58-png/training-calculator-android/pull/16/checks) содержит фактический результат по SHA. Снимки Android сохраняются в артефакте каждого эмулятора. Браузерное увеличение html font-size отдельно от Android.
 - [Существующие сценарии](../package.json) проверяют тренировки, циклы, продукты, Nutrition Coach, фото, импорт, конфликт и отказ сохранения. Дневник, программы, цели, фото и ID совместимы с базой. Проверка обновления 11.4.3 → 11.4.4 использует `adb install -r` под общей тестовой подписью.
 - Суперсеты как самостоятельный механизм в актуальном интерфейсе не обнаружены. В этой работе они не добавлялись. Камера в браузере проверяется с тестовыми ответами, настоящее распознавание и TalkBack требуют телефона.
+
+## Изменённые файлы
+
+- Экран продуктов: `app/src/main/assets/food-catalog.css`, `food-catalog.js`, разметка и связанные подписи в `index.html`.
+- Общие экраны и размеры: `performance-tokens.css`, `performance-ui.css`, `performance-ui.js`, `exercise-picker.css`, `exercise-library.css`, `training-cycles.css` в той же директории assets.
+- Возврат, восстановление и клавиатура: `navigation.css`, `navigation.js`, `device-settings.js`, `app/src/main/java/ru/trainingcalculator/app/MainActivity.kt`.
+- Версия и Android-проверки: `app/build.gradle.kts`, `app/src/androidTest/java/ru/trainingcalculator/app/NavigationBackTest.kt`, `scripts/android-upgrade-test.sh`.
+- QA: `scripts/ux-v2-fixture.cjs`, `ux-v2-geometry.cjs`, `ux-v2-products-browser.cjs`, `ux-v2-screenshots.cjs`, `ux-v2-visual.cjs`; обновлены `catalog-picker-browser.cjs`, `navigation-browser.cjs`, `performance-browser.cjs` и экспорт PNG-декодера в `visual-checks.cjs`.
+- CI: `.github/workflows/pr-checks.yml`, `apk-upgrade.yml`. Отчёты, реальные PNG и эталоны: `docs/UX_AUDIT_V2.md`, `docs/UX_V2_BEFORE_AFTER.md`, `docs/ux-v2/`.
+
+Полный перечень с построчным diff доступен в разделе Files changed PR №16. Формат дневника и миграции не изменены.
 
 ## Проверка Xiaomi 14
 

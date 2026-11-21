@@ -27,6 +27,7 @@
 | Категории | ![Категории до](ux-v2/before/categories-390.png) | ![Категории после](ux-v2/after/categories-390.png) |
 | Активная тренировка | ![Тренировка до](ux-v2/before/workout-390.png) | ![Тренировка после](ux-v2/after/workout-390.png) |
 | Редактор программы | ![Программа до](ux-v2/before/program-390.png) | ![Программа после](ux-v2/after/program-390.png) |
+| Создание программы | ![Новая программа до](ux-v2/before/new-program-390.png) | ![Новая программа после](ux-v2/after/new-program-390.png) |
 | Цикл | ![Цикл до](ux-v2/before/cycle-390.png) | ![Цикл после](ux-v2/after/cycle-390.png) |
 | Карточка упражнения | ![Упражнение до](ux-v2/before/exercise-390.png) | ![Упражнение после](ux-v2/after/exercise-390.png) |
 | Статистика | ![Статистика до](ux-v2/before/statistics-390.png) | ![Статистика после](ux-v2/after/statistics-390.png) |
