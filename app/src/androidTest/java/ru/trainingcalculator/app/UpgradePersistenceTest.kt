@@ -44,8 +44,11 @@ class UpgradePersistenceTest {
     }
 
     private fun waitForApp(scenario: ActivityScenario<MainActivity>) {
+        val ready = if (args.getString("forgeUpgrade") == "seed")
+            "(!!window.ForgePerformance || !!window.ForgeCycles) && typeof state === 'object'"
+        else "!!window.ForgeNavigation && !!window.ForgePerformance && !!window.ForgeCycles && typeof state === 'object'"
         repeat(100) {
-            if (js(scenario, "(!!window.ForgePerformance || !!window.ForgeCycles) && typeof state === 'object'") == "true") return
+            if (js(scenario, ready) == "true") return
             Thread.sleep(150)
         }
         error("FORGE did not initialize")
@@ -150,7 +153,7 @@ class UpgradePersistenceTest {
         assertEquals(BuildConfig.VERSION_CODE, versionCode())
         assertEquals(1, Settings.Global.getInt(context.contentResolver, Settings.Global.AIRPLANE_MODE_ON, 0))
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
-            waitFor(scenario, "!!window.ForgeCycles")
+            waitForApp(scenario)
             js(scenario, "forgeCommitDiary({...state,active:null});true")
             js(scenario, "showPage('plan')")
             click(scenario, "#plan [data-fc=template][data-index='0']")
@@ -176,6 +179,7 @@ class UpgradePersistenceTest {
             click(scenario, "#forge-cycle [data-fc=base-save]")
             click(scenario, "#forge-cycle [data-fc=next]")
             scenario.recreate()
+            waitForApp(scenario)
             waitFor(scenario, "document.querySelector('#forge-cycle')?.open && state.trainingCycles[0].stage === 2")
             click(scenario, "#forge-cycle [data-fc=activate]")
             val session = js(scenario, """
@@ -195,6 +199,7 @@ class UpgradePersistenceTest {
             """.trimIndent())
             click(scenario, "#workout .n8-setgrid [aria-label='Записать подход 1']")
             scenario.recreate()
+            waitForApp(scenario)
             waitFor(scenario, "state.active?.exercises.some(exercise=>exercise.unit==='seconds' && exercise.sets[0].done && exercise.sets[0].seconds===23) && state.active.cycleRestUntil>Date.now()")
             js(scenario, "showPage('workout');setTimeout(()=>n8FinishWorkout(),100);true")
             val confirmation = device.wait(Until.findObject(By.res("android:id/button1")), 7_000)

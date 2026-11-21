@@ -42,7 +42,11 @@ class NavigationBackTest {
             if (js(scenario, condition) == "true") return
             Thread.sleep(100)
         }
-        assertEquals("Condition: $condition", "true", js(scenario, condition))
+        val directory = java.io.File(InstrumentationRegistry.getInstrumentation().targetContext.getExternalFilesDir(null), "ux-v2").apply { mkdirs() }
+        val state = js(scenario, "({navigation:window.ForgeNavigation?.inspect(),library:window.ForgeExerciseLibrary?.snapshot(),keyboard:document.body.classList.contains('forge-keyboard'),focused:document.activeElement?.tagName})")
+        java.io.File(directory, "failure-${condition.hashCode()}.json").writeText(state)
+        UiDevice.getInstance(InstrumentationRegistry.getInstrumentation()).takeScreenshot(java.io.File(directory, "failure-${condition.hashCode()}.png"))
+        assertEquals("Condition: $condition; UI: $state", "true", js(scenario, condition))
     }
 
     private fun click(scenario: ActivityScenario<MainActivity>, selector: String) {
@@ -211,7 +215,7 @@ class NavigationBackTest {
             }
         }
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
-            waitFor(scenario, "!!window.ForgeExerciseLibrary")
+            waitFor(scenario, "!!window.ForgeExerciseLibrary && !!window.ForgeNavigation && !!window.ForgePerformance")
             js(scenario, "showPage('home');showPage('plan');showPage('library');ForgeExerciseLibrary.showGroups();y8OpenCard(encodeURIComponent('Жим штанги стоя'),'library')")
             waitFor(scenario, "ForgeNavigation.inspect().overlay==='y8DetailBack'")
             goBack()
@@ -243,7 +247,7 @@ class NavigationBackTest {
     }
     @Test fun libraryBackRetainsFiltersThenReturnsThroughGroups() {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
-            waitFor(scenario, "!!window.ForgeExerciseLibrary")
+            waitFor(scenario, "!!window.ForgeExerciseLibrary && !!window.ForgeNavigation && !!window.ForgePerformance")
             js(scenario, "showPage('home');showPage('plan');showPage('library');ForgeExerciseLibrary.openGroup('Плечи','гантел');scrollTo(0,200);y8OpenCard(encodeURIComponent('Жим гантелей сидя'),'library')")
             val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
             waitFor(scenario, "ForgeNavigation.inspect().overlay==='y8DetailBack'")
