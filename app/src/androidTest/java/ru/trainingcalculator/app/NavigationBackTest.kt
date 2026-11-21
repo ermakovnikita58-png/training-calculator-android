@@ -62,6 +62,77 @@ class NavigationBackTest {
         js(scenario, "showPage('home');showPage(${JSONObject.quote(page)})")
         waitFor(scenario, "ForgeNavigation.inspect().current === ${JSONObject.quote(page)}")
     }
+    @Test fun productSourcesAndCategoryRemainReadableWithSystemTextZoom() {
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            openPage(scenario, "foodcatalog")
+            for (scale in listOf(100, 120, 150, 200)) {
+                scenario.onActivity { activity -> requireNotNull(findWeb(activity.window.decorView)).settings.textZoom = scale }
+                waitFor(scenario, """
+                    (() => {
+                      const buttons = [...document.querySelectorAll('#foodcatalog [data-food-tab],#forgeFoodCategoryButton')];
+                      return buttons.length === 5 && buttons.every(button => {
+                        const rect = button.getBoundingClientRect();
+                        return rect.left >= 0 && rect.right <= innerWidth + 1 &&
+                          rect.width >= 48 && rect.height >= 48 && button.scrollWidth <= button.clientWidth + 1;
+                      }) && document.documentElement.scrollWidth <= innerWidth + 1;
+                    })()
+                """.trimIndent())
+                val context = InstrumentationRegistry.getInstrumentation().targetContext
+                val directory = java.io.File(context.getExternalFilesDir(null), "ux-v2").apply { mkdirs() }
+                assertTrue(UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
+                    .takeScreenshot(java.io.File(directory, "products-text-$scale.png")))
+            }
+            scenario.onActivity { activity -> requireNotNull(findWeb(activity.window.decorView)).settings.textZoom = 100 }
+            click(scenario, "#forgeFoodCategoryButton")
+            click(scenario, "#forgeFoodCategorySheet [data-food-category='Рыба и морепродукты']")
+            waitFor(scenario, "document.getElementById('forgeFoodCategoryValue').textContent === 'Рыба и морепродукты'")
+            scenario.recreate()
+            waitFor(scenario, """
+                ForgeNavigation.inspect().current === 'foodcatalog' &&
+                document.getElementById('forgeFoodCategoryValue').textContent === 'Рыба и морепродукты'
+            """.trimIndent())
+        }
+    }
+
+    @Test fun keyboardBackKeepsTheProgramDraftOpen() {
+        val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            openPage(scenario, "plan")
+            click(scenario, "#plan [data-fp-action='newProgram']")
+            waitFor(scenario, "!!document.getElementById('n8ProgName')")
+            val location = org.json.JSONArray(js(scenario, """
+                (() => {
+                  const element = document.getElementById('n8ProgName');
+                  element.scrollIntoView({block:'center'});
+                  const rect = element.getBoundingClientRect();
+                  return [rect.left + rect.width / 2, rect.top + rect.height / 2];
+                })()
+            """.trimIndent()))
+            val offset = IntArray(2)
+            scenario.onActivity { activity -> requireNotNull(findWeb(activity.window.decorView)).getLocationOnScreen(offset) }
+            device.click(offset[0] + location.getDouble(0).toInt(), offset[1] + location.getDouble(1).toInt())
+            waitFor(scenario, "document.body.classList.contains('forge-keyboard')")
+            js(scenario, """
+                (() => {
+                  const input = document.getElementById('n8ProgName');
+                  input.value = 'Черновик после клавиатуры';
+                  input.dispatchEvent(new Event('input',{bubbles:true}));
+                })()
+            """.trimIndent())
+            device.executeShellCommand("input keyevent KEYCODE_BACK")
+            waitFor(scenario, """
+                !document.body.classList.contains('forge-keyboard') &&
+                document.getElementById('n8-program').classList.contains('show') &&
+                document.getElementById('n8ProgName').value === 'Черновик после клавиатуры'
+            """.trimIndent())
+            js(scenario, "document.activeElement?.blur()")
+            scenario.recreate()
+            waitFor(scenario, """
+                document.getElementById('n8-program').classList.contains('show') &&
+                document.getElementById('n8ProgName').value === 'Черновик после клавиатуры'
+            """.trimIndent())
+        }
+    }
     @Test fun systemBackClosesCardThenReturnsThroughPages() {
         val instrumentation = InstrumentationRegistry.getInstrumentation()
         val gesture = InstrumentationRegistry.getArguments().getString("forgeBackInput") == "gesture"

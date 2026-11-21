@@ -35,6 +35,12 @@ jobs:
       - run: node scripts/release-data-browser.cjs
       - run: node scripts/account-deletion-browser.cjs
       - run: node scripts/release-performance.cjs
+      - run: node scripts/ux-v2-geometry.cjs
+      - run: node scripts/ux-v2-products-browser.cjs
+      - name: Capture UX screenshot references for review
+        run: node scripts/ux-v2-visual.cjs
+        env:
+          FORGE_UX_REFERENCE_UPDATE: '1'
       - run: npm audit --audit-level=high
       - uses: actions/upload-artifact@v4
         if: always()
@@ -45,4 +51,5 @@ jobs:
             docs/design-screenshots/*.png
             docs/art-reference-screenshots/*.png
             docs/art-contact-sheets/*.png
+            docs/ux-v2/reference/
           if-no-files-found: ignore

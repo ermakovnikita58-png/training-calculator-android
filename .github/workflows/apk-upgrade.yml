@@ -51,6 +51,12 @@ jobs:
             api: 36
             release_asset: '751709344'
             digest: 'ab1c67f2d2dfd65a22eace9c6c2b015f46bf9c7c6a463160741877ed0489e5e3'
+          - version: '11.4.3'
+            version_code: '28'
+            commit: 497ca76d4fe2f7512f16ffdd864d77e183669bed
+            api: 36
+            release_asset: '759472905'
+            digest: '866c347d31678e2965c53eec2f4e5d99ffaf06d32dc11a948238210a46102968'
     steps:
       - uses: actions/checkout@v4
         with:

@@ -18,4 +18,4 @@ async function checkScreen(page,png,width){
  let primary=0;for(let y=Math.max(0,Math.floor(boxes.navigation.top));y<p.height;y++)for(let x=0;x<p.width;x++){const c=p.at(x,y);if(c[0]===209&&c[1]===255&&c[2]===99)primary++;}
  assert.ok(primary>10,'selected tab has visible lime accent in screenshot');
 }
-module.exports={checkScreen};
+module.exports={checkScreen,pixels};

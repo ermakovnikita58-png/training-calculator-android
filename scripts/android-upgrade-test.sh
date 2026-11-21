@@ -37,8 +37,10 @@ grep -q '^Active default network: none' test-results/emulator-connectivity.txt
 instrument upgrade-verify -e forgeUpgrade verify -e class "$app.UpgradePersistenceTest#verifyCandidateVersion"
 adb shell am force-stop "$app"
 instrument offline-relaunch -e forgeUpgrade verify -e class "$app.UpgradePersistenceTest#verifyCandidateVersion"
-if [[ "$BASE_VERSION_CODE" != 24 ]]; then exit 0; fi
+if [[ "$BASE_VERSION_CODE" == 26 || "$BASE_VERSION_CODE" == 27 ]]; then exit 0; fi
+adb shell settings put secure show_ime_with_hard_keyboard 1
 instrument offline-device -e notClass "$app.UpgradePersistenceTest"
+adb pull "/sdcard/Android/data/$app/files/ux-v2" test-results/android-ux-v2
 instrument upgrade-cycles -e forgeUpgrade cycles -e class "$app.UpgradePersistenceTest#verifyCycleAfterUpgrade"
 
 adb shell getprop qemu.hw.mainkeys

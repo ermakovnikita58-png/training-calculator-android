@@ -37,7 +37,7 @@ const forgeFoodCategoryList = [...new Set([
 function forgeFoodCategoryButtons(fromSheet) {
   return forgeFoodCategoryList.map((category, index) => {
     const action = fromSheet ? 'forgeChooseFoodCategory' : 'forgeSetFoodCategory';
-    return `<button type="button" data-food-category="${esc(category)}" aria-pressed="${forgeFoodCategory === category}" onclick="${action}(${index})">${esc(category)}</button>`;
+    return `<button type="button" data-food-category="${esc(category)}" aria-label="${esc(category)}" aria-pressed="${forgeFoodCategory === category}" onclick="${action}(${index})">${esc(category)}</button>`;
   }).join('');
 }
 
@@ -49,6 +49,7 @@ function forgeSetFoodCategory(index) {
     button.setAttribute('aria-pressed', button.dataset.foodCategory === forgeFoodCategory);
   }
   searchFoodDB();
+  window.ForgeNavigation?.persist();
 }
 
 function forgeOpenFoodCategories() {
@@ -77,10 +78,11 @@ function forgeSetFoodTab(tab) {
     button.setAttribute('aria-pressed', active);
   }
   $('forgeFoodCategoryControls').hidden = tab !== 'catalog';
-  $('forgeFoodOnlineEntry').hidden = tab !== 'catalog';
+  $('forgeFoodOnlineEntry').hidden = tab === 'online';
   $('forgeFoodOnlineControls').hidden = tab !== 'online';
   $('forgeFoodMore').open = false;
   searchFoodDB();
+  window.ForgeNavigation?.persist();
 }
 
 function forgeFoodKey(food) {
@@ -145,6 +147,7 @@ function searchFoodDB() {
 function forgeMoreFood() {
   forgeFoodLimit += forgeFoodBatchSize;
   searchFoodDB();
+  window.ForgeNavigation?.persist();
 }
 
 let forgeFoodSearchEventTimer;
@@ -163,6 +166,7 @@ function forgeFoodChange() {
     }
   }
   searchFoodDB();
+  window.ForgeNavigation?.persist();
 }
 
 function forgeClearFoodSearch() {

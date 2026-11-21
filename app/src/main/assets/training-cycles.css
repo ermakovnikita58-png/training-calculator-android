@@ -82,6 +82,8 @@ body:has(.fc-dialog[open]) { overflow: hidden; }
 .fc-settings-grid { grid-template-columns: repeat(auto-fit, minmax(min(140px, 100%), 1fr)); }
 .fc-week, .fc-copy { display: flex; align-items: end; gap: 7px; }
 .fc-week label, .fc-copy label { flex: 1; }
+.fc-copy { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9em), 1fr)); align-items: end; }
+.fc-copy .btn { width: 100%; min-width: 0; }
 .fc-day-title { display: flex; align-items: start; justify-content: space-between; gap: 6px; }
 .fc-tag { border: 1px solid #52704e; padding: 4px 7px; border-radius: 20px; color: #deefcc; font-size: .75rem; }
 .fc-compare { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }

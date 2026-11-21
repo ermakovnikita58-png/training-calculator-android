@@ -170,6 +170,7 @@
     let opened=false;
     for(const el of visible)if(!previous.includes(el.id)){opened=true;originFocus=document.activeElement;overlayOrder=overlayOrder.filter(id=>id!==el.id);overlayOrder.push(el.id);el.setAttribute('role','dialog');el.setAttribute('aria-modal','true');}
     announce();
+    if(opened)byId('toast')?.classList.remove('show');
     if(opened||previous.some(id=>id&&!visible.some(el=>el.id===id)))focus(top()||byId(active()));
     persist();
   });
