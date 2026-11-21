@@ -31,17 +31,33 @@
   const training=d=>!!d?.exercises?.length;
   function foodTotals(date){const rows=(state.foods||[]).filter(f=>day(f.date)===date);return {rows,cal:sum(rows,'cal'),protein:sum(rows,'protein'),fat:sum(rows,'fat'),carbs:sum(rows,'carbs')};}
   function macro(name,value,target){return `<div><div class="fp-macro-label"><span>${esc(name)}</span><b>${fmt(value,1)} / ${fmt(target,1)} г</b></div>${meter(value,target)}</div>`;}
+  let onboardingSkipped=false;
+  try{onboardingSkipped=localStorage.getItem('forge_onboarding_10x')==='skip'}catch{}
   function renderHome(){
     const ws=recent(7),tot=foodTotals(today()),last=history()[0],weights=[...(state.weights||[])].filter(w=>day(w.date)<=today()).sort((a,b)=>a.date.localeCompare(b.date));
-    const wi=(new Date().getDay()+6)%7,plans=state.plans||[],index=training(plans[wi])?wi:plans.findIndex(training),plan=plans[index];
-    const title=state.active?.name||plan?.name||'Свободная тренировка',goal=Number(state.profile.weeklyGoal)||4;
+    const wi=(new Date().getDay()+6)%7,plans=state.plans||[];
+    const cycle=window.ForgeCycles?.nextAction(), active=state.active;
+    const first=!active&&!state.workouts.length&&!state.foods.length&&!state.weights.length&&!state.programs.length&&!ForgeDiaryStorage.needsRecovery()&&!onboardingSkipped;
+    const action=(title,tag,description,cta)=>({title,tag,description,cta});
+    const weekly='<button type="button" class="fp-btn primary" data-forge-weekly>Открыть недельный обзор</button>';
+    const quickFood='<button type="button" class="fp-btn primary" data-quick-food="open">Записать питание</button>';
+    const next=active?action(active.name,'В процессе','Продолжи с сохранённого подхода.',button('start','Продолжить тренировку',[],'primary','workout')):
+      cycle?action(cycle.session.day.name,'Цикл · занятие '+label(cycle.session.date),'Посмотри плановые подходы и дату следующего занятия.','<button type="button" class="fp-btn primary" data-fc="open-id" data-cycle="'+esc(cycle.cycle.id)+'">Открыть план цикла</button>'):
+      training(plans[wi])?action(plans[wi].name,'Сегодня',plans[wi].focus||'Тренировка по программе',button('start','Начать тренировку',[],'primary','workout')):
+      !tot.rows.length?action('Питание сегодня','Дневник','Повтори знакомый приём пищи или найди продукты.',quickFood):
+      action('Недельный обзор','Прогресс','Сравни две недели тренировок, массы и записей питания.',weekly);
+    const onboarding='<article class="fp-hero"><h2>С чего начнём?</h2><p>Можно сразу записать тренировку или восстановить свой дневник.</p><div class="fp-actions">'+
+      button('start','Начать тренировку',[],'primary','workout')+button('go','Готовые программы',['plan'],'','plan')+
+      '<button type="button" class="fp-btn" data-program-wizard="open">Создать программу</button>'+button('importDiary','Импортировать дневник',[],'','arrow')+
+      button('skipOnboarding','Пропустить',[],'quiet')+'</div></article>';
+    const goal=Number(state.profile.weeklyGoal)||4;
     root('home',`${heading(new Date().toLocaleDateString('ru-RU',{weekday:'long',day:'numeric',month:'long'}),`Привет, ${state.profile.name||'Атлет'}.`,'Твой план. Твой темп. Твой прогресс.')}
-      <article class="fp-hero"><div class="fp-hero-top"><span class="fp-eyebrow">${state.active?'Тренировка сохранена':'Ближайшая тренировка'}</span><span class="fp-chip active">${state.active?'В процессе':index===wi?'Сегодня':'По плану'}</span></div><h2>${esc(title)}</h2><p>${esc(state.active?'Продолжи с того подхода, на котором остановился.':plan?.focus||'Начни с упражнений из своей программы.')}</p>${button('start',state.active?'Продолжить тренировку':'Начать тренировку',[],'primary','workout')}</article>
+      ${first?onboarding:`<article class="fp-hero"><span class="fp-eyebrow">${esc(next.tag)}</span><h2>${esc(next.title)}</h2><p>${esc(next.description)}</p>${next.cta}</article>`}
       <div class="fp-grid">${metric('Тренировки · 7 дней',`${ws.length} / ${goal}`,'','Недельная цель')}${metric('Объём · 7 дней',fmt(ws.reduce((s,w)=>s+V.volume(w),0)),'кг','Вес × повторения')}</div>
       ${section('Недельный ритм',button('go','Программы',['plan'],'quiet','arrow'))}${card(`${meter(ws.length,goal)}<div class="fp-week">${Array.from({length:7},(_,i)=>{const d=shift(today(),i-6),done=ws.some(w=>day(w.date)===d);return `<span class="${done?'done':''}"><span>${esc(new Date(d+'T12:00:00').toLocaleDateString('ru-RU',{weekday:'short'}))}</span><i aria-hidden="true"></i><span class="fp-sr">${done?'Есть завершённая тренировка':'Нет завершённой тренировки'}</span></span>`}).join('')}</div>`)}
       ${section('Питание сегодня',button('go','Дневник',['nutrition'],'quiet','arrow'))}${card(`<div class="fp-summary-row"><div><div class="fp-value">${fmt(tot.cal)} <small>ккал</small></div><p class="fp-caption">из ${fmt(state.goals.calories)} · ${tot.rows.length?'записано в дневник':'пока нет записей'}</p></div>${icon('nutrition')}</div><div class="fp-macros">${macro('Белки',tot.protein,state.goals.protein)}${macro('Жиры',tot.fat,state.goals.fat)}${macro('Углеводы',tot.carbs,state.goals.carbs)}</div>`)}
       ${section('Последний результат')}${last?card(`<div class="fp-label">${esc(label(day(last.date)))}</div><div class="fp-list-row"><div><b>${esc(last.name)}</b><p>${V.sets(last)} подходов · ${last.duration?fmt(last.duration)+' мин':'длительность не указана'}</p></div><strong>${fmt(V.volume(last))} кг</strong></div>${button('go','История тренировок',['progress'],'quiet','arrow')}`):empty('Первая запись впереди','После завершения тренировки здесь появится твой результат.',button('start','Начать',[],'','workout'))}
-      ${section('Быстрые действия')}<div class="fp-actions">${button('food','Еда',[],'','plus')}${button('weight','Вес',[],'','weight')}${button('go','Программа',['plan'],'','plan')}</div>
+      ${section('Быстрые действия')}<div class="fp-actions">${button('food','Еда',[],'','plus')}${button('weight','Вес',[],'','weight')}${button('go','Программа',['plan'],'','plan')}<button type="button" class="fp-btn" data-forge-weekly>Недельный обзор</button></div>
       ${section('Коротко о прогрессе')}${card(`<div class="fp-summary-row"><div><div class="fp-label">Последняя масса</div><div class="fp-value">${weights.length?fmt(weights.at(-1).weight,1):'—'} <small>кг</small></div><p class="fp-caption">${weights.length?esc(label(weights.at(-1).date)):'Добавь измерение, чтобы видеть динамику'}</p></div>${button('stats','Смотреть',['weight'],'quiet','arrow')}</div>`)}`);
   }
   function programCard(p,templateIndex=null){
@@ -50,8 +66,8 @@
   }
   function renderPlan(){
     root('plan',`${heading('План / подготовка','Программы.','Готовая структура или собственный план — с твоими рабочими весами.')}
-      <div class="fp-actions">${button('newProgram','Создать программу',[],'primary','plus')}${button('go','Каталог',['library'],'','book')}</div>
-      ${section('Мои программы')}<div class="fp-stack">${state.programs?.length?state.programs.map(p=>programCard(p)).join(''):empty('Твой план начинается здесь','Выбери готовую программу ниже или создай свою.',button('newProgram','Создать',[],'','plus'),'plan')}</div>
+      <div class="fp-actions"><button type="button" class="fp-btn primary" data-program-wizard="open">Создать программу</button>${button('newProgram','Пустая программа',[],'quiet','plus')}${button('go','Каталог',['library'],'','book')}</div>
+      ${section('Мои программы')}<div class="fp-stack">${state.programs?.length?state.programs.map(p=>programCard(p)).join(''):empty('Твой план начинается здесь','Выбери готовую программу ниже или создай свою.','<button type="button" class="fp-btn" data-program-wizard="open">Мастер программы</button>','plan')}</div>
       ${section('Неделя')}<div class="fp-card">${(state.plans||[]).map((d,i)=>`<div class="fp-day-row"><strong>${esc(d.day)}</strong><div><b>${esc(d.name)}</b><p>${esc(d.focus||'Восстановление')} · ${d.exercises?.length||0} упражнений</p></div><div class="fp-actions">${button('editDay','',[i],'', 'plan').replace('type="button"','type="button" aria-label="Редактировать '+esc(d.day)+'"')}${training(d)?button('chooseDay','',[i],'quiet','workout').replace('type="button"','type="button" aria-label="Начать '+esc(d.name)+'"'):''}</div></div>`).join('')}</div>
       ${window.ForgeCycles?.calendarBlock()||''}
       ${section('Готовые программы')}<div class="fp-stack">${V.templates.map((p,i)=>programCard(p,i)).join('')}${window.ForgeCycles?.templateCards()||''}</div>
@@ -60,9 +76,10 @@
   function enhanceWorkout(){
     V.workout();const a=state.active,container=$('workout').querySelector('.n8-root');if(!a)return;
     const chosen=a.exercises?.[V.index()];if(!chosen)return;
-    const target=container.querySelector('.n8-surface'),prev=history().flatMap(w=>(w.sets||[]).filter(s=>s.exercise===chosen.name).map(s=>({...s,date:day(w.date)}))).slice(0,3);
+    const target=container.querySelector('.n8-surface'),prev=history().flatMap(w=>(w.sets||[]).filter(s=>window.ForgeProductCore.exerciseMatches(chosen,s)&&s.done!==false&&s.type!=='warmup').map(s=>({...s,date:day(w.date)}))).slice(0,3);
     if(target){target.insertAdjacentHTML('afterbegin',`<div class="fp-caption" id="fp-previous-result">${prev.length?'Ранее: '+prev.map(s=>`${fmt(s.weight,1)} кг × ${(s.unit==='seconds'?fmt(s.seconds)+' с':fmt(s.reps))} (${label(s.date)})`).map(esc).join(' · '):'Первое выполнение в этом дневнике — предыдущих результатов пока нет.'}</div>`);target.insertAdjacentHTML('beforeend',`<div class="fp-actions" style="margin-top:16px">${button('replaceExercise','Заменить',[],'quiet')}${button('removeSet','Удалить последний подход',[],'quiet')}</div>`);}
     const titleRow=target?.querySelector('.n8-row');if(titleRow){titleRow.className='fp-current-heading';titleRow.innerHTML=`<img src="${esc(ForgeArt.source(chosen.name)||ForgeArt.missingData(chosen.name))}" alt="${esc(chosen.name)}"><div><div class="fp-eyebrow">${V.index()+1} / ${a.exercises.length}</div><h2>${esc(chosen.name)}</h2></div>${button('exerciseCard','',[chosen.name],'quiet','book').replace('type="button"','type="button" aria-label="Техника упражнения"')}`;}
+    window.ForgeQuickLog?.decorate(target,a,chosen);
     const strip=container.querySelector('.n8-exstrip'),section=container.querySelector('.n8-section');
     if(strip&&target){const details=document.createElement('details');details.className='fp-card';details.innerHTML=`<summary>Упражнения · ${a.exercises.length}</summary>`;a.exercises.forEach((ex,i)=>{const pic=strip.children[i]?.querySelector('.pic');if(pic)pic.innerHTML=`<img src="${esc(ForgeArt.source(ex.name)||ForgeArt.missingData(ex.name))}" alt="${esc(ex.name)}"><small>${ex.sets.filter(s=>s.done).length}/${ex.sets.length}</small>`;});details.append(strip);if(section)details.append(section);target.after(details);}
     target?.insertAdjacentHTML('beforeend','<details class="fp-training-help"><summary>Что такое RPE и RIR?</summary><p>RPE — насколько тяжёлым был подход по шкале до 10. При 10 больше повторить не получится. RIR — сколько повторений ещё осталось в запасе. Эти оценки можно оставить незаполненными.</p></details>');
@@ -74,7 +91,7 @@
     $('nutrition').innerHTML=`${heading('Ежедневное восстановление','Питание.','Всё, что ты записал. Без догадок о пропущенных приёмах пищи.')}
       <div class="fp-datebar">${button('dateShift','',[-1],'','back').replace('type="button"','type="button" aria-label="Предыдущий день"')}<label class="fp-sr" for="fp-nutrition-date">День питания</label><input id="fp-nutrition-date" type="date" max="${today()}" aria-label="День питания">${button('dateShift','',[1],'','arrow').replace('type="button"','type="button" aria-label="Следующий день"')}</div>
       <div class="fp-card"><div class="fp-summary-row"><span class="fp-label" id="fp-nutrition-period">Сегодня</span>${button('coach','Настроить цель',[],'quiet')}</div><div class="fp-calories"><span id="caloriesEaten">0</span> <small>ккал</small></div><div class="fp-caption">Текущая цель: <span id="calorieGoal">0</span> ккал</div><p id="fp-calorie-remaining" class="fp-caption"></p><div class="progressbar" style="margin-top:16px"><span id="calorieBar"></span></div><div class="fp-macros">${[['protein','Белки'],['fat','Жиры'],['carb','Углеводы']].map(([id,name])=>`<div><div class="fp-macro-label"><span>${name}</span><b id="${id}Val"></b></div><div class="macro"><span id="${id}Bar"></span></div></div>`).join('')}</div></div>
-      <div class="fp-actions">${button('food','Добавить еду',[],'primary','plus')}${button('favorites','Избранное',[],'','book')}</div>
+      <div class="fp-actions"><button type="button" class="fp-btn primary" data-quick-food="open">Быстро добавить</button>${button('food','Добавить еду',[],'','plus')}${button('favorites','Избранное',[],'','book')}</div><div data-quick-food-undo hidden></div>
       <button id="nc-entry" class="nc-entry" data-fp-action="coach"><span class="fp-eyebrow">Nutrition Coach</span><br>Персональная цель — по шагам →</button>
       <div class="fp-actions">${button('recipes','Рецепты',[],'','book')}${button('go','Рационы',['meals'],'','plan')}${button('go','Продукты / штрихкод',['foodcatalog'],'','search')}</div>
       ${section('Приёмы пищи')}<div class="fp-card" id="foodList"></div>
@@ -131,13 +148,14 @@
     $('fp-stats-range').onchange=e=>{n8StatsRange(Number(e.target.value));ForgeNavigation.persist();};
     if($('fp-strength-exercise'))$('fp-strength-exercise').onchange=e=>{prefs.exercise=e.target.value;persist();renderProgress();};
   }
-  function addFood(meal=null){prefs.date=today();pendingMeal=meal;persist();renderNutrition();openModal('food');}
-  const baseFood=forgeOpenFoodModal;forgeOpenFoodModal=function(...args){baseFood(...args);if(pendingMeal&&$('forgeFoodMeal'))$('forgeFoodMeal').value=pendingMeal;pendingMeal=null;};
+  function addFood(meal=null){window.ForgeQuickFood.clearDestination();prefs.date=today();pendingMeal=meal;persist();renderNutrition();openModal('food');}
+  const baseFood=forgeOpenFoodModal;forgeOpenFoodModal=function(...args){baseFood(...args);if(pendingMeal&&$('forgeFoodMeal'))$('forgeFoodMeal').value=pendingMeal;pendingMeal=null;window.ForgeQuickFood.addPortionOptions();const preview=$('forgeFoodPreview');if(preview){const edit=document.createElement('button');edit.type='button';edit.className='fp-btn';edit.textContent='Исправить КБЖУ по этикетке';edit.onclick=()=>{ForgeQuickFood.setDestination($('forgeFoodMeal').value);forgeNewCustomFood(args[0]);};preview.after(edit);}};
   const baseChoose=forgeChooseNamedExercise;forgeChooseNamedExercise=function(name){
-    if(replacement){const target=replacement,a=state.active;replacement=null;if(a?.id!==target.workoutId)return;const ex=a.exercises[target.index];if(!ex||ex.sets.some(s=>s.done))return toast('Записанные подходы сохранены. Добавь новое упражнение отдельно.');if(!forgeRefreshCatalog().some(e=>e.name===name))return;ex.name=name;save();closeModal();toast('Упражнение заменено');return;}
+    if(replacement){const target=replacement,a=state.active;replacement=null;if(a?.id!==target.workoutId)return;const ex=a.exercises[target.index];if(!ex||ex.sets.some(s=>s.done))return toast('Записанные подходы сохранены. Добавь новое упражнение отдельно.');if(!forgeRefreshCatalog().some(e=>e.name===name))return;ex.name=name;ex.exerciseId=forgeExerciseId(name)||undefined;delete ex.planned;save();closeModal();toast('Упражнение заменено');return;}
     return baseChoose(name);
   };
   const actions={
+    skipOnboarding:()=>{onboardingSkipped=true;try{localStorage.setItem('forge_onboarding_10x','skip')}catch{}renderHome();},importDiary:()=>$('importFile').click(),
     go:id=>showPage(id),start:()=>n8QuickStart(),logSet:()=>n8LogNext(),exerciseCard:name=>n8ShowExerciseCard(encodeURIComponent(name)),weight:()=>openModal('weight'),food:addFood,coach:()=>ForgeCoach.open(),recipes:()=>n10OpenRecipes(),favorites:()=>{pendingMeal=null;openModal('food');forgeSetFoodTab('favorites');},
     newProgram:()=>n8NewProgram(),editProgram:id=>n8OpenProgram(id),editDay:i=>n8EditWeeklyDay(i),chooseDay:i=>n8ChooseDay(i),template:i=>n8UseTemplate(i),activate:id=>n8ActivateProgram(id),export:()=>exportData(),
     stats:tab=>{showPage('progress');n8StatsSelect(tab);ForgeNavigation.persist();},
@@ -181,7 +199,7 @@
     const n=$('n9Modal');if(n){const sheet=!!n.querySelector('#n9RestGlobal,#n9WorkoutNote,#n9PlateGoal')||n.querySelectorAll('input,select,textarea').length>0&&n.querySelectorAll('input,select,textarea').length<5&&!n.querySelector('#n10RecipeName');if(n.classList.contains('fp-sheet')!==sheet)n.classList.toggle('fp-sheet',sheet);}
   }
   V.install({home:renderHome,plan:renderPlan,workout:enhanceWorkout,progress:renderProgress});
-  const previousRender=renderAll;renderAll=function(){previousRender();updateChrome();classifyDialog();};
+  const previousRender=renderAll;renderAll=function(){previousRender();updateChrome();classifyDialog();window.ForgeQuickFood.updateUndo();};
   const observer=new MutationObserver(()=>{classifyDialog();updateChrome();});
   for(const id of ['modalback','n9Modal','x7BrowserBack','x7DetailBack'])if($(id))observer.observe($(id),{subtree:true,childList:true,attributes:true,attributeFilter:['class']});
   function updateSetView(){
@@ -191,7 +209,7 @@
     const numbers=$('workout').querySelectorAll('.n8-step b');
     if(s&&numbers.length===2){numbers[0].textContent=s.weight??'—';numbers[1].textContent=s[ex.unit==='seconds'?'seconds':'reps']??'—';}updateChrome();return true;
   }
-  window.ForgePerformance={persist,updateSetView,snapshot:()=>({...prefs}),render:()=>renderAll()};
+  window.ForgePerformance={persist,updateSetView,showToday(){if(prefs.date!==today()){prefs.date=today();persist();renderNutrition();}},snapshot:()=>({...prefs}),render:()=>renderAll()};
   installChrome();renderAll();updateChrome();
   addEventListener('pagehide',persist);
   setInterval(()=>{const el=document.querySelector('[data-fp-workout-clock]');if(el&&state.active){const mins=Math.max(0,Math.floor((Date.now()-(state.active.start||Date.now()))/60000)),sets=state.active.exercises.flatMap(e=>e.sets);el.textContent=`${mins} мин · ${sets.filter(s=>s.done).length} из ${sets.length} подходов`;}},1000);

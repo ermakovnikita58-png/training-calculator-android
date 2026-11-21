@@ -12,7 +12,7 @@
   const surfaceRoutes = new Map();
   const surfaceContent = el => el.querySelector('#modalBody,#n9ModalContent')?.firstChild || el.firstChild;
   const editableSurfaces = new Set(['n8-program','n8-day','f5EditBack','n9Modal','modalback']);
-  const reopen = ['openModal','forgeOpenFoodModal','n10EditRecipe','f5EditCustom','f5OpenCard','y8OpenCard','x7OpenDetail','n9WorkoutNote','n9Plates','n9RestSettings'];
+  const reopen = ['openModal','forgeOpenFoodModal','n10EditRecipe','f5EditCustom','f5OpenCard','y8OpenCard','x7OpenDetail','n9WorkoutNote','n9Plates','n9RestSettings','forgeOpenProgressionAdvice','forgeOpenQuickFood','forgeOpenWeeklyCheckIn','forgeOpenTransfer'];
   const originalShow = showPage, originalEditorBack = window.ForgeEditorNavigation?.back;
   // The secondary pages used to be body siblings AFTER a viewport-high .app.
   const app = document.querySelector('.app');
@@ -68,6 +68,7 @@
   }
   function closeTop() {
     const el=top();if(!el)return false;
+    if(el.id==='modalback'&&window.ForgeProgramWizard?.back())return true;
     if(dirty.has(el.id)&&!confirm('Закрыть без сохранения изменений?'))return true;
     editorApproved=true;
     try {

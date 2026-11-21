@@ -215,12 +215,21 @@
       button('Создать цикл', 'new', '', true) + '</div>' + entries + '</section>';
   }
 
+  function nextAction() {
+    return cycles().filter(cycle => cycle.status === 'active')
+      .map(cycle => ({ cycle, session: nextSession(cycle) }))
+      .filter(item => item.session).sort((a, b) => a.session.date.localeCompare(b.session.date))[0] || null;
+  }
+
   function renderSetup() {
     const available = (state.programs || []).filter(program => program.days?.some(day => day.exercises?.length));
     heading.textContent = 'Создать цикл';
     body.innerHTML = card('<div class="fc-grid fc-settings-grid">' +
       field('Начало цикла', 'start', 'date', view.start) + field('Конец цикла', 'end', 'date', view.end) + '</div>' +
       '<p class="fc-muted" data-length aria-live="polite"></p>') +
+      card('<label class="fc-field"><span>Модель нагрузки</span><select name="preset">' +
+        Object.entries(M.presets).map(([id, preset]) => option(id, id === 'general', preset.label)).join('') +
+        '</select></label><p class="fc-muted" data-preset-explanation aria-live="polite"></p>') +
       card('<h3>Программы</h3><p class="fc-muted">Выбери одну или несколько программ.</p>' +
         (available.length ? available.map(program => '<div class="fc-choice"><label><input type="checkbox" name="program" value="' +
           esc(program.id) + '"' + (program.id === view.programId ? ' checked' : '') + '><span>' + esc(program.name) +
@@ -236,6 +245,7 @@
     const end = body.querySelector('[name="end"]').value;
     const count = M.weekCount(start, end);
     body.querySelector('[data-length]').textContent = count ? 'Недель в плане: ' + count : 'Выбери период от одного дня до 52 недель.';
+    body.querySelector('[data-preset-explanation]').textContent = M.presets[body.querySelector('[name="preset"]').value].description;
     body.querySelector('[data-fc="create"]').disabled = !count || !body.querySelector('[name="program"]:checked');
   }
 
@@ -243,7 +253,8 @@
     const selected = new Set([...body.querySelectorAll('[name="program"]:checked')].map(input => input.value));
     try {
       const cycle = M.createCycle(state.programs.filter(program => selected.has(program.id)),
-        body.querySelector('[name="start"]').value, uid(), body.querySelector('[name="end"]').value);
+        body.querySelector('[name="start"]').value, uid(), body.querySelector('[name="end"]').value,
+        body.querySelector('[name="preset"]').value);
       if (!put(cycle)) return;
       remember(cycle.id);
       show({ type: 'cycle', id: cycle.id });
@@ -298,7 +309,9 @@
     const actual = base.type === 'hold' ? ' · ' + base.seconds + ' с' :
       base.weight === undefined ? '' : ' · ' + format(base.weight) + ' кг × ' + base.reps;
     const adapted = base.adjustedValue === undefined ? '' : ' · рабочая база ' + format(base.adjustedValue) + ' кг';
-    return labels[base.type] + ' · ' + format(base.value) + ' кг · ' + sourceLabels[base.source] + ' · ' + base.date + actual + adapted;
+    const derived = base.origin ? ' · ' + format(base.origin.percent) + '% от ' + format(base.origin.value) +
+      ' кг (' + labels[base.origin.type] + ')' : '';
+    return labels[base.type] + ' · ' + format(base.value) + ' кг · ' + sourceLabels[base.source] + ' · ' + base.date + actual + derived + adapted;
   }
 
   function measurements(cycle) {
@@ -327,16 +340,20 @@
       const previous = base?.source === source ? base : null;
       inputs = hold ? number('Контрольное удержание, с', 'seconds', previous?.seconds, true) :
         source === 'known' ? '<label class="fc-field"><span>Тип максимума</span><select name="type">' +
-        M.types.filter(type => !['estimatedOneRM', 'hold'].includes(type)).map(type => option(type, type === previous?.type, labels[type])).join('') +
+        M.types.filter(type => !['estimatedOneRM', 'hold'].includes(type)).map(type =>
+          option(type, type === (previous?.origin?.type || previous?.type), labels[type])).join('') +
         '</select></label>' : number('Фактические повторы', 'reps', previous?.reps, true);
       inputs += number(source === 'known' ? 'Известный вес, кг' : 'Фактический вес, кг', 'weight',
-        source === 'known' || hold ? previous?.value : previous?.weight, false) +
+        source === 'known' || hold ? previous?.origin?.value ?? previous?.value : previous?.weight, false) +
         field('Дата результата', 'date', 'date', previous?.date || today(), 'max="' + today() + '"');
     }
     return '<div class="fc-base-form">' + panel(...[['journal', 'Взять из журнала'], ['known', 'Ввести известный максимум'],
       ['measurement', 'Записать замер']].map(([key, label]) => button(label, 'base-source',
       'aria-pressed="' + (source === key) + '" data-source="' + key + '"', source === key))) +
-      inputs + '<p data-base-preview class="fc-base" aria-live="polite"></p>' +
+      inputs + (hold ? '' : '<div class="fc-choice"><label><input type="checkbox" name="derive-tm"' +
+        (base?.origin && base.source === source ? ' checked' : '') + '><span>Рассчитать тренировочный максимум от 1ПМ</span></label></div>' +
+        number('Доля 1ПМ для тренировочного максимума, %', 'tm-percent', base?.origin?.percent || 90)) +
+      '<p data-base-preview class="fc-base" aria-live="polite"></p>' +
       panel(button('Подтвердить базу', 'base-save', 'disabled', true), button('Отмена', 'base-cancel')) + '</div>';
   }
 
@@ -360,10 +377,15 @@
     } else {
       base = { type: value('type'), date: value('date'), source, value: M.num(value('weight'), 0.001, M.limits.weight) };
     }
+    const derive = form.querySelector('[name="derive-tm"]')?.checked;
+    const percent = form.querySelector('[name="tm-percent"]');
+    if (percent) percent.disabled = !derive;
+    if (derive) base = M.trainingMaxFrom(base, value('tm-percent'));
     if (!base || base.date > today() || !M.validBasis(base)) base = null;
     form.querySelector('[data-fc="base-save"]').disabled = !base;
     form.querySelector('[data-base-preview]').textContent = base ? summary(base) +
-      (base.type === 'estimatedOneRM' ? ' · оценка FORGE по формуле Эпли' : '') : 'Выбери или введи корректный результат.';
+      (base.type === 'estimatedOneRM' || base.origin?.type === 'estimatedOneRM' ? ' · оценка FORGE по формуле Эпли' : '') :
+      derive ? 'Для расчёта нужны известный или оценочный 1ПМ и доля от 70 до 95%.' : 'Выбери или введи корректный результат.';
     return base;
   }
 
@@ -501,6 +523,7 @@
     heading.textContent = stages[cycle.stage];
     body.innerHTML = '<p class="fc-step">' + esc(cycle.name) + ' · ' + dateText(cycle.start) + ' – ' + dateText(M.endDate(cycle)) +
       ' · Шаг ' + (cycle.stage + 1) + ' из 3</p>' +
+      (cycle.preset ? '<p class="fc-muted"><b>' + M.presets[cycle.preset].label + '</b> · ' + M.presets[cycle.preset].description + '</p>' : '') +
       [selection, measurements, planning][cycle.stage](cycle) +
       (cycle.stage !== 2 ? panel(button('Далее', 'next', '', true), button('Сохранить черновик', 'close')) : '');
     previewBasis();
@@ -611,7 +634,10 @@
       (extra.length ? card('<h3>Дополнительные упражнения</h3>' + extra.map(set => '<p>' + esc(set.exercise) + ' · ' +
         esc(weightText(set.weight) + ' × ' + durationText(set)) + '</p>').join('')) : '') +
       (result ? card('<p>' + result + '</p>') : '') +
-      (proposals.length ? card('<h3>Предложение гибкого режима</h3><p>Рабочие подходы выполнены с нужным запасом или дополнительными повторами. Посмотри, как изменятся веса следующих занятий.</p>' +
+      (proposals.length ? card('<h3>Предложение гибкого режима</h3><p>' + (cycle.preset ?
+        'Текущие подходы выполнены с нужным запасом, и есть сопоставимый результат в журнале цикла.' :
+        'Рабочие подходы выполнены с нужным запасом или дополнительными повторами.') +
+        ' Посмотри, как изменятся веса следующих занятий.</p>' +
         proposals.map(change => '<details><summary>' + esc(change.name) + ' · база ' + format(change.before) + ' → ' +
           format(change.base.adjustedValue) + ' кг</summary><ul class="fc-facts">' + change.previews.map(item =>
             '<li>' + dateText(item.date) + ' · ' + esc(item.name) + ' · ' + format(item.from) + ' → ' + format(item.to) + ' кг</li>').join('') +
@@ -843,7 +869,7 @@
     } else remember(null);
   }
 
-  window.ForgeCycles = { calendarBlock, templateCards, programBlock, journalButton, finish, editSet, close,
+  window.ForgeCycles = { calendarBlock, nextAction, templateCards, programBlock, journalButton, finish, editSet, close,
     back, isOpen: () => dialog.open };
   renderAll();
   restored();

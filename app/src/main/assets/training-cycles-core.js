@@ -10,6 +10,12 @@
   const kinds = ['work', 'deload', 'heavy', 'taper'];
   const types = ['trainingMax', 'fiveRM', 'oneRM', 'estimatedOneRM', 'hold'];
   const sources = ['known', 'journal', 'measurement'];
+  const presets = Object.freeze({
+    general: { label: 'Общая силовая', description: 'От большего числа повторов к тяжёлым коротким подходам, с разгрузкой.' },
+    power: { label: 'Пауэрлифтинг', description: 'Меньше повторов в силовых упражнениях. Верхняя автоматическая нагрузка — 85% известного или расчётного 1ПМ.' },
+    arm: { label: 'Армрестлинг', description: 'Небольшое число рабочих подходов. Удержания используют свой контрольный вес и время в секундах.' },
+    custom: { label: 'Своя схема', description: 'Дни и исходные нагрузки берутся из программы. Для упражнений с максимумом можно задать свои проценты.' }
+  });
   // Percentages refer directly to the selected base. 1RM has its own progression.
   const templates = {
     trainingMax: [65, 72, 80, 65, 87, 92, 95, 100],
@@ -76,7 +82,7 @@
     return cycle.programs ? cycle.programs.some(program => program.id === id) : cycle.programId === id;
   }
 
-  function createCycle(selection, start, id, end = dateOK(start) ? addDays(start, 55) : '') {
+  function createCycle(selection, start, id, end = dateOK(start) ? addDays(start, 55) : '', preset) {
     const programs = Array.isArray(selection) ? selection : [selection];
     const count = weekCount(start, end);
     if (!count) throw Error('Укажи корректные даты цикла до 52 недель');
@@ -116,6 +122,7 @@
     const cycle = {
       version: 1, id, programId: programs[0].id, programs: programs.map(({ id, name }) => ({ id, name })),
       name: programs.map(program => program.name).join(' + ').slice(0, 200), start, end, competition: '', days,
+      ...(preset !== undefined ? { preset } : {}),
       status: 'draft', stage: 0, week: 0, mode: 'fixed', step: 2.5, targetRir: 2, extraReps: 1,
       increase: num(programs[0].progression?.step, 0.5, 10) ?? 2.5,
       weeks: Array.from({ length: count }, () => ({ kind: null, loads: {} })),
@@ -166,6 +173,28 @@
     return range(weight, 0, limits.weight) ? { raw, weight } : null;
   }
 
+  function presetVolume(cycle, index, type, original) {
+    const plan = defaultVolume(cycle, index, type);
+    if (cycle.preset === undefined) return plan;
+    const kind = weekKind(cycle, index);
+    const oneRM = type === 'oneRM' || type === 'estimatedOneRM';
+    const hold = type === 'hold';
+    const cap = oneRM ? 85 : hold ? 85 : 95;
+    const percent = Math.min(plan.percent, cap);
+    if (cycle.preset === 'custom' && kind !== 'deload' && kind !== 'taper') {
+      return { sets: original.sets ?? 3, reps: original.reps ?? 8, percent: hold ? 65 : 60 };
+    }
+    if (cycle.preset === 'power' && !hold) {
+      return { sets: kind === 'deload' || kind === 'taper' ? 2 : Math.min(plan.sets, 4),
+        reps: kind === 'heavy' ? 2 : Math.min(plan.reps, 6), percent };
+    }
+    if (cycle.preset === 'arm') {
+      return { sets: Math.min(plan.sets, 3), reps: Math.min(plan.reps, 8),
+        percent: Math.min(percent, oneRM || hold ? 80 : 90) };
+    }
+    return { ...plan, percent };
+  }
+
   function plannedLoad(cycle, index, row) {
     const savedBase = row.selected ? cycle.bases[basisKey(row)] : null;
     const seconds = durationKey(row) === 'seconds';
@@ -174,13 +203,17 @@
     const field = durationKey(row);
     if (!row.selected) return { ...row.original, sets: saved.sets ?? row.original.sets,
       [field]: saved[field] ?? row.original[field], weight: saved.weight ?? row.original.weight, percent: null, raw: null, basis: null };
-    const plan = defaultVolume(cycle, index, base?.type || (seconds ? 'hold' : 'trainingMax'));
+    const plan = presetVolume(cycle, index, base?.type || (seconds ? 'hold' : 'trainingMax'), row.original);
     const percent = saved.percent ?? plan.percent;
     const result = { sets: saved.sets ?? plan.sets, percent, ...(seconds
       ? { unit: 'seconds', seconds: saved.seconds ?? base?.seconds ?? null }
       : { reps: saved.reps ?? plan.reps }) };
-    const calc = base && calculate(base.adjustedValue ?? base.value, percent, cycle.step);
-    return { ...result, raw: calc?.raw ?? null, weight: calc?.weight ?? null, basis: base || null };
+    const value = base?.adjustedValue ?? base?.value;
+    const calc = base && calculate(value, percent, cycle.step);
+    const cap = ['oneRM', 'estimatedOneRM', 'hold'].includes(base?.type) ? .85 : .95;
+    const weight = calc && cycle.preset && saved.percent === undefined && calc.weight > value * cap
+      ? tidy(Math.floor(value * cap / cycle.step) * cycle.step) : calc?.weight;
+    return { ...result, raw: calc?.raw ?? null, weight: weight ?? null, basis: base || null };
   }
 
   function basisFromSet(source, date, weight, reps, estimate) {
@@ -198,6 +231,13 @@
     const duration = num(seconds, 1, limits.seconds, true);
     return value !== null && duration !== null && dateOK(date) && sources.includes(source)
       ? { type: 'hold', value, seconds: duration, source, date } : null;
+  }
+
+  function trainingMaxFrom(base, percentage) {
+    const percent = num(percentage, 70, 95);
+    if (percent === null || !base || !['oneRM', 'estimatedOneRM'].includes(base.type) || !validBasis(base)) return null;
+    return { ...base, type: 'trainingMax', value: tidy(base.value * percent / 100),
+      origin: { type: base.type, value: base.value, percent } };
   }
 
   function matches(set, row) {
@@ -298,7 +338,8 @@
 
   function progress(cycle, workout, pending, date) {
     const snapshot = workout.trainingCycle;
-    if (cycle.mode !== 'flexible' || !snapshot) return [];
+    if (cycle.mode !== 'flexible' || !snapshot ||
+      (cycle.preset && ['deload', 'taper'].includes(weekKind(cycle, snapshot.week)))) return [];
     const checked = snapshot.rows.filter(plan => plan.sets !== null && plan[durationKey(plan)] !== null && plan.weight !== null).map(plan => ({
       plan,
       sets: (workout.sets || []).filter(set => set.cycleRowId === plan.rowId).slice(0, plan.sets),
@@ -320,8 +361,21 @@
       const base = cycle.bases[key];
       if (!base) continue;
       if (rows.some(({ plan }) => JSON.stringify(plan.basis) !== JSON.stringify(base))) continue;
+      if (cycle.preset) {
+        const reserve = set => Number.isInteger(set.rir) ? set.rir :
+          range(set.rpe, 1, 10) ? 10 - set.rpe : null;
+        if (!rows.every(({ plan, sets }) => sets.every(set => set.reps >= plan.reps &&
+          reserve(set) !== null && reserve(set) >= cycle.targetRir))) continue;
+        const prior = pending.some(session => session.state === 'done' && session.workout?.id !== workout.id &&
+          session.workout?.date?.slice(0, 10) < date && session.snapshot?.rows?.some(plan =>
+            plan.basisKey === key && plan.unit !== 'seconds' && rows.some(item =>
+              Math.abs(item.plan.reps - plan.reps) <= 3 && item.plan.weight > 0 &&
+              Math.abs(item.plan.weight - plan.weight) / item.plan.weight <= .15) &&
+            session.workout.sets?.some(set => set.cycleRowId === plan.rowId && set.reps >= plan.reps && set.weight >= plan.weight)));
+        if (!prior) continue;
+      }
       const currentBase = base.adjustedValue ?? base.value;
-      const value = tidy(currentBase * (1 + cycle.increase / 100));
+      const value = tidy(currentBase * (1 + (cycle.preset ? Math.min(cycle.increase, 5) : cycle.increase) / 100));
       if (!range(value, 0.001, limits.weight)) continue;
       const previews = [];
       let valid = true;
@@ -330,8 +384,9 @@
         for (const row of session.day.rows) {
           if (!row.selected || basisKey(row) !== key) continue;
           const load = plannedLoad(cycle, session.week, row);
-          const next = calculate(value, load.percent, cycle.step);
-          if (!next || !(load.weight > 0)) valid = false;
+          const changed = { ...cycle, bases: { ...cycle.bases, [key]: { ...base, adjustedValue: value } } };
+          const next = plannedLoad(changed, session.week, row);
+          if (!(next.weight > 0) || !(load.weight > 0)) valid = false;
           else if (next.weight > load.weight) previews.push({ name: session.day.name, date: session.date, from: load.weight, to: next.weight });
         }
       }
@@ -345,7 +400,12 @@
     if (!record(base) || !types.includes(base.type) || !sources.includes(base.source) ||
         !dateOK(base.date) || !range(base.value, 0.001, limits.weight)) return false;
     if (base.type === 'hold') return integer(base.seconds, 1, limits.seconds);
-    if (base.source === 'known' ? base.type === 'estimatedOneRM' :
+    if (base.origin !== undefined) {
+      const { type, value, percent } = base.origin || {};
+      if (base.type !== 'trainingMax' || !['oneRM', 'estimatedOneRM'].includes(type) ||
+          !range(percent, 70, 95) || !range(value, 0.001, limits.weight) || base.value !== tidy(value * percent / 100) ||
+          !validBasis({ ...base, type, value, origin: undefined })) return false;
+    } else if (base.source === 'known' ? base.type === 'estimatedOneRM' :
       (!range(base.weight, 0.001, limits.weight) || !integer(base.reps, 1, 15) ||
       base.type !== (base.reps === 1 ? 'oneRM' : 'estimatedOneRM'))) return false;
     return base.adjustedValue === undefined
@@ -363,6 +423,7 @@
       !Array.isArray(cycle.weeks) || !integer(cycle.weeks.length, 1, limits.weeks) || !integer(cycle.week, 0, cycle.weeks.length - 1) ||
       !record(cycle.bases) || !record(cycle.schedule)) return false;
     if (cycle.end !== undefined && weekCount(cycle.start, cycle.end) !== cycle.weeks.length) return false;
+    if (cycle.preset !== undefined && !Object.hasOwn(presets, cycle.preset)) return false;
     if (cycle.programs !== undefined && (!Array.isArray(cycle.programs) || !cycle.programs.every(program =>
       record(program) && text(program.id) && text(program.name)) || cycle.programs[0]?.id !== cycle.programId ||
       new Set(cycle.programs.map(program => program.id)).size !== cycle.programs.length)) return false;
@@ -438,8 +499,8 @@
     }
   }
 
-  return Object.freeze({ limits, weekdays, kinds, types, dayNumber, dateOK, addDays, num, tidy, createCycle, weekCount, endDate,
+  return Object.freeze({ limits, weekdays, kinds, types, presets, dayNumber, dateOK, addDays, num, tidy, createCycle, weekCount, endDate,
     durationKey, includesProgram, holdBasis, sessionKey,
-    basisKey, weekKind, calculate, plannedLoad, basisFromSet, journalSets, sessions, readiness, snapshot, progress,
+    basisKey, weekKind, calculate, plannedLoad, basisFromSet, trainingMaxFrom, journalSets, sessions, readiness, snapshot, progress,
     validBasis, validCycle, validateArchive });
 });
