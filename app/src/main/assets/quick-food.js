@@ -79,6 +79,7 @@
   function open(meal = 'Завтрак') {
     if (!M.meals.includes(meal)) meal = M.meals[0];
     const { recent, frequent } = M.foodHistory(state.foods, today());
+    const templates = state.mealTemplates || [];
     options = [];
     const breakfast = M.previousMeal(state.foods, 'Завтрак', today(), true);
     const section = (label, rows) => rows.length
@@ -97,8 +98,8 @@
         ${breakfast.length ? button('breakfast', 'Повторить вчерашний завтрак · ' + breakfast.length) : ''}
         ${button('previous', 'Повторить предыдущий приём пищи')}
       </div>
-      ${state.mealTemplates.length ? `<h3>Рационы</h3><div class="fp-actions">
-        ${state.mealTemplates.map((item, i) => button('template', 'Добавить «' + item.name + '» · ' + item.items.length, i)).join('')}
+      ${templates.length ? `<h3>Рационы</h3><div class="fp-actions">
+        ${templates.map((item, i) => button('template', 'Добавить «' + item.name + '» · ' + item.items.length, i)).join('')}
       </div>` : ''}
       ${section('Недавно добавленные', recent)}${section('Часто используемые', frequent)}
       ${recent.length ? '<button type="button" class="btn primary full" data-quick-food="batch">Добавить выбранные продукты</button>' : ''}
@@ -176,7 +177,7 @@
     }
     if (action === 'batch') return batch(panel, meal);
     if (action === 'template') {
-      const template = state.mealTemplates[Number(target.dataset.index)];
+      const template = state.mealTemplates?.[Number(target.dataset.index)];
       if (template && copy(template.items, meal, true)) afterAdd('Рацион добавлен');
       return;
     }

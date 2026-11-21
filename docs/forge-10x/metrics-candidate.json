@@ -1,0 +1,144 @@
+{
+  "label": "candidate",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "results": {
+    "set": {
+      "task": "Записать повтор предыдущих 60 кг × 9 при другом плане",
+      "samples": [
+        {
+          "actions": 1,
+          "durationMs": 49
+        },
+        {
+          "actions": 1,
+          "durationMs": 47
+        },
+        {
+          "actions": 1,
+          "durationMs": 34
+        },
+        {
+          "actions": 1,
+          "durationMs": 37
+        },
+        {
+          "actions": 1,
+          "durationMs": 37
+        }
+      ],
+      "actions": 1,
+      "medianMs": 37
+    },
+    "meal": {
+      "task": "Добавить сохранённый рацион «Завтрак»",
+      "samples": [
+        {
+          "actions": 2,
+          "durationMs": 71
+        },
+        {
+          "actions": 2,
+          "durationMs": 69
+        },
+        {
+          "actions": 2,
+          "durationMs": 86
+        },
+        {
+          "actions": 2,
+          "durationMs": 99
+        },
+        {
+          "actions": 2,
+          "durationMs": 86
+        }
+      ],
+      "actions": 2,
+      "medianMs": 86
+    },
+    "program": {
+      "task": "Создать рабочую программу из готового шаблона",
+      "samples": [
+        {
+          "actions": 1,
+          "durationMs": 75
+        },
+        {
+          "actions": 1,
+          "durationMs": 51
+        },
+        {
+          "actions": 1,
+          "durationMs": 51
+        },
+        {
+          "actions": 1,
+          "durationMs": 68
+        },
+        {
+          "actions": 1,
+          "durationMs": 54
+        }
+      ],
+      "actions": 1,
+      "medianMs": 54
+    },
+    "cycle": {
+      "task": "Сохранить черновик цикла с одной программой и датами по умолчанию",
+      "samples": [
+        {
+          "actions": 3,
+          "durationMs": 139
+        },
+        {
+          "actions": 3,
+          "durationMs": 132
+        },
+        {
+          "actions": 3,
+          "durationMs": 120
+        },
+        {
+          "actions": 3,
+          "durationMs": 132
+        },
+        {
+          "actions": 3,
+          "durationMs": 139
+        }
+      ],
+      "actions": 3,
+      "medianMs": 132
+    },
+    "food": {
+      "task": "Создать неизвестный продукт из этикетки и записать 100 г",
+      "samples": [
+        {
+          "actions": 9,
+          "durationMs": 164
+        },
+        {
+          "actions": 9,
+          "durationMs": 169
+        },
+        {
+          "actions": 9,
+          "durationMs": 169
+        },
+        {
+          "actions": 9,
+          "durationMs": 206
+        },
+        {
+          "actions": 9,
+          "durationMs": 204
+        }
+      ],
+      "actions": 9,
+      "medianMs": 169
+    }
+  }
+}

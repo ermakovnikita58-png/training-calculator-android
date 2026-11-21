@@ -186,9 +186,15 @@ async function adaptive(page) {
 
 async function zoomAndLandscape(page) {
   await scene(page, 'nutrition');
+  await page.evaluate(() => {
+    const { mealTemplates, ...previousFormat } = state;
+    forgeCommitDiary(previousFormat);
+    renderAll();
+  });
   await page.setViewportSize({ width: 320, height: 844 });
   await page.addStyleTag({ content: 'html { font-size: 32px !important }' });
   await page.locator('#nutrition [data-quick-food="open"]').click();
+  assert.equal(await page.locator('#forgeQuickFood [data-quick-food="template"]').count(), 0);
   await layout(page, '#forgeQuickFood');
   await page.setViewportSize({ width: 844, height: 390 });
   await layout(page, '#forgeQuickFood');
