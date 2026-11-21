@@ -415,6 +415,7 @@ class MainActivity : ComponentActivity() {
             .put("crash", diagnostics.enabled())
             .put("testReport", BuildConfig.DEBUG)
             .put("keyboardVisible", imeVisible)
+            .put("textScale", webView.settings.textZoom / 100.0)
             .put("healthAvailable", ForgeHealth.available(this))
             .put("notifications", RestReminder.enabled(this) && androidx.core.app.NotificationManagerCompat.from(this).areNotificationsEnabled())
             .put("camera", checkSelfPermission(android.Manifest.permission.CAMERA) == android.content.pm.PackageManager.PERMISSION_GRANTED)

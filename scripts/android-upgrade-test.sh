@@ -12,6 +12,7 @@ cleanup() {
   timeout 10 adb shell settings put system font_scale 1.0
   timeout 15 adb logcat -d -t 2500 > test-results/emulator-logcat.txt
   timeout 15 adb exec-out screencap -p > test-results/emulator-screen.png
+  timeout 20 adb pull /sdcard/Android/data/ru.trainingcalculator.app/files/ux-v2 test-results/android-ux-v2
   ps -eo pid,ppid,%cpu,%mem,rss,args > test-results/runner-processes.txt
   df -h > test-results/runner-disk.txt
   sudo dmesg -T | tail -80 > test-results/runner-kernel.txt
@@ -20,6 +21,12 @@ cleanup() {
 trap cleanup EXIT
 app=ru.trainingcalculator.app
 runner="$app.test/androidx.test.runner.AndroidJUnitRunner"
+# Let the Google APIs image finish its first launcher initialization before
+# taking it offline. This is emulator setup, not an app permission change.
+adb shell input keyevent KEYCODE_WAKEUP
+adb shell wm dismiss-keyguard
+adb shell am start -W -a android.intent.action.MAIN -c android.intent.category.HOME
+sleep 15
 
 instrument() {
   local name=$1

@@ -65,8 +65,24 @@ class NavigationBackTest {
     @Test fun productSourcesAndCategoryRemainReadableWithSystemTextZoom() {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             openPage(scenario, "foodcatalog")
+            js(scenario, "forgeSetFoodTab('catalog');true")
             for (scale in listOf(100, 120, 150, 200)) {
                 scenario.onActivity { activity -> requireNotNull(findWeb(activity.window.decorView)).settings.textZoom = scale }
+                js(scenario, "AndroidBridge.preferences();true")
+                waitFor(scenario, "Number(getComputedStyle(document.documentElement).getPropertyValue('--forge-native-text-scale')) === ${scale / 100.0}")
+                val context = InstrumentationRegistry.getInstrumentation().targetContext
+                val directory = java.io.File(context.getExternalFilesDir(null), "ux-v2").apply { mkdirs() }
+                java.io.File(directory, "products-text-$scale.json").writeText(js(scenario, """
+                    (() => ({scale:$scale,width:innerWidth,dpr:devicePixelRatio,
+                      overflow:document.documentElement.scrollWidth,
+                      buttons:[...document.querySelectorAll('#foodcatalog [data-food-tab],#forgeFoodCategoryButton')].map(button => {
+                        const rect=button.getBoundingClientRect();
+                        return {text:button.textContent,width:rect.width,height:rect.height,left:rect.left,right:rect.right,
+                          content:button.scrollWidth,client:button.clientWidth};
+                      })}))()
+                """.trimIndent()))
+                assertTrue(UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
+                    .takeScreenshot(java.io.File(directory, "products-text-$scale.png")))
                 waitFor(scenario, """
                     (() => {
                       const buttons = [...document.querySelectorAll('#foodcatalog [data-food-tab],#forgeFoodCategoryButton')];
@@ -77,12 +93,10 @@ class NavigationBackTest {
                       }) && document.documentElement.scrollWidth <= innerWidth + 1;
                     })()
                 """.trimIndent())
-                val context = InstrumentationRegistry.getInstrumentation().targetContext
-                val directory = java.io.File(context.getExternalFilesDir(null), "ux-v2").apply { mkdirs() }
-                assertTrue(UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
-                    .takeScreenshot(java.io.File(directory, "products-text-$scale.png")))
             }
             scenario.onActivity { activity -> requireNotNull(findWeb(activity.window.decorView)).settings.textZoom = 100 }
+            js(scenario, "AndroidBridge.preferences();true")
+            waitFor(scenario, "Number(getComputedStyle(document.documentElement).getPropertyValue('--forge-native-text-scale')) === 1")
             click(scenario, "#forgeFoodCategoryButton")
             click(scenario, "#forgeFoodCategorySheet [data-food-category='Рыба и морепродукты']")
             waitFor(scenario, "document.getElementById('forgeFoodCategoryValue').textContent === 'Рыба и морепродукты'")
@@ -146,6 +160,7 @@ class NavigationBackTest {
                 assertEquals((activity.resources.configuration.fontScale * 100).toInt(), web.settings.textZoom)
             }
             waitFor(scenario, """
+                Number(getComputedStyle(document.documentElement).getPropertyValue('--forge-native-text-scale')) >= 1.45 &&
                 document.documentElement.scrollWidth <= innerWidth + 1 &&
                 [...document.querySelectorAll('#foodcatalog [data-food-tab]')].every(button =>
                   button.scrollWidth <= button.clientWidth + 1 && button.getBoundingClientRect().right <= innerWidth + 1)

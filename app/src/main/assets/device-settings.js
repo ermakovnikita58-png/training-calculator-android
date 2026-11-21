@@ -58,6 +58,9 @@
   window.ForgeDevice = {
     receive(result) {
       if (result.kind === 'preferences') {
+        if (Number.isFinite(result.textScale) && result.textScale >= .5 && result.textScale <= 3) {
+          document.documentElement.style.setProperty('--forge-native-text-scale', result.textScale);
+        }
         if (typeof result.keyboardVisible === 'boolean') window.ForgeViewport?.keyboard(result.keyboardVisible);
         card.querySelector('#forge-device-permissions').textContent = 'Камера: ' + (result.camera ? 'разрешена' : 'разрешение не выдано');
         for (const field of card.querySelectorAll('[data-pref]')) {

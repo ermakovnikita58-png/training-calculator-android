@@ -20,7 +20,7 @@
 /* Two readable columns become one when text needs more room. */
 .food-catalog-sources {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, max(9em, calc((100% - 8px) / 2))), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, max(calc(9em * var(--forge-native-text-scale, 1)), calc((100% - 8px) / 2))), 1fr));
   gap: var(--fp-s1); font-size: .875rem; background: var(--fp-sunken);
   border: 1px solid var(--fp-line); border-radius: var(--fp-r1); padding: var(--fp-s1);
 }
