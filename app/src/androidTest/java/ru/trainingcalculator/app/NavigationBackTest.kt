@@ -131,6 +131,49 @@ class NavigationBackTest {
                 document.getElementById('n8-program').classList.contains('show') &&
                 document.getElementById('n8ProgName').value === 'Черновик после клавиатуры'
             """.trimIndent())
+            js(scenario, "ForgeNavigation.markSaved('n8-program');n8CloseOverlay();true")
+        }
+    }
+
+    @Test fun systemFontScaleIsAppliedToTheProductScreen() {
+        val instrumentation = InstrumentationRegistry.getInstrumentation()
+        org.junit.Assume.assumeTrue(InstrumentationRegistry.getArguments().getString("forgeFontScale") == "verify")
+        assertTrue(instrumentation.targetContext.resources.configuration.fontScale >= 1.45f)
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            openPage(scenario, "foodcatalog")
+            scenario.onActivity { activity ->
+                val web = requireNotNull(findWeb(activity.window.decorView))
+                assertEquals((activity.resources.configuration.fontScale * 100).toInt(), web.settings.textZoom)
+            }
+            waitFor(scenario, """
+                document.documentElement.scrollWidth <= innerWidth + 1 &&
+                [...document.querySelectorAll('#foodcatalog [data-food-tab]')].every(button =>
+                  button.scrollWidth <= button.clientWidth + 1 && button.getBoundingClientRect().right <= innerWidth + 1)
+            """.trimIndent())
+        }
+    }
+
+    @Test fun rotationPreservesTheProductQueryAndCategory() {
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            openPage(scenario, "foodcatalog")
+            js(scenario, """
+                forgeSetFoodTab('catalog');
+                forgeSetFoodCategory(forgeFoodCategoryList.indexOf('Рыба и морепродукты'));
+                document.getElementById('foodSearch').value = 'Рыба';
+                forgeFoodChange();
+            """.trimIndent())
+            scenario.onActivity { it.requestedOrientation = android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE }
+            waitFor(scenario, """
+                innerWidth > innerHeight && ForgeNavigation.inspect().current === 'foodcatalog' &&
+                document.getElementById('foodSearch').value === 'Рыба' &&
+                document.getElementById('forgeFoodCategoryValue').textContent === 'Рыба и морепродукты'
+            """.trimIndent())
+            scenario.onActivity { it.requestedOrientation = android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT }
+            waitFor(scenario, """
+                innerHeight > innerWidth && ForgeNavigation.inspect().current === 'foodcatalog' &&
+                document.getElementById('foodSearch').value === 'Рыба'
+            """.trimIndent())
+            js(scenario, "document.getElementById('foodSearch').value='';forgeFoodChange();forgeSetFoodCategory(0);true")
         }
     }
     @Test fun systemBackClosesCardThenReturnsThroughPages() {

@@ -178,7 +178,7 @@
   window.ForgeNavigation={go,back,canBack,persist,allowCloseEditor,notify,surfaceOpened(id,name,args){const el=byId(id);if(el&&reopen.includes(name)){surfaceRoutes.set(id,{route:{name,args:clone(args)},node:surfaceContent(el)});announce();persist();}},beforeOverlay:persist,markSaved:id=>dirty.delete(id),markDirty:id=>dirty.add(id),inspect:()=>({current:active(),depth:frames.length,overlay:window.ForgeCycles?.isOpen()?'forge-cycle':top()?.id||null})};
   for(const name of reopen){
     const original=window[name];if(typeof original!=='function')continue;
-    window[name]=function(...args){const result=original.apply(this,args),el=top();if(el){if(!restoring)dirty.delete(el.id);surfaceRoutes.set(el.id,{route:{name,args:clone(args)},node:surfaceContent(el)});persist();}return result;};
+    window[name]=function(...args){const result=original.apply(this,args),el=top();if(el){if(!restoring){dirty.delete(el.id);if(el.id==='modalback'){el.scrollTop=0;el.querySelector('.modal')?.scrollTo(0,0);}}surfaceRoutes.set(el.id,{route:{name,args:clone(args)},node:surfaceContent(el)});persist();}return result;};
   }
   let saved;try{saved=JSON.parse(localStorage.getItem(KEY)||'null');}catch{}
   if(saved?.version===1&&titles[saved.current?.page]&&Array.isArray(saved.frames)){

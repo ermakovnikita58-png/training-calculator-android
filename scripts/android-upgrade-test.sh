@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 mkdir -p test-results
-trap 'adb logcat -d -t 2500 > test-results/emulator-logcat.txt; adb exec-out screencap -p > test-results/emulator-screen.png' EXIT
+trap 'adb shell settings put system font_scale 1.0; adb logcat -d -t 2500 > test-results/emulator-logcat.txt; adb exec-out screencap -p > test-results/emulator-screen.png' EXIT
 app=ru.trainingcalculator.app
 runner="$app.test/androidx.test.runner.AndroidJUnitRunner"
 
@@ -41,6 +41,11 @@ if [[ "$BASE_VERSION_CODE" == 26 || "$BASE_VERSION_CODE" == 27 ]]; then exit 0; 
 adb shell settings put secure show_ime_with_hard_keyboard 1
 instrument offline-device -e notClass "$app.UpgradePersistenceTest"
 adb pull "/sdcard/Android/data/$app/files/ux-v2" test-results/android-ux-v2
+adb shell settings put system font_scale 1.5
+adb shell am force-stop "$app"
+instrument system-text-scale -e forgeFontScale verify -e class "$app.NavigationBackTest#systemFontScaleIsAppliedToTheProductScreen"
+adb shell settings put system font_scale 1.0
+adb shell am force-stop "$app"
 instrument upgrade-cycles -e forgeUpgrade cycles -e class "$app.UpgradePersistenceTest#verifyCycleAfterUpgrade"
 
 adb shell getprop qemu.hw.mainkeys

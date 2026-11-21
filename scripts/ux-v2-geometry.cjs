@@ -72,6 +72,25 @@ const screens = ['home', 'products', 'categories', 'workout', 'plan', 'program',
   'library', 'group', 'exercise', 'nutrition', 'meals', 'recipes', 'recipe', 'coach', 'statistics',
   'profile', 'account', 'portion', 'maxima', 'weight', 'custom-food'];
 
+async function lastActionIsReachable(page, id) {
+  return page.evaluate(async id => {
+    const root = document.getElementById(id);
+    const controls = [...root.querySelectorAll('button,input:not([type=hidden]),select,textarea,summary')].filter(element => {
+      const closed = element.closest('details:not([open])');
+      return element.getClientRects().length && !element.closest('[hidden],[inert]') &&
+        getComputedStyle(element).visibility !== 'hidden' &&
+        (!closed || closed.querySelector(':scope > summary')?.contains(element));
+    });
+    const last = controls.at(-1);
+    if (!last) return true;
+    last.scrollIntoView({ block: 'center', inline: 'nearest' });
+    await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+    const box = last.getBoundingClientRect();
+    const center = document.elementFromPoint(box.left + box.width / 2, box.top + box.height / 2);
+    return box.top >= 0 && box.bottom <= innerHeight + 1 && (last === center || last.contains(center));
+  }, id);
+}
+
 async function run() {
   const browser = await chromium.launch({ executablePath: process.env.FORGE_CHROMIUM });
   const source = path.resolve(process.env.FORGE_UX_ASSETS || 'app/src/main/assets');
@@ -88,6 +107,7 @@ async function run() {
       for (const name of screens) {
         await scene(page, name);
         const result = await inspect(page);
+        if (!await lastActionIsReachable(page, result.page)) result.issues.push({ type: 'last-action-covered' });
         report.push({ width, height, scale, screen: name, ...result });
       }
       report.push({ width, height, scale, screen: 'javascript', issues: errors });
