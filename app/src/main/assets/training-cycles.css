@@ -21,7 +21,7 @@ body:has(.fc-dialog[open]) { overflow: hidden; }
   position: sticky;
   top: 0;
   display: grid;
-  grid-template-columns: 44px minmax(0, 1fr) 44px;
+  grid-template-columns: var(--fp-touch) minmax(0, 1fr) var(--fp-touch);
   align-items: center;
   gap: 8px;
   padding: 8px 12px;
@@ -29,8 +29,8 @@ body:has(.fc-dialog[open]) { overflow: hidden; }
   border-bottom: 1px solid #34453a;
   z-index: 1;
 }
-.fc-header h2 { margin: 0; font-size: 1.1rem; text-align: center; }
-.fc-header button { min-width: 44px; min-height: 44px; padding: 0; font-size: 1.25rem; }
+.fc-header h2 { margin: 0; min-width: 0; font-size: 1.1rem; text-align: center; overflow-wrap: anywhere; }
+.fc-header button { min-width: var(--fp-touch); min-height: var(--fp-touch); padding: 0; font-size: 1.25rem; }
 #fc-body { display: grid; gap: 12px; padding: 12px; }
 #fc-body :is(h3,p) { margin: 0; line-height: 1.4; overflow-wrap: anywhere; }
 #fc-body [hidden] { display: none; }
@@ -47,13 +47,13 @@ body:has(.fc-dialog[open]) { overflow: hidden; }
 .fc-dialog .fc-base { color: #dcfcb0; }
 .fc-dialog .fc-warning { color: #ffe2a4; }
 .fc-dialog :is(summary, .fc-choice label, .fc-actions button) {
-  min-height: 44px;
+  min-height: var(--fp-touch);
   cursor: pointer;
 }
 .fc-dialog summary { padding: 10px 0; color: #dcfcb0; font-weight: 650; }
 .fc-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: start; }
 .fc-actions:empty { display: none; }
-.fc-actions .btn { white-space: normal; text-align: center; }
+.fc-actions .btn { white-space: normal; text-align: center; min-height: var(--fp-touch); }
 .fc-actions .btn:disabled { opacity: .5; cursor: default; }
 .fc-actions .btn.primary, .fc-card > .btn.primary { color: #101711; background: var(--fc-accent); }
 .fc-dialog :focus-visible { outline: 2px solid var(--fc-accent); outline-offset: 2px; }
@@ -82,6 +82,8 @@ body:has(.fc-dialog[open]) { overflow: hidden; }
 .fc-settings-grid { grid-template-columns: repeat(auto-fit, minmax(min(140px, 100%), 1fr)); }
 .fc-week, .fc-copy { display: flex; align-items: end; gap: 7px; }
 .fc-week label, .fc-copy label { flex: 1; }
+.fc-copy { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9em), 1fr)); align-items: end; }
+.fc-copy .btn { width: 100%; min-width: 0; }
 .fc-day-title { display: flex; align-items: start; justify-content: space-between; gap: 6px; }
 .fc-tag { border: 1px solid #52704e; padding: 4px 7px; border-radius: 20px; color: #deefcc; font-size: .75rem; }
 .fc-compare { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }

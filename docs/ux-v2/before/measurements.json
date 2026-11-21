@@ -1,0 +1,376 @@
+[
+  {
+    "width": 320,
+    "name": "products",
+    "header": {
+      "height": 76,
+      "top": 0
+    },
+    "firstResult": {
+      "height": 144,
+      "top": 546
+    },
+    "sourceButtons": [
+      {
+        "text": "Каталог",
+        "width": 74,
+        "content": 74
+      },
+      {
+        "text": "Избранное",
+        "width": 74,
+        "content": 74
+      },
+      {
+        "text": "Недавние",
+        "width": 74,
+        "content": 74
+      },
+      {
+        "text": "Мои продукты",
+        "width": 74,
+        "content": 74
+      }
+    ]
+  },
+  {
+    "width": 360,
+    "name": "products",
+    "header": {
+      "height": 76,
+      "top": 0
+    },
+    "firstResult": {
+      "height": 121,
+      "top": 498
+    },
+    "sourceButtons": [
+      {
+        "text": "Каталог",
+        "width": 82,
+        "content": 82
+      },
+      {
+        "text": "Избранное",
+        "width": 82,
+        "content": 82
+      },
+      {
+        "text": "Недавние",
+        "width": 82,
+        "content": 82
+      },
+      {
+        "text": "Мои продукты",
+        "width": 82,
+        "content": 82
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "name": "home",
+    "header": {
+      "height": 76,
+      "top": 0
+    },
+    "firstResult": {
+      "height": 0,
+      "top": 0
+    },
+    "sourceButtons": [
+      {
+        "text": "Каталог",
+        "width": 0,
+        "content": 0
+      },
+      {
+        "text": "Избранное",
+        "width": 0,
+        "content": 0
+      },
+      {
+        "text": "Недавние",
+        "width": 0,
+        "content": 0
+      },
+      {
+        "text": "Мои продукты",
+        "width": 0,
+        "content": 0
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "name": "products",
+    "header": {
+      "height": 76,
+      "top": 0
+    },
+    "firstResult": {
+      "height": 121,
+      "top": 510
+    },
+    "sourceButtons": [
+      {
+        "text": "Каталог",
+        "width": 89,
+        "content": 89
+      },
+      {
+        "text": "Избранное",
+        "width": 89,
+        "content": 89
+      },
+      {
+        "text": "Недавние",
+        "width": 89,
+        "content": 89
+      },
+      {
+        "text": "Мои продукты",
+        "width": 89,
+        "content": 89
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "name": "categories",
+    "header": {
+      "height": 76,
+      "top": 0
+    },
+    "firstResult": {
+      "height": 121,
+      "top": 510
+    },
+    "sourceButtons": [
+      {
+        "text": "Каталог",
+        "width": 89,
+        "content": 89
+      },
+      {
+        "text": "Избранное",
+        "width": 89,
+        "content": 89
+      },
+      {
+        "text": "Недавние",
+        "width": 89,
+        "content": 89
+      },
+      {
+        "text": "Мои продукты",
+        "width": 89,
+        "content": 89
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "name": "workout",
+    "header": {
+      "height": 76,
+      "top": 0
+    },
+    "firstResult": {
+      "height": 0,
+      "top": 0
+    },
+    "sourceButtons": [
+      {
+        "text": "Каталог",
+        "width": 0,
+        "content": 0
+      },
+      {
+        "text": "Избранное",
+        "width": 0,
+        "content": 0
+      },
+      {
+        "text": "Недавние",
+        "width": 0,
+        "content": 0
+      },
+      {
+        "text": "Мои продукты",
+        "width": 0,
+        "content": 0
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "name": "program",
+    "header": {
+      "height": 76,
+      "top": 0
+    },
+    "firstResult": {
+      "height": 0,
+      "top": 0
+    },
+    "sourceButtons": [
+      {
+        "text": "Каталог",
+        "width": 0,
+        "content": 0
+      },
+      {
+        "text": "Избранное",
+        "width": 0,
+        "content": 0
+      },
+      {
+        "text": "Недавние",
+        "width": 0,
+        "content": 0
+      },
+      {
+        "text": "Мои продукты",
+        "width": 0,
+        "content": 0
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "name": "cycle",
+    "header": {
+      "height": 76,
+      "top": 0
+    },
+    "firstResult": {
+      "height": 0,
+      "top": 0
+    },
+    "sourceButtons": [
+      {
+        "text": "Каталог",
+        "width": 0,
+        "content": 0
+      },
+      {
+        "text": "Избранное",
+        "width": 0,
+        "content": 0
+      },
+      {
+        "text": "Недавние",
+        "width": 0,
+        "content": 0
+      },
+      {
+        "text": "Мои продукты",
+        "width": 0,
+        "content": 0
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "name": "exercise",
+    "header": {
+      "height": 76,
+      "top": 0
+    },
+    "firstResult": {
+      "height": 0,
+      "top": 0
+    },
+    "sourceButtons": [
+      {
+        "text": "Каталог",
+        "width": 0,
+        "content": 0
+      },
+      {
+        "text": "Избранное",
+        "width": 0,
+        "content": 0
+      },
+      {
+        "text": "Недавние",
+        "width": 0,
+        "content": 0
+      },
+      {
+        "text": "Мои продукты",
+        "width": 0,
+        "content": 0
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "name": "statistics",
+    "header": {
+      "height": 76,
+      "top": 0
+    },
+    "firstResult": {
+      "height": 0,
+      "top": 0
+    },
+    "sourceButtons": [
+      {
+        "text": "Каталог",
+        "width": 0,
+        "content": 0
+      },
+      {
+        "text": "Избранное",
+        "width": 0,
+        "content": 0
+      },
+      {
+        "text": "Недавние",
+        "width": 0,
+        "content": 0
+      },
+      {
+        "text": "Мои продукты",
+        "width": 0,
+        "content": 0
+      }
+    ]
+  },
+  {
+    "width": 412,
+    "name": "products",
+    "header": {
+      "height": 76,
+      "top": 0
+    },
+    "firstResult": {
+      "height": 103,
+      "top": 510
+    },
+    "sourceButtons": [
+      {
+        "text": "Каталог",
+        "width": 95,
+        "content": 95
+      },
+      {
+        "text": "Избранное",
+        "width": 95,
+        "content": 95
+      },
+      {
+        "text": "Недавние",
+        "width": 95,
+        "content": 95
+      },
+      {
+        "text": "Мои продукты",
+        "width": 95,
+        "content": 95
+      }
+    ]
+  }
+]

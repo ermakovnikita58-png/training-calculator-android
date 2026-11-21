@@ -179,10 +179,11 @@ class MainActivity : ComponentActivity() {
         setContentView(container)
         webView.setBackgroundColor(Color.rgb(11, 16, 22))
         ViewCompat.setOnApplyWindowInsetsListener(container) { view, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout())
             val keyboard = insets.getInsets(WindowInsetsCompat.Type.ime())
             imeVisible = insets.isVisible(WindowInsetsCompat.Type.ime())
             view.setPadding(systemBars.left, systemBars.top, systemBars.right, maxOf(systemBars.bottom, keyboard.bottom))
+            webView.evaluateJavascript("window.ForgeViewport?.keyboard($imeVisible)", null)
             updateBackCallback()
             WindowInsetsCompat.CONSUMED
         }
@@ -413,6 +414,8 @@ class MainActivity : ComponentActivity() {
             .put("crashAvailable", diagnostics.configured())
             .put("crash", diagnostics.enabled())
             .put("testReport", BuildConfig.DEBUG)
+            .put("keyboardVisible", imeVisible)
+            .put("textScale", webView.settings.textZoom / 100.0)
             .put("healthAvailable", ForgeHealth.available(this))
             .put("notifications", RestReminder.enabled(this) && androidx.core.app.NotificationManagerCompat.from(this).areNotificationsEnabled())
             .put("camera", checkSelfPermission(android.Manifest.permission.CAMERA) == android.content.pm.PackageManager.PERMISSION_GRANTED)

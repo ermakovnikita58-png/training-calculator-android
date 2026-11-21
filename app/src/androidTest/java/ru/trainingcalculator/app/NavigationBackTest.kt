@@ -42,7 +42,11 @@ class NavigationBackTest {
             if (js(scenario, condition) == "true") return
             Thread.sleep(100)
         }
-        assertEquals("Condition: $condition", "true", js(scenario, condition))
+        val directory = java.io.File(InstrumentationRegistry.getInstrumentation().targetContext.getExternalFilesDir(null), "ux-v2").apply { mkdirs() }
+        val state = js(scenario, "({navigation:window.ForgeNavigation?.inspect(),library:window.ForgeExerciseLibrary?.snapshot(),keyboard:document.body.classList.contains('forge-keyboard'),focused:document.activeElement?.tagName})")
+        java.io.File(directory, "failure-${condition.hashCode()}.json").writeText(state)
+        UiDevice.getInstance(InstrumentationRegistry.getInstrumentation()).takeScreenshot(java.io.File(directory, "failure-${condition.hashCode()}.png"))
+        assertEquals("Condition: $condition; UI: $state", "true", js(scenario, condition))
     }
 
     private fun click(scenario: ActivityScenario<MainActivity>, selector: String) {
@@ -61,6 +65,135 @@ class NavigationBackTest {
         waitFor(scenario, "!!window.ForgeNavigation && !!window.ForgePerformance")
         js(scenario, "showPage('home');showPage(${JSONObject.quote(page)})")
         waitFor(scenario, "ForgeNavigation.inspect().current === ${JSONObject.quote(page)}")
+    }
+    @Test fun productSourcesAndCategoryRemainReadableWithSystemTextZoom() {
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            openPage(scenario, "foodcatalog")
+            js(scenario, "forgeSetFoodTab('catalog');true")
+            for (scale in listOf(100, 120, 150, 200)) {
+                scenario.onActivity { activity -> requireNotNull(findWeb(activity.window.decorView)).settings.textZoom = scale }
+                js(scenario, "AndroidBridge.preferences();true")
+                waitFor(scenario, "Number(getComputedStyle(document.documentElement).getPropertyValue('--forge-native-text-scale')) === ${scale / 100.0}")
+                val context = InstrumentationRegistry.getInstrumentation().targetContext
+                val directory = java.io.File(context.getExternalFilesDir(null), "ux-v2").apply { mkdirs() }
+                java.io.File(directory, "products-text-$scale.json").writeText(js(scenario, """
+                    (() => ({scale:$scale,width:innerWidth,dpr:devicePixelRatio,
+                      overflow:document.documentElement.scrollWidth,
+                      buttons:[...document.querySelectorAll('#foodcatalog [data-food-tab],#forgeFoodCategoryButton')].map(button => {
+                        const rect=button.getBoundingClientRect();
+                        return {text:button.textContent,width:rect.width,height:rect.height,left:rect.left,right:rect.right,
+                          content:button.scrollWidth,client:button.clientWidth};
+                      })}))()
+                """.trimIndent()))
+                assertTrue(UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
+                    .takeScreenshot(java.io.File(directory, "products-text-$scale.png")))
+                waitFor(scenario, """
+                    (() => {
+                      const buttons = [...document.querySelectorAll('#foodcatalog [data-food-tab],#forgeFoodCategoryButton')];
+                      return buttons.length === 5 && buttons.every(button => {
+                        const rect = button.getBoundingClientRect();
+                        return rect.left >= 0 && rect.right <= innerWidth + 1 &&
+                          rect.width >= 48 && rect.height >= 48 && button.scrollWidth <= button.clientWidth + 1;
+                      }) && document.documentElement.scrollWidth <= innerWidth + 1;
+                    })()
+                """.trimIndent())
+            }
+            scenario.onActivity { activity -> requireNotNull(findWeb(activity.window.decorView)).settings.textZoom = 100 }
+            js(scenario, "AndroidBridge.preferences();true")
+            waitFor(scenario, "Number(getComputedStyle(document.documentElement).getPropertyValue('--forge-native-text-scale')) === 1")
+            click(scenario, "#forgeFoodCategoryButton")
+            click(scenario, "#forgeFoodCategorySheet [data-food-category='Рыба и морепродукты']")
+            waitFor(scenario, "document.getElementById('forgeFoodCategoryValue').textContent === 'Рыба и морепродукты'")
+            scenario.recreate()
+            waitFor(scenario, """
+                ForgeNavigation.inspect().current === 'foodcatalog' &&
+                document.getElementById('forgeFoodCategoryValue').textContent === 'Рыба и морепродукты'
+            """.trimIndent())
+        }
+    }
+
+    @Test fun keyboardBackKeepsTheProgramDraftOpen() {
+        val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            openPage(scenario, "plan")
+            click(scenario, "#plan [data-fp-action='newProgram']")
+            waitFor(scenario, "!!document.getElementById('n8ProgName')")
+            val location = org.json.JSONArray(js(scenario, """
+                (() => {
+                  const element = document.getElementById('n8ProgName');
+                  element.scrollIntoView({block:'center'});
+                  const rect = element.getBoundingClientRect();
+                  return [rect.left + rect.width / 2, rect.top + rect.height / 2];
+                })()
+            """.trimIndent()))
+            val offset = IntArray(2)
+            scenario.onActivity { activity -> requireNotNull(findWeb(activity.window.decorView)).getLocationOnScreen(offset) }
+            device.click(offset[0] + location.getDouble(0).toInt(), offset[1] + location.getDouble(1).toInt())
+            waitFor(scenario, "document.body.classList.contains('forge-keyboard')")
+            js(scenario, """
+                (() => {
+                  const input = document.getElementById('n8ProgName');
+                  input.value = 'Черновик после клавиатуры';
+                  input.dispatchEvent(new Event('input',{bubbles:true}));
+                })()
+            """.trimIndent())
+            device.executeShellCommand("input keyevent KEYCODE_BACK")
+            waitFor(scenario, """
+                !document.body.classList.contains('forge-keyboard') &&
+                document.getElementById('n8-program').classList.contains('show') &&
+                document.getElementById('n8ProgName').value === 'Черновик после клавиатуры'
+            """.trimIndent())
+            js(scenario, "document.activeElement?.blur()")
+            scenario.recreate()
+            waitFor(scenario, """
+                document.getElementById('n8-program').classList.contains('show') &&
+                document.getElementById('n8ProgName').value === 'Черновик после клавиатуры'
+            """.trimIndent())
+            js(scenario, "ForgeNavigation.markSaved('n8-program');n8CloseOverlay();true")
+        }
+    }
+
+    @Test fun systemFontScaleIsAppliedToTheProductScreen() {
+        val instrumentation = InstrumentationRegistry.getInstrumentation()
+        org.junit.Assume.assumeTrue(InstrumentationRegistry.getArguments().getString("forgeFontScale") == "verify")
+        assertTrue(instrumentation.targetContext.resources.configuration.fontScale >= 1.45f)
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            openPage(scenario, "foodcatalog")
+            scenario.onActivity { activity ->
+                val web = requireNotNull(findWeb(activity.window.decorView))
+                assertEquals((activity.resources.configuration.fontScale * 100).toInt(), web.settings.textZoom)
+            }
+            waitFor(scenario, """
+                Number(getComputedStyle(document.documentElement).getPropertyValue('--forge-native-text-scale')) >= 1.45 &&
+                document.documentElement.scrollWidth <= innerWidth + 1 &&
+                [...document.querySelectorAll('#foodcatalog [data-food-tab]')].every(button =>
+                  button.scrollWidth <= button.clientWidth + 1 && button.getBoundingClientRect().right <= innerWidth + 1)
+            """.trimIndent())
+        }
+    }
+
+    @Test fun rotationPreservesTheProductQueryAndCategory() {
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            openPage(scenario, "foodcatalog")
+            js(scenario, """
+                forgeSetFoodTab('catalog');
+                forgeSetFoodCategory(forgeFoodCategoryList.indexOf('Рыба и морепродукты'));
+                document.getElementById('foodSearch').value = 'Рыба';
+                forgeFoodChange();
+            """.trimIndent())
+            scenario.onActivity { it.requestedOrientation = android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE }
+            waitFor(scenario, """
+                innerWidth > innerHeight && ForgeNavigation.inspect().current === 'foodcatalog' &&
+                document.getElementById('foodSearch').value === 'Рыба' &&
+                document.getElementById('forgeFoodCategoryValue').textContent === 'Рыба и морепродукты'
+            """.trimIndent())
+            scenario.onActivity { it.requestedOrientation = android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT }
+            waitFor(scenario, """
+                innerHeight > innerWidth && ForgeNavigation.inspect().current === 'foodcatalog' &&
+                document.getElementById('foodSearch').value === 'Рыба'
+            """.trimIndent())
+            js(scenario, "document.getElementById('foodSearch').value='';forgeFoodChange();forgeSetFoodCategory(0);true")
+        }
     }
     @Test fun systemBackClosesCardThenReturnsThroughPages() {
         val instrumentation = InstrumentationRegistry.getInstrumentation()
@@ -82,7 +215,7 @@ class NavigationBackTest {
             }
         }
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
-            waitFor(scenario, "!!window.ForgeExerciseLibrary")
+            waitFor(scenario, "!!window.ForgeExerciseLibrary && !!window.ForgeNavigation && !!window.ForgePerformance")
             js(scenario, "showPage('home');showPage('plan');showPage('library');ForgeExerciseLibrary.showGroups();y8OpenCard(encodeURIComponent('Жим штанги стоя'),'library')")
             waitFor(scenario, "ForgeNavigation.inspect().overlay==='y8DetailBack'")
             goBack()
@@ -114,7 +247,7 @@ class NavigationBackTest {
     }
     @Test fun libraryBackRetainsFiltersThenReturnsThroughGroups() {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
-            waitFor(scenario, "!!window.ForgeExerciseLibrary")
+            waitFor(scenario, "!!window.ForgeExerciseLibrary && !!window.ForgeNavigation && !!window.ForgePerformance")
             js(scenario, "showPage('home');showPage('plan');showPage('library');ForgeExerciseLibrary.openGroup('Плечи','гантел');scrollTo(0,200);y8OpenCard(encodeURIComponent('Жим гантелей сидя'),'library')")
             val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
             waitFor(scenario, "ForgeNavigation.inspect().overlay==='y8DetailBack'")
@@ -148,15 +281,15 @@ class NavigationBackTest {
             click(scenario, "#forgeFoodCategoryButton")
             waitFor(scenario, "ForgeNavigation.inspect().overlay === 'modalback' && !!document.getElementById('forgeFoodCategorySheet')")
             val categoryOption = "#forgeFoodCategorySheet [data-food-category]:nth-child(2)"
-            val activeChip = "document.querySelector(${JSONObject.quote("#forgeFoodCats [data-food-category][aria-pressed='true']")})"
+            val categoryValue = "document.getElementById('forgeFoodCategoryValue').textContent"
             val category = js(scenario, "document.querySelector(${JSONObject.quote(categoryOption)}).dataset.foodCategory")
             click(scenario, categoryOption)
             waitFor(scenario, "!ForgeNavigation.inspect().overlay && !!document.querySelector('#foodSearchResults .forge-plus')")
-            assertEquals(category, js(scenario, "$activeChip.dataset.foodCategory"))
+            assertEquals(category, js(scenario, categoryValue))
             click(scenario, "#forgeFoodCategoryButton")
             waitFor(scenario, "ForgeNavigation.inspect().overlay === 'modalback'")
             pressBack(scenario, "!ForgeNavigation.inspect().overlay && ForgeNavigation.inspect().current === 'foodcatalog'")
-            assertEquals(category, js(scenario, "$activeChip.dataset.foodCategory"))
+            assertEquals(category, js(scenario, categoryValue))
 
             click(scenario, "#foodSearchResults .forge-plus")
             waitFor(scenario, "ForgeNavigation.inspect().overlay === 'modalback' && +document.getElementById('forgeFoodGrams')?.value > 0")

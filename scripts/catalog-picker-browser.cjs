@@ -57,14 +57,17 @@ async function checkProducts(page, width) {
     await tab.click();
     assert.ok(await tab.evaluate(el => el.classList.contains('active')));
   }
-  const chips = catalog.locator('#forgeFoodCats [data-food-category]');
+  await catalog.locator('#forgeFoodCategoryButton').click();
+  const chips = page.locator('#forgeFoodCategorySheet [data-food-category]');
   const categories = await chips.evaluateAll(nodes => nodes.map(el => el.dataset.foodCategory));
   const expected = await page.evaluate(() => ['Все', ...new Set(forgeOfflineFoods.map(forgeFoodCategoryLabel))]);
   assert.deepEqual([...categories].sort(), expected.sort());
   assert.ok(await chips.evaluateAll(nodes => nodes.every(el => el.scrollWidth <= el.clientWidth + 1)));
+  await back(page);
   for (const category of categories) {
-    await catalog.locator('#forgeFoodCats').getByRole('button', {name:category, exact:true}).click();
-    assert.equal(await catalog.locator('#forgeFoodCats [aria-pressed="true"]').getAttribute('data-food-category'), category);
+    await catalog.locator('#forgeFoodCategoryButton').click();
+    await page.locator('#forgeFoodCategorySheet').getByRole('button', {name:category, exact:true}).click();
+    assert.equal(await catalog.locator('#forgeFoodCategoryValue').innerText(), category);
     const count = await page.evaluate(category => forgeOfflineFoods.filter(food => category === 'Все' || forgeFoodCategoryLabel(food) === category).length, category);
     assert.match(await catalog.locator('#forgeFoodResultCount').innerText(), new RegExp(`\\b${count}\\b`));
   }

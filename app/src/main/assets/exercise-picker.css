@@ -1,6 +1,5 @@
 .forge-picker {
   background: var(--fp-bg);
-  overflow-x: hidden;
 }
 .forge-picker [hidden] {
   display: none !important;
@@ -27,6 +26,7 @@
   margin: 0;
   font-size: clamp(1.0625rem, 5vw, 1.375rem);
   line-height: 1.15;
+  overflow-wrap: anywhere;
 }
 .forge-picker-header small, .forge-picker-count, .forge-picker-group small, .forge-picker-item small {
   color: var(--fp-secondary);

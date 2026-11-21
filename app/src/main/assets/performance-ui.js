@@ -65,8 +65,9 @@
     const titleRow=target?.querySelector('.n8-row');if(titleRow){titleRow.className='fp-current-heading';titleRow.innerHTML=`<img src="${esc(ForgeArt.source(chosen.name)||ForgeArt.missingData(chosen.name))}" alt="${esc(chosen.name)}"><div><div class="fp-eyebrow">${V.index()+1} / ${a.exercises.length}</div><h2>${esc(chosen.name)}</h2></div>${button('exerciseCard','',[chosen.name],'quiet','book').replace('type="button"','type="button" aria-label="Техника упражнения"')}`;}
     const strip=container.querySelector('.n8-exstrip'),section=container.querySelector('.n8-section');
     if(strip&&target){const details=document.createElement('details');details.className='fp-card';details.innerHTML=`<summary>Упражнения · ${a.exercises.length}</summary>`;a.exercises.forEach((ex,i)=>{const pic=strip.children[i]?.querySelector('.pic');if(pic)pic.innerHTML=`<img src="${esc(ForgeArt.source(ex.name)||ForgeArt.missingData(ex.name))}" alt="${esc(ex.name)}"><small>${ex.sets.filter(s=>s.done).length}/${ex.sets.length}</small>`;});details.append(strip);if(section)details.append(section);target.after(details);}
+    target?.insertAdjacentHTML('beforeend','<details class="fp-training-help"><summary>Что такое RPE и RIR?</summary><p>RPE — насколько тяжёлым был подход по шкале до 10. При 10 больше повторить не получится. RIR — сколько повторений ещё осталось в запасе. Эти оценки можно оставить незаполненными.</p></details>');
     const sub=container.querySelector('.n8-worktop .n8-sub');if(sub)sub.dataset.fpWorkoutClock='true';
-    container.querySelectorAll('.n8-setgrid input').forEach(el=>el.inputMode='decimal');updateChrome();
+    container.querySelectorAll('.n8-setgrid input').forEach((el,i)=>{el.inputMode=i%2?'numeric':'decimal';});updateChrome();
   }
   function initNutrition(){
     if($('fp-nutrition-date'))return;
@@ -116,7 +117,7 @@
     if(tab==='strength'){
       const names=[...new Set(ws.flatMap(w=>(w.sets||[]).map(s=>s.exercise)))].filter(Boolean);if(!names.includes(prefs.exercise))prefs.exercise=names[0]||'';
       const points=ws.slice().reverse().map(w=>({date:day(w.date),v:Math.max(0,...(w.sets||[]).filter(s=>s.unit!=='seconds'&&s.exercise===prefs.exercise&&Number(s.reps)>0).map(s=>V.oneRM(Number(s.weight),Number(s.reps))))})).filter(p=>p.v>0),last=points.at(-1),first=points[0];
-      main=card(`<div class="fp-label">Расчётный 1ПМ · существующая формула Эпли</div><p class="fp-caption">Ориентир по записанным подходам, а не измеренный максимум.</p>${names.length?`<label class="fp-field" style="margin-top:16px">Упражнение<select id="fp-strength-exercise">${names.map(n=>`<option ${n===prefs.exercise?'selected':''}>${esc(n)}</option>`).join('')}</select></label><div class="fp-value" style="margin-top:20px">${fmt(last?.v,1)} <small>кг</small></div><p class="fp-caption">${points.length>1?'Изменение за период: '+(last.v-first.v>=0?'+':'')+fmt(last.v-first.v,1)+' кг':'Нужно несколько тренировок для сравнения.'}</p>${chart(points,'кг','Изменение расчётного 1ПМ')}`:empty('Силовые результаты ещё впереди','Запиши подход с весом и повторениями в тренировке.')}${button('go','1ПМ / 5ПМ и циклы',['cycles'],'quiet','arrow')}`);
+      main=card(`<div class="fp-label">Расчётный 1ПМ · существующая формула Эпли</div><p class="fp-caption">Ориентир по записанным подходам, а не измеренный максимум.</p>${names.length?`<label class="fp-field" style="margin-top:16px">Упражнение<select id="fp-strength-exercise">${names.map(n=>`<option ${n===prefs.exercise?'selected':''}>${esc(n)}</option>`).join('')}</select></label><div class="fp-value" style="margin-top:20px">${last?fmt(last.v,1):'—'} <small>кг</small></div><p class="fp-caption">${points.length>1?'Изменение за период: '+(last.v-first.v>=0?'+':'')+fmt(last.v-first.v,1)+' кг':'Нужно несколько тренировок для сравнения.'}</p>${chart(points,'кг','Изменение расчётного 1ПМ')}`:empty('Силовые результаты ещё впереди','Запиши подход с весом и повторениями в тренировке.')}${button('go','1ПМ / 5ПМ и циклы',['cycles'],'quiet','arrow')}`);
     }
     if(tab==='muscles'){
       const groups=new Map(forgeRefreshCatalog().map(x=>[x.name,x.group])),counts=new Map();for(const w of ws)for(const s of w.sets||[]){const g=groups.get(s.exercise)||'Другие';counts.set(g,(counts.get(g)||0)+1);}const rows=[...counts].sort((a,b)=>b[1]-a[1]),max=Math.max(1,...rows.map(x=>x[1]));
@@ -152,7 +153,7 @@
     if(!e.target.matches('[data-fp-chart-range]'))return;const widget=e.target.closest('.fp-chart-widget'),points=JSON.parse(widget.dataset.fpPoints),p=points[Number(e.target.value)],text=label(p.date)+' · '+fmt(p.v,1)+' '+widget.dataset.fpUnit;widget.querySelector('output').textContent=text;e.target.setAttribute('aria-valuetext',text);
   });
   function installChrome(){
-    const brand=document.querySelector('.brand');brand.innerHTML=`<svg class="fp-logo" viewBox="0 0 32 36" aria-hidden="true"><path d="M4 3h25l-4 7H12v7h12l-4 7h-8v9H4z" fill="currentColor"/></svg><span>FORGE<small>PERFORMANCE</small></span>`;
+    const brand=document.querySelector('.brand');brand.innerHTML=`<svg class="fp-logo" viewBox="0 0 32 36" aria-hidden="true"><path d="M4 3h25l-4 7H12v7h12l-4 7h-8v9H4z" fill="currentColor"/></svg><span>FORGE</span>`;
     const tabs=[['home','Главная'],['workout','Тренировки'],['nutrition','Питание'],['plan','Программы'],['progress','Прогресс']];document.querySelector('.tabs').innerHTML=tabs.map(([id,name])=>`<button class="tab" data-page="${id}" onclick="showPage('${id}')"><span class="ico">${icon(id)}</span><span>${name}</span></button>`).join('');
     $('topAvatar').setAttribute('role','button');$('topAvatar').setAttribute('aria-label','Профиль');$('topAvatar').tabIndex=0;$('topAvatar').onkeydown=e=>{if(['Enter',' '].includes(e.key)){e.preventDefault();showPage('profile');}};
     const timer=document.querySelector('.topright .iconbtn');if(timer){timer.innerHTML=icon('clock');timer.setAttribute('aria-label','Таймер отдыха');}
@@ -165,7 +166,14 @@
     document.querySelectorAll('.tab').forEach(b=>{const selected=b.dataset.page===primary;b.classList.toggle('active',selected);if(selected)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
     const activeWorkout=current==='workout'&&!!state.active?.exercises?.length;document.body.classList.toggle('fp-active-workout',activeWorkout);
     let dock=$('fp-workout-dock');if(!dock){dock=document.createElement('div');dock.id='fp-workout-dock';dock.className='fp-workout-dock';dock.innerHTML=button('go','Обзор',['home'],'','home')+button('logSet','Записать подход',[],'primary');document.body.append(dock);new ResizeObserver(()=>document.documentElement.style.setProperty('--fp-dock-height',dock.getBoundingClientRect().height+'px')).observe(dock);}
-    if(activeWorkout){const ex=state.active.exercises[V.index()],s=ex?.sets.find(s=>!s.done)||ex?.sets.at(-1);dock.querySelector('[data-fp-action="logSet"]').textContent=s?`✓ ${fmt(s.weight,1)} кг × ${fmt(s.reps)}`:'Записать подход';}
+    if(activeWorkout){
+      const ex=state.active.exercises[V.index()],s=ex?.sets.find(s=>!s.done)||ex?.sets.at(-1);
+      const timed=ex?.unit==='seconds',unit=timed?'с':'повт.';
+      const label=s?`${fmt(s.weight,1)} кг × ${fmt(timed?s.seconds:s.reps)} ${unit}`:'';
+      const log=dock.querySelector('[data-fp-action="logSet"]');
+      log.innerHTML=`<span>Записать подход</span>${label?`<small>${esc(label)}</small>`:''}`;
+      log.setAttribute('aria-label','Записать подход'+(label?' · '+label:''));
+    }
   }
   function classifyDialog(){
     if(replacement&&!['modalback','x7BrowserBack','x7DetailBack'].some(id=>$(id)?.classList.contains('show')))replacement=null;

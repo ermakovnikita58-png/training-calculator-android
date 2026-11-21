@@ -51,6 +51,12 @@ jobs:
             api: 36
             release_asset: '751709344'
             digest: 'ab1c67f2d2dfd65a22eace9c6c2b015f46bf9c7c6a463160741877ed0489e5e3'
+          - version: '11.4.3'
+            version_code: '28'
+            commit: 497ca76d4fe2f7512f16ffdd864d77e183669bed
+            api: 36
+            release_asset: '759472905'
+            digest: '866c347d31678e2965c53eec2f4e5d99ffaf06d32dc11a948238210a46102968'
     steps:
       - uses: actions/checkout@v4
         with:
@@ -74,7 +80,12 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          bash ./gradlew :app:assembleDebug :app:assembleDebugAndroidTest --no-daemon
+          gradle_build() {
+            if bash ./gradlew "$@" --no-daemon; then return 0; fi
+            sleep 8
+            bash ./gradlew "$@" --refresh-dependencies --no-daemon
+          }
+          gradle_build :app:assembleDebug :app:assembleDebugAndroidTest
           mkdir -p test-results
           printf '%s\n' "$BASE_SHA" > test-results/baseline-commit.txt
           git rev-parse HEAD > test-results/candidate-commit.txt
@@ -99,7 +110,7 @@ jobs:
           if [[ ! -f test-results/baseline-origin.txt ]]; then
             git fetch origin "$BASE_SHA"
             git worktree add --detach "$RUNNER_TEMP/forge-previous" FETCH_HEAD
-            (cd "$RUNNER_TEMP/forge-previous" && bash ./gradlew :app:assembleDebug --no-daemon)
+            (cd "$RUNNER_TEMP/forge-previous" && gradle_build :app:assembleDebug)
             cp "$RUNNER_TEMP/forge-previous/app/build/outputs/apk/debug/app-debug.apk" "$original"
             printf 'Source rebuilt at %s; original distribution APK unavailable to the runner\n' "$BASE_SHA" > test-results/baseline-origin.txt
           fi
@@ -130,6 +141,7 @@ jobs:
           done
           exit 1
       - uses: reactivecircus/android-emulator-runner@v2
+        timeout-minutes: 14
         env:
           BASE_VERSION_CODE: ${{ matrix.version_code }}
         with:
@@ -137,6 +149,8 @@ jobs:
           arch: x86_64
           target: google_apis
           disable-animations: true
+          emulator-boot-timeout: 180
+          emulator-options: -no-snapshot -no-window -gpu software -feature -Vulkan -noaudio -no-boot-anim -camera-back none -camera-front none -memory 2048 -cores 2
           pre-emulator-launch-script: |
             sed -i '/^hw\.mainKeys[[:space:]]*=/d' "$ANDROID_AVD_HOME/test.avd/config.ini"
             printf '\nhw.mainKeys=no\n' >> "$ANDROID_AVD_HOME/test.avd/config.ini"

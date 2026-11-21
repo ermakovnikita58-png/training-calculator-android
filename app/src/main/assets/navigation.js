@@ -32,6 +32,7 @@
   function snapshot() {
     const page=active();
     return {page,y:scrollY,screen:ForgeScreenNavigation.snapshot(),fields:values(byId(page)),library:ForgeLibraryNavigation.snapshot(),
+      food:page==='foodcatalog'?window.ForgeFoodNavigation?.snapshot():null,
       coach:page==='nutritionCoach'&&byId('nc-age')?ForgeCoach.snapshot():null,
       surfaces:overlays().filter(el=>surfaceRoutes.get(el.id)?.node===surfaceContent(el)).map(el=>({id:el.id,route:surfaceRoutes.get(el.id).route,fields:values(el),y:el.scrollTop,dirty:dirty.has(el.id)})),
       editor:overlays().some(el=>el.id.startsWith('n8-'))?(()=>{const e=overlays().filter(el=>el.id.startsWith('n8-')).at(-1);return {id:e.id,data:ForgeEditorNavigation.snapshot(),fields:values(e),y:e.scrollTop,dirty:[...dirty]}})():null};
@@ -87,6 +88,7 @@
       ForgeScreenNavigation.restore(frame.screen);
       originalShow(frame.page);
       if(frame.page==='library')ForgeLibraryNavigation.restore(frame.library);
+      if(frame.food)window.ForgeFoodNavigation?.restore(frame.food);
       if(frame.coach)ForgeCoach.restore(frame.coach);
       restoreValues(byId(frame.page),frame.fields);
       if(frame.editor){ForgeEditorNavigation.restore(frame.editor.data,frame.editor.id);restoreValues(byId(frame.editor.id),frame.editor.fields);if(frame.editor.id==='n8-day')byId('n8-day').querySelectorAll('input,select,textarea').forEach(el=>el.dispatchEvent(new Event('change',{bubbles:true})));byId(frame.editor.id).scrollTop=frame.editor.y||0;dirty=new Set(frame.editor.dirty||[]);}
@@ -168,6 +170,7 @@
     let opened=false;
     for(const el of visible)if(!previous.includes(el.id)){opened=true;originFocus=document.activeElement;overlayOrder=overlayOrder.filter(id=>id!==el.id);overlayOrder.push(el.id);el.setAttribute('role','dialog');el.setAttribute('aria-modal','true');}
     announce();
+    if(opened)byId('toast')?.classList.remove('show');
     if(opened||previous.some(id=>id&&!visible.some(el=>el.id===id)))focus(top()||byId(active()));
     persist();
   });
@@ -175,7 +178,7 @@
   window.ForgeNavigation={go,back,canBack,persist,allowCloseEditor,notify,surfaceOpened(id,name,args){const el=byId(id);if(el&&reopen.includes(name)){surfaceRoutes.set(id,{route:{name,args:clone(args)},node:surfaceContent(el)});announce();persist();}},beforeOverlay:persist,markSaved:id=>dirty.delete(id),markDirty:id=>dirty.add(id),inspect:()=>({current:active(),depth:frames.length,overlay:window.ForgeCycles?.isOpen()?'forge-cycle':top()?.id||null})};
   for(const name of reopen){
     const original=window[name];if(typeof original!=='function')continue;
-    window[name]=function(...args){const result=original.apply(this,args),el=top();if(el){if(!restoring)dirty.delete(el.id);surfaceRoutes.set(el.id,{route:{name,args:clone(args)},node:surfaceContent(el)});persist();}return result;};
+    window[name]=function(...args){const result=original.apply(this,args),el=top();if(el){if(!restoring){dirty.delete(el.id);if(el.id==='modalback'){el.scrollTop=0;el.querySelector('.modal')?.scrollTo(0,0);}}surfaceRoutes.set(el.id,{route:{name,args:clone(args)},node:surfaceContent(el)});persist();}return result;};
   }
   let saved;try{saved=JSON.parse(localStorage.getItem(KEY)||'null');}catch{}
   if(saved?.version===1&&titles[saved.current?.page]&&Array.isArray(saved.frames)){
@@ -184,7 +187,14 @@
   }else{announce();persist();}
   const bar=document.querySelector('.tabbar');
   new ResizeObserver(()=>document.documentElement.style.setProperty('--forge-nav-height',bar.getBoundingClientRect().height+'px')).observe(bar);
-  if(window.visualViewport)visualViewport.addEventListener('resize',()=>{
-    document.body.classList.toggle('forge-keyboard',innerHeight-visualViewport.height>150);persist();
-  });
+  const header=document.querySelector('.top');
+  new ResizeObserver(()=>document.documentElement.style.setProperty('--forge-header-height',header.getBoundingClientRect().height+'px')).observe(header);
+  let nativeKeyboard=false;
+  function updateKeyboard(){
+    const browserKeyboard=window.visualViewport&&visualViewport.scale===1&&innerHeight-visualViewport.height>150;
+    document.body.classList.toggle('forge-keyboard',nativeKeyboard||!!browserKeyboard);
+    persist();
+  }
+  window.ForgeViewport={keyboard(visible){nativeKeyboard=!!visible;updateKeyboard();}};
+  if(window.visualViewport)visualViewport.addEventListener('resize',updateKeyboard);
 })();
